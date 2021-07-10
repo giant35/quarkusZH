@@ -74,12 +74,12 @@ msgstr ""
 #: upstream/_versions/main/guides/getting-started-reactive.adoc:31
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "前提条件"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started-reactive.adoc:34
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "このガイドを完成させるには、以下が必要です:"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started-reactive.adoc:36
@@ -99,7 +99,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started-reactive.adoc:39
 msgid "Apache Maven {maven-version}"
-msgstr ""
+msgstr "Apache Maven {maven-version}"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started-reactive.adoc:43
@@ -148,7 +148,7 @@ msgstr ""
 #: upstream/_versions/main/guides/getting-started-reactive.adoc:68
 #, no-wrap
 msgid "Reactive"
-msgstr ""
+msgstr "リアクティブ"
 
 #. type: Target for macro image
 #: upstream/_versions/main/guides/getting-started-reactive.adoc:68
@@ -586,7 +586,7 @@ msgstr ""
 #: upstream/_versions/main/guides/getting-started-reactive.adoc:331
 #, no-wrap
 msgid "Going further"
-msgstr ""
+msgstr "さらに詳しく"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started-reactive.adoc:335

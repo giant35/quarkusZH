@@ -28,18 +28,18 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:11
 msgid "This guide demonstrates how your Quarkus application can utilize SmallRye Reactive Messaging to interact with Apache Kafka."
-msgstr ""
+msgstr "このガイドでは、Quarkus アプリケーションが SmallRye Reactive Messaging を利用して Apache Kafka とやりとりする仕組みを説明します。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:12
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "前提条件"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:15
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "このガイドを完成させるには、以下が必要です:"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:17
@@ -49,7 +49,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:18
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:19
@@ -59,55 +59,55 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:20
 msgid "Apache Maven {maven-version}"
-msgstr ""
+msgstr "Apache Maven {maven-version}"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:21
 msgid "A running Kafka cluster, or Docker Compose to start a development cluster"
-msgstr ""
+msgstr "実行中の Kafka クラスター、または開発クラスターを開始するための Docker Compose"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:22
 msgid "GraalVM installed if you want to run in native mode."
-msgstr ""
+msgstr "ネイティブモードで動作させたい場合は、GraalVMがインストールされていること"
 
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: upstream/_guides/kafka.adoc:23 upstream/_guides/kafka.adoc:31
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "アーキテクチャ"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:30
 msgid "In this guide, we are going to generate (random) prices in one component.  These prices are written in a Kafka topic (`prices`).  A second component reads from the `prices` Kafka topic and apply some magic conversion to the price.  The result is sent to an in-memory stream consumed by a JAX-RS resource.  The data is sent to a browser using server-sent events."
-msgstr ""
+msgstr "このガイドでは、1 つのコンポーネントでランダムな価格 (price) を生成します。これらの価格は、Kafka トピック (`prices`) に書かれています。2 番目のコンポーネントは `prices` Kafka トピックから読み込み、この価格に変換を適用します。その結果は、JAX-RS リソースによって消費されるインメモリーストリームに送られます。データは、サーバーから送信されたイベントを使用してブラウザーに送信されます。"
 
 #. type: Target for macro image
 #: upstream/_guides/kafka.adoc:31
 #, no-wrap
 msgid "kafka-guide-architecture.png"
-msgstr ""
+msgstr "kafka-guide-architecture.png"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:33
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "ソリューション"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:37
 msgid "We recommend that you follow the instructions in the next sections and create the application step by step.  However, you can go right to the completed example."
-msgstr ""
+msgstr "次の章で紹介する手順に沿って、ステップを踏んでアプリを作成することをお勧めします。ただし、完成した例にそのまま進んでも構いません。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:39
 msgid "Clone the Git repository: `git clone {quickstarts-clone-url}`, or download an {quickstarts-archive-url}[archive]."
-msgstr ""
+msgstr "Gitレポジトリをクローンするか `git clone {quickstarts-clone-url}` 、 {quickstarts-archive-url}[アーカイブ] をダウンロードします。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:41
 msgid "The solution is located in the `kafka-quickstart` {quickstarts-tree-url}/kafka-quickstart[directory]."
-msgstr ""
+msgstr "このソリューションは `kafka-quickstart` {quickstarts-tree-url}/kafka-quickstart[ディレクトリ] にあります。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:42
@@ -118,7 +118,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:45
 msgid "First, we need a new project. Create a new project with the following command:"
-msgstr ""
+msgstr "まず、新しいプロジェクトが必要です。以下のコマンドで新規プロジェクトを作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:55
@@ -132,27 +132,34 @@ msgid ""
 "    -Dextensions=\"resteasy,smallrye-reactive-messaging-kafka\"\n"
 "cd kafka-quickstart\n"
 msgstr ""
+"mvn io.quarkus:quarkus-maven-plugin:{quarkus-version}:create \\\n"
+"    -DprojectGroupId=org.acme \\\n"
+"    -DprojectArtifactId=kafka-quickstart \\\n"
+"    -DclassName=\"org.acme.kafka.PriceResource\" \\\n"
+"    -Dpath=\"/prices\" \\\n"
+"    -Dextensions=\"resteasy,smallrye-reactive-messaging-kafka\"\n"
+"cd kafka-quickstart\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:58
 msgid "This command generates a Maven project, importing the Reactive Messaging and Kafka connector extensions."
-msgstr ""
+msgstr "このコマンドは、Reactive Messaging と Kafka コネクタエクステンションをインポートして Maven プロジェクトを生成します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:61
 msgid "If you already have your Quarkus project configured, you can add the `smallrye-reactive-messaging-kafka` extension to your project by running the following command in your project base directory:"
-msgstr ""
+msgstr "すでにQuarkusプロジェクトが設定されている場合は、プロジェクトのベースディレクトリーで以下のコマンドを実行することで、プロジェクトに `smallrye-reactive-messaging-kafka` エクステンションを追加することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:65
 #, no-wrap
 msgid "./mvnw quarkus:add-extension -Dextensions=\"smallrye-reactive-messaging-kafka\"\n"
-msgstr ""
+msgstr "./mvnw quarkus:add-extension -Dextensions=\"smallrye-reactive-messaging-kafka\"\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:68
 msgid "This will add the following to your `pom.xml`:"
-msgstr ""
+msgstr "これにより、 `pom.xml` に以下が追加されます:"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:75
@@ -163,12 +170,16 @@ msgid ""
 "    <artifactId>quarkus-smallrye-reactive-messaging-kafka</artifactId>\n"
 "</dependency>\n"
 msgstr ""
+"<dependency>\n"
+"    <groupId>io.quarkus</groupId>\n"
+"    <artifactId>quarkus-smallrye-reactive-messaging-kafka</artifactId>\n"
+"</dependency>\n"
 
 #. type: Block title
 #: upstream/_guides/kafka.adoc:78
 #, no-wrap
 msgid "Dev Services"
-msgstr ""
+msgstr "Dev Services"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:82
@@ -179,19 +190,19 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:84
 #, no-wrap
 msgid "The price generator"
-msgstr ""
+msgstr "価格ジェネレーター"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:87
 msgid "Create the `src/main/java/org/acme/kafka/PriceGenerator.java` file, with the following content:"
-msgstr ""
+msgstr "以下の内容の `src/main/java/org/acme/kafka/PriceGenerator.java` ファイルを作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:91 upstream/_guides/kafka.adoc:132
 #: upstream/_guides/kafka.adoc:175
 #, no-wrap
 msgid "package org.acme.kafka;\n"
-msgstr ""
+msgstr "package org.acme.kafka;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:94
@@ -200,13 +211,15 @@ msgid ""
 "import java.time.Duration;\n"
 "import java.util.Random;\n"
 msgstr ""
+"import java.time.Duration;\n"
+"import java.util.Random;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:96 upstream/_guides/kafka.adoc:139
 #: upstream/_guides/kafka.adoc:489
 #, no-wrap
 msgid "import javax.enterprise.context.ApplicationScoped;\n"
-msgstr ""
+msgstr "import javax.enterprise.context.ApplicationScoped;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:99
@@ -215,6 +228,8 @@ msgid ""
 "import io.smallrye.mutiny.Multi;\n"
 "import org.eclipse.microprofile.reactive.messaging.Outgoing;\n"
 msgstr ""
+"import io.smallrye.mutiny.Multi;\n"
+"import org.eclipse.microprofile.reactive.messaging.Outgoing;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:106
@@ -227,12 +242,18 @@ msgid ""
 "@ApplicationScoped\n"
 "public class PriceGenerator {\n"
 msgstr ""
+"/**\n"
+" * A bean producing random prices every 5 seconds.\n"
+" * The prices are written to a Kafka topic (prices). The Kafka configuration is specified in the application configuration.\n"
+" */\n"
+"@ApplicationScoped\n"
+"public class PriceGenerator {\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:108
 #, no-wrap
 msgid "    private Random random = new Random();\n"
-msgstr ""
+msgstr "    private Random random = new Random();\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:115
@@ -245,6 +266,12 @@ msgid ""
 "                .map(tick -> random.nextInt(100));\n"
 "    }\n"
 msgstr ""
+"    @Outgoing(\"generated-price\")                        // <1>\n"
+"    public Multi<Integer> generate() {                  // <2>\n"
+"        return Multi.createFrom().ticks().every(Duration.ofSeconds(5))\n"
+"                .onOverflow().drop()\n"
+"                .map(tick -> random.nextInt(100));\n"
+"    }\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:117 upstream/_guides/kafka.adoc:158
@@ -257,28 +284,28 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:119
 msgid "Instruct Reactive Messaging to dispatch the items from returned stream to `generated-price`."
-msgstr ""
+msgstr "返されたストリームから `generated-price` にアイテムをディスパッチするように Reactive Messaging に指示します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:120
 msgid "The method returns a Mutiny _stream_ (`Multi`) emitting a random _price_ every 5 seconds."
-msgstr ""
+msgstr "このメソッドは、5 秒ごとにランダムな _価格_ を生成する Mutiny _ストリーム_ (`Multi`) を返します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:123
 msgid "The method returns a _Reactive Stream_. The generated items are sent to the stream named `generated-price`.  This stream is mapped to Kafka using the `application.properties` file that we will create soon."
-msgstr ""
+msgstr "このメソッドは、_Reactive Stream_ を返します。生成されたアイテムは `generated-price` という名前のストリームに送られます。このストリームは、次に作成する `application.properties` ファイルを使用して Kafka にマッピングされます。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:124
 #, no-wrap
 msgid "The price converter"
-msgstr ""
+msgstr "価格 (price) コンバーター"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:128
 msgid "The price converter reads the prices from Kafka, and transforms them.  Create the `src/main/java/org/acme/kafka/PriceConverter.java` file with the following content:"
-msgstr ""
+msgstr "価格コンバーターは、Kafka から価格を読み込んで変換します。以下の内容の `src/main/java/org/acme/kafka/PriceConverter.java` ファイルを作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:137
@@ -289,6 +316,10 @@ msgid ""
 "import org.eclipse.microprofile.reactive.messaging.Incoming;\n"
 "import org.eclipse.microprofile.reactive.messaging.Outgoing;\n"
 msgstr ""
+"import io.smallrye.reactive.messaging.annotations.Broadcast;\n"
+"import org.eclipse.microprofile.reactive.messaging.Acknowledgment;\n"
+"import org.eclipse.microprofile.reactive.messaging.Incoming;\n"
+"import org.eclipse.microprofile.reactive.messaging.Outgoing;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:146
@@ -301,12 +332,18 @@ msgid ""
 "@ApplicationScoped\n"
 "public class PriceConverter {\n"
 msgstr ""
+"/**\n"
+" * A bean consuming data from the \"prices\" Kafka topic and applying some conversion.\n"
+" * The result is pushed to the \"my-data-stream\" stream which is an in-memory stream.\n"
+" */\n"
+"@ApplicationScoped\n"
+"public class PriceConverter {\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:148 upstream/_guides/kafka.adoc:498
 #, no-wrap
 msgid "    private static final double CONVERSION_RATE = 0.88;\n"
-msgstr ""
+msgstr "    private static final double CONVERSION_RATE = 0.88;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:156
@@ -320,42 +357,49 @@ msgid ""
 "        return priceInUsd * CONVERSION_RATE;\n"
 "    }\n"
 msgstr ""
+"    @Incoming(\"prices\")                                     // <1>\n"
+"    @Outgoing(\"my-data-stream\")                             // <2>\n"
+"    @Broadcast                                              // <3>\n"
+"    @Acknowledgment(Acknowledgment.Strategy.PRE_PROCESSING) // <4>\n"
+"    public double process(int priceInUsd) {\n"
+"        return priceInUsd * CONVERSION_RATE;\n"
+"    }\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:160
 msgid "Indicates that the method consumes the items from the `prices` topic"
-msgstr ""
+msgstr "このメソッドが `prices` トピックのアイテムを消費することを示します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:161
 msgid "Indicates that the objects returned by the method are sent to the `my-data-stream` stream"
-msgstr ""
+msgstr "このメソッドによって返されたオブジェクトが `my-data-stream` ストリームに送られることを示します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:162
 msgid "Indicates that the item are dispatched to all _subscribers_"
-msgstr ""
+msgstr "アイテムがすべての _サブスクライバー_ に発送されていることを示します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:163
 msgid "Make sure to acknowledge the incoming message"
-msgstr ""
+msgstr "incoming メッセージの受け取りを確認してください。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:166
 msgid "The `process` method is called for every Kafka _record_ from the `prices` topic (configured in the application configuration).  Every result is sent to the `my-data-stream` in-memory stream."
-msgstr ""
+msgstr "`process` メソッドは、`prices` トピック (アプリケーション設定の中で設定) からの Kafka _レコード_ ごとに呼び出されます。すべての結果は `my-data-stream` インメモリーストリームに送信されます。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:167
 #, no-wrap
 msgid "The price resource"
-msgstr ""
+msgstr "価格リソース"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:171
 msgid "Finally, let's bind our stream to a JAX-RS resource.  Creates the `src/main/java/org/acme/kafka/PriceResource.java` file with the following content:"
-msgstr ""
+msgstr "最後に、ストリームを JAX-RSリソース にバインドしてみましょう。以下の内容の `src/main/java/org/acme/kafka/PriceResource.java` ファイルを作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:178 upstream/_guides/kafka.adoc:628
@@ -364,6 +408,8 @@ msgid ""
 "import io.smallrye.reactive.messaging.annotations.Channel;\n"
 "import org.reactivestreams.Publisher;\n"
 msgstr ""
+"import io.smallrye.reactive.messaging.annotations.Channel;\n"
+"import org.reactivestreams.Publisher;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:185 upstream/_guides/kafka.adoc:635
@@ -376,6 +422,12 @@ msgid ""
 "import javax.ws.rs.core.MediaType;\n"
 "import org.jboss.resteasy.annotations.SseElementType;\n"
 msgstr ""
+"import javax.inject.Inject;\n"
+"import javax.ws.rs.GET;\n"
+"import javax.ws.rs.Path;\n"
+"import javax.ws.rs.Produces;\n"
+"import javax.ws.rs.core.MediaType;\n"
+"import org.jboss.resteasy.annotations.SseElementType;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:191
@@ -387,6 +439,11 @@ msgid ""
 "@Path(\"/prices\")\n"
 "public class PriceResource {\n"
 msgstr ""
+"/**\n"
+" * A simple resource retrieving the in-memory \"my-data-stream\" and sending the items as server-sent events.\n"
+" */\n"
+"@Path(\"/prices\")\n"
+"public class PriceResource {\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:195
@@ -410,26 +467,34 @@ msgid ""
 "    }\n"
 "}\n"
 msgstr ""
+"    @GET\n"
+"    @Path(\"/stream\")\n"
+"    @Produces(MediaType.SERVER_SENT_EVENTS) // <2>\n"
+"    @SseElementType(\"text/plain\") // <3>\n"
+"    public Publisher<Double> stream() { // <4>\n"
+"        return prices;\n"
+"    }\n"
+"}\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:206
 msgid "Injects the `my-data-stream` channel using the `@Channel` qualifier"
-msgstr ""
+msgstr "`@Channel` の修飾子を使って `my-data-stream` チャンネルを注入します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:207
 msgid "Indicates that the content is sent using `Server Sent Events`"
-msgstr ""
+msgstr "`Server Sent Events` を使用してコンテンツが送信されたことを示します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:208
 msgid "Indicates that the data contained within the server sent events is of type `text/plain`"
-msgstr ""
+msgstr "サーバーから送信されたイベントに含まれるデータのタイプが `text/plain` であることを示します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:209
 msgid "Returns the stream (_Reactive Stream_)"
-msgstr ""
+msgstr "ストリーム (_Reactive Stream_) を返します。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:210
@@ -440,27 +505,27 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:214
 msgid "We need to configure the Kafka connector. This is done in the `application.properties` file.  The keys are structured as follows:"
-msgstr ""
+msgstr "Kafka コネクターを設定する必要があります。これは `application.properties` ファイルで行います。このキーは以下のような構造になっています。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:216
 msgid "`mp.messaging.[outgoing|incoming].{channel-name}.property=value`"
-msgstr ""
+msgstr "`mp.messaging.[outgoing|incoming].{channel-name}.property=value`"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:218
 msgid "The `channel-name` segment must match the value set in the `@Incoming` and `@Outgoing` annotation:"
-msgstr ""
+msgstr "`channel-name` セグメントは、 `@Incoming` および `@Outgoing` アノテーションで設定された値と一致する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:220
 msgid "`generated-price` -> sink in which we write the prices"
-msgstr ""
+msgstr "`generated-price` -> sink (価格の書き込み先)"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:221
 msgid "`prices` -> source in which we read the prices"
-msgstr ""
+msgstr "`prices` -> source (価格の読み取り先)"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:228
@@ -471,6 +536,10 @@ msgid ""
 "mp.messaging.outgoing.generated-price.topic=prices\n"
 "mp.messaging.outgoing.generated-price.value.serializer=org.apache.kafka.common.serialization.IntegerSerializer\n"
 msgstr ""
+"# Configure the Kafka sink (we write to it)\n"
+"mp.messaging.outgoing.generated-price.connector=smallrye-kafka\n"
+"mp.messaging.outgoing.generated-price.topic=prices\n"
+"mp.messaging.outgoing.generated-price.value.serializer=org.apache.kafka.common.serialization.IntegerSerializer\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:233
@@ -485,28 +554,28 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:236
 msgid "More details about this configuration is available on the https://kafka.apache.org/documentation/#producerconfigs[Producer configuration] and https://kafka.apache.org/documentation/#consumerconfigs[Consumer configuration] section from the Kafka documentation. These properties are configured with the prefix `kafka`."
-msgstr ""
+msgstr "この設定の詳細は、Kafka ドキュメントの link:https://kafka.apache.org/documentation/#producerconfigs[Producer 設定] と link:https://kafka.apache.org/documentation/#consumerconfigs[Consumer 設定] のセクションを参照してください。これらのプロパティは、`kafka` という接頭辞で設定されます。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:238
 msgid "What about `my-data-stream`? This is an in-memory stream, not connected to a message broker."
-msgstr ""
+msgstr "`my-data-stream` はどうでしょうか? これはインメモリストリームであり、メッセージブローカーには接続されていません。"
 
 #. type: Block title
 #: upstream/_guides/kafka.adoc:240
 #, no-wrap
 msgid "What is \"mp.messaging.incoming.prices.health-readiness-enabled=false\"?"
-msgstr ""
+msgstr "\"mp.messaging.incoming.prices.health-readiness-enabled=false\" とは何ですか？"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:247
 msgid "The `health-readiness-enabled` disables the readiness health check.  By default, it verifies that there is an active connection with the broker.  In our case, the connection only happens when we get the first consumer.  This is because the stream is consumed as an SSE, waiting lazily for the first connection to trigger the whole stream.  So, if you are running in an environment only routing traffic to containers that are _ready_ (such as Kubernetes), it would not send traffic to your application, which, as a consequence, will never connect to Kafka and pass the readiness check."
-msgstr ""
+msgstr "`health-readiness-enabled` は、Readinessヘルスチェックを無効にします。デフォルトでは、ブローカーとのアクティブな接続があるかどうかを検証します。今回のケースでは、最初のコンシューマを取得したときにのみ接続が発生します。これは、ストリームがSSEとして消費され、最初の接続がストリーム全体のトリガーとなるのをのんびりと待っているからです。そのため、 _準備_ ができているコンテナにのみトラフィックをルーティングする環境（Kubernetesなど）で実行している場合、アプリケーションにトラフィックを送らないことになり、結果としてKafkaに接続してReadinessチェックを通過することはありません。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:249
 msgid "More details about health reporting is given in <<kafka-health-check>>."
-msgstr ""
+msgstr "ヘルスレポートについての詳細は、 <<kafka-health-check>>に記載されています。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:254
@@ -522,12 +591,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:258
 msgid "Final touch, the HTML page reading the converted prices using SSE."
-msgstr ""
+msgstr "最後に、SSE を使って変換された価格を読み込む HTML ページです。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:260
 msgid "Create the `src/main/resources/META-INF/resources/prices.html` file, with the following content:"
-msgstr ""
+msgstr "以下の内容の `src/main/resources/META-INF/resources/prices.html` ファイルを作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:268
@@ -539,6 +608,11 @@ msgid ""
 "    <meta charset=\"UTF-8\">\n"
 "    <title>Prices</title>\n"
 msgstr ""
+"<!DOCTYPE html>\n"
+"<html lang=\"en\">\n"
+"<head>\n"
+"    <meta charset=\"UTF-8\">\n"
+"    <title>Prices</title>\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:276
@@ -552,6 +626,13 @@ msgid ""
 "<body>\n"
 "<div class=\"container\">\n"
 msgstr ""
+"    <link rel=\"stylesheet\" type=\"text/css\"\n"
+"          href=\"https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly.min.css\">\n"
+"    <link rel=\"stylesheet\" type=\"text/css\"\n"
+"          href=\"https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly-additions.min.css\">\n"
+"</head>\n"
+"<body>\n"
+"<div class=\"container\">\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:291
@@ -572,17 +653,31 @@ msgid ""
 "</script>\n"
 "</html>\n"
 msgstr ""
+"    <h2>Last price</h2>\n"
+"    <div class=\"row\">\n"
+"    <p class=\"col-md-12\">The last price is <strong><span id=\"content\">N/A</span>&nbsp;&euro;</strong>.</p>\n"
+"    </div>\n"
+"</div>\n"
+"</body>\n"
+"<script src=\"https://code.jquery.com/jquery-3.3.1.min.js\"></script>\n"
+"<script>\n"
+"    var source = new EventSource(\"/prices/stream\");\n"
+"    source.onmessage = function (event) {\n"
+"        document.getElementById(\"content\").innerHTML = event.data;\n"
+"    };\n"
+"</script>\n"
+"</html>\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:294
 msgid "Nothing spectacular here. On each received price, it updates the page."
-msgstr ""
+msgstr "特に目を見張るようなものは何もありません。受信した価格ごとに、ページが更新されます。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:295
 #, no-wrap
 msgid "Get it running"
-msgstr ""
+msgstr "稼動させる"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:298
@@ -593,12 +688,12 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:302
 #, no-wrap
 msgid "./mvnw quarkus:dev\n"
-msgstr ""
+msgstr "./mvnw quarkus:dev\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:305
 msgid "Open `http://localhost:8080/prices.html` in your browser."
-msgstr ""
+msgstr "ブラウザーで `http://localhost:8080/prices.html` を開いてください。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:306
@@ -615,13 +710,13 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:314
 #, no-wrap
 msgid "version: '2'\n"
-msgstr ""
+msgstr "version: '2'\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:316
 #, no-wrap
 msgid "services:\n"
-msgstr ""
+msgstr "services:\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:327
@@ -638,6 +733,16 @@ msgid ""
 "    environment:\n"
 "      LOG_DIR: /tmp/logs\n"
 msgstr ""
+"  zookeeper:\n"
+"    image: strimzi/kafka:0.19.0-kafka-2.5.0\n"
+"    command: [\n"
+"      \"sh\", \"-c\",\n"
+"      \"bin/zookeeper-server-start.sh config/zookeeper.properties\"\n"
+"    ]\n"
+"    ports:\n"
+"      - \"2181:2181\"\n"
+"    environment:\n"
+"      LOG_DIR: /tmp/logs\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:343
@@ -659,16 +764,31 @@ msgid ""
 "      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092\n"
 "      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181\n"
 msgstr ""
+"  kafka:\n"
+"    image: strimzi/kafka:0.19.0-kafka-2.5.0\n"
+"    command: [\n"
+"      \"sh\", \"-c\",\n"
+"      \"bin/kafka-server-start.sh config/server.properties --override listeners=$${KAFKA_LISTENERS} --override advertised.listeners=$${KAFKA_ADVERTISED_LISTENERS} --override zookeeper.connect=$${KAFKA_ZOOKEEPER_CONNECT}\"\n"
+"    ]\n"
+"    depends_on:\n"
+"      - zookeeper\n"
+"    ports:\n"
+"      - \"9092:9092\"\n"
+"    environment:\n"
+"      LOG_DIR: \"/tmp/logs\"\n"
+"      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092\n"
+"      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092\n"
+"      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:346
 msgid "Once created, run `docker-compose up`."
-msgstr ""
+msgstr "作成したら、`docker-compose up` を実行します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:348
 msgid "This is a development cluster, do not use in production."
-msgstr ""
+msgstr "これは開発クラスターであり、本番では使用しないでください。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:350
@@ -705,12 +825,12 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:368
 #, no-wrap
 msgid "Imperative usage"
-msgstr ""
+msgstr "命令的な使用法"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:371
 msgid "Sometimes, you need to have an imperative way of sending messages."
-msgstr ""
+msgstr "時には、命令的な方法でメッセージを送ることが必要になる場合もあります。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:374
@@ -720,7 +840,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:376
 msgid "For this, you can use an `Emitter`."
-msgstr ""
+msgstr "この場合には `Emitter` が利用できます。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:381
@@ -729,6 +849,8 @@ msgid ""
 "import org.eclipse.microprofile.reactive.messaging.Channel;\n"
 "import org.eclipse.microprofile.reactive.messaging.Emitter;\n"
 msgstr ""
+"import org.eclipse.microprofile.reactive.messaging.Channel;\n"
+"import org.eclipse.microprofile.reactive.messaging.Emitter;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:387
@@ -740,6 +862,11 @@ msgid ""
 "import javax.ws.rs.Consumes;\n"
 "import javax.ws.rs.core.MediaType;\n"
 msgstr ""
+"import javax.inject.Inject;\n"
+"import javax.ws.rs.POST;\n"
+"import javax.ws.rs.Path;\n"
+"import javax.ws.rs.Consumes;\n"
+"import javax.ws.rs.core.MediaType;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:390
@@ -748,12 +875,14 @@ msgid ""
 "@Path(\"/prices\")\n"
 "public class PriceResource {\n"
 msgstr ""
+"@Path(\"/prices\")\n"
+"public class PriceResource {\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:392
 #, no-wrap
 msgid "    @Inject @Channel(\"price-create\") Emitter<Double> priceEmitter;\n"
-msgstr ""
+msgstr "    @Inject @Channel(\"price-create\") Emitter<Double> priceEmitter;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:399
@@ -766,42 +895,48 @@ msgid ""
 "    }\n"
 "}\n"
 msgstr ""
+"    @POST\n"
+"    @Consumes(MediaType.TEXT_PLAIN)\n"
+"    public void addPrice(Double price) {\n"
+"        priceEmitter.send(price);\n"
+"    }\n"
+"}\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:403
 msgid "The `Emitter` configuration is done the same way as the other stream configuration used by `@Incoming` and `@Outgoing`.  In addition, you can use `@OnOverflow` to configure back-pressure strategy."
-msgstr ""
+msgstr "`Emitter` の設定は、`@Incoming` と `@Outgoing` が使用する他のストリームの設定と同じ方法で行います。さらに、`@OnOverflow` を使用して、バックプレッシャー戦略を設定することができます。"
 
 #. type: Block title
 #: upstream/_guides/kafka.adoc:405
 #, no-wrap
 msgid "Deprecation"
-msgstr ""
+msgstr "非推奨"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:408
 msgid "The `io.smallrye.reactive.messaging.annotations.Emitter`, `io.smallrye.reactive.messaging.annotations.Channel` and `io.smallrye.reactive.messaging.annotations.OnOverflow` classes are now deprecated and replaced by:"
-msgstr ""
+msgstr "`io.smallrye.reactive.messaging.annotations.Emitter`、`io.smallrye.reactive.messaging.annotations.Channel`、`io.smallrye.reactive.messaging.annotations.OnOverflow` クラスは現在非推奨となっており、以下のように置き換えられています。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:410
 msgid "`org.eclipse.microprofile.reactive.messaging.Emitter`"
-msgstr ""
+msgstr "`org.eclipse.microprofile.reactive.messaging.Emitter`"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:411
 msgid "`org.eclipse.microprofile.reactive.messaging.Channel`"
-msgstr ""
+msgstr "`org.eclipse.microprofile.reactive.messaging.Channel`"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:412
 msgid "`org.eclipse.microprofile.reactive.messaging.OnOverflow`"
-msgstr ""
+msgstr "`org.eclipse.microprofile.reactive.messaging.OnOverflow`"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:414
 msgid "The new `Emitter.send` method returns a `CompletionStage` completed when the produced message is acknowledged."
-msgstr ""
+msgstr "新しい `Emitter.send` メソッドは、生成されたメッセージが確認されると、`CompletionStage` の完了を返します。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:417
@@ -812,17 +947,17 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:421
 msgid "Quarkus provides several health checks for Kafka.  These checks are used in combination with the `quarkus-smallrye-health` extension."
-msgstr ""
+msgstr "Quarkusは、Kafkaのヘルスチェックをいくつか提供しています。これらのチェックは、 `quarkus-smallrye-health` エクステンションと組み合わせて使用します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:427
 msgid "When using the `quarkus-kafka` extension, you can enable _readiness_ health check by setting the `quarkus.kafka.health.enabled` property to `true` in your `application.properties`.  This check reports the status of the interaction with a _default_ Kafka broker (configured using `kafka.bootstrap.servers`).  That check requires an _admin connection_ with the Kafka broker.  This check is disabled by default.  If enabled, when you access the `/q/health/ready` endpoint of your application, you will have information about the connection validation status."
-msgstr ""
+msgstr "`quarkus-kafka` エクステンションを使用している場合、 `application.properties` で `quarkus.kafka.health.enabled` プロパティを `true` に設定することで、 _Readinessヘルスチェック_ を有効にすることができます。このチェックでは、 _デフォルトの_ Kafkaブローカー（ `kafka.bootstrap.servers` を使用して構成）との相互作用の状態が報告されます。そのチェックには、Kafka ブローカーとの _admin接続_ が必要です。このチェックは、デフォルトでは無効になっています。有効にすると、アプリケーションの `/q/health/ready` エンドポイントにアクセスしたときに、接続検証のステータスに関する情報が得られます。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:432
 msgid "When using Reactive Messaging and the Kafka connector, each configured channel (incoming or outgoing) provides a _liveness_ and _readiness_ check.  The _liveness_ check captures any unrecoverable failure happening during the communication with Kafka.  The _readiness_ check verifies that communication with Kafka is established.  For each channel, you can disable the checks using:"
-msgstr ""
+msgstr "Reactive MessagingとKafkaコネクタを使用する場合、設定された各チャネル（受信または送信）は、 _Liveness_ と _Readiness_ のチェックを提供します。 _Liveness_ チェックでは、Kafkaとの通信中に発生した回復不能な障害を捕捉します。 _Readiness_ チェックでは、Kafkaとの通信が確立されていることを確認します。各チャネルでは、以下の方法でチェックを無効にすることができます。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:436
@@ -857,17 +992,17 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:449
 msgid "You can configure the `bootstrap.servers` for each channel. Defaults is `kafka.bootstrap.servers`."
-msgstr ""
+msgstr "各チャンネルの `bootstrap.servers` を設定することができます。デフォルトは `kafka.bootstrap.servers` です。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:453
 msgid "Reactive Messaging readiness check offers two strategies.  The default strategy verifies that an active connection is established with the broker.  This approach is not intrusive as it's based on built-in metrics."
-msgstr ""
+msgstr "Reactive Messaging のReadinessチェックには2つのストラテジーがあります。デフォルトの方法では、ブローカーとの間にアクティブな接続が確立されているかどうかを確認します。この方法は、組み込みのメトリクスに基づいているため、邪魔にはなりません。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:456
 msgid "Using the `health-readiness-topic-verification=true` attribute, you can also check the topics used by the application exist in the broker.  Note that, to achieve this, an _admin connection_ is required."
-msgstr ""
+msgstr "`health-readiness-topic-verification=true` 属性を使用すると、アプリケーションが使用するトピックがブローカーに存在することも確認できます。なお、これを行うためには、 _admin接続_ が必要です。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:457
@@ -878,18 +1013,18 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:460
 msgid "Quarkus has built-in capabilities to deal with JSON Kafka messages."
-msgstr ""
+msgstr "Quarkus には、JSON Kafka メッセージを扱う機能が組み込まれています。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:462
 msgid "Imagine we have a `Fruit` pojo as follows:"
-msgstr ""
+msgstr "以下のように `Fruit` の pojo があると想像してみてください。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:466
 #, no-wrap
 msgid "public class Fruit {\n"
-msgstr ""
+msgstr "public class Fruit {\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:469
@@ -898,6 +1033,8 @@ msgid ""
 "    public String name;\n"
 "    public int price;\n"
 msgstr ""
+"    public String name;\n"
+"    public int price;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:472
@@ -906,6 +1043,8 @@ msgid ""
 "    public Fruit() {\n"
 "    }\n"
 msgstr ""
+"    public Fruit() {\n"
+"    }\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:478
@@ -917,11 +1056,16 @@ msgid ""
 "    }\n"
 "}\n"
 msgstr ""
+"    public Fruit(String name, int price) {\n"
+"        this.name = name;\n"
+"        this.price = price;\n"
+"    }\n"
+"}\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:481
 msgid "And we want to use it to receive messages from Kafka, make some price transformation, and send messages back to Kafka."
-msgstr ""
+msgstr "そして、Kafka からメッセージを受信して、何らかの価格変換を行い、Kafka にメッセージを送り返すために使いたいと考えています。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:487
@@ -931,6 +1075,9 @@ msgid ""
 "import org.eclipse.microprofile.reactive.messaging.Incoming;\n"
 "import org.eclipse.microprofile.reactive.messaging.Outgoing;\n"
 msgstr ""
+"import io.smallrye.reactive.messaging.annotations.Broadcast;\n"
+"import org.eclipse.microprofile.reactive.messaging.Incoming;\n"
+"import org.eclipse.microprofile.reactive.messaging.Outgoing;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:496
@@ -943,6 +1090,12 @@ msgid ""
 "@ApplicationScoped\n"
 "public class FruitProcessor {\n"
 msgstr ""
+"/**\n"
+"* A bean consuming data from the \"fruit-in\" Kafka topic and applying some price conversion.\n"
+"* The result is pushed to the \"fruit-out\" stream.\n"
+"*/\n"
+"@ApplicationScoped\n"
+"public class FruitProcessor {\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:506
@@ -956,16 +1109,23 @@ msgid ""
 "        return fruit;\n"
 "    }\n"
 msgstr ""
+"    @Incoming(\"fruit-in\")\n"
+"    @Outgoing(\"fruit-out\")\n"
+"    @Broadcast\n"
+"    public Fruit process(Fruit fruit) {\n"
+"        fruit.price = fruit.price * CONVERSION_RATE;\n"
+"        return fruit;\n"
+"    }\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:511
 msgid "To do this, we will need to setup JSON serialization with Jackson or JSON-B."
-msgstr ""
+msgstr "そのためには、Jackson や JSON-B で JSON シリアライゼーションを設定する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:513
 msgid "With JSON serialization correctly configured, you can also use `Publisher<Fruit>` and `Emitter<Fruit>`."
-msgstr ""
+msgstr "JSON シリアライゼーションが正しく設定されていれば、 `Publisher<Fruit>` や `Emitter<Fruit>` も利用できます。"
 
 #. type: Title ===
 #: upstream/_guides/kafka.adoc:515
@@ -976,7 +1136,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:518
 msgid "First, you need to include the `quarkus-jackson` extension (if you already use the `quarkus-resteasy-jackson` extension, this is not needed)."
-msgstr ""
+msgstr "まず、`quarkus-jackson` のエクステンションを含める必要があります (すでに `quarkus-resteasy-jackson` のエクステンションを使用している場合は、これは必要ありません)。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:525
@@ -987,6 +1147,10 @@ msgid ""
 "    <artifactId>quarkus-jackson</artifactId>\n"
 "</dependency>\n"
 msgstr ""
+"<dependency>\n"
+"    <groupId>io.quarkus</groupId>\n"
+"    <artifactId>quarkus-jackson</artifactId>\n"
+"</dependency>\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:529
@@ -1002,17 +1166,17 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:536
 #, no-wrap
 msgid "package com.acme.fruit.jackson;\n"
-msgstr ""
+msgstr "package com.acme.fruit.jackson;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:538
 #, no-wrap
 msgid "import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;\n"
-msgstr ""
+msgstr "import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:545
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "public class FruitDeserializer extends ObjectMapperDeserializer<Fruit> {\n"
 "    public FruitDeserializer() {\n"
@@ -1021,11 +1185,17 @@ msgid ""
 "    }\n"
 "}\n"
 msgstr ""
+"public class FruitDeserializer extends ObjectMapperDeserializer<Fruit> {\n"
+"    public FruitDeserializer(){\n"
+"        // pass the class to the parent.\n"
+"        super(Fruit.class);\n"
+"    }\n"
+"}\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:548
 msgid "Finally, configure your streams to use the Jackson serializer and deserializer."
-msgstr ""
+msgstr "最後に、Jackson シリアライザーとデシリアライザーを使用するようにストリームを設定します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:555
@@ -1036,6 +1206,10 @@ msgid ""
 "mp.messaging.incoming.fruit-in.topic=fruit-in\n"
 "mp.messaging.incoming.fruit-in.value.deserializer=com.acme.fruit.jackson.FruitDeserializer\n"
 msgstr ""
+"# Configure the Kafka source (we read from it)\n"
+"mp.messaging.incoming.fruit-in.connector=smallrye-kafka\n"
+"mp.messaging.incoming.fruit-in.topic=fruit-in\n"
+"mp.messaging.incoming.fruit-in.value.deserializer=com.acme.fruit.jackson.FruitDeserializer\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:560
@@ -1046,11 +1220,15 @@ msgid ""
 "mp.messaging.outgoing.fruit-out.topic=fruit-out\n"
 "mp.messaging.outgoing.fruit-out.value.serializer=io.quarkus.kafka.client.serialization.ObjectMapperSerializer\n"
 msgstr ""
+"# Configure the Kafka sink (we write to it)\n"
+"mp.messaging.outgoing.fruit-out.connector=smallrye-kafka\n"
+"mp.messaging.outgoing.fruit-out.topic=fruit-out\n"
+"mp.messaging.outgoing.fruit-out.value.serializer=io.quarkus.kafka.client.serialization.ObjectMapperSerializer\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:563
 msgid "Now, your Kafka messages will contain a Jackson serialized representation of your Fruit pojo."
-msgstr ""
+msgstr "これで、Kafka メッセージには、Fruit pojo の Jackson によるシリアライズ表現が含まれるようになります。"
 
 #. type: Title ===
 #: upstream/_guides/kafka.adoc:565
@@ -1061,7 +1239,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:568
 msgid "First, you need to include the `quarkus-jsonb` extension (if you already use the `quarkus-resteasy-jsonb` extension, this is not needed)."
-msgstr ""
+msgstr "まず、`quarkus-jsonb` のエクステンションを含める必要があります (すでに `quarkus-resteasy-jsonb` のエクステンションを使用している場合は不要です)。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:575
@@ -1072,6 +1250,10 @@ msgid ""
 "    <artifactId>quarkus-jsonb</artifactId>\n"
 "</dependency>\n"
 msgstr ""
+"<dependency>\n"
+"    <groupId>io.quarkus</groupId>\n"
+"    <artifactId>quarkus-jsonb</artifactId>\n"
+"</dependency>\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:579
@@ -1087,17 +1269,17 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:586
 #, no-wrap
 msgid "package com.acme.fruit.jsonb;\n"
-msgstr ""
+msgstr "package com.acme.fruit.jsonb;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:588
 #, no-wrap
 msgid "import io.quarkus.kafka.client.serialization.JsonbDeserializer;\n"
-msgstr ""
+msgstr "import io.quarkus.kafka.client.serialization.JsonbDeserializer;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:595
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "public class FruitDeserializer extends JsonbDeserializer<Fruit> {\n"
 "    public FruitDeserializer() {\n"
@@ -1106,6 +1288,12 @@ msgid ""
 "    }\n"
 "}\n"
 msgstr ""
+"public class FruitDeserializer extends JsonbDeserializer<Fruit> {\n"
+"    public FruitDeserializer(){\n"
+"        // pass the class to the parent.\n"
+"        super(Fruit.class);\n"
+"    }\n"
+"}\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:599
@@ -1115,7 +1303,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:601
 msgid "Finally, configure your streams to use the JSON-B serializer and deserializer."
-msgstr ""
+msgstr "最後に、JSON-B シリアライザーとデシリアライザーを使用するようにストリームを設定します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:608
@@ -1126,6 +1314,10 @@ msgid ""
 "mp.messaging.incoming.fruit-in.topic=fruit-in\n"
 "mp.messaging.incoming.fruit-in.value.deserializer=com.acme.fruit.jsonb.FruitDeserializer\n"
 msgstr ""
+"# Configure the Kafka source (we read from it)\n"
+"mp.messaging.incoming.fruit-in.connector=smallrye-kafka\n"
+"mp.messaging.incoming.fruit-in.topic=fruit-in\n"
+"mp.messaging.incoming.fruit-in.value.deserializer=com.acme.fruit.jsonb.FruitDeserializer\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:613
@@ -1136,11 +1328,15 @@ msgid ""
 "mp.messaging.outgoing.fruit-out.topic=fruit-out\n"
 "mp.messaging.outgoing.fruit-out.value.serializer=io.quarkus.kafka.client.serialization.JsonbSerializer\n"
 msgstr ""
+"# Configure the Kafka sink (we write to it)\n"
+"mp.messaging.outgoing.fruit-out.connector=smallrye-kafka\n"
+"mp.messaging.outgoing.fruit-out.topic=fruit-out\n"
+"mp.messaging.outgoing.fruit-out.value.serializer=io.quarkus.kafka.client.serialization.JsonbSerializer\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:616
 msgid "Now, your Kafka messages will contain a JSON-B serialized representation of your Fruit pojo."
-msgstr ""
+msgstr "これで、Kafka のメッセージには、JSON-B でシリアライズされた Fruit pojo の表現が含まれます。"
 
 #. type: Title ===
 #: upstream/_guides/kafka.adoc:617
@@ -1151,12 +1347,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:621
 msgid "If you want RESTEasy to send JSON Server-Sent Events, you need to use the `@SseElementType` annotation to define the content type of the events, as the method will be annotated with `@Produces(MediaType.SERVER_SENT_EVENTS)`."
-msgstr ""
+msgstr "RESTEasy で JSON Server-Sent Events を送信したい場合は、`@SseElementType` アノテーションを使用してイベントのコンテンツタイプを定義する必要があります。これは、このメソッドが `@Produces(MediaType.SERVER_SENT_EVENTS)` のアノテーションが付くためです。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:623
 msgid "The following example shows how to use SSE from a Kafka topic source."
-msgstr ""
+msgstr "次の例は、Kafka トピックソースから SSE を使用する方法を示しています。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:638
@@ -1165,6 +1361,8 @@ msgid ""
 "@Path(\"/fruits\")\n"
 "public class FruitResource {\n"
 msgstr ""
+"@Path(\"/fruits\")\n"
+"public class FruitResource {\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:641
@@ -1173,6 +1371,8 @@ msgid ""
 "    @Inject\n"
 "    @Channel(\"fruit-out\") Publisher<Fruit> fruits;\n"
 msgstr ""
+"    @Inject\n"
+"    @Channel(\"fruit-out\") Publisher<Fruit> fruits;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:650
@@ -1187,6 +1387,14 @@ msgid ""
 "    }\n"
 "}\n"
 msgstr ""
+"    @GET\n"
+"    @Path(\"/stream\")\n"
+"    @Produces(MediaType.SERVER_SENT_EVENTS)\n"
+"    @SseElementType(MediaType.APPLICATION_JSON)\n"
+"    public Publisher<Fruit> stream() {\n"
+"        return fruits;\n"
+"    }\n"
+"}\n"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:652
@@ -1307,7 +1515,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:706
 msgid "`java.lang.String`"
-msgstr ""
+msgstr "`java.lang.String`"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:707
@@ -1327,17 +1535,17 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:710
 msgid "`io.vertx.core.buffer.Buffer`"
-msgstr ""
+msgstr "`io.vertx.core.buffer.Buffer`"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:711
 msgid "`io.vertx.core.json.JsonObject`"
-msgstr ""
+msgstr "`io.vertx.core.json.JsonObject`"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:712
 msgid "`io.vertx.core.json.JsonArray`"
-msgstr ""
+msgstr "`io.vertx.core.json.JsonArray`"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:713
@@ -1378,23 +1586,23 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:722
 #, no-wrap
 msgid "Blocking processing"
-msgstr ""
+msgstr "ブロッキング処理"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:726
 msgid "You often need to combine Reactive Messaging with blocking processing such as database interactions.  For this, you need to use the `@Blocking` annotation indicating that the processing is _blocking_ and cannot be run on the caller thread."
-msgstr ""
+msgstr "Reactive Messaging とデータベースインタラクションなどのブロッキング処理を組み合わせる必要がある状況は少なくありません。そのためには、処理が _ブロックしていて_ 呼び出し元のスレッドで実行できないこと示している `@Blocking` アノテーションを使用する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:728
 msgid "For example, The following code illustrates how you can store incoming payloads to a database using Hibernate with Panache:"
-msgstr ""
+msgstr "例えば、以下のコードは、Hibernate with Panacheを 使用してデータベースに受信ペイロードを格納する方法を示しています。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:732
 #, no-wrap
 msgid "package org.acme.panache;\n"
-msgstr ""
+msgstr "package org.acme.panache;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:735
@@ -1403,6 +1611,8 @@ msgid ""
 "import io.smallrye.reactive.messaging.annotations.Blocking;\n"
 "import org.eclipse.microprofile.reactive.messaging.Incoming;\n"
 msgstr ""
+"import io.smallrye.reactive.messaging.annotations.Blocking;\n"
+"import org.eclipse.microprofile.reactive.messaging.Incoming;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:738
@@ -1411,6 +1621,8 @@ msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
 "import javax.transaction.Transactional;\n"
 msgstr ""
+"import javax.enterprise.context.ApplicationScoped;\n"
+"import javax.transaction.Transactional;\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:741
@@ -1419,6 +1631,8 @@ msgid ""
 "@ApplicationScoped\n"
 "public class PriceStorage {\n"
 msgstr ""
+"@ApplicationScoped\n"
+"public class PriceStorage {\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:750
@@ -1433,31 +1647,39 @@ msgid ""
 "        price.persist();\n"
 "    }\n"
 msgstr ""
+"    @Incoming(\"prices\")\n"
+"    @Blocking\n"
+"    @Transactional\n"
+"    public void store(int priceInUsd) {\n"
+"        Price price = new Price();\n"
+"        price.value = priceInUsd;\n"
+"        price.persist();\n"
+"    }\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:755
 msgid "The complete example is available in the `kafka-panache-quickstart` {quickstarts-tree-url}/kafka-panache-quickstart[directory]."
-msgstr ""
+msgstr "完全な例は `kafka-panache-quickstart` {quickstarts-tree-url}/kafka-panache-quickstart[ディレクトリー] にあります。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:759
 msgid "There are 2 `@Blocking` annotations:"
-msgstr ""
+msgstr "`@Blocking` アノテーションは 2 つあります。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:761
 msgid "`io.smallrye.reactive.messaging.annotations.Blocking`"
-msgstr ""
+msgstr "`io.smallrye.reactive.messaging.annotations.Blocking`"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:762
 msgid "`io.smallrye.common.annotation.Blocking`"
-msgstr ""
+msgstr "`io.smallrye.common.annotation.Blocking`"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:767
 msgid "They have the same effect.  Thus, you can use both.  The first one provides more fine-grain tuning such as the worker pool to use and whether it preserves the order.  The second one, used in also with other reactive features of Quarkus, uses the default worker pool and preserves the order."
-msgstr ""
+msgstr "効果はどちらも同じです。したがって、両方を使うことができます。最初のものは、使用するワーカープールや順序を保持するかどうかなど、より細かい調整が可能です。2 番目のものは、Quarkus の他のリアクティブ機能でも使用され、デフォルトのワーカープールを使用し、順序を保持します。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:769
@@ -1469,22 +1691,22 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:771
 #, no-wrap
 msgid "Testing without a broker"
-msgstr ""
+msgstr "ブローカーなしでのテスト"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:775
 msgid "It can be useful to test the application without having to start a Kafka broker.  To achieve this, you can _switch_ the channels managed by the Kafka connector to _in-memory_."
-msgstr ""
+msgstr "Kafka ブローカーを起動しなくてもアプリケーションをテストできるのは便利です。これを行うには、Kafka コネクターで管理しているチャンネルを _インメモリー_ に _切り替え_ できます。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:777
 msgid "This approach only works for JVM tests. It cannot be used for native tests (because they do not support injection)."
-msgstr ""
+msgstr "このアプローチは、JVM テストでのみ機能します。インジェクションには対応していないため、ネイティブテストには使用できません。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:779
 msgid "First, add the following dependency to your application:"
-msgstr ""
+msgstr "まず、以下の依存関係をアプリケーションに追加します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:787
@@ -1496,17 +1718,22 @@ msgid ""
 "    <scope>test</scope>\n"
 "</dependency>\n"
 msgstr ""
+"<dependency>\n"
+"    <groupId>io.smallrye.reactive</groupId>\n"
+"    <artifactId>smallrye-reactive-messaging-in-memory</artifactId>\n"
+"    <scope>test</scope>\n"
+"</dependency>\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:790
 msgid "Then, create a Quarkus Test Resource as follows:"
-msgstr ""
+msgstr "そして、以下のように Quarkus Test Resource を作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:794
 #, no-wrap
 msgid "public class KafkaTestResourceLifecycleManager implements QuarkusTestResourceLifecycleManager {\n"
-msgstr ""
+msgstr "public class KafkaTestResourceLifecycleManager implements QuarkusTestResourceLifecycleManager {\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:804
@@ -1522,6 +1749,15 @@ msgid ""
 "        return env;  // <3>\n"
 "    }\n"
 msgstr ""
+"    @Override\n"
+"    public Map<String, String> start() {\n"
+"        Map<String, String> env = new HashMap<>();\n"
+"        Map<String, String> props1 = InMemoryConnector.switchIncomingChannelsToInMemory(\"orders\");  // <1>\n"
+"        Map<String, String> props2 = InMemoryConnector.switchOutgoingChannelsToInMemory(\"queue\");   // <2>\n"
+"        env.putAll(props1);\n"
+"        env.putAll(props2);\n"
+"        return env;  // <3>\n"
+"    }\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:810
@@ -1533,31 +1769,36 @@ msgid ""
 "    }\n"
 "}\n"
 msgstr ""
+"    @Override\n"
+"    public void stop() {\n"
+"        InMemoryConnector.clear();  // <4>\n"
+"    }\n"
+"}\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:812
 msgid "Switch the incoming channel \"orders\" (expecting messages from Kafka) to in-memory."
-msgstr ""
+msgstr "(Kafka からのメッセージが想定される) 受信チャンネル \"order\" をインメモリーに切り替えます。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:813
 msgid "Switch the outgoing channel \"queue\" (writing messages to Kafka) to in-memory."
-msgstr ""
+msgstr "送信チャネル \"キュー\" (Kafka へのメッセージの書き込み) をインメモリーに切り替えます。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:814
 msgid "Builds and returns a `Map` containing all the properties required to configure the application to use in-memory channels."
-msgstr ""
+msgstr "インメモリーチャネルを使用するためのアプリケーション設定に必要なすべてのプロパティを含む `Map` をビルドして返します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:815
 msgid "When the test stops, clear the `InMemoryConnector` (discard all the received and sent messages)"
-msgstr ""
+msgstr "テストが停止したら、`InMemoryConnector` をクリアします (受信したメッセージと送信したメッセージをすべて破棄してください)。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:817
 msgid "Create a Quarkus Test using the test resource created above:"
-msgstr ""
+msgstr "上記で作成したテストリソースを使用して Quarkus テストを作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:823
@@ -1567,6 +1808,9 @@ msgid ""
 "@QuarkusTestResource(KafkaTestResourceLifecycleManager.class)\n"
 "class BaristaTest {\n"
 msgstr ""
+"@QuarkusTest\n"
+"@QuarkusTestResource(KafkaTestResourceLifecycleManager.class)\n"
+"class BaristaTest {\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:826
@@ -1575,6 +1819,8 @@ msgid ""
 "    @Inject @Any\n"
 "    InMemoryConnector connector; // <1>\n"
 msgstr ""
+"    @Inject @Any\n"
+"    InMemoryConnector connector; // <1>\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:831
@@ -1585,6 +1831,10 @@ msgid ""
 "        InMemorySource<Order> orders = connector.source(\"orders\"); // <2>\n"
 "        InMemorySink<Beverage> queue = connector.sink(\"queue\");    // <3>\n"
 msgstr ""
+"    @Test\n"
+"    void testProcessOrder() {\n"
+"        InMemorySource<Order> orders = connector.source(\"orders\"); // <2>\n"
+"        InMemorySink<Beverage> queue = connector.sink(\"queue\");    // <3>\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:836
@@ -1595,18 +1845,22 @@ msgid ""
 "        order.setName(\"Coffee lover\");\n"
 "        order.setOrderId(\"1234\");\n"
 msgstr ""
+"        Order order = new Order();\n"
+"        order.setProduct(\"coffee\");\n"
+"        order.setName(\"Coffee lover\");\n"
+"        order.setOrderId(\"1234\");\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:838
 #, no-wrap
 msgid "        orders.send(order);  // <4>\n"
-msgstr ""
+msgstr "        orders.send(order);  // <4>\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:840
 #, no-wrap
 msgid "        await().<List<? extends Message<Beverage>>>until(queue::received, t -> t.size() == 1); // <5>\n"
-msgstr ""
+msgstr "        await().<List<? extends Message<Beverage>>>until(queue::received, t -> t.size() == 1); // <5>\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:847
@@ -1619,54 +1873,60 @@ msgid ""
 "        Assertions.assertEquals(\"1234\", queuedBeverage.getOrderId());\n"
 "    }\n"
 msgstr ""
+"        Beverage queuedBeverage = queue.received().get(0).getPayload();\n"
+"        Assertions.assertEquals(Beverage.State.READY, queuedBeverage.getPreparationState());\n"
+"        Assertions.assertEquals(\"coffee\", queuedBeverage.getBeverage());\n"
+"        Assertions.assertEquals(\"Coffee lover\", queuedBeverage.getCustomer());\n"
+"        Assertions.assertEquals(\"1234\", queuedBeverage.getOrderId());\n"
+"    }\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:851
 msgid "Inject the in-memory connector in your test class."
-msgstr ""
+msgstr "テストクラスにインメモリーコネクタ－を挿入します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:852
 msgid "Retrieve the incoming channel (`orders`) - the channel must have been switched to in-memory in the test resource."
-msgstr ""
+msgstr "受信チャンネルを取得します (`orders`) - テストリソース内でチャンネルがインメモリーに切り替えられている必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:853
 msgid "Retrieve the outgoing channel (`queue`) - the channel must have been switched to in-memory in the test resource."
-msgstr ""
+msgstr "送信チャネルを取得します (`queue`) - テストリソース内でチャネルがインメモリーに切り替えられている必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:854
 msgid "Use the `send` method to send a message to the `orders` channel. So, the application will process this message."
-msgstr ""
+msgstr "`send` メソッドを使用して、`orders` チャンネルにメッセージを送信します。つまり、アプリケーションはこのメッセージを処理します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:855
 msgid "Use the `received` method to check the messages produced by the application."
-msgstr ""
+msgstr "アプリケーションが生成するメッセージを確認するには、`received` メソッドを使用します。"
 
 #. type: Title ===
 #: upstream/_guides/kafka.adoc:856
 #, no-wrap
 msgid "Starting Kafka in a test resource"
-msgstr ""
+msgstr "テストリソースでの Kafka の起動"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:860
 msgid "Alternatively, you can start a Kafka broker in a test resource.  The following snippet shows a test resource starting a Kafka broker using https://www.testcontainers.org/modules/kafka/[Testcontainers]:"
-msgstr ""
+msgstr "あるいは、テストリソースで Kafka ブローカを起動することもできます。次のスニペットは、 https://www.testcontainers.org/modules/kafka/[Testcontainers] を使用して Kafka ブローカを起動するテストリソースを示しています。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:864
 #, no-wrap
 msgid "public class KafkaResource implements QuarkusTestResourceLifecycleManager {\n"
-msgstr ""
+msgstr "public class KafkaResource implements QuarkusTestResourceLifecycleManager {\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:866
 #, no-wrap
 msgid "    private final KafkaContainer kafka = new KafkaContainer();\n"
-msgstr ""
+msgstr "    private final KafkaContainer kafka = new KafkaContainer();\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:872
@@ -1678,6 +1938,11 @@ msgid ""
 "        return Collections.singletonMap(\"kafka.bootstrap.servers\", kafka.getBootstrapServers());  // <1>\n"
 "    }\n"
 msgstr ""
+"    @Override\n"
+"    public Map<String, String> start() {\n"
+"        kafka.start();\n"
+"        return Collections.singletonMap(\"kafka.bootstrap.servers\", kafka.getBootstrapServers());  // <1>\n"
+"    }\n"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:878
@@ -1689,11 +1954,16 @@ msgid ""
 "    }\n"
 "}\n"
 msgstr ""
+"    @Override\n"
+"    public void stop() {\n"
+"        kafka.close();\n"
+"    }\n"
+"}\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:880
 msgid "Configure the Kafka bootstrap location, so the application connects to this broker."
-msgstr ""
+msgstr "アプリケーションがこのブローカーに接続するように、Kafka ブートストラップの場所を設定します。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:881
@@ -1704,7 +1974,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:885
 msgid "If your Kafka broker uses OAuth as authentication mechanism, you need to configure the Kafka consumer to enable this authentication process.  First, add the following dependency to your application:"
-msgstr ""
+msgstr "Kafka ブローカーが認証メカニズムとして OAuth を使用している場合は、この認証プロセスを有効にするために Kafka コンシューマーを設定する必要があります。まず、以下の依存関係をアプリケーションに追加します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:892
@@ -1715,11 +1985,15 @@ msgid ""
 "    <artifactId>kafka-oauth-client</artifactId>\n"
 "</dependency>\n"
 msgstr ""
+"<dependency>\n"
+"    <groupId>io.strimzi</groupId>\n"
+"    <artifactId>kafka-oauth-client</artifactId>\n"
+"</dependency>\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:896
 msgid "This dependency provides the callback handler required to handle the OAuth workflow.  Then, in the `application.properties`, add:"
-msgstr ""
+msgstr "この依存関係は、OAuth ワークフローを処理するために必要なコールバックハンドラーを提供します。そして、`application.properties` で追加します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:906
@@ -1733,16 +2007,23 @@ msgid ""
 "  oauth.token.endpoint.uri=\"http://keycloak:8080/auth/realms/kafka-authz/protocol/openid-connect/token\" ;\n"
 "mp.messaging.connector.smallrye-kafka.sasl.login.callback.handler.class=io.strimzi.kafka.oauth.client.JaasClientOauthLoginCallbackHandler\n"
 msgstr ""
+"mp.messaging.connector.smallrye-kafka.security.protocol=SASL_PLAINTEXT\n"
+"mp.messaging.connector.smallrye-kafka.sasl.mechanism=OAUTHBEARER\n"
+"mp.messaging.connector.smallrye-kafka.sasl.jaas.config=org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule required \\\n"
+"  oauth.client.id=\"team-a-client\" \\\n"
+"  oauth.client.secret=\"team-a-client-secret\" \\\n"
+"  oauth.token.endpoint.uri=\"http://keycloak:8080/auth/realms/kafka-authz/protocol/openid-connect/token\" ;\n"
+"mp.messaging.connector.smallrye-kafka.sasl.login.callback.handler.class=io.strimzi.kafka.oauth.client.JaasClientOauthLoginCallbackHandler\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:909
 msgid "Update the `oauth.client.id`, `oauth.client.secret` and `oauth.token.endpoint.uri` values."
-msgstr ""
+msgstr "`oauth.client.id`、`oauth.client.secret`、`oauth.token.endpoint.uri` の値を更新します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:911
 msgid "OAuth authentication works for both JVM and native modes."
-msgstr ""
+msgstr "OAuth 認証は JVM とネイティブモードの両方で動作します。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:912
@@ -1753,7 +2034,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:915
 msgid "On _outgoing_ channels, you can enable Snappy compression by setting the `compression.type` attribute to `snappy`:"
-msgstr ""
+msgstr "_outgoing_ チャンネルでは、 `compression.type` 属性を `snappy` に設定することで、Snappy 圧縮を有効にすることができます。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:919
@@ -1764,7 +2045,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:923
 msgid "In JVM mode, it will work out of the box.  However, to compile your application to a native executable, you need to:"
-msgstr ""
+msgstr "JVMモードでは、変更なしで動作します。しかし、アプリケーションをネイティブ実行ファイルにコンパイルするには、以下のことが必要です。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:925
@@ -1774,23 +2055,23 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:926
 msgid "Add `quarkus.kafka.snappy.enabled=true` to your `application.properties`"
-msgstr ""
+msgstr "`application.properties` に `quarkus.kafka.snappy.enabled=true`を追加"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:928
 msgid "In native mode, Snappy is disabled by default as the use of Snappy requires embedding a native library and unpacking it when the application starts."
-msgstr ""
+msgstr "ネイティブモードでは、Snappyはデフォルトで無効になっています。Snappyを使用するには、ネイティブライブラリを埋め込み、アプリケーションの起動時にそれを解凍する必要があるからです。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:929
 #, no-wrap
 msgid "Configuration"
-msgstr ""
+msgstr "設定"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:933
 msgid "More details about the SmallRye Reactive Messaging configuration can be found in the https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/2.8/kafka/kafka.html[SmallRye Reactive Messaging - Kafka Connector Documentation].  The most important attributes are listed in the tables below:"
-msgstr ""
+msgstr "SmallRye Reactive Messagingの設定についての詳細は、 link:https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/2.8/kafka/kafka.html[SmallRye Reactive Messaging - Kafka Connector Documentation]に記載されています。最も重要な属性を以下の表に示します。"
 
 #. type: Title ===
 #: upstream/_guides/kafka.adoc:934
@@ -1801,18 +2082,18 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:937 upstream/_guides/kafka.adoc:1091
 msgid "The following attributes are configured using:"
-msgstr ""
+msgstr "以下の属性は以下のように設定します:"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:941
 #, no-wrap
 msgid "mp.messaging.incoming.your-channel-name.attribute=value\n"
-msgstr ""
+msgstr "mp.messaging.incoming.your-channel-name.attribute=value\n"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:944 upstream/_guides/kafka.adoc:1099
 msgid "Some properties have aliases which can be configured globally:"
-msgstr ""
+msgstr "一部のプロパティには、グローバルに設定可能なエイリアスがあります。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:948 upstream/_guides/kafka.adoc:1103
@@ -1824,31 +2105,31 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:950
 #, no-wrap
 msgid "Incoming Attributes of the 'smallrye-kafka' connector"
-msgstr ""
+msgstr "'smallrye-kafka' connectorのIncoming属性"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:953 upstream/_guides/kafka.adoc:1108
 #, no-wrap
 msgid "Attribute (_alias_)"
-msgstr ""
+msgstr "属性 (_alias_)"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:953 upstream/_guides/kafka.adoc:1108
 #, no-wrap
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:953 upstream/_guides/kafka.adoc:1108
 #, no-wrap
 msgid "Mandatory"
-msgstr ""
+msgstr "必須"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:955 upstream/_guides/kafka.adoc:1110
 #, no-wrap
 msgid "Default"
-msgstr ""
+msgstr "デフォルト"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:957 upstream/_guides/kafka.adoc:1116
@@ -1858,6 +2139,9 @@ msgid ""
 "\n"
 "_(kafka.bootstrap.servers)_"
 msgstr ""
+"*bootstrap.servers*\n"
+"\n"
+"_(kafka.bootstrap.servers)_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:959 upstream/_guides/kafka.adoc:1118
@@ -1899,19 +2183,19 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1226
 #, no-wrap
 msgid "false"
-msgstr ""
+msgstr "false"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:961 upstream/_guides/kafka.adoc:1120
 #, no-wrap
 msgid "`localhost:9092`"
-msgstr ""
+msgstr "`localhost:9092`"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:961 upstream/_guides/kafka.adoc:1212
 #, no-wrap
 msgid "*topic*"
-msgstr ""
+msgstr "*topic*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:963 upstream/_guides/kafka.adoc:1214
@@ -1921,12 +2205,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"消費/投入されるKafkaトピック。このプロパティも `topics` のプロパティも設定されていない場合は、チャネル名が使用されます。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:965 upstream/_guides/kafka.adoc:1172
 #, no-wrap
 msgid "*health-enabled*"
-msgstr ""
+msgstr "*health-enabled*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:967 upstream/_guides/kafka.adoc:1174
@@ -1936,6 +2223,9 @@ msgid ""
 "\n"
 "Type: _boolean_"
 msgstr ""
+"ヘルスレポートが有効（デフォルト）か無効か\n"
+"\n"
+"Type: _boolean_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:969 upstream/_guides/kafka.adoc:973
@@ -1946,13 +2236,13 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1220 upstream/_guides/kafka.adoc:1228
 #, no-wrap
 msgid "`true`"
-msgstr ""
+msgstr "`true`"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:969 upstream/_guides/kafka.adoc:1176
 #, no-wrap
 msgid "*health-readiness-enabled*"
-msgstr ""
+msgstr "*health-readiness-enabled*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:971 upstream/_guides/kafka.adoc:1178
@@ -1962,12 +2252,15 @@ msgid ""
 "\n"
 "Type: _boolean_"
 msgstr ""
+"レディネスレポートが有効（デフォルト）か無効か\n"
+"\n"
+"Type: _boolean_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:973 upstream/_guides/kafka.adoc:1184
 #, no-wrap
 msgid "*health-readiness-topic-verification*"
-msgstr ""
+msgstr "*health-readiness-topic-verification*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:975 upstream/_guides/kafka.adoc:1186
@@ -1977,6 +2270,9 @@ msgid ""
 "\n"
 "Type: _boolean_"
 msgstr ""
+"ブローカにトピックが存在するかどうかをReadinessチェックで確認するかどうか。デフォルトはfalseです。これを有効にするには、admin接続が必要です。\n"
+"\n"
+"Type: _boolean_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:977 upstream/_guides/kafka.adoc:997
@@ -1984,13 +2280,13 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1188 upstream/_guides/kafka.adoc:1204
 #, no-wrap
 msgid "`false`"
-msgstr ""
+msgstr "`false`"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:977 upstream/_guides/kafka.adoc:1180
 #, no-wrap
 msgid "*health-readiness-timeout*"
-msgstr ""
+msgstr "*health-readiness-timeout*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:979 upstream/_guides/kafka.adoc:1182
@@ -2000,6 +2296,9 @@ msgid ""
 "\n"
 "Type: _long_"
 msgstr ""
+"Readinesチェックの間、コネクタはブローカーに接続し、トピックのリストを取得します。この属性では、検索にかける最大時間（ms）を指定します。これを超えると、チャネルは準備ができていないとみなされます。\n"
+"\n"
+"Type: _long_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:981 upstream/_guides/kafka.adoc:1184
@@ -2011,7 +2310,7 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:981 upstream/_guides/kafka.adoc:1216
 #, no-wrap
 msgid "*tracing-enabled*"
-msgstr ""
+msgstr "*tracing-enabled*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:983 upstream/_guides/kafka.adoc:1218
@@ -2021,12 +2320,15 @@ msgid ""
 "\n"
 "Type: _boolean_"
 msgstr ""
+"トレースを有効（デフォルト）にするか、無効にするか\n"
+"\n"
+"Type: _boolean_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:985 upstream/_guides/kafka.adoc:1128
 #, no-wrap
 msgid "*cloud-events*"
-msgstr ""
+msgstr "*cloud-events*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:987 upstream/_guides/kafka.adoc:1130
@@ -2036,12 +2338,15 @@ msgid ""
 "\n"
 "Type: _boolean_"
 msgstr ""
+"クラウド イベント サポートを有効（デフォルト）または無効にします。 _incoming_ チャネルで有効にすると、コネクタは受信レコードを分析し、Cloud Event メタデータの作成を試みます。 _outgoing_ 側で有効にすると、メッセージに Cloud Event Metadata が含まれている場合、コネクタはoutgoingメッセージを Cloud Event として送信します。\n"
+"\n"
+"Type: _boolean_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:989
 #, no-wrap
 msgid "*topics*"
-msgstr ""
+msgstr "*topics*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:991
@@ -2051,12 +2356,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"消費されるトピックのコンマ区切りのリスト。 `topic` または `pattern` のプロパティとは併用できません。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:993
 #, no-wrap
 msgid "*pattern*"
-msgstr ""
+msgstr "*pattern*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:995
@@ -2066,12 +2374,15 @@ msgid ""
 "\n"
 "Type: _boolean_"
 msgstr ""
+"`topic` プロパティが正規表現であることを示す。 `topic` プロパティと併用する必要があります。 `topics` プロパティとは併用できません。\n"
+"\n"
+"Type: _boolean_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:997
 #, no-wrap
 msgid "*key.deserializer*"
-msgstr ""
+msgstr "*key.deserializer*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:999
@@ -2081,18 +2392,21 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"レコードのキーをデシリアライズするために使用されるデシリアライザのクラス名\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1001
 #, no-wrap
 msgid "`org.apache.kafka.common.serialization.StringDeserializer`"
-msgstr ""
+msgstr "`org.apache.kafka.common.serialization.StringDeserializer`"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1001
 #, no-wrap
 msgid "*value.deserializer*"
-msgstr ""
+msgstr "*value.deserializer*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1003
@@ -2102,18 +2416,21 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"レコードの値のデシリアライズに使用されるデシリアライザのクラス名\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1003 upstream/_guides/kafka.adoc:1222
 #, no-wrap
 msgid "true"
-msgstr ""
+msgstr "true"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1005
 #, no-wrap
 msgid "*fetch.min.bytes*"
-msgstr ""
+msgstr "*fetch.min.bytes*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1007
@@ -2123,6 +2440,9 @@ msgid ""
 "\n"
 "Type: _int_"
 msgstr ""
+"フェッチ・リクエストに対してサーバーが返すべきデータの最小量。デフォルトの1バイトの設定は、1バイトのデータが利用可能になるか、データの到着を待ってフェッチリクエストがタイムアウトするとすぐにフェッチリクエストに応答することを意味します。\n"
+"\n"
+"Type: _int_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1009 upstream/_guides/kafka.adoc:1070
@@ -2135,7 +2455,7 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1009
 #, no-wrap
 msgid "*group.id*"
-msgstr ""
+msgstr "*group.id*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1016
@@ -2150,12 +2470,20 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"アプリケーションが所属するコンシューマーグループを識別するための一意の文字列。\n"
+"\n"
+"設定されていない場合、デフォルトでは、 `quarkus.application.name`構成プロパティで設定されたアプリケーション名になります。\n"
+"\n"
+"それも設定されていない場合は、生成された一意のIDが使用されます。\n"
+"常に `group.id` を定義することをお勧めします。自動生成は、開発用の便利機能にすぎません。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1018
 #, no-wrap
 msgid "*enable.auto.commit*"
-msgstr ""
+msgstr "*enable.auto.commit*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1020
@@ -2165,12 +2493,15 @@ msgid ""
 "\n"
 "Type: _boolean_"
 msgstr ""
+"この設定を有効にすると、コンシューマーのオフセットは、レコードの実際の処理結果を無視して、基礎となるKafkaクライアントによってバックグラウンドで定期的にコミットされます。この設定を有効にしないで、Reactive Messaging にコミットを任せることをお勧めします。\n"
+"\n"
+"Type: _boolean_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1022
 #, no-wrap
 msgid "*retry*"
-msgstr ""
+msgstr "*retry*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1024
@@ -2180,12 +2511,15 @@ msgid ""
 "\n"
 "Type: _boolean_"
 msgstr ""
+"障害発生時にブローカーへの接続を再試行するかどうか\n"
+"\n"
+"Type: _boolean_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1026
 #, no-wrap
 msgid "*retry-attempts*"
-msgstr ""
+msgstr "*retry-attempts*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1028
@@ -2195,6 +2529,9 @@ msgid ""
 "\n"
 "Type: _int_"
 msgstr ""
+"失敗するまでの最大再接続回数を指定します。-1は無限再試行を意味します。\n"
+"\n"
+"Type: _int_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1030 upstream/_guides/kafka.adoc:1208
@@ -2206,7 +2543,7 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1030
 #, no-wrap
 msgid "*retry-max-wait*"
-msgstr ""
+msgstr "*retry-max-wait*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1032
@@ -2216,6 +2553,9 @@ msgid ""
 "\n"
 "Type: _int_"
 msgstr ""
+"2回の再接続の間の最大遅延時間（秒）\n"
+"\n"
+"Type: _int_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1034
@@ -2227,7 +2567,7 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1034
 #, no-wrap
 msgid "*broadcast*"
-msgstr ""
+msgstr "*broadcast*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1036
@@ -2242,7 +2582,7 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1038
 #, no-wrap
 msgid "*auto.offset.reset*"
-msgstr ""
+msgstr "*auto.offset.reset*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1040
@@ -2257,13 +2597,13 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1042
 #, no-wrap
 msgid "`latest`"
-msgstr ""
+msgstr "`latest`"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1042
 #, no-wrap
 msgid "*failure-strategy*"
-msgstr ""
+msgstr "*failure-strategy*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1044
@@ -2273,18 +2613,21 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"レコードから生成されたメッセージが否定的に確認された（nack）場合に適用する失敗戦略を指定します。値は、 `fail` （デフォルト）、 `ignore` 、または `dead-letter-queue`\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1046
 #, no-wrap
 msgid "`fail`"
-msgstr ""
+msgstr "`fail`"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1046
 #, no-wrap
 msgid "*commit-strategy*"
-msgstr ""
+msgstr "*commit-strategy*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1048
@@ -2294,12 +2637,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"レコードから生成されたメッセージが確認されたときに適用するコミットストラテジーを指定します。値は、 `latest` 、 `ignore` 、 `throttled` のいずれかです。 `enable.auto.commit` がtrueであれば、デフォルトは `ignore` です。そうでなければ `throttled` です。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1050
 #, no-wrap
 msgid "*throttled.unprocessed-record-max-age.ms*"
-msgstr ""
+msgstr "*throttled.unprocessed-record-max-age.ms*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1052
@@ -2309,6 +2655,9 @@ msgid ""
 "\n"
 "Type: _int_"
 msgstr ""
+"`throttled` commit-strategy を使用している場合の、コネクタが不健全であるとマークされるまでの未処理メッセージの最大時間をミリ秒単位で指定します。\n"
+"\n"
+"Type: _int_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1054
@@ -2320,7 +2669,7 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1054
 #, no-wrap
 msgid "*dead-letter-queue.topic*"
-msgstr ""
+msgstr "*dead-letter-queue.topic*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1056
@@ -2330,12 +2679,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"`failure-strategy` に `dead-letter-queue` が設定されている場合、どのトピックにレコードが送信されるかを示します。デフォルトは `dead-letter-topic-$channel`\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1058
 #, no-wrap
 msgid "*dead-letter-queue.key.serializer*"
-msgstr ""
+msgstr "*dead-letter-queue.key.serializer*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1060
@@ -2345,12 +2697,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"`failure-strategy` に `dead-letter-queue` が設定されている場合、 使用するキーシリアライザを示します。設定されていない場合は、キーデシリアライザに関連付けられたシリアライザが使用されます。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1062
 #, no-wrap
 msgid "*dead-letter-queue.value.serializer*"
-msgstr ""
+msgstr "*dead-letter-queue.value.serializer*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1064
@@ -2360,12 +2715,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"`failure-strategy` に `dead-letter-queue` が設定されている場合、使用する値のシリアライザを示します。設定されていない場合は、値のデシリアライザに関連付けられたシリアライザが使用されます。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1066
 #, no-wrap
 msgid "*partitions*"
-msgstr ""
+msgstr "*partitions*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1068
@@ -2375,12 +2733,15 @@ msgid ""
 "\n"
 "Type: _int_"
 msgstr ""
+"同時に消費されるパーティションの数です。コネクタは、指定された数のKafkaコンシューマーを作成します。これは、対象となるトピックのパーティション数と一致する必要があります。\n"
+"\n"
+"Type: _int_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1070
 #, no-wrap
 msgid "*consumer-rebalance-listener.name*"
-msgstr ""
+msgstr "*consumer-rebalance-listener.name*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1072
@@ -2390,12 +2751,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"`io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener` を実装するBeanの `javax.inject.Named` で設定された名前です。設定された場合、このリバランスリスナーはコンシューマーに適用されます。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1074
 #, no-wrap
 msgid "*key-deserialization-failure-handler*"
-msgstr ""
+msgstr "*key-deserialization-failure-handler*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1076
@@ -2405,12 +2769,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"`io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler` を実装するBeanの `javax.inject.Named` で設定された名前です。設定されている場合、キーをデシリアライズする際に起こるデシリアライズの失敗は、フォールバック値を提供することができるこのハンドラに委ねられます。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1078
 #, no-wrap
 msgid "*value-deserialization-failure-handler*"
-msgstr ""
+msgstr "*value-deserialization-failure-handler*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1080
@@ -2420,12 +2787,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"`io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler` を実装するBeanの `javax.inject.Named` で設定された名前です。設定されている場合、値のデシリアライズがこのハンドラに委ねられているときにデシリアライズの失敗が起こり、フォールバック値が提供されることがあります。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1082
 #, no-wrap
 msgid "*graceful-shutdown*"
-msgstr ""
+msgstr "*graceful-shutdown*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1084
@@ -2435,30 +2805,33 @@ msgid ""
 "\n"
 "Type: _boolean_"
 msgstr ""
+"アプリケーションの終了時に、グレースフルシャットダウンを行うかどうか。\n"
+"\n"
+"Type: _boolean_"
 
 #. type: Title ===
 #: upstream/_guides/kafka.adoc:1088
 #, no-wrap
 msgid "Outgoing channel configuration (writing to Kafka)"
-msgstr ""
+msgstr "outgoingチャンネルの設定（Kafkaへの書き込み)"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:1096
 #, no-wrap
 msgid "mp.messaging.outgoing.your-channel-name.attribute=value\n"
-msgstr ""
+msgstr "mp.messaging.outgoing.your-channel-name.attribute=value\n"
 
 #. type: Block title
 #: upstream/_guides/kafka.adoc:1105
 #, no-wrap
 msgid "Outgoing Attributes of the 'smallrye-kafka' connector"
-msgstr ""
+msgstr "'smallrye-kafka' connectorのoutgoing 属性"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1110
 #, no-wrap
 msgid "*acks*"
-msgstr ""
+msgstr "*acks*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1112
@@ -2468,12 +2841,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"リクエストが完了したとみなす前に、プロデューサーがリーダーに受信を要求する確認応答の数。これは、送信されるレコードの耐久性を制御します。許容される値は0、1、all\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1120
 #, no-wrap
 msgid "*buffer.memory*"
-msgstr ""
+msgstr "*buffer.memory*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1122
@@ -2483,6 +2859,9 @@ msgid ""
 "\n"
 "Type: _long_"
 msgstr ""
+"サーバーへの送信待ちのレコードをバッファリングするために、プロデューサーが使用できるメモリの総バイト数。\n"
+"\n"
+"Type: _long_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1124
@@ -2494,7 +2873,7 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1124
 #, no-wrap
 msgid "*close-timeout*"
-msgstr ""
+msgstr "*close-timeout*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1126
@@ -2519,6 +2898,9 @@ msgid ""
 "\n"
 "_(cloud-events-default-data-content-type)_"
 msgstr ""
+"*cloud-events-data-content-type*\n"
+"\n"
+"_(cloud-events-default-data-content-type)_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1136
@@ -2528,6 +2910,9 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"outgoing Cloud Eventのデフォルトの `datacontenttype` 属性を設定します。 `cloud-events` に `true` を設定する必要があります。この値は、メッセージが `datacontenttype` 属性を設定していない場合に使用されます。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1140
@@ -2537,6 +2922,9 @@ msgid ""
 "\n"
 "_(cloud-events-default-data-schema)_"
 msgstr ""
+"*cloud-events-data-schema*\n"
+"\n"
+"_(cloud-events-default-data-schema)_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1142
@@ -2546,6 +2934,9 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"outgoing Cloud Eventのデフォルトの `dataschema` 属性を設定します。 `cloud-events` に `true` を設定する必要があります。この値は、メッセージが `dataschema` 属性を設定していない場合に使用されます。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1146
@@ -2555,6 +2946,9 @@ msgid ""
 "\n"
 "_(cloud-events-default-timestamp)_"
 msgstr ""
+"*cloud-events-insert-timestamp*\n"
+"\n"
+"_(cloud-events-default-timestamp)_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1148
@@ -2564,12 +2958,15 @@ msgid ""
 "\n"
 "Type: _boolean_"
 msgstr ""
+"コネクタが、outgoing Cloud Eventに `time` 属性` を自動的に挿入するかどうかを指定します。 `cloud-events` に `true` を設定する必要があります。この値は、メッセージ自身が `time` 属性を構成していない場合に使用されます。\n"
+"\n"
+"Type: _boolean_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1150
 #, no-wrap
 msgid "*cloud-events-mode*"
-msgstr ""
+msgstr "*cloud-events-mode*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1152
@@ -2579,12 +2976,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"Cloud Eventのモード（ `structured` または `binary` （デフォルト））。outgoing レコードにCloud Eventをどのように書き込むかを示します\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1154
 #, no-wrap
 msgid "`binary`"
-msgstr ""
+msgstr "`binary`"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1156
@@ -2594,6 +2994,9 @@ msgid ""
 "\n"
 "_(cloud-events-default-source)_"
 msgstr ""
+"*cloud-events-source*\n"
+"\n"
+"_(cloud-events-default-source)_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1158
@@ -2603,6 +3006,9 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"outgoing Cloud Eventのデフォルトの `source` 属性を設定します。 `cloud-events` に `true` を設定する必要があります。この値は、メッセージが `source` 属性を設定していない場合に使用されます。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1162
@@ -2612,6 +3018,9 @@ msgid ""
 "\n"
 "_(cloud-events-default-subject)_"
 msgstr ""
+"*cloud-events-subject*\n"
+"\n"
+"_(cloud-events-default-subject)_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1164
@@ -2621,6 +3030,9 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"outgoing Cloud Eventのデフォルトの `subject` 属性を設定します。 `cloud-events` に `true` を設定する必要があります。この値は、メッセージが `subject` 属性を設定していない場合に使用されます。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1168
@@ -2630,6 +3042,9 @@ msgid ""
 "\n"
 "_(cloud-events-default-type)_"
 msgstr ""
+"*cloud-events-type*\n"
+"\n"
+"_(cloud-events-default-type)_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1170
@@ -2639,12 +3054,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"outgoing Cloud Eventのデフォルトの `type` 属性を設定します。 `cloud-events` に `true` を設定する必要があります。この値は、メッセージが `type` 属性を設定していない場合に使用されます。\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1188
 #, no-wrap
 msgid "*key*"
-msgstr ""
+msgstr "*key*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1190
@@ -2654,12 +3072,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"レコードを書くときに使うキー\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1192
 #, no-wrap
 msgid "*key.serializer*"
-msgstr ""
+msgstr "*key.serializer*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1194
@@ -2669,18 +3090,21 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"レコードのキーをシリアル化するために使用されるシリアライザのクラス名\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1196
 #, no-wrap
 msgid "`org.apache.kafka.common.serialization.StringSerializer`"
-msgstr ""
+msgstr "`org.apache.kafka.common.serialization.StringSerializer`"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1196
 #, no-wrap
 msgid "*max-inflight-messages*"
-msgstr ""
+msgstr "*max-inflight-messages*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1198
@@ -2690,6 +3114,9 @@ msgid ""
 "\n"
 "Type: _long_"
 msgstr ""
+"Kafkaに同時に書き込まれるメッセージの最大数。ブローカーが書き込みと確認を待っているメッセージの数を制限します。この属性を `0` に設定することで、制限を取り除くことができます。\n"
+"\n"
+"Type: _long_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1200
@@ -2701,7 +3128,7 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1200
 #, no-wrap
 msgid "*merge*"
-msgstr ""
+msgstr "*merge*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1202
@@ -2711,12 +3138,15 @@ msgid ""
 "\n"
 "Type: _boolean_"
 msgstr ""
+"コネクタが複数のアップストリームを許可するかどうか\n"
+"\n"
+"Type: _boolean_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1204
 #, no-wrap
 msgid "*partition*"
-msgstr ""
+msgstr "*partition*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1206
@@ -2726,12 +3156,15 @@ msgid ""
 "\n"
 "Type: _int_"
 msgstr ""
+"ターゲットのパーティションID。-1の場合、クライアントがパーティションを決定\n"
+"\n"
+"Type: _int_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1208
 #, no-wrap
 msgid "*retries*"
-msgstr ""
+msgstr "*retries*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1210
@@ -2741,6 +3174,9 @@ msgid ""
 "\n"
 "Type: _long_"
 msgstr ""
+"ゼロより大きい値を設定すると、一時的なエラーで送信に失敗したレコードをクライアントが再送信する。\n"
+"\n"
+"Type: _long_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1212
@@ -2752,7 +3188,7 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1220
 #, no-wrap
 msgid "*value.serializer*"
-msgstr ""
+msgstr "*value.serializer*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1222
@@ -2762,12 +3198,15 @@ msgid ""
 "\n"
 "Type: _string_"
 msgstr ""
+"ペイロードのシリアライズに使用されるシリアライザーのクラス名\n"
+"\n"
+"Type: _string_"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1224
 #, no-wrap
 msgid "*waitForWriteCompletion*"
-msgstr ""
+msgstr "*waitForWriteCompletion*"
 
 #. type: Table
 #: upstream/_guides/kafka.adoc:1226
@@ -2777,19 +3216,22 @@ msgid ""
 "\n"
 "Type: _boolean_"
 msgstr ""
+"クライアントがメッセージを確認する前に、Kafkaが書き込まれたレコードを確認するのを待つかどうか\n"
+"\n"
+"Type: _boolean_"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:1230
 #, no-wrap
 msgid "Going further"
-msgstr ""
+msgstr "さらに詳しく"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1234
 msgid "This guide has shown how you can interact with Kafka using Quarkus.  It utilizes SmallRye Reactive Messaging to build data streaming applications."
-msgstr ""
+msgstr "このガイドでは、Quarkus を使用して Kafka とやりとりする方法を示しました。SmallRye Reactive Messaging を利用して、データストリーミングアプリケーションを構築します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1235
 msgid "If you want to go further check the documentation of https://smallrye.io/smallrye-reactive-messaging[SmallRye Reactive Messaging], the implementation used in Quarkus."
-msgstr ""
+msgstr "さらに詳しく知りたい場合は、Quarkusで使用されている実装である link:https://smallrye.io/smallrye-reactive-messaging[SmallRye Reactive Messaging] のドキュメントを確認してください。"

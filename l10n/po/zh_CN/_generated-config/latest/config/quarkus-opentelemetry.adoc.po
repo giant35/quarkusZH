@@ -31,13 +31,13 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-opentelemetry.adoc:9
 #, no-wrap
 msgid "Type"
-msgstr ""
+msgstr "タイプ"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-opentelemetry.adoc:11
 #, no-wrap
 msgid "Default"
-msgstr ""
+msgstr "デフォルト"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-opentelemetry.adoc:17
@@ -59,7 +59,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-opentelemetry.adoc:101
 #, no-wrap
 msgid "boolean"
-msgstr ""
+msgstr "boolean"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-opentelemetry.adoc:21
@@ -67,7 +67,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-opentelemetry.adoc:103
 #, no-wrap
 msgid "`true`"
-msgstr ""
+msgstr "`true`"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-opentelemetry.adoc:28
@@ -154,7 +154,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-opentelemetry.adoc:70
 #, no-wrap
 msgid "string"
-msgstr ""
+msgstr "string"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-opentelemetry.adoc:73
@@ -178,7 +178,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-opentelemetry.adoc:79
 #, no-wrap
 msgid "double"
-msgstr ""
+msgstr "double"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-opentelemetry.adoc:89

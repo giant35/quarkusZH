@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2019-09-23-quarkus-developer-joy-for-vs-code.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-23-quarkus-developer-joy-for-vs-code.adoc:8
@@ -69,7 +69,7 @@ msgstr ""
 #: upstream/_posts/2019-09-23-quarkus-developer-joy-for-vs-code.adoc:42
 #, no-wrap
 msgid "Features"
-msgstr ""
+msgstr "特徴"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-23-quarkus-developer-joy-for-vs-code.adoc:44
@@ -385,7 +385,7 @@ msgstr ""
 #: upstream/_posts/2019-09-23-quarkus-developer-joy-for-vs-code.adoc:169
 #, no-wrap
 msgid "Validation"
-msgstr ""
+msgstr "バリデーション"
 
 #. type: Target for macro image
 #: upstream/_posts/2019-09-23-quarkus-developer-joy-for-vs-code.adoc:169
@@ -397,7 +397,7 @@ msgstr ""
 #: upstream/_posts/2019-09-23-quarkus-developer-joy-for-vs-code.adoc:171
 #, no-wrap
 msgid "Next steps"
-msgstr ""
+msgstr "次のステップ"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-23-quarkus-developer-joy-for-vs-code.adoc:180

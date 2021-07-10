@@ -29,19 +29,19 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:18
 #, no-wrap
 msgid "Hello World Example"
-msgstr ""
+msgstr "ハローワールドの例"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:23
 msgid "In this example, we'd like to demonstrate the basic workflow when working with Qute templates.  Let's start with a simple hello world example.  We will always need some *template contents*:"
-msgstr ""
+msgstr "この例では、Quteのテンプレートを扱う際の基本的なワークフローをデモしたいと思います。まず、簡単なhello worldの例から始めましょう。 *テンプレートのコンテンツ* は必ず必要になります。"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/qute-reference.adoc:24
 #: upstream/_versions/1.7/guides/qute-reference.adoc:108
 #, no-wrap
 msgid "hello.html"
-msgstr ""
+msgstr "hello.html"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:30
@@ -55,17 +55,17 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:32
 msgid "`{name}` is a value expression that is evaluated when the template is rendered."
-msgstr ""
+msgstr "`{name}` は、テンプレートがレンダリングされたときに評価される値の式です。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:35
 msgid "Then, we will need to parse the contents into a *template definition* Java object.  A template definition is an instance of `io.quarkus.qute.Template`."
-msgstr ""
+msgstr "そして、その内容を *テンプレート定義* Javaオブジェクトにパースする必要があります。テンプレート定義は、 `io.quarkus.qute.Template` のインスタンスです。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:39
 msgid "If using Qute \"standalone\" you'll need to create an instance of `io.quarkus.qute.Engine` first.  The `Engine` represents a central point for template management with dedicated configuration.  Let's use the convenient builder:"
-msgstr ""
+msgstr "Quteを\"スタンドアロン\"で使用する場合は、まず `io.quarkus.qute.Engine` のインスタンスを作成する必要があります。 `Engine` は、専用の設定でテンプレートを管理するための中心点を表しています。便利なビルダーを使ってみましょう。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:43
@@ -76,7 +76,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:46
 msgid "In Quarkus, there is a preconfigured `Engine` available for injection - see <<quarkus_integration>>."
-msgstr ""
+msgstr "Quarkusでは、あらかじめ設定された `Engine` がインジェクション用に利用可能です - link:#quarkus_integration[quarkus_integration] を参照してください。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:48
@@ -92,12 +92,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:55
 msgid "In Quarkus, you can simply inject the template definition. The template is automatically parsed and cached - see <<quarkus_integration>>."
-msgstr ""
+msgstr "Quarkusでは、テンプレートの定義を単純に注入することができます。テンプレートは自動的に解析され、キャッシュされます - link:#quarkus_integration[quarkus_integration] を参照してください。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:57
 msgid "Finally, we will create a *template instance*, set the data and render the output:"
-msgstr ""
+msgstr "最後に *テンプレートインスタンス* を作成し、データをセットして出力をレンダリングします。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:62
@@ -110,32 +110,32 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:64
 msgid "`Template.data(String, Object)` is a convenient method that creates a template instance and sets the data in one step."
-msgstr ""
+msgstr "`Template.data(String, Object)` は、ワンステップでテンプレートのインスタンスを作成してデータを設定する便利なメソッドです。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:66
 msgid "So the workflow is simple:"
-msgstr ""
+msgstr "なので、ワークフローはシンプルです。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:68
 msgid "Create template contents (`hello.html`),"
-msgstr ""
+msgstr "テンプレートコンテンツを作成する ( `hello.html` )、"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:69
 msgid "Parse template definition (`io.quarkus.qute.Template`),"
-msgstr ""
+msgstr "テンプレートの定義を解析する ( `io.quarkus.qute.Template` )、"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:70
 msgid "Create template instance (`io.quarkus.qute.TemplateInstance`),"
-msgstr ""
+msgstr "テンプレートインスタンスを作成する ( `io.quarkus.qute.TemplateInstance` )、"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:71
 msgid "Render output."
-msgstr ""
+msgstr "出力をレンダリングする"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:73
@@ -151,7 +151,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:76
 #, no-wrap
 msgid "Core Features"
-msgstr ""
+msgstr "コア機能"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/qute-reference.adoc:78
@@ -321,7 +321,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:127
 #, no-wrap
 msgid "Removing Standalone Lines From the Template"
-msgstr ""
+msgstr "テンプレートから独立した行を削除する"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:133
@@ -332,7 +332,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:134
 #, no-wrap
 msgid "Template Example"
-msgstr ""
+msgstr "テンプレート例"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:147
@@ -353,28 +353,28 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:149
 msgid "This is a standalone line and will be removed."
-msgstr ""
+msgstr "これはスタンドアロン行なので削除されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:150
 msgid "Not a standalone line - contains an expression and non-whitespace characters"
-msgstr ""
+msgstr "スタンドアロン行ではない - 式と非空白文字を含む"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:151
 msgid "Not a standalone line - contains no section tag/parameter declaration"
-msgstr ""
+msgstr "スタンドアロン行ではない - セクションタグ/パラメーター宣言を含まない"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:152
 msgid "This is a standalone line."
-msgstr ""
+msgstr "これはスタンドアロン行です。"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/qute-reference.adoc:153
 #, no-wrap
 msgid "Default Output"
-msgstr ""
+msgstr "デフォルト出力"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:160
@@ -405,7 +405,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:169
 #, no-wrap
 msgid "Output with `quarkus.qute.remove-standalone-lines=false`"
-msgstr ""
+msgstr "`quarkus.qute.remove-standalone-lines=false` での出力"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:175
@@ -426,7 +426,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:185
 #, no-wrap
 msgid "Expressions"
-msgstr ""
+msgstr "式"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:191
@@ -437,7 +437,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:192
 #, no-wrap
 msgid "Expressions Example"
-msgstr ""
+msgstr "式の例"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:199
@@ -457,17 +457,17 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:202
 msgid "no namespace, two parts: `item`, `name`"
-msgstr ""
+msgstr "名前空間なし、2つのパーツ: `item` . `name`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:203
 msgid "equivalent to `{item.name}` but using the bracket notation"
-msgstr ""
+msgstr "`{item.name}` と同等ですが、括弧表記を使用しています。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:204
 msgid "namespace `global`, one part: `colors`"
-msgstr ""
+msgstr "namespace `global` , 1つのパーツ: `colors`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:206
@@ -479,7 +479,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:353
 #, no-wrap
 msgid "Virtual Method Example"
-msgstr ""
+msgstr "仮想メソッドの例"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:212
@@ -492,7 +492,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:214
 msgid "no namespace, two parts - `item`, `getLabels(1)`, the second part is a virtual method with name `getLabels` and params `1`"
-msgstr ""
+msgstr "名前空間なし、2つのパーツ - `item` , `getLabels(1)` 、2番目のパーツは、名前 `getLabels` と パラメーター `1` を持つ仮想メソッドです。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:215
@@ -508,62 +508,62 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:219
 #, no-wrap
 msgid "Supported Literals"
-msgstr ""
+msgstr "サポートされているリテラル"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:222
 #, no-wrap
 msgid "Literal"
-msgstr ""
+msgstr "リテラル"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:224
 #: upstream/_versions/1.7/guides/qute-reference.adoc:315
 #, no-wrap
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:225
 #, no-wrap
 msgid "boolean"
-msgstr ""
+msgstr "boolean"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:227
 #, no-wrap
 msgid "`true`, `false`"
-msgstr ""
+msgstr "`true`, `false`"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:228
 #, no-wrap
 msgid "null"
-msgstr ""
+msgstr "null"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:230
 #, no-wrap
 msgid "`null`"
-msgstr ""
+msgstr "`null`"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:231
 #, no-wrap
 msgid "string"
-msgstr ""
+msgstr "string"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:233
 #, no-wrap
 msgid "`'value'`, `\"string\"`"
-msgstr ""
+msgstr "`'value'`, `\"string\"`"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:234
 #, no-wrap
 msgid "integer"
-msgstr ""
+msgstr "integer"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:236
@@ -575,43 +575,43 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:237
 #, no-wrap
 msgid "long"
-msgstr ""
+msgstr "long"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:239
 #, no-wrap
 msgid "`1l`, `-5L`"
-msgstr ""
+msgstr "`1l`, `-5L`"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:240
 #, no-wrap
 msgid "double"
-msgstr ""
+msgstr "double"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:242
 #, no-wrap
 msgid "`1D`, `-5d`"
-msgstr ""
+msgstr "`1D`, `-5d`"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:243
 #, no-wrap
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:245
 #, no-wrap
 msgid "`1f`, `-5F`"
-msgstr ""
+msgstr "`1f`, `-5F`"
 
 #. type: Title =====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:247
 #, no-wrap
 msgid "Resolution"
-msgstr ""
+msgstr "解決"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:254
@@ -621,13 +621,13 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:260
 msgid "For example, expression `{name}` has no namespace and single part - `name`.  The \"name\" will be resolved using all available value resolvers against the current context object.  However, the expression `{global:colors}` has the namespace `global` and single part - `colors`.  First, all available ``NamespaceResolver``s will be used to find the current context object.  And afterwards value resolvers will be used to resolve \"colors\" against the context object found."
-msgstr ""
+msgstr "例えば、式 `{name}` には名前空間がなく、単一のパーツ - `name` です。\"name\"は、カレントコンテキストオブジェクトに対して利用可能なすべての値リゾルバを使用して解決されます。しかし、式 `{global:colors}` には、名前空間 `global` と単一パーツ - `colors` があります。まず、現在のコンテキストオブジェクトを見つけるために、利用可能なすべての `NamespaceResolver` s が使用されます。その後、見つかったコンテキストオブジェクトに対して\"colors\"を解決するために値リゾルバが使用されます。"
 
 #. type: Title =====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:262
 #, no-wrap
 msgid "Current Context"
-msgstr ""
+msgstr "カレントコンテキスト"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:268
@@ -658,7 +658,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:281
 #: upstream/_versions/1.7/guides/qute-reference.adoc:439
 msgid "`it` is an implicit alias. `name` is resolved against the current iteration element."
-msgstr ""
+msgstr "`it` は暗黙のエイリアスです。 `name` は現在の反復要素に対して解決されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:282
@@ -668,7 +668,7 @@ msgstr ""
 #. type: delimited block =
 #: upstream/_versions/1.7/guides/qute-reference.adoc:287
 msgid "Data passed to the template instance are always accessible using the `data` namespace.  This could be useful to access data for which the key is overridden:"
-msgstr ""
+msgstr "テンプレート・インスタンスに渡されたデータは、常に `data` 名前空間を使用してアクセスできます。これは、キーがオーバーライドされているデータにアクセスするのに便利かもしれません。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:302
@@ -691,22 +691,22 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:304
 msgid "`item` is passed to the template instance as a data object."
-msgstr ""
+msgstr "`item` はデータオブジェクトとしてテンプレートインスタンスに渡されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:305
 msgid "Iterate over the list of derived items."
-msgstr ""
+msgstr "派生アイテムのリストを繰り返し処理します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:306
 msgid "`item` is an alias for the iterated element."
-msgstr ""
+msgstr "`item` は反復要素のエイリアスです。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:307
 msgid "Use the `data` namespace to access the `item` data object."
-msgstr ""
+msgstr "`data` 名前空間を使用して、 `item` データ・オブジェクトにアクセスします。"
 
 #. type: Title =====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:310
@@ -719,13 +719,13 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:492
 #, no-wrap
 msgid "Operator"
-msgstr ""
+msgstr "オペレーター"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:313
 #, no-wrap
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:316
@@ -737,7 +737,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:317
 #, no-wrap
 msgid "Outputs the default value if the previous part cannot be resolved or resolves to `null`."
-msgstr ""
+msgstr "前のパーツが解決できなかったり、 `null` に解決された場合のデフォルト値を出力します。"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:319
@@ -755,18 +755,18 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:321
 #, no-wrap
 msgid "Shorthand for if-then-else statement. Unlike in <<if_section>> nested operators are not supported."
-msgstr ""
+msgstr "if-then-else文の省略形。 <<if_section>> とは異なり、入れ子になった演算子はサポートされていません。"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:322
 #, no-wrap
 msgid "`{item.isActive ? item.name : 'Inactive item'}` outputs the value of `item.name` if `item.isActive` resolves to `true`."
-msgstr ""
+msgstr "`{item.isActive ? item.name : 'Inactive item'}` は、 `item.isActive` が `true` に解決した場合に `item.name` の値を出力します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:325
 msgid "The condition in a ternary operator evaluates to `true` if the value is not considered `falsy` as described in the <<if_section>>."
-msgstr ""
+msgstr "三項演算子の条件は、 <<if_section>> で説明したように、値が `falsy` とみなされない場合は `true` と評価されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:327
@@ -777,7 +777,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:328
 #, no-wrap
 msgid "Character Escapes"
-msgstr ""
+msgstr "文字エスケープ"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:332
@@ -787,12 +787,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:334
 msgid "Use the `raw` or `safe` properties implemented as extension methods of the `java.lang.Object`,"
-msgstr ""
+msgstr "`java.lang.Object` の拡張メソッドとして実装されている `raw` または `safe` プロパティーを使用します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:335
 msgid "Wrap the `String` value in a `io.quarkus.qute.RawString`."
-msgstr ""
+msgstr "`String` の値を `io.quarkus.qute.RawString` でラップします。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:342
@@ -807,23 +807,23 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:344
 msgid "`title` that resolves to `Expressions & Escapes` will be rendered as `Expressions &amp;amp; Escapes`"
-msgstr ""
+msgstr "`title` が `Expressions & Escapes` に解決した場合は、 `Expressions &amp; Escapes` としてレンダリングされます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:345
 msgid "`paragraph` that resolves to `<p>My text!</p>` will be rendered as `<p>My text!</p>`"
-msgstr ""
+msgstr "`paragraph` が `<p>My text!</p>` に解決された場合は、 `<p>My text!</p>` としてレンダリングされます。"
 
 #. type: Title =====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:346
 #, no-wrap
 msgid "Virtual Methods"
-msgstr ""
+msgstr "仮想メソッド"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:352
 msgid "A virtual method is a *part of an expression* that looks like a regular Java method invocation.  It's called \"virtual\" because it does not have to match the actual method of a Java class.  In fact, like normal properties a virtual method is also handled by a value resolver.  The only difference is that for virtual methods a value resolver consumes parameters that are also expressions."
-msgstr ""
+msgstr "仮想メソッドとは、通常のJavaメソッド呼び出しのように見える *式のパーツ* です。Javaクラスの実際のメソッドと一致する必要がないため、「仮想」と呼ばれています。実際には、通常のプロパティーと同様に、仮想メソッドも値リゾルバによって処理されます。唯一の違いは、仮想メソッドの場合、値リゾルバが式でもあるパラメーターを消費することです。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:359
@@ -838,7 +838,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:361
 #, no-wrap
 msgid "`buildName(item.name,5)` represents a virtual method with name `buildName` and two parameters: `item.name` and `5` . The virtual method could be evaluated by a value resolver generated for the following Java class:   \n"
-msgstr ""
+msgstr "`buildName(item.name,5)` は、名前 `buildName` と 2 つのパラメーター `item.name` と `5` を持つ仮想メソッドを表します。この仮想メソッドは、以下の Java クラスに対して生成された値リゾルバによって評価されます。\n"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:369
@@ -859,13 +859,13 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:374
 msgid "A virtual method with single parameter can be called using the infix notation:"
-msgstr ""
+msgstr "単一のパラメーターを持つ仮想メソッドは 中置記法を使用して呼び出すことができます。"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/qute-reference.adoc:375
 #, no-wrap
 msgid "Infix Notation Example"
-msgstr ""
+msgstr "中置表記例"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:381
@@ -879,18 +879,18 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:383
 msgid "`item.price or 5` is translated to `item.price.or(5)`."
-msgstr ""
+msgstr "`item.price or 5` は `item.price.or(5)` に翻訳されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:385
 msgid "Virtual method parameters can be \"nested\" virtual method invocations."
-msgstr ""
+msgstr "仮想メソッドのパラメーターは、「入れ子」仮想メソッドの呼び出しにすることができます。"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/qute-reference.adoc:386
 #, no-wrap
 msgid "Nested Virtual Method Example"
-msgstr ""
+msgstr "入れ子になった仮想メソッドの例"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:392
@@ -904,18 +904,18 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:394
 msgid "`item.calculateDiscount(10)` is evaluated first and then passed as an argument to `item.subtractPrice()`."
-msgstr ""
+msgstr "`item.calculateDiscount(10)` が最初に評価され、その後 `item.subtractPrice()` への引数として渡されます。"
 
 #. type: Title ====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:397
 #, no-wrap
 msgid "Sections"
-msgstr ""
+msgstr "セクション"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:400
 msgid "A section:"
-msgstr ""
+msgstr "セクションは:"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:402
@@ -925,7 +925,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:403
 msgid "starts with `#`, followed by the name of the section such as `{#if}` and `{#each}`,"
-msgstr ""
+msgstr "`#` で始まり、 `{#if}` や `{#each}` などのセクションの名前が続きます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:404
@@ -935,22 +935,22 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:405
 msgid "tag ends with `/`, ie. `{#emptySection /}`"
-msgstr ""
+msgstr "タグは `/` で終わります。例: `{#emptySection /}`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:406
 msgid "may contain other expression, sections, etc."
-msgstr ""
+msgstr "他の表現、セクションなどを含む場合があります。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:407
 msgid "the end tag starts with `/` and contains the name of the section (optional): `{#if foo}Foo!{/if}` or `{#if foo}Foo!{/}`,"
-msgstr ""
+msgstr "終了タグは `/` で始まり、セクションの名前(オプション)を含みます: `{#if foo}Foo!{/if}` または `{#if foo}Foo!{/}` ."
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:414
 msgid "The start tag can also define parameters.  The parameters have optional names.  A section may contain several content *blocks*.  The \"main\" block is always present.  Additional/nested blocks also start with `#` and can have parameters too - `{#else if item.isActive}`.  A section helper that defines the logic of a section can \"execute\" any of the blocks and evaluate the parameters."
-msgstr ""
+msgstr "startタグはパラメーターを定義することもできます。パラメーターにはオプションの名前を付けます。1つのセクションには、いくつかのコンテンツ *ブロック* を含めることができます。\"main\" ブロックは常に存在します。追加/入れ子になったブロックも `#` で始まり、パラメーターを持つことができます - `{#else if item.isActive}` 。セクションのロジックを定義するセクションヘルパーは、任意のブロックを「実行」し、パラメーターを評価することができます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:424
@@ -969,7 +969,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:426
 #, no-wrap
 msgid "Loop Section"
-msgstr ""
+msgstr "ループセクション"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:431
@@ -988,7 +988,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:441
 msgid "The other form is using the `for` name alias and can specify the alias used to reference the iteration element:"
-msgstr ""
+msgstr "もう一つの形式は、 `for` 名前エイリアスを使用しており、反復要素を参照するために使用されるエイリアスを指定することができます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:447
@@ -1002,7 +1002,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:450
 msgid "It's also possible to access the iteration metadata inside the loop:"
-msgstr ""
+msgstr "ループ内の反復メタデータにアクセスすることも可能です。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:458
@@ -1012,7 +1012,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:460
 msgid "The `for` statement also works with integers, starting from 1. In the example below, considering that `total = 3`:"
-msgstr ""
+msgstr "`for` 文は、1 から始まる整数でも動作します。 以下の例では、 `total = 3` ."
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:466
@@ -1026,7 +1026,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:469
 msgid "The output will be:"
-msgstr ""
+msgstr "出力は"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:473
@@ -1043,7 +1043,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:481
 msgid "The `if` section represents a basic control flow section.  The simplest possible version accepts a single parameter and renders the content if the condition is evaluated to `true`.  A condition without an operator evaluates to `true` if the value is not considered `falsy`, i.e. if the value is not `null`, `false`, an empty collection, an empty map, an empty array, an empty string/char sequence or a number equal to zero."
-msgstr ""
+msgstr "`if` セクションは、基本的な制御フローセクションを表しています。最も単純なバージョンでは、単一のパラメーターを受け取り、条件が `true` と評価された場合にコンテンツをレンダリングします。演算子なしの条件は値が `falsy` (つまり、`null` 、 `false` 、空のコレクション、空のマップ、空の配列、空の文字列/文字列シーケンス、またはゼロに等しい数) ではない場合、 `true` と評価されます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:487
@@ -1057,25 +1057,25 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:490
 msgid "You can also use the following operators in a condition:"
-msgstr ""
+msgstr "条件では、以下の演算子を使うこともできます:"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:492
 #, no-wrap
 msgid "Aliases"
-msgstr ""
+msgstr "エイリアス"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:494
 #, no-wrap
 msgid "Precedence (higher wins)"
-msgstr ""
+msgstr "優先順位 (大優先)"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:495
 #, no-wrap
 msgid "logical complement"
-msgstr ""
+msgstr "logical complement"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:496
@@ -1093,13 +1093,13 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:499
 #, no-wrap
 msgid "greater than"
-msgstr ""
+msgstr "greater than"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:500
 #, no-wrap
 msgid "`gt`, `>`"
-msgstr ""
+msgstr "`gt`, `>`"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:502
@@ -1114,49 +1114,49 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:503
 #, no-wrap
 msgid "greater than or equal to"
-msgstr ""
+msgstr "greater than or equal to"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:504
 #, no-wrap
 msgid "`ge`, `>=`"
-msgstr ""
+msgstr "`ge`, `>=`"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:507
 #, no-wrap
 msgid "less than"
-msgstr ""
+msgstr "less than"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:508
 #, no-wrap
 msgid "`lt`, `<`"
-msgstr ""
+msgstr "`lt`, `<`"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:511
 #, no-wrap
 msgid "less than or equal to"
-msgstr ""
+msgstr "less than or equal to"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:512
 #, no-wrap
 msgid "`le`, `\\<=`"
-msgstr ""
+msgstr "`le`, `\\<=`"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:515
 #, no-wrap
 msgid "equals"
-msgstr ""
+msgstr "equals"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:516
 #, no-wrap
 msgid "`eq`, `==`, `is`"
-msgstr ""
+msgstr "`eq`, `==`, `is`"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:518
@@ -1169,25 +1169,25 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:519
 #, no-wrap
 msgid "not equals"
-msgstr ""
+msgstr "not equals"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:520
 #, no-wrap
 msgid "`ne`, `!=`"
-msgstr ""
+msgstr "`ne`, `!=`"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:523
 #, no-wrap
 msgid "logical AND (short-circuiting)"
-msgstr ""
+msgstr "logical AND (short-circuiting)"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:524
 #, no-wrap
 msgid "`&&`, `and`"
-msgstr ""
+msgstr "`&&`, `and`"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:526
@@ -1200,7 +1200,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:527
 #, no-wrap
 msgid "logical OR (short-circuiting)"
-msgstr ""
+msgstr "logical OR (short-circuiting)"
 
 #. type: Table
 #: upstream/_versions/1.7/guides/qute-reference.adoc:527
@@ -1218,13 +1218,13 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:528
 #, no-wrap
 msgid "`, `or`"
-msgstr ""
+msgstr "`, `or`"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/qute-reference.adoc:532
 #, no-wrap
 msgid "A simple operator example"
-msgstr ""
+msgstr "簡単な演算子の例"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:538
@@ -1238,13 +1238,13 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:541
 msgid "Multiple conditions are also supported."
-msgstr ""
+msgstr "複数の条件にも対応しています。"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/qute-reference.adoc:542
 #, no-wrap
 msgid "Multiple conditions example"
-msgstr ""
+msgstr "複数条件の例"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:548
@@ -1258,13 +1258,13 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:551
 msgid "Precedence rules can be overridden by parentheses."
-msgstr ""
+msgstr "優先順位の規則は、カッコで上書きすることができます。"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/qute-reference.adoc:552
 #, no-wrap
 msgid "Parentheses example"
-msgstr ""
+msgstr "括弧の例"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:558
@@ -1278,7 +1278,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:562
 msgid "You can also add any number of `else` blocks:"
-msgstr ""
+msgstr "また、 `else` ブロックを何個でも追加することができます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:574
@@ -1304,7 +1304,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:580
 msgid "This section can be used to set the current context object.  This could be useful to simplify the template structure:"
-msgstr ""
+msgstr "このセクションは、現在のコンテキストオブジェクトを設定するために使用することができます。これはテンプレート構造を単純化するのに便利かもしれません。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:587
@@ -1319,17 +1319,17 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:589
 msgid "The `name` will be resolved against the `item.parent`."
-msgstr ""
+msgstr "`name` は `item.parent` に対して解決されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:590
 msgid "The `description` will be also resolved against the `item.parent`."
-msgstr ""
+msgstr "`description` も `item.parent` に対して解決されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:592
 msgid "This section might also come in handy when we'd like to avoid multiple expensive invocations:"
-msgstr ""
+msgstr "このセクションは、複数の高価な呼び出しを避けたいときにも便利かもしれません。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:602
@@ -1347,7 +1347,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:604
 msgid "`this` is the result of `item.callExpensiveLogicToGetTheValue(1,'foo',bazinga)`. The method is only invoked once even though the result may be used in multiple expressions."
-msgstr ""
+msgstr "`this` は `item.callExpensiveLogicToGetTheValue(1,'foo',bazinga)` の結果です。結果が複数の式で使用されても、このメソッドは一度しか呼び出されません。"
 
 #. type: Title =====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:605
@@ -1358,7 +1358,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:608
 msgid "This section allows you to define named local variables:"
-msgstr ""
+msgstr "このセクションでは、名前付きローカル変数を定義することができます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:613
@@ -1372,7 +1372,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:616
 msgid "The section tag is also registered under the `set` alias:"
-msgstr ""
+msgstr "セクションタグも `set` のエイリアスで登録されています。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:623
@@ -1399,7 +1399,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:631
 #, no-wrap
 msgid "Template \"base\""
-msgstr ""
+msgstr "テンプレート「ベース」"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:643
@@ -1419,18 +1419,18 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:645
 msgid "`insert` sections are used to specify parts that could be overridden by a template that includes the given template."
-msgstr ""
+msgstr "`insert` セクションは、指定されたテンプレートをインクルードするテンプレートでオーバーライドできる部分を指定するために使われます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:646
 msgid "An `insert` section may define the default content that is rendered if not overridden."
-msgstr ""
+msgstr "`insert` セクションは、オーバーライドされない場合にレンダリングされるデフォルトのコンテンツを定義することができます。"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/qute-reference.adoc:647
 #, no-wrap
 msgid "Template \"detail\""
-msgstr ""
+msgstr "テンプレート「詳細」"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:658
@@ -1449,28 +1449,28 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:660
 msgid "`include` section is used to specify the extended template."
-msgstr ""
+msgstr "`include` セクションは、拡張テンプレートを指定するために使用されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:661
 msgid "Nested blocks are used to specify the parts that should be overridden."
-msgstr ""
+msgstr "入れ子になったブロックは、オーバーライドする部分を指定するために使用されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:663
 msgid "Section blocks can also define an optional end tag - `{/title}`."
-msgstr ""
+msgstr "セクションブロックはオプションのエンドタグを定義することもできます - `{/title}` ."
 
 #. type: Title =====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:665
 #, no-wrap
 msgid "User-defined Tags"
-msgstr ""
+msgstr "ユーザー定義タグ"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:669
 msgid "User-defined tags can be used to include a template and optionally pass some parameters.  Let's suppose we have a template called `itemDetail.html`:"
-msgstr ""
+msgstr "ユーザー定義タグは、テンプレートをインクルードし、オプションでいくつかのパラメーターを渡すために使用することができます。 `itemDetail.html` というテンプレートがあるとします。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:676
@@ -1485,22 +1485,22 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:678
 msgid "`showImage` is a named parameter."
-msgstr ""
+msgstr "`showImage` は名前付きパラメーターです。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:679
 msgid "`it` is a special key that is replaced with the first unnamed param of the tag."
-msgstr ""
+msgstr "`it` は、タグの最初の名前のないパラメーターに置き換えられる特別なキーです。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:680
 msgid "(optional) `nested-content` is a special key that will be replaced by the content of the tag."
-msgstr ""
+msgstr "(オプション) `nested-content` は、タグの内容に置き換えられる特別なキーです。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:682
 msgid "Now if we register this template under the name `itemDetail.html` and if we add a `UserTagSectionHelper` to the engine:"
-msgstr ""
+msgstr "さて、このテンプレートを `itemDetail.html` という名前で登録し、エンジンに `UserTagSectionHelper` を追加した場合: "
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:688
@@ -1514,12 +1514,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:691
 msgid "In Quarkus, all files from the `src/main/resources/templates/tags` are registered and monitored automatically!"
-msgstr ""
+msgstr "Quarkusでは、 `src/main/resources/templates/tags` からのファイルはすべて登録され、自動的に監視されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:693
 msgid "We can include the tag like this:"
-msgstr ""
+msgstr "このようにタグをインクルードすることが可能です。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:705
@@ -1539,34 +1539,34 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:707
 msgid "`item` is resolved to an iteration element and can be referenced using the `it` key in the tag template."
-msgstr ""
+msgstr "`item` は反復要素に解決され、タグテンプレートで `it` キーを使用して参照することができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:708
 msgid "Tag content injected using the `nested-content` key in the tag template."
-msgstr ""
+msgstr "タグテンプレートで `nested-content` キーを使用して注入されたタグコンテンツ。"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/qute-reference.adoc:709
 #, no-wrap
 msgid "Engine Configuration"
-msgstr ""
+msgstr "エンジン設定"
 
 #. type: Title ====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:711
 #, no-wrap
 msgid "Template Locator"
-msgstr ""
+msgstr "テンプレートロケーター"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:715
 msgid "Manual registration is sometimes handy but it's also possible to register a template locator using `EngineBuilder.addLocator(Function<String, Optional<Reader>>)`.  This locator is used whenever the `Engine.getTemplate()` method is called and the engine has no template for a given id stored in the cache."
-msgstr ""
+msgstr "手動登録が便利な場合もありますが、 `EngineBuilder.addLocator(Function<String, Optional<Reader>>)` を使用してテンプレートロケータを登録することも可能です。このロケータは、 `Engine.getTemplate()` メソッドが呼び出され、エンジンがキャッシュに保存されている指定された id のテンプレートを持っていない場合に使用されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:717
 msgid "In Quarkus, all templates from the `src/main/resources/templates` are located automatically."
-msgstr ""
+msgstr "Quarkusでは、 `src/main/resources/templates` のテンプレートはすべて自動的に配置されます。"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/qute-reference.adoc:719
@@ -1577,7 +1577,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:722
 msgid "If you want to use Qute in your Quarkus application add the following dependency to your project:"
-msgstr ""
+msgstr "QuarkusアプリケーションでQuteを使用する場合は、以下の依存関係をプロジェクトに追加してください。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:729
@@ -1592,7 +1592,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:733
 msgid "In Quarkus, a preconfigured engine instance is provided and available for injection - a bean with scope `@ApplicationScoped`, bean type `io.quarkus.qute.Engine` and qualifier `@Default` is registered automatically.  Moreover, all templates located in the `src/main/resources/templates` directory are validated and can be easily injected."
-msgstr ""
+msgstr "Quarkusでは、事前に設定されたエンジンインスタンスが提供され、インジェクションに利用できます。`@ApplicationScoped` スコープのBean、 `io.quarkus.qute.Engine` 型のBean、 `@Default` 修飾子が自動的に登録されます。さらに、 `src/main/resources/templates` ディレクトリーにあるすべてのテンプレートが検証され、簡単にインジェクションすることができます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:739
@@ -1647,18 +1647,18 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:755
 msgid "Inject the configured `Engine` instance."
-msgstr ""
+msgstr "設定された `Engine` インスタンスを注入します。"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/qute-reference.adoc:756
 #, no-wrap
 msgid "Template Variants"
-msgstr ""
+msgstr "テンプレートバリアント"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:760
 msgid "Sometimes it's useful to render a specific variant of the template based on the content negotiation.  This can be done by setting a special attribute via `TemplateInstance.setAttribute()`:"
-msgstr ""
+msgstr "コンテンツネゴシエーションに基づいてテンプレートの特定のバリアントをレンダリングすることが有用な場合があります。これは `TemplateInstance.setAttribute()` を通じて特別な属性を設定することで行うことができます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:764
@@ -1695,18 +1695,18 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:778
 msgid "When using `quarkus-resteasy-qute` the content negotiation is performed automatically. See <<resteasy_integration>>."
-msgstr ""
+msgstr "`quarkus-resteasy-qute` を使用している場合、コンテンツネゴシエーションは自動的に行われます。 <<resteasy_integration>> を参照してください。"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/qute-reference.adoc:779
 #, no-wrap
 msgid "Injecting Beans Directly In Templates"
-msgstr ""
+msgstr "テンプレートに直接Beansを注入"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:782
 msgid "A CDI bean annotated with `@Named` can be referenced in any template through the `inject` namespace:"
-msgstr ""
+msgstr "`@Named` でアノテーションされた CDI Beanは、 `inject` 名前空間を通して、どのテンプレートでも参照することができます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:786
@@ -1717,17 +1717,17 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:788
 msgid "First, a bean with name `foo` is found and then used as the base object."
-msgstr ""
+msgstr "まず、 `foo` という名前のBeanを見つけ、それをベースオブジェクトとして使用します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:791
 msgid "All expressions using the `inject` namespace are validated during build.  For the expression `inject:foo.price` the implementation class of the injected bean must either have the `price` property (e.g. a `getPrice()` method) or a matching <<template_extension_methods,template extension method>> must exist."
-msgstr ""
+msgstr "`inject` 名前空間を使用するすべての式は、ビルド時に検証されます。式 `inject:foo.price` については、注入されたBeanの実装クラスに `price` プロパティー ( `getPrice()` メソッドなど) があるか、一致する link:#template_extension_methods[テンプレート拡張メソッド] が存在していなければなりません。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:793
 msgid "A `ValueResolver` is also generated for all beans annotated with `@Named` so that it's possible to access its properties without reflection."
-msgstr ""
+msgstr "`@Named` でアノテーションされたすべてのBeanに対して `ValueResolver` も生成され、そのプロパティーにリフレクションなしでアクセスできるようになります。"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/qute-reference.adoc:795
@@ -1761,17 +1761,17 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:817
 msgid "Parameter declaration - maps `foo` to `org.acme.Foo`."
-msgstr ""
+msgstr "パラメーター宣言 - `foo` を `org.acme.Foo` にマップします。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:818
 msgid "Not validated - not matching a param declaration."
-msgstr ""
+msgstr "検証されていません - パラメーター宣言にマッチしません。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:819
 msgid "This expression is validated. `org.acme.Foo` must have a property `message` or a matching template extension method must exist."
-msgstr ""
+msgstr "この式は検証されています。`org.acme.Foo` はプロパティー `message` を持つか、一致するテンプレート拡張メソッドが存在しなければなりません。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:821
@@ -1807,18 +1807,18 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:842
 msgid "Validated against `org.acme.Foo`."
-msgstr ""
+msgstr "`org.acme.Foo` に対して検証されています。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:843
 msgid "Not validated - `foo` is overridden in the loop section."
-msgstr ""
+msgstr "検証されていません - `foo` はループセクションでオーバーライドされています。"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/qute-reference.adoc:845
 #, no-wrap
 msgid "Template Extension Methods"
-msgstr ""
+msgstr "テンプレート拡張メソッド"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:849
@@ -1827,23 +1827,24 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:854
+#, fuzzy
 msgid "A value resolver is automatically generated for a method annotated with `@TemplateExtension`.  If a class is annotated with `@TemplateExtension` then a value resolver is generated for every non-private static method declared on the class.  Method-level annotations override the behavior defined on the class.  Methods that do not meet the following requirements are ignored."
-msgstr ""
+msgstr "値リゾルバは、 `@TemplateExtension` でアノテーションされたメソッドに対して自動的に生成されます。クラスが `@TemplateExtension` でアノテーションされている場合、そのクラスで宣言されている _プライベートではないスタティック・メソッド_ ごとに値リゾルバが生成されます。メソッドレベルのアノテーションは、クラスで定義された動作をオーバーライドします。以下の要件を満たさないメソッドは無視されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:856
 msgid "A template extension method:"
-msgstr ""
+msgstr "テンプレート拡張メソッドは:"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:858
 msgid "must not be `private`"
-msgstr ""
+msgstr "`private` であってはなりません"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:859
 msgid "must be static,"
-msgstr ""
+msgstr "`static` でなければなりません"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:860
@@ -1874,7 +1875,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:875
 #, no-wrap
 msgid "Extension Method Example"
-msgstr ""
+msgstr "拡張メソッドの例"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:879
@@ -1929,12 +1930,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:898
 msgid "This method matches an expression with base object of the type `Item.class` and the `discountedPrice` property name."
-msgstr ""
+msgstr "このメソッドは、 `Item.class` 型のベース・オブジェクトと `discountedPrice` プロパティー名を持つ式にマッチします。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:900
 msgid "This template extension method makes it possible to render the following template:"
-msgstr ""
+msgstr "このテンプレート拡張メソッドを使うと、以下のテンプレートをレンダリングすることができます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:904
@@ -1945,13 +1946,13 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:906
 msgid "`item` is resolved to an instance of `org.acme.Item`."
-msgstr ""
+msgstr "`item` は `org.acme.Item` のインスタンスに解決されます。"
 
 #. type: Title ====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:907
 #, no-wrap
 msgid "Method Parameters"
-msgstr ""
+msgstr "メソッドパラメーター"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:912
@@ -1962,7 +1963,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:913
 #, no-wrap
 msgid "Multiple Parameters Example"
-msgstr ""
+msgstr "複数のパラメーターの例"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:918
@@ -1985,7 +1986,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:925
 msgid "This method matches an expression with base object of the type `BigDecimal.class`, with the `scale` virtual method name and two virtual method parameters."
-msgstr ""
+msgstr "このメソッドは、 `BigDecimal.class` 型の基底オブジェクトと、 `scale` の仮想メソッド名と 2 つの仮想メソッドパラメーターを持つ式にマッチします。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:929
@@ -1996,7 +1997,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:931
 msgid "`item.discountedPrice` is resolved to an instance of `BigDecimal`."
-msgstr ""
+msgstr "`item.discountedPrice` は `BigDecimal` のインスタンスに解決されます。"
 
 #. type: Title ====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:933
@@ -2007,13 +2008,13 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:938
 msgid "If `TemplateExtension#namespace()` is specified then the extension method is used to resolve expressions with the given <<expressions,namespace>>.  Template extension methods that share the same namespace are grouped in one resolver ordered by `TemplateExtension#priority()`.  The first matching extension method is used to resolve an expression."
-msgstr ""
+msgstr "`TemplateExtension#namespace()` が指定された場合、拡張メソッドが、指定された <<expressions,namespace>> を持つ式を解決するために使用されます。同じ名前空間を共有するテンプレート拡張メソッドは、 `TemplateExtension#priority()` で順に 1 つのリゾルバにグループ化されます。最初にマッチする拡張メソッドが式の解決に使用されます。"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/qute-reference.adoc:939
 #, no-wrap
 msgid "Namespace Extension Method Example"
-msgstr ""
+msgstr "名前空間拡張メソッド例"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:944
@@ -2045,7 +2046,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:956
 msgid "These extension methods can be used as follows."
-msgstr ""
+msgstr "これらの拡張メソッドは、以下のように使用することができます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:961
@@ -2058,132 +2059,132 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:963
 msgid "The output is `Hello world!`"
-msgstr ""
+msgstr "出力は `Hello world!` です"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:964
 msgid "The output is `olleh`"
-msgstr ""
+msgstr "出力は `olleh` です"
 
 #. type: Title ====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:965
 #, no-wrap
 msgid "Built-in Template Extension"
-msgstr ""
+msgstr "組み込みテンプレートエクステンション"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:968
 msgid "Quarkus provides a set of built-in extension methods."
-msgstr ""
+msgstr "Quarkusは、組み込みの拡張メソッドのセットを提供しています。"
 
 #. type: Title =====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:969
 #, no-wrap
 msgid "Maps"
-msgstr ""
+msgstr "マップ"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:972
 msgid "`keys` or `keySet`: Returns a Set view of the keys contained in a map"
-msgstr ""
+msgstr "`keys` または `keySet` : マップに含まれるキーのセットビューを返します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:973
 msgid "`{#for key in map.keySet}`"
-msgstr ""
+msgstr "`{#for key in map.keySet}`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:975
 msgid "`values`: Returns a Collection view of the values contained in a map"
-msgstr ""
+msgstr "`values` : マップに含まれる値のコレクションビューを返します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:976
 msgid "`{#for value in map.values}`"
-msgstr ""
+msgstr "`{#for value in map.values}`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:978
 msgid "`size`: Returns the number of key-value mappings in a map"
-msgstr ""
+msgstr "`size` : マップ内のキーと値の対応付けの個数を返します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:979
 msgid "`{map.size}`"
-msgstr ""
+msgstr "`{map.size}`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:981
 msgid "`isEmpty`: Returns true if a map contains no key-value mappings"
-msgstr ""
+msgstr "`isEmpty` : マップにキーと値のマッピングが含まれていない場合に true を返します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:982
 msgid "`{#if map.isEmpty}`"
-msgstr ""
+msgstr "`{#if map.isEmpty}`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:984
 msgid "`get(key)`: Returns the value to which the specified key is mapped"
-msgstr ""
+msgstr "`get(key)` : 指定したキーがマッピングされた値を返します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:985
 msgid "`{map.get('foo')}`"
-msgstr ""
+msgstr "`{map.get('foo')}`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:987
 msgid "A map value can be also accessed directly: `{map.myKey}`. Use the bracket notation for keys that are not legal identifiers: `{map['my key']}`."
-msgstr ""
+msgstr "マップ値は、直接アクセスすることもできます : `{map.myKey}` 。正規の識別子ではないキーには大括弧表記を使用します: `{map['my key']}` 。"
 
 #. type: Title =====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:988
 #, no-wrap
 msgid "Collections"
-msgstr ""
+msgstr "コレクション"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:991
 msgid "`get(index)`: Returns the element at the specified position in a list"
-msgstr ""
+msgstr "`get(index)` : リストの指定した位置の要素を返す"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:992
 msgid "`{list.get(0)}`"
-msgstr ""
+msgstr "`{list.get(0)}`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:994
 msgid "A list element can be accessed directly: `{list.10}` or `{list[10]}`."
-msgstr ""
+msgstr "list 要素に直接アクセスすることができます: `{list.10}` または `{list[10]}` ."
 
 #. type: Title =====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:995
 #, no-wrap
 msgid "Numbers"
-msgstr ""
+msgstr "数値"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:998
 msgid "`mod`: Modulo operation"
-msgstr ""
+msgstr "`mod` : モデューロ演算"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:999
 msgid "`{#if counter.mod(5) == 0}`"
-msgstr ""
+msgstr "`{#if counter.mod(5) == 0}`"
 
 #. type: Title =====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1000
 #, no-wrap
 msgid "Config "
-msgstr ""
+msgstr "設定"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1003
 msgid "`config:<name>` or `config:[<name>]`: Returns the config value for the given property name"
-msgstr ""
+msgstr "`config:<name>` 又は `config:[<name>]` : 指定したプロパティー名の設定値を返します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1004
@@ -2193,7 +2194,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1006
 msgid "`config:property(name)`: Returns the config value for the given property name; the name can be obtained dynamically by an expression"
-msgstr ""
+msgstr "`config:property(name)` : 指定したプロパティー名の設定値を返します。名前は式で動的に取得することが可能です。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1007
@@ -2204,17 +2205,17 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1009
 #, no-wrap
 msgid "@TemplateData"
-msgstr ""
+msgstr "@TemplateData"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1013
 msgid "A value resolver is automatically generated for a type annotated with `@TemplateData`.  This allows Quarkus to avoid using reflection to access the data at runtime."
-msgstr ""
+msgstr "値リゾルバは、 `@TemplateData` でアノテーションされた型に対して自動的に生成されます。これにより、Quarkusでは、実行時にデータにアクセスするためのリフレクションの使用を避けることができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1015
 msgid "Non-public members, constructors, static initializers, static, synthetic and void methods are always ignored."
-msgstr ""
+msgstr "非publicのメンバー、コンストラクタ、静的イニシャライザ、静的メソッド、合成メソッド、ボイドメソッドは常に無視されます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1022
@@ -2246,7 +2247,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1036
 msgid "Any instance of `Item` can be used directly in the template:"
-msgstr ""
+msgstr "`Item` の任意のインスタンスをテンプレート内で直接使用することができます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1042
@@ -2260,12 +2261,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1044
 msgid "`items` is resolved to a list of `org.acme.Item` instances."
-msgstr ""
+msgstr "`items` は `org.acme.Item` インスタンスのリストに解決されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1047
 msgid "Furthermore, `@TemplateData.properties()` and `@TemplateData.ignore()` can be used to fine-tune the generated resolver.  Finally, it is also possible to specify the \"target\" of the annotation - this could be useful for third-party classes not controlled by the application:"
-msgstr ""
+msgstr "さらに、 `@TemplateData.properties()` と `@TemplateData.ignore()` を使用して、生成されるリゾルバを微調整することができます。最後に、アノテーションの「ターゲット」を指定することも可能です。これは、アプリケーションによって管理されないサードパーティーのクラスに便利です。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1053
@@ -2288,7 +2289,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1069
 msgid "The generated value resolver knows how to invoke the `BigDecimal.setScale()` method."
-msgstr ""
+msgstr "生成された値リゾルバは、 `BigDecimal.setScale()` メソッドを呼び出す方法を知っています。"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1071
@@ -2320,7 +2321,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1087
 #, no-wrap
 msgid "HelloResource.java"
-msgstr ""
+msgstr "HelloResource.java"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1091
@@ -2377,22 +2378,22 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1114
 msgid "If there is no `@ResourcePath` qualifier provided, the field name is used to locate the template. In this particular case, we're injecting a template with path `templates/hello.txt`."
-msgstr ""
+msgstr "`@ResourcePath` の修飾子が指定されていない場合は、フィールド名がテンプレートの場所を特定するために使用されます。この特定のケースでは、パスが `templates/hello.txt` であるテンプレートを注入しています。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1115
 msgid "`Template.data()` returns a new template instance that can be customized before the actual rendering is triggered. In this case, we put the name value under the key `name`. The data map is accessible during rendering."
-msgstr ""
+msgstr "`Template.data()` は、実際のレンダリングがトリガーされる前にカスタマイズできる新しいテンプレートインスタンスを返します。この場合、nameの値をキー `name` にセットします。データマップはレンダリング中にアクセス可能です。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1116
 msgid "Note that we don't trigger the rendering - this is done automatically by a special `ContainerResponseFilter` implementation."
-msgstr ""
+msgstr "レンダリングをトリガーしないことに注意してください - これは特別な `ContainerResponseFilter` の実装によって自動的に行われます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1120
 msgid "The content negotiation is performed automatically.  The resulting output depends on the `Accept` header received from the client."
-msgstr ""
+msgstr "コンテンツネゴシエーションは自動的に実行されます。結果の出力はクライアントから受け取った `Accept` ヘッダーに依存します。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1125
@@ -2425,50 +2426,50 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1137
 msgid "Inject a variant template with base path derived from the injected field - `src/main/resources/templates/item`."
-msgstr ""
+msgstr "注入されたフィールドから派生したベースパスを持つバリアントテンプレートを注入します - `src/main/resources/templates/item`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1138
 msgid "For `text/plain` the `src/main/resources/templates/item.txt` template is used. For `text/html` the `META-INF/resources/templates/item.html` template is used."
-msgstr ""
+msgstr "`text/plain` では `src/main/resources/templates/item.txt` のテンプレートが使用されます。 `text/html` では `META-INF/resources/templates/item.html` のテンプレートが使用されます。"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1140
 #, no-wrap
 msgid "Development Mode"
-msgstr ""
+msgstr "開発モード"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1143
 msgid "In the development mode, all files located in `src/main/resources/templates` are watched for changes and modifications are immediately visible."
-msgstr ""
+msgstr "開発モードでは、 `src/main/resources/templates` にあるすべてのファイルの変更が監視され、変更はすぐに表示されます。"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1144
 #, no-wrap
 msgid "Type-safe Message Bundles"
-msgstr ""
+msgstr "タイプセーフメッセージバンドル"
 
 #. type: Title ====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1146
 #, no-wrap
 msgid "Basic Concepts"
-msgstr ""
+msgstr "基本概念"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1152
 msgid "The basic idea is that every message is potentially a very simple template.  In order to prevent type errors a message is defined as an annotated method of a *message bundle interface*.  Quarkus generates the *message bundle implementation* at build time.  Subsequently, the bundles can be used at runtime:"
-msgstr ""
+msgstr "基本的な考え方は、すべてのメッセージは潜在的に非常にシンプルなテンプレートであるということです。型エラーを防ぐために、メッセージは *メッセージバンドルインターフェース* のアノテーションメソッドとして定義されます。Quarkusは、ビルド時に *メッセージバンドルの実装を* 生成します。そのため、実行時にバンドルを使用することができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1154
 msgid "Directly in your code via `io.quarkus.qute.i18n.MessageBundles#get()`; e.g. `MessageBundles.get(AppMessages.class).hello_name(\"Lucie\")`"
-msgstr ""
+msgstr "`io.quarkus.qute.i18n.MessageBundles#get()` を経由し、直接コードの中で使用。例: `MessageBundles.get(AppMessages.class).hello_name(\"Lucie\")`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1155
 msgid "Injected in your beans via `@Inject`; e.g. `@Inject AppMessages`"
-msgstr ""
+msgstr "`@Inject` であなたのBeanに注入。 例: `@Inject AppMessages`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1156
@@ -2509,101 +2510,102 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1171
 msgid "Denotes a message bundle interface. The bundle name is defaulted to `msg` and is used as a namespace in templates expressions, e.g. `{msg:hello_name}`."
-msgstr ""
+msgstr "メッセージバンドルインターフェイスを表します。 バンドル名のデフォルトは `msg` で、テンプレート式の名前空間として使用されます。例: `{msg:hello_name}`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1172
 msgid "Each method must be annotated with `@Message`. The value is a qute template."
-msgstr ""
+msgstr "各メソッドは `@Message` でアノテーションする必要があります。値は qute テンプレートです。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1173
 msgid "The method parameters can be used in the template."
-msgstr ""
+msgstr "メソッドのパラメーターはテンプレートで使用することができます。"
 
 #. type: Title ====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1174
 #, no-wrap
 msgid "Bundle Name and Message Keys"
-msgstr ""
+msgstr "バンドル名とメッセージキー"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1182
 msgid "Keys are used directly in templates.  The bundle name is used as a namespace in template expressions.  The `@MessageBundle` can be used to define the default strategy used to generate message keys from method names.  However, the `@Message` can override this strategy and even define a custom key.  By default, the annotated element's name is used as-is.  Other possibilities are:"
-msgstr ""
+msgstr "キーはテンプレート内で直接使用されます。バンドル名はテンプレート式の名前空間として使用されます。 `@MessageBundle` は、メソッド名からメッセージキーを生成するために使用されるデフォルトのストラテジーを定義するために使用することができます。しかし、 `@Message` はこのストラテジーをオーバーライドし、カスタム・キーを定義することもできます。デフォルトでは、アノテーションされた要素の名前がそのまま使用されます。他の可能性としては、以下のようなものがあります。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1184
 msgid "De-camel-cased and hyphenated; e.g. `helloName()` -> `hello-name`"
-msgstr ""
+msgstr "キャメルケースを止め、ハイフン化したもの。 例: `helloName()` -> `hello-name`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1185
 msgid "De-camel-cased and parts separated by underscores; e.g. `helloName()` -> `hello_name`."
-msgstr ""
+msgstr "キャメルケースを止め、パーツをアンダースコア区切りとしたもの。例: `helloName()` -> `hello_name`"
 
 #. type: Title ====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1186
 #, no-wrap
 msgid "Validation"
-msgstr ""
+msgstr "バリデーション"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1189
 msgid "All message bundle templates are validated:"
-msgstr ""
+msgstr "すべてのメッセージバンドルテンプレートは検証されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1190
 msgid "All expressions without a namespace must map to a parameter; e.g. `Hello {foo}` -> the method must have a param of name `foo`"
-msgstr ""
+msgstr "名前空間を持たない全ての式はパラメーターにマッピングする必要があります。例: `Hello {foo}` の場合、メソッドは `foo` という名前のパラメータを持つ必要があります。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1191
 msgid "All expressions are validated against the types of the parameters; e.g. `Hello {foo.bar}` where the parameter `foo` is of type `org.acme.Foo` -> `org.acme.Foo` must have a property of name `bar`"
-msgstr ""
+msgstr "すべての式はパラメーターの型に対して検証されます。例: `Hello {foo.bar}` で、パラメーター `foo` の型が `org.acme.Foo` の場合、 `org.acme.Foo` は `bar` という名前のプロパティーを持つ必要があります。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1193
 msgid "A warning message is logged for each _unused_ parameter."
-msgstr ""
+msgstr "_未使用の_ パラメーターごとに警告メッセージが記録されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1194
 msgid "Expressions that reference a message bundle method, such as `{msg:hello(item.name)}`, are validated too."
-msgstr ""
+msgstr "`{msg:hello(item.name)}` のようなメッセージバンドルメソッドを参照する式も検証されます。"
 
 #. type: Title ====
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1195
 #, no-wrap
 msgid "Localization"
-msgstr ""
+msgstr "ローカライゼーション"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1200
+#, fuzzy
 msgid "The default locale of the Java Virtual Machine used to *build the application* is used for the `@MessageBundle` interface by default.  However, the `io.quarkus.qute.i18n.MessageBundle#locale()` can be used to specify a custom locale.  Additionaly, there are two ways to define a localized bundle:"
-msgstr ""
+msgstr "*アプリケーションのビルド* に使用する Java 仮想マシンのデフォルトのロケールは、デフォルトでは `@MessageBundle` インターフェイスに使用されます。ただし、 `io.quarkus.qute.i18n.MessageBundle#locale()` を使用してカスタムロケールを指定することができます。さらに、ローカライズされたバンドルを定義するには、2 つの方法があります。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1202
 msgid "Create an interface that extends the default interface that is annotated with `@Localized`"
-msgstr ""
+msgstr "`@Localized` でアノテーションされたデフォルトのインターフェイスを拡張するインターフェイスを作成します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1203
 msgid "Create an UTF-8 encoded file located in `src/main/resources/messages`; e.g. `msg_de.properties`."
-msgstr ""
+msgstr "`src/main/resources/messages` に UTF-8 エンコードされたファイルを作成します。例: `msg_de.properties`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1205
 msgid "A localized interface is the preferred solution mainly due to the possibility of easy refactoring."
-msgstr ""
+msgstr "ローカライズされたインターフェイスは、主にリファクタリングの容易性から、好ましい解決策です。"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1206
 #, no-wrap
 msgid "Localized Interface Example"
-msgstr ""
+msgstr "ローカライズされたインターフェースの例"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1211
@@ -2634,23 +2636,23 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1221
 msgid "The value is the locale tag string (IETF)."
-msgstr ""
+msgstr "値はロケールタグ文字列(IETF)です。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1222
 msgid "The value is the localized template."
-msgstr ""
+msgstr "値はローカライズされたテンプレートです。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1230
 msgid "Message bundle files must be encoded in UTF-8.  The file name consists of the relevant bundle name (e.g. `msg`) and underscore followed by the locate tag (IETF).  The file format is very simple: each line represents either a key/value pair with the equals sign used as a separator or a comment (line starts with `#`).  Keys are mapped to method names from the corresponding message bundle interface.  Values represent the templates normally defined by `io.quarkus.qute.i18n.Message#value()`.  We use `.properties` suffix in our example because most IDEs and text editors support syntax highlighting of `.properties` files.  But in fact, the suffix could be anything."
-msgstr ""
+msgstr "メッセージバンドルファイルはUTF-8でエンコードされている必要があります。ファイル名は、関連するバンドル名(例: `msg` )とアンダースコア、続くロケートタグ(IETF)から構成されます。フ ァ イ ル形式は非常に単純です。各行は、キーと値のペアを表すもので、等号をセパレータとして使用するか、コメント(行頭が `#` で始まる)を使用します。キーは、対応するメッセージ・バンドル・インターフェースのメソッド名にマッピングされています。値は、通常 `io.quarkus.qute.i18n.Message#value()` で定義されているテンプレートを表します。この例では `.properties` サフィックスを使用しています。これは、ほとんどの IDE やテキスト・エディタが `.properties` ファイルのシンタックス・ハイライトをサポートしているからです。しかし、実際には、サフィックスは何でも構いません。"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1231
 #, no-wrap
 msgid "Localized File Example - `msg_de.properties`"
-msgstr ""
+msgstr "ローカライズされたファイルの例 - `msg_de.properties`"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1235
@@ -2661,15 +2663,15 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1237
 msgid "Each line in a localized file represents a message template."
-msgstr ""
+msgstr "ローカライズされたファイルの各行は、メッセージテンプレートを表します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1238
 msgid "Keys and values are separated by the equals sign."
-msgstr ""
+msgstr "キーと値は等号で区切られています。"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/qute-reference.adoc:1239
 #, no-wrap
 msgid "Configuration Reference"
-msgstr ""
+msgstr "設定リファレンス"

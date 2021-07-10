@@ -28,12 +28,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:12
 msgid "This guide explains how to use:"
-msgstr ""
+msgstr "このガイドでは以下の使い方を解説しています。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:13
 msgid "`quarkus-oidc-client` and `quarkus-oidc-client-filter` extensions to acquire and refresh access tokens from OpenId Connect and OAuth 2.0 compliant Authorization Servers such as https://www.keycloak.org/about.html[Keycloak]"
-msgstr ""
+msgstr "`quarkus-oidc-client` および `quarkus-oidc-client-filter` エクステンションを使用して、OpenId Connect および link:https://www.keycloak.org/about.html[Keycloak] などの OAuth 2.0 準拠の認可サーバーからアクセストークンを取得し、更新することができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:14
@@ -43,43 +43,44 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:16
 msgid "The access tokens managed by these extensions can be used as HTTP Authorization Bearer tokens to access the remote services."
-msgstr ""
+msgstr "これらのエクステンションで管理されているアクセストークンをHTTP Authorization Bearerトークンとして使用して、リモートサービスにアクセスすることができます。"
 
 #. type: Title ==
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:17
 #, no-wrap
 msgid "OidcClient"
-msgstr ""
+msgstr "OidcClient"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:20
+#, fuzzy
 msgid "`quarkus-oidc-client` extension provides a reactive `io.quarkus.oidc.client.OidcClient` which can be used to acquire and refresh tokens using Smallrye Mutiny `Uni` and `Vert.x WebClient`."
-msgstr ""
+msgstr "`quarkus-oidc-client` エクステンションは、SmallRye Mutiny `Uni` および `Vert.xWebClient` を使用してトークンを取得および更新するために使用できるリアクティブな `io.quarkus.oidc.client.OidcClient` を提供します。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:22
 msgid "`OidcClient` is initialized at the build time with the IDP token endpoint URL which can be auto-discovered or manually configured and uses this endpoint to acquire access tokens using `client_credentials` or `password` token grants and refresh the tokens using `refresh_token` grant."
-msgstr ""
+msgstr "`OidcClient` は自動検出または手動で構成することができる IDP トークンのエンドポイント URL でビルド時に初期化され、このエンドポイントを使用して `client_credentials` または `password` トークングラントを使用してアクセストークンを取得し、 `refresh_token` グラントを使用してトークンを更新します。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:24
 msgid "Here is how `OidcClient` can be configured to use the `client_credentials` grant:"
-msgstr ""
+msgstr "`OidcClient` が `client_credentials` グラントを使用するように設定する方法は以下の通りです。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:30
 msgid "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus2/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.secret=secret ```"
-msgstr ""
+msgstr "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus2/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.secret=secret ```"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:32
 msgid "Here is how `OidcClient` can be configured to use the `password` grant:"
-msgstr ""
+msgstr "`OidcClient` が `password` グラントを使用するように設定する方法は以下の通りです。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:42
 msgid "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus2/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.secret=secret quarkus.oidc-client.grant.type=password quarkus.oidc-client.grant-options.password.username=alice quarkus.oidc-client.grant-options.password.password=alice ``` In both cases `OidcClient` will auto-discover the token endpoint URL and use it to acquire the tokens."
-msgstr ""
+msgstr "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus2/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.secret=secret quarkus.oidc-client.grant.type=password quarkus.oidc-client.grant-options.password.username=alice quarkus.oidc-client.grant-options.password.password=alice ``` In both cases `OidcClient` will auto-discover the token endpoint URL and use it to acquire the tokens."
 
 #. type: Title ===
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:43
@@ -90,22 +91,22 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:46
 msgid "One can use `OidcClient` directly as follows:"
-msgstr ""
+msgstr "以下のように `OidcClient` を直接使用することができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:51
 msgid "``` import javax.inject.PostConstruct; import javax.inject.Inject; import javax.ws.rs.GET;"
-msgstr ""
+msgstr "``` import javax.inject.PostConstruct; import javax.inject.Inject; import javax.ws.rs.GET;"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:54
 msgid "import io.quarkus.oidc.client.OidcClient; import io.quarkus.oidc.client.Tokens;"
-msgstr ""
+msgstr "import io.quarkus.oidc.client.OidcClient; import io.quarkus.oidc.client.Tokens;"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:57
 msgid "@Path(\"/service\")  public class OidcClientResource {"
-msgstr ""
+msgstr "@Path(\"/service\")  public class OidcClientResource {"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:60
@@ -114,12 +115,14 @@ msgid ""
 "    @Inject\n"
 "    OidcClient client;\n"
 msgstr ""
+"    @Inject\n"
+"    OidcClient client;\n"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:62
 #, no-wrap
 msgid "    volatile Tokens currentTokens;\n"
-msgstr ""
+msgstr "    volatile Tokens currentTokens;\n"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:67
@@ -130,6 +133,10 @@ msgid ""
 "        currentTokens = client.getTokens().await().indefinitely();\n"
 "    }\n"
 msgstr ""
+"    @PostConstruct\n"
+"    public init() {\n"
+"        currentTokens = client.getTokens().await().indefinitely();\n"
+"    }\n"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:70
@@ -138,6 +145,8 @@ msgid ""
 "    @GET\n"
 "    public String getResponse() {\n"
 msgstr ""
+"    @GET\n"
+"    public String getResponse() {\n"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:80
@@ -153,6 +162,15 @@ msgid ""
 "}\n"
 "```\n"
 msgstr ""
+"        Tokens tokens = currentTokens;\n"
+"        if (tokens.isAccessTokenExpired()) {\n"
+"            tokens = client.refreshTokens(tokens.getRefreshToken()).await().indefinitely();\n"
+"            currentTokens = tokens;\n"
+"        } \n"
+"        // use tokens.getAccessToken() to configure MP RestClient Authorization header/etc\n"
+"    }\n"
+"}\n"
+"```\n"
 
 #. type: Title ===
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:81
@@ -163,17 +181,18 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:84
 msgid "`quarkus-oidc-client-filter` extension provides `io.quarkus.oidc.client.filter.OidcClientRequestFilter` JAX-RS ClientRequestFilter which uses `OidcClient` to acquire the access token, refresh it if needed, and set it as an HTTP `Authorization` `Bearer` scheme value."
-msgstr ""
+msgstr "`quarkus-oidc-client-filter` エクステンションは `io.quarkus.oidc.client.filter.OidcClientRequestFilter` JAX-RS ClientRequestFilter を提供します。このフィルターは、`OidcClient` を使用してアクセストークンを取得し、必要に応じて更新し、HTTP `Authorization` `Bearer` スキーム値として設定します。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:86
+#, fuzzy
 msgid "By default this filter will get `OidcClient` to acquire the first pair of access and refresh tokens at its initialization time. If the access tokens are short lived and refresh tokens are not available then the token acquisition should be delayed with `quarkus.oidc-client.early-tokens-acquisition=false`."
-msgstr ""
+msgstr "デフォルトでは、このフィルタは初期化時に `OidcClient` を取得してアクセストークンとリフレッシュトークンの最初のペアを取得します。アクセストークンが短命でリフレッシュトークンが利用できない場合は、`quarkus.oidc-client.early-tokens-acquisition=false` でトークンの取得を遅延させるべきです。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:88
 msgid "You can selectively register `OidcClientRequestFilter` by using either `io.quarkus.oidc.client.filter.OidcClientFilter` or `org.eclipse.microprofile.rest.client.annotation.RegisterProvider` annotations:"
-msgstr ""
+msgstr "`io.quarkus.oidc.client.filter.OidcClientFilter` または `org.eclipse.microprofile.rest.client.annotation.RegisterProvider` アノテーションを使用して `OidcClientRequestFilter` を選択的に登録することができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:92
@@ -217,23 +236,23 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:121
 msgid "Alternatively, `OidcClientRequestFilter` can be registered automatically with all MP Rest or JAX-RS clients if `quarkus.oidc-client-filter.register-filter=true` property is set."
-msgstr ""
+msgstr "または、 `quarkus.oidc-client-filter.register-filter=true` プロパティーが設定されている場合、すべての MP Rest または JAX-RS クライアントで `OidcClientRequestFilter` を自動的に登録することができます。"
 
 #. type: Title ===
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:122
 #, no-wrap
 msgid "Use injected Tokens"
-msgstr ""
+msgstr "注入されたトークンを使用する"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:125
 msgid "If you prefer you can use your own custom filter and inject `Tokens`:"
-msgstr ""
+msgstr "ご希望の場合は、独自のカスタムフィルターを使用して、 `Tokens` を注入することができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:131
 msgid "``` @Provider @Priority(Priorities.AUTHENTICATION)  @RequestScoped public class OidcClientRequestCustomFilter implements ClientRequestFilter {"
-msgstr ""
+msgstr "``` @Provider @Priority(Priorities.AUTHENTICATION)  @RequestScoped public class OidcClientRequestCustomFilter implements ClientRequestFilter {"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:134
@@ -242,6 +261,8 @@ msgid ""
 "    @Inject\n"
 "    Tokens tokens;\n"
 msgstr ""
+"    @Inject\n"
+"    Tokens tokens;\n"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:141
@@ -254,27 +275,33 @@ msgid ""
 "}\n"
 "```\n"
 msgstr ""
+"    @Override\n"
+"    public void filter(ClientRequestContext requestContext) throws IOException {\n"
+"        requestContext.getHeaders().add(HttpHeaders.AUTHORIZATION, \"Bearer \" + tokens.getAccessToken());\n"
+"    }\n"
+"}\n"
+"```\n"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:143
 msgid "The `Tokens` producer will acquire and refresh the tokens and the custom filter will decide how and when to use the token."
-msgstr ""
+msgstr "`Tokens` プロデューサーがトークンを取得して更新し、カスタムフィルターがいつどのようにトークンを使用するかを決定します。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:145
 msgid "See also the previous section about delaying the token acquisition in some cases."
-msgstr ""
+msgstr "トークンの取得を遅らせる場合があることについては、前のセクションも参照してください。"
 
 #. type: Title ===
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:146
 #, no-wrap
 msgid "OidcClients"
-msgstr ""
+msgstr "OidcClients"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:149
 msgid "`io.quarkus.oidc.client.OidcClients` is a container of `OidcClient`s - it includes a default `OidcClient` (which can also be injected directly as described above) and named clients which can be configured like this:"
-msgstr ""
+msgstr "`io.quarkus.oidc.client.OidcClients` は、 `OidcClient` のコンテナです。デフォルトの `OidcClient` (上記のように直接注入することも可能です) と名前付きクライアントを含み、このように設定することができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:152
@@ -289,7 +316,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:159
 msgid "Note in this case the default client is disabled with a `client-enabled=false` property. The `jwt-secret` client can be accessed like this:"
-msgstr ""
+msgstr "この場合、デフォルトのクライアントは `client-enabled=false` プロパティーで無効になっていることに注意してください。 `jwt-secret` クライアントは以下のようにアクセスできます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:165
@@ -344,7 +371,7 @@ msgstr ""
 #. type: delimited block =
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:186
 msgid "If you also use link:security-openid-connect-multitenancy[OIDC multitenancy] and each OIDC tenant has its own associated `OidcClient` then you can use a Vert.x `RoutingContext` `tenantId` attribute, for example:"
-msgstr ""
+msgstr "link:security-openid-connect-multitenancy[OIDC マルチテナンシーを] 使用し、各 OIDC テナントが独自の関連する `OidcClient` を持っている場合は、 Vert.x `RoutingContext` `tenantId` 属性を例えば次のように使用することができます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:196
@@ -382,7 +409,7 @@ msgstr ""
 #. type: delimited block =
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:217
 msgid "If you need you can also create new `OidcClient` programmatically like this:"
-msgstr ""
+msgstr "必要であれば、このようにプログラム的に新しい `OidcClient` を作成することもできます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:227
@@ -425,62 +452,62 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:254
 msgid "`OidcClient` has to authenticate to the OpenId Connect Provider for the `client_credentials` and other grant requests to succeed.  All the https://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication[OIDC Client Authentication] options are supported, for example:"
-msgstr ""
+msgstr "`OidcClient` は、 `client_credentials` やその他のグラントリクエストを成功させるために OpenId Connect Provider に認証する必要があります。 link:https://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication[OIDC クライアント認証] オプションはすべてサポートされています。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:256
 msgid "`client_secret_basic`:"
-msgstr ""
+msgstr "`client_secret_basic` ."
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:262
 msgid "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.secret=mysecret ```"
-msgstr ""
+msgstr "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.secret=mysecret ```"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:264
 msgid "`client_secret_post`:"
-msgstr ""
+msgstr "`client_secret_post`:"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:271
 msgid "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.client-secret.value=mysecret quarkus.oidc-client.credentials.client-secret.method=post ```"
-msgstr ""
+msgstr "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.client-secret.value=mysecret quarkus.oidc-client.credentials.client-secret.method=post ```"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:273
 msgid "`client_secret_jwt`:"
-msgstr ""
+msgstr "`client_secret_jwt`:"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:279
 msgid "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.jwt.secret=AyM1SysPpbyDfgZld3umj1qzKObwVMkoqQ-EstJQLr_T-1qS0gZH75aKtMN3Yj0iPS4hcgUuTwjAzZr1Z9CAow ```"
-msgstr ""
+msgstr "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.jwt.secret=AyM1SysPpbyDfgZld3umj1qzKObwVMkoqQ-EstJQLr_T-1qS0gZH75aKtMN3Yj0iPS4hcgUuTwjAzZr1Z9CAow ```"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:281
 msgid "`private_key_jwt` with the PEM key file:"
-msgstr ""
+msgstr "`private_key_jwt` with the PEM key file:"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:287
 msgid "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.jwt.key-file=privateKey.pem ```"
-msgstr ""
+msgstr "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.jwt.key-file=privateKey.pem ```"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:289
 msgid "`private_key_jwt` with the key store file:"
-msgstr ""
+msgstr "`private_key_jwt` PEMキーストアファイル有:"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:298
 msgid "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.jwt.key-store-file=keystore.jks quarkus.oidc-client.credentials.jwt.key-store-password=mypassword quarkus.oidc-client.credentials.jwt.key-password=mykeypassword quarkus.oidc-client.credentials.jwt.key-id=mykey ```"
-msgstr ""
+msgstr "``` quarkus.oidc-client.auth-server-url=${keycloak.url}/realms/quarkus/ quarkus.oidc-client.client-id=quarkus-app quarkus.oidc-client.credentials.jwt.key-store-file=keystore.jks quarkus.oidc-client.credentials.jwt.key-store-password=mypassword quarkus.oidc-client.credentials.jwt.key-password=mykeypassword quarkus.oidc-client.credentials.jwt.key-id=mykey ```"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:300
 msgid "Using `private_key_jwt` or `private_key_jwt` authentication methods ensures that no client secret goes over the wire."
-msgstr ""
+msgstr "`private_key_jwt` または `private_key_jwt` 認証方法を使用することで、クライアントシークレットが漏れることはありません。"
 
 #. type: Title ==
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:302
@@ -496,7 +523,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:307
 msgid "You can selectively register `AccessTokenRequestFilter` by using either `io.quarkus.oidc.token.propagation.AccessToken` or `org.eclipse.microprofile.rest.client.annotation.RegisterProvider`, for example:"
-msgstr ""
+msgstr "`io.quarkus.oidc.token.propagation.AccessToken` または `org.eclipse.microprofile.rest.client.annotation.RegisterProvider` のいずれかを使用して、 `AccessTokenRequestFilter` を選択的に登録できます。例:"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:311
@@ -532,12 +559,12 @@ msgstr ""
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:343
 #, no-wrap
 msgid "References"
-msgstr ""
+msgstr "参照"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:346
 msgid "link:security[Quarkus Security]"
-msgstr ""
+msgstr "link:security[Quarkus Security]"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-client.adoc:347

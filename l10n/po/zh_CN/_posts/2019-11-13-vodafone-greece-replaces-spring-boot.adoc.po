@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2019-11-13-vodafone-greece-replaces-spring-boot.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-11-13-vodafone-greece-replaces-spring-boot.adoc:7
@@ -107,12 +107,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2019-11-13-vodafone-greece-replaces-spring-boot.adoc:36
 msgid "Logging"
-msgstr ""
+msgstr "ロギング"
 
 #. type: Plain text
 #: upstream/_posts/2019-11-13-vodafone-greece-replaces-spring-boot.adoc:37
 msgid "Security"
-msgstr ""
+msgstr "セキュリティー"
 
 #. type: Plain text
 #: upstream/_posts/2019-11-13-vodafone-greece-replaces-spring-boot.adoc:38

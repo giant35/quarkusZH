@@ -183,7 +183,7 @@ msgstr ""
 #: upstream/_versions/main/guides/config-mappings.adoc:585
 #, no-wrap
 msgid "application.properties"
-msgstr ""
+msgstr "application.properties"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/config-mappings.adoc:98
@@ -596,7 +596,7 @@ msgstr ""
 #: upstream/_versions/main/guides/config-mappings.adoc:319
 #, no-wrap
 msgid "Collections"
-msgstr ""
+msgstr "コレクション"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config-mappings.adoc:322
@@ -671,7 +671,7 @@ msgstr ""
 #: upstream/_versions/main/guides/config-mappings.adoc:360
 #, no-wrap
 msgid "Maps"
-msgstr ""
+msgstr "マップ"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config-mappings.adoc:363
@@ -706,7 +706,7 @@ msgstr ""
 #: upstream/_versions/main/guides/config-mappings.adoc:389
 #, no-wrap
 msgid "Defaults"
-msgstr ""
+msgstr "デフォルト"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config-mappings.adoc:393
@@ -740,7 +740,7 @@ msgstr ""
 #: upstream/_versions/main/guides/config-mappings.adoc:408
 #, no-wrap
 msgid "Validation"
-msgstr ""
+msgstr "バリデーション"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config-mappings.adoc:412

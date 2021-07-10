@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:1
 #, no-wrap
 msgid "Core"
-msgstr ""
+msgstr "コア"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:4
@@ -1692,7 +1692,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:467
 #, no-wrap
 msgid "Amazon Lambda"
-msgstr ""
+msgstr "Amazon Lambda"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:472
@@ -2281,7 +2281,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:673
 #, no-wrap
 msgid "Cache"
-msgstr ""
+msgstr "Cache"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:678
@@ -2550,7 +2550,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:776
 #, no-wrap
 msgid "gRPC"
-msgstr ""
+msgstr "gRPC"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:781
@@ -2584,7 +2584,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:789
 #, no-wrap
 msgid "Hibernate ORM"
-msgstr ""
+msgstr "Hibernate ORM"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:794
@@ -2833,7 +2833,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:888
 #, no-wrap
 msgid "Jackson"
-msgstr ""
+msgstr "Jackson"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:893
@@ -3991,7 +3991,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:1335
 #, no-wrap
 msgid "RESTEasy Reactive"
-msgstr ""
+msgstr "RESTEasy Reactive"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:1340
@@ -4335,7 +4335,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:1465
 #, no-wrap
 msgid "Security"
-msgstr ""
+msgstr "セキュリティー"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:1470
@@ -4424,7 +4424,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:1500
 #, no-wrap
 msgid "SmallRye OpenAPI"
-msgstr ""
+msgstr "SmallRye OpenAPI"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:1505
@@ -4559,7 +4559,7 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:1560
 #, no-wrap
 msgid "Swagger UI"
-msgstr ""
+msgstr "Swagger UI"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-all-build-items.adoc:1565

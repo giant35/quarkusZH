@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:8
@@ -77,8 +77,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:25
+#, fuzzy
 msgid "The table below gives an overview of the current IDE's with links and a high-level overview of their features."
-msgstr ""
+msgstr "下の表では、現在のIDEの概要とリンク、その機能のハイレベルな概要をご紹介しています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:27
@@ -140,19 +141,19 @@ msgstr ""
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:53
 #, no-wrap
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:54
 #, no-wrap
 msgid "Visual Studio Code extension to install using the marketplace"
-msgstr ""
+msgstr "マーケットプレイスを使用してインストールするVisual Studioのコードエクステンション"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:55
 #, no-wrap
 msgid "Eclipse plugin to install into Eclipse using an updatesite"
-msgstr ""
+msgstr "アップデートサイトを使ってEclipseにインストールするEclipseプラグイン"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:56
@@ -170,19 +171,19 @@ msgstr ""
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:59
 #, no-wrap
 msgid "Built-in Quarkus features available in Eclipse Che incl. che.openshift.io."
-msgstr ""
+msgstr "Eclipse Cheで利用可能なQuarkusの組込機能にはche.openshift.ioなどがあります。"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:60
 #, no-wrap
 msgid "Status"
-msgstr ""
+msgstr "ステータス"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:61
 #, no-wrap
 msgid "Stable"
-msgstr ""
+msgstr "Stable"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:62
@@ -212,7 +213,7 @@ msgstr ""
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:67
 #, no-wrap
 msgid "Downloads"
-msgstr ""
+msgstr "ダウンロード"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:70
@@ -222,12 +223,15 @@ msgid ""
 "{empty} +\n"
 " https://download.jboss.org/jbosstools/vscode/snapshots/vscode-quarkus/?C=M;O=D[Development Builds]"
 msgstr ""
+"https://marketplace.visualstudio.com/items?itemName=redhat.vscode-quarkus[Marketplace]\n"
+"{empty} +\n"
+" https://download.jboss.org/jbosstools/vscode/snapshots/vscode-quarkus/?C=M;O=D[Development Builds]"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:71
 #, no-wrap
 msgid "https://download.jboss.org/jbosstools/photon/snapshots/builds/jbosstools-quarkus_master/[Development Update Site]"
-msgstr ""
+msgstr "https://download.jboss.org/jbosstools/photon/snapshots/builds/jbosstools-quarkus_master/[Development Update Site]"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:74
@@ -237,18 +241,21 @@ msgid ""
 "{empty} +\n"
 "https://download.jboss.org/jbosstools/intellij/snapshots/intellij-quarkus/[Development Builds]"
 msgstr ""
+"https://plugins.jetbrains.com/plugin/13234-quarkus/versions[Marketplace]\n"
+"{empty} +\n"
+"https://download.jboss.org/jbosstools/intellij/snapshots/intellij-quarkus/[Development Builds]"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:75
 #, no-wrap
 msgid "https://www.jetbrains.com/idea/nextversion/[Installer]"
-msgstr ""
+msgstr "https://www.jetbrains.com/idea/nextversion/[Installer]"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:78
 #, no-wrap
 msgid "Source"
-msgstr ""
+msgstr "ソース"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:79
@@ -272,13 +279,13 @@ msgstr ""
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:82
 #, no-wrap
 msgid "Closed-Source"
-msgstr ""
+msgstr "クローズドソース"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:85
 #, no-wrap
 msgid "https://github.com/redhat-developer/quarkus-ls[Quarkus Language Server]"
-msgstr ""
+msgstr "https://github.com/redhat-developer/quarkus-ls[Quarkus Language Server]"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:86
@@ -323,7 +330,7 @@ msgstr ""
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:159
 #, no-wrap
 msgid "icon:check[]"
-msgstr ""
+msgstr "icon:check[]"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:89
@@ -342,61 +349,61 @@ msgstr ""
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:160
 #, no-wrap
 msgid "icon:times[]"
-msgstr ""
+msgstr "icon:times[]"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:92
 #, no-wrap
 msgid "Wizards w/code.quarkus.io"
-msgstr ""
+msgstr "code.quarkus.ioのウィザード"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:95
 #, no-wrap
 msgid "https://issues.jboss.org/browse/JBIDE-26950[icon:times[]]"
-msgstr ""
+msgstr "https://issues.jboss.org/browse/JBIDE-26950[icon:times[]]"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:99
 #, no-wrap
 msgid "Custom Wizard"
-msgstr ""
+msgstr "カスタムウィザード"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:106
 #, no-wrap
 msgid "Config editor"
-msgstr ""
+msgstr "設定エディタ"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:113
 #, no-wrap
 msgid "Config autocompletion"
-msgstr ""
+msgstr "設定の自動補完"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:120
 #, no-wrap
 msgid "Config validation"
-msgstr ""
+msgstr "設定の検証"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:127
 #, no-wrap
 msgid "Config profiles"
-msgstr ""
+msgstr "設定プロファイル"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:134
 #, no-wrap
 msgid "Config outline"
-msgstr ""
+msgstr "設定アウトライン"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:141
 #, no-wrap
 msgid "Easy Launch debug/dev:mode"
-msgstr ""
+msgstr "debug/dev:mode の簡単起動"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:148
@@ -408,7 +415,7 @@ msgstr ""
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:155
 #, no-wrap
 msgid "Injection Discovery/Navigation"
-msgstr ""
+msgstr "インジェクションディスカバリー/ナビゲーション"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:163

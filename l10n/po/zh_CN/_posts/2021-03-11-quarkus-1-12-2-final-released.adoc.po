@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:8
@@ -38,88 +38,88 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:11
 msgid "1.12.2.Final is a maintenance release fixing bugs and improving the documentation."
-msgstr ""
+msgstr "1.12.2.Finalは、バグの修正とドキュメントの改善を行ったメンテナンスリリースです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:13
 msgid "It is a recommended upgrade for everyone using Quarkus 1.12."
-msgstr ""
+msgstr "これは、Quarkus 1.12を使用しているすべての人に推奨されるアップグレードです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:15
 msgid "If you are not using 1.12 already, please refer to the https://github.com/quarkusio/quarkus/wiki/Migration-Guide-1.12[1.12 migration guide]."
-msgstr ""
+msgstr "まだ1.12を使用していない場合は、 link:https://github.com/quarkusio/quarkus/wiki/Migration-Guide-1.12[1.12移行ガイド]を参照してください。"
 
 #. type: Title ==
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:16
 #, no-wrap
 msgid "What's new?"
-msgstr ""
+msgstr "変更点"
 
 #. type: Title ===
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:18
 #, no-wrap
 msgid "Two important regressions fixed"
-msgstr ""
+msgstr "2つの重要なリグレッションの修正"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:21
 msgid "1.12.2.Final fixes two important regressions that were introduced in 1.12.1.Final:"
-msgstr ""
+msgstr "1.12.2.Finalでは、1.12.1.Finalで発生した2つの重要なリグレッションが修正されています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:24
 msgid "Building native images on Windows was broken.  We added a CI check to be sure we don't break it again in the future."
-msgstr ""
+msgstr "Windows でのネイティブイメージのビルドが壊れていました。今後、二度と壊れないように、CIチェックを追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:25
 msgid "Deploying to OpenShift was also not working properly in 1.12.1.Final."
-msgstr ""
+msgstr "1.12.1.Finalでは、OpenShiftへのデプロイも正常に動作していませんでした。"
 
 #. type: Title ===
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:26
 #, no-wrap
 msgid "Full changelog"
-msgstr ""
+msgstr "完全な変更履歴"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:29
 msgid "You can get https://github.com/quarkusio/quarkus/releases/tag/1.12.2.Final[the full changelog of 1.12.2.Final on GitHub]."
-msgstr ""
+msgstr "link:https://github.com/quarkusio/quarkus/releases/tag/1.12.2.Final[GitHubに1.12.2.Finalの完全な変更履歴]は掲載されています。"
 
 #. type: Title ==
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:30
 #, no-wrap
 msgid "Come Join Us"
-msgstr ""
+msgstr "参加のお誘い"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:33
 msgid "We value your feedback a lot so please report bugs, ask for improvements... Let's build something great together!"
-msgstr ""
+msgstr "私達は皆様からのフィードバックに重きを置いています。バグ報告、改善要望を是非お願いします。一緒に素晴らしいものを作り上げていきましょう!"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:35
 msgid "If you are a Quarkus user or just curious, don't be shy and join our welcoming community:"
-msgstr ""
+msgstr "Quarkusユーザーの場合でも、単に興味を持っているだけの場合でも、恥ずかしがらずにコミュニティに参加して下さい!:"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:37
 msgid "provide feedback on https://github.com/quarkusio/quarkus/issues[GitHub];"
-msgstr ""
+msgstr "https://github.com/quarkusio/quarkus/issues[GitHub] でフィードバック"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:38
 msgid "craft some code and https://github.com/quarkusio/quarkus/pulls[push a PR];"
-msgstr ""
+msgstr "コードを作成し、 https://github.com/quarkusio/quarkus/pulls[プルリクエスト] を送信"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:39
 msgid "discuss with us on https://quarkusio.zulipchat.com/[Zulip] and on the https://groups.google.com/d/forum/quarkus-dev[mailing list];"
-msgstr ""
+msgstr "https://quarkusio.zulipchat.com/[Zulip] や https://groups.google.com/d/forum/quarkus-dev[メーリングリスト] でディスカッションに参加"
 
 #. type: Plain text
 #: upstream/_posts/2021-03-11-quarkus-1-12-2-final-released.adoc:40
 msgid "ask your questions on https://stackoverflow.com/questions/tagged/quarkus[Stack Overflow]."
-msgstr ""
+msgstr "https://stackoverflow.com/questions/tagged/quarkus[Stack Overflow] で質問"

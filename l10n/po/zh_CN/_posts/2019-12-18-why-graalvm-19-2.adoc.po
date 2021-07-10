@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2019-12-18-why-graalvm-19-2.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-12-18-why-graalvm-19-2.adoc:8

@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:8
@@ -153,7 +153,7 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:45
 #, no-wrap
 msgid "Code"
-msgstr ""
+msgstr "コード"
 
 #. type: Target for macro image
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:45
@@ -772,7 +772,7 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:436
 #, no-wrap
 msgid "Summary"
-msgstr ""
+msgstr "概要"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:440

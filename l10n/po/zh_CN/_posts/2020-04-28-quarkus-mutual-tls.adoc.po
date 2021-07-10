@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-04-28-quarkus-mutual-tls.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-28-quarkus-mutual-tls.adoc:7
@@ -205,7 +205,7 @@ msgstr ""
 #: upstream/_posts/2020-04-28-quarkus-mutual-tls.adoc:380
 #, no-wrap
 msgid "application.properties"
-msgstr ""
+msgstr "application.properties"
 
 #. type: delimited block -
 #: upstream/_posts/2020-04-28-quarkus-mutual-tls.adoc:89
@@ -841,7 +841,7 @@ msgstr ""
 #: upstream/_posts/2020-04-28-quarkus-mutual-tls.adoc:437
 #, no-wrap
 msgid "Conclusion"
-msgstr ""
+msgstr "まとめ"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-28-quarkus-mutual-tls.adoc:441
@@ -852,7 +852,7 @@ msgstr ""
 #: upstream/_posts/2020-04-28-quarkus-mutual-tls.adoc:442
 #, no-wrap
 msgid "Links"
-msgstr ""
+msgstr "リンク"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-28-quarkus-mutual-tls.adoc:444

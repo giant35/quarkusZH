@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/topic/standards.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/topic/standards.adoc:4
@@ -30,6 +30,9 @@ msgid ""
 "permalink: /vision/standards\n"
 "---\n"
 msgstr ""
+"layout: vision\n"
+"permalink: /vision/standards\n"
+"---\n"
 
 #. type: Title =
 #: upstream/_versions/1.7/guides/topic/standards.adoc:7
@@ -50,4 +53,4 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/topic/standards.adoc:23
 msgid "Since we're not limited to standards we can go beyond and extend your possibilities.  Of course, {project-name} is not a passive consumer.  Our goal is to improve and innovate the technologies we use and contribute back to the open source projects and standards we rely on."
-msgstr ""
+msgstr "我々は標準に限定されない為、あなたの可能性を広げることが可能です。 もちろん、{project-name} は受動的な消費者ではありません。 私たちのゴールは、使用する技術を改善、革新し、私たちが頼りにしているオープンソースプロジェクトと標準に貢献することです。"

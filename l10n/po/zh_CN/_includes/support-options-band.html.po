@@ -19,24 +19,24 @@ msgstr ""
 #. type: Content of: <div><div><h1>
 #: upstream/_includes/support-options-band.html:3
 msgid "Need More Than Community Support?"
-msgstr ""
+msgstr "コミュニティサポート以上のサポートが必要ですか?"
 
 #. type: Content of: <div><div><h3>
 #: upstream/_includes/support-options-band.html:4
 msgid "If you require a higher level of support, you have options."
-msgstr ""
+msgstr "コミュニティ以上のサポートが必要な場合の選択肢があります。"
 
 #. type: Content of: <div><div><h4>
 #: upstream/_includes/support-options-band.html:7
 msgid "Red Hat Build of Quarkus"
-msgstr ""
+msgstr "Red Hat Build of Quarkus"
 
 #. type: Content of: <div><div><p>
 #: upstream/_includes/support-options-band.html:8
 msgid "Enterprise support provided by Red Hat for the product."
-msgstr ""
+msgstr "Red Hatから製品に対するエンタープライズレベルのサポートが提供されます。"
 
 #. type: Content of: <div><div><p>
 #: upstream/_includes/support-options-band.html:10
 msgid "<a href=\"https://www.redhat.com/en/topics/cloud-native-apps/why-choose-red-hat-quarkus\" class=\"button-cta btn-sm\">Red Hat Support</a>"
-msgstr ""
+msgstr "<a href=\"https://www.redhat.com/en/topics/cloud-native-apps/why-choose-red-hat-quarkus\" class=\"button-cta btn-sm\">Red Hat Support</a>"

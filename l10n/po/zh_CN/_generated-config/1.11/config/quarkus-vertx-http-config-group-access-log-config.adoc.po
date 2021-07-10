@@ -31,13 +31,13 @@ msgstr ""
 #: upstream/_generated-config/1.11/config/quarkus-vertx-http-config-group-access-log-config.adoc:9
 #, no-wrap
 msgid "Type"
-msgstr ""
+msgstr "タイプ"
 
 #. type: Table
 #: upstream/_generated-config/1.11/config/quarkus-vertx-http-config-group-access-log-config.adoc:11
 #, no-wrap
 msgid "Default"
-msgstr ""
+msgstr "デフォルト"
 
 #. type: Table
 #: upstream/_generated-config/1.11/config/quarkus-vertx-http-config-group-access-log-config.adoc:16
@@ -57,14 +57,14 @@ msgstr ""
 #: upstream/_generated-config/1.11/config/quarkus-vertx-http-config-group-access-log-config.adoc:88
 #, no-wrap
 msgid "boolean"
-msgstr ""
+msgstr "boolean"
 
 #. type: Table
 #: upstream/_generated-config/1.11/config/quarkus-vertx-http-config-group-access-log-config.adoc:20
 #: upstream/_generated-config/1.11/config/quarkus-vertx-http-config-group-access-log-config.adoc:46
 #, no-wrap
 msgid "`false`"
-msgstr ""
+msgstr "`false`"
 
 #. type: Table
 #: upstream/_generated-config/1.11/config/quarkus-vertx-http-config-group-access-log-config.adoc:33
@@ -94,7 +94,7 @@ msgstr ""
 #: upstream/_generated-config/1.11/config/quarkus-vertx-http-config-group-access-log-config.adoc:79
 #, no-wrap
 msgid "string"
-msgstr ""
+msgstr "string"
 
 #. type: Table
 #: upstream/_generated-config/1.11/config/quarkus-vertx-http-config-group-access-log-config.adoc:37
@@ -196,4 +196,4 @@ msgstr ""
 #: upstream/_generated-config/1.11/config/quarkus-vertx-http-config-group-access-log-config.adoc:90
 #, no-wrap
 msgid "`true`"
-msgstr ""
+msgstr "`true`"

@@ -140,7 +140,7 @@ msgstr ""
 #: upstream/_guides/cli-tooling.adoc:81
 #, no-wrap
 msgid "Creating a new project"
-msgstr ""
+msgstr "新規プロジェクトの作成"
 
 #. type: Plain text
 #: upstream/_guides/cli-tooling.adoc:85
@@ -278,7 +278,7 @@ msgstr ""
 #: upstream/_guides/cli-tooling.adoc:175
 #, no-wrap
 msgid "Dealing with extensions"
-msgstr ""
+msgstr "エクステンションへの対応"
 
 #. type: delimited block -
 #: upstream/_guides/cli-tooling.adoc:178 upstream/_guides/cli-tooling.adoc:187
@@ -394,7 +394,7 @@ msgstr ""
 #: upstream/_guides/cli-tooling.adoc:232
 #, no-wrap
 msgid "Adding extension(s)"
-msgstr ""
+msgstr "エクステンションの追加"
 
 #. type: delimited block -
 #: upstream/_guides/cli-tooling.adoc:236
@@ -458,7 +458,7 @@ msgstr ""
 #: upstream/_guides/cli-tooling.adoc:279
 #, no-wrap
 msgid "Development mode"
-msgstr ""
+msgstr "開発モード"
 
 #. type: Plain text
 #: upstream/_guides/cli-tooling.adoc:284

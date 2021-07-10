@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:7
@@ -49,7 +49,7 @@ msgstr ""
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:14
 #, no-wrap
 msgid "Compatibility"
-msgstr ""
+msgstr "互換性"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:20
@@ -146,7 +146,7 @@ msgstr ""
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:61
 #, no-wrap
 msgid "Non-standard Features"
-msgstr ""
+msgstr "標準外の機能"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:65
@@ -157,7 +157,7 @@ msgstr ""
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:66
 #, no-wrap
 msgid "Qualified Injected Fields"
-msgstr ""
+msgstr "修飾された注入フィールド"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:69
@@ -172,6 +172,9 @@ msgid ""
 "  @ConfigProperty(name = \"cool\")\n"
 "  String coolProperty;\n"
 msgstr ""
+"  @Inject\n"
+"  @ConfigProperty(name = \"cool\")\n"
+"  String coolProperty;\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:78
@@ -185,6 +188,8 @@ msgid ""
 "  @ConfigProperty(name = \"cool\")\n"
 "  String coolProperty;\n"
 msgstr ""
+"  @ConfigProperty(name = \"cool\")\n"
+"  String coolProperty;\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:86
@@ -195,7 +200,7 @@ msgstr ""
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:87
 #, no-wrap
 msgid "Simplified Constructor Injection"
-msgstr ""
+msgstr "簡略化されたコンストラクター注入"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:91
@@ -210,13 +215,15 @@ msgid ""
 "@ApplicationScoped\n"
 "public class MyCoolService {\n"
 msgstr ""
+"@ApplicationScoped\n"
+"public class MyCoolService {\n"
 
 #. type: delimited block -
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:98
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:118
 #, no-wrap
 msgid "  private SimpleProcessor processor;\n"
-msgstr ""
+msgstr "  private SimpleProcessor processor;\n"
 
 #. type: delimited block -
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:101
@@ -225,6 +232,8 @@ msgid ""
 "  MyCoolService() { // dummy constructor needed\n"
 "  }\n"
 msgstr ""
+"  MyCoolService() { // dummy constructor needed\n"
+"  }\n"
 
 #. type: delimited block -
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:107
@@ -236,11 +245,16 @@ msgid ""
 "  }\n"
 "}\n"
 msgstr ""
+"  @Inject // constructor injection\n"
+"  MyCoolService(SimpleProcessor processor) {\n"
+"    this.processor = processor;\n"
+"  }\n"
+"}\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:111
 msgid "There is no need to declare dummy constructors for normal scoped bean in Quarkus - they are generated automatically.  Also if there's only one constructor there is no need for `@Inject`."
-msgstr ""
+msgstr "Quarkusでは、通常のスコープ付き Bean のためにダミーのコンストラクターを宣言する必要はありません。自動的に生成されます。また、コンストラクターが 1 つしかない場合は、`@Inject` の必要性はありません。"
 
 #. type: delimited block -
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:123
@@ -251,6 +265,10 @@ msgid ""
 "  }\n"
 "}\n"
 msgstr ""
+"  MyCoolService(SimpleProcessor processor) {\n"
+"    this.processor = processor;\n"
+"  }\n"
+"}\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:126
@@ -261,7 +279,7 @@ msgstr ""
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:127
 #, no-wrap
 msgid "Default Beans"
-msgstr ""
+msgstr "デフォルトの Bean"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:131
@@ -328,7 +346,7 @@ msgstr ""
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:167
 #, no-wrap
 msgid "Removing Unused Beans"
-msgstr ""
+msgstr "未使用の Bean の削除"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-25-quarkus-dependency-injection.adoc:173

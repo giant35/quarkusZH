@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-04-30-insights.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-30-insights.adoc:8

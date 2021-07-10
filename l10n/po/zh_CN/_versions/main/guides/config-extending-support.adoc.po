@@ -58,7 +58,7 @@ msgstr ""
 #: upstream/_versions/main/guides/config-extending-support.adoc:316
 #, no-wrap
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config-extending-support.adoc:35

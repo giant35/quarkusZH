@@ -28,18 +28,18 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:12
 msgid "Hardcoded values in your code are a _no go_ (even if we all did it at some point ;-)).  In this guide, we learn how to configure your application."
-msgstr ""
+msgstr "コードの中にハードコードされた値を使うことは _できません_ (たとえ誰もがどこかの時点でそうしていたとしてもです ;-)。このガイドでは、アプリケーションを設定する方法を学びます。"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/config.adoc:13
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "前提条件"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:16
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "このガイドを完成させるには、以下が必要です:"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:18
@@ -49,38 +49,38 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:19
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:20
 msgid "JDK 1.8+ installed with `JAVA_HOME` configured appropriately"
-msgstr ""
+msgstr "JDK 1.8+ がインストールされ、 `JAVA_HOME`  が適切に設定されていること"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:21
 msgid "Apache Maven {maven-version}"
-msgstr ""
+msgstr "Apache Maven {maven-version}"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/config.adoc:22
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "ソリューション"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:26
 msgid "We recommend that you follow the instructions in the next sections and create the application step by step.  However, you can go right to the completed example."
-msgstr ""
+msgstr "次の章で紹介する手順に沿って、ステップを踏んでアプリを作成することをお勧めします。ただし、完成した例にそのまま進んでも構いません。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:28
 msgid "Clone the Git repository: `git clone {quickstarts-clone-url}`, or download an {quickstarts-archive-url}[archive]."
-msgstr ""
+msgstr "Gitレポジトリをクローンするか `git clone {quickstarts-clone-url}` 、 {quickstarts-archive-url}[アーカイブ] をダウンロードします。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:30
 msgid "The solution is located in the `config-quickstart` {quickstarts-tree-url}/config-quickstart[directory]."
-msgstr ""
+msgstr "ソリューションは `config-quickstart` {quickstarts-tree-url}/config-quickstart[ディレクトリ] にあります。"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/config.adoc:31
@@ -91,7 +91,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:34
 msgid "First, we need a new project. Create a new project with the following command:"
-msgstr ""
+msgstr "まず、新しいプロジェクトが必要です。以下のコマンドで新規プロジェクトを作成します。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/config.adoc:43
@@ -108,22 +108,22 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:46
 msgid "It generates:"
-msgstr ""
+msgstr "以下が生成されます:"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:48
 msgid "the Maven structure"
-msgstr ""
+msgstr "Mavenの構造"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:49
 msgid "a landing page accessible on `http://localhost:8080`"
-msgstr ""
+msgstr "ランディングページは次のURLでアクセス可能です: `http://localhost:8080`"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:50
 msgid "example `Dockerfile` files for both `native` and `jvm` modes"
-msgstr ""
+msgstr "`native`  と `jvm`  の両方のモードに対応した `Dockerfile`  ファイルの例"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:51
@@ -133,7 +133,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:52
 msgid "an `org.acme.config.GreetingResource` resource"
-msgstr ""
+msgstr "`org.acme.config.GreetingResource` リソース"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:53
@@ -167,7 +167,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:69
 msgid "Edit the `org.acme.config.GreetingResource`, and introduce the following configuration properties:"
-msgstr ""
+msgstr "`org.acme.config.GreetingResource` を編集し、以下の設定プロパティーを導入します:"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/config.adoc:74
@@ -176,6 +176,8 @@ msgid ""
 "@ConfigProperty(name = \"greeting.message\") <1>\n"
 "String message;\n"
 msgstr ""
+"@ConfigProperty(name = \"greeting.message\") <1>\n"
+"String message;\n"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/config.adoc:77
@@ -184,6 +186,8 @@ msgid ""
 "@ConfigProperty(name = \"greeting.suffix\", defaultValue=\"!\") <2>\n"
 "String suffix;\n"
 msgstr ""
+"@ConfigProperty(name = \"greeting.suffix\", defaultValue=\"!\") <2>\n"
+"String suffix;\n"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/config.adoc:80
@@ -192,26 +196,28 @@ msgid ""
 "@ConfigProperty(name = \"greeting.name\")\n"
 "Optional<String> name; <3>\n"
 msgstr ""
+"@ConfigProperty(name = \"greeting.name\")\n"
+"Optional<String> name; <3>\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:82
 msgid "If you do not provide a value for this property, the application startup fails with `javax.enterprise.inject.spi.DeploymentException: No config value of type [class java.lang.String] exists for: greeting.message`."
-msgstr ""
+msgstr "このプロパティーに値を指定しないと、アプリケーションの起動は失敗し、`javax.enterprise.inject.spi.DeploymentException: No config value of type [class java.lang.String] exists for: greeting.message` が出力されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:83
 msgid "The default value is injected if the configuration does not provide a value for `greeting.suffix`."
-msgstr ""
+msgstr "デフォルト値は、設定が `greeting.suffix` の値を提供していない場合に注入されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:84
 msgid "This property is optional - an empty `Optional` is injected if the configuration does not provide a value for `greeting.name`."
-msgstr ""
+msgstr "このプロパティーは任意です。設定が `greeting.name` の値を提供していない場合は、空の `Optional` が注入されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:86
 msgid "Now, modify the `hello` method to use the injected properties:"
-msgstr ""
+msgstr "ここで、 `hello` メソッドを修正して、注入されたプロパティーを使用します:"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/config.adoc:94
@@ -228,7 +234,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/config.adoc:97
 #, no-wrap
 msgid "Create the configuration"
-msgstr ""
+msgstr "コンフィグレーションの作成"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:101
@@ -247,7 +253,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:110
 msgid "Once set, check the application with:"
-msgstr ""
+msgstr "設定したら、アプリケーションを使って確認します:"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/config.adoc:115
@@ -266,12 +272,12 @@ msgstr ""
 #: upstream/_versions/1.7/guides/config.adoc:120
 #, no-wrap
 msgid "Update the test"
-msgstr ""
+msgstr "テストの更新"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:124
 msgid "We also need to update the functional test to reflect the changes made to the endpoint.  Edit the `src/test/java/org/acme/config/GreetingResourceTest.java` file and change the content of the `testHelloEndpoint` method to:"
-msgstr ""
+msgstr "また、エンドポイントに加えられた変更を反映させるために、機能テストを更新する必要があります。 `src/test/java/org/acme/config/GreetingResourceTest.java` ファイルを編集し、 `testHelloEndpoint` メソッドの内容を変更します:"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/config.adoc:129
@@ -335,17 +341,17 @@ msgstr ""
 #: upstream/_versions/1.7/guides/config.adoc:151
 #, no-wrap
 msgid "Package and run the application"
-msgstr ""
+msgstr "アプリケーションをパッケージ化して実行する"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:155
 msgid "Run the application with: `./mvnw compile quarkus:dev`.  Open your browser to http://localhost:8080/greeting."
-msgstr ""
+msgstr "アプリケーションを実行するには、次の手順を実行します: `./mvnw compile quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:158
 msgid "Changing the configuration file is immediately reflected.  You can add the `greeting.suffix`, remove the other properties, change the values, etc."
-msgstr ""
+msgstr "設定ファイルの変更はすぐに反映されます。 `greeting.suffix` の追加、他のプロパティーの削除、値の変更などが可能です。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:161
@@ -356,7 +362,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/config.adoc:162
 #, no-wrap
 msgid "Programmatically access the configuration"
-msgstr ""
+msgstr "設定にプログラムでアクセス"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:166
@@ -375,6 +381,8 @@ msgid ""
 "String databaseName = ConfigProvider.getConfig().getValue(\"database.name\", String.class);\n"
 "Optional<String> maybeDatabaseName = ConfigProvider.getConfig().getOptionalValue(\"database.name\", String.class);\n"
 msgstr ""
+"String databaseName = ConfigProvider.getConfig().getValue(\"database.name\", String.class);\n"
+"Optional<String> maybeDatabaseName = ConfigProvider.getConfig().getOptionalValue(\"database.name\", String.class);\n"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/config.adoc:175
@@ -727,7 +735,7 @@ msgstr ""
 #. type: delimited block =
 #: upstream/_versions/1.7/guides/config.adoc:364
 msgid "As mentioned above, properties prefixed with `quarkus.` are effectively reserved for configuring Quarkus itself and therefore `quarkus.` should **never** be used as prefix for application specific properties."
-msgstr ""
+msgstr "上述したように、 `quarkus.` で始まるプロパティーは、Quarkus 自体を設定するために実質的に予約されているため、アプリケーション固有のプロパティーのプレフィックスとして `quarkus.` を使用してはいけ *ません* 。"
 
 #. type: delimited block =
 #: upstream/_versions/1.7/guides/config.adoc:366
@@ -754,39 +762,39 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:376
 msgid "It is also possible to generate an example `application.properties` with all known configuration properties, to make it easy to see what Quarkus configuration options are available. To do this, run:"
-msgstr ""
+msgstr "また、Quarkus 設定オプションがどのようなものかを簡単に確認できるように、すべての既知の設定プロパティーを含むサンプル (`application.properties`) を生成することもできます。これを行うには、以下のコマンドを実行します。"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/config.adoc:379
 #, no-wrap
 msgid "/mvnw quarkus:generate-config"
-msgstr ""
+msgstr "/mvnw quarkus:generate-config"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:385
 msgid "This will create a `src/main/resources/application.properties.example` file that contains all the config options exposed via the extensions you currently have installed. These options are commented out, and have their default value when applicable. For example this HTTP port config entry will appear as:"
-msgstr ""
+msgstr "これにより、現在インストールされているエクステンションを介して公開されているすべての設定オプションを含む `src/main/resources/application.properties.example` ファイルが作成されます。これらのオプションはコメントアウトされ、該当する場合はデフォルト値となります。たとえば、この HTTP ポート設定エントリーは次のように表示されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:393
 msgid "# # The HTTP port # #quarkus.http.port=8080"
-msgstr ""
+msgstr "# # The HTTP port # #quarkus.http.port=8080"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:397
 msgid "Rather than generating an example config file, you can also add these to you actual config file by setting the `-Dfile` parameter:"
-msgstr ""
+msgstr "サンプルの設定ファイルを生成するのではなく、`-Dfile` パラメーターを設定して実際の設定ファイルに追加することもできます。"
 
 #. type: Block title
 #: upstream/_versions/1.7/guides/config.adoc:400
 #, no-wrap
 msgid "/mvnw quarkus:generate-config -Dfile=application.properties"
-msgstr ""
+msgstr "/mvnw quarkus:generate-config -Dfile=application.properties"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:405
 msgid "If a config option is already present (commented or not) it will not be added, so it is safe to run this after adding an additional extension to see what additional options have been added."
-msgstr ""
+msgstr "設定オプションが既に存在する場合 (コメントされていてもいなくても) は追加されないため、エクステンションを追加した後にこれを実行して、どのような追加オプションが追加されたかを確認するのが安全です。"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/config.adoc:406
@@ -877,8 +885,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:442
+#, fuzzy
 msgid "The `config/application.properties` features is available in development mode as well. To make use of it, `config/application.properties` needs to be placed inside the build tool's output directory (`target` for Maven and `build/classes/java/main` for Gradle).  Keep in mind however that any cleaning operation from the build tool like `mvn clean` or `gradle clean` will remove the `config` directory as well."
-msgstr ""
+msgstr "`config/application.properties` 機能は開発モードでも利用可能です。これを利用するには、ビルドツールの出力ディレクトリー (Maven の場合は `target` 、Gradle の場合は `build/classes/java/main`) の中に `config/application.properties` を置く必要があります。ただし、`mvn clean` や `gradle clean` のようなビルドツールからのクリーンアップ操作は、`config` ディレクトリーも削除してしまうことに注意してください。"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/config.adoc:443
@@ -903,11 +912,13 @@ msgid ""
 "quarkus.http.port=9090\n"
 "%dev.quarkus.http.port=8181\n"
 msgstr ""
+"quarkus.http.port=9090\n"
+"%dev.quarkus.http.port=8181\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:457
 msgid "The Quarkus HTTP port will be 9090, unless the `dev` profile is active, in which case it will be 8181."
-msgstr ""
+msgstr "Quarkus の HTTP ポートは 9090 になります。この場合は、`dev` プロファイルがアクティブでない限り、8181 になります。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:459
@@ -931,19 +942,19 @@ msgstr ""
 #: upstream/_versions/1.7/guides/config.adoc:469
 #, no-wrap
 msgid "*dev* - Activated when in development mode (i.e. `quarkus:dev`)\n"
-msgstr ""
+msgstr "*dev* - 開発モードのときに有効になる (つまり `quarkus:dev`)\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:470
 #, no-wrap
 msgid "*test* - Activated when running tests\n"
-msgstr ""
+msgstr "*test* - テストを実行しているときに有効になる\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:471
 #, no-wrap
 msgid "*prod* - The default profile when not running in development or test mode\n"
-msgstr ""
+msgstr "*prod* - 開発モードまたはテストモード以外で使用されるデフォルトプロファイル\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:477
@@ -957,6 +968,8 @@ msgid ""
 "quarkus.http.port=9090\n"
 "%staging.quarkus.http.port=9999\n"
 msgstr ""
+"quarkus.http.port=9090\n"
+"%staging.quarkus.http.port=9999\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:485
@@ -971,13 +984,13 @@ msgstr ""
 #. type: delimited block =
 #: upstream/_versions/1.7/guides/config.adoc:491
 msgid "Using `@ConfigProperty(\"quarkus.profile\")` will *not* work properly."
-msgstr ""
+msgstr "`@ConfigProperty(\"quarkus.profile\")` を使用すると正常に**動作しません**。"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/config.adoc:493
 #, no-wrap
 msgid "Using Property Expressions"
-msgstr ""
+msgstr "プロパティー式の使用"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:496
@@ -987,7 +1000,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:500
 msgid "These expressions are resolved when the property is read.  So if your configuration property is a build time configuration property, the property expression will be resolved at build time.  If your configuration property is overridable at runtime, the property expression will be resolved at runtime."
-msgstr ""
+msgstr "これらの式は、プロパティーの読み込み時に解決されます。したがって、設定プロパティーがビルド時の設定プロパティーである場合、プロパティー式はビルド時に解決されます。設定プロパティーが実行時にオーバーライド可能になると、プロパティー式は実行時に解決されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:502
@@ -1009,7 +1022,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/config.adoc:555
 #, no-wrap
 msgid "remote.host=quarkus.io\n"
-msgstr ""
+msgstr "remote.host=quarkus.io\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:512
@@ -1020,12 +1033,12 @@ msgstr ""
 #: upstream/_versions/1.7/guides/config.adoc:516
 #, no-wrap
 msgid "callable.url=https://${remote.host}/\n"
-msgstr ""
+msgstr "callable.url=https://${remote.host}/\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:519
 msgid "will result in the value of the `callable.url` property being set to:"
-msgstr ""
+msgstr "これにより、`callable.url` プロパティーの値が設定されます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/config.adoc:523
@@ -1036,7 +1049,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:526
 msgid "Another example would be defining different database servers depending on the profile used:"
-msgstr ""
+msgstr "別の例としては、使用するプロファイルに応じて異なるデータベースサーバーを定義できます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/config.adoc:531
@@ -1045,11 +1058,13 @@ msgid ""
 "%dev.quarkus.datasource.jdbc.url=jdbc:mysql://localhost:3306/mydatabase?useSSL=false\n"
 "quarkus.datasource.jdbc.url=jdbc:mysql://remotehost:3306/mydatabase?useSSL=false\n"
 msgstr ""
+"%dev.quarkus.datasource.jdbc.url=jdbc:mysql://localhost:3306/mydatabase?useSSL=false\n"
+"quarkus.datasource.jdbc.url=jdbc:mysql://remotehost:3306/mydatabase?useSSL=false\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:534
 msgid "can be simplified by having:"
-msgstr ""
+msgstr "これは、以下を指定することで簡略化できます。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/config.adoc:539
@@ -1058,12 +1073,14 @@ msgid ""
 "%dev.application.server=localhost\n"
 "application.server=remotehost\n"
 msgstr ""
+"%dev.application.server=localhost\n"
+"application.server=remotehost\n"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/config.adoc:541
 #, no-wrap
 msgid "quarkus.datasource.jdbc.url=jdbc:mysql://${application.server}:3306/mydatabase?useSSL=false\n"
-msgstr ""
+msgstr "quarkus.datasource.jdbc.url=jdbc:mysql://${application.server}:3306/mydatabase?useSSL=false\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:545
@@ -1074,7 +1091,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/config.adoc:546
 #, no-wrap
 msgid "Combining Property Expressions and Environment Variables"
-msgstr ""
+msgstr "プロパティー式と環境変数の組み合わせ"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:549
@@ -1095,12 +1112,12 @@ msgstr ""
 #: upstream/_versions/1.7/guides/config.adoc:562
 #, no-wrap
 msgid "application.host=${HOST:${remote.host}}\n"
-msgstr ""
+msgstr "application.host=${HOST:${remote.host}}\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:565
 msgid "This will expand the `HOST` environment variable and use the value of the property `remote.host` as the default value if `HOST` is not set."
-msgstr ""
+msgstr "これは `HOST` 環境変数を展開し、`HOST` が設定されていない場合は、プロパティー `remote.host` の値をデフォルト値として使用します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:568
@@ -1122,12 +1139,13 @@ msgstr ""
 #: upstream/_versions/1.7/guides/config.adoc:576
 #, no-wrap
 msgid "Clearing properties"
-msgstr ""
+msgstr "プロパティーの削除"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:581
+#, fuzzy
 msgid "Run time properties which are optional, and which have had values set at build time or which have a default value, may be explicitly cleared by assigning an empty string to the property.  Note that this will _only_ affect run time properties, and will _only_ work with properties whose values are not required."
-msgstr ""
+msgstr "任意であり、ビルド時に値が設定されていたり、デフォルト値が設定されていたりするランタイムプロパティーは、空の文字列をプロパティーに代入することで明示的に削除することができます。これはランタイムプロパティーに _のみ_ 影響し、値が必須ではないプロパティーで _のみ_ 動作することに注意してください。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:584
@@ -1138,12 +1156,12 @@ msgstr ""
 #: upstream/_versions/1.7/guides/config.adoc:585
 #, no-wrap
 msgid "Miscellaneous"
-msgstr ""
+msgstr "その他"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:588
 msgid "The default Quarkus application runtime profile is set to the profile used to build the application.  For example:"
-msgstr ""
+msgstr "デフォルトの Quarkus アプリケーションランタイムプロファイルは、アプリケーションの構築に使用されるプロファイルに設定されています。たとえば、以下のようになります。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/config.adoc:592
@@ -1152,17 +1170,19 @@ msgid ""
 "./mvnw package -Pnative -Dquarkus.profile=prod-aws\n"
 "./target/my-app-1.0-runner // <1>\n"
 msgstr ""
+"./mvnw package -Pnative -Dquarkus.profile=prod-aws\n"
+"./target/my-app-1.0-runner // <1>\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:594
 msgid "The command will run with the `prod-aws` profile. This can be overridden using the `quarkus.profile` system property."
-msgstr ""
+msgstr "コマンドは、`prod-aws` プロファイルで実行されます。これは `quarkus.profile` システムプロパティーを使用して上書きすることができます。"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/config.adoc:595
 #, no-wrap
 msgid "Custom Configuration"
-msgstr ""
+msgstr "カスタム設定"
 
 #. type: Title ===
 #: upstream/_versions/1.7/guides/config.adoc:597
@@ -1493,7 +1513,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:802
 msgid "The MicroProfile Configuration specification defines configuration keys as an arbitrary `.`-delimited string.  However, structured formats like YAML naively only support a subset of the possible configuration namespace.  For example, consider the two configuration properties `quarkus.http.cors` and `quarkus.http.cors.methods`.  One property is the prefix of another, so it may not be immediately evident how to specify both keys in your YAML configuration."
-msgstr ""
+msgstr "MicroProfile の設定仕様は、設定キーを任意の `.` 区切り文字列として定義しています。ただし、YAML のような構造化されたフォーマットは、可能な設定名前空間のサブセットしかサポートしていません。たとえば、`quarkus.http.cors` および `quarkus.http.cors.methods` の 2 つの設定プロパティーについて考えてみましょう。あるプロパティーは別のプロパティーの接頭辞なので、YAML の設定で両方のキーをどのように指定するかはすぐにはわからないかもしれません。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:804
@@ -1531,7 +1551,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:821
 msgid "Quarkus relies on SmallRye Config and inherits its features."
-msgstr ""
+msgstr "Quarkus は SmallRye Config に依存しており、その機能を継承しています。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:823
@@ -1541,39 +1561,39 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:825
 msgid "Additional Config Sources"
-msgstr ""
+msgstr "その他の設定ソース"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:826
 msgid "Additional Converters"
-msgstr ""
+msgstr "追加のコンバーター"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:827
 msgid "Interceptors for configuration value resolution"
-msgstr ""
+msgstr "設定値解決のためのインターセプタ―"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:828
 msgid "Relocate Configuration Properties"
-msgstr ""
+msgstr "設定プロパティーの再配置"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:829
 msgid "Fallback Configuration Properties"
-msgstr ""
+msgstr "フォールバック設定プロパティー"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:830
 msgid "Logging"
-msgstr ""
+msgstr "ロギング"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:831
 msgid "Hide Secrets"
-msgstr ""
+msgstr "secret の非表示"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/config.adoc:833
 msgid "For more information, please check the link:https://smallrye.io/docs/smallrye-config/index.html[SmallRye Config documentation]."
-msgstr ""
+msgstr "詳細は、link:https://smallrye.io/docs/smallrye-config/index.html[SmallRye Config のドキュメント] を参照してください。"

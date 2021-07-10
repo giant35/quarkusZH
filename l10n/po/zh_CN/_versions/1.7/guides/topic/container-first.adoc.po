@@ -21,7 +21,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/topic/container-first.adoc:5
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/topic/container-first.adoc:4
@@ -43,7 +43,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/topic/container-first.adoc:13
 #, no-wrap
 msgid "Quarkus"
-msgstr ""
+msgstr "Quarkus"
 
 #. type: Target for macro image
 #: upstream/_versions/1.7/guides/topic/container-first.adoc:13
@@ -71,7 +71,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/topic/container-first.adoc:24
 #, no-wrap
 msgid "Reduction in Reflection Usage"
-msgstr ""
+msgstr "リフレクション使用量の削減"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/topic/container-first.adoc:28

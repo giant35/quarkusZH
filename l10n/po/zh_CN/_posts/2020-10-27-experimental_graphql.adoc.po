@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-10-27-experimental_graphql.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-27-experimental_graphql.adoc:8
@@ -115,7 +115,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2020-10-27-experimental_graphql.adoc:35
 msgid "Example:"
-msgstr ""
+msgstr "例:"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-27-experimental_graphql.adoc:37
@@ -421,7 +421,7 @@ msgstr ""
 #: upstream/_posts/2020-10-27-experimental_graphql.adoc:227
 #, no-wrap
 msgid "Cache"
-msgstr ""
+msgstr "Cache"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-27-experimental_graphql.adoc:230

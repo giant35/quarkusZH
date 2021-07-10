@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-06-15-quarkus-hackathon-announcement.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-15-quarkus-hackathon-announcement.adoc:8

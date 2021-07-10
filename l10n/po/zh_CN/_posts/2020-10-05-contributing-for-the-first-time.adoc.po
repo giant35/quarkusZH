@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-10-05-contributing-for-the-first-time.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-05-contributing-for-the-first-time.adoc:8
@@ -208,7 +208,7 @@ msgstr ""
 #: upstream/_posts/2020-10-05-contributing-for-the-first-time.adoc:82
 #, no-wrap
 msgid "Documentation"
-msgstr ""
+msgstr "ドキュメント"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-05-contributing-for-the-first-time.adoc:85
@@ -260,7 +260,7 @@ msgstr ""
 #: upstream/_posts/2020-10-05-contributing-for-the-first-time.adoc:104
 #, no-wrap
 msgid "Code"
-msgstr ""
+msgstr "コード"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-05-contributing-for-the-first-time.adoc:108

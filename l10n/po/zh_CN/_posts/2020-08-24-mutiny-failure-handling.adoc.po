@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-08-24-mutiny-failure-handling.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-24-mutiny-failure-handling.adoc:8
@@ -235,7 +235,7 @@ msgstr ""
 #: upstream/_posts/2020-08-24-mutiny-failure-handling.adoc:125
 #, no-wrap
 msgid "Summary"
-msgstr ""
+msgstr "概要"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-24-mutiny-failure-handling.adoc:128

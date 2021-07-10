@@ -28,7 +28,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:11
 msgid "You have a Hibernate ORM-based application? You want to provide a full-featured full-text search to your users? You're at the right place."
-msgstr ""
+msgstr "Hibernate ORMベースのアプリケーションをお持ちですか?フル機能のフルテキスト検索をユーザーに提供したいですか?あなたは正しい場所にいます。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:14
@@ -44,12 +44,12 @@ msgstr ""
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:23
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "前提条件"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:26
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "このガイドを完成させるには、以下が必要です:"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:28
@@ -59,22 +59,22 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:29
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:30
 msgid "JDK 1.8+ installed with `JAVA_HOME` configured appropriately"
-msgstr ""
+msgstr "JDK 1.8+ がインストールされ、 `JAVA_HOME`  が適切に設定されていること"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:31
 msgid "Apache Maven {maven-version}"
-msgstr ""
+msgstr "Apache Maven {maven-version}"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:32
 msgid "Docker"
-msgstr ""
+msgstr "Docker"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:33
@@ -85,33 +85,33 @@ msgstr ""
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:34
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "アーキテクチャ"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:37
 msgid "The application described in this guide allows to manage a (simple) library: you manage authors and their books."
-msgstr ""
+msgstr "このガイドに記載されているアプリケーションは、(シンプルな) 図書館を管理することができます:あなたは、著者とその本を管理します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:39
 msgid "The entities are stored in a PostgreSQL database and indexed in an Elasticsearch cluster."
-msgstr ""
+msgstr "エンティティはPostgreSQLデータベースに格納され、Elasticsearchクラスターにインデックスされます。"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:40
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "ソリューション"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:44
 msgid "We recommend that you follow the instructions in the next sections and create the application step by step.  However, you can go right to the completed example."
-msgstr ""
+msgstr "次の章で紹介する手順に沿って、ステップを踏んでアプリを作成することをお勧めします。ただし、完成した例にそのまま進んでも構いません。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:46
 msgid "Clone the Git repository: `git clone {quickstarts-clone-url}`, or download an {quickstarts-archive-url}[archive]."
-msgstr ""
+msgstr "Gitレポジトリをクローンするか `git clone {quickstarts-clone-url}` 、 {quickstarts-archive-url}[アーカイブ] をダウンロードします。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:48
@@ -121,7 +121,7 @@ msgstr ""
 #. type: delimited block =
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:52
 msgid "The provided solution contains a few additional elements such as tests and testing infrastructure."
-msgstr ""
+msgstr "提供されるソリューションには、テストやテストのインフラストラクチャなど、いくつかの追加要素が含まれています。"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:54
@@ -132,7 +132,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:57
 msgid "First, we need a new project. Create a new project with the following command:"
-msgstr ""
+msgstr "まず、新しいプロジェクトが必要です。以下のコマンドで新規プロジェクトを作成します。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:67
@@ -150,22 +150,22 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:70
 msgid "This command generates a Maven structure importing the following extensions:"
-msgstr ""
+msgstr "このコマンドは、以下のエクステンションをインポートするMaven構造体を生成します。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:72
 msgid "Hibernate ORM with Panache,"
-msgstr ""
+msgstr "Hibernate ORM with Panache,"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:73
 msgid "the PostgreSQL JDBC driver,"
-msgstr ""
+msgstr "PostgreSQL JDBCドライバー"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:74
 msgid "Hibernate Search + Elasticsearch,"
-msgstr ""
+msgstr "Hibernate Search + Elasticsearch,"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:75
@@ -186,7 +186,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:85
 msgid "This will add the following to your `pom.xml`:"
-msgstr ""
+msgstr "これにより、 `pom.xml` に以下が追加されます:"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:92
@@ -201,18 +201,18 @@ msgstr ""
 #. type: delimited block =
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:99
 msgid "For now, let's delete the two generated tests `LibraryResourceTest` and `NativeLibraryResourceIT` present in `src/test/java`.  If you are interested in how you can test this application, just refer to the solution in the quickstarts Git repository: it contains a lot of tests and the required testing infrastructure."
-msgstr ""
+msgstr "まずは、 `src/test/java` にある `LibraryResourceTest` と `NativeLibraryResourceIT` の 2 つの生成されたテストを削除してみましょう。このアプリケーションのテスト方法に興味があれば、 quickstarts の Git リポジトリにあるソリューションを参照してください。"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:101
 #, no-wrap
 msgid "Creating the bare entities"
-msgstr ""
+msgstr "ベアエンティティーの作成"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:104
 msgid "First, let's create our Hibernate ORM entities `Book` and `Author` in the `model` subpackage."
-msgstr ""
+msgstr "まず、 `model` サブパッケージに Hibernate ORM エンティティー `Book` と `Author` を作成しましょう。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:108
@@ -324,12 +324,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:150
 msgid "We are using Hibernate ORM with Panache, it is not mandatory."
-msgstr ""
+msgstr "PanacheでHibernate ORMを使用していますが、必須ではありません。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:152
 msgid "We are loading these elements eagerly so that they are present in the JSON output.  In a real world application, you should probably use a DTO approach."
-msgstr ""
+msgstr "私たちは、これらの要素がJSON出力に存在するように前もってロードしています。実際のアプリケーションでは、おそらくDTOアプローチを使うべきでしょう。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:158
@@ -566,7 +566,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:298
 msgid "Nothing out of the ordinary here: it is just good old Hibernate ORM with Panache operations in a standard JAX-RS service."
-msgstr ""
+msgstr "ここでは何も特別なことはありません。標準的なJAX-RSサービスでPanache操作を行う古き良きHibernate ORMです。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:300
@@ -582,12 +582,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:304
 msgid "Let's go back to our entities."
-msgstr ""
+msgstr "エンティティに戻りましょう"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:306
 msgid "Enabling full text search capabilities for them is as simple as adding a few annotations."
-msgstr ""
+msgstr "フルテキスト検索機能を有効にするには、いくつかのアノテーションを追加するだけで簡単です。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:308
@@ -739,7 +739,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:402
 #, no-wrap
 msgid "Introduction"
-msgstr ""
+msgstr "はじめに"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:405
@@ -1018,7 +1018,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:539
 #, no-wrap
 msgid "Configuring the application"
-msgstr ""
+msgstr "アプリケーションの設定"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:542
@@ -1119,7 +1119,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:582
 #, no-wrap
 msgid "Creating a frontend"
-msgstr ""
+msgstr "フロントエンドの作成"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:588
@@ -1130,17 +1130,17 @@ msgstr ""
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:589
 #, no-wrap
 msgid "Automatic import script"
-msgstr ""
+msgstr "自動インポートスクリプト"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:592
 msgid "For the purpose of this demonstration, let's import an initial dataset."
-msgstr ""
+msgstr "このデモの目的のために、初期データセットをインポートしてみましょう。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:594
 msgid "Let's create a `src/main/resources/import.sql` file with the following content:"
-msgstr ""
+msgstr "以下の内容の `src/main/resources/import.sql` ファイルを作成してみましょう。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:599
@@ -1173,17 +1173,17 @@ msgstr ""
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:615
 #, no-wrap
 msgid "Preparing the infrastructure"
-msgstr ""
+msgstr "インフラの準備"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:618
 msgid "We need a PostgreSQL instance and an Elasticsearch cluster."
-msgstr ""
+msgstr "PostgreSQLインスタンスとElasticsearchクラスターが必要です。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:620
 msgid "Let's use Docker to start one of each:"
-msgstr ""
+msgstr "Dockerを使ってそれぞれ1つずつ起動してみましょう。"
 
 #. type: delimited block -
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:624
@@ -1206,12 +1206,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:634
 msgid "You can now interact with your REST service:"
-msgstr ""
+msgstr "これで、REST サービスと対話できるようになりました。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:636
 msgid "start Quarkus with `./mvnw compile quarkus:dev`"
-msgstr ""
+msgstr "`./mvnw compile quarkus:dev` でQuarkusを起動する"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:637
@@ -1237,22 +1237,22 @@ msgstr ""
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:642
 #, no-wrap
 msgid "Building a native executable"
-msgstr ""
+msgstr "ネイティブ実行ファイルのビルド"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:645
 msgid "You can build a native executable with the usual command `./mvnw package -Pnative`."
-msgstr ""
+msgstr "ネイティブ実行ファイルは、通常のコマンド `./mvnw package -Pnative` でビルドできます。"
 
 #. type: delimited block =
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:649
 msgid "As usual with native executable compilation, this operation consumes a lot of memory."
-msgstr ""
+msgstr "ネイティブの実行ファイルのコンパイルと同様に、この操作は大量のメモリーを消費します。"
 
 #. type: delimited block =
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:651
 msgid "It might be safer to stop the two containers while you are building the native executable and start them again once you are done."
-msgstr ""
+msgstr "ネイティブ実行ファイルをビルドしている間は2つのコンテナーを停止して、ビルドが終わったら再度起動した方が安全かもしれません。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:654
@@ -1262,23 +1262,23 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:656
 msgid "You can then point your browser to `http://localhost:8080/` and use your application."
-msgstr ""
+msgstr "その後、ブラウザで `http://localhost:8080/` を開きアプリケーションを使用します。"
 
 #. type: delimited block =
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:661
 msgid "The startup is a bit slower than usual: it is mostly due to us dropping and recreating the database schema and the Elasticsearch mapping every time at startup.  We also inject some data and execute the mass indexer."
-msgstr ""
+msgstr "起動がいつもより少し遅いのは、起動時に毎回データベーススキーマとElasticsearchマッピングを落として再作成しているのが原因です。また、いくつかのデータを注入し、マスインデクサーを実行しています。"
 
 #. type: delimited block =
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:663
 msgid "In a real life application, it is obviously something you won't do at startup."
-msgstr ""
+msgstr "実際のアプリケーションでは、明らかに起動時に実行しないことです。"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:665
 #, no-wrap
 msgid "Further reading"
-msgstr ""
+msgstr "さらに詳しく"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:668
@@ -1337,22 +1337,22 @@ msgstr ""
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:688
 #, no-wrap
 msgid "Why Elasticsearch only?"
-msgstr ""
+msgstr "なぜElasticsearchだけなのか?"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:691
 msgid "Hibernate Search supports both a Lucene backend and an Elasticsearch backend."
-msgstr ""
+msgstr "Hibernate SearchはLuceneバックエンドとElasticsearchバックエンドの両方をサポートしています。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:694
 msgid "In the context of Quarkus and to build microservices, we thought the latter would make more sense.  Thus we focused our efforts on it."
-msgstr ""
+msgstr "Quarkusとマイクロサービスを構築するという文脈では、後者の方がより意味があると考えました。そこで、私たちは後者に力を入れました。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:696
 msgid "We don't have plans to support the Lucene backend in Quarkus for now."
-msgstr ""
+msgstr "今のところ、QuarkusでLuceneバックエンドをサポートする予定はありません。"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/hibernate-search-elasticsearch.adoc:698

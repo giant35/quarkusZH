@@ -32,14 +32,14 @@ msgstr ""
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:123
 #, no-wrap
 msgid "Type"
-msgstr ""
+msgstr "タイプ"
 
 #. type: Table
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:11
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:125
 #, no-wrap
 msgid "Default"
-msgstr ""
+msgstr "デフォルト"
 
 #. type: Table
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:16
@@ -60,7 +60,7 @@ msgstr ""
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:108
 #, no-wrap
 msgid "boolean"
-msgstr ""
+msgstr "boolean"
 
 #. type: Table
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:20
@@ -68,7 +68,7 @@ msgstr ""
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:111
 #, no-wrap
 msgid "`false`"
-msgstr ""
+msgstr "`false`"
 
 #. type: Table
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:25
@@ -91,7 +91,7 @@ msgstr ""
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:140
 #, no-wrap
 msgid "string"
-msgstr ""
+msgstr "string"
 
 #. type: Table
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:29
@@ -117,7 +117,7 @@ msgstr ""
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:117
 #, no-wrap
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #. type: Table
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:38
@@ -159,7 +159,7 @@ msgstr ""
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:56
 #, no-wrap
 msgid "`true`"
-msgstr ""
+msgstr "`true`"
 
 #. type: Table
 #: upstream/_generated-config/1.7/config/quarkus-logging-gelf.adoc:61

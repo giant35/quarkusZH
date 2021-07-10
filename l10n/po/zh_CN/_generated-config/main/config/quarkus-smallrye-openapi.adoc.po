@@ -31,13 +31,13 @@ msgstr ""
 #: upstream/_generated-config/main/config/quarkus-smallrye-openapi.adoc:9
 #, no-wrap
 msgid "Type"
-msgstr ""
+msgstr "タイプ"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-smallrye-openapi.adoc:11
 #, no-wrap
 msgid "Default"
-msgstr ""
+msgstr "デフォルト"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-smallrye-openapi.adoc:16
@@ -74,7 +74,7 @@ msgstr ""
 #: upstream/_generated-config/main/config/quarkus-smallrye-openapi.adoc:224
 #, no-wrap
 msgid "string"
-msgstr ""
+msgstr "string"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-smallrye-openapi.adoc:20
@@ -118,14 +118,14 @@ msgstr ""
 #: upstream/_generated-config/main/config/quarkus-smallrye-openapi.adoc:242
 #, no-wrap
 msgid "boolean"
-msgstr ""
+msgstr "boolean"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-smallrye-openapi.adoc:38
 #: upstream/_generated-config/main/config/quarkus-smallrye-openapi.adoc:47
 #, no-wrap
 msgid "`false`"
-msgstr ""
+msgstr "`false`"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-smallrye-openapi.adoc:43
@@ -449,4 +449,4 @@ msgstr ""
 #: upstream/_generated-config/main/config/quarkus-smallrye-openapi.adoc:244
 #, no-wrap
 msgid "`true`"
-msgstr ""
+msgstr "`true`"

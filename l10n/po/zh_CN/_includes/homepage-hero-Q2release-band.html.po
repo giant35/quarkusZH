@@ -19,12 +19,12 @@ msgstr ""
 #. type: Content of: <div><div><h1>
 #: upstream/_includes/homepage-hero-Q2release-band.html:4
 msgid "QUARKUS 2.0 IS HERE!"
-msgstr ""
+msgstr "quarkus 2.0 登場!"
 
 #. type: Content of: <div><div><h3>
 #: upstream/_includes/homepage-hero-Q2release-band.html:5
 msgid "Quarkus 2.0 continues the mission of making Java the preferred framework for Kubernetes-native development with new developer tools and improved performance."
-msgstr ""
+msgstr "Quarkus 2.0は、新しい開発者ツールと改善されたパフォーマンスにより、JavaをKubernetesネイティブ開発に適したフレームワークにするという使命を継続します。"
 
 #. type: Attribute 'title' of: <div><div><img>
 #: upstream/_includes/homepage-hero-Q2release-band.html:6
@@ -39,4 +39,4 @@ msgstr ""
 #. type: Content of: <div><div>
 #: upstream/_includes/homepage-hero-Q2release-band.html:10
 msgid "<a href=\"#\" class=\"scroll-down\" address=\"true\"></a>"
-msgstr ""
+msgstr "<a href=\"#\" class=\"scroll-down\" address=\"true\"></a>"

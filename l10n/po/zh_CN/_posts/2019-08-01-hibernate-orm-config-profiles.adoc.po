@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2019-08-01-hibernate-orm-config-profiles.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2019-08-01-hibernate-orm-config-profiles.adoc:8
@@ -80,7 +80,7 @@ msgstr ""
 #: upstream/_posts/2019-08-01-hibernate-orm-config-profiles.adoc:49
 #, no-wrap
 msgid "application.properties"
-msgstr ""
+msgstr "application.properties"
 
 #. type: Plain text
 #: upstream/_posts/2019-08-01-hibernate-orm-config-profiles.adoc:54

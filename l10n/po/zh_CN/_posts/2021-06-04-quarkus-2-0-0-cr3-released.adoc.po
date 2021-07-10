@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:8
@@ -34,32 +34,39 @@ msgid ""
 "author: gsmet\n"
 "---\n"
 msgstr ""
+"layout: post\n"
+"title: 'Quarkus 2.0.0.CR3リリース - Finalに向けて'\n"
+"date: 2021-06-04\n"
+"tags: release\n"
+"synopsis: 今回のCRでは、さらにいくつかの問題を修正しました。最終版は6月末にリリースされます。\n"
+"author: gsmet\n"
+"---\n"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:12
 msgid "Thanks to your feedback, we fixed some more issues in Quarkus 2.0 and we thought a new CR was necessary."
-msgstr ""
+msgstr "フィードバックのお陰で、Quarkus 2.0ではさらにいくつかの問題を修正し、新しいCRが必要だと考えました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:14
 msgid "As usual, it also comes with documentation refinements."
-msgstr ""
+msgstr "いつものように、ドキュメントの改善も施されています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:16
 msgid "We will build the Final artifacts on June 23rd so keep the feedback coming!"
-msgstr ""
+msgstr "6月23日に最終アーティファクトを作成しますので、フィードバックをお待ちしています。"
 
 #. type: Title ==
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:17
 #, no-wrap
 msgid "Migration Guide"
-msgstr ""
+msgstr "移行ガイド"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:20
 msgid "We keep the Migration Guide up to date here: https://github.com/quarkusio/quarkus/wiki/Migration-Guide-2.0."
-msgstr ""
+msgstr "最新のマイグレーションガイドはこちらです: https://github.com/quarkusio/quarkus/wiki/Migration-Guide-2.0."
 
 #. type: Title ==
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:21
@@ -70,67 +77,67 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:24
 msgid "If you are using the Jandex Maven plugin or the Jandex Gradle plugin in your applications, you need to update them."
-msgstr ""
+msgstr "アプリケーションでJandex MavenプラグインやJandex Gradleプラグインを使用している場合は、それらをアップデートする必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:26
 msgid "Refer to the https://github.com/quarkusio/quarkus/wiki/Migration-Guide-2.0#jandex-upgrade[migration guide] for the details."
-msgstr ""
+msgstr "詳細は link:https://github.com/quarkusio/quarkus/wiki/Migration-Guide-2.0#jandex-upgrade[移行ガイド]をご参照ください。"
 
 #. type: Title ==
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:27
 #, no-wrap
 msgid "Documentation"
-msgstr ""
+msgstr "ドキュメント"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:30
 msgid "The documentation for the `main` branch is available link:/version/main/guides/[on the website]."
-msgstr ""
+msgstr "`main` ブランチのドキュメントは link:/version/main/guides/[ウェブサイト] で公開されています。"
 
 #. type: Title ===
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:31
 #, no-wrap
 msgid "Full Changelog"
-msgstr ""
+msgstr "完全な変更履歴"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:34
 msgid "You can get the full changelogs of https://github.com/quarkusio/quarkus/releases/tag/2.0.0.CR3[2.0.0.CR3] on GitHub."
-msgstr ""
+msgstr "link:https://github.com/quarkusio/quarkus/releases/tag/2.0.0.CR3[2.0.0.CR3]の完全な変更履歴はGitHubに掲載されています。"
 
 #. type: Title ==
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:35
 #, no-wrap
 msgid "Come Join Us"
-msgstr ""
+msgstr "参加のお誘い"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:38
 msgid "We value your feedback a lot so please report bugs, ask for improvements... Let's build something great together!"
-msgstr ""
+msgstr "私達は皆様からのフィードバックに重きを置いています。バグ報告、改善要望を是非お願いします。一緒に素晴らしいものを作り上げていきましょう!"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:40
 msgid "If you are a Quarkus user or just curious, don't be shy and join our welcoming community:"
-msgstr ""
+msgstr "Quarkusユーザーの場合でも、単に興味を持っているだけの場合でも、恥ずかしがらずにコミュニティに参加して下さい!:"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:42
 msgid "provide feedback on https://github.com/quarkusio/quarkus/issues[GitHub];"
-msgstr ""
+msgstr "https://github.com/quarkusio/quarkus/issues[GitHub] でフィードバック"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:43
 msgid "craft some code and https://github.com/quarkusio/quarkus/pulls[push a PR];"
-msgstr ""
+msgstr "コードを作成し、 https://github.com/quarkusio/quarkus/pulls[プルリクエスト] を送信"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:44
 msgid "discuss with us on https://quarkusio.zulipchat.com/[Zulip] and on the https://groups.google.com/d/forum/quarkus-dev[mailing list];"
-msgstr ""
+msgstr "https://quarkusio.zulipchat.com/[Zulip] や https://groups.google.com/d/forum/quarkus-dev[メーリングリスト] でディスカッションに参加"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-04-quarkus-2-0-0-cr3-released.adoc:44
 msgid "ask your questions on https://stackoverflow.com/questions/tagged/quarkus[Stack Overflow]."
-msgstr ""
+msgstr "https://stackoverflow.com/questions/tagged/quarkus[Stack Overflow] で質問"

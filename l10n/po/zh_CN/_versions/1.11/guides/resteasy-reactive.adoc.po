@@ -351,7 +351,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/resteasy-reactive.adoc:222
 #, no-wrap
 msgid "Annotation"
-msgstr ""
+msgstr "アノテーション"
 
 #. type: Table
 #: upstream/_versions/1.11/guides/resteasy-reactive.adoc:134
@@ -365,7 +365,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/resteasy-reactive.adoc:1126
 #, no-wrap
 msgid "Usage"
-msgstr ""
+msgstr "使用方法"
 
 #. type: Table
 #: upstream/_versions/1.11/guides/resteasy-reactive.adoc:135
@@ -601,7 +601,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/resteasy-reactive.adoc:230
 #, no-wrap
 msgid "Query parameter"
-msgstr ""
+msgstr "クエリーパラメーター"
 
 #. type: Table
 #: upstream/_versions/1.11/guides/resteasy-reactive.adoc:231
@@ -1451,7 +1451,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/resteasy-reactive.adoc:649
 #, no-wrap
 msgid "import javax.inject.Inject;\n"
-msgstr ""
+msgstr "import javax.inject.Inject;\n"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/resteasy-reactive.adoc:659

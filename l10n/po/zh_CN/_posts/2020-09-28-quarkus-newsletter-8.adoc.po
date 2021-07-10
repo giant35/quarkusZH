@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-09-28-quarkus-newsletter-8.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-28-quarkus-newsletter-8.adoc:9
@@ -64,4 +64,4 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2020-09-28-quarkus-newsletter-8.adoc:21
 msgid "Enjoy!"
-msgstr ""
+msgstr "楽しんで!"

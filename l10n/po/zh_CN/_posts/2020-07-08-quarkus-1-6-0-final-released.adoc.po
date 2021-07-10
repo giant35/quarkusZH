@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:8
@@ -89,7 +89,7 @@ msgstr ""
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:25
 #, no-wrap
 msgid "Migration Guide"
-msgstr ""
+msgstr "移行ガイド"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:28
@@ -100,7 +100,7 @@ msgstr ""
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:29
 #, no-wrap
 msgid "What's new?"
-msgstr ""
+msgstr "変更点"
 
 #. type: Title ===
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:31
@@ -203,7 +203,7 @@ msgstr ""
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:76
 #, no-wrap
 msgid "Google Cloud Functions"
-msgstr ""
+msgstr "Google Cloud Functions"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:79
@@ -416,7 +416,7 @@ msgstr ""
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:157
 #, no-wrap
 msgid "Full changelog"
-msgstr ""
+msgstr "完全な変更履歴"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:160
@@ -427,28 +427,29 @@ msgstr ""
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:161
 #, no-wrap
 msgid "ADOPTERS.md"
-msgstr ""
+msgstr "ADOPTERS.md"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:164
 msgid "To share stories about Quarkus usage, we added https://github.com/quarkusio/quarkus/blob/master/ADOPTERS.md[an `ADOPTERS.md` file] at the root of the repository."
-msgstr ""
+msgstr "Quarkus の使用方法についてのストーリーを共有するために、リポジトリのルートに link:https://github.com/quarkusio/quarkus/blob/master/ADOPTERS.md[`ADOPTERS.md`] ファイルを追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:166
 msgid "If you are using Quarkus and would like to be interviewed on our blog or simply added to this file, please contact us and we will be happy to oblige."
-msgstr ""
+msgstr "Quarkusをご利用の方で、ブログで取材を受けたい方や、このファイルに単純に追加したい方は、ご連絡いただければ、喜んでお受けいたします。"
 
 #. type: Title ==
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:167
 #, no-wrap
 msgid "Contributors"
-msgstr ""
+msgstr "コントリビューター"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:171
+#, fuzzy
 msgid "The Quarkus community is growing and has now https://github.com/quarkusio/quarkus/graphs/contributors[316 contributors].  Many many thanks to each and everyone of them."
-msgstr ""
+msgstr "Quarkusコミュニティは成長を続けており、現在 link:https://github.com/quarkusio/quarkus/graphs/contributors[356人の貢献者] がいます。一人ひとりの貢献者に多くの感謝の意を表します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:173
@@ -459,34 +460,34 @@ msgstr ""
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:174
 #, no-wrap
 msgid "Come Join Us"
-msgstr ""
+msgstr "参加のお誘い"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:177
 msgid "We value your feedback a lot so please report bugs, ask for improvements... Let's build something great together!"
-msgstr ""
+msgstr "私達は皆様からのフィードバックに重きを置いています。バグ報告、改善要望を是非お願いします。一緒に素晴らしいものを作り上げていきましょう!"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:179
 msgid "If you are a Quarkus user or just curious, don't be shy and join our welcoming community:"
-msgstr ""
+msgstr "Quarkusユーザーの場合でも、単に興味を持っているだけの場合でも、恥ずかしがらずにコミュニティに参加して下さい!:"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:181
 msgid "provide feedback on https://github.com/quarkusio/quarkus/issues[GitHub];"
-msgstr ""
+msgstr "https://github.com/quarkusio/quarkus/issues[GitHub] でフィードバック"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:182
 msgid "craft some code and https://github.com/quarkusio/quarkus/pulls[push a PR];"
-msgstr ""
+msgstr "コードを作成し、 https://github.com/quarkusio/quarkus/pulls[プルリクエスト] を送信"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:183
 msgid "discuss with us on https://quarkusio.zulipchat.com/[Zulip] and on the https://groups.google.com/d/forum/quarkus-dev[mailing list];"
-msgstr ""
+msgstr "https://quarkusio.zulipchat.com/[Zulip] や https://groups.google.com/d/forum/quarkus-dev[メーリングリスト] でディスカッションに参加"
 
 #. type: Plain text
 #: upstream/_posts/2020-07-08-quarkus-1-6-0-final-released.adoc:183
 msgid "ask your questions on https://stackoverflow.com/questions/tagged/quarkus[Stack Overflow]."
-msgstr ""
+msgstr "https://stackoverflow.com/questions/tagged/quarkus[Stack Overflow] で質問"

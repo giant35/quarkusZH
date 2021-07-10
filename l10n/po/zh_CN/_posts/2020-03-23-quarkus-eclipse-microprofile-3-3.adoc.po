@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-03-23-quarkus-eclipse-microprofile-3-3.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-03-23-quarkus-eclipse-microprofile-3-3.adoc:7
@@ -169,7 +169,7 @@ msgstr ""
 #: upstream/_posts/2020-03-23-quarkus-eclipse-microprofile-3-3.adoc:71
 #, no-wrap
 msgid "Summary"
-msgstr ""
+msgstr "概要"
 
 #. type: Plain text
 #: upstream/_posts/2020-03-23-quarkus-eclipse-microprofile-3-3.adoc:75

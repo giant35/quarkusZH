@@ -32,14 +32,14 @@ msgstr ""
 #: upstream/_generated-config/main/config/quarkus-datasource-general-config-items.adoc:117
 #, no-wrap
 msgid "Type"
-msgstr ""
+msgstr "タイプ"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-datasource-general-config-items.adoc:11
 #: upstream/_generated-config/main/config/quarkus-datasource-general-config-items.adoc:119
 #, no-wrap
 msgid "Default"
-msgstr ""
+msgstr "デフォルト"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-datasource-general-config-items.adoc:16
@@ -68,7 +68,7 @@ msgstr ""
 #: upstream/_generated-config/main/config/quarkus-datasource-general-config-items.adoc:210
 #, no-wrap
 msgid "string"
-msgstr ""
+msgstr "string"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-datasource-general-config-items.adoc:25
@@ -91,7 +91,7 @@ msgstr ""
 #: upstream/_generated-config/main/config/quarkus-datasource-general-config-items.adoc:219
 #, no-wrap
 msgid "boolean"
-msgstr ""
+msgstr "boolean"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-datasource-general-config-items.adoc:34
@@ -123,7 +123,7 @@ msgstr ""
 #: upstream/_generated-config/main/config/quarkus-datasource-general-config-items.adoc:162
 #, no-wrap
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-datasource-general-config-items.adoc:54
@@ -145,7 +145,7 @@ msgstr ""
 #: upstream/_generated-config/main/config/quarkus-datasource-general-config-items.adoc:221
 #, no-wrap
 msgid "`false`"
-msgstr ""
+msgstr "`false`"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-datasource-general-config-items.adoc:63

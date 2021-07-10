@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-09-02-mutiny-redis.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-02-mutiny-redis.adoc:8
@@ -306,4 +306,4 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2020-09-02-mutiny-redis.adoc:139
 msgid "Enjoy!"
-msgstr ""
+msgstr "楽しんで!"

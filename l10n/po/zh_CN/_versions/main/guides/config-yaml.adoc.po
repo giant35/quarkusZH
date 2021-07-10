@@ -88,7 +88,7 @@ msgstr ""
 #: upstream/_versions/main/guides/config-yaml.adoc:44
 #, no-wrap
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config-yaml.adoc:47
@@ -262,7 +262,7 @@ msgstr ""
 #: upstream/_versions/main/guides/config-yaml.adoc:152
 #, no-wrap
 msgid "Expressions"
-msgstr ""
+msgstr "式"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config-yaml.adoc:156

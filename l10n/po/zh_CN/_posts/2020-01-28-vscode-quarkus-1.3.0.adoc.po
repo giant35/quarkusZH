@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-01-28-vscode-quarkus-1.3.0.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-28-vscode-quarkus-1.3.0.adoc:7
@@ -564,7 +564,7 @@ msgstr ""
 #: upstream/_posts/2020-01-28-vscode-quarkus-1.3.0.adoc:216
 #, no-wrap
 msgid "Moving Forward"
-msgstr ""
+msgstr "将来"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-28-vscode-quarkus-1.3.0.adoc:220
@@ -579,13 +579,13 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2020-01-28-vscode-quarkus-1.3.0.adoc:225
 msgid "Thank you for reading and stay tuned for the next release!"
-msgstr ""
+msgstr "お読みいただきありがとうございました。次のリリースをお待ちください!"
 
 #. type: Title ==
 #: upstream/_posts/2020-01-28-vscode-quarkus-1.3.0.adoc:226
 #, no-wrap
 msgid "Links"
-msgstr ""
+msgstr "リンク"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-28-vscode-quarkus-1.3.0.adoc:228

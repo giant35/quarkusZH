@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-10-19-micrometer-metrics.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-19-micrometer-metrics.adoc:8
@@ -140,7 +140,7 @@ msgstr ""
 #: upstream/_posts/2020-10-19-micrometer-metrics.adoc:90
 #, no-wrap
 msgid "Summary"
-msgstr ""
+msgstr "概要"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-19-micrometer-metrics.adoc:96

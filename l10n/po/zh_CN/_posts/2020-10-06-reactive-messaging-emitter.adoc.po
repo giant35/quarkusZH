@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:8
@@ -216,7 +216,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:131
 msgid "## Conclusion"
-msgstr ""
+msgstr "## まとめ"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:134

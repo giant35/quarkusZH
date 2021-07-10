@@ -20,7 +20,7 @@ msgstr ""
 #: upstream/_posts/2020-04-21-io-thread-benchmark.adoc:1
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "—\n"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-21-io-thread-benchmark.adoc:8
@@ -82,7 +82,7 @@ msgstr ""
 #: upstream/_posts/2020-04-21-io-thread-benchmark.adoc:36
 #, no-wrap
 msgid "Imperative and Reactive: the elevator pitch"
-msgstr ""
+msgstr "命令型とリアクティブ型: エレベーターピッチ"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-21-io-thread-benchmark.adoc:40
@@ -395,7 +395,7 @@ msgstr ""
 #: upstream/_posts/2020-04-21-io-thread-benchmark.adoc:190
 #, no-wrap
 msgid "Conclusion"
-msgstr ""
+msgstr "まとめ"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-21-io-thread-benchmark.adoc:196
