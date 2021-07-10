@@ -1,3 +1,15 @@
+# quarkus-zh
+Quarkus.io 的中文翻译站 [https://quarkus.pro](https://quarkus.pro)  
+使用 ja.quarkus.io 的翻译流程
+
+## 翻译流程讲述
+翻译者使用 POEdit 之类的 po 翻译工具将 .po 文件翻译好后提交 pull request ,
+合并后会发布到中文翻译站。
+需要翻译的 .po  文件在 [l10n/po](l10n/po) 目录，
+详细流程参考下边
+
+------
+
 # ja.quarkus.io
 
 Japanese Localization project for [https://github.com/quarkusio/quarkusio.github.io](https://github.com/quarkusio/quarkusio.github.io) (The repository for [quarkus.io website](https://quarkus.io))
