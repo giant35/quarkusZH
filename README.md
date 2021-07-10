@@ -8,6 +8,9 @@ Quarkus.io 的中文翻译站 [https://quarkus.pro](https://quarkus.pro)
 需要翻译的 .po  文件在 [l10n/po](l10n/po) 目录，
 详细流程参考下边
 
+## 怎么不使用国内的 git 仓库
+因为有些脚本是配置在 github 代码同步时触发的
+
 ------
 
 # ja.quarkus.io
