@@ -79,7 +79,7 @@ jobs:
         # Commit and Push the override stats .csv file
         run: bin/push-changes "Update override stats"
 
-  deploy-ja:
+  deploy-zh:
     name: Deploy Japanese translation to GitHub pages
     # Deploy a localized site to the GitHub pages
     runs-on: ubuntu-20.04
@@ -119,7 +119,7 @@ jobs:
       - name: Deploy to GitHub Pages
         # Deploy the site to GitHub Pages by committing and pushing the site
         run: |
-          echo "ja.quarkus.io" > docs/CNAME
+          echo "quarkus.pro" > docs/CNAME
           git add -f docs
 
           set +e
