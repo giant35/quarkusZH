@@ -3,5 +3,15 @@
 <tmx version="1.4">
   <header creationtool="Translate Toolkit" creationtoolversion="3.3.6" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
   <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>这是基于 Jekyll 主题的. 你可以在 [jekyllrb.com](https://jekyllrb.com/) 找到关于定制 Jekyll 主题的更多信息 , 以及 Jekyll 基本使用的文档 
+</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
