@@ -5,6 +5,14 @@
   <body>
     <tu>
       <tuv xml:lang="en">
+        <seg>Container First</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>容器优先</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>You need &lt;a href="https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments#Java" target="_blank"&gt;an IDE&lt;/a&gt; like &lt;a href="https://www.jetbrains.com/idea/download/"&gt;IntelliJ IDEA&lt;/a&gt;, &lt;a href="https://www.eclipse.org/downloads/"&gt;Eclipse&lt;/a&gt;, &lt;a href="https://code.visualstudio.com/Download"&gt;VSCode&lt;/a&gt; or even &lt;a href="https://spacevim.org/use-vim-as-a-java-ide/"&gt;Vim&lt;/a&gt; or &lt;a href="http://spacemacs.org"&gt;Emacs&lt;/a&gt;!</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
