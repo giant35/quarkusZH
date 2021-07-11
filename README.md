@@ -3,10 +3,23 @@ Quarkus.io 的中文翻译站 [https://gh.quarkus.pro](https://gh.quarkus.pro)
 使用 ja.quarkus.io 的翻译流程
 
 ## 翻译流程讲述
-翻译者使用 POEdit 之类的 po 翻译工具将 .po 文件翻译好后提交 pull request ,
-合并后会发布到中文翻译站。
-需要翻译的 .po  文件在 [l10n/po](l10n/po) 目录，
+翻译者使用 POEdit 之类的 po 翻译工具将 .po 文件翻译好后提交 pull request , 合并后会发布到中文翻译站。 
+需要翻译的 .po  文件在 [l10n/po/zh_CN/](l10n/po/zh_CN/) 目录.  
 详细流程参考下边
+
+## 怎么在本地查看翻译效果(??)
+首次查看
+```
+git submodule init
+git submodule update
+```
+
+查看翻译后的效果
+```
+bin/apply-translation
+bin/exec-jekyll
+```
+
 
 ## 怎么不使用国内的 git 仓库
 因为有些脚本是配置在 github 代码同步时触发的
