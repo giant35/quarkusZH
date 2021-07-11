@@ -5,11 +5,71 @@
   <body>
     <tu>
       <tuv xml:lang="en">
+        <seg>QUARKUS 2.0 IS HERE!</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>QUARKUS 2.0 来了！</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;a href="{{site.baseurl}}/get-started/" class="button-cta"&gt;Get Started with Quarkus&lt;/a&gt;</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>&lt;a href=“{{site.baseurl}}/get-started/“ class=“button-cta”&gt;Quarkus 入门&lt;/a&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Now Available</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>现可用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;a href="{{ site.data.versions.quarkus.announce }}"&gt;More Information&lt;/a&gt;</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>&lt;a href=“{{ site.data.versions.quarkus.announce }}”&gt;更多信息&lt;/a&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 </seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>这是基于 Jekyll 主题的. 你可以在 [jekyllrb.com](https://jekyllrb.com/) 找到关于定制 Jekyll 主题的更多信息 , 以及 Jekyll 基本使用的文档 
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>可以在 GitHub: 
+[jekyll][jekyll-organization] 找到 Minima 源代码 /
+[minima](https://github.com/jekyll/minima)
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>可以在 GitHub:
+[jekyll][jekyll-organization] 找到 Jekyll 源代码 /
+[jekyll](https://github.com/jekyll/jekyll)
 </seg>
       </tuv>
     </tu>
