@@ -2,14 +2,17 @@
 Quarkus.io 的中文翻译站 [https://gh.quarkus.pro](https://gh.quarkus.pro)  
 使用 ja.quarkus.io 的翻译流程
 
-## 翻译流程讲述
-翻译者使用 POEdit 之类的 po 翻译工具将 .po 文件翻译好后提交 pull request , 合并后会发布到中文翻译站。 
-需要翻译的 .po  文件在 [l10n/po/zh_CN/](l10n/po/zh_CN/) 目录.  
-详细流程参考下边
+## 翻译流程简介
+1. 先在项目 github 提交一个 issue  label enhancement , 写明要翻译哪些页面的网址 。主要是避免重复
+2. 使用 POEdit 之类的 po 翻译编辑工具将 .po 文件翻译好后提交 pull request , 并检查 pull request 中的 checklist 生成的预览站。需要翻译的 .po  文件在 [l10n/po/zh_CN/](l10n/po/zh_CN/) 目录.  
+3. pull request 合并后会正式发布到中文翻译站。 
+
+详细翻译流程说明参考下边
 
 ## 怎么在本地查看翻译效果(??)
 首次查看
 ```
+#安装 po4a
 git submodule init
 git submodule update
 ```
