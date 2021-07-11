@@ -80,7 +80,7 @@ jobs:
         run: bin/push-changes "Update override stats"
 
   deploy-zh:
-    name: Deploy Japanese translation to GitHub pages
+    name: Deploy Chinese translation to GitHub pages
     # Deploy a localized site to the GitHub pages
     runs-on: ubuntu-20.04
     steps:
