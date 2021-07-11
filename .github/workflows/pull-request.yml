@@ -4,7 +4,7 @@ on: pull_request_target
 
 jobs:
   deploy-ja:
-    name: Deploy Japanese translation to surge.sh
+    name: Deploy Chinese translation to surge.sh
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout base branch
