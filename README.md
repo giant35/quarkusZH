@@ -1,5 +1,5 @@
 # quarkus-zh
-Quarkus.io 的中文翻译站 [https://quarkus.pro](https://quarkus.pro)  
+Quarkus.io 的中文翻译站 [https://gh.quarkus.pro](https://gh.quarkus.pro)  
 使用 ja.quarkus.io 的翻译流程
 
 ## 翻译流程讲述

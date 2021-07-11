@@ -119,7 +119,7 @@ jobs:
       - name: Deploy to GitHub Pages
         # Deploy the site to GitHub Pages by committing and pushing the site
         run: |
-          echo "quarkus.pro" > docs/CNAME
+          echo "gh.quarkus.pro" > docs/CNAME
           git add -f docs
 
           set +e
