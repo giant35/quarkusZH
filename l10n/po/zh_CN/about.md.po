@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-07-11 01:25+0000\n"
-"PO-Revision-Date: 2021-07-11 11:17+0800\n"
+"PO-Revision-Date: 2021-07-11 11:47+0800\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,6 +48,9 @@ msgid ""
 "[jekyll][jekyll-organization] /\n"
 "[minima](https://github.com/jekyll/minima)\n"
 msgstr ""
+"可以在 GitHub: \n"
+"[jekyll][jekyll-organization] 找到 Minima 源代码 /\n"
+"[minima](https://github.com/jekyll/minima)\n"
 
 #. type: Plain text
 #: upstream/about.md:16
@@ -57,6 +60,9 @@ msgid ""
 "[jekyll][jekyll-organization] /\n"
 "[jekyll](https://github.com/jekyll/jekyll)\n"
 msgstr ""
+"可以在 GitHub:\n"
+"[jekyll][jekyll-organization] 找到 Jekyll 源代码 /\n"
+"[jekyll](https://github.com/jekyll/jekyll)\n"
 
 #. type: Plain text
 #: upstream/about.md:18
