@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-07-12 01:00+0000\n"
-"PO-Revision-Date: 2021-07-11 13:01+0800\n"
+"PO-Revision-Date: 2021-07-12 14:21+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -26,6 +26,8 @@ msgstr "容器优先"
 #: upstream/_includes/homepage-container_first-band.html:7
 msgid "Quarkus tailors your application for GraalVM and HotSpot. Amazingly fast boot time, incredibly low RSS memory (not just heap size!) offering near instant scale up and high density memory utilization in container orchestration platforms like Kubernetes. We use a technique we call compile time boot. <a href=\"/vision/container-first\">Learn more.</a>"
 msgstr ""
+"Quarkus 为 GraalVM 和 HotSpot 量身定制用程序。启动超快，内存极低（不仅是堆大小！）在容器编排平台（如Kubernetes）中提供了近乎即时的向上扩展和高密度的内存利用率。我们使用一种称为编译时启动技术。\n"
+"<a href=\"/vision/container-first\">了解更多</a>"
 
 #. type: Content of: <div><div><div><pre>
 #: upstream/_includes/homepage-container_first-band.html:8

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-07-12 01:00+0000\n"
-"PO-Revision-Date: 2021-07-11 12:00+0800\n"
+"PO-Revision-Date: 2021-07-12 11:31+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -25,7 +25,7 @@ msgstr "QUARKUS 2.0 来了！"
 #. type: Content of: <div><div><h3>
 #: upstream/_includes/homepage-hero-Q2release-band.html:5
 msgid "Quarkus 2.0 continues the mission of making Java the preferred framework for Kubernetes-native development with new developer tools and improved performance."
-msgstr ""
+msgstr "Quarkus 2.0 继续执行使命，即通过新的开发人员工具和改进的性能，使 Java 成为 Kubernetes 原生开发的首选框架。"
 
 #. type: Attribute 'title' of: <div><div><img>
 #: upstream/_includes/homepage-hero-Q2release-band.html:6
@@ -35,7 +35,7 @@ msgstr ""
 #. type: Content of: <div><div><img>
 #: upstream/_includes/homepage-hero-Q2release-band.html:7
 msgid "<a href=\"{{site.baseurl}}/quarkus2/\" class=\"button-cta\">Learn More about 2.0</a>"
-msgstr ""
+msgstr "<a href=\"{{site.baseurl}}/quarkus2/\" class=\"button-cta\">更多了解 2.0</a>"
 
 #. type: Content of: <div><div>
 #: upstream/_includes/homepage-hero-Q2release-band.html:10
