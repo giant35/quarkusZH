@@ -32,7 +32,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/quarkus-intro.adoc:21
 #, no-wrap
 msgid "Container First"
-msgstr ""
+msgstr "容器优先"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/quarkus-intro.adoc:23
