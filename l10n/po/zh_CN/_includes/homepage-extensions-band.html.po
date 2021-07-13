@@ -3,25 +3,26 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "POT-Creation-Date: 2021-07-11 01:25+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-07-13 13:55+0800\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
 
 #. type: Content of: <div><div><div><h2>
 #: upstream/_includes/homepage-extensions-band.html:4
 msgid "Best of Breed Libraries and Standards"
-msgstr ""
+msgstr "优秀的类库及标准件"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/homepage-extensions-band.html:7
 msgid "Quarkus provides a cohesive, fun to use, full-stack framework by leveraging a growing list of over fifty best-of-breed libraries that you love and use. All wired on a standard backbone. <a href=\"/vision/standards\">Learn more about Quarkus Extensions</a>."
-msgstr ""
+msgstr "Quarkus 精选 50 多种优秀类库提供了一个紧密结合，易于使用的全栈框架。所有都连接在标准主干上。 All wired on a standard backbone. <a href=\"/vision/standards\">了解更多 Quarkus Extensions</a>."

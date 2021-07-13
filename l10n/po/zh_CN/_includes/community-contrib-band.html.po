@@ -3,68 +3,69 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "POT-Creation-Date: 2021-07-11 01:25+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-07-13 14:39+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
 
 #. type: Content of: <div><div><h3>
 #: upstream/_includes/community-contrib-band.html:3
 msgid "Contributing"
-msgstr ""
+msgstr "贡献"
 
 #. type: Content of: <div><div><img><h4>
 #: upstream/_includes/community-contrib-band.html:7
 msgid "An Open Project"
-msgstr ""
+msgstr "一个开源项目"
 
 #. type: Content of: <div><div><img><p>
 #: upstream/_includes/community-contrib-band.html:8
 msgid "Quarkus is an Open Source project licensed under the <a href=\"https://www.apache.org/licenses/LICENSE-2.0\">Apache License version 2.0</a>. First and foremost, it is an open community where contributions, ideas and discussions are done in the open and contributors are welcome. Let’s join forces in building the future of Java applications."
-msgstr ""
+msgstr "Quarkus 是一个开源项目，使用 <a href=\"https://www.apache.org/licenses/LICENSE-2.0\">Apache License version 2.0</a> 许可协议. 最重要的是这是一个开放的社区，欢迎贡献者公开进行贡献、想法和讨论。让我们一起来构建 Java 应用的未来。"
 
 #. type: Content of: <div><div><img><h4>
 #: upstream/_includes/community-contrib-band.html:12
 msgid "Roadmap"
-msgstr ""
+msgstr "路线图"
 
 #. type: Content of: <div><div><img><p>
 #: upstream/_includes/community-contrib-band.html:13
 msgid "Read about the community plans for the future. Here is <a href=\"https://github.com/orgs/quarkusio/projects/5\">our current roadmap</a>. This is driven by the community, come and tell us what <i>your</i> needs are."
-msgstr ""
+msgstr "了解社区未来计划. 这是 <a href=\"https://github.com/orgs/quarkusio/projects/5\">我们当前的路线图</a>. 这是由社区驱动的，来吧告诉我们什么是 <i>你</i> 想要的."
 
 #. type: Content of: <div><div><img><h4>
 #: upstream/_includes/community-contrib-band.html:17
 msgid "Code and Issue Tracker"
-msgstr ""
+msgstr "代码及问题跟踪"
 
 #. type: Content of: <div><div><img><p>
 #: upstream/_includes/community-contrib-band.html:18
 msgid "The source code is hosted on <a href=\"https://github.com/quarkusio/quarkus\">GitHub</a>. If you need to report a bug or request a new feature, look for a similar one on our <a href=\"https://github.com/quarkusio/quarkus/issues\">GitHub issue tracker</a>. If you don’t find any, <a href=\"https://github.com/quarkusio/quarkus/issues/new/choose\">create a new issue</a>."
-msgstr ""
+msgstr "源代码托管在 <a href=\"https://github.com/quarkusio/quarkus\">GitHub</a>. 如果需要提交 bug 或者提交功能建议，先在 <a href=\"https://github.com/quarkusio/quarkus/issues\">GitHub issue tracker</a>找找看有没类似的. 没有的话, <a href=\"https://github.com/quarkusio/quarkus/issues/new/choose\">创建一个新的 issue</a>."
 
 #. type: Content of: <div><div><img><h4>
 #: upstream/_includes/community-contrib-band.html:22
 msgid "Write QuickStart Guides"
-msgstr ""
+msgstr "编写快速开始指南"
 
 #. type: Content of: <div><div><img><p>
 #: upstream/_includes/community-contrib-band.html:23
 msgid "There are always new users trying to get started quickly. Share your experience with everyone by writing a Quickstart and submitting it for peer review."
-msgstr ""
+msgstr "总有一些新用户试图快速入门。通过写一个快速入门与大家分享你的经验并提交给同行评审。"
 
 #. type: Content of: <div><div><img><h4>
 #: upstream/_includes/community-contrib-band.html:27
 msgid "Write New Extensions"
-msgstr ""
+msgstr "写新的 Extensions"
 
 #. type: Content of: <div><div><img><p>
 #: upstream/_includes/community-contrib-band.html:28
@@ -74,7 +75,7 @@ msgstr ""
 #. type: Content of: <div><div><img><h4>
 #: upstream/_includes/community-contrib-band.html:32
 msgid "Quarkus Insights Podcast"
-msgstr ""
+msgstr "Quarkus 播客"
 
 #. type: Content of: <div><div><img><p>
 #: upstream/_includes/community-contrib-band.html:33
@@ -84,7 +85,7 @@ msgstr ""
 #. type: Content of: <div><div><img><h4>
 #: upstream/_includes/community-contrib-band.html:37
 msgid "Follow Quarkus on Twitter"
-msgstr ""
+msgstr "关注 Quarkus Twitter"
 
 #. type: Content of: <div><div><img><p>
 #: upstream/_includes/community-contrib-band.html:38
