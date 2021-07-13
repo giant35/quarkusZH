@@ -1,0 +1,40 @@
+<div class="full-width-bg component homepage-content-band alt-background">
+  <div class="grid-wrapper">
+    <div class="width-12-12 block-content">
+      <h2>统一指令式和响应式</h2>
+    </div>
+    <div class="width-12-12 width-12-12-m">
+      <p>开发应用程序时可以混用熟悉的指令式代码与非阻塞响应式代码..
+      <a href="/vision/continuum">Learn more</a>.</p>
+    </div>
+    <div class="width-12-12 width-12-12-m">
+      <div class="grid-wrapper">
+        <div class="width-6-12 code-item">
+          <div class="code-label">指令式</div>
+          <div class="code-wrapper">
+            <pre class="highlight"><code>@Inject
+SayService say;
+
+@GET
+@Produces(MediaType.TEXT_PLAIN)
+public String hello() {
+    return say.hello();
+}</code></pre>
+          </div>
+        </div>
+        <div class="width-6-12 code-item">
+          <div class="code-label">响应式（Reactive）</div>
+          <div class="code-wrapper">
+            <pre class="highlight"><code>@Channel("kafka") Multi&lt;String&gt; events;
+
+@GET
+@Produces(MediaType.SERVER_SENT_EVENTS)
+public Multi&lt;String&gt; events() {
+    return events;
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
