@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-07-12 01:00+0000\n"
-"PO-Revision-Date: 2021-07-11 11:50+0800\n"
+"PO-Revision-Date: 2021-07-13 13:58+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -30,7 +30,7 @@ msgstr "Quarkus - 超音速亚原子 Java"
 #. type: Content of: <div><div><img><p>
 #: upstream/_includes/homepage-hero-band.html:6
 msgid "A Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM, crafted from the best of breed Java libraries and standards."
-msgstr ""
+msgstr "专为 OpenJDK HotSpot 及 GraalVM 量身定制的原生 Kubernetes Java 开发栈，采用最佳 Java 库和标准精制而成。"
 
 #. type: Content of: <div><div><img>
 #: upstream/_includes/homepage-hero-band.html:7
