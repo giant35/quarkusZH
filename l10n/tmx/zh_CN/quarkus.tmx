@@ -13,6 +13,38 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Developer Joy</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>开发乐趣</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Documentation</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>文档</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Contributing</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>贡献</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unified configuration</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>统一配置</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Quarkus tailors your application for GraalVM and HotSpot. Amazingly fast boot time, incredibly low RSS memory (not just heap size!) offering near instant scale up and high density memory utilization in container orchestration platforms like Kubernetes. We use a technique we call compile time boot. &lt;a href="/vision/container-first"&gt;Learn more.&lt;/a&gt;</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -26,14 +58,6 @@
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>优秀的类库及标准件</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Contributing</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>贡献</seg>
       </tuv>
     </tu>
     <tu>
@@ -318,26 +342,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Developer Joy</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>开发乐趣</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>A cohesive platform for optimized developer joy:</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>一个让开发者更开心的平台:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Unified configuration</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>统一配置</seg>
       </tuv>
     </tu>
     <tu>
@@ -370,14 +378,6 @@
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>获取社区帮助</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Documentation</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>文档</seg>
       </tuv>
     </tu>
     <tu>
