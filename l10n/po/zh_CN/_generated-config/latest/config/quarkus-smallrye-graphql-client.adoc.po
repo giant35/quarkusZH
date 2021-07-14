@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:22+0000\n"
+"POT-Creation-Date: 2021-07-14 00:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,12 +55,6 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-smallrye-graphql-client.adoc:17
 #, no-wrap
 msgid "string"
-msgstr ""
-
-#. type: Table
-#: upstream/_generated-config/latest/config/quarkus-smallrye-graphql-client.adoc:20
-#, no-wrap
-msgid "required icon:exclamation-circle[title=Configuration property is required]"
 msgstr ""
 
 #. type: Table

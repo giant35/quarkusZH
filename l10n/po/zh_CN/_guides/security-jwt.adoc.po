@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:24+0000\n"
+"POT-Creation-Date: 2021-07-14 00:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -779,7 +779,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:420
-msgid "We will use a `smallrye.jwt.sign.key-location` property to point to this private signing key."
+msgid "We will use a `smallrye.jwt.sign.key.location` property to point to this private signing key."
 msgstr ""
 
 #. type: Block title
@@ -849,7 +849,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/security-jwt.adoc:452
 #, no-wrap
-msgid "$ mvn exec:java -Dexec.mainClass=org.acme.security.jwt.GenerateToken -Dexec.classpathScope=test -Dsmallrye.jwt.sign.key-location=privateKey.pem\n"
+msgid "$ mvn exec:java -Dexec.mainClass=org.acme.security.jwt.GenerateToken -Dexec.classpathScope=test -Dsmallrye.jwt.sign.key.location=privateKey.pem\n"
 msgstr ""
 
 #. type: delimited block -
@@ -1780,7 +1780,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:759
-msgid "If your application needs to accept the tokens with the encrypted claims or with the encrypted inner signed claims then all you have to do is to set `smallrye.jwt.decrypt.key-location` pointing to the decryption key."
+msgid "If your application needs to accept the tokens with the encrypted claims or with the encrypted inner signed claims then all you have to do is to set `smallrye.jwt.decrypt.key.location` pointing to the decryption key."
 msgstr ""
 
 #. type: Plain text
@@ -2283,7 +2283,7 @@ msgstr ""
 #: upstream/_guides/security-jwt.adoc:1047
 #, no-wrap
 msgid ""
-"// Encrypt the claims using the public key loaded from the location set with a 'smallrye.jwt.encrypt.key-location' property.\n"
+"// Encrypt the claims using the public key loaded from the location set with a 'smallrye.jwt.encrypt.key.location' property.\n"
 "String jwt1 = Jwt.claims(\"/tokenClaims.json\").jwe().encrypt();\n"
 msgstr ""
 
@@ -2327,7 +2327,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:1069
-msgid "If `smallrye.jwt.sign.key-location` or/and `smallrye.jwt.encrypt.key.location` properties are set then one can secure the existing claims (resources, maps, JsonObjects) with a single call:"
+msgid "If `smallrye.jwt.sign.key.location` or/and `smallrye.jwt.encrypt.key.location` properties are set then one can secure the existing claims (resources, maps, JsonObjects) with a single call:"
 msgstr ""
 
 #. type: delimited block -
