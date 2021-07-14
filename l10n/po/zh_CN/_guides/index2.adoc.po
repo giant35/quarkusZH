@@ -230,7 +230,7 @@ msgstr ""
 #: upstream/_guides/index2.adoc:62
 #, no-wrap
 msgid "Contributing"
-msgstr ""
+msgstr "贡献"
 
 #. type: Plain text
 #: upstream/_guides/index2.adoc:65
@@ -239,8 +239,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/index2.adoc:68
+#, fuzzy
 msgid "Every contribution is valuable.  It can be a bug report, an example application, a feature request, a fix in the documentation or just feedback."
-msgstr ""
+msgstr "任何贡献都是有价值的。比如提交一个 bug 、写个示例代码、功能提议、文档修正或只是反馈。"
 
 #. type: Title ==
 #: upstream/_guides/index2.adoc:69

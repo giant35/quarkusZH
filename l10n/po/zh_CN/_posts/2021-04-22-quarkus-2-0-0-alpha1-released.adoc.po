@@ -82,7 +82,7 @@ msgstr ""
 #: upstream/_posts/2021-04-22-quarkus-2-0-0-alpha1-released.adoc:29
 #, no-wrap
 msgid "Documentation"
-msgstr ""
+msgstr "文档"
 
 #. type: Plain text
 #: upstream/_posts/2021-04-22-quarkus-2-0-0-alpha1-released.adoc:33

@@ -57,7 +57,7 @@ msgstr ""
 #: upstream/_guides/topic/developer-joy.adoc:15
 #, no-wrap
 msgid "Unified configuration"
-msgstr ""
+msgstr "统一配置"
 
 #. type: Plain text
 #: upstream/_guides/topic/developer-joy.adoc:18

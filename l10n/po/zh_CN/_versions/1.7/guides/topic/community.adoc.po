@@ -47,7 +47,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/topic/community.adoc:10
 #, no-wrap
 msgid "Documentation"
-msgstr ""
+msgstr "文档"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/topic/community.adoc:14
@@ -130,7 +130,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/topic/community.adoc:41
 #, no-wrap
 msgid "Contributing"
-msgstr ""
+msgstr "贡献"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/topic/community.adoc:44

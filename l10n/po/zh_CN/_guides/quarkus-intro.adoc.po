@@ -99,7 +99,7 @@ msgstr ""
 #: upstream/_guides/quarkus-intro.adoc:33
 #, no-wrap
 msgid "Developer Joy"
-msgstr ""
+msgstr "开发乐趣"
 
 #. type: Plain text
 #: upstream/_guides/quarkus-intro.adoc:35

@@ -68,8 +68,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-04-08-why-did-payair-technologies-switch-to-quarkus.adoc:25
+#, fuzzy
 msgid "A Kubernetes native Java stack tailored for OpenJDK HotSpot and GraalVM, crafted from the best of breed Java libraries and standards."
-msgstr ""
+msgstr "专为 OpenJDK HotSpot 及 GraalVM 量身定制的原生 Kubernetes Java 开发栈，采用最佳 Java 库和标准精制而成。"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-08-why-did-payair-technologies-switch-to-quarkus.adoc:27
