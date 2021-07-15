@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:23+0000\n"
+"POT-Creation-Date: 2021-07-15 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -224,7 +224,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/funqy-knative-events.adoc:121
-msgid "`quarkus.funqy.knative-events.mapping.{function name}.trigger` sets the Cloud Event type that triggers a specific function"
+msgid "`quarkus.funqy.knative-events.mapping.{function name}.trigger` sets the Cloud Event type that triggers a specific function. It is possible to use the special value `*` as a catch-all value. The function will in this case be used for all event types."
 msgstr ""
 
 #. type: Plain text
