@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-14 00:55+0000\n"
+"POT-Creation-Date: 2021-07-17 00:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3502,5 +3502,5 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/resteasy-reactive.adoc:1907
-msgid "See link:rest-client-reactive.adoc[REST Client Reactive Guide] for more information about the reactive client."
+msgid "See link:rest-client-reactive[REST Client Reactive Guide] for more information about the reactive client."
 msgstr ""

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:23+0000\n"
+"POT-Creation-Date: 2021-07-17 00:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -340,7 +340,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/openapi-swaggerui.adoc:180
-msgid "Quarkus provides the https://github.com/smallrye/smallrye-open-api/[Smallrye OpenAPI] extension compliant with the https://github.com/eclipse/microprofile-open-api/[MicroProfile OpenAPI] specification in order to generate your API https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md[OpenAPI v3 specification]."
+msgid "Quarkus provides the https://github.com/smallrye/smallrye-open-api/[Smallrye OpenAPI] extension compliant with the https://github.com/eclipse/microprofile-open-api/[MicroProfile OpenAPI] specification in order to generate your API https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md[OpenAPI v3 specification]."
 msgstr ""
 
 #. type: Plain text

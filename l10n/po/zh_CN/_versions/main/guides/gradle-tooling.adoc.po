@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:23+0000\n"
+"POT-Creation-Date: 2021-07-17 00:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -337,7 +337,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/gradle-tooling.adoc:168
-msgid "Quarkus comes with a built-in development mode. The best way to run this is via the link:cli-tooling.adoc[Quarkus CLI] Run your application with:"
+msgid "Quarkus comes with a built-in development mode. The best way to run this is via the link:cli-tooling[Quarkus CLI] Run your application with:"
 msgstr ""
 
 #. type: delimited block -
