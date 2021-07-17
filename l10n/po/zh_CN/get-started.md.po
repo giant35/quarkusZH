@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-07-11 01:25+0000\n"
-"PO-Revision-Date: 2021-07-16 15:56+0800\n"
+"PO-Revision-Date: 2021-07-17 10:48+0800\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -259,6 +259,8 @@ msgid ""
 "This guide requires:\n"
 "- Completion of the [Creating Your First Application]({{site.baseurl}}/guides/getting-started) guide\n"
 msgstr ""
+"该指南需要:\n"
+"- 完成 [创建第一个应用]({{site.baseurl}}/guides/getting-started) 指南\n"
 
 #. type: Plain text
 #: upstream/get-started.md:74
@@ -267,12 +269,14 @@ msgid ""
 "<a href=\"{{site.baseurl}}/guides/building-native-image\" class=\"button-cta secondary\">READ THE GUIDE</a>\n"
 "</div>\n"
 msgstr ""
+"<a href=\"{{site.baseurl}}/guides/building-native-image\" class=\"button-cta secondary\">阅读指南</a>\n"
+"</div>\n"
 
 #. type: Title ##
 #: upstream/get-started.md:76
 #, no-wrap
 msgid "Using our Tooling"
-msgstr ""
+msgstr "工具使用"
 
 #. type: Plain text
 #: upstream/get-started.md:80
@@ -281,54 +285,56 @@ msgid ""
 "Quarkus comes with a toolchain enabling developers from live reload all the way down to deploying a Kubernetes application.\n"
 "In this guide, we will explore:\n"
 msgstr ""
+"Quarkus 附带了一个工具链，使开发人员能够从实时重新加载到部署 Kubernetes 应用程序。\n"
+"在该指南中，我们将探讨：\n"
 
 #. type: Bullet: '* '
 #: upstream/get-started.md:89
 #, no-wrap
 msgid "how to use Maven as a build tool\n"
-msgstr ""
+msgstr "如何使用Maven作为构建工具\n"
 
 #. type: Bullet: '* '
 #: upstream/get-started.md:89
 #, no-wrap
 msgid "how to use Gradle as a build tool\n"
-msgstr ""
+msgstr "如何使用Gradle作为构建工具\n"
 
 #. type: Bullet: '* '
 #: upstream/get-started.md:89
 #, no-wrap
 msgid "how to use the native CLI for your toolchain (coming soon)\n"
-msgstr ""
+msgstr "如何为您的工具链使用本机CLI（即将推出）\n"
 
 #. type: Bullet: '* '
 #: upstream/get-started.md:89
 #, no-wrap
 msgid "how to create and scaffold a new project\n"
-msgstr ""
+msgstr "如何搭建新项目\n"
 
 #. type: Bullet: '* '
 #: upstream/get-started.md:89
 #, no-wrap
 msgid "how to deal with extensions\n"
-msgstr ""
+msgstr "如何处理扩展\n"
 
 #. type: Bullet: '* '
 #: upstream/get-started.md:89
 #, no-wrap
 msgid "how to enable live reload\n"
-msgstr ""
+msgstr "如何启用实时重新加载\n"
 
 #. type: Bullet: '* '
 #: upstream/get-started.md:89
 #, no-wrap
 msgid "how to develop your application in your IDE\n"
-msgstr ""
+msgstr "如何在IDE中开发应用程序\n"
 
 #. type: Bullet: '* '
 #: upstream/get-started.md:89
 #, no-wrap
 msgid "how to compile your application natively\n"
-msgstr ""
+msgstr "如何编译为原生程序\n"
 
 #. type: Plain text
 #: upstream/get-started.md:92
@@ -337,6 +343,8 @@ msgid ""
 "<a href=\"{{site.baseurl}}/guides/tooling\" class=\"button-cta secondary\">READ THE GUIDE</a>\n"
 "</div>\n"
 msgstr ""
+"<a href=\"{{site.baseurl}}/guides/tooling\" class=\"button-cta secondary\">阅读指南</a>\n"
+"</div>\n"
 
 #. type: Plain text
 #: upstream/get-started.md:93
