@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:20+0000\n"
+"POT-Creation-Date: 2021-07-18 00:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,13 +56,14 @@ msgstr ""
 #: upstream/_generated-config/main/config/quarkus-jaeger.adoc:26
 #: upstream/_generated-config/main/config/quarkus-jaeger.adoc:81
 #: upstream/_generated-config/main/config/quarkus-jaeger.adoc:173
+#: upstream/_generated-config/main/config/quarkus-jaeger.adoc:182
 #, no-wrap
 msgid "boolean"
 msgstr ""
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-jaeger.adoc:20
-#: upstream/_generated-config/main/config/quarkus-jaeger.adoc:175
+#: upstream/_generated-config/main/config/quarkus-jaeger.adoc:176
 #, no-wrap
 msgid "`true`"
 msgstr ""
@@ -81,6 +82,7 @@ msgstr ""
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-jaeger.adoc:29
+#: upstream/_generated-config/main/config/quarkus-jaeger.adoc:184
 #, no-wrap
 msgid "`false`"
 msgstr ""
@@ -323,18 +325,30 @@ msgid ""
 "--"
 msgstr ""
 
+#. type: Table
+#: upstream/_generated-config/main/config/quarkus-jaeger.adoc:181
+#, no-wrap
+msgid ""
+"icon:lock[title=Fixed at build time] [[quarkus-jaeger_quarkus.jaeger.zipkin.compatibility-mode]]`link:#quarkus-jaeger_quarkus.jaeger.zipkin.compatibility-mode[quarkus.jaeger.zipkin.compatibility-mode]`\n"
+"\n"
+"[.description]\n"
+"--\n"
+"Whether jaeger should run in zipkin compatibility mode\n"
+"--"
+msgstr ""
+
 #. type: Block title
-#: upstream/_generated-config/main/config/quarkus-jaeger.adoc:179
+#: upstream/_generated-config/main/config/quarkus-jaeger.adoc:188
 #, no-wrap
 msgid "About the Duration format"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_generated-config/main/config/quarkus-jaeger.adoc:183
+#: upstream/_generated-config/main/config/quarkus-jaeger.adoc:192
 msgid "The format for durations uses the standard `java.time.Duration` format.  You can learn more about it in the link:https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html#parse-java.lang.CharSequence-[Duration#parse() javadoc]."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_generated-config/main/config/quarkus-jaeger.adoc:187
+#: upstream/_generated-config/main/config/quarkus-jaeger.adoc:196
 msgid "You can also provide duration values starting with a number.  In this case, if the value consists only of a number, the converter treats the value as seconds.  Otherwise, `PT` is implicitly prepended to the value to obtain a standard `java.time.Duration` format."
 msgstr ""
