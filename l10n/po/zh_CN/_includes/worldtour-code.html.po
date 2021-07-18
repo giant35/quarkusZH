@@ -19,7 +19,7 @@ msgstr ""
 #. type: Content of: <div><div><div><h3>
 #: upstream/_includes/worldtour-code.html:4
 msgid "Quickly Bootstrap Your Application"
-msgstr ""
+msgstr "应用快速开始"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/worldtour-code.html:5

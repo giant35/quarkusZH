@@ -26,7 +26,7 @@ msgstr ""
 #: >categories>
 #, no-wrap
 msgid "Getting Started"
-msgstr ""
+msgstr "入门"
 
 #. type: Hash Value - Key: description
 #: >categories>>guides>
@@ -56,7 +56,7 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "Getting Started with Reactive"
-msgstr ""
+msgstr "响应式入门"
 
 #. type: Hash Value - Key: url
 #: >categories>>guides>
@@ -74,7 +74,7 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "Building Native Executables"
-msgstr ""
+msgstr "构建原生执行程序"
 
 #. type: Hash Value - Key: url
 #: >categories>>guides>
@@ -92,7 +92,7 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "Using our Tooling"
-msgstr ""
+msgstr "工具使用"
 
 #. type: Hash Value - Key: url
 #: >categories>>guides>

@@ -80,7 +80,7 @@ msgstr ""
 #: upstream/_guides/amazon-lambda-http.adoc:35
 #, no-wrap
 msgid "Getting Started"
-msgstr ""
+msgstr "入门"
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda-http.adoc:39
