@@ -45,6 +45,14 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Getting Started</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>入门</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Get Started</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -57,14 +65,6 @@
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>目录</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Getting Started</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>入门</seg>
       </tuv>
     </tu>
     <tu>
