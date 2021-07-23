@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-22 01:00+0000\n"
+"POT-Creation-Date: 2021-07-23 00:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38978,7 +38978,7 @@ msgstr ""
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-all-config.adoc:25273
 #, no-wrap
-msgid "`io.quarkus`"
+msgid "`io.quarkus.platform`"
 msgstr ""
 
 #. type: Table
@@ -38996,7 +38996,7 @@ msgstr ""
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-all-config.adoc:25282
 #, no-wrap
-msgid "`quarkus-universe-bom`"
+msgid "`quarkus-bom`"
 msgstr ""
 
 #. type: Table

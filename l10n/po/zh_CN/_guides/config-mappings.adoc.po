@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:24+0000\n"
+"POT-Creation-Date: 2021-07-23 01:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -180,7 +180,7 @@ msgstr ""
 #: upstream/_guides/config-mappings.adoc:311
 #: upstream/_guides/config-mappings.adoc:345
 #: upstream/_guides/config-mappings.adoc:376
-#: upstream/_guides/config-mappings.adoc:547
+#: upstream/_guides/config-mappings.adoc:645
 #, no-wrap
 msgid "application.properties"
 msgstr ""
@@ -768,35 +768,200 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/config-mappings.adoc:426
-#: upstream/_guides/config-mappings.adoc:571
+#: upstream/_guides/config-mappings.adoc:669
 msgid "For validation to work, the `quarkus-hibernate-validator` extension is required."
 msgstr ""
 
+#. type: Title ===
+#: upstream/_guides/config-mappings.adoc:427
+#, no-wrap
+msgid "Mocking"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/config-mappings.adoc:431
+msgid "A mapping interface implementation is not a proxy, so it cannot be mocked directly with `@InjectMock` like other CDI beans. One trick is to make it proxyable with a producer method:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-mappings.adoc:437
+#, no-wrap
+msgid ""
+"public class ServerMockProducer {\n"
+"    @Inject\n"
+"    Config config;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-mappings.adoc:445
+#, no-wrap
+msgid ""
+"    @Produces\n"
+"    @ApplicationScoped\n"
+"    @io.quarkus.test.Mock\n"
+"    Server server() {\n"
+"        return config.unwrap(SmallRyeConfig.class).getConfigMapping(Server.class);\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/config-mappings.adoc:448
+msgid "The `Server` can be injected as a mock into a Quarkus test class with `@InjectMock`:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-mappings.adoc:455
+#, no-wrap
+msgid ""
+"@QuarkusTest\n"
+"class ServerMockTest {\n"
+"    @InjectMock\n"
+"    Server server;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-mappings.adoc:462
+#, no-wrap
+msgid ""
+"    @Test\n"
+"    void localhost() {\n"
+"        Mockito.when(server.host()).thenReturn(\"localhost\");\n"
+"        assertEquals(\"localhost\", server.host());\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/config-mappings.adoc:465
+msgid "The mock is just an empty shell without any actual configuration values."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/config-mappings.adoc:468
+msgid "If the goal is to only mock certain configuration values and retain the original configuration, the mocking instance requires a spy:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-mappings.adoc:475
+#, no-wrap
+msgid ""
+"@ConfigMapping(prefix = \"app\")\n"
+"public interface AppConfig {\n"
+"    @WithDefault(\"app\")\n"
+"    String name();\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-mappings.adoc:477
+#, no-wrap
+msgid "    Info info();\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-mappings.adoc:485
+#, no-wrap
+msgid ""
+"    interface Info {\n"
+"        @WithDefault(\"alias\")\n"
+"        String alias();\n"
+"        @WithDefault(\"10\")\n"
+"        Integer count();\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-mappings.adoc:489
+#, no-wrap
+msgid ""
+"public static class AppConfigProducer {\n"
+"    @Inject\n"
+"    Config config;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-mappings.adoc:501
+#, no-wrap
+msgid ""
+"    @Produces\n"
+"    @ApplicationScoped\n"
+"    @Mock\n"
+"    AppConfig appConfig() {\n"
+"        AppConfig appConfig = config.unwrap(SmallRyeConfig.class).getConfigMapping(AppConfig.class);\n"
+"        AppConfig appConfigSpy = Mockito.spy(appConfig);\n"
+"        AppConfig.Info infoSpy = Mockito.spy(appConfig.info());\n"
+"        Mockito.when(appConfigSpy.info()).thenReturn(infoSpy);\n"
+"        return appConfigSpy;\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/config-mappings.adoc:504
+msgid "The `AppConfig` can be injected as a mock into a Quarkus test class with `@Inject`:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-mappings.adoc:511
+#, no-wrap
+msgid ""
+"@QuarkusTest\n"
+"class AppConfigTest {\n"
+"    @InjectMock\n"
+"    AppConfig appConfig;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-mappings.adoc:516
+#, no-wrap
+msgid ""
+"    @Test\n"
+"    void localhost() {\n"
+"        Mockito.when(appConfig.name()).thenReturn(\"mocked-app\");\n"
+"        assertEquals(\"mocked-app\", server.host());\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-mappings.adoc:521
+#, no-wrap
+msgid ""
+"        Mockito.when(appConfig.info().alias()).thenReturn(\"mocked-alias\");\n"
+"        assertEquals(\"mocked-alias\", server.info().alias());\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/config-mappings.adoc:524
+msgid "Nested elements need to be spied individually by Mockito."
+msgstr ""
+
 #. type: Title ==
-#: upstream/_guides/config-mappings.adoc:428
+#: upstream/_guides/config-mappings.adoc:526
 #, no-wrap
 msgid "[.line-through]#`@ConfigProperties`# (Deprecated)"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:431
+#: upstream/_guides/config-mappings.adoc:529
 msgid "This feature will be removed soon, please update your code base and use `@ConfigMapping` instead."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:434
+#: upstream/_guides/config-mappings.adoc:532
 msgid "The `@io.quarkus.arc.config.ConfigProperties` annotation is able to group multiple related configuration values in its own class:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:438
-#: upstream/_guides/config-mappings.adoc:492
+#: upstream/_guides/config-mappings.adoc:536
+#: upstream/_guides/config-mappings.adoc:590
 #, no-wrap
 msgid "package org.acme.config;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:441
+#: upstream/_guides/config-mappings.adoc:539
 #, no-wrap
 msgid ""
 "import io.quarkus.arc.config.ConfigProperties;\n"
@@ -804,7 +969,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:444
+#: upstream/_guides/config-mappings.adoc:542
 #, no-wrap
 msgid ""
 "@ConfigProperties(prefix = \"greeting\") <1>\n"
@@ -812,7 +977,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:448
+#: upstream/_guides/config-mappings.adoc:546
 #, no-wrap
 msgid ""
 "    private String message;\n"
@@ -821,7 +986,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:452
+#: upstream/_guides/config-mappings.adoc:550
 #, no-wrap
 msgid ""
 "    public String getMessage() {\n"
@@ -830,7 +995,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:456
+#: upstream/_guides/config-mappings.adoc:554
 #, no-wrap
 msgid ""
 "    public void setMessage(String message) {\n"
@@ -839,7 +1004,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:460
+#: upstream/_guides/config-mappings.adoc:558
 #, no-wrap
 msgid ""
 "    public String getSuffix() {\n"
@@ -848,7 +1013,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:464
+#: upstream/_guides/config-mappings.adoc:562
 #, no-wrap
 msgid ""
 "    public void setSuffix(String suffix) {\n"
@@ -857,7 +1022,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:468
+#: upstream/_guides/config-mappings.adoc:566
 #, no-wrap
 msgid ""
 "    public Optional<String> getName() {\n"
@@ -866,7 +1031,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:473
+#: upstream/_guides/config-mappings.adoc:571
 #, no-wrap
 msgid ""
 "    public void setName(Optional<String> name) {\n"
@@ -876,22 +1041,22 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:477
+#: upstream/_guides/config-mappings.adoc:575
 msgid "`prefix` is optional. If not set then the prefix to be used will be determined by the class name. In this case it would still be `greeting` (since the `Configuration` suffix is removed). If the class were named `GreetingExtraConfiguration` then the resulting default prefix would be `greeting-extra`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:478
+#: upstream/_guides/config-mappings.adoc:576
 msgid "`!` will be the default value if `greeting.suffix` is not set."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:480
+#: upstream/_guides/config-mappings.adoc:578
 msgid "Inject the `GreetingResource` with CDI `@Inject`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:485
+#: upstream/_guides/config-mappings.adoc:583
 #, no-wrap
 msgid ""
 "@Inject\n"
@@ -899,12 +1064,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:488
+#: upstream/_guides/config-mappings.adoc:586
 msgid "Another alternative style provided by Quarkus is to create `GreetingConfiguration` as an interface:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:496
+#: upstream/_guides/config-mappings.adoc:594
 #, no-wrap
 msgid ""
 "import io.quarkus.arc.config.ConfigProperties;\n"
@@ -913,7 +1078,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:499
+#: upstream/_guides/config-mappings.adoc:597
 #, no-wrap
 msgid ""
 "@ConfigProperties(prefix = \"greeting\")\n"
@@ -921,7 +1086,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:502
+#: upstream/_guides/config-mappings.adoc:600
 #, no-wrap
 msgid ""
 "    @ConfigProperty(name = \"message\") <1>\n"
@@ -929,7 +1094,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:505
+#: upstream/_guides/config-mappings.adoc:603
 #, no-wrap
 msgid ""
 "    @ConfigProperty(defaultValue = \"!\")\n"
@@ -937,7 +1102,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:508
+#: upstream/_guides/config-mappings.adoc:606
 #, no-wrap
 msgid ""
 "    Optional<String> getName(); <3>\n"
@@ -945,45 +1110,45 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:511
+#: upstream/_guides/config-mappings.adoc:609
 msgid "The `@ConfigProperty` annotation is needed because the name of the configuration property that the method corresponds does not follow the getter method naming conventions."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:512
+#: upstream/_guides/config-mappings.adoc:610
 msgid "In this case since `name` is not set, the corresponding property will be `greeting.suffix`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:514
+#: upstream/_guides/config-mappings.adoc:612
 msgid "It is unnecessary to specify the `@ConfigProperty` annotation because the method name follows the getter method naming conventions (`greeting.name` being the corresponding property) and no default value is required."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:518
+#: upstream/_guides/config-mappings.adoc:616
 msgid "When using `@ConfigProperties` on a class or an interface, if the value of one of its fields is not provided, the application startup will fail, and a `javax.enterprise.inject.spi.DeploymentException` will be thrown. This does not apply to `Optional` fields and fields with a default value."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/config-mappings.adoc:519
+#: upstream/_guides/config-mappings.adoc:617
 #, no-wrap
 msgid "Additional notes on @ConfigProperties"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:523
+#: upstream/_guides/config-mappings.adoc:621
 msgid "When using a regular class annotated with `@ConfigProperties` the class doesn't necessarily have to declare getters and setters. Having simple public non-final fields is valid as well."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:526
+#: upstream/_guides/config-mappings.adoc:624
 msgid "Furthermore, the configuration classes support nested object configuration. Suppose there was a need to have an extra layer of greeting configuration named `content` that would contain a few fields:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:531
-#: upstream/_guides/config-mappings.adoc:562
-#: upstream/_guides/config-mappings.adoc:582
+#: upstream/_guides/config-mappings.adoc:629
+#: upstream/_guides/config-mappings.adoc:660
+#: upstream/_guides/config-mappings.adoc:680
 #, no-wrap
 msgid ""
 "@ConfigProperties(prefix = \"greeting\")\n"
@@ -991,7 +1156,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:536
+#: upstream/_guides/config-mappings.adoc:634
 #, no-wrap
 msgid ""
 "    public String message;\n"
@@ -1001,7 +1166,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:542
+#: upstream/_guides/config-mappings.adoc:640
 #, no-wrap
 msgid ""
 "    public static class ContentConfig {\n"
@@ -1012,17 +1177,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:544
+#: upstream/_guides/config-mappings.adoc:642
 msgid "The name of the field (not the class name) will determine the name of the properties that are bound to the object."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:546
+#: upstream/_guides/config-mappings.adoc:644
 msgid "Setting the properties would occur in the normal manner:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:554
+#: upstream/_guides/config-mappings.adoc:652
 #, no-wrap
 msgid ""
 "greeting.message = hello\n"
@@ -1032,13 +1197,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:557
+#: upstream/_guides/config-mappings.adoc:655
 msgid "Furthermore, classes annotated with `@ConfigProperties` can be annotated with Bean Validation annotations:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:566
-#: upstream/_guides/config-mappings.adoc:586
+#: upstream/_guides/config-mappings.adoc:664
+#: upstream/_guides/config-mappings.adoc:684
 #, no-wrap
 msgid ""
 "    @Size(min = 20)\n"
@@ -1047,28 +1212,28 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:568
-#: upstream/_guides/config-mappings.adoc:588
-#: upstream/_guides/config-mappings.adoc:602
-#: upstream/_guides/config-mappings.adoc:640
+#: upstream/_guides/config-mappings.adoc:666
+#: upstream/_guides/config-mappings.adoc:686
+#: upstream/_guides/config-mappings.adoc:700
+#: upstream/_guides/config-mappings.adoc:738
 #, no-wrap
 msgid "}\n"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/config-mappings.adoc:572
+#: upstream/_guides/config-mappings.adoc:670
 #, no-wrap
 msgid "Using same ConfigProperties with different prefixes"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:577
+#: upstream/_guides/config-mappings.adoc:675
 msgid "Quarkus also supports the use of the same `@ConfigProperties` object with different prefixes for each injection point using the `io.quarkus.arc.config.@ConfigPrefix` annotation. If `GreetingConfiguration` from above needs to be used for both the `greeting` prefix and the `other` prefix:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:594
-#: upstream/_guides/config-mappings.adoc:635
+#: upstream/_guides/config-mappings.adoc:692
+#: upstream/_guides/config-mappings.adoc:733
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -1076,7 +1241,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:597
+#: upstream/_guides/config-mappings.adoc:695
 #, no-wrap
 msgid ""
 "    @Inject <1>\n"
@@ -1084,7 +1249,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:600
+#: upstream/_guides/config-mappings.adoc:698
 #, no-wrap
 msgid ""
 "    @ConfigPrefix(\"other\") <2>\n"
@@ -1092,38 +1257,38 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:605
+#: upstream/_guides/config-mappings.adoc:703
 msgid "At this injection point `greetingConfiguration` will use the `greeting` prefix since that is what has been defined on `@ConfigProperties`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:607
+#: upstream/_guides/config-mappings.adoc:705
 msgid "At this injection point `otherConfiguration` will use the `other` prefix from `@ConfigPrefix` instead of the `greeting` prefix. Notice that in this case `@Inject` is not required."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/config-mappings.adoc:608
+#: upstream/_guides/config-mappings.adoc:706
 #, no-wrap
 msgid "Combining ConfigProperties with build time conditions"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:613
+#: upstream/_guides/config-mappings.adoc:711
 msgid "Quarkus allows you to define conditions evaluated at build time (`@IfBuildProfile`, `@UnlessBuildProfile`, `@IfBuildProperty` and `@UnlessBuildProperty`) to enable or not the annotations `@ConfigProperties` and `@ConfigPrefix` which gives you a very flexible way to map your configuration."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:617
+#: upstream/_guides/config-mappings.adoc:715
 msgid "Let's assume that the configuration of a service is mapped thanks to a `@ConfigProperties` and you don't need this part of the configuration for your tests as it will be mocked, in that case you can define a build time condition like in the next example:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:619
+#: upstream/_guides/config-mappings.adoc:717
 msgid "`ServiceConfiguration.java`"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:627
+#: upstream/_guides/config-mappings.adoc:725
 #, no-wrap
 msgid ""
 "@UnlessBuildProfile(\"test\") <1>\n"
@@ -1135,17 +1300,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:629
+#: upstream/_guides/config-mappings.adoc:727
 msgid "The annotation `@ConfigProperties` is considered if and only if the active profile is not `test`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:631
+#: upstream/_guides/config-mappings.adoc:729
 msgid "`SomeBean.java`"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-mappings.adoc:638
+#: upstream/_guides/config-mappings.adoc:736
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -1153,6 +1318,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-mappings.adoc:642
+#: upstream/_guides/config-mappings.adoc:740
 msgid "As the configuration of the service could be missing, we need to use `Instance<ServiceConfiguration>` as type at the injection point."
 msgstr ""

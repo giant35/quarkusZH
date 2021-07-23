@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:24+0000\n"
+"POT-Creation-Date: 2021-07-23 01:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1227,7 +1227,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-data-jpa.adoc:609
-msgid "https://github.com/spring-projects/spring-data-jpa/blob/master/src/main/asciidoc/jpa.adoc#entity-state-detection-strategies[Entity State-detection Strategies] via `EntityInformation`."
+msgid "https://github.com/spring-projects/spring-data-jpa/blob/main/src/main/asciidoc/jpa.adoc#entity-state-detection-strategies[Entity State-detection Strategies] via `EntityInformation`."
 msgstr ""
 
 #. type: Plain text

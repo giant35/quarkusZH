@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:24+0000\n"
+"POT-Creation-Date: 2021-07-23 01:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1575,36 +1575,58 @@ msgstr ""
 #. type: Title ==
 #: upstream/_guides/security-openid-connect-web-authentication.adoc:782
 #, no-wrap
+msgid "Customize authentication requests"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:785
+msgid "By default, only the `response_type` (set to `code`), `scope` (set to 'openid'), `client_id`, `redirect_uri` and `state` properties are passed as HTTP query parameters to the OpenId Connect provider's authorization endpoint when the user is redirected to it to authenticate."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:787
+msgid "You can add more properties to it with `quarkus.oidc.authentication.extra-params`. For example, some OpenId Connect providers may choose to return the authorization code as part of the redirect URI's fragment which would break the authentication process - it can be fixed as follows:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:791
+#, no-wrap
+msgid "quarkus.oidc.authentication.extra-params.response_mode=query\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:793
+#, no-wrap
 msgid "Configuration Reference"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:786
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:797
 #, no-wrap
 msgid "References"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:789
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:800
 msgid "https://www.keycloak.org/documentation.html[Keycloak Documentation]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:790
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:801
 msgid "https://openid.net/connect/[OpenID Connect]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:791
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:802
 msgid "https://tools.ietf.org/html/rfc7519[JSON Web Token]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:792
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:803
 msgid "link:security-openid-connect-client[Quarkus - Using OpenID Connect and OAuth2 Client and Filters to manage access tokens]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:792
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:803
 msgid "link:security[Quarkus Security]"
 msgstr ""

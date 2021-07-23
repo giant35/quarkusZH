@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-17 00:57+0000\n"
+"POT-Creation-Date: 2021-07-23 00:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,7 +150,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-mode-differences.adoc:59
-msgid "When testing or running in dev-mode Quarkus can even provide you with a zero config database out of the box, a feature we refer to as DevServices.  More information can be found link:datasource.adoc#dev-services[here]."
+msgid "When testing or running in dev-mode Quarkus can even provide you with a zero config database out of the box, a feature we refer to as Dev Services.  More information can be found link:datasource.adoc#dev-services[here]."
 msgstr ""
 
 #. type: Title ===
