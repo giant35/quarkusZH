@@ -39,12 +39,12 @@ msgstr ""
 #: upstream/_versions/1.11/guides/microprofile-health.adoc:18
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/microprofile-health.adoc:21
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/microprofile-health.adoc:23
@@ -54,7 +54,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/microprofile-health.adoc:24
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/microprofile-health.adoc:25
@@ -70,7 +70,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/microprofile-health.adoc:27
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/microprofile-health.adoc:32
@@ -81,7 +81,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/microprofile-health.adoc:33
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/microprofile-health.adoc:37

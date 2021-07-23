@@ -34,12 +34,12 @@ msgstr ""
 #: upstream/_versions/main/guides/reactive-messaging-http.adoc:13
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-messaging-http.adoc:16
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-messaging-http.adoc:18
@@ -49,7 +49,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-messaging-http.adoc:19
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-messaging-http.adoc:20
@@ -70,7 +70,7 @@ msgstr ""
 #: upstream/_versions/main/guides/reactive-messaging-http.adoc:23
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-messaging-http.adoc:27
@@ -86,7 +86,7 @@ msgstr ""
 #: upstream/_versions/main/guides/reactive-messaging-http.adoc:32
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-messaging-http.adoc:36

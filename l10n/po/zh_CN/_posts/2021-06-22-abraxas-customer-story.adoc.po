@@ -103,7 +103,7 @@ msgstr ""
 #: upstream/_posts/2021-06-22-abraxas-customer-story.adoc:34
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_posts/2021-06-22-abraxas-customer-story.adoc:36

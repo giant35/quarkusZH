@@ -54,12 +54,12 @@ msgstr ""
 #: upstream/_versions/main/guides/smallrye-metrics.adoc:27
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/smallrye-metrics.adoc:30
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/main/guides/smallrye-metrics.adoc:32
@@ -69,7 +69,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/main/guides/smallrye-metrics.adoc:33
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/smallrye-metrics.adoc:34
@@ -85,7 +85,7 @@ msgstr ""
 #: upstream/_versions/main/guides/smallrye-metrics.adoc:36
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/smallrye-metrics.adoc:40
@@ -96,7 +96,7 @@ msgstr ""
 #: upstream/_versions/main/guides/smallrye-metrics.adoc:41
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/smallrye-metrics.adoc:45

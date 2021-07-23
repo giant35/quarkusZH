@@ -74,12 +74,12 @@ msgstr ""
 #: upstream/_versions/main/guides/vault-auth.adoc:37
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/vault-auth.adoc:40
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/main/guides/vault-auth.adoc:42
@@ -94,7 +94,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/main/guides/vault-auth.adoc:44
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/vault-auth.adoc:45

@@ -49,12 +49,12 @@ msgstr ""
 #: upstream/_versions/1.11/guides/security-openid-connect-multitenancy.adoc:19
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-multitenancy.adoc:22
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-multitenancy.adoc:24
@@ -64,7 +64,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-multitenancy.adoc:25
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-multitenancy.adoc:26
@@ -90,7 +90,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/security-openid-connect-multitenancy.adoc:30
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-multitenancy.adoc:33
@@ -111,7 +111,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/security-openid-connect-multitenancy.adoc:38
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/security-openid-connect-multitenancy.adoc:42

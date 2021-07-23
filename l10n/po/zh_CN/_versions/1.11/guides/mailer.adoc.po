@@ -34,12 +34,12 @@ msgstr ""
 #: upstream/_versions/1.11/guides/mailer.adoc:12
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/mailer.adoc:15
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/mailer.adoc:17
@@ -54,7 +54,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/mailer.adoc:19
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/mailer.adoc:20
@@ -75,7 +75,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/mailer.adoc:23
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/mailer.adoc:27

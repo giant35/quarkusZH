@@ -34,12 +34,12 @@ msgstr ""
 #: upstream/_guides/jms.adoc:16
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_guides/jms.adoc:19
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_guides/jms.adoc:21
@@ -49,7 +49,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/jms.adoc:22
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_guides/jms.adoc:23
@@ -75,7 +75,7 @@ msgstr ""
 #: upstream/_guides/jms.adoc:27
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_guides/jms.adoc:33
@@ -102,7 +102,7 @@ msgstr ""
 #: upstream/_guides/jms.adoc:48 upstream/_guides/jms.adoc:351
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_guides/jms.adoc:52

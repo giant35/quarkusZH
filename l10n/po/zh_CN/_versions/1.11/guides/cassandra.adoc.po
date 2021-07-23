@@ -39,17 +39,17 @@ msgstr ""
 #: upstream/_versions/1.11/guides/cassandra.adoc:18
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/cassandra.adoc:21
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/cassandra.adoc:23
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/cassandra.adoc:24
@@ -75,7 +75,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/cassandra.adoc:28
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/cassandra.adoc:32
@@ -96,7 +96,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/cassandra.adoc:37
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/cassandra.adoc:42

@@ -39,7 +39,7 @@ msgstr ""
 #: upstream/_guides/security.adoc:14
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_guides/security.adoc:17

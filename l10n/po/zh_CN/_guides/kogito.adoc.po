@@ -39,12 +39,12 @@ msgstr ""
 #: upstream/_guides/kogito.adoc:21 upstream/_guides/kogito.adoc:348
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_guides/kogito.adoc:24
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_guides/kogito.adoc:26
@@ -116,7 +116,7 @@ msgstr ""
 #: upstream/_guides/kogito.adoc:48
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_guides/kogito.adoc:51
@@ -159,7 +159,7 @@ msgstr ""
 #: upstream/_guides/kogito.adoc:70
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_guides/kogito.adoc:74

@@ -34,12 +34,12 @@ msgstr ""
 #: upstream/_versions/1.11/guides/kafka.adoc:12
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/kafka.adoc:15
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/kafka.adoc:17
@@ -49,7 +49,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/kafka.adoc:18
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/kafka.adoc:19
@@ -76,7 +76,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/kafka.adoc:31
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/kafka.adoc:30
@@ -93,7 +93,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/kafka.adoc:33
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/kafka.adoc:37

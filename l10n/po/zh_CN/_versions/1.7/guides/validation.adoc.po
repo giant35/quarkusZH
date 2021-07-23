@@ -44,12 +44,12 @@ msgstr ""
 #: upstream/_versions/1.7/guides/validation.adoc:15
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/validation.adoc:18
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/validation.adoc:20
@@ -59,7 +59,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/validation.adoc:21
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/validation.adoc:22
@@ -75,7 +75,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/validation.adoc:24
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/validation.adoc:29
@@ -91,7 +91,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/validation.adoc:32
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/validation.adoc:36

@@ -69,12 +69,12 @@ msgstr ""
 #: upstream/_guides/getting-started-reactive.adoc:21
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:24
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:26
@@ -84,7 +84,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:27
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:28
@@ -105,17 +105,17 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:33
 msgid "We recommend that you follow the instructions from <<bootstrapping-the-project,Bootstrapping project>> and onwards to create the application step by step."
-msgstr ""
+msgstr "建议您按照后续说明从  <<bootstrapping-the-project,Bootstrapping project>>  逐步创建应用程序。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:35
 msgid "However, you can go right to the completed example."
-msgstr ""
+msgstr "当然您也可以直接查看完成后的代码。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:37
 msgid "Download an {quickstarts-archive-url}[archive] or clone the git repository:"
-msgstr ""
+msgstr "下载 {quickstarts-archive-url}[压缩包] 或克隆 git 仓库:"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-reactive.adoc:41
@@ -314,7 +314,7 @@ msgstr ""
 #: upstream/_guides/getting-started-reactive.adoc:170
 #, no-wrap
 msgid "Bootstrapping the project"
-msgstr ""
+msgstr "搭建项目"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:175
@@ -329,7 +329,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:180
 msgid "The easiest way to create a new Quarkus project is to open a terminal and run the following command:"
-msgstr ""
+msgstr "创建 Quarkus 项目最简单方法是打开命令行并运行以下命令："
 
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:182
@@ -384,7 +384,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:213
 msgid "the Maven structure"
-msgstr ""
+msgstr "Maven 目录结构"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:214
@@ -399,12 +399,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:216
 msgid "a landing page that is accessible on `http://localhost:8080` after starting the application"
-msgstr ""
+msgstr "启动应用程序后可访问  `http://localhost:8080`  入口页"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:217
 msgid "example `Dockerfile` files for both `native` and `jvm` modes in `src/main/docker`"
-msgstr ""
+msgstr "`src/main/docker` 有 `Dockerfile` 样例文件, 包含 `native` 及 `jvm` 模式"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:218

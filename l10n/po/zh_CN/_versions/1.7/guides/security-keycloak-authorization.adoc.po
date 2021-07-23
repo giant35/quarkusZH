@@ -49,12 +49,12 @@ msgstr ""
 #: upstream/_versions/1.7/guides/security-keycloak-authorization.adoc:21
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/security-keycloak-authorization.adoc:24
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/security-keycloak-authorization.adoc:26
@@ -64,7 +64,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/security-keycloak-authorization.adoc:27
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/security-keycloak-authorization.adoc:28
@@ -95,7 +95,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/security-keycloak-authorization.adoc:33
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/security-keycloak-authorization.adoc:36
@@ -141,7 +141,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/security-keycloak-authorization.adoc:55
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/security-keycloak-authorization.adoc:59

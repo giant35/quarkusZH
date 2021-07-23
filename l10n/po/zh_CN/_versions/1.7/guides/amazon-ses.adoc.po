@@ -59,12 +59,12 @@ msgstr ""
 #: upstream/_versions/1.7/guides/amazon-ses.adoc:26
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/amazon-ses.adoc:29
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/amazon-ses.adoc:31
@@ -74,7 +74,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/amazon-ses.adoc:32
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/amazon-ses.adoc:33
@@ -201,7 +201,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/amazon-ses.adoc:88
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/amazon-ses.adoc:90

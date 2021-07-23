@@ -114,7 +114,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/building-native-image.adoc:65
 #: upstream/_versions/1.7/guides/building-native-image.adoc:78
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/building-native-image.adoc:66
@@ -148,7 +148,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.7/guides/building-native-image.adoc:75
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/building-native-image.adoc:80
@@ -335,7 +335,7 @@ msgstr ""
 #: upstream/_versions/1.7/guides/building-native-image.adoc:181
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: delimited block =
 #: upstream/_versions/1.7/guides/building-native-image.adoc:184

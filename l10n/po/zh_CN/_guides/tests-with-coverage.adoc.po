@@ -59,12 +59,12 @@ msgstr ""
 #: upstream/_guides/tests-with-coverage.adoc:31
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_guides/tests-with-coverage.adoc:34
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_guides/tests-with-coverage.adoc:36
@@ -74,7 +74,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/tests-with-coverage.adoc:37
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_guides/tests-with-coverage.adoc:38
@@ -95,7 +95,7 @@ msgstr ""
 #: upstream/_guides/tests-with-coverage.adoc:41
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_guides/tests-with-coverage.adoc:45
@@ -106,7 +106,7 @@ msgstr ""
 #: upstream/_guides/tests-with-coverage.adoc:46
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_guides/tests-with-coverage.adoc:50
