@@ -21,6 +21,46 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Prerequisites</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>准备</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>To complete this guide, you need:</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>要完成本指南，您需要：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>an IDE</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>IDE</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Architecture</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>架构</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Solution</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>完整源码</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Documentation</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -45,10 +85,122 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>the Maven structure</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>Maven 目录结构</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Running the application</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>运行应用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Getting Started</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>入门</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We recommend that you follow the instructions from &lt;&lt;bootstrapping-the-project,Bootstrapping project&gt;&gt; and onwards to create the application step by step.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>建议您按照后续说明从  &lt;&lt;bootstrapping-the-project,Bootstrapping project&gt;&gt;  逐步创建应用程序。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>However, you can go right to the completed example.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>当然您也可以直接查看完成后的代码。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Download an {quickstarts-archive-url}[archive] or clone the git repository:</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>下载 {quickstarts-archive-url}[压缩包] 或克隆 git 仓库:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bootstrapping the project</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>搭建项目</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The easiest way to create a new Quarkus project is to open a terminal and run the following command:</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>创建 Quarkus 项目最简单方法是打开命令行并运行以下命令：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>a landing page that is accessible on `http://localhost:8080` after starting the application</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>启动应用程序后可访问  `http://localhost:8080`  入口页</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>example `Dockerfile` files for both `native` and `jvm` modes in `src/main/docker`</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>`src/main/docker` 有 `Dockerfile` 样例文件, 包含 `native` 及 `jvm` 模式</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Once started, you can request the provided endpoint:</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>启动后，可以请求提供的接口：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Automatically add newline with `curl -w "\n"`</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>用 `curl -w "\n"` 自动添加换行</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We are using `curl -w "\n"` in this example to avoid your terminal printing a '%' or put both result and next command prompt on the same line.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>在本例中，我们使用 `curl -w "\n"` 来避免终端输出 ‘%’  ，或者将结果和下一个命令提示符放在同一行。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using injection</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>使用注入</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>ArC comes as a dependency of `quarkus-resteasy` so you already have it handy.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。</seg>
       </tuv>
     </tu>
     <tu>
@@ -101,30 +253,6 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Prerequisites</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>准备</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>To complete this guide, you need:</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>要完成本指南，您需要：</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>an IDE</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>IDE</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Verify Maven is using the Java you expect</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -137,14 +265,6 @@
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>如果您安装了多个JDK，Maven可能未使用预期的java，这样可能会得到意外的结果。您可以通过运行​  `mvn —version` 来验证 Maven 使用了哪个JDK。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Architecture</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>架构</seg>
       </tuv>
     </tu>
     <tu>
@@ -165,58 +285,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Solution</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>完整源码</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>We recommend that you follow the instructions from &lt;&lt;bootstrapping-the-project,Bootstrapping project&gt;&gt; and onwards to create the application step by step.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>建议您按照后续说明从  &lt;&lt;bootstrapping-the-project,Bootstrapping project&gt;&gt;  逐步创建应用程序。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>However, you can go right to the completed example.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>当然您也可以直接查看完成后的代码。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Download an {quickstarts-archive-url}[archive] or clone the git repository:</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>下载 {quickstarts-archive-url}[压缩包] 或克隆 git 仓库:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>The solution is located in the `getting-started` {quickstarts-tree-url}/getting-started[directory].</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>代码位于 `getting-started` {quickstarts-tree-url}/getting-started[目录] 中.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Bootstrapping the project</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>搭建项目</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The easiest way to create a new Quarkus project is to open a terminal and run the following command:</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>创建 Quarkus 项目最简单方法是打开命令行并运行以下命令：</seg>
       </tuv>
     </tu>
     <tu>
@@ -245,34 +317,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>the Maven structure</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>Maven 目录结构</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>an `org.acme.getting.started.GreetingResource` resource exposed on `/hello`</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>`org.acme.getting.started.GreetingResource` 提供接口 `/hello`</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>a landing page that is accessible on `http://localhost:8080` after starting the application</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>启动应用程序后可访问  `http://localhost:8080`  入口页</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>example `Dockerfile` files for both `native` and `jvm` modes in `src/main/docker`</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>`src/main/docker` 有 `Dockerfile` 样例文件, 包含 `native` 及 `jvm` 模式</seg>
       </tuv>
     </tu>
     <tu>
@@ -325,26 +373,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Running the application</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>运行应用</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Now we are ready to run our application.  Use: `./mvnw compile quarkus:dev`:</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>现在我们可以运行应用程序了。 使用:`./mvnw compile quarkus:dev`:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Once started, you can request the provided endpoint:</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>启动后，可以请求提供的接口：</seg>
       </tuv>
     </tu>
     <tu>
@@ -357,42 +389,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Automatically add newline with `curl -w "\n"`</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>用 `curl -w "\n"` 自动添加换行</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>We are using `curl -w "\n"` in this example to avoid your terminal printing a '%' or put both result and next command prompt on the same line.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>在本例中，我们使用 `curl -w "\n"` 来避免终端输出 ‘%’  ，或者将结果和下一个命令提示符放在同一行。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Using injection</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>使用注入</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  If you're new to CDI then we recommend you to read the link:cdi[Introduction to CDI] guide.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>Quarkus 中的依赖注入是基于ArC的，ArC是一个基于 CDI 的依赖注入解决方案，专为 Quarkus 设计。 如果你之前未使用过 CDI 建议你参考下 link:cdi[ 上下文依赖介绍] 。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>ArC comes as a dependency of `quarkus-resteasy` so you already have it handy.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。</seg>
       </tuv>
     </tu>
     <tu>
