@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:23+0000\n"
+"POT-Creation-Date: 2021-07-29 00:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,28 +113,28 @@ msgid "With this configuration, you can put your service and message definitions
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:70
-msgid "`quarkus-maven-plugin` retrieves a version of `protoc` (the protobuf compiler) from Maven repositories. The retrieved version matches your operating system and CPU architecture.  If this retrieved version does not work in your context, you can download the suitable binary and specify the location via `-Dquarkus.grpc.protoc-path=/path/to/protoc`."
-msgstr ""
-
-#. type: Plain text
 #: upstream/_versions/main/guides/grpc-getting-started.adoc:72
-msgid "Alternatively to using the `generate-code` goal of the `quarkus-maven-plugin`, you can use `protobuf-maven-plugin` to generate these files, more in <<Generating Java files from proto with protobuf-maven-plugin>>"
+msgid "`quarkus-maven-plugin` retrieves a version of `protoc` (the protobuf compiler) from Maven repositories. The retrieved version matches your operating system and CPU architecture.  If this retrieved version does not work in your context, you can either force to use a different OS classifier with `-Dquarkus.grpc.protoc-os-classifier=your-os-classifier` (e.g. `osx-x86_64`).  You can also download the suitable binary and specify the location via `-Dquarkus.grpc.protoc-path=/path/to/protoc`."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/grpc-getting-started.adoc:75
+msgid "Alternatively to using the `generate-code` goal of the `quarkus-maven-plugin`, you can use `protobuf-maven-plugin` to generate these files, more in <<Generating Java files from proto with protobuf-maven-plugin>>"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:78
 msgid "Let's start with a simple _Hello_ service.  Create the `src/main/proto/helloworld.proto` file with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:79
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:82
 #, no-wrap
 msgid "syntax = \"proto3\";\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:83
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:86
 #, no-wrap
 msgid ""
 "option java_multiple_files = true;\n"
@@ -143,13 +143,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:85
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:88
 #, no-wrap
 msgid "package helloworld;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:91
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:94
 #, no-wrap
 msgid ""
 "// The greeting service definition.\n"
@@ -160,7 +160,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:96
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:99
 #, no-wrap
 msgid ""
 "// The request message containing the user's name.\n"
@@ -170,7 +170,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:101
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:104
 #, no-wrap
 msgid ""
 "// The response message containing the greetings\n"
@@ -180,28 +180,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:104
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:107
 msgid "This `proto` file defines a simple service interface with a single method (`SayHello`), and the exchanged messages (`HelloRequest` containing the name and `HelloReply` containing the greeting message)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:107
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:110
 msgid "Before coding, we need to generate the classes used to implement and consume gRPC services.  In a terminal, run:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:111
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:114
 #, no-wrap
 msgid "$ mvn compile\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:114
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:117
 msgid "Once generated, you can look at the `target/generated-sources/grpc` directory:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:131
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:134
 #, no-wrap
 msgid ""
 "target/generated-sources/grpc\n"
@@ -221,43 +221,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:134
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:137
 msgid "These are the classes we are going to use."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:136
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:139
 #, no-wrap
 msgid "`proto` files with imports"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:140
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:143
 msgid "Protocol Buffers specification provides a way to import `proto` files.  The Quarkus code generation mechanism lets you control the scope of dependencies to scan for possible imports by setting the `quarkus.generate-code.grpc.scan-for-imports` property to one of the following:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:142
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:145
 msgid "`all` - scan all the dependencies"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:143
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:146
 msgid "`none` - don't scan the dependencies, use only what is defined in the `src/main/proto` or `src/test/proto`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:144
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:147
 msgid "`groupId1:artifactId1,groupId2:artifactId2` - scan only the dependencies with group id and artifact id in the list."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:147
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:150
 msgid "If not specified, the property is set to `com.google.protobuf:protobuf-java`.  To override it, set the `quarkus.generate-code.grpc.scan-for-imports` property in your pom.xml (or gradle.properties) to the desired value, e.g."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:153
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:156
 #, no-wrap
 msgid ""
 "<properties>\n"
@@ -266,42 +266,42 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:155
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:158
 #, no-wrap
 msgid "Implementing a gRPC service"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:158
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:161
 msgid "Now that we have the generated classes let's implement our _hello_ service."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:162
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:165
 msgid "With Quarkus, implementing a service requires to implement the generated service interface based on Mutiny, a Reactive Programming API integrated in Quarkus, and expose it as a CDI bean.  Learn more about Mutiny on the xref:mutiny-primer.adoc[Mutiny guide].  The service class must be annotated with the `@io.quarkus.grpc.GrpcService` annotation."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:163
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:166
 #, no-wrap
 msgid "Implementing a service"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:166
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:169
 msgid "Create the `src/main/java/org/acme/HelloService.java` file with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:170
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:197
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:247
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:173
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:200
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:250
 #, no-wrap
 msgid "package org.acme;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:176
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:179
 #, no-wrap
 msgid ""
 "import io.grpc.stub.StreamObserver;\n"
@@ -312,7 +312,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:179
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:182
 #, no-wrap
 msgid ""
 "@GrpcService <1>\n"
@@ -320,7 +320,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:187
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:190
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -333,29 +333,29 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:189
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:217
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:192
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:220
 msgid "Expose your implementation as a bean."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:190
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:193
 msgid "Implement the generated service interface."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:191
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:219
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:194
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:222
 msgid "Implement the methods defined in the service definition (here we have a single method)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:193
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:196
 msgid "You can also use the default gRPC API instead of Mutiny:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:203
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:206
 #, no-wrap
 msgid ""
 "import io.grpc.stub.StreamObserver;\n"
@@ -366,7 +366,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:206
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:209
 #, no-wrap
 msgid ""
 "@GrpcService <1>\n"
@@ -374,7 +374,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:215
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:218
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -388,64 +388,64 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:218
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:221
 msgid "Extends the `ImplBase` class. This is a generated class."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:220
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:223
 msgid "Build and send the response."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:221
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:224
 msgid "Close the response."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:226
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:229
 msgid "If your service implementation logic is blocking (use blocking I/O for example), annotate your method with `@Blocking`.  The `io.smallrye.common.annotation.Blocking` annotation instructs the framework to invoke the annotated method on a worker thread instead of the I/O thread (event-loop)."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:227
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:230
 #, no-wrap
 msgid "The gRPC server"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:231
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:234
 msgid "The services are _served_ by a _server_.  Available services (_CDI beans_) are automatically registered and exposed."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:234
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:237
 msgid "By default, the server is exposed on `localhost:9000`, and uses _plain-text_ (so no TLS) when running normally, and `localhost:9001` for tests."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:236
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:239
 msgid "Run the application using: `mvn quarkus:dev`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:237
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:240
 #, no-wrap
 msgid "Consuming a gRPC service"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:241
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:244
 msgid "In this section, we are going to consume the service we expose.  To simplify, we are going to consume the service from the same application, which in the real world, does not make sense."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:243
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:246
 msgid "Open the existing `org.acme.ExampleResource` class, and edit the content to become:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:251
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:254
 #, no-wrap
 msgid ""
 "import io.quarkus.example.Greeter;\n"
@@ -454,7 +454,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:257
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:260
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -465,7 +465,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:260
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:263
 #, no-wrap
 msgid ""
 "@Path(\"/hello\")\n"
@@ -473,7 +473,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:263
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:266
 #, no-wrap
 msgid ""
 "    @GrpcClient                               // <1>\n"
@@ -481,7 +481,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:269
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:272
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -492,7 +492,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:276
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:279
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -504,75 +504,75 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:278
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:281
 msgid "Inject the service and configure its name. The name is used in the application configuration. If not specified then the field name is used instead: `hello` in this particular case."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:279
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:282
 msgid "Use the generated service interface based on Mutiny API."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:280
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:283
 msgid "Invoke the service."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:283
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:286
 msgid "We need to configure the application to indicate where the `hello` service is found.  In the `src/main/resources/application.properties` file, add the following property:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:287
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:290
 #, no-wrap
 msgid "quarkus.grpc.clients.hello.host=localhost\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:290
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:293
 msgid "`hello` is the name used in the `@GrpcClient` annotation."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:291
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:294
 msgid "`host` configures the service host (here it's localhost)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:293
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:296
 msgid "Then, open http://localhost:8080/hello/quarkus in a browser, and you should get `Hello quarkus`!"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:294
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:297
 #, no-wrap
 msgid "Packaging the application"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:298
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:301
 msgid "Like any other Quarkus applications, you can package it with: `mvn package`.  You can also package the application into a native executable with: `mvn package -Pnative`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:299
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:302
 #, no-wrap
 msgid "Generating Java files from proto with protobuf-maven-plugin"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:303
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:306
 msgid "Alternatively to using Quarkus code generation to generate stubs for `proto` files, you can also use `protobuf-maven-plugin`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:305
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:308
 msgid "To do it, first define the 2 following properties in the `<properties>` section:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:310
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:313
 #, no-wrap
 msgid ""
 "<grpc.version>{grpc-version}</grpc.version>\n"
@@ -580,17 +580,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:313
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:316
 msgid "They configure the gRPC version and the `protoc` version."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:315
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:318
 msgid "Then, add to the `build` section the `os-maven-plugin` extension and the `protobuf-maven-plugin` configuration."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:326
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:329
 #, no-wrap
 msgid ""
 "<build>\n"
@@ -604,7 +604,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:363
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:366
 #, no-wrap
 msgid ""
 "    <plugins>\n"
@@ -646,7 +646,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:367
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:370
 #, no-wrap
 msgid ""
 "        <!-- ... -->\n"
@@ -655,21 +655,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:370
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:373
 msgid "The `protobuf-maven-plugin` that generates stub classes from your gRPC service definition (`proto` files)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:372
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:375
 msgid "The class generation uses a tool named `protoc`, which is OS-specific.  That's why we use the `os-maven-plugin` to target the executable compatible with the operating system."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:374
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:377
 msgid "This configuration instructs the `protobuf-maven-plugin` to generate the default gRPC classes and classes using Mutiny to fit with the Quarkus development experience."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/grpc-getting-started.adoc:375
+#: upstream/_versions/main/guides/grpc-getting-started.adoc:378
 msgid "When using `protobuf-maven-plugin`, instead of the `quarkus-maven-plugin`, every time you update the `proto` files, you need to re-generate the classes (using `mvn compile`)."
 msgstr ""
