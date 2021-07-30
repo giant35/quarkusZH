@@ -34,7 +34,7 @@ msgstr ""
 #: upstream/_guides/command-mode-reference.adoc:12
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_guides/command-mode-reference.adoc:16

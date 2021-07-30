@@ -34,7 +34,7 @@ msgstr ""
 #: upstream/_guides/hibernate-orm.adoc:14
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm.adoc:18

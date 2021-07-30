@@ -113,7 +113,7 @@ msgstr ""
 #: upstream/_guides/mailer.adoc:37
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_guides/mailer.adoc:41

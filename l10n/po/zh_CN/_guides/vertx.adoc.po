@@ -76,7 +76,7 @@ msgstr ""
 #: upstream/_guides/vertx.adoc:26
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_guides/vertx.adoc:29
@@ -119,7 +119,7 @@ msgstr ""
 #: upstream/_guides/vertx.adoc:37
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_guides/vertx.adoc:41
