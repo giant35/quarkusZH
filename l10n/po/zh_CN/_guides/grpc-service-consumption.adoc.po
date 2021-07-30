@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:24+0000\n"
+"POT-Creation-Date: 2021-07-30 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/grpc-service-consumption.adoc:11
-msgid "gRPC services can be injected in your application code."
+msgid "gRPC clients can be injected in your application code."
 msgstr ""
 
 #. type: Plain text

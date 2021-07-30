@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:24+0000\n"
+"POT-Creation-Date: 2021-07-30 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,21 +49,42 @@ msgstr ""
 #. type: Title ==
 #: upstream/_guides/context-propagation.adoc:26
 #, no-wrap
-msgid "Setting it up"
+msgid "Solution"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/context-propagation.adoc:30
-msgid "If you are using link:http://smallrye.io/smallrye-mutiny[Mutiny] (the `quarkus-mutiny` extension), you just need to add the the `quarkus-smallrye-context-propagation` extension to enable context propagation."
+msgid "We recommend that you follow the instructions in the next sections and create the application step by step.  However, you can go right to the completed example."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/context-propagation.adoc:32
+msgid "Clone the Git repository: `git clone {quickstarts-clone-url}`, or download an {quickstarts-archive-url}[archive]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/context-propagation.adoc:34
+msgid "The solution is located in the `context-propagation-quickstart` {quickstarts-tree-url}/context-propagation-quickstart[directory]."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/context-propagation.adoc:35
+#, no-wrap
+msgid "Setting it up"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/context-propagation.adoc:39
+msgid "If you are using link:http://smallrye.io/smallrye-mutiny[Mutiny] (the `quarkus-mutiny` extension), you just need to add the the `quarkus-smallrye-context-propagation` extension to enable context propagation."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/context-propagation.adoc:41
 msgid "In other words, add the following dependencies to your `pom.xml`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/context-propagation.adoc:51
+#: upstream/_guides/context-propagation.adoc:60
 #, no-wrap
 msgid ""
 "<dependencies>\n"
@@ -85,34 +106,34 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/context-propagation.adoc:54
+#: upstream/_guides/context-propagation.adoc:63
 msgid "With this, you will get context propagation for ArC, RESTEasy and transactions, if you are using them."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/context-propagation.adoc:55
+#: upstream/_guides/context-propagation.adoc:64
 #, no-wrap
 msgid "Usage example with Mutiny"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/context-propagation.adoc:58
+#: upstream/_guides/context-propagation.adoc:67
 #, no-wrap
 msgid "Mutiny"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/context-propagation.adoc:61
-msgid "This section uses Mutiny reactive types, if you're not familiar with them, read the link:getting-started-reactive#mutiny[Getting Started with Reactive guide] first."
+#: upstream/_guides/context-propagation.adoc:71
+msgid "This section uses Mutiny reactive types.  If you are not familiar with Mutiny, check xref:mutiny-primer.adoc[Mutiny - an intuitive reactive programming library]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/context-propagation.adoc:66
+#: upstream/_guides/context-propagation.adoc:76
 msgid "Let's write a REST endpoint that reads the next 3 items from a link:kafka[Kafka topic], stores them in a database using link:hibernate-orm-panache[Hibernate ORM with Panache] (all in the same transaction) before returning them to the client, you can do it like this:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/context-propagation.adoc:72
+#: upstream/_guides/context-propagation.adoc:82
 #, no-wrap
 msgid ""
 "    // Get the prices stream\n"
@@ -121,7 +142,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/context-propagation.adoc:93
+#: upstream/_guides/context-propagation.adoc:103
 #, no-wrap
 msgid ""
 "    @Transactional\n"
@@ -147,23 +168,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/context-propagation.adoc:97
+#: upstream/_guides/context-propagation.adoc:107
 msgid "Notice that thanks to Mutiny support for context propagation, this works out of the box.  The 3 items are persisted using the same transaction and this transaction is committed when the stream completes."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/context-propagation.adoc:98
+#: upstream/_guides/context-propagation.adoc:108
 #, no-wrap
 msgid "Usage example for `CompletionStage`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/context-propagation.adoc:106
+#: upstream/_guides/context-propagation.adoc:116
 msgid "If you are using link:https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html[`CompletionStage`] you need manual context propagation. You can do that by injecting a `ThreadContext` or `ManagedExecutor` that will propagate every context. For example, here we use the link:vertx[Vert.x Web Client] to get the list of Star Wars people, then store them in the database using link:hibernate-orm-panache[Hibernate ORM with Panache] (all in the same transaction) before returning them to the client as JSON using link:rest-json[Jackson or JSON-B]:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/context-propagation.adoc:112
+#: upstream/_guides/context-propagation.adoc:122
 #, no-wrap
 msgid ""
 "    @Inject ThreadContext threadContext;\n"
@@ -172,7 +193,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/context-propagation.adoc:139
+#: upstream/_guides/context-propagation.adoc:149
 #, no-wrap
 msgid ""
 "    @Transactional\n"
@@ -204,28 +225,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/context-propagation.adoc:143
+#: upstream/_guides/context-propagation.adoc:153
 msgid "Using `ThreadContext` or `ManagedExecutor` you can wrap most useful functional types and `CompletionStage` in order to get context propagated."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/context-propagation.adoc:147
+#: upstream/_guides/context-propagation.adoc:157
 msgid "The injected `ManagedExecutor` uses the Quarkus thread pool."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/context-propagation.adoc:149
+#: upstream/_guides/context-propagation.adoc:159
 #, no-wrap
 msgid "Adding support for RxJava2"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/context-propagation.adoc:152
+#: upstream/_guides/context-propagation.adoc:162
 msgid "You need to include the following modules to get RxJava2 support:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/context-propagation.adoc:175
+#: upstream/_guides/context-propagation.adoc:185
 #, no-wrap
 msgid ""
 "<dependencies>\n"
@@ -251,22 +272,22 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/context-propagation.adoc:177
+#: upstream/_guides/context-propagation.adoc:187
 #, no-wrap
 msgid "Context Propagation for CDI"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/context-propagation.adoc:181
+#: upstream/_guides/context-propagation.adoc:191
 msgid "In terms of CDI, `@RequestScoped`, `@ApplicationScoped` and `@Singleton` beans get propagated and are available in other threads.  `@Dependent` beans as well as any custom scoped beans cannot be automatically propagated via CDI Context Propagation."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/context-propagation.adoc:188
+#: upstream/_guides/context-propagation.adoc:198
 msgid "`@ApplicationScoped` and `@Singleton` beans are always active scopes and as such are easy to deal with - context propagation tasks can work with those beans so long as the CDI container is running.  However, `@RequestScoped` beans are a different story. They are only active for a short period of time which can be bound either to HTTP request or some other request/task when manually activated/deactivated.  In this case user must be aware that once the original thread gets to an end of a request, it will terminate the context, calling `@PreDestroy` on those beans and then clearing them from the context.  Subsequent attempts to access those beans from other threads can result in unexpected behaviour.  It is therefore recommended to make sure all tasks using request scoped beans via context propagation are performed in such a manner that they don't outlive the original request duration."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/context-propagation.adoc:193
+#: upstream/_guides/context-propagation.adoc:203
 msgid "Due to the above described behavior, it is recommended to avoid using `@PreDestroy` on `@RequestScoped` beans when working with Context Propagation in CDI."
 msgstr ""

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:24+0000\n"
+"POT-Creation-Date: 2021-07-30 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -170,8 +170,8 @@ msgid ""
 "}\n"
 msgstr ""
 
-#. type: Named 'alt' AttributeList argument for macro 'image'
-#: upstream/_guides/scripting.adoc:79 upstream/_guides/scripting.adoc:83
+#. type: Title ==
+#: upstream/_guides/scripting.adoc:79
 #, no-wrap
 msgid "Architecture"
 msgstr "架构"
@@ -180,6 +180,13 @@ msgstr "架构"
 #: upstream/_guides/scripting.adoc:82
 msgid "In this guide, we create a straightforward application serving a `hello` endpoint with a single source file, no additional build files like `pom.xml` or `build.gradle` needed. To demonstrate dependency injection, this endpoint uses a `greeting` bean."
 msgstr ""
+
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: upstream/_guides/scripting.adoc:83
+#, fuzzy, no-wrap
+#| msgid "Architecture"
+msgid "Architecture,"
+msgstr "架构"
 
 #. type: Target for macro image
 #: upstream/_guides/scripting.adoc:83

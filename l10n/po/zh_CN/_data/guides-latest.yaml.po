@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-24 01:02+0000\n"
+"POT-Creation-Date: 2021-07-30 01:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1158,7 +1158,25 @@ msgstr ""
 #. type: Hash Value - Key: title
 #: >categories>>guides>
 #, no-wrap
-msgid "Using Apache Kafka"
+msgid "Getting Started to SmallRye Reactive Messaging with Apache Kafka"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/kafka-reactive-getting-started"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This reference guide provides an in-depth look on Apache Kafka and Smallrye Reactive Messaging framework."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Apache Kafka Reference Guide"
 msgstr ""
 
 #. type: Hash Value - Key: url
@@ -1183,24 +1201,6 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/kafka-schema-registry-avro"
-msgstr ""
-
-#. type: Hash Value - Key: description
-#: >categories>>guides>
-#, no-wrap
-msgid "Start Kafka automatically in dev and test modes."
-msgstr ""
-
-#. type: Hash Value - Key: title
-#: >categories>>guides>
-#, no-wrap
-msgid "Apache Kafka DevServices"
-msgstr ""
-
-#. type: Hash Value - Key: url
-#: >categories>>guides>
-#, no-wrap
-msgid "/guides/kafka-dev-services"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -2826,13 +2826,31 @@ msgstr ""
 #. type: Hash Value - Key: title
 #: >categories>>guides>
 #, no-wrap
-msgid "Sending Emails"
+msgid "Sending Emails using SMTP"
 msgstr ""
 
 #. type: Hash Value - Key: url
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/mailer"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This reference guide explains in more details the configuration and usage of the Quarkus Mailer."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Mailer Reference Guide"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/mailer-reference"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -2905,6 +2923,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/vertx"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This reference guide provides advanced details about the usage and the configuration of the Vert.x instance used by Quarkus."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Vert.x Reference Guide"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/vertx-reference"
 msgstr ""
 
 #. type: Hash Value - Key: description

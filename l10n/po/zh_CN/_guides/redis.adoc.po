@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:24+0000\n"
+"POT-Creation-Date: 2021-07-30 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,7 +181,7 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_guides/redis.adoc:90
-msgid "If you use <<dev-services,DevServices>>, launching the container manually is not necessary!"
+msgid "If you use xref:redis-dev-services.adoc[Dev Services for Redis], launching the container manually is not necessary!"
 msgstr ""
 
 #. type: Title ==
@@ -208,7 +208,7 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_guides/redis.adoc:107
-msgid "This is needed if you are not using <<dev-services,DevServices>>"
+msgid "This is needed if you are not using xref:redis-dev-services.adoc[Dev Services for Redis]"
 msgstr ""
 
 #. type: Title ==
@@ -1004,18 +1004,18 @@ msgid "This behavior can be disabled by setting the `quarkus.redis.health.enable
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/redis.adoc:554
+#: upstream/_guides/redis.adoc:555
 #, no-wrap
 msgid "Multiple Redis Clients"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/redis.adoc:558
+#: upstream/_guides/redis.adoc:559
 msgid "The Redis extension allows you to configure multiple clients.  Using several clients works the same way as having a single client."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/redis.adoc:563
+#: upstream/_guides/redis.adoc:564
 #, no-wrap
 msgid ""
 "quarkus.redis.hosts=redis://localhost:6379\n"
@@ -1023,23 +1023,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/redis.adoc:568
+#: upstream/_guides/redis.adoc:569
 msgid "Notice there's an extra bit in the key (the `second` segment).  The syntax is as follows: `quarkus.redis.[optional name.][redis configuration property]`.  If the name is omitted, it configures the default client."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/redis.adoc:569
+#: upstream/_guides/redis.adoc:570
 #, no-wrap
 msgid "Named Redis client Injection"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/redis.adoc:573
+#: upstream/_guides/redis.adoc:574
 msgid "When using multiple clients, you can select the client to inject using the `io.quarkus.redis.client.RedisClientName` qualifier.  Using the above properties to configure three different clients, you can also inject each one as follows:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/redis.adoc:578
+#: upstream/_guides/redis.adoc:579
 #, no-wrap
 msgid ""
 "@Inject\n"
@@ -1047,7 +1047,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/redis.adoc:582
+#: upstream/_guides/redis.adoc:583
 #, no-wrap
 msgid ""
 "@Inject\n"
@@ -1056,7 +1056,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/redis.adoc:586
+#: upstream/_guides/redis.adoc:587
 #, no-wrap
 msgid ""
 "@Inject\n"
@@ -1067,26 +1067,58 @@ msgstr ""
 #. type: Title ===
 #: upstream/_guides/redis.adoc:589
 #, no-wrap
-msgid "DevServices (Configuration Free Redis)"
+msgid "Creating Clients Programmatically"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/redis.adoc:594
-msgid "Quarkus supports a feature called DevServices that allows you to create various datasources without any config.  What that means practically, is that if you have docker running and have not configured `quarkus.redis.hosts`, Quarkus will automatically start a Redis container when running tests or dev-mode, and automatically configure the connection."
+#: upstream/_guides/redis.adoc:593
+msgid "The `RedisClient` and `ReactiveRedisClient` provide factory methods to create clients programmatically.  The client to be created are configured using the usual <<config-reference,Redis configuration>>."
+msgstr ""
+
+#. type: delimited block =
+#: upstream/_guides/redis.adoc:600
+msgid "This is useful to create a client dynamically in a non-CDI bean e.g a link:hibernate-orm-panache[Panache entity].  Or to create a different client when running in pub/sub mode. This mode requires two different connections because once a connection invokes a subscriber mode then it cannot be used for running other commands than the command to leave that mode."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/redis.adoc:596
-msgid "Available properties to customize the Redis DevService."
+#: upstream/_guides/redis.adoc:603
+msgid "The below code snippet shows how we can create dynamic clients using the configurations in <<multiple-clients-configuration>>."
 msgstr ""
 
-#. type: Plain text
-#: upstream/_guides/redis.adoc:601
-msgid "When running the production version of the application, the Redis connection need to be configured as normal, so if you want to include a production database config in your `application.properties` and continue to use DevServices we recommend that you use the `%prod.` profile to define your Redis settings."
+#. type: delimited block -
+#: upstream/_guides/redis.adoc:607
+#, no-wrap
+msgid ""
+"// creating default redis client\n"
+"RedisClient defaultRedisClient = RedisClient.createClient();\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/redis.adoc:610
+#, no-wrap
+msgid ""
+"// creating named redis client whose configuration name is \"second\"\n"
+"RedisClient namedRedisClient = RedisClient.createClient(\"second\");\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/redis.adoc:613
+#, no-wrap
+msgid ""
+"// creating a default reactive redis client\n"
+"ReactiveRedisClient defaultReactiveRedisClient = ReactiveRedisClient.createClient();\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/redis.adoc:616
+#, no-wrap
+msgid ""
+"// creating a named reactive redis client whose configuration name is \"second\"\n"
+"ReactiveRedisClient namedReactiveRedisClient = ReactiveRedisClient.createClient(\"second\");\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/redis.adoc:602
+#: upstream/_guides/redis.adoc:619
 #, no-wrap
 msgid "Configuration Reference"
 msgstr ""

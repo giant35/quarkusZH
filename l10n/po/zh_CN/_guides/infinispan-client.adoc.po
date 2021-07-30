@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:24+0000\n"
+"POT-Creation-Date: 2021-07-30 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,39 +26,55 @@ msgid "Quarkus - Infinispan Client"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:12
-msgid "Infinispan is an in memory data grid that allows running in a server outside of application processes. This extension provides functionality to allow the client that can connect to said server when running in Quarkus."
+#: upstream/_guides/infinispan-client.adoc:13
+msgid "Infinispan is a distributed, in-memory key/value store that provides Quarkus applications with a highly configurable and independently scalable data layer.  This extension gives you client functionality that connects applications running on Quarkus with remote Infinispan clusters."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:15
-msgid "Check out the https://infinispan.org/documentation[Infinispan documentation] to find out more about the Infinispan project, in particular the https://infinispan.org/docs/stable/titles/hotrod_java/hotrod_java.html[Hot Rod Java client guide]."
+msgid "To find out more about Infinispan, visit the https://infinispan.org/documentation[Infinispan documentation]."
 msgstr ""
 
 #. type: Title ==
 #: upstream/_guides/infinispan-client.adoc:16
 #, no-wrap
-msgid "Configuration"
+msgid "Solution"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:20
-msgid "Once you have your Quarkus project configured you can add the `infinispan-client` extension to your project by running the following from the command line in your project base directory."
+msgid "We recommend that you complete each step in the following sections to create the application.  However, you can proceed directly to the completed solution as follows:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:23
+msgid "Clone the Git repository: `git clone {quickstarts-clone-url}` or download an {quickstarts-archive-url}[archive].  Locate the solution in the `infinispan-client-quickstart` {quickstarts-tree-url}/infinispan-client-quickstart[directory]."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/infinispan-client.adoc:24
+#, no-wrap
+msgid "Adding the Infinispan client extension"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:27
+msgid "Run the following command in the base directory of your Quarkus project to add the `infinispan-client` extension:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:24
+#: upstream/_guides/infinispan-client.adoc:31
 #, no-wrap
 msgid "./mvnw quarkus:add-extension -Dextensions=\"infinispan-client\"\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:27
-msgid "This will add the following to your pom.xml"
+#: upstream/_guides/infinispan-client.adoc:34
+msgid "This command adds the following dependency to your `pom.xml`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:34
+#: upstream/_guides/infinispan-client.adoc:41
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -67,36 +83,162 @@ msgid ""
 "</dependency>\n"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:39
-msgid "The Infinispan client is configurable in the `application.properties` file that can be provided in the `src/main/resources` directory. These are the properties that can be configured in this file:"
+#. type: Title ==
+#: upstream/_guides/infinispan-client.adoc:43
+#, no-wrap
+msgid "Configuring the Infinispan client"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:45
-msgid "It is also possible to configure a `hotrod-client.properties` as described in the Infinispan user guide. Note that the `hotrod-client.properties` values overwrite any matching property from the other configuration values (eg. near cache).  This properties file is build time only and if it is changed, requires a full rebuild."
+#: upstream/_guides/infinispan-client.adoc:46
+msgid "Open the `application.properties` file in the `src/main/resources` directory with any text editor."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:50
+msgid "Note that Infinispan documentation refers to a `hotrod-client.properties` file.  You can configure the Infinispan client with either properties file but `hotrod-client.properties` always takes priority over `application.properties`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:53
+msgid "Additionally, you cannot update configuration properties at runtime.  If you modify `application.properties` or `hotrod-client.properties`, you must rebuild the application before those changes take effect."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/infinispan-client.adoc:46
+#: upstream/_guides/infinispan-client.adoc:54
+#, no-wrap
+msgid "Connecting to Infinispan clusters"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:57
+msgid "Add the following properties to connect to Infinispan Server:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/infinispan-client.adoc:62
+#, no-wrap
+msgid ""
+"# Infinispan Server address\n"
+"quarkus.infinispan-client.server-list=localhost:11222\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/infinispan-client.adoc:66
+#, no-wrap
+msgid ""
+"# Authentication\n"
+"quarkus.infinispan-client.auth-username=admin\n"
+"quarkus.infinispan-client.auth-password=password\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/infinispan-client.adoc:70
+#, no-wrap
+msgid ""
+"# Infinispan client intelligence\n"
+"# Use BASIC as a Docker for Mac workaround\n"
+"quarkus.infinispan-client.client-intelligence=BASIC\n"
+msgstr ""
+
+#. type: Block title
+#: upstream/_guides/infinispan-client.adoc:72
+#, no-wrap
+msgid "Running Infinispan Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:75
+msgid "To use the Infinispan client extension, you need at least one running instance of Infinispan Server."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:77
+msgid "Check out our 5 minute https://infinispan.org/get-started/[Getting stated with Infinispan] tutorial to run Infinispan Server locally."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:79
+msgid "Infinispan Server also enables authentication and security authorization by default so you need to create a user with permissions."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:81
+msgid "If you run the Infinispan Server image, pass the `USER=\"admin\"` and `PASS=\"password\"` parameters."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:82
+msgid "If you run the bare metal distribution, use the Command Line Interface (CLI) as follows:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/infinispan-client.adoc:86
+#, no-wrap
+msgid "$ ./bin/cli.sh user create admin -p password\n"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_guides/infinispan-client.adoc:88
+#, no-wrap
+msgid "Authentication mechanisms"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:91
+msgid "You can use the following authentication mechanisms with the Infinispan client:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:93
+msgid "DIGEST-MD5"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:94
+msgid "PLAIN (recommended only in combination with TLS encryption)"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:95
+msgid "EXTERNAL"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:97
+msgid "Other authentication mechanisms, such as SCRAM and GSSAPI, are not yet verified with the Infinispan client."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:99
+msgid "You can find more information on configuring authentication in https://infinispan.org/docs/stable/titles/hotrod_java/hotrod_java.html#hotrod_endpoint_auth-hotrod-client-configuration[Hot Rod Endpoint Authentication Mechanisms]."
+msgstr ""
+
+#. type: delimited block =
+#: upstream/_guides/infinispan-client.adoc:103
+msgid "You must configure authentication in the `hotrod-client.properties` file if you use Dependency Injection."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/infinispan-client.adoc:105
 #, no-wrap
 msgid "Serialization (Key Value types support)"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:51
+#: upstream/_guides/infinispan-client.adoc:110
 msgid "By default the client will support keys and values of the following types: byte[], primitive wrappers (eg. Integer, Long, Double etc.), String, Date and Instant. User types require some additional steps that are detailed here. Let's say we have the following user classes:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/infinispan-client.adoc:52
-#: upstream/_guides/infinispan-client.adoc:98
+#: upstream/_guides/infinispan-client.adoc:111
+#: upstream/_guides/infinispan-client.adoc:166
 #, no-wrap
 msgid "Author.java"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:58
+#: upstream/_guides/infinispan-client.adoc:117
 #, no-wrap
 msgid ""
 "public class Author {\n"
@@ -105,7 +247,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:65
+#: upstream/_guides/infinispan-client.adoc:124
 #, no-wrap
 msgid ""
 "   public Author(String name, String surname) {\n"
@@ -117,14 +259,14 @@ msgid ""
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/infinispan-client.adoc:67
-#: upstream/_guides/infinispan-client.adoc:118
+#: upstream/_guides/infinispan-client.adoc:126
+#: upstream/_guides/infinispan-client.adoc:186
 #, no-wrap
 msgid "Book.java"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:76
+#: upstream/_guides/infinispan-client.adoc:135
 #, no-wrap
 msgid ""
 "public class Book {\n"
@@ -136,7 +278,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:86
+#: upstream/_guides/infinispan-client.adoc:145
 #, no-wrap
 msgid ""
 "   public Book(String title, String description, int publicationYear, Set<Author> authors, BigDecimal price) {\n"
@@ -151,28 +293,38 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:89
-msgid "Serialization of user types uses a library based on protobuf, called Protostream."
+#: upstream/_guides/infinispan-client.adoc:149
+msgid "Serialization of user types uses a library based on protobuf, called https://github.com/infinispan/protostream[Protostream]."
+msgstr ""
+
+#. type: delimited block =
+#: upstream/_guides/infinispan-client.adoc:153
+msgid "Infinispan caches can store keys and values in different encodings, but recommend using https://developers.google.com/protocol-buffers[Protocol Buffers (Protobuf)]."
+msgstr ""
+
+#. type: delimited block =
+#: upstream/_guides/infinispan-client.adoc:155
+msgid "For more information see our https://infinispan.org/docs/stable/titles/encoding/encoding.html[Cache Encoding and Marshalling] guide."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/infinispan-client.adoc:90
+#: upstream/_guides/infinispan-client.adoc:158
 #, no-wrap
 msgid "Annotation based Serialization"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:95
-msgid "This can be done automatically by adding protostream annotations to your user classes.  In addition a single Initializer annotated interface is required which controls how the supporting classes are generated."
+#: upstream/_guides/infinispan-client.adoc:163
+msgid "This can be done automatically by adding protostream annotations to your user classes.  In addition, a single Initializer annotated interface is required which controls how the supporting classes are generated."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:97
+#: upstream/_guides/infinispan-client.adoc:165
 msgid "Here is an example of how the preceding classes should be changed:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:106
+#: upstream/_guides/infinispan-client.adoc:174
 #, no-wrap
 msgid ""
 "    @ProtoFactory\n"
@@ -183,7 +335,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:111
+#: upstream/_guides/infinispan-client.adoc:179
 #, no-wrap
 msgid ""
 "    @ProtoField(number = 1)\n"
@@ -193,7 +345,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:116
+#: upstream/_guides/infinispan-client.adoc:184
 #, no-wrap
 msgid ""
 "    @ProtoField(number = 2)\n"
@@ -203,7 +355,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:128
+#: upstream/_guides/infinispan-client.adoc:196
 #, no-wrap
 msgid ""
 "    @ProtoFactory\n"
@@ -216,7 +368,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:133
+#: upstream/_guides/infinispan-client.adoc:201
 #, no-wrap
 msgid ""
 "    @ProtoField(number = 1)\n"
@@ -226,7 +378,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:138
+#: upstream/_guides/infinispan-client.adoc:206
 #, no-wrap
 msgid ""
 "    @ProtoField(number = 2)\n"
@@ -236,7 +388,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:143
+#: upstream/_guides/infinispan-client.adoc:211
 #, no-wrap
 msgid ""
 "    @ProtoField(number = 3, defaultValue = \"-1\")\n"
@@ -246,7 +398,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:148
+#: upstream/_guides/infinispan-client.adoc:216
 #, no-wrap
 msgid ""
 "    @ProtoField(number = 4)\n"
@@ -256,95 +408,100 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:152
+#: upstream/_guides/infinispan-client.adoc:220
 msgid "If your classes have only mutable fields, then the `ProtoFactory` annotation is not required, assuming your class has a no arg constructor."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:155
-msgid "Then all that is required is a very simple `SerializationContextInitializer` interface with an annotation on it to specify configuration settings"
+#: upstream/_guides/infinispan-client.adoc:223
+msgid "Then all that is required is a very simple `GeneratedSchema` interface with an annotation on it to specify configuration settings"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/infinispan-client.adoc:156
+#: upstream/_guides/infinispan-client.adoc:224
 #, no-wrap
-msgid "BookContextInitializer.java"
+msgid "BooksSchema.java"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:162
+#: upstream/_guides/infinispan-client.adoc:230
 #, no-wrap
 msgid ""
-"import org.infinispan.protostream.SerializationContextInitializer;\n"
+"import org.infinispan.protostream.GeneratedSchema;\n"
 "import org.infinispan.protostream.annotations.AutoProtoSchemaBuilder;\n"
 "import org.infinispan.protostream.types.java.math.BigDecimalAdapter;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:166
+#: upstream/_guides/infinispan-client.adoc:234
 #, no-wrap
 msgid ""
 "@AutoProtoSchemaBuilder(includeClasses = { Book.class, Author.class, BigDecimalAdapter.class }, schemaPackageName = \"book_sample\")\n"
-"interface BookContextInitializer extends SerializationContextInitializer {\n"
+"interface BookStoreSchema extends GeneratedSchema {\n"
 "}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:171
-msgid "So in this case we will automatically generate the marshaller and schemas for the included classes and place them in the schema package automatically. The package does not have to be provided, but if you utilize querying, you must know the generated package."
+#: upstream/_guides/infinispan-client.adoc:238
+msgid "Protostream provides default Protobuf mappers for commonly used types as `BigDecimal`, included in the `org.infinispan.protostream.types` package."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:173
-msgid "In Quarkus the `schemaFileName` and `schemaFilePath` attributes should NOT be set on the `AutoProtoSchemaBuilder` annotation, setting either will cause native runtime to error."
+#: upstream/_guides/infinispan-client.adoc:241
+msgid "So in this case we will automatically generate the marshaller and schemas for the included classes and place them in the schema package automatically. The package does not have to be provided, but if you use Infinispan query capabilities, you must know the generated package."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:243
+msgid "In Quarkus the `schemaFileName` and `schemaFilePath` attributes should NOT be set on the `AutoProtoSchemaBuilder` annotation. Setting either attributes causes native runtime errors."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/infinispan-client.adoc:174
+#: upstream/_guides/infinispan-client.adoc:244
 #, no-wrap
-msgid "User written serialization"
+msgid "Custom serialization"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:180
+#: upstream/_guides/infinispan-client.adoc:250
 msgid "The previous method is suggested for any case when the user can annotate their classes.  Unfortunately the user may not be able to annotate all classes they will put in the cache. In this case you must define your schema and create your own Marshaller(s)  yourself."
 msgstr ""
 
 #. type: Labeled list
-#: upstream/_guides/infinispan-client.adoc:181
+#: upstream/_guides/infinispan-client.adoc:251
 #, no-wrap
 msgid "Protobuf schema"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:182
+#: upstream/_guides/infinispan-client.adoc:252
 msgid "You can supply a protobuf schema through either one of two ways."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:183
+#: upstream/_guides/infinispan-client.adoc:253
 msgid "Proto File"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:186
+#: upstream/_guides/infinispan-client.adoc:256
 msgid "+ You can put the `.proto` file in the `META-INF` directory of the project. These files will automatically be picked up at initialization time."
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/infinispan-client.adoc:187
+#: upstream/_guides/infinispan-client.adoc:257
 #, no-wrap
 msgid "library.proto"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:190
+#: upstream/_guides/infinispan-client.adoc:260
 #, no-wrap
 msgid "package book_sample;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:198
+#: upstream/_guides/infinispan-client.adoc:268
 #, no-wrap
 msgid ""
 "message Book {\n"
@@ -357,7 +514,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:203
+#: upstream/_guides/infinispan-client.adoc:273
 #, no-wrap
 msgid ""
 "message Author {\n"
@@ -367,17 +524,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:205
+#: upstream/_guides/infinispan-client.adoc:275
 msgid "In Code"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:208
+#: upstream/_guides/infinispan-client.adoc:278
 msgid "+ Or you can define the proto schema directly in user code by defining a produced bean of type `org.infinispan.protostream.FileDescriptorSource`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:230
+#: upstream/_guides/infinispan-client.adoc:300
 #, no-wrap
 msgid ""
 "   @Produces\n"
@@ -402,40 +559,40 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: upstream/_guides/infinispan-client.adoc:231
+#: upstream/_guides/infinispan-client.adoc:301
 #, no-wrap
 msgid "User Marshaller"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:235
+#: upstream/_guides/infinispan-client.adoc:305
 msgid "The last thing to do is to provide a `org.infinispan.protostream.MessageMarshaller` implementation for each user class defined in the proto schema. This class is then provided via `@Produces` in a similar fashion to the code based proto schema definition above."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:237
+#: upstream/_guides/infinispan-client.adoc:307
 msgid "Here is the Marshaller class for our Author & Book classes."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:239
+#: upstream/_guides/infinispan-client.adoc:309
 msgid "The type name must match the `<protobuf package>.<protobuf message>` exactly!"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/infinispan-client.adoc:240
+#: upstream/_guides/infinispan-client.adoc:310
 #, no-wrap
 msgid "AuthorMarshaller.java"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:244
+#: upstream/_guides/infinispan-client.adoc:314
 #, no-wrap
 msgid "public class AuthorMarshaller implements MessageMarshaller<Author> {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:249
+#: upstream/_guides/infinispan-client.adoc:319
 #, no-wrap
 msgid ""
 "   @Override\n"
@@ -445,7 +602,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:254
+#: upstream/_guides/infinispan-client.adoc:324
 #, no-wrap
 msgid ""
 "   @Override\n"
@@ -455,7 +612,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:260
+#: upstream/_guides/infinispan-client.adoc:330
 #, no-wrap
 msgid ""
 "   @Override\n"
@@ -466,7 +623,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:268
+#: upstream/_guides/infinispan-client.adoc:338
 #, no-wrap
 msgid ""
 "   @Override\n"
@@ -479,19 +636,19 @@ msgid ""
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/infinispan-client.adoc:270
+#: upstream/_guides/infinispan-client.adoc:340
 #, no-wrap
 msgid "BookMarshaller.java"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:274
+#: upstream/_guides/infinispan-client.adoc:344
 #, no-wrap
 msgid "public class BookMarshaller implements MessageMarshaller<Book> {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:279
+#: upstream/_guides/infinispan-client.adoc:349
 #, no-wrap
 msgid ""
 "   @Override\n"
@@ -501,7 +658,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:284
+#: upstream/_guides/infinispan-client.adoc:354
 #, no-wrap
 msgid ""
 "   @Override\n"
@@ -511,7 +668,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:293
+#: upstream/_guides/infinispan-client.adoc:363
 #, no-wrap
 msgid ""
 "   @Override\n"
@@ -525,7 +682,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:304
+#: upstream/_guides/infinispan-client.adoc:374
 #, no-wrap
 msgid ""
 "   @Override\n"
@@ -541,12 +698,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:307
+#: upstream/_guides/infinispan-client.adoc:377
 msgid "And you pass the marshaller by defining the following:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:314
+#: upstream/_guides/infinispan-client.adoc:384
 #, no-wrap
 msgid ""
 "   @Produces\n"
@@ -556,7 +713,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:319
+#: upstream/_guides/infinispan-client.adoc:389
 #, no-wrap
 msgid ""
 "   @Produces\n"
@@ -566,34 +723,34 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:321
+#: upstream/_guides/infinispan-client.adoc:391
 msgid "The above produced Marshaller method MUST return `MessageMarshaller` without types or else it will not be found."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/infinispan-client.adoc:322
+#: upstream/_guides/infinispan-client.adoc:392
 #, no-wrap
 msgid "Dependency Injection"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:328
+#: upstream/_guides/infinispan-client.adoc:398
 msgid "As you saw above we support the user injecting Marshaller configuration. You can do the inverse with the Infinispan client extension providing injection for `RemoteCacheManager` and `RemoteCache` objects.  There is one global `RemoteCacheManager` that takes all of the configuration parameters setup in the above sections."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:331
+#: upstream/_guides/infinispan-client.adoc:401
 msgid "It is very simple to inject these components. All you need to do is to add the Inject annotation to the field, constructor or method. In the below code we utilize field and constructor injection."
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/infinispan-client.adoc:332
+#: upstream/_guides/infinispan-client.adoc:402
 #, no-wrap
 msgid "SomeClass.java"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:338
+#: upstream/_guides/infinispan-client.adoc:408
 #, no-wrap
 msgid ""
 "    @Inject SomeClass(RemoteCacheManager remoteCacheManager) {\n"
@@ -602,7 +759,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:341
+#: upstream/_guides/infinispan-client.adoc:411
 #, no-wrap
 msgid ""
 "    @Inject @Remote(\"myCache\")\n"
@@ -610,65 +767,91 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:343
+#: upstream/_guides/infinispan-client.adoc:413
 #, no-wrap
 msgid "    RemoteCacheManager remoteCacheManager;\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:348
+#: upstream/_guides/infinispan-client.adoc:418
 msgid "If you notice the `RemoteCache` declaration has an additional optional annotation named `Remote`.  This is a qualifier annotation allowing you to specify which named cache that will be injected. This annotation is not required and if it is not supplied, the default cache will be injected."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:350
+#: upstream/_guides/infinispan-client.adoc:420
 msgid "Other types may be supported for injection, please see other sections for more information"
 msgstr ""
 
+#. type: Title ===
+#: upstream/_guides/infinispan-client.adoc:421
+#, no-wrap
+msgid "Registering Protobuf Schemas with Infinispan Server"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:424
+msgid "You need to register the generated Protobuf schemas with Infinispan Server to perform queries or convert from `Protobuf` to other media types such as `JSON`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:428
+msgid "You can check the schemas that exist under the `Schemas` tab by logging into Infinispan Console at `http://localhost:11222`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:433
+msgid "By default Protobuf schemas generated this way will be registered by this extension when the client first connects.  However, it might be required to handle the registration manually as a schema may evolve over time when used in production, so you can disable this from occurring by configuring the `quarkus.infinispan-client.use-schema-registration` to `false`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/infinispan-client.adoc:439
+msgid "To configure the schema manually please use https://infinispan.org/docs/infinispan-operator/master/operator.html[Infinispan Operator] for Kubernetes deployments, Infinispan Console, https://infinispan.org/docs/stable/titles/rest/rest.html#rest_v2_protobuf_schemas[REST API] or the https://infinispan.org/docs/stable/titles/encoding/encoding.html#registering-sci-remote-caches_marshalling[Hot Rod Java Client]."
+msgstr ""
+
 #. type: Title ==
-#: upstream/_guides/infinispan-client.adoc:351
+#: upstream/_guides/infinispan-client.adoc:441
 #, no-wrap
 msgid "Querying"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:356
-msgid "The Infinispan client supports both indexed and non indexed querying as long as the `ProtoStreamMarshaller` is configured above. This allows the user to query based on the properties of the proto schema."
+#: upstream/_guides/infinispan-client.adoc:446
+msgid "The Infinispan client supports both indexed and non-indexed querying as long as the `ProtoStreamMarshaller` is configured above. This allows the user to query based on the properties of the proto schema."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:361
+#: upstream/_guides/infinispan-client.adoc:451
 msgid "Query builds upon the proto definitions you can configure when setting up the `ProtoStreamMarshaller`.  Either method of Serialization above will automatically register the schema with the server at startup, meaning that you will automatically gain the ability to query objects stored in the remote Infinispan Server."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:363
+#: upstream/_guides/infinispan-client.adoc:453
 msgid "You can read more about https://infinispan.org/docs/stable/titles/developing/developing.html#creating_ickle_queries-querying[querying] in the Infinispan documentation."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:366
+#: upstream/_guides/infinispan-client.adoc:456
 msgid "You can use either the Query DSL or the Ickle Query language with the Quarkus Infinispan client extension."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/infinispan-client.adoc:367
+#: upstream/_guides/infinispan-client.adoc:457
 #, no-wrap
 msgid "Counters"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:371
+#: upstream/_guides/infinispan-client.adoc:461
 msgid "Infinispan also has a notion of counters and the Quarkus Infinispan client supports them out of the box."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:375
+#: upstream/_guides/infinispan-client.adoc:465
 msgid "The Quarkus Infinispan client extension allows for Dependency Injection of the `CounterManager` directly. All you need to do is annotate your field, constructor or method and you get it with no fuss. You can then use counters as you would normally."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/infinispan-client.adoc:380
+#: upstream/_guides/infinispan-client.adoc:470
 #, no-wrap
 msgid ""
 "@Inject\n"
@@ -676,128 +859,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:383
+#: upstream/_guides/infinispan-client.adoc:473
 msgid "You can read more about https://infinispan.org/docs/stable/titles/developing/developing.html#clustered_counters[clustered counters] in the Infinispan documentation."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/infinispan-client.adoc:384
+#: upstream/_guides/infinispan-client.adoc:474
 #, no-wrap
 msgid "Near Caching"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:390
+#: upstream/_guides/infinispan-client.adoc:480
 msgid "Near caching is disabled by default, but you can enable it by setting the profile config property `quarkus.infinispan-client.near-cache-max-entries` to a value greater than 0. You can also configure a regular expression so that only a subset of caches have near caching applied through the `quarkus.infinispan-client.near-cache-name-pattern` attribute."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/infinispan-client.adoc:391
+#: upstream/_guides/infinispan-client.adoc:481
 #, no-wrap
 msgid "Encryption"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:394
+#: upstream/_guides/infinispan-client.adoc:484
 msgid "Encryption at this point requires additional steps to get working."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:397
+#: upstream/_guides/infinispan-client.adoc:487
 msgid "The first step is to configure the `hotrod-client.properties` file to point to your truststore and/or keystore. This is further detailed https://infinispan.org/docs/stable/titles/hotrod_java/hotrod_java.html#hotrod_encryption[here]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:400
-msgid "The Infinispan Client extension enables SSL by default. You can read more about this at link:native-and-ssl[Using SSL With Native Executables]."
+#: upstream/_guides/infinispan-client.adoc:490
+msgid "The Infinispan Client extension enables SSL/TLS by default. You can read more about this at link:native-and-ssl[Using SSL With Native Executables]."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/infinispan-client.adoc:401
-#, no-wrap
-msgid "Authentication"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:405
-msgid "This chart illustrates what mechanisms have been verified to be working properly with the Quarkus Infinispan Client extension."
-msgstr ""
-
-#. type: Block title
-#: upstream/_guides/infinispan-client.adoc:406
-#, no-wrap
-msgid "Mechanisms"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/infinispan-client.adoc:408
-#, no-wrap
-msgid "Name"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/infinispan-client.adoc:410
-#, no-wrap
-msgid "Verified"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/infinispan-client.adoc:411
-#, no-wrap
-msgid "DIGEST-MD5"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/infinispan-client.adoc:413
-#: upstream/_guides/infinispan-client.adoc:416
-#: upstream/_guides/infinispan-client.adoc:419
-#, no-wrap
-msgid "[green]*Y*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/infinispan-client.adoc:414
-#, no-wrap
-msgid "PLAIN"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/infinispan-client.adoc:417
-#, no-wrap
-msgid "EXTERNAL"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/infinispan-client.adoc:420
-#, no-wrap
-msgid "GSSAPI"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/infinispan-client.adoc:422
-#: upstream/_guides/infinispan-client.adoc:425
-#, no-wrap
-msgid "[red]*N*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/infinispan-client.adoc:423
-#, no-wrap
-msgid "Custom"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:429
-msgid "The guide for configuring these can be found https://infinispan.org/docs/stable/titles/hotrod_java/hotrod_java.html#hotrod_authentication[here].  However you need to configure these through the `hotrod-client.properties` file if using Dependency Injection."
-msgstr ""
-
-#. type: Title ==
-#: upstream/_guides/infinispan-client.adoc:430
+#: upstream/_guides/infinispan-client.adoc:491
 #, no-wrap
 msgid "Additional Features"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/infinispan-client.adoc:434
+#: upstream/_guides/infinispan-client.adoc:496
 msgid "The Infinispan Client has additional features that were not mentioned here. This means this feature was not tested in a Quarkus environment and they may or may not work. Please let us know if you need these added!"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/infinispan-client.adoc:497
+#, no-wrap
+msgid "Configuration Reference"
 msgstr ""

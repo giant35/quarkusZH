@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:24+0000\n"
+"POT-Creation-Date: 2021-07-30 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,8 +177,8 @@ msgstr ""
 #: upstream/_guides/rest-client.adoc:165 upstream/_guides/rest-client.adoc:288
 #: upstream/_guides/rest-client.adoc:326 upstream/_guides/rest-client.adoc:357
 #: upstream/_guides/rest-client.adoc:414 upstream/_guides/rest-client.adoc:442
-#: upstream/_guides/rest-client.adoc:505 upstream/_guides/rest-client.adoc:537
-#: upstream/_guides/rest-client.adoc:646
+#: upstream/_guides/rest-client.adoc:506 upstream/_guides/rest-client.adoc:538
+#: upstream/_guides/rest-client.adoc:647
 #, no-wrap
 msgid "package org.acme.rest.client;\n"
 msgstr ""
@@ -243,7 +243,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/rest-client.adoc:119 upstream/_guides/rest-client.adoc:329
-#: upstream/_guides/rest-client.adoc:417 upstream/_guides/rest-client.adoc:508
+#: upstream/_guides/rest-client.adoc:417 upstream/_guides/rest-client.adoc:509
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;\n"
@@ -571,7 +571,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:313 upstream/_guides/rest-client.adoc:707
+#: upstream/_guides/rest-client.adoc:313 upstream/_guides/rest-client.adoc:708
 #, no-wrap
 msgid "}\n"
 msgstr ""
@@ -594,7 +594,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/rest-client.adoc:335 upstream/_guides/rest-client.adoc:423
-#: upstream/_guides/rest-client.adoc:514
+#: upstream/_guides/rest-client.adoc:515
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -605,8 +605,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:344 upstream/_guides/rest-client.adoc:524
-#: upstream/_guides/rest-client.adoc:575
+#: upstream/_guides/rest-client.adoc:344 upstream/_guides/rest-client.adoc:525
+#: upstream/_guides/rest-client.adoc:576
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -616,8 +616,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:350 upstream/_guides/rest-client.adoc:530
-#: upstream/_guides/rest-client.adoc:581
+#: upstream/_guides/rest-client.adoc:350 upstream/_guides/rest-client.adoc:531
+#: upstream/_guides/rest-client.adoc:582
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -733,29 +733,29 @@ msgid "Mutiny"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/rest-client.adoc:476
-msgid "The previous snippet uses Mutiny reactive types, if you're not familiar with them, read the link:getting-started-reactive#mutiny[Getting Started with Reactive guide] first."
+#: upstream/_guides/rest-client.adoc:477
+msgid "The previous snippet uses Mutiny reactive types.  If you are not familiar with Mutiny, check xref:mutiny-primer.adoc[Mutiny - an intuitive reactive programming library]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:480
+#: upstream/_guides/rest-client.adoc:481
 msgid "When returning a `Uni`, every _subscription_ invokes the remote service.  It means you can re-send the request by re-subscribing on the `Uni`, or use a `retry` as follows:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:485
+#: upstream/_guides/rest-client.adoc:486
 #, no-wrap
 msgid "@Inject @RestClient CountriesResource service;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:487
+#: upstream/_guides/rest-client.adoc:488
 #, no-wrap
 msgid "// ...\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:490
+#: upstream/_guides/rest-client.adoc:491
 #, no-wrap
 msgid ""
 "service.nameAsync(\"Greece\")\n"
@@ -763,28 +763,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:496
+#: upstream/_guides/rest-client.adoc:497
 msgid "If you use a `CompletionStage`, you would need to call the service's method to retry.  This difference comes from the laziness aspect of Mutiny and its subscription protocol.  More details about this can be found in https://smallrye.io/smallrye-mutiny/#_uni_and_multi[the Mutiny documentation]."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/rest-client.adoc:497
+#: upstream/_guides/rest-client.adoc:498
 #, no-wrap
 msgid "Custom headers support"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:499
+#: upstream/_guides/rest-client.adoc:500
 msgid "The MicroProfile REST client allows amending request headers by registering a `ClientHeadersFactory` with the `@RegisterClientHeaders` annotation."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:501
+#: upstream/_guides/rest-client.adoc:502
 msgid "Let's see it in action by adding a `@RegisterClientHeaders` annotation pointing to a `RequestUUIDHeaderFactory` class in our `CountriesService` REST interface:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:519
+#: upstream/_guides/rest-client.adoc:520
 #, no-wrap
 msgid ""
 "@Path(\"/v2\")\n"
@@ -794,12 +794,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:533
+#: upstream/_guides/rest-client.adoc:534
 msgid "And the `RequestUUIDHeaderFactory` would look like:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:540
+#: upstream/_guides/rest-client.adoc:541
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.rest.client.ext.ClientHeadersFactory;\n"
@@ -807,7 +807,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:544
+#: upstream/_guides/rest-client.adoc:545
 #, no-wrap
 msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
@@ -816,7 +816,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:547
+#: upstream/_guides/rest-client.adoc:548
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -824,7 +824,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:555
+#: upstream/_guides/rest-client.adoc:556
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -837,23 +837,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:559
+#: upstream/_guides/rest-client.adoc:560
 msgid "As you see in the example above, you can make your the `ClientHeadersFactory` implementation a CDI bean by annotating it with a scope-defining annotation, such as `@Singleton`, `@ApplicationScoped`, etc."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/rest-client.adoc:561
+#: upstream/_guides/rest-client.adoc:562
 #, no-wrap
 msgid "Default header factory"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:563
+#: upstream/_guides/rest-client.adoc:564
 msgid "You can also use `@RegisterClientHeaders` annotation without any custom factory specified. In that case the `DefaultClientHeadersFactoryImpl` factory will be used and all headers listed in `org.eclipse.microprofile.rest.client.propagateHeaders` configuration property will be amended. Individual header names are comma-separated."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:570
+#: upstream/_guides/rest-client.adoc:571
 #, no-wrap
 msgid ""
 "@Path(\"/v2\")\n"
@@ -863,81 +863,81 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:586
+#: upstream/_guides/rest-client.adoc:587
 #, no-wrap
 msgid "org.eclipse.microprofile.rest.client.propagateHeaders=Authorization,Proxy-Authorization\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/rest-client.adoc:588
+#: upstream/_guides/rest-client.adoc:589
 #, no-wrap
 msgid "Package and run the application"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:592
+#: upstream/_guides/rest-client.adoc:593
 msgid "Run the application with: `./mvnw compile quarkus:dev`.  Open your browser to http://localhost:8080/country/name/greece."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:594
+#: upstream/_guides/rest-client.adoc:595
 msgid "You should see a JSON object containing some basic information about Greece."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:597
+#: upstream/_guides/rest-client.adoc:598
 msgid "As usual, the application can be packaged using `./mvnw clean package` and executed using the `target/quarkus-app/quarkus-run.jar` file.  You can also generate the native executable with `./mvnw clean package -Pnative`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/rest-client.adoc:598
+#: upstream/_guides/rest-client.adoc:599
 #, no-wrap
 msgid "REST Client and RESTEasy interactions"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:602
+#: upstream/_guides/rest-client.adoc:603
 msgid "In Quarkus, the REST Client extension and link:rest-json[the RESTEasy extension] share the same infrastructure.  One important consequence of this consideration is that they share the same list of providers (in the JAX-RS meaning of the word)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:605
+#: upstream/_guides/rest-client.adoc:606
 msgid "For instance, if you declare a `WriterInterceptor`, it will by default intercept both the servers calls and the client calls, which might not be the desired behavior."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:607
+#: upstream/_guides/rest-client.adoc:608
 msgid "However, you can change this default behavior and constrain a provider to:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:609
+#: upstream/_guides/rest-client.adoc:610
 msgid "only consider *client* calls by adding the `@ConstrainedTo(RuntimeType.CLIENT)` annotation to your provider;"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:610
+#: upstream/_guides/rest-client.adoc:611
 msgid "only consider *server* calls by adding the `@ConstrainedTo(RuntimeType.SERVER)` annotation to your provider."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/rest-client.adoc:612
+#: upstream/_guides/rest-client.adoc:613
 #, no-wrap
 msgid "Using a Mock HTTP Server for tests"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:617
+#: upstream/_guides/rest-client.adoc:618
 msgid "Setting up a mock HTTP server, against which tests are run, is a common testing pattern.  Examples of such servers are link:http://wiremock.org/[Wiremock] and link:https://docs.hoverfly.io/projects/hoverfly-java/en/latest/index.html[Hoverfly].  In this section we'll demonstrate how Wiremock can be leveraged for testing the `CountriesService` which was developed above."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:619
+#: upstream/_guides/rest-client.adoc:620
 msgid "First of all, Wiremock needs to be added as a test dependency. For a Maven project that would happen like so:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:628
+#: upstream/_guides/rest-client.adoc:629
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -949,27 +949,27 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:631
+#: upstream/_guides/rest-client.adoc:632
 msgid "Use a proper Wiremock version. All available versions can be found link:https://search.maven.org/artifact/com.github.tomakehurst/wiremock-jre8[here]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:635
+#: upstream/_guides/rest-client.adoc:636
 msgid "In Quarkus tests when some service needs to be started before the Quarkus tests are ran, we utilize the `@io.quarkus.test.common.QuarkusTestResource` annotation to specify a `io.quarkus.test.common.QuarkusTestResourceLifecycleManager` which can start the service and supply configuration values that Quarkus will use."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/rest-client.adoc:639
+#: upstream/_guides/rest-client.adoc:640
 msgid "For more details about `@QuarkusTestResource` refer to link:getting-started-testing#quarkus-test-resource[this part of the documentation]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:642
+#: upstream/_guides/rest-client.adoc:643
 msgid "Let's create an implementation of `QuarkusTestResourceLifecycleManager` called `WiremockCountries` like so:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:649
+#: upstream/_guides/rest-client.adoc:650
 #, no-wrap
 msgid ""
 "import java.util.Collections;\n"
@@ -977,7 +977,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:652
+#: upstream/_guides/rest-client.adoc:653
 #, no-wrap
 msgid ""
 "import com.github.tomakehurst.wiremock.WireMockServer;\n"
@@ -985,25 +985,25 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:654
+#: upstream/_guides/rest-client.adoc:655
 #, no-wrap
 msgid "import static com.github.tomakehurst.wiremock.client.WireMock.*; // <1>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:656
+#: upstream/_guides/rest-client.adoc:657
 #, no-wrap
 msgid "public class WiremockCountries implements QuarkusTestResourceLifecycleManager {  // <2>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:658
+#: upstream/_guides/rest-client.adoc:659
 #, no-wrap
 msgid "\tprivate WireMockServer wireMockServer;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:663
+#: upstream/_guides/rest-client.adoc:664
 #, no-wrap
 msgid ""
 "\t@Override\n"
@@ -1013,7 +1013,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:673
+#: upstream/_guides/rest-client.adoc:674
 #, no-wrap
 msgid ""
 "\t\tstubFor(get(urlEqualTo(\"/v2/name/GR\"))   // <4>\n"
@@ -1028,13 +1028,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:675
+#: upstream/_guides/rest-client.adoc:676
 #, no-wrap
 msgid "\t\tstubFor(get(urlMatching(\".*\")).atPriority(10).willReturn(aResponse().proxiedFrom(\"https://restcountries.eu/rest\")));   // <5>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:678
+#: upstream/_guides/rest-client.adoc:679
 #, no-wrap
 msgid ""
 "\t\treturn Collections.singletonMap(\"org.acme.rest.client.CountriesService/mp-rest/url\", wireMockServer.baseUrl()); // <6>\n"
@@ -1042,7 +1042,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:686
+#: upstream/_guides/rest-client.adoc:687
 #, no-wrap
 msgid ""
 "\t@Override\n"
@@ -1055,47 +1055,47 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:689
+#: upstream/_guides/rest-client.adoc:690
 msgid "Statically importing the methods in the Wiremock package makes it easier to read the test."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:690
+#: upstream/_guides/rest-client.adoc:691
 msgid "The `start` method is invoked by Quarkus before any test is run and returns a `Map` of configuration properties that apply during the test execution."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:691
+#: upstream/_guides/rest-client.adoc:692
 msgid "Launch Wiremock."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:692
+#: upstream/_guides/rest-client.adoc:693
 msgid "Configure Wiremock to stub the calls to `/v2/name/GR` by returning a specific canned response."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:693
+#: upstream/_guides/rest-client.adoc:694
 msgid "All HTTP calls that have not been stubbed are handled by calling the real service. This is done for demonstration purposes, as it is not something that would usually happen in a real test."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:695
+#: upstream/_guides/rest-client.adoc:696
 msgid "As the `start` method returns configuration that applies for tests, we set the rest-client property that controls the base URL which is used by the implementation of `CountriesService` to the base URL where Wiremock is listening for incoming requests."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:696
+#: upstream/_guides/rest-client.adoc:697
 msgid "When all tests have finished, shutdown Wiremock."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:699
+#: upstream/_guides/rest-client.adoc:700
 msgid "The `CountriesResourceTest` test class needs to be annotated like so:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:705
+#: upstream/_guides/rest-client.adoc:706
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -1104,17 +1104,17 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/rest-client.adoc:712
+#: upstream/_guides/rest-client.adoc:713
 msgid "`@QuarkusTestResource` applies to all tests, not just `CountriesResourceTest`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/rest-client.adoc:714
+#: upstream/_guides/rest-client.adoc:715
 #, no-wrap
 msgid "Further reading"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:716
+#: upstream/_guides/rest-client.adoc:717
 msgid "link:https://download.eclipse.org/microprofile/microprofile-rest-client-2.0/microprofile-rest-client-spec-2.0.html[MicroProfile Rest Client specification]"
 msgstr ""

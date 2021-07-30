@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:24+0000\n"
+"POT-Creation-Date: 2021-07-30 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,12 +99,12 @@ msgstr ""
 #. type: Title ===
 #: upstream/_guides/datasource.adoc:44
 #, no-wrap
-msgid "Zero Config Setup (DevServices)"
+msgid "Zero Config Setup (Dev Services)"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:49
-msgid "When testing or running in dev mode Quarkus can even provide you with a zero config database out of the box, a feature we refer to as DevServices. Depending on your database type you may need docker installed in order to use this feature. DevServices is supported for the following open source databases:"
+msgid "When testing or running in dev mode Quarkus can even provide you with a zero config database out of the box, a feature we refer to as Dev Services. Depending on your database type you may need docker installed in order to use this feature. Dev Services is supported for the following open source databases:"
 msgstr ""
 
 #. type: Plain text
@@ -144,7 +144,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:62
-msgid "If you want to use DevServices then all you need to do is include the relevant extension for the type of database you want (either reactive or JDBC, or both), and don't configure a database URL, username and password, Quarkus will provide the database and you can just start coding without worrying about config."
+msgid "If you want to use Dev Services then all you need to do is include the relevant extension for the type of database you want (either reactive or JDBC, or both), and don't configure a database URL, username and password, Quarkus will provide the database and you can just start coding without worrying about config."
 msgstr ""
 
 #. type: Plain text
@@ -937,7 +937,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:438
-msgid "Even when only one database extension is installed, named databases need to specify at least one build time property so that Quarkus knows they exist. Generally this will be the `db-kind` property, although you can also specify DevServices properties to create named datasources (covered later in this guide)."
+msgid "Even when only one database extension is installed, named databases need to specify at least one build time property so that Quarkus knows they exist. Generally this will be the `db-kind` property, although you can also specify Dev Services properties to create named datasources (covered later in this guide)."
 msgstr ""
 
 #. type: Title ===
@@ -1030,28 +1030,28 @@ msgstr ""
 #. type: Title ==
 #: upstream/_guides/datasource.adoc:492
 #, no-wrap
-msgid "DevServices (Configuration Free Databases)"
+msgid "Dev Services (Configuration Free Databases)"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:497
-msgid "As mentioned above Quarkus supports a feature called DevServices that allows you to create datasources without any config. If you have a database extension that supports it and no config is provided, Quarkus will automatically start a database (either using Testcontainers, or by starting a Java DB in process), and automatically configure a connection to this database."
+msgid "As mentioned above Quarkus supports a feature called Dev Services that allows you to create datasources without any config. If you have a database extension that supports it and no config is provided, Quarkus will automatically start a database (either using Testcontainers, or by starting a Java DB in process), and automatically configure a connection to this database."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:501
-msgid "Production databases need to be configured as normal, so if you want to include a production database config in your application.properties and continue to use DevServices we recommend that you use the `%prod.` profile to define your database settings."
+msgid "Production databases need to be configured as normal, so if you want to include a production database config in your application.properties and continue to use Dev Services we recommend that you use the `%prod.` profile to define your database settings."
 msgstr ""
 
 #. type: Title ===
 #: upstream/_guides/datasource.adoc:502
 #, no-wrap
-msgid "Configuring DevServices"
+msgid "Configuring Dev Services"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:505
-msgid "DevServices supports the following config options:"
+msgid "Dev Services supports the following config options:"
 msgstr ""
 
 #. type: Title ===
@@ -1062,7 +1062,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:513
-msgid "When using DevServices the default datasource will always be created, but to specify a named datasource you need to have at least one build time property so Quarkus knows to create the datasource. In general you will usually either specify the `db-kind` property, or explicitly enable DevDb: `quarkus.datasource.\"named\".devservices=true`."
+msgid "When using Dev Services the default datasource will always be created, but to specify a named datasource you need to have at least one build time property so Quarkus knows to create the datasource. In general you will usually either specify the `db-kind` property, or explicitly enable DevDb: `quarkus.datasource.\"name\".devservices.enabled=true`."
 msgstr ""
 
 #. type: Title ==
@@ -1405,6 +1405,12 @@ msgstr ""
 
 #. type: Title ===
 #: upstream/_guides/datasource.adoc:665
+#, no-wrap
+msgid "Reactive Microsoft SQL Server Specific Configuration"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_guides/datasource.adoc:669
 #, no-wrap
 msgid "Reactive PostgreSQL Specific Configuration"
 msgstr ""
