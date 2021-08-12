@@ -3337,7 +3337,7 @@ msgstr ""
 #: >categories>
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Hash Value - Key: description
 #: >categories>>guides>
