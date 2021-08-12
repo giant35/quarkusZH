@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-30 01:02+0000\n"
+"POT-Creation-Date: 2021-08-12 00:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1236,7 +1236,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/rest-json.adoc:650
-msgid "If multiple JAX-RS applications are defined, the property `quarkus.resteasy.ignoreApplicationClasses=true` can be used to ignore all explicit `Application` classes. This makes all resource-classes available via the application-path as defined by `quarkus.resteasy.path` (default: `/`)."
+msgid "If multiple JAX-RS applications are defined, the property `quarkus.resteasy.ignore-application-classes=true` can be used to ignore all explicit `Application` classes. This makes all resource-classes available via the application-path as defined by `quarkus.resteasy.path` (default: `/`)."
 msgstr ""
 
 #. type: Title ===

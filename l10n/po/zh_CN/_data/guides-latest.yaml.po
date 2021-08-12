@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-05 01:01+0000\n"
+"POT-Creation-Date: 2021-08-12 00:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1068,6 +1068,24 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
+msgid "Start Redis automatically in dev and test modes."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Redis Dev Services"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/redis-dev-services"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
 msgid "This guide covers how to use the Neo4j graph database in Quarkus."
 msgstr ""
 
@@ -1206,6 +1224,24 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
+msgid "Start Apache Kafka automatically in dev and test modes."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Apache Kafka Dev Services"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/kafka-dev-services"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
 msgid "Use Apache Kafka, Avro serialized records, and connect to a schema registry."
 msgstr ""
 
@@ -1230,7 +1266,7 @@ msgstr ""
 #. type: Hash Value - Key: title
 #: >categories>>guides>
 #, no-wrap
-msgid "Apicurio Registry DevServices"
+msgid "Apicurio Registry Dev Services"
 msgstr ""
 
 #. type: Hash Value - Key: url
@@ -1255,6 +1291,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/amqp"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "Start AMQP automatically in dev and test modes."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "AMQP Dev Services"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/amqp-dev-services"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -1525,6 +1579,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/security-openid-connect-client"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "Start Keycloak or other providers automatically in dev and test modes."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "OpenID Connect Dev Services"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/security-openid-connect-dev-services"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -2472,6 +2544,24 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
+msgid "Entry point for everything gRPC."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "gRPC"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/grpc"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
 msgid "This guide explains how to start using gRPC in your Quarkus application."
 msgstr ""
 
@@ -3186,42 +3276,6 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
-msgid "Quarkus extensions optimize your applications by pushing as much work as possible to the build operation. This guide explains the rationale of Quarkus extensions and guides you through authoring your own extensions.\n"
-msgstr ""
-
-#. type: Hash Value - Key: title
-#: >categories>>guides>
-#, no-wrap
-msgid "Writing Your Own Extension"
-msgstr ""
-
-#. type: Hash Value - Key: url
-#: >categories>>guides>
-#, no-wrap
-msgid "/guides/writing-extensions"
-msgstr ""
-
-#. type: Hash Value - Key: description
-#: >categories>>guides>
-#, no-wrap
-msgid "Learn more about Quarkus class loading infrastructure."
-msgstr ""
-
-#. type: Hash Value - Key: title
-#: >categories>>guides>
-#, no-wrap
-msgid "Class Loading Reference"
-msgstr ""
-
-#. type: Hash Value - Key: url
-#: >categories>>guides>
-#, no-wrap
-msgid "/guides/class-loading-reference"
-msgstr ""
-
-#. type: Hash Value - Key: description
-#: >categories>>guides>
-#, no-wrap
 msgid "How capabilities are implemented and used in Quarkus."
 msgstr ""
 
@@ -3258,6 +3312,72 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
+msgid "Quarkus extensions optimize your applications by pushing as much work as possible to the build operation. This guide explains the rationale of Quarkus extensions and guides you through authoring your own extensions.\n"
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Writing Your Own Extension"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/writing-extensions"
+msgstr ""
+
+#. type: Hash Value - Key: cat-id
+#: >categories>
+#, no-wrap
+msgid "architecture"
+msgstr ""
+
+#. type: Hash Value - Key: category
+#: >categories>
+#, no-wrap
+msgid "Architecture"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "Learn more about Quarkus reactive architecture."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Quarkus Reactive Architecture"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/quarkus-reactive-architecture"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "Learn more about Quarkus class loading infrastructure."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Class Loading Reference"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/class-loading-reference"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
 msgid "Learn more about what we call a Platform in the Quarkus world."
 msgstr ""
 
@@ -3271,4 +3391,22 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/platform"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "How dev mode differs from a production application"
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Dev Mode Differences"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/dev-mode-differences"
 msgstr ""

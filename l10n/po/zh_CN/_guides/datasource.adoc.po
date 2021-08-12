@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-30 01:02+0000\n"
+"POT-Creation-Date: 2021-08-12 00:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,7 +222,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:104
-msgid "Add the correct reactive extension for the database you are using: `reactive-pg-client`, `reactive-mysql-client`, or `reactive-db2-client`."
+msgid "Add the correct reactive extension for the database you are using: `reactive-pg-client`, `reactive-mssql-client`, `reactive-mysql-client`, or `reactive-db2-client`."
 msgstr ""
 
 #. type: Plain text
