@@ -780,6 +780,14 @@ In this guide, we will explore:
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Architecture</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>架构</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Prerequisites</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -808,14 +816,6 @@ In this guide, we will explore:
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>完整源码</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Architecture</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>架构</seg>
       </tuv>
     </tu>
     <tu>
