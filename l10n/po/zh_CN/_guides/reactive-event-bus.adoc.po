@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-30 01:02+0000\n"
+"POT-Creation-Date: 2021-08-20 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,9 +118,9 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/reactive-event-bus.adoc:63
 #: upstream/_guides/reactive-event-bus.adoc:111
-#: upstream/_guides/reactive-event-bus.adoc:230
-#: upstream/_guides/reactive-event-bus.adoc:304
-#: upstream/_guides/reactive-event-bus.adoc:341
+#: upstream/_guides/reactive-event-bus.adoc:237
+#: upstream/_guides/reactive-event-bus.adoc:311
+#: upstream/_guides/reactive-event-bus.adoc:348
 #, no-wrap
 msgid "package org.acme.vertx;\n"
 msgstr ""
@@ -128,14 +128,14 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/reactive-event-bus.adoc:65
 #: upstream/_guides/reactive-event-bus.adoc:113
-#: upstream/_guides/reactive-event-bus.adoc:343
+#: upstream/_guides/reactive-event-bus.adoc:350
 #, no-wrap
 msgid "import io.quarkus.vertx.ConsumeEvent;\n"
 msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/reactive-event-bus.adoc:67
-#: upstream/_guides/reactive-event-bus.adoc:345
+#: upstream/_guides/reactive-event-bus.adoc:352
 #, no-wrap
 msgid "import javax.enterprise.context.ApplicationScoped;\n"
 msgstr ""
@@ -143,7 +143,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/reactive-event-bus.adoc:70
 #: upstream/_guides/reactive-event-bus.adoc:121
-#: upstream/_guides/reactive-event-bus.adoc:348
+#: upstream/_guides/reactive-event-bus.adoc:355
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -326,22 +326,33 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/reactive-event-bus.adoc:185
 #, no-wrap
-msgid "@Inject Executor executor;\n"
+msgid "@Inject ManagedExecutor executor;\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/reactive-event-bus.adoc:188
+msgid "Alternatively, you can use the default Quarkus worker pool using:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/reactive-event-bus.adoc:192
+#, no-wrap
+msgid "Executor executor = Infrastructure.getDefaultWorkerPool();\n"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/reactive-event-bus.adoc:188
+#: upstream/_guides/reactive-event-bus.adoc:195
 #, no-wrap
 msgid "Implementing fire and forget interactions"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/reactive-event-bus.adoc:193
-msgid "You don't have to reply to received messages.  Typically for a _fire and forget_ interaction, the messages are consumed and the sender does not need to know about it.  To implement this, your consumer method just returns `void`"
+#: upstream/_guides/reactive-event-bus.adoc:200
+msgid "You don't have to reply to received messages.  Typically, for a _fire and forget_ interaction, the messages are consumed and the sender does not need to know about it.  To implement this, your consumer method just returns `void`"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:200
+#: upstream/_guides/reactive-event-bus.adoc:207
 #, no-wrap
 msgid ""
 "@ConsumeEvent(\"greeting\")\n"
@@ -351,18 +362,18 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/reactive-event-bus.adoc:202
+#: upstream/_guides/reactive-event-bus.adoc:209
 #, no-wrap
 msgid "Dealing with messages"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:205
+#: upstream/_guides/reactive-event-bus.adoc:212
 msgid "As said above, this mechanism is based on the Vert.x event bus. So, you can also use `Message` directly:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:213
+#: upstream/_guides/reactive-event-bus.adoc:220
 #, no-wrap
 msgid ""
 "@ConsumeEvent(\"greeting\")\n"
@@ -373,40 +384,40 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/reactive-event-bus.adoc:215
+#: upstream/_guides/reactive-event-bus.adoc:222
 #, no-wrap
 msgid "Handling Failures"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:218
+#: upstream/_guides/reactive-event-bus.adoc:225
 msgid "If a method annotated with `@ConsumeEvent` throws an exception then:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:220
+#: upstream/_guides/reactive-event-bus.adoc:227
 msgid "if a reply handler is set then the failure is propagated back to the sender via an `io.vertx.core.eventbus.ReplyException` with code `ConsumeEvent#FAILURE_CODE` and the exception message,"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:221
+#: upstream/_guides/reactive-event-bus.adoc:228
 msgid "if no reply handler is set then the exception is rethrown (and wrapped in a `RuntimeException` if necessary) and can be handled by the default exception handler, i.e. `io.vertx.core.Vertx#exceptionHandler()`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/reactive-event-bus.adoc:222
+#: upstream/_guides/reactive-event-bus.adoc:229
 #, no-wrap
 msgid "Sending messages"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:226
+#: upstream/_guides/reactive-event-bus.adoc:233
 msgid "Ok, we have seen how to receive messages, let's now switch to the _other side_: the sender.  Sending and publishing messages use the Vert.x event bus:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:235
-#: upstream/_guides/reactive-event-bus.adoc:309
+#: upstream/_guides/reactive-event-bus.adoc:242
+#: upstream/_guides/reactive-event-bus.adoc:316
 #, no-wrap
 msgid ""
 "import io.smallrye.mutiny.Uni;\n"
@@ -416,8 +427,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:241
-#: upstream/_guides/reactive-event-bus.adoc:315
+#: upstream/_guides/reactive-event-bus.adoc:248
+#: upstream/_guides/reactive-event-bus.adoc:322
 #, no-wrap
 msgid ""
 "import javax.inject.Inject;\n"
@@ -428,8 +439,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:244
-#: upstream/_guides/reactive-event-bus.adoc:318
+#: upstream/_guides/reactive-event-bus.adoc:251
+#: upstream/_guides/reactive-event-bus.adoc:325
 #, no-wrap
 msgid ""
 "@Path(\"/async\")\n"
@@ -437,7 +448,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:247
+#: upstream/_guides/reactive-event-bus.adoc:254
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -445,7 +456,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:256
+#: upstream/_guides/reactive-event-bus.adoc:263
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -459,37 +470,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:258
+#: upstream/_guides/reactive-event-bus.adoc:265
 msgid "Inject the Event bus"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:259
+#: upstream/_guides/reactive-event-bus.adoc:266
 msgid "Send a message to the address `greeting`. Message payload is `name`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:261
+#: upstream/_guides/reactive-event-bus.adoc:268
 msgid "The `EventBus` object provides methods to:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:263
+#: upstream/_guides/reactive-event-bus.adoc:270
 msgid "`send` a message to a specific address - one single consumer receives the message."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:264
+#: upstream/_guides/reactive-event-bus.adoc:271
 msgid "`publish` a message to a specific address - all consumers receive the messages."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:265
+#: upstream/_guides/reactive-event-bus.adoc:272
 msgid "`send` a message and expect reply"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:275
+#: upstream/_guides/reactive-event-bus.adoc:282
 #, no-wrap
 msgid ""
 "// Case 1\n"
@@ -502,23 +513,23 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/reactive-event-bus.adoc:277
+#: upstream/_guides/reactive-event-bus.adoc:284
 #, no-wrap
 msgid "Putting things together - bridging HTTP and messages"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:283
+#: upstream/_guides/reactive-event-bus.adoc:290
 msgid "Let's revisit a greeting HTTP endpoint and use asynchronous message passing to delegate the call to a separated bean.  It uses the request/reply dispatching mechanism.  Instead of implementing the business logic inside the JAX-RS endpoint, we are sending a message.  This message is consumed by another bean and the response is sent using the _reply_ mechanism."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:285
+#: upstream/_guides/reactive-event-bus.adoc:292
 msgid "First create a new project using:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:294
+#: upstream/_guides/reactive-event-bus.adoc:301
 #, no-wrap
 msgid ""
 "mvn io.quarkus:quarkus-maven-plugin:{quarkus-version}:create \\\n"
@@ -530,23 +541,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:297
+#: upstream/_guides/reactive-event-bus.adoc:304
 msgid "You can already start the application in _dev mode_ using `./mvnw compile quarkus:dev`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:299
+#: upstream/_guides/reactive-event-bus.adoc:306
 msgid "Then, creates a new JAX-RS resource with the following content:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/reactive-event-bus.adoc:301
+#: upstream/_guides/reactive-event-bus.adoc:308
 #, no-wrap
 msgid "src/main/java/org/acme/vertx/EventResource.java"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:321
+#: upstream/_guides/reactive-event-bus.adoc:328
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -554,7 +565,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:330
+#: upstream/_guides/reactive-event-bus.adoc:337
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -568,28 +579,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:332
+#: upstream/_guides/reactive-event-bus.adoc:339
 msgid "send the `name` to the `greeting` address and request a response"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:333
+#: upstream/_guides/reactive-event-bus.adoc:340
 msgid "when we get the response, extract the body and send it to the user"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:336
+#: upstream/_guides/reactive-event-bus.adoc:343
 msgid "If you call this endpoint, you will wait and get a timeout. Indeed, no one is listening.  So, we need a consumer listening on the `greeting` address. Create a `GreetingService` bean with the following content:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/reactive-event-bus.adoc:338
+#: upstream/_guides/reactive-event-bus.adoc:345
 #, no-wrap
 msgid "src/main/java/org/acme/vertx/GreetingService.java"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:353
+#: upstream/_guides/reactive-event-bus.adoc:360
 #, no-wrap
 msgid ""
 "    @ConsumeEvent(\"greeting\")\n"
@@ -599,92 +610,92 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:355
+#: upstream/_guides/reactive-event-bus.adoc:362
 #, no-wrap
 msgid "}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:358
+#: upstream/_guides/reactive-event-bus.adoc:365
 msgid "This bean receives the name, and returns the greeting message."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:360
+#: upstream/_guides/reactive-event-bus.adoc:367
 msgid "Now, open your browser to http://localhost:8080/async/Quarkus, and you should see:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:364
+#: upstream/_guides/reactive-event-bus.adoc:371
 #, no-wrap
 msgid "Hello Quarkus\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:367
+#: upstream/_guides/reactive-event-bus.adoc:374
 msgid "To better understand, let's detail how the HTTP request/response has been handled:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:369
+#: upstream/_guides/reactive-event-bus.adoc:376
 msgid "The request is received by the `hello` method"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:370
+#: upstream/_guides/reactive-event-bus.adoc:377
 msgid "a message containing the _name_ is sent to the event bus"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:371
+#: upstream/_guides/reactive-event-bus.adoc:378
 msgid "Another bean receives this message and computes the response"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:372
+#: upstream/_guides/reactive-event-bus.adoc:379
 msgid "This response is sent back using the reply mechanism"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:373
+#: upstream/_guides/reactive-event-bus.adoc:380
 msgid "Once the reply is received by the sender, the content is written to the HTTP response"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:375
-msgid "This application can be packaged using:"
-msgstr ""
-
-#. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:379
-#, no-wrap
-msgid "./mvnw clean package\n"
-msgstr ""
-
-#. type: Plain text
 #: upstream/_guides/reactive-event-bus.adoc:382
-msgid "You can also compile it as a native executable with:"
+msgid "This application can be packaged using:"
 msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/reactive-event-bus.adoc:386
 #, no-wrap
+msgid "./mvnw clean package\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/reactive-event-bus.adoc:389
+msgid "You can also compile it as a native executable with:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/reactive-event-bus.adoc:393
+#, no-wrap
 msgid "./mvnw clean package -Pnative\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/reactive-event-bus.adoc:388
+#: upstream/_guides/reactive-event-bus.adoc:395
 #, no-wrap
 msgid "Using codecs"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:393
+#: upstream/_guides/reactive-event-bus.adoc:400
 msgid "The https://vertx.io/docs/vertx-core/java/#event_bus[Vert.x Event Bus] uses codecs to _serialize_ and _deserialize_ objects.  Quarkus provides a default codec for local delivery.  So you can exchange objects as follows:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:403
+#: upstream/_guides/reactive-event-bus.adoc:410
 #, no-wrap
 msgid ""
 "@GET\n"
@@ -697,7 +708,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:408
+#: upstream/_guides/reactive-event-bus.adoc:415
 #, no-wrap
 msgid ""
 "@ConsumeEvent(value = \"greeting\")\n"
@@ -707,12 +718,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:411
+#: upstream/_guides/reactive-event-bus.adoc:418
 msgid "If you want to use a specific codec, you need to explicitly set it on both ends:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:422
+#: upstream/_guides/reactive-event-bus.adoc:429
 #, no-wrap
 msgid ""
 "@GET\n"
@@ -726,7 +737,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/reactive-event-bus.adoc:427
+#: upstream/_guides/reactive-event-bus.adoc:434
 #, no-wrap
 msgid ""
 "@ConsumeEvent(value = \"greeting\", codec = MyNameCodec.class)            // <2>\n"
@@ -736,11 +747,11 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:429
+#: upstream/_guides/reactive-event-bus.adoc:436
 msgid "Set the name of the codec to use to send the message"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/reactive-event-bus.adoc:429
+#: upstream/_guides/reactive-event-bus.adoc:436
 msgid "Set the codec to use to receive the message"
 msgstr ""
