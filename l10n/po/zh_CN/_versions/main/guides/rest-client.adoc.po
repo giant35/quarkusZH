@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-24 01:00+0000\n"
+"POT-Creation-Date: 2021-08-23 00:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -819,11 +819,9 @@ msgid "And the `RequestUUIDHeaderFactory` would look like:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/rest-client.adoc:541
+#: upstream/_versions/main/guides/rest-client.adoc:540
 #, no-wrap
-msgid ""
-"import org.eclipse.microprofile.rest.client.ext.ClientHeadersFactory;\n"
-"import org.jboss.resteasy.specimpl.MultivaluedMapImpl;\n"
+msgid "import org.eclipse.microprofile.rest.client.ext.ClientHeadersFactory;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -831,6 +829,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
+"import javax.ws.rs.core.MultivaluedHashMap;\n"
 "import javax.ws.rs.core.MultivaluedMap;\n"
 "import java.util.UUID;\n"
 msgstr ""
@@ -849,7 +848,7 @@ msgstr ""
 msgid ""
 "    @Override\n"
 "    public MultivaluedMap<String, String> update(MultivaluedMap<String, String> incomingHeaders, MultivaluedMap<String, String> clientOutgoingHeaders) {\n"
-"        MultivaluedMap<String, String> result = new MultivaluedMapImpl<>();\n"
+"        MultivaluedMap<String, String> result = new MultivaluedHashMap<>();\n"
 "        result.add(\"X-request-uuid\", UUID.randomUUID().toString());\n"
 "        return result;\n"
 "    }\n"
