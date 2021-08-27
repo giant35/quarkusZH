@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-30 01:02+0000\n"
+"POT-Creation-Date: 2021-08-27 01:05+0000\n"
 "PO-Revision-Date: 2021-07-17 19:16+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -179,7 +179,7 @@ msgstr "Linux & MacOS 用户"
 #: upstream/_guides/getting-started.adoc:86
 #, no-wrap
 msgid ""
-"mvn io.quarkus:quarkus-maven-plugin:{quarkus-version}:create \\\n"
+"mvn io.quarkus.platform:quarkus-maven-plugin:{quarkus-version}:create \\\n"
 "    -DprojectGroupId=org.acme \\\n"
 "    -DprojectArtifactId=getting-started \\\n"
 "    -DclassName=\"org.acme.getting.started.GreetingResource\" \\\n"
@@ -200,7 +200,7 @@ msgstr "如果使用cmd，（不要使用反斜杠 `\\`  )"
 #. type: delimited block -
 #: upstream/_guides/getting-started.adoc:95
 #, no-wrap
-msgid "mvn io.quarkus:quarkus-maven-plugin:{quarkus-version}:create -DprojectGroupId=org.acme -DprojectArtifactId=getting-started -DclassName=\"org.acme.getting.started.GreetingResource\" -Dpath=\"/hello\"\n"
+msgid "mvn io.quarkus.platform:quarkus-maven-plugin:{quarkus-version}:create -DprojectGroupId=org.acme -DprojectArtifactId=getting-started -DclassName=\"org.acme.getting.started.GreetingResource\" -Dpath=\"/hello\"\n"
 msgstr ""
 
 #. type: Plain text
@@ -211,7 +211,7 @@ msgstr "如果使用Powershell，请用双引号将 `-D` 参数括起来"
 #. type: delimited block -
 #: upstream/_guides/getting-started.adoc:102
 #, no-wrap
-msgid "mvn io.quarkus:quarkus-maven-plugin:{quarkus-version}:create \"-DprojectGroupId=org.acme\" \"-DprojectArtifactId=getting-started\" \"-DclassName=org.acme.getting.started.GreetingResource\" \"-Dpath=/hello\"\n"
+msgid "mvn io.quarkus.platform:quarkus-maven-plugin:{quarkus-version}:create \"-DprojectGroupId=org.acme\" \"-DprojectArtifactId=getting-started\" \"-DclassName=org.acme.getting.started.GreetingResource\" \"-Dpath=/hello\"\n"
 msgstr ""
 
 #. type: Plain text
