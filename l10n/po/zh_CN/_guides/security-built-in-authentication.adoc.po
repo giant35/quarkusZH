@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:24+0000\n"
+"POT-Creation-Date: 2021-09-01 01:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 #. type: Title =
 #: upstream/_guides/security-built-in-authentication.adoc:6
 #, no-wrap
-msgid "Quarkus - Built-In Authentication Support"
+msgid "Built-In Authentication Support"
 msgstr ""
 
 #. type: Plain text
@@ -226,18 +226,75 @@ msgstr ""
 msgid "Note that if proactive authentication is in use accessing the `SecurityIdentity` is a blocking operation. This is because authentication may not have happened yet, and accessing it may require calls to external systems such as databases that may block. For blocking applications this is no problem, however if you are have disabled authentication in a reactive application this will fail (as you cannot do blocking operations on the IO thread). To work around this you need to `@Inject` an instance of `io.quarkus.security.identity.CurrentIdentityAssociation`, and call the `Uni<SecurityIdentity> getDeferredIdentity();` method. You can then subscribe to the resulting `Uni` and will be notified when authentication is complete and the identity is available."
 msgstr ""
 
-#. type: delimited block =
+#. type: Title ===
+#: upstream/_guides/security-built-in-authentication.adoc:125
+#, no-wrap
+msgid "How to customize authentication exception responses"
+msgstr ""
+
+#. type: Plain text
 #: upstream/_guides/security-built-in-authentication.adoc:129
-msgid "By default the authentication security constraints are enforced before the JAX-RS chain starts.  Disabling the proactive authentication effectively shifts this process to the moment when the JAX-RS chain starts running thus making it possible to use JAX-RS `ExceptionMapper` to capture Quarkus Security authentication exceptions such as `io.quarkus.security.AuthenticationFailedException` if required."
+msgid "By default the authentication security constraints are enforced before the JAX-RS chain starts.  Disabling the proactive authentication effectively shifts this process to the moment when the JAX-RS chain starts running thus making it possible to use JAX-RS `ExceptionMapper` to capture Quarkus Security authentication exceptions such as `io.quarkus.security.AuthenticationFailedException`, for example:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-built-in-authentication.adoc:133
+#, no-wrap
+msgid "package io.quarkus.it.keycloak;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-built-in-authentication.adoc:139
+#, no-wrap
+msgid ""
+"import javax.annotation.Priority;\n"
+"import javax.ws.rs.Priorities;\n"
+"import javax.ws.rs.core.Response;\n"
+"import javax.ws.rs.ext.ExceptionMapper;\n"
+"import javax.ws.rs.ext.Provider;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-built-in-authentication.adoc:141
+#, no-wrap
+msgid "import io.quarkus.security.AuthenticationFailedException;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-built-in-authentication.adoc:145
+#, no-wrap
+msgid ""
+"@Provider\n"
+"@Priority(Priorities.AUTHENTICATION)\n"
+"public class AuthenticationFailedExceptionMapper implements ExceptionMapper<AuthenticationFailedException> {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-built-in-authentication.adoc:148
+#, no-wrap
+msgid ""
+"    @Context\n"
+"    UriInfo uriInfo;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-built-in-authentication.adoc:154
+#, no-wrap
+msgid ""
+"    @Override\n"
+"    public Response toResponse(AuthenticationFailedException exception) {\n"
+"        return Response.status(401).header(\"WWW-Authenticate\", \"Basic realm=\\\"Quarkus\\\"\").build();\n"
+"    }\n"
+"}\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-built-in-authentication.adoc:131
+#: upstream/_guides/security-built-in-authentication.adoc:156
 #, no-wrap
 msgid "References"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-built-in-authentication.adoc:133
+#: upstream/_guides/security-built-in-authentication.adoc:158
 msgid "link:security[Quarkus Security]"
 msgstr ""

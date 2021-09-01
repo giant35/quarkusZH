@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-12 00:59+0000\n"
+"POT-Creation-Date: 2021-09-01 01:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -348,6 +348,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/continuous-testing"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "A list of all extensions that support Dev Services and their configuration options."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Automatic Service Setup with Dev Services"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/dev-services"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -1158,7 +1176,7 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
-msgid "This guides covers the usage of Software Transactional Memory (STM)"
+msgid "This guides covers the usage of Software Transactional Memory (STM)."
 msgstr ""
 
 #. type: Hash Value - Key: title
@@ -1171,6 +1189,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/software-transactional-memory"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guides covers the usage of LRA to coordinate activities across services."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Using LRA (Long Running Actions)"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/lra"
 msgstr ""
 
 #. type: Hash Value - Key: cat-id
@@ -1320,13 +1356,31 @@ msgstr ""
 #. type: Hash Value - Key: title
 #: >categories>>guides>
 #, no-wrap
-msgid "Using HTTP and WebSockets with Reactive Messaging"
+msgid "Using HTTP with Reactive Messaging"
 msgstr ""
 
 #. type: Hash Value - Key: url
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/reactive-messaging-http"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide demonstrates how your Quarkus application can utilize SmallRye Reactive Messaging to consume and produce messages via WebSockets."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Using WebSockets with Reactive Messaging"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/reactive-messaging-websocket"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -1500,7 +1554,7 @@ msgstr ""
 #. type: Hash Value - Key: title
 #: >categories>>guides>
 #, no-wrap
-msgid "Using OpenID Connect to Protect Service Applications"
+msgid "Using OpenID Connect (OIDC) to Protect Service Applications"
 msgstr ""
 
 #. type: Hash Value - Key: url
@@ -1518,7 +1572,7 @@ msgstr ""
 #. type: Hash Value - Key: title
 #: >categories>>guides>
 #, no-wrap
-msgid "Using OpenID Connect to Protect Web Applications"
+msgid "Using OpenID Connect (OIDC) to Protect Web Applications"
 msgstr ""
 
 #. type: Hash Value - Key: url
@@ -1536,7 +1590,7 @@ msgstr ""
 #. type: Hash Value - Key: title
 #: >categories>>guides>
 #, no-wrap
-msgid "Using OpenID Connect Multi-Tenancy"
+msgid "Using OpenID Connect (OIDC) Multi-Tenancy"
 msgstr ""
 
 #. type: Hash Value - Key: url
@@ -1554,7 +1608,7 @@ msgstr ""
 #. type: Hash Value - Key: title
 #: >categories>>guides>
 #, no-wrap
-msgid "Using OpenID Connect and Keycloak to Centralize Authorizations"
+msgid "Using OpenID Connect (OIDC) and Keycloak to Centralize Authorizations"
 msgstr ""
 
 #. type: Hash Value - Key: url
@@ -1572,7 +1626,7 @@ msgstr ""
 #. type: Hash Value - Key: title
 #: >categories>>guides>
 #, no-wrap
-msgid "Using OpenID Connect and OAuth2 Client and Filters"
+msgid "Using OpenID Connect (OIDC) and OAuth2 Client and Filters"
 msgstr ""
 
 #. type: Hash Value - Key: url
@@ -1590,7 +1644,7 @@ msgstr ""
 #. type: Hash Value - Key: title
 #: >categories>>guides>
 #, no-wrap
-msgid "OpenID Connect Dev Services"
+msgid "OpenID Connect (OIDC) Dev Services"
 msgstr ""
 
 #. type: Hash Value - Key: url
@@ -3391,6 +3445,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/platform"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "Learn more about the notion of extension registry and how you can use your own."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Quarkus Extension Registry"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/extension-registry-user"
 msgstr ""
 
 #. type: Hash Value - Key: description

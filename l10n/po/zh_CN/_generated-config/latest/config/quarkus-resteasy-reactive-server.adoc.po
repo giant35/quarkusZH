@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:22+0000\n"
+"POT-Creation-Date: 2021-09-01 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,4 +56,28 @@ msgstr ""
 #: upstream/_generated-config/latest/config/quarkus-resteasy-reactive-server.adoc:18
 #, no-wrap
 msgid "string"
+msgstr ""
+
+#. type: Table
+#: upstream/_generated-config/latest/config/quarkus-resteasy-reactive-server.adoc:26
+#, no-wrap
+msgid ""
+"[[quarkus-resteasy-reactive-server_quarkus.resteasy-reactive.multipart.input-part.default-charset]]`link:#quarkus-resteasy-reactive-server_quarkus.resteasy-reactive.multipart.input-part.default-charset[quarkus.resteasy-reactive.multipart.input-part.default-charset]`\n"
+"\n"
+"[.description]\n"
+"--\n"
+"Default charset.\n"
+"--"
+msgstr ""
+
+#. type: Table
+#: upstream/_generated-config/latest/config/quarkus-resteasy-reactive-server.adoc:28
+#, no-wrap
+msgid "link:https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html[Charset]"
+msgstr ""
+
+#. type: Table
+#: upstream/_generated-config/latest/config/quarkus-resteasy-reactive-server.adoc:30
+#, no-wrap
+msgid "`UTF-8`"
 msgstr ""

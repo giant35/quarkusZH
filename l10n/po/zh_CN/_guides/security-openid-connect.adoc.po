@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 01:05+0000\n"
+"POT-Creation-Date: 2021-09-01 01:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,12 +22,12 @@ msgstr ""
 #. type: Title =
 #: upstream/_guides/security-openid-connect.adoc:6
 #, no-wrap
-msgid "Quarkus - Using OpenID Connect to Protect Service Applications using Bearer Token Authorization"
+msgid "Using OpenID Connect (OIDC) to Protect Service Applications using Bearer Token Authorization"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect.adoc:12
-msgid "This guide demonstrates how to use Quarkus OpenID Connect Extension to protect your JAX-RS applications using Bearer Token Authorization where Bearer Tokens are issued by OpenId Connect and OAuth 2.0 compliant Authorization Servers such as https://www.keycloak.org/about.html[Keycloak]."
+msgid "This guide demonstrates how to use Quarkus OpenID Connect (OIDC) Extension to protect your JAX-RS applications using Bearer Token Authorization where Bearer Tokens are issued by OpenId Connect and OAuth 2.0 compliant Authorization Servers such as https://www.keycloak.org/about.html[Keycloak]."
 msgstr ""
 
 #. type: Plain text

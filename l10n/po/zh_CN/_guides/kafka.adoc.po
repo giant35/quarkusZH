@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-20 01:01+0000\n"
+"POT-Creation-Date: 2021-09-01 01:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,15 +173,16 @@ msgid "Continuing from the previous minimal configuration, your Quarkus applicat
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:87
+#: upstream/_guides/kafka.adoc:87 upstream/_guides/kafka.adoc:1683
+#: upstream/_guides/kafka.adoc:1764
 #, no-wrap
 msgid "import org.eclipse.microprofile.reactive.messaging.Incoming;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:89 upstream/_guides/kafka.adoc:868
-#: upstream/_guides/kafka.adoc:915 upstream/_guides/kafka.adoc:938
-#: upstream/_guides/kafka.adoc:1068
+#: upstream/_guides/kafka.adoc:89 upstream/_guides/kafka.adoc:871
+#: upstream/_guides/kafka.adoc:918 upstream/_guides/kafka.adoc:941
+#: upstream/_guides/kafka.adoc:1081 upstream/_guides/kafka.adoc:1762
 #, no-wrap
 msgid "import javax.enterprise.context.ApplicationScoped;\n"
 msgstr ""
@@ -205,11 +206,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:99 upstream/_guides/kafka.adoc:244
-#: upstream/_guides/kafka.adoc:509 upstream/_guides/kafka.adoc:535
-#: upstream/_guides/kafka.adoc:616 upstream/_guides/kafka.adoc:928
-#: upstream/_guides/kafka.adoc:956 upstream/_guides/kafka.adoc:1030
-#: upstream/_guides/kafka.adoc:1087 upstream/_guides/kafka.adoc:1445
+#: upstream/_guides/kafka.adoc:99 upstream/_guides/kafka.adoc:247
+#: upstream/_guides/kafka.adoc:512 upstream/_guides/kafka.adoc:538
+#: upstream/_guides/kafka.adoc:619 upstream/_guides/kafka.adoc:931
+#: upstream/_guides/kafka.adoc:959 upstream/_guides/kafka.adoc:1043
+#: upstream/_guides/kafka.adoc:1100 upstream/_guides/kafka.adoc:1468
+#: upstream/_guides/kafka.adoc:1671 upstream/_guides/kafka.adoc:1752
+#: upstream/_guides/kafka.adoc:1780
 #, no-wrap
 msgid "}\n"
 msgstr ""
@@ -329,8 +332,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:168 upstream/_guides/kafka.adoc:697
-#: upstream/_guides/kafka.adoc:742 upstream/_guides/kafka.adoc:778
+#: upstream/_guides/kafka.adoc:168 upstream/_guides/kafka.adoc:700
+#: upstream/_guides/kafka.adoc:745 upstream/_guides/kafka.adoc:781
 #, no-wrap
 msgid ""
 "@Path(\"/prices\")\n"
@@ -410,23 +413,23 @@ msgid "Injecting `@Channel(\"prices\")` or having `@Incoming(\"prices\")` does n
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:216
+#: upstream/_guides/kafka.adoc:217
 #, no-wrap
 msgid "Blocking processing"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:220
-msgid "You often need to combine Reactive Messaging with blocking processing such as database interactions.  For this, you need to use the `@Blocking` annotation indicating that the processing is _blocking_ and should not be run on the caller thread."
+#: upstream/_guides/kafka.adoc:223
+msgid "Reactive Messaging invokes your method on an I/O thread.  See the xref:quarkus-reactive-architecture.adoc[Quarkus Reactive Architecture documentation] for further details on this topic.  But, you often need to combine Reactive Messaging with blocking processing such as database interactions.  For this, you need to use the `@Blocking` annotation indicating that the processing is _blocking_ and should not be run on the caller thread."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:222
+#: upstream/_guides/kafka.adoc:225
 msgid "For example, The following code illustrates how you can store incoming payloads to a database using Hibernate with Panache:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:227
+#: upstream/_guides/kafka.adoc:230
 #, no-wrap
 msgid ""
 "import io.smallrye.reactive.messaging.annotations.Blocking;\n"
@@ -434,7 +437,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:230
+#: upstream/_guides/kafka.adoc:233 upstream/_guides/kafka.adoc:1681
 #, no-wrap
 msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
@@ -442,7 +445,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:233
+#: upstream/_guides/kafka.adoc:236
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -450,7 +453,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:242
+#: upstream/_guides/kafka.adoc:245
 #, no-wrap
 msgid ""
 "    @Incoming(\"prices\")\n"
@@ -464,43 +467,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:247
+#: upstream/_guides/kafka.adoc:250
 msgid "The complete example is available in the `kafka-panache-quickstart` {quickstarts-tree-url}/kafka-panache-quickstart[directory]."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:251
+#: upstream/_guides/kafka.adoc:254
 msgid "There are 2 `@Blocking` annotations:"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:253
+#: upstream/_guides/kafka.adoc:256
 msgid "`io.smallrye.reactive.messaging.annotations.Blocking`"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:254
+#: upstream/_guides/kafka.adoc:257
 msgid "`io.smallrye.common.annotation.Blocking`"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:259
+#: upstream/_guides/kafka.adoc:262
 msgid "They have the same effect.  Thus, you can use both.  The first one provides more fine-grained tuning such as the worker pool to use and whether it preserves the order.  The second one, used also with other reactive features of Quarkus, uses the default worker pool and preserves the order."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:261
+#: upstream/_guides/kafka.adoc:264
 #, no-wrap
 msgid "Acknowledgment Strategies"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:269
+#: upstream/_guides/kafka.adoc:272
 msgid "All messages received by a consumer must be acknowledged.  In the absence of acknowledgment, the processing is considered in error.  If the consumer method receives a `Record` or a payload, the message will be acked on method return, also known as `Strategy.POST_PROCESSING`.  If the consumer method returns another reactive stream or `CompletionStage`, the message will be acked when the downstream message is acked.  You can override the default behavior to ack the message on arrival (`Strategy.PRE_PROCESSING`), or do not ack the message at all (`Strategy.NONE`) on the consumer method as in the following example:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:277
+#: upstream/_guides/kafka.adoc:280
 #, no-wrap
 msgid ""
 "@Incoming(\"prices\")\n"
@@ -511,12 +514,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:281
+#: upstream/_guides/kafka.adoc:284
 msgid "If the consumer method receives a `Message`, the acknowledgment strategy is `Strategy.MANUAL` and the consumer method is in charge of ack/nack the message."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:289
+#: upstream/_guides/kafka.adoc:292
 #, no-wrap
 msgid ""
 "@Incoming(\"prices\")\n"
@@ -527,160 +530,160 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:292
+#: upstream/_guides/kafka.adoc:295
 msgid "As mentioned above, the method can also override the acknowledgment strategy to `PRE_PROCESSING` or `NONE`."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:294
+#: upstream/_guides/kafka.adoc:297
 #, no-wrap
 msgid "Commit Strategies"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:300
+#: upstream/_guides/kafka.adoc:303
 msgid "When a message produced from a Kafka record is acknowledged, the connector invokes a commit strategy.  These strategies decide when the consumer offset for a specific topic/partition is committed.  Committing an offset indicates that all previous records have been processed.  It is also the position where the application would restart the processing after a crash recovery or a restart."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:303
+#: upstream/_guides/kafka.adoc:306
 msgid "Committing every offset has performance penalties as Kafka offset management can be slow.  However, not committing the offset often enough may lead to message duplication if the application crashes between two commits."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:305
+#: upstream/_guides/kafka.adoc:308
 msgid "The Kafka connector supports three strategies:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:314
+#: upstream/_guides/kafka.adoc:317
 msgid "`throttled` keeps track of received messages and commits an offset of the latest acked message in sequence (meaning, all previous messages were also acked).  This strategy guarantees at-least-once delivery even if the channel performs asynchronous processing.  The connector tracks the received records and periodically (period specified by `auto.commit.interval.ms`, default: 5000 ms) commits the highest consecutive offset.  The connector will be marked as unhealthy if a message associated with a record is not acknowledged in `throttled.unprocessed-record-max-age.ms` (default: 60000 ms).  Indeed, this strategy cannot commit the offset as soon as a single record processing fails (see <<error-handling>> to configure what happens on failing processing).  If `throttled.unprocessed-record-max-age.ms` is set to less than or equal to `0`, it does not perform any health check verification.  Such a setting might lead to running out of memory if there are \"poison pill\" messages (that are never acked).  This strategy is the default if `enable.auto.commit` is not explicitly set to true."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:318
+#: upstream/_guides/kafka.adoc:321
 msgid "`latest` commits the record offset received by the Kafka consumer as soon as the associated message is acknowledged (if the offset is higher than the previously committed offset).  This strategy provides at-least-once delivery if the channel processes the message without performing any asynchronous processing.  This strategy should not be used in high load environment, as offset commit is expensive. However, it reduces the risk of duplicates."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:323
+#: upstream/_guides/kafka.adoc:326
 msgid "`ignore` performs no commit. This strategy is the default strategy when the consumer is explicitly configured with `enable.auto.commit` to true.  It delegates the offset commit to the underlying Kafka client.  This strategy provides at-least-once delivery if the channel processes the message without performing any asynchronous operations and when `enable.auto.commit` is set to true.  However, if the processing failed between two commits, messages received after the commit and before the failure will be re-processed."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:328
+#: upstream/_guides/kafka.adoc:331
 msgid "The Kafka connector disables the Kafka auto commit when it is not explicitly enabled. This behavior differs from the traditional Kafka consumer.  If high throughput is important for you, and you are not limited by the downstream, we recommend to either:"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:330
+#: upstream/_guides/kafka.adoc:333
 msgid "use the `throttled` policy,"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:331
+#: upstream/_guides/kafka.adoc:334
 msgid "or set `enable.auto.commit` to true and annotate the consuming method with `@Acknowledgment(Acknowledgment.Strategy.NONE)`."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:334
+#: upstream/_guides/kafka.adoc:337
 #, no-wrap
 msgid "Error Handling Strategies"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:337
+#: upstream/_guides/kafka.adoc:340
 msgid "If a message produced from a Kafka record is nacked, a failure strategy is applied. The Kafka connector supports three strategies:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:339
+#: upstream/_guides/kafka.adoc:342
 msgid "`fail`: fail the application, no more records will be processed (default strategy). The offset of the record that has not been processed correctly is not committed."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:340
+#: upstream/_guides/kafka.adoc:343
 msgid "`ignore`: the failure is logged, but the processing continue. The offset of the record that has not been processed correctly is committed."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:341
+#: upstream/_guides/kafka.adoc:344
 msgid "`dead-letter-queue`: the offset of the record that has not been processed correctly is committed, but the record is written to a Kafka dead letter topic."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:343
+#: upstream/_guides/kafka.adoc:346
 msgid "The strategy is selected using the `failure-strategy` attribute."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:345
+#: upstream/_guides/kafka.adoc:348
 msgid "In the case of `dead-letter-queue`, you can configure the following attributes:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:347
+#: upstream/_guides/kafka.adoc:350
 msgid "`dead-letter-queue.topic`: the topic to use to write the records not processed correctly, default is `dead-letter-topic-$channel`, with `$channel` being the name of the channel."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:348
+#: upstream/_guides/kafka.adoc:351
 msgid "`dead-letter-queue.key.serializer`: the serializer used to write the record key on the dead letter queue. By default, it deduces the serializer from the key deserializer."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:349
+#: upstream/_guides/kafka.adoc:352
 msgid "`dead-letter-queue.value.serializer`: the serializer used to write the record value on the dead letter queue. By default, it deduces the serializer from the value deserializer."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:351
-msgid "The record written on the dead letter queue contains a set of additional headers about the original record:"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/kafka.adoc:353
-#, no-wrap
-msgid "*dead-letter-reason*: the reason of the failure\n"
-msgstr ""
-
-#. type: Plain text
 #: upstream/_guides/kafka.adoc:354
-#, no-wrap
-msgid "*dead-letter-cause*: the cause of the failure if any\n"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/kafka.adoc:355
-#, no-wrap
-msgid "*dead-letter-topic*: the original topic of the record\n"
+msgid "The record written on the dead letter queue contains a set of additional headers about the original record:"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:356
 #, no-wrap
-msgid "*dead-letter-partition*: the original partition of the record (integer mapped to String)\n"
+msgid "*dead-letter-reason*: the reason of the failure\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:357
 #, no-wrap
+msgid "*dead-letter-cause*: the cause of the failure if any\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:358
+#, no-wrap
+msgid "*dead-letter-topic*: the original topic of the record\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:359
+#, no-wrap
+msgid "*dead-letter-partition*: the original partition of the record (integer mapped to String)\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:360
+#, no-wrap
 msgid "*dead-letter-offset*: the original offset of the record (long mapped to String)\n"
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/kafka.adoc:358
+#: upstream/_guides/kafka.adoc:361
 #, no-wrap
 msgid "Retrying processing"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:361
+#: upstream/_guides/kafka.adoc:364
 msgid "You can combine Reactive Messaging with https://github.com/smallrye/smallrye-fault-tolerance[SmallRye Fault Tolerance], and retry processing if it failed:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:369
+#: upstream/_guides/kafka.adoc:372
 #, no-wrap
 msgid ""
 "@Incoming(\"kafka\")\n"
@@ -691,17 +694,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:372
+#: upstream/_guides/kafka.adoc:375
 msgid "You can configure the delay, the number of retries, the jitter, etc."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:374
+#: upstream/_guides/kafka.adoc:377
 msgid "If your method returns a `Uni` or `CompletionStage`, you need to add the `@NonBlocking` annotation:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:383
+#: upstream/_guides/kafka.adoc:386
 #, no-wrap
 msgid ""
 "@Incoming(\"kafka\")\n"
@@ -713,156 +716,156 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:388
+#: upstream/_guides/kafka.adoc:391
 msgid "The `@NonBlocking` annotation is only required with SmallRye Fault Tolerance 5.1.0 and earlier.  Starting with SmallRye Fault Tolerance 5.2.0 (available since Quarkus 2.1.0.Final), it is not necessary.  See https://smallrye.io/docs/smallrye-fault-tolerance/5.2.0/usage/extra.html#_non_compatible_mode[SmallRye Fault Tolerance documentation] for more information."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:392
+#: upstream/_guides/kafka.adoc:395
 msgid "The incoming messages are acknowledged only once the processing completes successfully.  So, it commits the offset after the successful processing.  If the processing still fails, even after all retries, the message is _nacked_ and the failure strategy is applied."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:393
+#: upstream/_guides/kafka.adoc:396
 #, no-wrap
 msgid "Consumer Groups"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:400
+#: upstream/_guides/kafka.adoc:403
 msgid "In Kafka, a consumer group is a set of consumers which cooperate to consume data from a topic.  A topic is divided into a set of partitions.  The partitions of a topic are assigned among the consumers in the group, effectively allowing to scale consumption throughput.  Note that each partition is assigned to a single consumer from a group.  However, a consumer can be assigned multiple partitions if the number of partitions is greater than the number of consumer in the group."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:402
+#: upstream/_guides/kafka.adoc:405
 msgid "Let's explore briefly different producer/consumer patterns and how to implement them using Quarkus:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:404
+#: upstream/_guides/kafka.adoc:407
 #, no-wrap
 msgid "*Single consumer thread inside a consumer group*\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:408
+#: upstream/_guides/kafka.adoc:411
 msgid "This is the default behavior of an application subscribing to a Kafka topic: Each Kafka connector will create a single consumer thread and place it inside a single consumer group.  Consumer group id defaults to the application name as set by the `quarkus.application.name` configuration property.  It can also be set using the `kafka.group.id` property."
 msgstr ""
 
 #. type: Named 'alt' AttributeList argument for macro 'image'
-#: upstream/_guides/kafka.adoc:409 upstream/_guides/kafka.adoc:417
-#: upstream/_guides/kafka.adoc:424 upstream/_guides/kafka.adoc:432
+#: upstream/_guides/kafka.adoc:412 upstream/_guides/kafka.adoc:420
+#: upstream/_guides/kafka.adoc:427 upstream/_guides/kafka.adoc:435
 #, fuzzy, no-wrap
 #| msgid "Architecture"
 msgid "Architecture,"
 msgstr "架构"
 
 #. type: Target for macro image
-#: upstream/_guides/kafka.adoc:409
+#: upstream/_guides/kafka.adoc:412
 #, no-wrap
 msgid "kafka-one-app-one-consumer.png"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:412
+#: upstream/_guides/kafka.adoc:415
 #, no-wrap
 msgid "*Multiple consumer threads inside a consumer group*\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:416
+#: upstream/_guides/kafka.adoc:419
 msgid "For a given application instance, the number of consumers inside the consumer group can be configured using `mp.messaging.incoming.$channel.partitions` property.  The partitions of the subscribed topic will be divided among the consumer threads.  Note that if the `partitions` value exceed the number of partitions of the topic, some consumer threads won't be assigned any partitions."
 msgstr ""
 
 #. type: Target for macro image
-#: upstream/_guides/kafka.adoc:417
+#: upstream/_guides/kafka.adoc:420
 #, no-wrap
 msgid "kafka-one-app-two-consumers.png"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:420
+#: upstream/_guides/kafka.adoc:423
 #, no-wrap
 msgid "*Multiple consumer applications inside a consumer group*\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:423
+#: upstream/_guides/kafka.adoc:426
 msgid "Similar to the previous example, multiple instances of an application can subscribe to a single consumer group, configured via `mp.messaging.incoming.$channel.group.id` property, or left default to the application name.  This in turn will divide partitions of the topic among application instances."
 msgstr ""
 
 #. type: Target for macro image
-#: upstream/_guides/kafka.adoc:424
+#: upstream/_guides/kafka.adoc:427
 #, no-wrap
 msgid "kafka-two-app-one-consumer-group.png"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:427
+#: upstream/_guides/kafka.adoc:430
 #, no-wrap
 msgid "*Pub/Sub: Multiple consumer groups subscribed to a topic*\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:431
+#: upstream/_guides/kafka.adoc:434
 msgid "Lastly different applications can subscribe independently to same topics using different *consumer group ids*.  For example, messages published to a topic called _orders_ can be consumed independently on two consumer applications, one with `mp.messaging.incoming.orders.group.id=invoicing` and second with `mp.messaging.incoming.orders.group.id=shipping`.  Different consumer groups can thus scale independently according to the message consumption requirements."
 msgstr ""
 
 #. type: Target for macro image
-#: upstream/_guides/kafka.adoc:432
+#: upstream/_guides/kafka.adoc:435
 #, no-wrap
 msgid "kafka-two-app-two-consumer-groups.png"
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/kafka.adoc:434
+#: upstream/_guides/kafka.adoc:437
 #, no-wrap
 msgid "Consumer Rebalance Listener"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:441
+#: upstream/_guides/kafka.adoc:444
 msgid "Inside a consumer group, as new group members arrive and old members leave, the partitions are re-assigned so that each member receives a proportional share of the partitions.  This is known as rebalancing the group.  To handle offset commit and assigned partitions yourself, you can provide a consumer rebalance listener.  To achieve this, implement the `io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener` interface and expose it as a CDI bean with the `@Idenfier` qualifier.  A common use case is to store offset in a separate data store to implement exactly-once semantic, or starting the processing at a specific offset."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:445
+#: upstream/_guides/kafka.adoc:448
 msgid "The listener is invoked every time the consumer topic/partition assignment changes.  For example, when the application starts, it invokes the `partitionsAssigned` callback with the initial set of topics/partitions associated with the consumer.  If, later, this set changes, it calls the `partitionsRevoked` and `partitionsAssigned` callbacks again, so you can implement custom logic."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:448
+#: upstream/_guides/kafka.adoc:451
 msgid "Note that the rebalance listener methods are called from the Kafka polling thread and **will** block the caller thread until completion.  That’s because the rebalance protocol has synchronization barriers, and using asynchronous code in a rebalance listener may be executed after the synchronization barrier."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:450
+#: upstream/_guides/kafka.adoc:453
 msgid "When topics/partitions are assigned or revoked from a consumer, it pauses the message delivery and resumes once the rebalance completes."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:454
+#: upstream/_guides/kafka.adoc:457
 msgid "If the rebalance listener handles offset commit on behalf of the user (using the `NONE` commit strategy), the rebalance listener must commit the offset synchronously in the partitionsRevoked callback.  We also recommend applying the same logic when the application stops."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:456
+#: upstream/_guides/kafka.adoc:459
 msgid "Unlike the `ConsumerRebalanceListener` from Apache Kafka, the `io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener` methods pass the Kafka Consumer and the set of topics/partitions."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:460
+#: upstream/_guides/kafka.adoc:463
 msgid "In the following example we set-up a consumer that always starts on messages from at most 10 minutes ago (or offset 0).  First we need to provide a bean that implements `io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener` and is annotated with `io.smallrye.common.annotation.Identifier`.  We then must configure our inbound connector to use this bean."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:464 upstream/_guides/kafka.adoc:514
+#: upstream/_guides/kafka.adoc:467 upstream/_guides/kafka.adoc:517
 #, no-wrap
 msgid "package inbound;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:470
+#: upstream/_guides/kafka.adoc:473
 #, no-wrap
 msgid ""
 "import io.smallrye.common.annotation.Identifier;\n"
@@ -873,7 +876,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:476
+#: upstream/_guides/kafka.adoc:479
 #, no-wrap
 msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
@@ -884,7 +887,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:480
+#: upstream/_guides/kafka.adoc:483
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -893,13 +896,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:482
+#: upstream/_guides/kafka.adoc:485
 #, no-wrap
 msgid "    private static final Logger LOGGER = Logger.getLogger(KafkaRebalancedConsumerRebalanceListener.class.getName());\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:494
+#: upstream/_guides/kafka.adoc:497
 #, no-wrap
 msgid ""
 "    /**\n"
@@ -916,7 +919,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:507
+#: upstream/_guides/kafka.adoc:510
 #, no-wrap
 msgid ""
 "        Map<TopicPartition, Long> request = new HashMap<>();\n"
@@ -934,7 +937,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:518
+#: upstream/_guides/kafka.adoc:521
 #, no-wrap
 msgid ""
 "import io.smallrye.reactive.messaging.kafka.IncomingKafkaRecord;\n"
@@ -943,7 +946,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:522
+#: upstream/_guides/kafka.adoc:525
 #, no-wrap
 msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
@@ -952,7 +955,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:525
+#: upstream/_guides/kafka.adoc:528
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -960,7 +963,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:533
+#: upstream/_guides/kafka.adoc:536
 #, no-wrap
 msgid ""
 "    @Incoming(\"rebalanced-example\")\n"
@@ -973,58 +976,58 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:539
+#: upstream/_guides/kafka.adoc:542
 msgid "To configure the inbound connector to use the provided listener, we either set the consumer rebalance listener’s identifier: `mp.messaging.incoming.rebalanced-example.consumer-rebalance-listener.name=rebalanced-example.rebalancer`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:541
+#: upstream/_guides/kafka.adoc:544
 msgid "Or have the listener’s name be the same as the group id:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:543
+#: upstream/_guides/kafka.adoc:546
 msgid "`mp.messaging.incoming.rebalanced-example.group.id=rebalanced-example.rebalancer`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:545
+#: upstream/_guides/kafka.adoc:548
 msgid "Setting the consumer rebalance listener’s name takes precedence over using the group id."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/kafka.adoc:546
+#: upstream/_guides/kafka.adoc:549
 #, no-wrap
 msgid "Using unique consumer groups"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:549
+#: upstream/_guides/kafka.adoc:552
 msgid "If you want to process all the records from a topic (from its beginning), you need:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:551
+#: upstream/_guides/kafka.adoc:554
 msgid "to set `auto.offset.reset = earliest`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:552
+#: upstream/_guides/kafka.adoc:555
 msgid "assign your consumer to a consumer group not used by any other application."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:555
+#: upstream/_guides/kafka.adoc:558
 msgid "Quarkus generates a UUID that changes between two executions (including in dev mode).  So, you are sure no other consumer uses it, and you receive a new unique group id every time your application starts."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:557
+#: upstream/_guides/kafka.adoc:560
 msgid "You can use that generated UUID as the consumer group as follows:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:562
+#: upstream/_guides/kafka.adoc:565
 #, no-wrap
 msgid ""
 "mp.messaging.incoming.your-channel.auto.offset.reset=earliest\n"
@@ -1032,23 +1035,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:565
+#: upstream/_guides/kafka.adoc:568
 msgid "If the `group.id` attribute is not set, it defaults the `quarkus.application.name` configuration property."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:567
+#: upstream/_guides/kafka.adoc:570
 #, no-wrap
 msgid "Sending messages to Kafka"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:570
+#: upstream/_guides/kafka.adoc:573
 msgid "Configuration for the Kafka connector outgoing channels is similar to that of incoming:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:576
+#: upstream/_guides/kafka.adoc:579
 #, no-wrap
 msgid ""
 "%prod.kafka.bootstrap.servers=kafka:9092 <1>\n"
@@ -1057,32 +1060,32 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:581
+#: upstream/_guides/kafka.adoc:584
 msgid "Configure the broker location for the production profile. You can configure it globally or per channel using `mp.messaging.outgoing.$channel.bootstrap.servers` property.  In dev mode and when running tests, link:kafka-dev-services[Dev Services for Kafka] automatically starts a Kafka broker.  When not provided, this property defaults to `localhost:9092`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:582
+#: upstream/_guides/kafka.adoc:585
 msgid "Configure the connector to manage the `prices-out` channel."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:583
+#: upstream/_guides/kafka.adoc:586
 msgid "By default, the topic name is same as the channel name. You can configure the topic attribute to override it."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:588
+#: upstream/_guides/kafka.adoc:591
 msgid "Inside application configuration, channel names are unique.  Therefore, if you'd like to configure an incoming and outgoing channel on the same topic, you will need to name channels differently (like in the examples of this guide, `mp.messaging.incoming.prices` and `mp.messaging.outgoing.prices-out`)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:592
+#: upstream/_guides/kafka.adoc:595
 msgid "Then, your application can generate messages and publish them to the `prices-out` channel.  It can use `double` payloads as in the following snippet:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:597
+#: upstream/_guides/kafka.adoc:600
 #, no-wrap
 msgid ""
 "import io.smallrye.mutiny.Multi;\n"
@@ -1090,7 +1093,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:601
+#: upstream/_guides/kafka.adoc:604
 #, no-wrap
 msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
@@ -1099,7 +1102,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:604
+#: upstream/_guides/kafka.adoc:607
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -1107,13 +1110,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:606 upstream/_guides/kafka.adoc:878
+#: upstream/_guides/kafka.adoc:609 upstream/_guides/kafka.adoc:881
 #, no-wrap
 msgid "    private final Random random = new Random();\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:614
+#: upstream/_guides/kafka.adoc:617
 #, no-wrap
 msgid ""
 "    @Outgoing(\"prices-out\")\n"
@@ -1126,22 +1129,22 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:621
+#: upstream/_guides/kafka.adoc:624
 msgid "You should not call methods annotated with `@Incoming` and/or `@Outgoing` directly from your code. They are invoked by the framework. Having user code invoking them would not have the expected outcome."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:625
+#: upstream/_guides/kafka.adoc:628
 msgid "Note that the `generate` method returns a `Multi<Double>`, which implements the Reactive Streams `Publisher` interface.  This publisher will be used by the framework to generate messages and send them to the configured Kafka topic."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:627
+#: upstream/_guides/kafka.adoc:630
 msgid "Instead of returning a payload, you can return a `io.smallrye.reactive.messaging.kafka.Record` to send key/value pairs:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:635
+#: upstream/_guides/kafka.adoc:638
 #, no-wrap
 msgid ""
 "@Outgoing(\"out\")\n"
@@ -1152,12 +1155,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:638
+#: upstream/_guides/kafka.adoc:641
 msgid "Payload can be wrapped inside `org.eclipse.microprofile.reactive.messaging.Message` to have more control on the written records:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:651
+#: upstream/_guides/kafka.adoc:654
 #, no-wrap
 msgid ""
 "@Outgoing(\"generated-price\")\n"
@@ -1173,74 +1176,75 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:656
+#: upstream/_guides/kafka.adoc:659
 msgid "`OutgoingKafkaRecordMetadata` allows to set metadata attributes of the Kafka record, such as `key`, `topic`, `partition` or `timestamp`.  One use case is to dynamically select the destination topic of a message.  In this case, instead of configuring the topic inside your application configuration file, you need to use the outgoing metadata to set the name of the topic."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:659
+#: upstream/_guides/kafka.adoc:662
 msgid "Other than method signatures returning a Reactive Stream `Publisher` (`Multi` being an implementation of `Publisher`), outgoing method can also return single message.  In this case the producer will use this method as generator to create an infinite stream."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:663
+#: upstream/_guides/kafka.adoc:666
 #, no-wrap
 msgid "@Outgoing(\"prices-out\") T generate(); // T excluding void\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:665
+#: upstream/_guides/kafka.adoc:668
 #, no-wrap
 msgid "@Outgoing(\"prices-out\") Message<T> generate();\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:667
+#: upstream/_guides/kafka.adoc:670
 #, no-wrap
 msgid "@Outgoing(\"prices-out\") Uni<T> generate();\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:669
+#: upstream/_guides/kafka.adoc:672
 #, no-wrap
 msgid "@Outgoing(\"prices-out\") Uni<Message<T>> generate();\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:671
+#: upstream/_guides/kafka.adoc:674
 #, no-wrap
 msgid "@Outgoing(\"prices-out\") CompletionStage<T> generate();\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:673
+#: upstream/_guides/kafka.adoc:676
 #, no-wrap
 msgid "@Outgoing(\"prices-out\") CompletionStage<Message<T>> generate();\n"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:675
+#: upstream/_guides/kafka.adoc:678
 #, no-wrap
 msgid "Sending messages with @Emitter"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:678
+#: upstream/_guides/kafka.adoc:681
 msgid "Sometimes, you need to have an imperative way of sending messages."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:681
+#: upstream/_guides/kafka.adoc:684
 msgid "For example, if you need to send a message to a stream when receiving a POST request inside a REST endpoint.  In this case, you cannot use `@Outgoing` because your method has parameters."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:683
+#: upstream/_guides/kafka.adoc:686
 msgid "For this, you can use an `Emitter`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:688
+#: upstream/_guides/kafka.adoc:691 upstream/_guides/kafka.adoc:1581
+#: upstream/_guides/kafka.adoc:1629 upstream/_guides/kafka.adoc:1847
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.reactive.messaging.Channel;\n"
@@ -1248,8 +1252,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:694 upstream/_guides/kafka.adoc:739
-#: upstream/_guides/kafka.adoc:773
+#: upstream/_guides/kafka.adoc:697 upstream/_guides/kafka.adoc:742
+#: upstream/_guides/kafka.adoc:776
 #, no-wrap
 msgid ""
 "import javax.inject.Inject;\n"
@@ -1260,7 +1264,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:701
+#: upstream/_guides/kafka.adoc:704
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -1269,7 +1273,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:708
+#: upstream/_guides/kafka.adoc:711
 #, no-wrap
 msgid ""
 "    @POST\n"
@@ -1281,27 +1285,27 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:711
+#: upstream/_guides/kafka.adoc:714
 msgid "Sending a payload returns a `CompletionStage`, completed when the message is acked. If the message transmission fails, the `CompletionStage` is completed exceptionally with the reason of the nack."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:715
+#: upstream/_guides/kafka.adoc:718
 msgid "The `Emitter` configuration is done the same way as the other stream configuration used by `@Incoming` and `@Outgoing`."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:724
+#: upstream/_guides/kafka.adoc:727
 msgid "Using the `Emitter` you are sending messages from your imperative code to reactive messaging.  These messages are stored in a queue until they are sent.  If the Kafka producer client can't keep up with messages trying to be sent over to Kafka, this queue can become a memory hog and you may even run out of memory.  You can use `@OnOverflow` to configure back-pressure strategy.  It lets you configure the size of the queue (default is 256) and the strategy to apply when the buffer size is reached. Available strategies are `DROP`, `LATEST`, `FAIL`, `BUFFER`, `UNBOUNDED_BUFFER` and `NONE`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:727
+#: upstream/_guides/kafka.adoc:730
 msgid "With the `Emitter` API, you can also encapsulate the outgoing payload inside `Message<T>`. As with the previous examples, `Message` lets you handle the ack/nack cases differently."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:733
+#: upstream/_guides/kafka.adoc:736
 #, no-wrap
 msgid ""
 "import java.util.concurrent.CompletableFuture;\n"
@@ -1310,13 +1314,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:744
+#: upstream/_guides/kafka.adoc:747
 #, no-wrap
 msgid "    @Inject @Channel(\"price-create\") Emitter<Double> priceEmitter;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:759
+#: upstream/_guides/kafka.adoc:762
 #, no-wrap
 msgid ""
 "    @POST\n"
@@ -1336,24 +1340,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:763
+#: upstream/_guides/kafka.adoc:766
 msgid "If you prefer using Reactive Stream APIs, you can use `MutinyEmitter` that will return `Uni<Void>` from the `send` method.  You can therefore use Mutiny APIs for handling downstream messages and errors."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:767
+#: upstream/_guides/kafka.adoc:770 upstream/_guides/kafka.adoc:1884
 #, no-wrap
 msgid "import org.eclipse.microprofile.reactive.messaging.Channel;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:775
+#: upstream/_guides/kafka.adoc:778
 #, no-wrap
 msgid "import io.smallrye.reactive.messaging.MutinyEmitter;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:782
+#: upstream/_guides/kafka.adoc:785
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -1362,7 +1366,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:791
+#: upstream/_guides/kafka.adoc:794
 #, no-wrap
 msgid ""
 "    @POST\n"
@@ -1376,150 +1380,150 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:795
+#: upstream/_guides/kafka.adoc:798
 msgid "It is also possible to block on sending the event to the emitter with the `sendAndAwait` method.  It will only return from the method when the event is acked or nacked by the receiver."
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/kafka.adoc:797
+#: upstream/_guides/kafka.adoc:800
 #, no-wrap
 msgid "Deprecation"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:800
+#: upstream/_guides/kafka.adoc:803
 msgid "The `io.smallrye.reactive.messaging.annotations.Emitter`, `io.smallrye.reactive.messaging.annotations.Channel` and `io.smallrye.reactive.messaging.annotations.OnOverflow` classes are now deprecated and replaced by:"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:802
+#: upstream/_guides/kafka.adoc:805
 msgid "`org.eclipse.microprofile.reactive.messaging.Emitter`"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:803
+#: upstream/_guides/kafka.adoc:806
 msgid "`org.eclipse.microprofile.reactive.messaging.Channel`"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:804
+#: upstream/_guides/kafka.adoc:807
 msgid "`org.eclipse.microprofile.reactive.messaging.OnOverflow`"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:806
+#: upstream/_guides/kafka.adoc:809
 msgid "The new `Emitter.send` method returns a `CompletionStage` completed when the produced message is acknowledged."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:808
+#: upstream/_guides/kafka.adoc:811
 #, no-wrap
 msgid "Write Acknowledgement"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:812
+#: upstream/_guides/kafka.adoc:815
 msgid "When Kafka broker receives a record, its acknowledgement can take time depending on the configuration.  Also, it stores in-memory the records that cannot be written."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:815
+#: upstream/_guides/kafka.adoc:818
 msgid "By default, the connector does wait for Kafka to acknowledge the record to continue the processing (acknowledging the received Message).  You can disable this by setting the `waitForWriteCompletion` attribute to `false`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:817
+#: upstream/_guides/kafka.adoc:820
 msgid "Note that the `acks` attribute has a huge impact on the record acknowledgement."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:819
+#: upstream/_guides/kafka.adoc:822
 msgid "If a record cannot be written, the message is nacked."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:820
+#: upstream/_guides/kafka.adoc:823
 #, no-wrap
 msgid "Backpressure"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:824
+#: upstream/_guides/kafka.adoc:827
 msgid "The Kafka outbound connector handles back-pressure, monitoring the number of in-flight messages waiting to be written to the Kafka broker.  The number of in-flight messages is configured using the `max-inflight-messages` attribute and defaults to 1024."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:829
+#: upstream/_guides/kafka.adoc:832
 msgid "The connector only sends that amount of messages concurrently.  No other messages will be sent until at least one in-flight message gets acknowledged by the broker.  Then, the connector writes a new message to Kafka when one of the broker’s in-flight messages get acknowledged.  Be sure to configure Kafka’s `batch.size` and `linger.ms` accordingly."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:832
+#: upstream/_guides/kafka.adoc:835
 msgid "You can also remove the limit of in-flight messages by setting `max-inflight-messages` to `0`.  However, note that the Kafka producer may block if the number of requests reaches `max.in.flight.requests.per.connection`."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:833
+#: upstream/_guides/kafka.adoc:836
 #, no-wrap
 msgid "Retrying message dispatch"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:838
+#: upstream/_guides/kafka.adoc:841
 msgid "When the Kafka producer receives an error from the server, if it is a transient, recoverable error, the client will retry sending the batch of messages.  This behavior is controlled by `retries` and `retry.backoff.ms` parameters.  In addition to this, SmallRye Reactive Messaging will retry individual messages on recoverable errors, depending on the `retries` and `delivery.timeout.ms` parameters."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:841
+#: upstream/_guides/kafka.adoc:844
 msgid "Note that while having retries in a reliable system is a best practice, the `max.in.flight.requests.per.connection` parameter defaults to `5`, meaning that the order of the messages is not guaranteed.  If the message order is a must for your use case, setting `max.in.flight.requests.per.connection` to `1` will make sure a single batch of messages is sent at a time, in the expense of limiting the throughput of the producer."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:843
+#: upstream/_guides/kafka.adoc:846
 msgid "For applying retry mechanism on processing errors, see the section on <<retrying-processing>>."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:844
+#: upstream/_guides/kafka.adoc:847
 #, no-wrap
 msgid "In-memory channels"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:849
+#: upstream/_guides/kafka.adoc:852
 msgid "In some use cases, it is convenient to use the messaging patterns to transfer messages inside the same application.  When you don't connect a channel to a messaging backend like Kafka, everything happens in-memory, and the streams are created by chaining methods together.  Each chain is still a reactive stream and enforces the back-pressure protocol."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:853
+#: upstream/_guides/kafka.adoc:856
 msgid "The framework verifies that the producer/consumer chain is complete, meaning that if the application writes messages into an in-memory channel (using a method with only `@Outgoing`, or an `Emitter`), it must also consume the messages from within the application (using a method with only `@Incoming` or using an unmanaged stream)."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:855
+#: upstream/_guides/kafka.adoc:858
 #, no-wrap
 msgid "Broadcasting messages on multiple consumers"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:860
+#: upstream/_guides/kafka.adoc:863
 msgid "By default, a channel can be linked to a single consumer, using `@Incoming` method or `@Channel` reactive stream.  At application startup, channels are verified to form a chain of consumers and producers with single consumer and producer.  You can override this behavior by setting `mp.messaging.$channel.broadcast=true` on a channel."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:862
+#: upstream/_guides/kafka.adoc:865
 msgid "In case of in-memory channels, `@Broadcast` annotation can be used on the `@Outgoing` method. For example,"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:866
+#: upstream/_guides/kafka.adoc:869
 #, no-wrap
 msgid "import java.util.Random;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:871 upstream/_guides/kafka.adoc:913
-#: upstream/_guides/kafka.adoc:941
+#: upstream/_guides/kafka.adoc:874 upstream/_guides/kafka.adoc:916
+#: upstream/_guides/kafka.adoc:944
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.reactive.messaging.Incoming;\n"
@@ -1527,13 +1531,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:873
+#: upstream/_guides/kafka.adoc:876
 #, no-wrap
 msgid "import io.smallrye.reactive.messaging.annotations.Broadcast;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:876
+#: upstream/_guides/kafka.adoc:879
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -1541,7 +1545,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:884
+#: upstream/_guides/kafka.adoc:887
 #, no-wrap
 msgid ""
 "    @Outgoing(\"in-memory-channel\")\n"
@@ -1552,7 +1556,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:889
+#: upstream/_guides/kafka.adoc:892
 #, no-wrap
 msgid ""
 "    @Incoming(\"in-memory-channel\")\n"
@@ -1562,7 +1566,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:896
+#: upstream/_guides/kafka.adoc:899
 #, no-wrap
 msgid ""
 "    @Incoming(\"in-memory-channel\")\n"
@@ -1574,23 +1578,23 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:902
+#: upstream/_guides/kafka.adoc:905
 msgid "Reciprocally, multiple producers on the same channel can be merged by setting `mp.messaging.incoming.$channel.merge=true`.  On the `@Incoming` methods, you can control how multiple channels are merged using the `@Merge` annotation."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:904
+#: upstream/_guides/kafka.adoc:907
 #, no-wrap
 msgid "Processing Messages"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:908
+#: upstream/_guides/kafka.adoc:911
 msgid "Applications streaming data often need to consume some events from a topic, process them and publish the result to a different topic.  A processor method can be simply implemented using both the `@Incoming` and `@Outgoing` annotations:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:918 upstream/_guides/kafka.adoc:946
+#: upstream/_guides/kafka.adoc:921 upstream/_guides/kafka.adoc:949
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -1598,14 +1602,14 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:920 upstream/_guides/kafka.adoc:948
-#: upstream/_guides/kafka.adoc:1077
+#: upstream/_guides/kafka.adoc:923 upstream/_guides/kafka.adoc:951
+#: upstream/_guides/kafka.adoc:1090
 #, no-wrap
 msgid "    private static final double CONVERSION_RATE = 0.88;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:926
+#: upstream/_guides/kafka.adoc:929
 #, no-wrap
 msgid ""
 "    @Incoming(\"price-in\")\n"
@@ -1616,23 +1620,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:932
+#: upstream/_guides/kafka.adoc:935
 msgid "The parameter of the `process` method is the incoming message payload, whereas the return value will be used as the outgoing message payload.  Previously mentioned signatures for parameter and return types are also supported, such as `Message<T>`, `Record<K, V>`, etc."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:934
+#: upstream/_guides/kafka.adoc:937
 msgid "You can apply asynchronous stream processing by consuming and returning reactive stream `Multi<T>` type:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:943
+#: upstream/_guides/kafka.adoc:946
 #, no-wrap
 msgid "import io.smallrye.mutiny.Multi;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:954
+#: upstream/_guides/kafka.adoc:957
 #, no-wrap
 msgid ""
 "    @Incoming(\"price-in\")\n"
@@ -1642,19 +1646,40 @@ msgid ""
 "    }\n"
 msgstr ""
 
+#. type: Title ===
+#: upstream/_guides/kafka.adoc:961
+#, no-wrap
+msgid "Propagating Record Key"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:964
+msgid "When processing messages, you can propagate incoming record key to the outgoing record."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:967
+msgid "Enabled with `mp.messaging.outgoing.$channel.propagate-record-key=true` configuration, record key propagation produces the outgoing record with the same _key_ as the incoming record."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:970
+msgid "If the outgoing record already contains a _key_, it *won't be overridden* by the incoming record key.  If the incoming record does have a _null_ key, the `mp.messaging.outgoing.$channel.key` property is used."
+msgstr ""
+
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:959
+#: upstream/_guides/kafka.adoc:972
 #, no-wrap
 msgid "Accessing Kafka clients directly"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:963
+#: upstream/_guides/kafka.adoc:976
 msgid "In rare cases, you may need to access the underlying Kafka clients.  `KafkaClientService` provides thread-safe access to `Producer` and `Consumer`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:969
+#: upstream/_guides/kafka.adoc:982
 #, no-wrap
 msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
@@ -1663,13 +1688,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:971
+#: upstream/_guides/kafka.adoc:984
 #, no-wrap
 msgid "import org.apache.kafka.clients.producer.ProducerRecord;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:976
+#: upstream/_guides/kafka.adoc:989
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.StartupEvent;\n"
@@ -1679,7 +1704,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:979
+#: upstream/_guides/kafka.adoc:992
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -1687,7 +1712,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:982
+#: upstream/_guides/kafka.adoc:995
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -1695,7 +1720,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:989
+#: upstream/_guides/kafka.adoc:1002
 #, no-wrap
 msgid ""
 "    void onStartup(@Observes StartupEvent startupEvent) {\n"
@@ -1707,17 +1732,17 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:994
+#: upstream/_guides/kafka.adoc:1007
 msgid "The `KafkaClientService` is an experimental API and can change in the future."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:997
+#: upstream/_guides/kafka.adoc:1010
 msgid "You can also get the Kafka configuration injected to your application and create Kafka producer, consumer and admin clients directly:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1004
+#: upstream/_guides/kafka.adoc:1017
 #, no-wrap
 msgid ""
 "import io.smallrye.common.annotation.Identifier;\n"
@@ -1727,7 +1752,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1010
+#: upstream/_guides/kafka.adoc:1023
 #, no-wrap
 msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
@@ -1738,7 +1763,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1013
+#: upstream/_guides/kafka.adoc:1026
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -1746,7 +1771,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1017
+#: upstream/_guides/kafka.adoc:1030
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -1755,7 +1780,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1028
+#: upstream/_guides/kafka.adoc:1041
 #, no-wrap
 msgid ""
 "    @Produces\n"
@@ -1771,34 +1796,34 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1034
+#: upstream/_guides/kafka.adoc:1047
 msgid "This configuration map will contain all Kafka related properties configured inside `application.properties` file."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:1036
+#: upstream/_guides/kafka.adoc:1049
 #, no-wrap
 msgid "JSON serialization"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1039
+#: upstream/_guides/kafka.adoc:1052
 msgid "Quarkus has built-in capabilities to deal with JSON Kafka messages."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1041
+#: upstream/_guides/kafka.adoc:1054
 msgid "Imagine we have a `Fruit` data class as follows:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1045
+#: upstream/_guides/kafka.adoc:1058
 #, no-wrap
 msgid "public class Fruit {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1048
+#: upstream/_guides/kafka.adoc:1061
 #, no-wrap
 msgid ""
 "    public String name;\n"
@@ -1806,7 +1831,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1051
+#: upstream/_guides/kafka.adoc:1064
 #, no-wrap
 msgid ""
 "    public Fruit() {\n"
@@ -1814,7 +1839,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1057
+#: upstream/_guides/kafka.adoc:1070
 #, no-wrap
 msgid ""
 "    public Fruit(String name, int price) {\n"
@@ -1825,12 +1850,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1060
+#: upstream/_guides/kafka.adoc:1073
 msgid "And we want to use it to receive messages from Kafka, make some price transformation, and send messages back to Kafka."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1066
+#: upstream/_guides/kafka.adoc:1079
 #, no-wrap
 msgid ""
 "import io.smallrye.reactive.messaging.annotations.Broadcast;\n"
@@ -1839,7 +1864,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1075
+#: upstream/_guides/kafka.adoc:1088
 #, no-wrap
 msgid ""
 "/**\n"
@@ -1851,7 +1876,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1085
+#: upstream/_guides/kafka.adoc:1098
 #, no-wrap
 msgid ""
 "    @Incoming(\"fruit-in\")\n"
@@ -1864,28 +1889,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1090
+#: upstream/_guides/kafka.adoc:1103
 msgid "To do this, we will need to setup JSON serialization with Jackson or JSON-B."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1092
+#: upstream/_guides/kafka.adoc:1105
 msgid "With JSON serialization correctly configured, you can also use `Publisher<Fruit>` and `Emitter<Fruit>`."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:1094
+#: upstream/_guides/kafka.adoc:1107
 #, no-wrap
 msgid "Serializing via Jackson"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1097
+#: upstream/_guides/kafka.adoc:1110
 msgid "First, you need to include the `quarkus-jackson` extension."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1104
+#: upstream/_guides/kafka.adoc:1117
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -1895,29 +1920,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1108
+#: upstream/_guides/kafka.adoc:1121
 msgid "There is an existing `ObjectMapperSerializer` that can be used to serialize all data objects via Jackson.  You may create an empty subclass if you want to use <<serialization-autodetection>>."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1111
+#: upstream/_guides/kafka.adoc:1124
 msgid "The corresponding deserializer class needs to be subclassed.  So, let's create a `FruitDeserializer` that extends the `ObjectMapperDeserializer`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1115
+#: upstream/_guides/kafka.adoc:1128
 #, no-wrap
 msgid "package com.acme.fruit.jackson;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1117
+#: upstream/_guides/kafka.adoc:1130 upstream/_guides/kafka.adoc:1711
+#: upstream/_guides/kafka.adoc:1797
 #, no-wrap
 msgid "import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1123
+#: upstream/_guides/kafka.adoc:1136 upstream/_guides/kafka.adoc:1717
+#: upstream/_guides/kafka.adoc:1803
 #, no-wrap
 msgid ""
 "public class FruitDeserializer extends ObjectMapperDeserializer<Fruit> {\n"
@@ -1928,12 +1955,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1126
+#: upstream/_guides/kafka.adoc:1139
 msgid "Finally, configure your channels to use the Jackson serializer and deserializer."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1133
+#: upstream/_guides/kafka.adoc:1146
 #, no-wrap
 msgid ""
 "# Configure the Kafka source (we read from it)\n"
@@ -1943,7 +1970,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1138
+#: upstream/_guides/kafka.adoc:1151
 #, no-wrap
 msgid ""
 "# Configure the Kafka sink (we write to it)\n"
@@ -1953,23 +1980,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1142
+#: upstream/_guides/kafka.adoc:1155
 msgid "Now, your Kafka messages will contain a Jackson serialized representation of your `Fruit` data object.  In this case, the `deserializer` configuration is not necessary as the <<serialization-autodetection>> is enabled by default."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:1144
+#: upstream/_guides/kafka.adoc:1157
 #, no-wrap
 msgid "Serializing via JSON-B"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1147
+#: upstream/_guides/kafka.adoc:1160
 msgid "First, you need to include the `quarkus-jsonb` extension."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1154
+#: upstream/_guides/kafka.adoc:1167
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -1979,29 +2006,29 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1158
+#: upstream/_guides/kafka.adoc:1171
 msgid "There is an existing `JsonbSerializer` that can be used to serialize all data objects via JSON-B.  You may create an empty subclass if you want to use <<serialization-autodetection>>."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1161
+#: upstream/_guides/kafka.adoc:1174
 msgid "The corresponding deserializer class needs to be subclassed.  So, let's create a `FruitDeserializer` that extends the generic `JsonbDeserializer`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1165
+#: upstream/_guides/kafka.adoc:1178
 #, no-wrap
 msgid "package com.acme.fruit.jsonb;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1167
+#: upstream/_guides/kafka.adoc:1180
 #, no-wrap
 msgid "import io.quarkus.kafka.client.serialization.JsonbDeserializer;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1173
+#: upstream/_guides/kafka.adoc:1186
 #, no-wrap
 msgid ""
 "public class FruitDeserializer extends JsonbDeserializer<Fruit> {\n"
@@ -2012,12 +2039,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1176
+#: upstream/_guides/kafka.adoc:1189
 msgid "Finally, configure your channels to use the JSON-B serializer and deserializer."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1183
+#: upstream/_guides/kafka.adoc:1196
 #, no-wrap
 msgid ""
 "# Configure the Kafka source (we read from it)\n"
@@ -2027,7 +2054,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1188
+#: upstream/_guides/kafka.adoc:1201
 #, no-wrap
 msgid ""
 "# Configure the Kafka sink (we write to it)\n"
@@ -2037,44 +2064,44 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1191
+#: upstream/_guides/kafka.adoc:1204
 msgid "Now, your Kafka messages will contain a JSON-B serialized representation of your `Fruit` data object."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1194
+#: upstream/_guides/kafka.adoc:1207
 msgid "If you don't want to create a deserializer for each data object, you can use the generic `io.vertx.kafka.client.serialization.JsonObjectDeserializer` that will deserialize to a `io.vertx.core.json.JsonObject`. The corresponding serializer can also be used: `io.vertx.kafka.client.serialization.JsonObjectSerializer`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:1195
+#: upstream/_guides/kafka.adoc:1208
 #, no-wrap
 msgid "Avro Serialization"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1198 upstream/_guides/kafka.adoc:1270
+#: upstream/_guides/kafka.adoc:1211 upstream/_guides/kafka.adoc:1283
 msgid "This is described in a dedicated guide: link:kafka-schema-registry-avro[Using Apache Kafka with Schema Registry and Avro]."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:1200
+#: upstream/_guides/kafka.adoc:1213
 #, no-wrap
 msgid "Serializer/deserializer autodetection"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1204
+#: upstream/_guides/kafka.adoc:1217
 msgid "When using SmallRye Reactive Messaging with Kafka, Quarkus can often automatically detect the correct serializer and deserializer class.  This autodetection is based on declarations of `@Incoming` and `@Outgoing` methods, as well as injected ``@Channel``s."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1206
+#: upstream/_guides/kafka.adoc:1219
 msgid "For example, if you declare"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1213
+#: upstream/_guides/kafka.adoc:1226
 #, no-wrap
 msgid ""
 "@Outgoing(\"generated-price\")\n"
@@ -2084,17 +2111,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1216
+#: upstream/_guides/kafka.adoc:1229
 msgid "and your configuration indicates that the `generated-price` channel uses the `smallrye-kafka` connector, then Quarkus will automatically set the `value.serializer` to Kafka's built-in `IntegerSerializer`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1218
+#: upstream/_guides/kafka.adoc:1231
 msgid "Similarly, if you declare"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1225
+#: upstream/_guides/kafka.adoc:1238
 #, no-wrap
 msgid ""
 "@Incoming(\"my-kafka-records\")\n"
@@ -2104,17 +2131,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1228
+#: upstream/_guides/kafka.adoc:1241
 msgid "and your configuration indicates that the `my-kafka-records` channel uses the `smallrye-kafka` connector, then Quarkus will automatically set the `key.deserializer` to Kafka's built-in `LongDeserializer`, as well as the `value.deserializer` to `ByteArrayDeserializer`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1230
+#: upstream/_guides/kafka.adoc:1243
 msgid "Finally, if you declare"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1236
+#: upstream/_guides/kafka.adoc:1249
 #, no-wrap
 msgid ""
 "@Inject\n"
@@ -2123,155 +2150,187 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1239
+#: upstream/_guides/kafka.adoc:1252
 msgid "and your configuration indicates that the `price-create` channel uses the `smallrye-kafka` connector, then Quarkus will automatically set the `value.serializer` to Kafka's built-in `DoubleSerializer`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1241
+#: upstream/_guides/kafka.adoc:1254
 msgid "The full set of types supported by the serializer/deserializer autodetection is:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1243
+#: upstream/_guides/kafka.adoc:1256
 msgid "`short` and `java.lang.Short`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1244
+#: upstream/_guides/kafka.adoc:1257
 msgid "`int` and `java.lang.Integer`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1245
+#: upstream/_guides/kafka.adoc:1258
 msgid "`long` and `java.lang.Long`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1246
+#: upstream/_guides/kafka.adoc:1259
 msgid "`float` and `java.lang.Float`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1247
+#: upstream/_guides/kafka.adoc:1260
 msgid "`double` and `java.lang.Double`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1248
+#: upstream/_guides/kafka.adoc:1261
 msgid "`byte[]`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1249
+#: upstream/_guides/kafka.adoc:1262
 msgid "`java.lang.String`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1250
+#: upstream/_guides/kafka.adoc:1263
 msgid "`java.util.UUID`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1251
+#: upstream/_guides/kafka.adoc:1264
 msgid "`java.nio.ByteBuffer`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1252
+#: upstream/_guides/kafka.adoc:1265
 msgid "`org.apache.kafka.common.utils.Bytes`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1253
+#: upstream/_guides/kafka.adoc:1266
 msgid "`io.vertx.core.buffer.Buffer`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1254
+#: upstream/_guides/kafka.adoc:1267
 msgid "`io.vertx.core.json.JsonObject`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1255
+#: upstream/_guides/kafka.adoc:1268
 msgid "`io.vertx.core.json.JsonArray`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1256
+#: upstream/_guides/kafka.adoc:1269
 msgid "classes generated from Avro schemas, as well as Avro `GenericRecord`, if Confluent or Apicurio Registry _serde_ is present"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1257
+#: upstream/_guides/kafka.adoc:1270
 msgid "see link:kafka-schema-registry-avro[Using Apache Kafka with Schema Registry and Avro] for more information about using Confluent or Apicurio Registry libraries"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1258
+#: upstream/_guides/kafka.adoc:1271
 msgid "classes for which a subclass of `ObjectMapperSerializer` / `ObjectMapperDeserializer` is present, as described in <<jackson-serialization>>"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1259
+#: upstream/_guides/kafka.adoc:1272
 msgid "it is technically not needed to subclass `ObjectMapperSerializer`, but in such case, autodetection isn't possible"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1260
+#: upstream/_guides/kafka.adoc:1273
 msgid "classes for which a subclass of `JsonbSerializer` / `JsonbDeserializer` is present, as described in <<jsonb-serialization>>"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1261
+#: upstream/_guides/kafka.adoc:1274
 msgid "it is technically not needed to subclass `JsonbSerializer`, but in such case, autodetection isn't possible"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1263
+#: upstream/_guides/kafka.adoc:1276
 msgid "If a serializer/deserializer is set by configuration, it won't be replaced by the autodetection."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1266
+#: upstream/_guides/kafka.adoc:1279
 msgid "In case you have any issues with serializer autodetection, you can switch it off completely by setting `quarkus.reactive-messaging.kafka.serializer-autodetection.enabled=false`.  If you find you need to do this, please file a bug in the link:https://github.com/quarkusio/quarkus/issues[Quarkus issue tracker] so we can fix whatever problem you have."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:1267
+#: upstream/_guides/kafka.adoc:1280
 #, no-wrap
 msgid "Using Schema Registry"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:1272
+#: upstream/_guides/kafka.adoc:1285
 #, no-wrap
 msgid "Health Checks"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1276
+#: upstream/_guides/kafka.adoc:1289
 msgid "Quarkus provides several health checks for Kafka.  These checks are used in combination with the `quarkus-smallrye-health` extension."
 msgstr ""
 
-#. type: Plain text
-#: upstream/_guides/kafka.adoc:1282
-msgid "When using the `quarkus-kafka-client` extension, you can enable _readiness_ health check by setting the `quarkus.kafka.health.enabled` property to `true` in your `application.properties`.  This check reports the status of the interaction with a _default_ Kafka broker (configured using `kafka.bootstrap.servers`).  That check requires an _admin connection_ with the Kafka broker.  This check is disabled by default.  If enabled, when you access the `/q/health/ready` endpoint of your application, you will have information about the connection validation status."
+#. type: Title ===
+#: upstream/_guides/kafka.adoc:1290
+#, no-wrap
+msgid "Kafka Broker Readiness Check"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1287
-msgid "When using Reactive Messaging and the Kafka connector, each configured channel (incoming or outgoing) provides a _liveness_ and _readiness_ check.  The _liveness_ check captures any unrecoverable failure happening during the communication with Kafka.  The _readiness_ check verifies that communication with Kafka is established.  For each channel, you can disable the checks using:"
+#: upstream/_guides/kafka.adoc:1295
+msgid "When using the `quarkus-kafka-client` extension, you can enable _readiness_ health check by setting the `quarkus.kafka.health.enabled` property to `true` in your `application.properties`.  This check reports the status of the interaction with a _default_ Kafka broker (configured using `kafka.bootstrap.servers`).  It requires an _admin connection_ with the Kafka broker, and it is disabled by default.  If enabled, when you access the `/q/health/ready` endpoint of your application, you will have information about the connection validation status."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_guides/kafka.adoc:1296
+#, no-wrap
+msgid "Kafka Reactive Messaging Health Checks"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1298
+msgid "When using Reactive Messaging and the Kafka connector, each configured channel (incoming or outgoing) provides _startup_, _liveness_ and _readiness_ checks."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1300
+msgid "The _startup_ check verifies that the communication with Kafka cluster is established."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1301
+msgid "The _liveness_ check captures any unrecoverable failure happening during the communication with Kafka."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1302
+msgid "The _readiness_ check verifies that the Kafka connector is ready to consume/produce messages to the configured Kafka topics."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1304
+msgid "For each channel, you can disable the checks using:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1291
+#: upstream/_guides/kafka.adoc:1308
 #, no-wrap
 msgid "# Disable both liveness and readiness checks with `health-enabled=false`:\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1296
+#: upstream/_guides/kafka.adoc:1313
 #, no-wrap
 msgid ""
 "# Incoming channel (receiving records form Kafka)\n"
@@ -2281,13 +2340,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1298
+#: upstream/_guides/kafka.adoc:1315
 #, no-wrap
 msgid "# Disable only the readiness check with `health-readiness-enabled=false`:\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1301
+#: upstream/_guides/kafka.adoc:1318
 #, no-wrap
 msgid ""
 "mp.messaging.incoming.your-channel.health-readiness-enabled=false\n"
@@ -2295,81 +2354,86 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1305
+#: upstream/_guides/kafka.adoc:1322
 msgid "You can configure the `bootstrap.servers` for each channel using `mp.messaging.incoming|outgoing.$channel.bootstrap.servers` property.  Default is `kafka.bootstrap.servers`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1309
-msgid "Reactive Messaging readiness check offers two strategies.  The default strategy verifies that an active connection is established with the broker.  This approach is not intrusive as it's based on built-in metrics."
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/kafka.adoc:1312
-msgid "Using the `health-readiness-topic-verification=true` attribute, you can also check the topics used by the application exist in the broker.  Note that to achieve this, an _admin connection_ is required."
-msgstr ""
-
-#. type: Title ==
-#: upstream/_guides/kafka.adoc:1313
-#, no-wrap
-msgid "Kafka Streams"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/kafka.adoc:1316
-msgid "This is described in a dedicated guide: link:kafka-streams[Using Apache Kafka Streams]."
-msgstr ""
-
-#. type: Title ==
-#: upstream/_guides/kafka.adoc:1317
-#, no-wrap
-msgid "Using Snappy for message compression"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/kafka.adoc:1320
-msgid "On _outgoing_ channels, you can enable Snappy compression by setting the `compression.type` attribute to `snappy`:"
-msgstr ""
-
-#. type: delimited block -
-#: upstream/_guides/kafka.adoc:1324
-#, no-wrap
-msgid "mp.messaging.outgoing.fruit-out.compression.type=snappy\n"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/kafka.adoc:1328
-msgid "In JVM mode, it will work out of the box.  However, to compile your application to a native executable, you need to:"
+#: upstream/_guides/kafka.adoc:1326
+msgid "Reactive Messaging _startup_ and _readiness_ checks offer two strategies.  The default strategy verifies that an active connection is established with the broker.  This approach is not intrusive as it's based on built-in Kafka client metrics."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1330
-msgid "Uses GraalVM 21.+"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/kafka.adoc:1331
-msgid "Add `quarkus.kafka.snappy.enabled=true` to your `application.properties`"
+msgid "Using the `health-topic-verification-enabled=true` attribute, _startup_ probe uses an _admin client_ to check for the list of topics.  Whereas the _readiness_ probe for an incoming channel checks that at least one partition is assigned for consumption, and for an outgoing channel checks that the topic used by the producer exist in the broker."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1333
-msgid "In native mode, Snappy is disabled by default as the use of Snappy requires embedding a native library and unpacking it when the application starts."
+msgid "Note that to achieve this, an _admin connection_ is required.  You can adjust the timeout for topic verification calls to the broker using the `health-topic-verification-timeout` configuration."
 msgstr ""
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:1334
 #, no-wrap
-msgid "Authentication with OAuth"
+msgid "Kafka Streams"
 msgstr ""
 
 #. type: Plain text
+#: upstream/_guides/kafka.adoc:1337
+msgid "This is described in a dedicated guide: link:kafka-streams[Using Apache Kafka Streams]."
+msgstr ""
+
+#. type: Title ==
 #: upstream/_guides/kafka.adoc:1338
-msgid "If your Kafka broker uses OAuth as authentication mechanism, you need to configure the Kafka consumer to enable this authentication process.  First, add the following dependency to your application:"
+#, no-wrap
+msgid "Using Snappy for message compression"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1341
+msgid "On _outgoing_ channels, you can enable Snappy compression by setting the `compression.type` attribute to `snappy`:"
 msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:1345
+#, no-wrap
+msgid "mp.messaging.outgoing.fruit-out.compression.type=snappy\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1349
+msgid "In JVM mode, it will work out of the box.  However, to compile your application to a native executable, you need to:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1351
+msgid "Uses GraalVM 21.+"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1352
+msgid "Add `quarkus.kafka.snappy.enabled=true` to your `application.properties`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1354
+msgid "In native mode, Snappy is disabled by default as the use of Snappy requires embedding a native library and unpacking it when the application starts."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/kafka.adoc:1355
+#, no-wrap
+msgid "Authentication with OAuth"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1359
+msgid "If your Kafka broker uses OAuth as authentication mechanism, you need to configure the Kafka consumer to enable this authentication process.  First, add the following dependency to your application:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1366
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -2379,12 +2443,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1349
+#: upstream/_guides/kafka.adoc:1370
 msgid "This dependency provides the callback handler required to handle the OAuth workflow.  Then, in the `application.properties`, add:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1359
+#: upstream/_guides/kafka.adoc:1380
 #, no-wrap
 msgid ""
 "mp.messaging.connector.smallrye-kafka.security.protocol=SASL_PLAINTEXT\n"
@@ -2396,45 +2460,51 @@ msgid ""
 "mp.messaging.connector.smallrye-kafka.sasl.login.callback.handler.class=io.strimzi.kafka.oauth.client.JaasClientOauthLoginCallbackHandler\n"
 msgstr ""
 
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1382
+#, no-wrap
+msgid "quarkus.ssl.native=true\n"
+msgstr ""
+
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1362
+#: upstream/_guides/kafka.adoc:1385
 msgid "Update the `oauth.client.id`, `oauth.client.secret` and `oauth.token.endpoint.uri` values."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1364
-msgid "OAuth authentication works for both JVM and native modes."
+#: upstream/_guides/kafka.adoc:1387
+msgid "OAuth authentication works for both JVM and native modes. Since SSL in not enabled by default in native mode, `quarkus.ssl.native=true` must be added to support JaasClientOauthLoginCallbackHandler, which uses SSL. (See the xref:native-and-ssl.adoc[Using SSL with Native Executables] guide for more details.)"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:1365
+#: upstream/_guides/kafka.adoc:1388
 #, no-wrap
 msgid "Testing a Kafka application"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:1367
+#: upstream/_guides/kafka.adoc:1390
 #, no-wrap
 msgid "Testing without a broker"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1371
+#: upstream/_guides/kafka.adoc:1394
 msgid "It can be useful to test the application without having to start a Kafka broker.  To achieve this, you can _switch_ the channels managed by the Kafka connector to _in-memory_."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1373
+#: upstream/_guides/kafka.adoc:1396
 msgid "This approach only works for JVM tests. It cannot be used for native tests (because they do not support injection)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1375
+#: upstream/_guides/kafka.adoc:1398
 msgid "First, add the following dependency to your application:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1383
+#: upstream/_guides/kafka.adoc:1406
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -2445,18 +2515,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1386
+#: upstream/_guides/kafka.adoc:1409
 msgid "Then, create a Quarkus Test Resource as follows:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1390
+#: upstream/_guides/kafka.adoc:1413
 #, no-wrap
 msgid "public class KafkaTestResourceLifecycleManager implements QuarkusTestResourceLifecycleManager {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1400
+#: upstream/_guides/kafka.adoc:1423
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -2471,7 +2541,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1406
+#: upstream/_guides/kafka.adoc:1429
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -2482,32 +2552,32 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1408
+#: upstream/_guides/kafka.adoc:1431
 msgid "Switch the incoming channel \"orders\" (expecting messages from Kafka) to in-memory."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1409
+#: upstream/_guides/kafka.adoc:1432
 msgid "Switch the outgoing channel \"queue\" (writing messages to Kafka) to in-memory."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1410
+#: upstream/_guides/kafka.adoc:1433
 msgid "Builds and returns a `Map` containing all the properties required to configure the application to use in-memory channels."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1411
+#: upstream/_guides/kafka.adoc:1434
 msgid "When the test stops, clear the `InMemoryConnector` (discard all the received and sent messages)"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1413
+#: upstream/_guides/kafka.adoc:1436
 msgid "Create a Quarkus Test using the test resource created above:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1419
+#: upstream/_guides/kafka.adoc:1442
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -2516,7 +2586,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1422
+#: upstream/_guides/kafka.adoc:1445
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -2524,7 +2594,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1427
+#: upstream/_guides/kafka.adoc:1450
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -2534,7 +2604,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1432
+#: upstream/_guides/kafka.adoc:1455
 #, no-wrap
 msgid ""
 "        Order order = new Order();\n"
@@ -2544,19 +2614,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1434
+#: upstream/_guides/kafka.adoc:1457
 #, no-wrap
 msgid "        orders.send(order);  // <4>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1436
+#: upstream/_guides/kafka.adoc:1459
 #, no-wrap
 msgid "        await().<List<? extends Message<Beverage>>>until(queue::received, t -> t.size() == 1); // <5>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1443
+#: upstream/_guides/kafka.adoc:1466
 #, no-wrap
 msgid ""
 "        Beverage queuedBeverage = queue.received().get(0).getPayload();\n"
@@ -2568,55 +2638,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1447
+#: upstream/_guides/kafka.adoc:1470
 msgid "Inject the in-memory connector in your test class."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1448
+#: upstream/_guides/kafka.adoc:1471
 msgid "Retrieve the incoming channel (`orders`) - the channel must have been switched to in-memory in the test resource."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1449
+#: upstream/_guides/kafka.adoc:1472
 msgid "Retrieve the outgoing channel (`queue`) - the channel must have been switched to in-memory in the test resource."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1450
+#: upstream/_guides/kafka.adoc:1473
 msgid "Use the `send` method to send a message to the `orders` channel. So, the application will process this message."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1451
+#: upstream/_guides/kafka.adoc:1474
 msgid "Use the `received` method to check the messages produced by the application."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:1452
+#: upstream/_guides/kafka.adoc:1475
 #, no-wrap
 msgid "Starting Kafka in a test resource"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1456
+#: upstream/_guides/kafka.adoc:1479
 msgid "Alternatively, you can start a Kafka broker in a test resource.  The following snippet shows a test resource starting a Kafka broker using https://www.testcontainers.org/modules/kafka/[Testcontainers]:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1460
+#: upstream/_guides/kafka.adoc:1483
 #, no-wrap
 msgid "public class KafkaResource implements QuarkusTestResourceLifecycleManager {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1462
+#: upstream/_guides/kafka.adoc:1485
 #, no-wrap
 msgid "    private final KafkaContainer kafka = new KafkaContainer();\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1468
+#: upstream/_guides/kafka.adoc:1491
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -2627,7 +2697,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1474
+#: upstream/_guides/kafka.adoc:1497
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -2638,1036 +2708,740 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1476
+#: upstream/_guides/kafka.adoc:1499
 msgid "Configure the Kafka bootstrap location, so the application connects to this broker."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:1480
+#: upstream/_guides/kafka.adoc:1503
 #, no-wrap
 msgid "Kubernetes Service Bindings"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1485
+#: upstream/_guides/kafka.adoc:1508
 msgid "Quarkus Kafka extension supports link:deploying-to-kubernetes[Service Binding Specification for Kubernetes].  You can enable this by adding the `quarkus-kubernetes-service-binding` extension to your application."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1487
+#: upstream/_guides/kafka.adoc:1510
 msgid "When running in appropriately configured Kubernetes clusters, Kafka extension will pull its Kafka broker connection configuration from the service binding available inside the cluster, without the need for user configuration."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:1489
+#: upstream/_guides/kafka.adoc:1511
+#, no-wrap
+msgid "Execution model"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1516
+msgid "Reactive Messaging invokes user's methods on an I/O thread.  Thus, by default, the methods must not block.  As described in <<blocking-processing>>, you need to add the `@Blocking` annotation on the method if this method will block the caller thread."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1518
+msgid "See the xref:quarkus-reactive-architecture.adoc[Quarkus Reactive Architecture documentation] for further details on this topic."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/kafka.adoc:1520
 #, no-wrap
 msgid "Configuration Reference"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1493
+#: upstream/_guides/kafka.adoc:1524
 msgid "More details about the SmallRye Reactive Messaging configuration can be found in the https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/3.6/kafka/kafka.html[SmallRye Reactive Messaging - Kafka Connector Documentation].  The most important attributes are listed in the tables below:"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:1494
+#: upstream/_guides/kafka.adoc:1525
 #, no-wrap
 msgid "Incoming channel configuration (polling from Kafka)"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1497 upstream/_guides/kafka.adoc:1651
+#: upstream/_guides/kafka.adoc:1528 upstream/_guides/kafka.adoc:1546
 msgid "The following attributes are configured using:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1501
+#: upstream/_guides/kafka.adoc:1532
 #, no-wrap
 msgid "mp.messaging.incoming.your-channel-name.attribute=value\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1504 upstream/_guides/kafka.adoc:1659
+#: upstream/_guides/kafka.adoc:1535 upstream/_guides/kafka.adoc:1554
 msgid "Some properties have aliases which can be configured globally:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1508 upstream/_guides/kafka.adoc:1663
+#: upstream/_guides/kafka.adoc:1539 upstream/_guides/kafka.adoc:1558
 #, no-wrap
 msgid "kafka.bootstrap.servers=...\n"
 msgstr ""
 
-#. type: Block title
-#: upstream/_guides/kafka.adoc:1510
-#, no-wrap
-msgid "Incoming Attributes of the 'smallrye-kafka' connector"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1513 upstream/_guides/kafka.adoc:1668
-#, no-wrap
-msgid "Attribute (_alias_)"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1513 upstream/_guides/kafka.adoc:1668
-#, no-wrap
-msgid "Description"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1513 upstream/_guides/kafka.adoc:1668
-#, no-wrap
-msgid "Mandatory"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1515 upstream/_guides/kafka.adoc:1670
-#, no-wrap
-msgid "Default"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1517 upstream/_guides/kafka.adoc:1676
-#, no-wrap
-msgid ""
-"*bootstrap.servers*\n"
-"\n"
-"_(kafka.bootstrap.servers)_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1519 upstream/_guides/kafka.adoc:1678
-#, no-wrap
-msgid ""
-"A comma-separated list of host:port to use for establishing the initial connection to the Kafka cluster.\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1519 upstream/_guides/kafka.adoc:1523
-#: upstream/_guides/kafka.adoc:1527 upstream/_guides/kafka.adoc:1531
-#: upstream/_guides/kafka.adoc:1535 upstream/_guides/kafka.adoc:1539
-#: upstream/_guides/kafka.adoc:1543 upstream/_guides/kafka.adoc:1547
-#: upstream/_guides/kafka.adoc:1551 upstream/_guides/kafka.adoc:1555
-#: upstream/_guides/kafka.adoc:1559 upstream/_guides/kafka.adoc:1567
-#: upstream/_guides/kafka.adoc:1576 upstream/_guides/kafka.adoc:1580
-#: upstream/_guides/kafka.adoc:1584 upstream/_guides/kafka.adoc:1588
-#: upstream/_guides/kafka.adoc:1592 upstream/_guides/kafka.adoc:1596
-#: upstream/_guides/kafka.adoc:1600 upstream/_guides/kafka.adoc:1604
-#: upstream/_guides/kafka.adoc:1608 upstream/_guides/kafka.adoc:1612
-#: upstream/_guides/kafka.adoc:1616 upstream/_guides/kafka.adoc:1620
-#: upstream/_guides/kafka.adoc:1624 upstream/_guides/kafka.adoc:1628
-#: upstream/_guides/kafka.adoc:1632 upstream/_guides/kafka.adoc:1636
-#: upstream/_guides/kafka.adoc:1640 upstream/_guides/kafka.adoc:1644
-#: upstream/_guides/kafka.adoc:1672 upstream/_guides/kafka.adoc:1678
-#: upstream/_guides/kafka.adoc:1682 upstream/_guides/kafka.adoc:1686
-#: upstream/_guides/kafka.adoc:1690 upstream/_guides/kafka.adoc:1696
-#: upstream/_guides/kafka.adoc:1702 upstream/_guides/kafka.adoc:1708
-#: upstream/_guides/kafka.adoc:1712 upstream/_guides/kafka.adoc:1718
-#: upstream/_guides/kafka.adoc:1724 upstream/_guides/kafka.adoc:1730
-#: upstream/_guides/kafka.adoc:1734 upstream/_guides/kafka.adoc:1738
-#: upstream/_guides/kafka.adoc:1742 upstream/_guides/kafka.adoc:1746
-#: upstream/_guides/kafka.adoc:1750 upstream/_guides/kafka.adoc:1754
-#: upstream/_guides/kafka.adoc:1758 upstream/_guides/kafka.adoc:1762
-#: upstream/_guides/kafka.adoc:1766 upstream/_guides/kafka.adoc:1770
-#: upstream/_guides/kafka.adoc:1774 upstream/_guides/kafka.adoc:1778
-#: upstream/_guides/kafka.adoc:1786
-#, no-wrap
-msgid "false"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1521 upstream/_guides/kafka.adoc:1680
-#, no-wrap
-msgid "`localhost:9092`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1521 upstream/_guides/kafka.adoc:1772
-#, no-wrap
-msgid "*topic*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1523 upstream/_guides/kafka.adoc:1774
-#, no-wrap
-msgid ""
-"The consumed / populated Kafka topic. If neither this property nor the `topics` properties are set, the channel name is used\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1525 upstream/_guides/kafka.adoc:1732
-#, no-wrap
-msgid "*health-enabled*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1527 upstream/_guides/kafka.adoc:1734
-#, no-wrap
-msgid ""
-"Whether health reporting is enabled (default) or disabled\n"
-"\n"
-"Type: _boolean_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1529 upstream/_guides/kafka.adoc:1533
-#: upstream/_guides/kafka.adoc:1545 upstream/_guides/kafka.adoc:1549
-#: upstream/_guides/kafka.adoc:1586 upstream/_guides/kafka.adoc:1646
-#: upstream/_guides/kafka.adoc:1692 upstream/_guides/kafka.adoc:1710
-#: upstream/_guides/kafka.adoc:1736 upstream/_guides/kafka.adoc:1740
-#: upstream/_guides/kafka.adoc:1780 upstream/_guides/kafka.adoc:1788
-#, no-wrap
-msgid "`true`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1529 upstream/_guides/kafka.adoc:1736
-#, no-wrap
-msgid "*health-readiness-enabled*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1531 upstream/_guides/kafka.adoc:1738
-#, no-wrap
-msgid ""
-"Whether readiness health reporting is enabled (default) or disabled\n"
-"\n"
-"Type: _boolean_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1533 upstream/_guides/kafka.adoc:1744
-#, no-wrap
-msgid "*health-readiness-topic-verification*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1535 upstream/_guides/kafka.adoc:1746
-#, no-wrap
-msgid ""
-"Whether the readiness check should verify that topics exist on the broker. Default to false. Enabling it requires an admin connection.\n"
-"\n"
-"Type: _boolean_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1537 upstream/_guides/kafka.adoc:1557
-#: upstream/_guides/kafka.adoc:1582 upstream/_guides/kafka.adoc:1598
-#: upstream/_guides/kafka.adoc:1748 upstream/_guides/kafka.adoc:1764
-#, no-wrap
-msgid "`false`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1537 upstream/_guides/kafka.adoc:1740
-#, no-wrap
-msgid "*health-readiness-timeout*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1539 upstream/_guides/kafka.adoc:1742
-#, no-wrap
-msgid ""
-"During the readiness health check, the connector connects to the broker and retrieves the list of topics. This attribute specifies the maximum duration (in ms) for the retrieval. If exceeded, the channel is considered not-ready.\n"
-"\n"
-"Type: _long_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1541 upstream/_guides/kafka.adoc:1744
-#, no-wrap
-msgid "`2000`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1541 upstream/_guides/kafka.adoc:1776
-#, no-wrap
-msgid "*tracing-enabled*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1543 upstream/_guides/kafka.adoc:1778
-#, no-wrap
-msgid ""
-"Whether tracing is enabled (default) or disabled\n"
-"\n"
-"Type: _boolean_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1545 upstream/_guides/kafka.adoc:1688
-#, no-wrap
-msgid "*cloud-events*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1547 upstream/_guides/kafka.adoc:1690
-#, no-wrap
-msgid ""
-"Enables (default) or disables the Cloud Event support. If enabled on an _incoming_ channel, the connector analyzes the incoming records and try to create Cloud Event metadata. If enabled on an _outgoing_, the connector sends the outgoing messages as Cloud Event if the message includes Cloud Event Metadata.\n"
-"\n"
-"Type: _boolean_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1549
-#, no-wrap
-msgid "*topics*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1551
-#, no-wrap
-msgid ""
-"A comma-separating list of topics to be consumed. Cannot be used with the `topic` or `pattern` properties\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1553
-#, no-wrap
-msgid "*pattern*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1555
-#, no-wrap
-msgid ""
-"Indicate that the `topic` property is a regular expression. Must be used with the `topic` property. Cannot be used with the `topics` property\n"
-"\n"
-"Type: _boolean_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1557
-#, no-wrap
-msgid "*key.deserializer*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1559
-#, no-wrap
-msgid ""
-"The deserializer classname used to deserialize the record's key\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1561
-#, no-wrap
-msgid "`org.apache.kafka.common.serialization.StringDeserializer`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1561
-#, no-wrap
-msgid "*value.deserializer*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1563
-#, no-wrap
-msgid ""
-"The deserializer classname used to deserialize the record's value\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1563 upstream/_guides/kafka.adoc:1782
-#, no-wrap
-msgid "true"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1565
-#, no-wrap
-msgid "*fetch.min.bytes*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1567
-#, no-wrap
-msgid ""
-"The minimum amount of data the server should return for a fetch request. The default setting of 1 byte means that fetch requests are answered as soon as a single byte of data is available or the fetch request times out waiting for data to arrive.\n"
-"\n"
-"Type: _int_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1569 upstream/_guides/kafka.adoc:1630
-#: upstream/_guides/kafka.adoc:1674
-#, no-wrap
-msgid "`1`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1569
-#, no-wrap
-msgid "*group.id*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1576
-#, no-wrap
-msgid ""
-"A unique string that identifies the consumer group the application belongs to.\n"
-"\n"
-"If not set, defaults to the application name as set by the `quarkus.application.name` configuration property.\n"
-"\n"
-"If that is not set either, a unique, generated id is used.\n"
-"It is recommended to always define a `group.id`, the automatic generation is only a convenient feature for development.\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1578
-#, no-wrap
-msgid "*enable.auto.commit*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1580
-#, no-wrap
-msgid ""
-"If enabled, consumer's offset will be periodically committed in the background by the underlying Kafka client, ignoring the actual processing outcome of the records. It is recommended to NOT enable this setting and let Reactive Messaging handles the commit.\n"
-"\n"
-"Type: _boolean_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1582
-#, no-wrap
-msgid "*retry*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1584
-#, no-wrap
-msgid ""
-"Whether or not the connection to the broker is re-attempted in case of failure\n"
-"\n"
-"Type: _boolean_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1586
-#, no-wrap
-msgid "*retry-attempts*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1588
-#, no-wrap
-msgid ""
-"The maximum number of reconnection before failing. -1 means infinite retry\n"
-"\n"
-"Type: _int_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1590 upstream/_guides/kafka.adoc:1768
-#, no-wrap
-msgid "`-1`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1590
-#, no-wrap
-msgid "*retry-max-wait*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1592
-#, no-wrap
-msgid ""
-"The max delay (in seconds) between 2 reconnects\n"
-"\n"
-"Type: _int_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1594
-#, no-wrap
-msgid "`30`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1594
-#, no-wrap
-msgid "*broadcast*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1596
-#, no-wrap
-msgid ""
-"Whether the Kafka records should be dispatched to multiple consumer\n"
-"\n"
-"Type: _boolean_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1598
-#, no-wrap
-msgid "*auto.offset.reset*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1600
-#, no-wrap
-msgid ""
-"What to do when there is no initial offset in Kafka.Accepted values are earliest, latest and none\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1602
-#, no-wrap
-msgid "`latest`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1602
-#, no-wrap
-msgid "*failure-strategy*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1604
-#, no-wrap
-msgid ""
-"Specify the failure strategy to apply when a message produced from a record is acknowledged negatively (nack). Values can be `fail` (default), `ignore`, or `dead-letter-queue`\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1606
-#, no-wrap
-msgid "`fail`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1606
-#, no-wrap
-msgid "*commit-strategy*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1608
-#, no-wrap
-msgid ""
-"Specify the commit strategy to apply when a message produced from a record is acknowledged. Values can be `latest`, `ignore` or `throttled`. If `enable.auto.commit` is true then the default is `ignore` otherwise it is `throttled`\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1610
-#, no-wrap
-msgid "*throttled.unprocessed-record-max-age.ms*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1612
-#, no-wrap
-msgid ""
-"While using the `throttled` commit-strategy, specify the max age in milliseconds that an unprocessed message can be before the connector is marked as unhealthy.\n"
-"\n"
-"Type: _int_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1614
-#, no-wrap
-msgid "`60000`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1614
-#, no-wrap
-msgid "*dead-letter-queue.topic*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1616
-#, no-wrap
-msgid ""
-"When the `failure-strategy` is set to `dead-letter-queue` indicates on which topic the record is sent. Defaults is `dead-letter-topic-$channel`\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1618
-#, no-wrap
-msgid "*dead-letter-queue.key.serializer*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1620
-#, no-wrap
-msgid ""
-"When the `failure-strategy` is set to `dead-letter-queue` indicates the key serializer to use. If not set the serializer associated to the key deserializer is used\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1622
-#, no-wrap
-msgid "*dead-letter-queue.value.serializer*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1624
-#, no-wrap
-msgid ""
-"When the `failure-strategy` is set to `dead-letter-queue` indicates the value serializer to use. If not set the serializer associated to the value deserializer is used\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1626
-#, no-wrap
-msgid "*partitions*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1628
-#, no-wrap
-msgid ""
-"The number of partitions to be consumed concurrently. The connector creates the specified amount of Kafka consumers. It should match the number of partition of the targeted topic\n"
-"\n"
-"Type: _int_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1630
-#, no-wrap
-msgid "*consumer-rebalance-listener.name*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1632
-#, no-wrap
-msgid ""
-"The name set in `javax.inject.Named` of a bean that implements `io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener`. If set, this rebalance listener is applied to the consumer.\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1634
-#, no-wrap
-msgid "*key-deserialization-failure-handler*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1636
-#, no-wrap
-msgid ""
-"The name set in `javax.inject.Named` of a bean that implements `io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler`. If set, deserialization failure happening when deserializing keys are delegated to this handler which may provide a fallback value.\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1638
-#, no-wrap
-msgid "*value-deserialization-failure-handler*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1640
-#, no-wrap
-msgid ""
-"The name set in `javax.inject.Named` of a bean that implements `io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler`. If set, deserialization failure happening when deserializing values are delegated to this handler which may provide a fallback value.\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1642
-#, no-wrap
-msgid "*graceful-shutdown*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1644
-#, no-wrap
-msgid ""
-"Whether or not a graceful shutdown should be attempted when the application terminates.\n"
-"\n"
-"Type: _boolean_"
-msgstr ""
-
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:1648
+#: upstream/_guides/kafka.adoc:1543
 #, no-wrap
 msgid "Outgoing channel configuration (writing to Kafka)"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1656
+#: upstream/_guides/kafka.adoc:1551
 #, no-wrap
 msgid "mp.messaging.outgoing.your-channel-name.attribute=value\n"
 msgstr ""
 
-#. type: Block title
-#: upstream/_guides/kafka.adoc:1665
+#. type: Title ==
+#: upstream/_guides/kafka.adoc:1562
 #, no-wrap
-msgid "Outgoing Attributes of the 'smallrye-kafka' connector"
+msgid "Integrating with Kafka - Common patterns"
 msgstr ""
 
-#. type: Table
-#: upstream/_guides/kafka.adoc:1670
+#. type: Title ===
+#: upstream/_guides/kafka.adoc:1564
 #, no-wrap
-msgid "*acks*"
+msgid "Writing to Kafka from an HTTP endpoint"
 msgstr ""
 
-#. type: Table
-#: upstream/_guides/kafka.adoc:1672
-#, no-wrap
-msgid ""
-"The number of acknowledgments the producer requires the leader to have received before considering a request complete. This controls the durability of records that are sent. Accepted values are: 0, 1, all\n"
-"\n"
-"Type: _string_"
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1567
+msgid "To send messages to Kafka from an HTTP endpoint, inject an `Emitter` (or a `MutinyEmitter`) in your endpoint:"
 msgstr ""
 
-#. type: Table
-#: upstream/_guides/kafka.adoc:1680
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1571 upstream/_guides/kafka.adoc:1619
+#: upstream/_guides/kafka.adoc:1660 upstream/_guides/kafka.adoc:1678
+#: upstream/_guides/kafka.adoc:1709 upstream/_guides/kafka.adoc:1741
+#: upstream/_guides/kafka.adoc:1760 upstream/_guides/kafka.adoc:1795
+#: upstream/_guides/kafka.adoc:1838 upstream/_guides/kafka.adoc:1879
 #, no-wrap
-msgid "*buffer.memory*"
+msgid "package org.acme;\n"
 msgstr ""
 
-#. type: Table
-#: upstream/_guides/kafka.adoc:1682
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1573 upstream/_guides/kafka.adoc:1621
+#: upstream/_guides/kafka.adoc:1840
 #, no-wrap
-msgid ""
-"The total bytes of memory the producer can use to buffer records waiting to be sent to the server.\n"
-"\n"
-"Type: _long_"
+msgid "import java.util.concurrent.CompletionStage;\n"
 msgstr ""
 
-#. type: Table
-#: upstream/_guides/kafka.adoc:1684
-#, no-wrap
-msgid "`33554432`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1684
-#, no-wrap
-msgid "*close-timeout*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1686
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1578 upstream/_guides/kafka.adoc:1626
 #, no-wrap
 msgid ""
-"The amount of milliseconds waiting for a graceful shutdown of the Kafka producer\n"
-"\n"
-"Type: _int_"
+"import javax.ws.rs.POST;\n"
+"import javax.ws.rs.Path;\n"
+"import javax.ws.rs.Produces;\n"
+"import javax.ws.rs.core.MediaType;\n"
 msgstr ""
 
-#. type: Table
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1584 upstream/_guides/kafka.adoc:1634
+#: upstream/_guides/kafka.adoc:1850
+#, no-wrap
+msgid ""
+"@Path(\"/\")\n"
+"public class ResourceSendingToKafka {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1586
+#, no-wrap
+msgid "    @Channel(\"kafka\") Emitter<String> emitter;          // <1>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1593
+#, no-wrap
+msgid ""
+"    @POST\n"
+"    @Produces(MediaType.TEXT_PLAIN)\n"
+"    public CompletionStage<Void> send(String payload) { // <2>\n"
+"        return emitter.send(payload);                   // <3>\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1595
+msgid "Inject an `Emitter<String>`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1596
+msgid "The HTTP method receives the payload and returns a `CompletionStage` completed when the message is written to Kafka"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1597
+msgid "Send the message to Kafka, the `send` method returns a `CompletionStage`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1600
+msgid "The endpoint sends the passed payload (from a `POST` HTTP request) to the emitter.  The emitter's channel is mapped to a Kafka topic in the `application.properties` file:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1605
+#, no-wrap
+msgid ""
+"mp.messaging.outgoing.kafka.connector=smallrye-kafka\n"
+"mp.messaging.outgoing.kafka.topic=my-topic\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1611
+msgid "The endpoint returns a `CompletionStage` indicating the asynchronous nature of the method.  The `emitter.send` method returns a `CompletionStage<Void>` .  The returned future is completed when the message has been written to Kafka.  If the writing fails, the returned `CompletionStage` is completed exceptionally."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1613
+msgid "If the endpoint does not return a `CompletionStage`, the HTTP response may be written before the message is sent to Kafka, and so failures won't be reported to the user."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1615
+msgid "If you need to send a Kafka record, use:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1631
+#, no-wrap
+msgid "import io.smallrye.reactive.messaging.kafka.Record;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1636
+#, no-wrap
+msgid "    @Channel(\"kafka\") Emitter<Record<String,String>> emitter;  // <1>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1644
+#, no-wrap
+msgid ""
+"    @POST\n"
+"    @Produces(MediaType.TEXT_PLAIN)\n"
+"    public CompletionStage<Void> send(String payload) {\n"
+"        return emitter.send(Record.of(\"my-key\", payload));    // <2>\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1646
+msgid "Note the usage of an `Emitter<Record<K, V>>`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1647
+msgid "Create the record using `Record.of(k, v)`"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_guides/kafka.adoc:1648
+#, no-wrap
+msgid "Persisting Kafka messages with Hibernate with Panache"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1651
+msgid "To persist objects received from Kafka into a database, you can use Hibernate with Panache."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1653
+msgid "If you use Hibernate Reactive, look at <<persisting-kafka-messages-with-hibernate-reactive>>."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1656 upstream/_guides/kafka.adoc:1737
+msgid "Let's imagine you receive `Fruit` objects.  For simplicity purposes, our `Fruit` class is pretty simple:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1662 upstream/_guides/kafka.adoc:1743
+#, no-wrap
+msgid "import javax.persistence.Entity;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1664
+#, no-wrap
+msgid "import io.quarkus.hibernate.orm.panache.PanacheEntity;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1667 upstream/_guides/kafka.adoc:1748
+#, no-wrap
+msgid ""
+"@Entity\n"
+"public class Fruit extends PanacheEntity {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1669 upstream/_guides/kafka.adoc:1750
+#, no-wrap
+msgid "    public String name;\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1674 upstream/_guides/kafka.adoc:1756
+msgid "To consume `Fruit` instances stored on a Kafka topic, and persist them into a database, you can use the following approach:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1685
+#, no-wrap
+msgid "import io.smallrye.common.annotation.Blocking;\n"
+msgstr ""
+
+#. type: delimited block -
 #: upstream/_guides/kafka.adoc:1688
 #, no-wrap
-msgid "`10000`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1694
-#, no-wrap
 msgid ""
-"*cloud-events-data-content-type*\n"
-"\n"
-"_(cloud-events-default-data-content-type)_"
+"@ApplicationScoped\n"
+"public class FruitConsumer {\n"
 msgstr ""
 
-#. type: Table
+#. type: delimited block -
 #: upstream/_guides/kafka.adoc:1696
 #, no-wrap
 msgid ""
-"Configure the default `datacontenttype` attribute of the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `datacontenttype` attribute itself\n"
-"\n"
-"Type: _string_"
+"    @Incoming(\"fruits\")                                     // <1>\n"
+"    @Transactional                                          // <2>\n"
+"    @Blocking                                               // <3>\n"
+"    public void persistFruits(Fruit fruit) {                // <4>\n"
+"        fruit.persist();                                    // <5>\n"
+"    }\n"
+"}\n"
 msgstr ""
 
-#. type: Table
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1698
+msgid "Configuring the incoming channel. This channel reads from Kafka."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1699
+msgid "As we are writing in a database, we must be in a transaction. This annotation starts a new transaction and commits it when the method returns."
+msgstr ""
+
+#. type: Plain text
 #: upstream/_guides/kafka.adoc:1700
-#, no-wrap
-msgid ""
-"*cloud-events-data-schema*\n"
-"\n"
-"_(cloud-events-default-data-schema)_"
+msgid "Writing to a database using classic Hibernate is blocking. So, you must tell to Quarkus that the method must be called on a worker thread you can block (and not an I/O thread)."
 msgstr ""
 
-#. type: Table
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1701
+msgid "The method receives each Fruit. Note that you would need a deserializer to reconstruct the Fruit instances from the Kafka records."
+msgstr ""
+
+#. type: Plain text
 #: upstream/_guides/kafka.adoc:1702
+msgid "Persist the received `fruit` object."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1705
+msgid "As mentioned in <4>, you need a deserializer that can create a `Fruit` from the record.  This can be done using a Jackson deserializer:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1720 upstream/_guides/kafka.adoc:1806
+msgid "The associated configuration would be:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1725 upstream/_guides/kafka.adoc:1811
 #, no-wrap
 msgid ""
-"Configure the default `dataschema` attribute of the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `dataschema` attribute itself\n"
-"\n"
-"Type: _string_"
+"mp.messaging.incoming.fruits.connector=smallrye-kafka\n"
+"mp.messaging.incoming.fruits.value.deserializer=org.acme.FruitDeserializer\n"
 msgstr ""
 
-#. type: Table
-#: upstream/_guides/kafka.adoc:1706
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1729 upstream/_guides/kafka.adoc:1815
+msgid "Check <<jackson-serialization>> for more detail about the usage of Jackson with Kafka.  You can also use Avro."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_guides/kafka.adoc:1731
 #, no-wrap
-msgid ""
-"*cloud-events-insert-timestamp*\n"
-"\n"
-"_(cloud-events-default-timestamp)_"
+msgid "Persisting Kafka messages with Hibernate Reactive"
 msgstr ""
 
-#. type: Table
-#: upstream/_guides/kafka.adoc:1708
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1734
+msgid "To persist objects received from Kafka into a database, you can use Hibernate Reactive with Panache."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1745
 #, no-wrap
-msgid ""
-"Whether or not the connector should insert automatically the `time` attribute` into the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `time` attribute itself\n"
-"\n"
-"Type: _boolean_"
+msgid "import io.quarkus.hibernate.reactive.panache.PanacheEntity;  // <1>\n"
 msgstr ""
 
-#. type: Table
-#: upstream/_guides/kafka.adoc:1710
-#, no-wrap
-msgid "*cloud-events-mode*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1712
-#, no-wrap
-msgid ""
-"The Cloud Event mode (`structured` or `binary` (default)). Indicates how are written the cloud events in the outgoing record\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1714
-#, no-wrap
-msgid "`binary`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1716
-#, no-wrap
-msgid ""
-"*cloud-events-source*\n"
-"\n"
-"_(cloud-events-default-source)_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1718
-#, no-wrap
-msgid ""
-"Configure the default `source` attribute of the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `source` attribute itself\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1722
-#, no-wrap
-msgid ""
-"*cloud-events-subject*\n"
-"\n"
-"_(cloud-events-default-subject)_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1724
-#, no-wrap
-msgid ""
-"Configure the default `subject` attribute of the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `subject` attribute itself\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1728
-#, no-wrap
-msgid ""
-"*cloud-events-type*\n"
-"\n"
-"_(cloud-events-default-type)_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1730
-#, no-wrap
-msgid ""
-"Configure the default `type` attribute of the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `type` attribute itself\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1748
-#, no-wrap
-msgid "*key*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1750
-#, no-wrap
-msgid ""
-"A key to used when writing the record\n"
-"\n"
-"Type: _string_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1752
-#, no-wrap
-msgid "*key.serializer*"
-msgstr ""
-
-#. type: Table
+#. type: Plain text
 #: upstream/_guides/kafka.adoc:1754
+msgid "Make sure to use the reactive variant"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1767
 #, no-wrap
 msgid ""
-"The serializer classname used to serialize the record's key\n"
-"\n"
-"Type: _string_"
+"import io.quarkus.hibernate.reactive.panache.Panache;\n"
+"import io.smallrye.mutiny.Uni;\n"
 msgstr ""
 
-#. type: Table
-#: upstream/_guides/kafka.adoc:1756
-#, no-wrap
-msgid "`org.apache.kafka.common.serialization.StringSerializer`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1756
-#, no-wrap
-msgid "*max-inflight-messages*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1758
-#, no-wrap
-msgid ""
-"The maximum number of messages to be written to Kafka concurrently. It limits the number of messages waiting to be written and acknowledged by the broker. You can set this attribute to `0` remove the limit\n"
-"\n"
-"Type: _long_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1760
-#, no-wrap
-msgid "`1024`"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1760
-#, no-wrap
-msgid "*merge*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1762
-#, no-wrap
-msgid ""
-"Whether the connector should allow multiple upstreams\n"
-"\n"
-"Type: _boolean_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1764
-#, no-wrap
-msgid "*partition*"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1766
-#, no-wrap
-msgid ""
-"The target partition id. -1 to let the client determine the partition\n"
-"\n"
-"Type: _int_"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/kafka.adoc:1768
-#, no-wrap
-msgid "*retries*"
-msgstr ""
-
-#. type: Table
+#. type: delimited block -
 #: upstream/_guides/kafka.adoc:1770
 #, no-wrap
 msgid ""
-"Setting a value greater than zero will cause the client to resend any record whose send fails with a potentially transient error.\n"
-"\n"
-"Type: _long_"
+"@ApplicationScoped\n"
+"public class FruitStore {\n"
 msgstr ""
 
-#. type: Table
-#: upstream/_guides/kafka.adoc:1772
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1778
 #, no-wrap
-msgid "`2147483647`"
+msgid ""
+"    @Incoming(\"fruits\")\n"
+"    public Uni<Void> persist(Fruit fruit) {\n"
+"        return Panache.withTransaction(() ->  // <1>\n"
+"            fruit.persist()                   // <2>\n"
+"                .map(persisted -> null)       // <3>\n"
+"        );\n"
+"    }\n"
 msgstr ""
 
-#. type: Table
-#: upstream/_guides/kafka.adoc:1780
-#, no-wrap
-msgid "*value.serializer*"
-msgstr ""
-
-#. type: Table
+#. type: Plain text
 #: upstream/_guides/kafka.adoc:1782
-#, no-wrap
-msgid ""
-"The serializer classname used to serialize the payload\n"
-"\n"
-"Type: _string_"
+msgid "Instruct Panache to run the given (asynchronous) action in a transaction. The transaction completes when the action completes."
 msgstr ""
 
-#. type: Table
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1783
+msgid "Persist the entity. It returns a `Uni<Fruit>`."
+msgstr ""
+
+#. type: Plain text
 #: upstream/_guides/kafka.adoc:1784
-#, no-wrap
-msgid "*waitForWriteCompletion*"
+msgid "Switch back to a `Uni<Void>`."
 msgstr ""
 
-#. type: Table
-#: upstream/_guides/kafka.adoc:1786
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1788
+msgid "Unlike with _classic_ Hibernate, you can't use `@Transactional`.  Instead, we use `Panache.withTransaction` and persist our entity.  The `map` is used to return a `Uni<Void>` and not a `Uni<Fruit>`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1791
+msgid "You need a deserializer that can create a `Fruit` from the record.  This can be done using a Jackson deserializer:"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_guides/kafka.adoc:1816
+#, no-wrap
+msgid "Writing entities managed by Hibernate to Kafka"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1819
+msgid "Let's imagine the following process:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1821
+msgid "You receive an HTTP request with a payload,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1822
+msgid "You create an Hibernate entity instance from this payload,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1823
+msgid "You persist that entity into a database,"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1824
+msgid "You send the entity to a Kafka topic"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1826
+msgid "If you use Hibernate Reactive, look at <<writing-entities-managed-by-hibernate-reactive-to-kafka>>."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1832
+msgid "Because we write to a database, we must run this method in a transaction.  Yet, sending the entity to Kafka happens asynchronously.  The operation returns a `CompletionStage` (or a `Uni` if you use a `MutinyEmitter`) reporting when the operation completes.  We must be sure that the transaction is still running until the object is written.  Otherwise, you may access the object outside the transaction, which is not allowed."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1834
+msgid "To implement this process, you need the following approach:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1844
 #, no-wrap
 msgid ""
-"Whether the client waits for Kafka to acknowledge the written record before acknowledging the message\n"
-"\n"
-"Type: _boolean_"
+"import javax.transaction.Transactional;\n"
+"import javax.ws.rs.POST;\n"
+"import javax.ws.rs.Path;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1852
+#, no-wrap
+msgid "    @Channel(\"kafka\") Emitter<Fruit> emitter;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1861
+#, no-wrap
+msgid ""
+"    @POST\n"
+"    @Path(\"/fruits\")\n"
+"    @Transactional                                                      // <1>\n"
+"    public CompletionStage<Void> storeAndSendToKafka(Fruit fruit) {     // <2>\n"
+"        fruit.persist();\n"
+"        return emitter.send(fruit);                                     // <3>\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1863
+msgid "As we are writing to the database, make sure we run inside a transaction"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1864
+msgid "The method receives the fruit instance to persist. It returns a `CompletionStage` which is used for the transaction demarcation. The transaction is committed when the return `CompletionStage` completes. In our case, it's when the message is written to Kafka."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1865
+msgid "Send the managed instance to Kafka. Make sure we wait for the message to complete before closing the transaction."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_guides/kafka.adoc:1867
+#, no-wrap
+msgid "Writing entities managed by Hibernate Reactive to Kafka"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1870
+msgid "To send to Kafka entities managed by Hibernate Reactive, we recommend using:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1872
+msgid "RESTEasy Reactive to serve HTTP requests"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1873
+msgid "A `MutinyEmitter` to send message to a channel, so it can be easily integrated with the Mutiny API exposed by Hibernate Reactive or Hibernate Reactive with Panache."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1875
+msgid "The following example demonstrates how to receive a payload, store it in the database using Hibernate Reactive with Panache, and send the persisted entity to Kafka:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1882
+#, no-wrap
+msgid ""
+"import javax.ws.rs.POST;\n"
+"import javax.ws.rs.Path;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1888
+#, no-wrap
+msgid ""
+"import io.quarkus.hibernate.reactive.panache.Panache;\n"
+"import io.smallrye.mutiny.Uni;\n"
+"import io.smallrye.reactive.messaging.MutinyEmitter;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1891
+#, no-wrap
+msgid ""
+"@Path(\"/\")\n"
+"public class ReactiveGreetingResource {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1893
+#, no-wrap
+msgid "    @Channel(\"kafka\") MutinyEmitter<Fruit> emitter;     // <1>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1903
+#, no-wrap
+msgid ""
+"    @POST\n"
+"    @Path(\"/fruits\")\n"
+"    public Uni<Void> sendToKafka(Fruit fruit) {         // <2>\n"
+"        return Panache.withTransaction(() ->            // <3>\n"
+"            fruit.<Fruit>persist()\n"
+"        )\n"
+"            .chain(f -> emitter.send(f));               // <4>\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1905
+msgid "Inject a `MutinyEmitter` which exposes a Mutiny API. It simplifies the integration with the Mutiny API exposed by Hibernate Reactive with Panache."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1906
+msgid "The HTTP method receiving the payload returns a `Uni<Void>`. The HTTP response is written when the operation completes (the entity is persisted and written to Kafka)."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1907
+msgid "We need to write the entity into the database in a transaction."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1908
+msgid "Once the persist operation completes, we send the entity to Kafka. The `send` method returns a `Uni<Void>`."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_guides/kafka.adoc:1910
+#, no-wrap
+msgid "Streaming Kafka topics as server-sent events"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1913
+msgid "Streaming a Kafka topic as server-sent events (SSE) is straightforward:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1915
+msgid "You inject the channel representing the Kafka topic in your HTTP endpoint"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1916
+msgid "You return that channel as a `Publisher` or a `Multi` from the HTTP method"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1918
+msgid "The following code provides an example:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1923 upstream/_guides/kafka.adoc:1938
+#, no-wrap
+msgid ""
+"@Channel(\"fruits\")\n"
+"Multi<Fruit> fruits;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1929
+#, no-wrap
+msgid ""
+"@GET\n"
+"@Produces(MediaType.SERVER_SENT_EVENTS)\n"
+"public Multi<Fruit> stream() {\n"
+"    return fruits;\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1933
+msgid "Some environment cuts the SSE connection when there is not enough activity.  The workaround consists of sending _ping_ messages (or empty objects) periodically."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1941
+#, no-wrap
+msgid ""
+"@Inject\n"
+"ObjectMapper mapper;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1951
+#, no-wrap
+msgid ""
+"@GET\n"
+"@Produces(MediaType.SERVER_SENT_EVENTS)\n"
+"public Multi<String> stream() {\n"
+"    return Multi.createBy().merging()\n"
+"            .streams(\n"
+"                    fruits.map(this::toJson),\n"
+"                    getPingStream()\n"
+"            );\n"
+"}\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1956
+#, no-wrap
+msgid ""
+"Multi<String> emitAPeriodicPing() {\n"
+"    return Multi.createFrom().ticks().every(Duration.ofSeconds(10))\n"
+"            .onItem().transform(x -> \"{}\");\n"
+"}\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kafka.adoc:1964
+#, no-wrap
+msgid ""
+"private String toJson(Fruit f) {\n"
+"    try {\n"
+"        return mapper.writeValueAsString(f);\n"
+"    } catch (JsonProcessingException e) {\n"
+"        throw new RuntimeException(e);\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kafka.adoc:1968
+msgid "The workaround is a bit more complex as besides sending the fruits coming from Kafka, we need to send pings periodically.  To achieve this we merge the stream coming from Kafka and a periodic stream emitting `{}` every 10 seconds."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:1790
+#: upstream/_guides/kafka.adoc:1969
 #, no-wrap
 msgid "Going further"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1794
+#: upstream/_guides/kafka.adoc:1973
 msgid "This guide has shown how you can interact with Kafka using Quarkus.  It utilizes SmallRye Reactive Messaging to build data streaming applications."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1795
+#: upstream/_guides/kafka.adoc:1974
 msgid "If you want to go further, check the documentation of https://smallrye.io/smallrye-reactive-messaging[SmallRye Reactive Messaging], the implementation used in Quarkus."
 msgstr ""
 

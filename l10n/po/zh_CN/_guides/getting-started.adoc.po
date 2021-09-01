@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-08-27 01:05+0000\n"
+"POT-Creation-Date: 2021-09-01 01:07+0000\n"
 "PO-Revision-Date: 2021-07-17 19:16+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -22,8 +22,9 @@ msgstr ""
 #. https://github.com/quarkusio/quarkus/tree/main/docs/src/main/asciidoc
 #. type: Title =
 #: upstream/_guides/getting-started.adoc:6
-#, no-wrap
-msgid "Quarkus - Creating Your First Application"
+#, fuzzy, no-wrap
+#| msgid "Quarkus - Creating Your First Application"
+msgid "Creating Your First Application"
 msgstr "Quarkus - 创建你第一个应用"
 
 #. type: Plain text
@@ -261,8 +262,8 @@ msgid ""
 "<dependencyManagement>\n"
 "    <dependencies>\n"
 "        <dependency>\n"
-"            <groupId>io.quarkus</groupId>\n"
-"            <artifactId>quarkus-universe-bom</artifactId>\n"
+"            <groupId>${quarkus.platform.group-id}</groupId>\n"
+"            <artifactId>quarkus-bom</artifactId>\n"
 "            <version>${quarkus.platform.version}</version>\n"
 "            <type>pom</type>\n"
 "            <scope>import</scope>\n"
@@ -278,7 +279,7 @@ msgid ""
 "<build>\n"
 "    <plugins>\n"
 "        <plugin>\n"
-"            <groupId>io.quarkus</groupId>\n"
+"            <groupId>${quarkus.platform.group-id}</groupId>\n"
 "            <artifactId>quarkus-maven-plugin</artifactId>\n"
 "            <version>${quarkus-plugin.version}</version>\n"
 "            <extensions>true</extensions>\n"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:18+0000\n"
+"POT-Creation-Date: 2021-09-01 01:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-12-08-resteasy-reactive.adoc:12
-msgid "It gives the Quarkus and RESTEasy teams great pleasure to announce that RESTEasy Reactive integration in Quarkus has landed in the main Quarkus repo footnote:disclaimer[Currently the main RESTEasy Reactive component resides at https://github.com/quarkusio/quarkus/tree/master/independent-projects/resteasy-reactive in the main Quarkus repository; the plan is however that once things settle, this code will move to https://github.com/resteasy/resteasy-reactive. This move should not affect users of the quarkus-resteasy-reactive extensions in any way, just a heads up if anyone reads this blog post in the future and can’t find it.] and will be part of the next Quarkus release 1.11."
+msgid "It gives the Quarkus and RESTEasy teams great pleasure to announce that RESTEasy Reactive integration in Quarkus has landed in the main Quarkus repo footnote:disclaimer[Currently the main RESTEasy Reactive component resides at https://github.com/quarkusio/quarkus/tree/main/independent-projects/resteasy-reactive in the main Quarkus repository; the plan is however that once things settle, this code will move to https://github.com/resteasy/resteasy-reactive. This move should not affect users of the quarkus-resteasy-reactive extensions in any way, just a heads up if anyone reads this blog post in the future and can’t find it.] and will be part of the next Quarkus release 1.11."
 msgstr ""
 
 #. type: Plain text

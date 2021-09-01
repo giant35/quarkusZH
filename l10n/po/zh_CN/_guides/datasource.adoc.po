@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-12 00:59+0000\n"
+"POT-Creation-Date: 2021-09-01 01:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 #. type: Title =
 #: upstream/_guides/datasource.adoc:6
 #, no-wrap
-msgid "Quarkus - Datasources"
+msgid "Datasources"
 msgstr ""
 
 #. type: Plain text
@@ -906,7 +906,7 @@ msgstr ""
 msgid ""
 "quarkus.datasource.db-kind=h2\n"
 "quarkus.datasource.username=username-default\n"
-"quarkus.datasource.jdbc.url=jdbc:h2:tcp://localhost/mem:default\n"
+"quarkus.datasource.jdbc.url=jdbc:h2:mem:default\n"
 "quarkus.datasource.jdbc.max-size=13\n"
 msgstr ""
 
@@ -916,7 +916,7 @@ msgstr ""
 msgid ""
 "quarkus.datasource.users.db-kind=h2\n"
 "quarkus.datasource.users.username=username1\n"
-"quarkus.datasource.users.jdbc.url=jdbc:h2:tcp://localhost/mem:users\n"
+"quarkus.datasource.users.jdbc.url=jdbc:h2:mem:users\n"
 "quarkus.datasource.users.jdbc.max-size=11\n"
 msgstr ""
 
@@ -926,7 +926,7 @@ msgstr ""
 msgid ""
 "quarkus.datasource.inventory.db-kind=h2\n"
 "quarkus.datasource.inventory.username=username2\n"
-"quarkus.datasource.inventory.jdbc.url=jdbc:h2:tcp://localhost/mem:inventory\n"
+"quarkus.datasource.inventory.jdbc.url=jdbc:h2:mem:inventory\n"
 "quarkus.datasource.inventory.jdbc.max-size=12\n"
 msgstr ""
 
@@ -1144,7 +1144,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "quarkus.datasource.db-kind=h2\n"
-"quarkus.datasource.jdbc.url=jdbc:h2:tcp://localhost/mem:test\n"
+"quarkus.datasource.jdbc.url=jdbc:h2:mem:test\n"
 msgstr ""
 
 #. type: Title ==

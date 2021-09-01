@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:18+0000\n"
+"POT-Creation-Date: 2021-09-01 01:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -235,7 +235,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-08-20-codestarts-preview.adoc:110
-msgid "Example codestarts dir: https://github.com/quarkusio/quarkus/tree/master/devtools/platform-descriptor-json/src/main/resources/codestarts"
+msgid "Example codestarts dir: https://github.com/quarkusio/quarkus/tree/main/devtools/platform-descriptor-json/src/main/resources/codestarts"
 msgstr ""
 
 #. type: Plain text
@@ -245,7 +245,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-08-20-codestarts-preview.adoc:114
-msgid "Here are the Codestarts https://github.com/quarkusio/quarkus/tree/master/independent-projects/tools/codestarts[core code], and the https://github.com/quarkusio/quarkus/tree/master/devtools/platform-descriptor-json/src/main/resources/bundled-codestarts[base codestarts] used to scaffold your Quarkus application."
+msgid "Here are the Codestarts https://github.com/quarkusio/quarkus/tree/main/independent-projects/tools/codestarts[core code], and the https://github.com/quarkusio/quarkus/tree/main/devtools/platform-descriptor-json/src/main/resources/bundled-codestarts[base codestarts] used to scaffold your Quarkus application."
 msgstr ""
 
 #. type: Title ==

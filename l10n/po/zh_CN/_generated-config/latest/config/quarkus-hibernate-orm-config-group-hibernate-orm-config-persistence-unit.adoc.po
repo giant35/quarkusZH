@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:22+0000\n"
+"POT-Creation-Date: 2021-09-01 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -674,6 +674,7 @@ msgstr ""
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit.adoc:352
 #: upstream/_generated-config/latest/config/quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit.adoc:715
+#: upstream/_generated-config/latest/config/quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit.adoc:803
 #, no-wrap
 msgid "long"
 msgstr ""
@@ -1238,23 +1239,35 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/latest/config/quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit.adoc:796
+#: upstream/_generated-config/latest/config/quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit.adoc:797
 #, no-wrap
 msgid "`depends on dialect`"
 msgstr ""
 
+#. type: Table
+#: upstream/_generated-config/latest/config/quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit.adoc:802
+#, no-wrap
+msgid ""
+"[[quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit_quarkus.hibernate-orm.-persistence-unit-name-.log.queries-slower-than-ms]]`link:#quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit_quarkus.hibernate-orm.-persistence-unit-name-.log.queries-slower-than-ms[quarkus.hibernate-orm.\"persistence-unit-name\".log.queries-slower-than-ms]`\n"
+"\n"
+"[.description]\n"
+"--\n"
+"If set, Hibernate will log queries that took more than specified number of milliseconds to execute.\n"
+"--"
+msgstr ""
+
 #. type: Block title
-#: upstream/_generated-config/latest/config/quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit.adoc:800
+#: upstream/_generated-config/latest/config/quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit.adoc:809
 #, no-wrap
 msgid "About the Duration format"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_generated-config/latest/config/quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit.adoc:804
+#: upstream/_generated-config/latest/config/quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit.adoc:813
 msgid "The format for durations uses the standard `java.time.Duration` format.  You can learn more about it in the link:https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html#parse-java.lang.CharSequence-[Duration#parse() javadoc]."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_generated-config/latest/config/quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit.adoc:808
+#: upstream/_generated-config/latest/config/quarkus-hibernate-orm-config-group-hibernate-orm-config-persistence-unit.adoc:817
 msgid "You can also provide duration values starting with a number.  In this case, if the value consists only of a number, the converter treats the value as seconds.  Otherwise, `PT` is implicitly prepended to the value to obtain a standard `java.time.Duration` format."
 msgstr ""
