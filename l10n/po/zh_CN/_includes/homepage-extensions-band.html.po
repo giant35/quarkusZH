@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-14 00:57+0000\n"
+"POT-Creation-Date: 2021-09-02 01:03+0000\n"
 "PO-Revision-Date: 2021-07-13 13:55+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -24,5 +24,7 @@ msgstr "优秀的类库及标准件"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/homepage-extensions-band.html:7
-msgid "Quarkus provides a cohesive, fun to use, full-stack framework by leveraging a growing list of over fifty best-of-breed libraries that you love and use. All wired on a standard backbone. <a href=\"/vision/standards\">Learn more about Quarkus Extensions</a>."
+#, fuzzy
+#| msgid "Quarkus provides a cohesive, fun to use, full-stack framework by leveraging a growing list of over fifty best-of-breed libraries that you love and use. All wired on a standard backbone. <a href=\"/vision/standards\">Learn more about Quarkus Extensions</a>."
+msgid "Quarkus provides a cohesive, fun to use, full-stack framework by leveraging a growing list of hundreds of best-of-breed libraries that you love and use. All wired on a standard backbone. <a href=\"/vision/standards\">Learn more about Quarkus Extensions</a>."
 msgstr "Quarkus 精选 50 多种优秀类库提供了一个紧密结合，易于使用的全栈框架。所有都连接在标准主干上。 All wired on a standard backbone. <a href=\"/vision/standards\">了解更多 Quarkus Extensions</a>."
