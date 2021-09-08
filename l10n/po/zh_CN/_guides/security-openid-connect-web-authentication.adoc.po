@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:07+0000\n"
+"POT-Creation-Date: 2021-09-08 01:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1020,15 +1020,15 @@ msgstr ""
 msgid "Register your own `io.quarkus.oidc.TokenStateManager' implementation as an `@ApplicationScoped` CDI bean if you need to customize the way the tokens are associated with the session cookie. For example, you may want to keep the tokens in a database and have only a database pointer stored in a session cookie. Note though that it may present some challenges in making the tokens available across multiple microservices nodes."
 msgstr ""
 
-#. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:472
-#, no-wrap
-msgid "Listening to important authentication events"
+#. type: Plain text
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:473
+msgid "Here is a simple example:"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:475
-msgid "One can register `@ApplicationScoped` bean which will observe important OIDC authentication events. The listener will be updated when a user has logged in for the first time or re-authenticated, as well as when the session has been refreshed. More events may be reported in the future. For example:"
+#. type: delimited block -
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:477
+#, no-wrap
+msgid "package io.quarkus.oidc.test;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -1036,11 +1036,103 @@ msgstr ""
 #, no-wrap
 msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
+"import javax.inject.Inject;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:488
+#, no-wrap
+msgid ""
+"import io.quarkus.arc.AlternativePriority;\n"
+"import io.quarkus.oidc.AuthorizationCodeTokens;\n"
+"import io.quarkus.oidc.OidcTenantConfig;\n"
+"import io.quarkus.oidc.TokenStateManager;\n"
+"import io.quarkus.oidc.runtime.DefaultTokenStateManager;\n"
+"import io.smallrye.mutiny.Uni;\n"
+"import io.vertx.ext.web.RoutingContext;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:492
+#, no-wrap
+msgid ""
+"@ApplicationScoped\n"
+"@AlternativePriority(1)\n"
+"public class CustomTokenStateManager implements TokenStateManager {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:495
+#, no-wrap
+msgid ""
+"    @Inject\n"
+"    DefaultTokenStateManager tokenStateManager;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:502
+#, no-wrap
+msgid ""
+"    @Override\n"
+"    public Uni<String> createTokenState(RoutingContext routingContext, OidcTenantConfig oidcConfig,\n"
+"            AuthorizationCodeTokens sessionContent, TokenStateManager.CreateTokenStateRequestContext requestContext) {\n"
+"        return tokenStateManager.createTokenState(routingContext, oidcConfig, sessionContent, requestContext)\n"
+"                .map(t -> (t + \"|custom\"));\n"
+"    }\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:512
+#, no-wrap
+msgid ""
+"    @Override\n"
+"    public Uni<AuthorizationCodeTokens> getTokens(RoutingContext routingContext, OidcTenantConfig oidcConfig,\n"
+"            String tokenState, TokenStateManager.GetTokensRequestContext requestContext) {\n"
+"        if (!tokenState.endsWith(\"|custom\")) {\n"
+"            throw new IllegalStateException();\n"
+"        }\n"
+"        String defaultState = tokenState.substring(0, tokenState.length() - 7);\n"
+"        return tokenStateManager.getTokens(routingContext, oidcConfig, defaultState, requestContext);\n"
+"    }\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:523
+#, no-wrap
+msgid ""
+"    @Override\n"
+"    public Uni<Void> deleteTokens(RoutingContext routingContext, OidcTenantConfig oidcConfig, String tokenState,\n"
+"            TokenStateManager.DeleteTokensRequestContext requestContext) {\n"
+"        if (!tokenState.endsWith(\"|custom\")) {\n"
+"            throw new IllegalStateException();\n"
+"        }\n"
+"        String defaultState = tokenState.substring(0, tokenState.length() - 7);\n"
+"        return tokenStateManager.deleteTokens(routingContext, oidcConfig, defaultState, requestContext);\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:525
+#, no-wrap
+msgid "Listening to important authentication events"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:528
+msgid "One can register `@ApplicationScoped` bean which will observe important OIDC authentication events. The listener will be updated when a user has logged in for the first time or re-authenticated, as well as when the session has been refreshed. More events may be reported in the future. For example:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:533
+#, no-wrap
+msgid ""
+"import javax.enterprise.context.ApplicationScoped;\n"
 "import javax.enterprise.event.Observes;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:485
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:538
 #, no-wrap
 msgid ""
 "import io.quarkus.oidc.IdTokenCredential;\n"
@@ -1050,7 +1142,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:488
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:541
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -1058,7 +1150,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:495
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:548
 #, no-wrap
 msgid ""
 "    public void event(@Observes SecurityEvent event) {\n"
@@ -1070,28 +1162,28 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:497
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:550
 #, no-wrap
 msgid "Single Page Applications"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:500
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:553
 msgid "Please check if implementing SPAs the way it is suggested in the link:security-openid-connect#single-page-applications[Single Page Applications for Service Applications] section can meet your requirements."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:502
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:555
 msgid "If you prefer to use SPA and JavaScript API such as `Fetch` or `XMLHttpRequest`(XHR) with Quarkus web applications, please be aware that OpenID Connect Providers may not support CORS for Authorization endpoints where the users are authenticated after a redirect from Quarkus. This will lead to authentication failures if the Quarkus application and the OpenID Connect Provider are hosted on the different HTTP domains/ports."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:504
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:557
 msgid "In such cases, set the `quarkus.oidc.authentication.java-script-auto-redirect` property to `false` which will instruct Quarkus to return a `499` status code and `WWW-Authenticate` header with the `OIDC` value. The browser script also needs to be updated to set `X-Requested-With` header with the `JavaScript` value and reload the last requested page in case of `499`, for example:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:509
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:562
 #, no-wrap
 msgid ""
 "Future<void> callQuarkusService() async {\n"
@@ -1099,7 +1191,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:518
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:571
 #, no-wrap
 msgid ""
 "    await http\n"
@@ -1113,29 +1205,29 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:520
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:573
 #, no-wrap
 msgid "Cloud Services"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:522
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:575
 #, no-wrap
 msgid "Google Cloud"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:525
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:578
 msgid "You can have Quarkus OIDC `web-app` applications access **Google Cloud services** such as **BigQuery** on behalf of the currently authenticated users who have enabled OpenID Connect (Authorization Code Flow) permissions to such services in their Google Developer Consoles."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:528
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:581
 msgid "It is super easy to do with https://github.com/quarkiverse[Quarkiverse] https://github.com/quarkiverse/quarkiverse-google-cloud-services[Google Cloud Services], only add the https://github.com/quarkiverse/quarkiverse-google-cloud-services/releases/latest[latest tag] service dependency, for example:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:536
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:589
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -1146,12 +1238,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:539
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:592
 msgid "and configure Google OIDC properties:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:547
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:600
 #, no-wrap
 msgid ""
 "quarkus.oidc.auth-server-url=https://accounts.google.com\n"
@@ -1162,28 +1254,28 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:549
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:602
 #, no-wrap
 msgid "Provider Endpoint configuration"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:552
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:605
 msgid "OIDC `web-app` application needs to know OpenId Connect provider's authorization, token, `JsonWebKey` (JWK) set and possibly `UserInfo`, introspection and end session (RP-initiated logout) endpoint addresses."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:554
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:607
 msgid "By default they are discovered by adding a `/.well-known/openid-configuration` path to the configured `quarkus.oidc.auth-server-url`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:556
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:609
 msgid "Alternatively, if the discovery endpoint is not available or you would like to save on the discovery endpoint roundtrip, you can disable the discovery and configure them with relative path values, for example:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:573
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:626
 #, no-wrap
 msgid ""
 "quarkus.oidc.auth-server-url=http://localhost:8180/auth/realms/quarkus\n"
@@ -1203,50 +1295,50 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:576
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:629
 #, no-wrap
 msgid "JSON Web Token Claim Verification"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:580
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:633
 msgid "Please see link:security-openid-connect#jwt-claim-verification[JSON Web Token Claim verification] section about the claim verification, including the `iss` (issuer) claim.  It applies to ID tokens but also to access tokens in a JWT format if the `web-app` application has requested the access token verification."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:581
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:634
 #, no-wrap
 msgid "Token Propagation"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:583
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:636
 msgid "Please see link:security-openid-connect-client#token-propagation[Token Propagation] section about the Authorization Code Flow access token propagation to the downstream services."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:585
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:638
 #, no-wrap
 msgid "Oidc Provider Client Authentication"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:588
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:641
 msgid "`quarkus.oidc.runtime.OidcProviderClient` is used when a remote request to an OpenId Connect Provider has to be done. It has to authenticate to the OpenId Connect Provider when the authorization code has to be exchanged for the ID, access and refresh tokens, when the ID and access tokens have to be refreshed or introspected."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:590
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:643
 msgid "All the https://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication[OIDC Client Authentication] options are supported, for example:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:592
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:645
 msgid "`client_secret_basic`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:598
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:651
 #, no-wrap
 msgid ""
 "quarkus.oidc.auth-server-url=http://localhost:8180/auth/realms/quarkus/\n"
@@ -1255,12 +1347,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:601
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:654
 msgid "or"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:607
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:660
 #, no-wrap
 msgid ""
 "quarkus.oidc.auth-server-url=http://localhost:8180/auth/realms/quarkus/\n"
@@ -1269,14 +1361,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:610
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:644
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:663
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:697
 msgid "or with the secret retrieved from a link:credentials-provider[CredentialsProvider]:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:615
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:649
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:668
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:702
 #, no-wrap
 msgid ""
 "quarkus.oidc.auth-server-url=http://localhost:8180/auth/realms/quarkus/\n"
@@ -1284,7 +1376,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:620
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:673
 #, no-wrap
 msgid ""
 "# This is a key which will be used to retrieve a secret from the map of credentails returned from CredentialsProvider\n"
@@ -1294,12 +1386,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:623
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:676
 msgid "`client_secret_post`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:630
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:683
 #, no-wrap
 msgid ""
 "quarkus.oidc.auth-server-url=http://localhost:8180/auth/realms/quarkus/\n"
@@ -1309,12 +1401,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:633
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:686
 msgid "`client_secret_jwt`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:641
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:694
 #, no-wrap
 msgid ""
 "quarkus.oidc.auth-server-url=http://localhost:8180/auth/realms/quarkus/\n"
@@ -1325,7 +1417,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:654
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:707
 #, no-wrap
 msgid ""
 "# This is a key which will be used to retrieve a secret from the map of credentails returned from CredentialsProvider\n"
@@ -1335,12 +1427,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:657
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:710
 msgid "`private_key_jwt` with the PEM key file:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:665
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:718
 #, no-wrap
 msgid ""
 "quarkus.oidc.auth-server-url=http://localhost:8180/auth/realms/quarkus/\n"
@@ -1351,12 +1443,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:668
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:721
 msgid "`private_key_jwt` with the key store file:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:681
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:734
 #, no-wrap
 msgid ""
 "quarkus.oidc.auth-server-url=http://localhost:8180/auth/realms/quarkus/\n"
@@ -1372,23 +1464,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:684
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:737
 msgid "Using `client_secret_jwt` or `private_key_jwt` authentication methods ensures that no client secret goes over the wire."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:686
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:739
 #, no-wrap
 msgid "Testing"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:689
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:742
 msgid "Start by adding the following dependencies to your test project:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:708
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:761
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -1410,18 +1502,18 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:711
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:764
 #, no-wrap
 msgid "Wiremock"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:714
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:767
 msgid "Add the following dependency:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:722
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:775
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -1432,12 +1524,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:725
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:778
 msgid "Prepare the REST test endpoints, set `application.properties`, for example:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:733
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:786
 #, no-wrap
 msgid ""
 "# keycloak.url is set by OidcWiremockTestResource\n"
@@ -1448,24 +1540,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:736
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:789
 msgid "and finally write the test code, for example:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:740
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:793
 #, no-wrap
 msgid "import static org.junit.jupiter.api.Assertions.assertEquals;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:742
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:795
 #, no-wrap
 msgid "import org.junit.jupiter.api.Test;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:747
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:800
 #, no-wrap
 msgid ""
 "import com.gargoylesoftware.htmlunit.SilentCssErrorHandler;\n"
@@ -1475,7 +1567,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:751
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:804
 #, no-wrap
 msgid ""
 "import io.quarkus.test.common.QuarkusTestResource;\n"
@@ -1484,7 +1576,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:755
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:808
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -1493,7 +1585,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:761
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:814
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -1504,7 +1596,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:766
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:819
 #, no-wrap
 msgid ""
 "            HtmlForm form = page.getFormByName(\"form\");\n"
@@ -1514,13 +1606,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:768
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:821
 #, no-wrap
 msgid "            page = form.getInputByValue(\"login\").click();\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:772
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:825
 #, no-wrap
 msgid ""
 "            assertEquals(\"alice\", page.getBody().asText());\n"
@@ -1529,7 +1621,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:779
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:832
 #, no-wrap
 msgid ""
 "    private WebClient createWebClient() {\n"
@@ -1541,33 +1633,33 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:782
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:835
 msgid "`OidcWiremockTestResource` recognizes `alice` and `admin` users. The user `alice` has the `user` role only by default - it can be customized with a `quarkus.test.oidc.token.user-roles` system property. The user `admin` has the `user` and `admin` roles by default - it can be customized with a `quarkus.test.oidc.token.admin-roles` system property."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:784
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:837
 msgid "Additionally, `OidcWiremockTestResource` set token issuer and audience to `https://service.example.com` which can be customized with `quarkus.test.oidc.token.issuer` and `quarkus.test.oidc.token.audience` system properties."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:786
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:839
 msgid "`OidcWiremockTestResource` can be used to emulate all OpenId Connect providers."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:788
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:841
 #, no-wrap
 msgid "Keycloak"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:791
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:844
 msgid "If you work with Keycloak then you can test against a live Keycloak instance by adding the following dependency:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:799
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:852
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -1578,12 +1670,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:802
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:855
 msgid "and configure `maven.surefire.plugin` as follows:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:818
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:871
 #, no-wrap
 msgid ""
 "<plugin>\n"
@@ -1602,23 +1694,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:821
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:874
 msgid "(and similarly `maven.failsafe.plugin` when testing in native image)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:824
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:877
 msgid "And now set the configuration and write the test code the same way as it is described in the <<integration-testing-wiremock, Wiremock>> section above.  The only difference is the name of `QuarkusTestResource`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:828
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:881
 #, no-wrap
 msgid "import io.quarkus.test.keycloak.server.KeycloakTestResourceLifecycleManager;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:833
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:886
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -1628,39 +1720,39 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:836
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:889
 msgid "`KeycloakTestResourceLifecycleManager` registers `alice` and `admin` users. The user `alice` has the `user` role only by default - it can be customized with a `keycloak.token.user-roles` system property. The user `admin` has the `user` and `admin` roles by default - it can be customized with a `keycloak.token.admin-roles` system property."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:839
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:892
 msgid "By default, `KeycloakTestResourceLifecycleManager` uses HTTPS to initialize a Keycloak instance which can be disabled with `keycloak.use.https=false`.  Default realm name is `quarkus` and client id - `quarkus-web-app` - set `keycloak.realm` and `keycloak.web-app.client` system properties to customize the values if needed."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:841
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:894
 #, no-wrap
 msgid "TestSecurity annotation"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:844
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:897
 msgid "Please see link:security-openid-connect#integration-testing-security-annotation[Use TestingSecurity with injected JsonWebToken] section for more information about using `@TestSecurity` and `@OidcSecurity` annotations for testing the `web-app` application endpoint code which depends on the injected ID and access `JsonWebToken` as well as `UserInfo` and `OidcConfigurationMetadata`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:845
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:898
 #, no-wrap
 msgid "How to check the errors in the logs"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:848
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:901
 msgid "Please enable `io.quarkus.oidc.runtime.OidcProvider` `TRACE` level logging to see more details about the token verification errors:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:853
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:906
 #, no-wrap
 msgid ""
 "quarkus.log.category.\"io.quarkus.oidc.runtime.OidcProvider\".level=TRACE\n"
@@ -1668,12 +1760,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:856
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:909
 msgid "Please enable `io.quarkus.oidc.runtime.OidcRecorder` `TRACE` level logging to see more details about the OidcProvider client initialization errors:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:861
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:914
 #, no-wrap
 msgid ""
 "quarkus.log.category.\"io.quarkus.oidc.runtime.OidcRecorder\".level=TRACE\n"
@@ -1681,28 +1773,28 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:863
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:916
 #, no-wrap
 msgid "Running behind a reverse proxy"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:866
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:919
 msgid "OIDC authentication mechanism can be affected if your Quarkus application is running behind a reverse proxy/gateway/firewall when HTTP `Host` header may be reset to the internal IP address, HTTPS connection may be terminated, etc. For example, an authorization code flow `redirect_uri` parameter may be set to the internal host instead of the expected external one."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:868
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:921
 msgid "In such cases configuring Quarkus to recognize the original headers forwarded by the proxy will be required, see link:http-reference#reverse-proxy[Running behind a reverse proxy] Vert.x documentation section for more information."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:870
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:923
 msgid "For example, if your Quarkus endpoint runs in a cluster behind Kubernetes Ingress then a redirect from the OpenId Connect Provider back to this endpoint may not work since the calcuated `redirect_uri` parameter may point to the internal endpoint address. This problem can be resolved with the following configuration:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:877
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:930
 #, no-wrap
 msgid ""
 "quarkus.http.proxy.proxy-address-forwarding=true\n"
@@ -1712,91 +1804,91 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:880
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:933
 msgid "where `X-ORIGINAL-HOST` is set by Kubernetes Ingress to represent the external endpoint address."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:882
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:935
 msgid "`quarkus.oidc.authentication.force-redirect-https-scheme` property may also be used when the Quarkus application is running behind a SSL terminating reverse proxy."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:883
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:936
 #, no-wrap
 msgid "External and Internal Access to OpenId Connect Provider"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:887
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:940
 msgid "Note that the OpenId Connect Provider externally accessible authorization, logout and other endpoints may have different HTTP(S) URLs compared to the URLs auto-discovered or configured relative to `quarkus.oidc.auth-server-url` internal URL.  In such cases an issuer verification failure may be reported by the endpoint and redirects to the externally accessible Connect Provider endpoints may fail."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:890
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:943
 msgid "In such cases, if you work with Keycloak then please start it with a `KEYCLOAK_FRONTEND_URL` system property set to the externally accessible base URL.  If you work with other Openid Connect providers then please check your provider's documentation."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:891
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:944
 #, no-wrap
 msgid "Customize authentication requests"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:894
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:947
 msgid "By default, only the `response_type` (set to `code`), `scope` (set to 'openid'), `client_id`, `redirect_uri` and `state` properties are passed as HTTP query parameters to the OpenId Connect provider's authorization endpoint when the user is redirected to it to authenticate."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:896
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:949
 msgid "You can add more properties to it with `quarkus.oidc.authentication.extra-params`. For example, some OpenId Connect providers may choose to return the authorization code as part of the redirect URI's fragment which would break the authentication process - it can be fixed as follows:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:900
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:953
 #, no-wrap
 msgid "quarkus.oidc.authentication.extra-params.response_mode=query\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:902
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:955
 #, no-wrap
 msgid "Configuration Reference"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:906
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:959
 #, no-wrap
 msgid "References"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:909
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:962
 msgid "https://www.keycloak.org/documentation.html[Keycloak Documentation]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:910
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:963
 msgid "https://openid.net/connect/[OpenID Connect]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:911
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:964
 msgid "https://tools.ietf.org/html/rfc7519[JSON Web Token]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:912
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:965
 msgid "link:security-openid-connect-client[Quarkus - Using OpenID Connect and OAuth2 Client and Filters to manage access tokens]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:913
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:966
 msgid "link:security-openid-connect-dev-services[Dev Services for OpenId Connect]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-web-authentication.adoc:913
+#: upstream/_guides/security-openid-connect-web-authentication.adoc:966
 msgid "link:security[Quarkus Security]"
 msgstr ""

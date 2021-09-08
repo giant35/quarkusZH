@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:06+0000\n"
+"POT-Creation-Date: 2021-09-08 01:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -403,7 +403,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/mailer.adoc:188
-msgid "In the `src/main/resources/application.properties` file, you need to configure the host, port, username, password as well as the other configuration aspect.  Note that the password can also be configured using system properties and environment variables.  See the xref:configuration-reference.adoc[configuration reference guide] for details."
+msgid "In the `src/main/resources/application.properties` file, you need to configure the host, port, username, password as well as the other configuration aspect.  Note that the password can also be configured using system properties and environment variables.  See the xref:config-reference.adoc[configuration reference guide] for details."
 msgstr ""
 
 #. type: Plain text
