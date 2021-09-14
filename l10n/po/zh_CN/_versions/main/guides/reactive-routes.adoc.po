@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 01:04+0000\n"
+"POT-Creation-Date: 2021-09-14 01:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-routes.adoc:34
-msgid "The first way to use reactive routes is to use the `@Route` annotation.  To have access to this annotation, you need to add the `quarkus-vertx-web` extension:"
+msgid "The first way to use reactive routes is to use the `@Route` annotation.  To have access to this annotation, you need to add the `quarkus-reactive-routes` extension:"
 msgstr ""
 
 #. type: Plain text
@@ -78,7 +78,7 @@ msgstr ""
 msgid ""
 "<dependency>\n"
 "    <groupId>io.quarkus</groupId>\n"
-"    <artifactId>quarkus-vertx-web</artifactId>\n"
+"    <artifactId>quarkus-reactive-routes</artifactId>\n"
 "</dependency>\n"
 msgstr ""
 
@@ -1155,7 +1155,7 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_versions/main/guides/reactive-routes.adoc:610
-msgid "`Router` access is provided by the `quarkus-vertx-http` extension.  If you use `quarkus-resteasy` or `quarkus-vertx-web`, the extension will be added automatically."
+msgid "`Router` access is provided by the `quarkus-vertx-http` extension.  If you use `quarkus-resteasy` or `quarkus-reactive-routes`, the extension will be added automatically."
 msgstr ""
 
 #. type: Title ==

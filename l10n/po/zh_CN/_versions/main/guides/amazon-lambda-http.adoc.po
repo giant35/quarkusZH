@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-04 00:55+0000\n"
+"POT-Creation-Date: 2021-09-14 01:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -441,7 +441,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/amazon-lambda-http.adoc:258
-msgid "Also, at least in the generated Maven archetype `pom.xml`, the `quarkus-resteasy`, `quarkus-vertx-web`, and `quarkus-undertow` dependencies are all optional.  Pick which HTTP framework(s) you want to use (JAX-RS, Vertx Web, and/or Servlet) and remove the other dependencies to shrink your deployment."
+msgid "Also, at least in the generated Maven archetype `pom.xml`, the `quarkus-resteasy`, `quarkus-reactive-routes`, and `quarkus-undertow` dependencies are all optional.  Pick which HTTP framework(s) you want to use (JAX-RS, Vertx Web, and/or Servlet) and remove the other dependencies to shrink your deployment."
 msgstr ""
 
 #. type: Title ===
