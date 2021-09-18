@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-05 00:57+0000\n"
+"POT-Creation-Date: 2021-09-18 01:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -928,12 +928,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:417
-msgid "Use the `raw` or `safe` properties implemented as extension methods of the `java.lang.Object`,"
+msgid "Either use the `raw` or `safe` properties implemented as extension methods of the `java.lang.Object`,"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:418
-msgid "Wrap the `String` value in a `io.quarkus.qute.RawString`."
+msgid "Or wrap the `String` value in a `io.quarkus.qute.RawString`."
 msgstr ""
 
 #. type: delimited block -
