@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-16 00:59+0000\n"
+"POT-Creation-Date: 2021-09-23 01:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3579,15 +3579,55 @@ msgstr ""
 #. type: Title ==
 #: upstream/_versions/main/guides/kafka.adoc:2043
 #, no-wrap
-msgid "Going further"
+msgid "Logging"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/kafka.adoc:2047
-msgid "This guide has shown how you can interact with Kafka using Quarkus.  It utilizes SmallRye Reactive Messaging to build data streaming applications."
+#: upstream/_versions/main/guides/kafka.adoc:2046
+msgid "To reduce the amount of log written by the Kafka client, Quarkus sets the level of the following log categories to `WARNING`:"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/kafka.adoc:2048
+msgid "`org.apache.kafka.clients`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/kafka.adoc:2049
+msgid "`org.apache.kafka.common.utils`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/kafka.adoc:2050
+msgid "`org.apache.kafka.common.metrics`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/kafka.adoc:2052
+msgid "You can override the configuration by adding the following lines to the `application.properties`:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_versions/main/guides/kafka.adoc:2058
+#, no-wrap
+msgid ""
+"quarkus.log.category.\"org.apache.kafka.clients\".level=INFO\n"
+"quarkus.log.category.\"org.apache.kafka.common.utils\".level=INFO\n"
+"quarkus.log.category.\"org.apache.kafka.common.metrics\".level=INFO\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_versions/main/guides/kafka.adoc:2060
+#, no-wrap
+msgid "Going further"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/kafka.adoc:2064
+msgid "This guide has shown how you can interact with Kafka using Quarkus.  It utilizes SmallRye Reactive Messaging to build data streaming applications."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/kafka.adoc:2065
 msgid "If you want to go further, check the documentation of https://smallrye.io/smallrye-reactive-messaging[SmallRye Reactive Messaging], the implementation used in Quarkus."
 msgstr ""
