@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 01:04+0000\n"
+"POT-Creation-Date: 2021-10-02 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -170,7 +170,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/websockets.adoc:83
-#: upstream/_versions/main/guides/websockets.adoc:181
+#: upstream/_versions/main/guides/websockets.adoc:184
 #, no-wrap
 msgid "package org.acme.websockets;\n"
 msgstr ""
@@ -213,18 +213,17 @@ msgid "    Map<String, Session> sessions = new ConcurrentHashMap<>(); // <2>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:107
+#: upstream/_versions/main/guides/websockets.adoc:106
 #, no-wrap
 msgid ""
 "    @OnOpen\n"
 "    public void onOpen(Session session, @PathParam(\"username\") String username) {\n"
 "        sessions.put(username, session);\n"
-"        broadcast(\"User \" + username + \" joined\");\n"
 "    }\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:113
+#: upstream/_versions/main/guides/websockets.adoc:112
 #, no-wrap
 msgid ""
 "    @OnClose\n"
@@ -235,7 +234,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:119
+#: upstream/_versions/main/guides/websockets.adoc:118
 #, no-wrap
 msgid ""
 "    @OnError\n"
@@ -246,17 +245,21 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:124
+#: upstream/_versions/main/guides/websockets.adoc:127
 #, no-wrap
 msgid ""
 "    @OnMessage\n"
 "    public void onMessage(String message, @PathParam(\"username\") String username) {\n"
-"        broadcast(\">> \" + username + \": \" + message);\n"
+"        if (message.equalsIgnoreCase(\"_ready_\")) {\n"
+"            broadcast(\"User \" + username + \" joined\");\n"
+"        } else {\n"
+"            broadcast(\">> \" + username + \": \" + message);\n"
+"        }\n"
 "    }\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:134
+#: upstream/_versions/main/guides/websockets.adoc:137
 #, no-wrap
 msgid ""
 "    private void broadcast(String message) {\n"
@@ -271,108 +274,108 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:136
-#: upstream/_versions/main/guides/websockets.adoc:235
+#: upstream/_versions/main/guides/websockets.adoc:139
+#: upstream/_versions/main/guides/websockets.adoc:238
 #, no-wrap
 msgid "}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:138
+#: upstream/_versions/main/guides/websockets.adoc:141
 msgid "Configures the web socket URL"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:139
+#: upstream/_versions/main/guides/websockets.adoc:142
 msgid "Stores the currently opened web sockets"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/websockets.adoc:140
+#: upstream/_versions/main/guides/websockets.adoc:143
 #, no-wrap
 msgid "A slick web frontend"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:145
+#: upstream/_versions/main/guides/websockets.adoc:148
 msgid "All chat applications need a _nice_ UI, well, this one may not be that nice, but does the work.  Quarkus automatically serves static resources contained in the `META-INF/resources` directory.  Create the `src/main/resources/META-INF/resources` directory and copy this {quickstarts-blob-url}/websockets-quickstart/src/main/resources/META-INF/resources/index.html[index.html] file in it."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/websockets.adoc:146
+#: upstream/_versions/main/guides/websockets.adoc:149
 #, no-wrap
 msgid "Run the application"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:149
+#: upstream/_versions/main/guides/websockets.adoc:152
 msgid "Now, let's see our application in action. Run it with:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:153
+#: upstream/_versions/main/guides/websockets.adoc:156
 #, no-wrap
 msgid "./mvnw compile quarkus:dev\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:156
+#: upstream/_versions/main/guides/websockets.adoc:159
 msgid "Then open your 2 browser windows to http://localhost:8080/:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:158
+#: upstream/_versions/main/guides/websockets.adoc:161
 msgid "Enter a name in the top text area (use 2 different names)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:159
+#: upstream/_versions/main/guides/websockets.adoc:162
 msgid "Click on connect"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:160
+#: upstream/_versions/main/guides/websockets.adoc:163
 msgid "Send and receive messages"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:162
+#: upstream/_versions/main/guides/websockets.adoc:165
 msgid "image:websocket-guide-screenshot.png[alt=Application]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:165
+#: upstream/_versions/main/guides/websockets.adoc:168
 msgid "As usual, the application can be packaged using `./mvnw clean package` and executed using the `target/quarkus-app/quarkus-run.jar` file.  You can also build the native executable using `./mvnw package -Pnative`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:167
+#: upstream/_versions/main/guides/websockets.adoc:170
 msgid "You can also test your web socket applications using the approach detailed {quickstarts-blob-url}/websockets-quickstart/src/test/java/org/acme/websockets/ChatTest.java[here]."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/websockets.adoc:168
+#: upstream/_versions/main/guides/websockets.adoc:171
 #, no-wrap
 msgid "WebSocket Clients"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:171
+#: upstream/_versions/main/guides/websockets.adoc:174
 msgid "Quarkus also contains a WebSocket client. You can call `ContainerProvider.getWebSocketContainer().connectToServer` to create a websocket connection. By default the `quarkus-websockets` artifact includes both client and server support however if you only want the client you can include `quarkus-websockets-client` instead."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:175
+#: upstream/_versions/main/guides/websockets.adoc:178
 msgid "When you connect to the server you can either pass in the Class of the annotated client endpoint you want to use, or an instance of `javax.websocket.Endpoint`. If you are using the annotated endpoint then you can use the exact same annotations as you can on the server, except it must be annotated with `@ClientEndpoint` instead of `@ServerEndpoint`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:177
+#: upstream/_versions/main/guides/websockets.adoc:180
 msgid "The example below shows the client being used to test the chat endpoint above."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:185
+#: upstream/_versions/main/guides/websockets.adoc:188
 #, no-wrap
 msgid ""
 "import java.net.URI;\n"
@@ -381,7 +384,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:191
+#: upstream/_versions/main/guides/websockets.adoc:194
 #, no-wrap
 msgid ""
 "import javax.websocket.ClientEndpoint;\n"
@@ -392,7 +395,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:194
+#: upstream/_versions/main/guides/websockets.adoc:197
 #, no-wrap
 msgid ""
 "import org.junit.jupiter.api.Assertions;\n"
@@ -400,7 +403,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:197
+#: upstream/_versions/main/guides/websockets.adoc:200
 #, no-wrap
 msgid ""
 "import io.quarkus.test.common.http.TestHTTPResource;\n"
@@ -408,7 +411,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:200
+#: upstream/_versions/main/guides/websockets.adoc:203
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -416,13 +419,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:202
+#: upstream/_versions/main/guides/websockets.adoc:205
 #, no-wrap
 msgid "    private static final LinkedBlockingDeque<String> MESSAGES = new LinkedBlockingDeque<>();\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:205
+#: upstream/_versions/main/guides/websockets.adoc:208
 #, no-wrap
 msgid ""
 "    @TestHTTPResource(\"/chat/stu\")\n"
@@ -430,7 +433,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:215
+#: upstream/_versions/main/guides/websockets.adoc:218
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -445,7 +448,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:218
+#: upstream/_versions/main/guides/websockets.adoc:221
 #, no-wrap
 msgid ""
 "    @ClientEndpoint\n"
@@ -453,7 +456,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:226
+#: upstream/_versions/main/guides/websockets.adoc:229
 #, no-wrap
 msgid ""
 "        @OnOpen\n"
@@ -466,7 +469,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:231
+#: upstream/_versions/main/guides/websockets.adoc:234
 #, no-wrap
 msgid ""
 "        @OnMessage\n"
@@ -476,18 +479,18 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/websockets.adoc:233
+#: upstream/_versions/main/guides/websockets.adoc:236
 #, no-wrap
 msgid "    }\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/websockets.adoc:238
+#: upstream/_versions/main/guides/websockets.adoc:241
 #, no-wrap
 msgid "More WebSocket Information"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/websockets.adoc:241
+#: upstream/_versions/main/guides/websockets.adoc:244
 msgid "The Quarkus WebSocket implementation is an implementation of link:https://eclipse-ee4j.github.io/websocket-api/[Jakarta Websockets]."
 msgstr ""
