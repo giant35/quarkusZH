@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:06+0000\n"
+"POT-Creation-Date: 2021-10-07 01:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,13 +133,13 @@ msgid ""
 "    -DprojectArtifactId=mongodb-quickstart \\\n"
 "    -DclassName=\"org.acme.mongodb.FruitResource\" \\\n"
 "    -Dpath=\"/fruits\" \\\n"
-"    -Dextensions=\"resteasy,resteasy-jackson,mongodb-client,resteasy-mutiny,context-propagation\"\n"
+"    -Dextensions=\"resteasy-reactive-jackson,mongodb-client\"\n"
 "cd mongodb-quickstart\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/mongodb.adoc:57
-msgid "This command generates a Maven structure importing the RESTEasy/JAX-RS, Jackson, Mutiny, Context Propagation and MongoDB Client extensions.  After this, the quarkus-mongodb-client extension has been added to your `pom.xml`."
+msgid "This command generates a Maven structure importing the RESTEasy Reactive Jackson and MongoDB Client extensions.  After this, the `quarkus-mongodb-client` extension has been added to your `pom.xml`."
 msgstr ""
 
 #. type: Plain text

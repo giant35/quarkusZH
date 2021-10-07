@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:06+0000\n"
+"POT-Creation-Date: 2021-10-07 01:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -882,9 +882,9 @@ msgstr ""
 msgid ""
 "## Stage 1 : build with maven builder image with native capabilities\n"
 "FROM quay.io/quarkus/ubi-quarkus-native-image:{graalvm-flavor} AS build\n"
-"COPY pom.xml /code/\n"
-"COPY mvnw /code/mvnw\n"
-"COPY .mvn /code/.mvn\n"
+"COPY --chown=quarkus:quarkus mvnw /code/mvnw\n"
+"COPY --chown=quarkus:quarkus .mvn /code/.mvn\n"
+"COPY --chown=quarkus:quarkus pom.xml /code/\n"
 "USER quarkus\n"
 "WORKDIR /code\n"
 "RUN ./mvnw -B org.apache.maven.plugins:maven-dependency-plugin:3.1.2:go-offline\n"
@@ -949,11 +949,11 @@ msgstr ""
 msgid ""
 "## Stage 1 : build with maven builder image with native capabilities\n"
 "FROM quay.io/quarkus/ubi-quarkus-native-image:{graalvm-flavor} AS build\n"
-"COPY gradlew /code/gradlew\n"
-"COPY gradle /code/gradle\n"
-"COPY build.gradle /code/\n"
-"COPY settings.gradle /code/\n"
-"COPY gradle.properties /code/\n"
+"COPY --chown=quarkus:quarkus gradlew /code/gradlew\n"
+"COPY --chown=quarkus:quarkus /code/gradle\n"
+"COPY --chown=quarkus:quarkus build.gradle /code/\n"
+"COPY --chown=quarkus:quarkus settings.gradle /code/\n"
+"COPY --chown=quarkus:quarkus gradle.properties /code/\n"
 "USER quarkus\n"
 "WORKDIR /code\n"
 "COPY src /code/src\n"
@@ -1183,7 +1183,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/building-native-image.adoc:708
-msgid "Starting with Oracle GraalVM 20.2 or Mandrel 20.1, debug symbols for native executables can be generated for Linux environments (Windows support is still under development).  These symbols can be used to debug native executables with tools such as `gdb`."
+msgid "Starting with Oracle GraalVM 20.2 or Mandrel 20.1, debug symbols for native executables can be generated for Linux environments (Windows support is still under development, macOS is not supported).  These symbols can be used to debug native executables with tools such as `gdb`."
 msgstr ""
 
 #. type: Plain text
@@ -1193,108 +1193,105 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_guides/building-native-image.adoc:717
-msgid "The generation of the `.debug` file depends on `objcopy`.  On common Linux distributions and macOS you will need to install the `binutils` package:"
+msgid "The generation of the `.debug` file depends on `objcopy`.  On common Linux distributions you will need to install the `binutils` package:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:727
+#: upstream/_guides/building-native-image.adoc:724
 #, no-wrap
 msgid ""
 "# dnf (rpm-based)\n"
 "sudo dnf install binutils\n"
 "# Debian-based distributions\n"
 "sudo apt-get install binutils\n"
-"# macOS\n"
-"brew install binutils\n"
-"export PATH=/usr/local/opt/binutils/bin:$PATH\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:730
+#: upstream/_guides/building-native-image.adoc:727
 msgid "When `objcopy` is not available debug symbols are embedded in the executable."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:738
+#: upstream/_guides/building-native-image.adoc:735
 msgid "Aside from debug symbols, setting `-Dquarkus.native.debug.enabled=true` flag generates a cache of source files for any JDK runtime classes, GraalVM classes and application classes resolved during native executable generation.  This source cache is useful for native debugging tools, to establish the link between the symbols and matching source code.  It provides a convenient way of making just the necessary sources available to the debugger/IDE when debugging a native executable."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:744
+#: upstream/_guides/building-native-image.adoc:741
 msgid "Sources for third party jar dependencies, including Quarkus source code, are not added to the source cache by default.  To include those, make sure you invoke `mvn dependency:sources` first.  This step is required in order to pull the sources for these dependencies, and get them included in the source cache."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:746
+#: upstream/_guides/building-native-image.adoc:743
 msgid "The source cache is located in the `target/sources` folder."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:750
+#: upstream/_guides/building-native-image.adoc:747
 msgid "If running `gdb` from a different directory than `target`, then the sources can be loaded by running:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:754
+#: upstream/_guides/building-native-image.adoc:751
 #, no-wrap
 msgid "directory path/to/target\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:757
+#: upstream/_guides/building-native-image.adoc:754
 msgid "in the `gdb` prompt."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:759
+#: upstream/_guides/building-native-image.adoc:756
 msgid "Or start `gdb` with:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:763
+#: upstream/_guides/building-native-image.adoc:760
 #, no-wrap
 msgid "gdb -ex 'directory path/to/target' path/to/target/{project.name}-{project.version}-runner\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:766
+#: upstream/_guides/building-native-image.adoc:763
 msgid "e.g.,"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:769
+#: upstream/_guides/building-native-image.adoc:766
 #, no-wrap
 msgid "gdb -ex 'directory ./target' ./target/getting-started-1.0.0-SNAPSHOT-runner\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/building-native-image.adoc:773
+#: upstream/_guides/building-native-image.adoc:770
 #, no-wrap
 msgid "Configuring the Native Executable"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:777
+#: upstream/_guides/building-native-image.adoc:774
 msgid "There are a lot of different configuration options that can affect how the native executable is generated.  These are provided in `application.properties` the same as any other config property."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:779
+#: upstream/_guides/building-native-image.adoc:776
 msgid "The properties are shown below:"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/building-native-image.adoc:782
+#: upstream/_guides/building-native-image.adoc:779
 #, no-wrap
 msgid "What's next?"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:787
+#: upstream/_guides/building-native-image.adoc:784
 msgid "This guide covered the creation of a native (binary) executable for your application.  It provides an application exhibiting a swift startup time and consuming less memory.  However, there is much more."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:788
+#: upstream/_guides/building-native-image.adoc:785
 msgid "We recommend continuing the journey with the link:deploying-to-kubernetes[deployment to Kubernetes and OpenShift]."
 msgstr ""

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:07+0000\n"
+"POT-Creation-Date: 2021-10-07 01:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/ide-tooling.adoc:16
-msgid "https://github.com/eclipse/che-devfile-registry/blob/master/devfiles/quarkus/devfile.yaml[Quarkus Tools for Eclipse Che]"
+msgid "https://github.com/eclipse/che-devfile-registry/blob/main/devfiles/quarkus/devfile.yaml[Quarkus Tools for Eclipse Che]"
 msgstr ""
 
 #. type: Plain text

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 01:05+0000\n"
+"POT-Creation-Date: 2021-10-07 01:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -928,6 +928,26 @@ msgid "Building with `./gradlew build`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/gradle-tooling.adoc:496
+#: upstream/_guides/gradle-tooling.adoc:497
 msgid "Starting from 1.1.0.Final, `./gradlew build` will no longer build the native image. Add `-Dquarkus.package.type=native` build argument explicitly as explained above if needed."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/gradle-tooling.adoc:498
+#, no-wrap
+msgid "Publishing your application"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/gradle-tooling.adoc:503
+msgid "In order to make sure the right dependency versions are being used by Gradle, the BOM is declared as an `enforcedPlatform` in your build file.  By default, the `maven-publish` plugin will prevent you from publishing your application due to this `enforcedPlatform`.  This validation can be skipped by adding the following configuration in your `build.gradle` file:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/gradle-tooling.adoc:509
+#, no-wrap
+msgid ""
+"tasks.withType(GenerateModuleMetadata).configureEach {\n"
+"    suppressedValidationErrors.add('enforced-platform')\n"
+"}\n"
 msgstr ""
