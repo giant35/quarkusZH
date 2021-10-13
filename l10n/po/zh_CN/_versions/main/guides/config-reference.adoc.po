@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-07 01:05+0000\n"
+"POT-Creation-Date: 2021-10-13 01:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -401,7 +401,6 @@ msgstr ""
 #: upstream/_versions/main/guides/config-reference.adoc:373
 #: upstream/_versions/main/guides/config-reference.adoc:404
 #: upstream/_versions/main/guides/config-reference.adoc:422
-#: upstream/_versions/main/guides/config-reference.adoc:458
 #, no-wrap
 msgid "application.properties"
 msgstr ""
@@ -867,189 +866,146 @@ msgid "Indexed Properties are not supported in Environment Variables."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/config-reference.adoc:445
-#, no-wrap
-msgid "Generate Configuration"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:448
-msgid "It is also possible to generate an example `application.properties` with all known configuration properties:"
-msgstr ""
-
-#. type: Block title
-#: upstream/_versions/main/guides/config-reference.adoc:451
-#, no-wrap
-msgid "/mvnw quarkus:generate-config"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:457
-msgid "This creates a `src/main/resources/application.properties.example` file that contains all the config options exposed via the extensions currently present in the application. These options are commented out, and have their value set to defaults when applicable. For example this HTTP port config entry will appear as:"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:465
-msgid "# # The HTTP port # #quarkus.http.port=8080"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:469
-msgid "Rather than generating an example config file, you can also add these to you actual config file by setting the `-Dfile` parameter:"
-msgstr ""
-
-#. type: Block title
-#: upstream/_versions/main/guides/config-reference.adoc:472
-#, no-wrap
-msgid "/mvnw quarkus:generate-config -Dfile=application.properties"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:477
-msgid "If a config option is already present it will not be added, so it is safe to run this after adding an extension to see which configurations are available."
-msgstr ""
-
-#. type: Title ==
-#: upstream/_versions/main/guides/config-reference.adoc:479
+#: upstream/_versions/main/guides/config-reference.adoc:446
 #, no-wrap
 msgid "Configuring Quarkus"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:484
+#: upstream/_versions/main/guides/config-reference.adoc:451
 msgid "Quarkus itself is configured via the same mechanism as your application. Quarkus reserves the `quarkus.` namespace for its own configuration. For example to configure the HTTP server port you can set `quarkus.http.port` in `application.properties`. All the Quarkus configuration properties are link:all-config[documented and searchable]."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/config-reference.adoc:489
+#: upstream/_versions/main/guides/config-reference.adoc:456
 msgid "As mentioned above, properties prefixed with `quarkus.` are effectively reserved for configuring Quarkus itself and its extensions. Therefore, the `quarkus.` prefix should **never** be used for application specific properties."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/config-reference.adoc:491
+#: upstream/_versions/main/guides/config-reference.adoc:458
 #, no-wrap
 msgid "Build Time configuration"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:496
+#: upstream/_versions/main/guides/config-reference.adoc:463
 msgid "Some Quarkus configurations only take effect during build time, meaning is not possible to change them at runtime. These configurations are still available at runtime but as read-only and have no effect in Quarkus behaviour. A change to any of these configurations requires a rebuild of the application itself to reflect changes of such properties."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:498
+#: upstream/_versions/main/guides/config-reference.adoc:465
 msgid "The properties fixed at build time are marked with a lock icon (icon:lock[]) in the link:all-config[list of all configuration options]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:502
+#: upstream/_versions/main/guides/config-reference.adoc:469
 msgid "However, some extensions do define properties _overridable at runtime_. A simple example is the database URL, username and password which is only known specifically in your target environment, so they can be set and influence the application behaviour at runtime."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/config-reference.adoc:503
+#: upstream/_versions/main/guides/config-reference.adoc:470
 #, no-wrap
 msgid "Change build time properties after your application has been published"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:506
+#: upstream/_versions/main/guides/config-reference.adoc:473
 msgid "If you are in the rare situation that you need to change the build time configuration after your application is built, then check out how link:reaugmentation[re-augmentation] can be used to rebuild the augmentation output for a different build time configuration."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/config-reference.adoc:508
+#: upstream/_versions/main/guides/config-reference.adoc:475
 #, no-wrap
 msgid "Additional Information"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:511
+#: upstream/_versions/main/guides/config-reference.adoc:478
 msgid "xref:config-yaml.adoc[YAML ConfigSource Extension]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:512
+#: upstream/_versions/main/guides/config-reference.adoc:479
 msgid "xref:vault.adoc[HashiCorp Vault ConfigSource Extension]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:513
+#: upstream/_versions/main/guides/config-reference.adoc:480
 msgid "xref:consul-config.adoc[Consul ConfigSource Extension]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:514
+#: upstream/_versions/main/guides/config-reference.adoc:481
 msgid "xref:spring-cloud-config-client.adoc[Spring Cloud ConfigSource Extension]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:515
+#: upstream/_versions/main/guides/config-reference.adoc:482
 msgid "xref:config-mappings.adoc[Mapping configuration to objects]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:516
+#: upstream/_versions/main/guides/config-reference.adoc:483
 msgid "xref:config-extending-support.adoc[Extending configuration support]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:518
+#: upstream/_versions/main/guides/config-reference.adoc:485
 msgid "Quarkus relies on link:https://github.com/smallrye/smallrye-config/[SmallRye Config] and inherits its features:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:520
+#: upstream/_versions/main/guides/config-reference.adoc:487
 msgid "Additional ``ConfigSource``s"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:521
+#: upstream/_versions/main/guides/config-reference.adoc:488
 msgid "Additional ``Converter``s"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:522
+#: upstream/_versions/main/guides/config-reference.adoc:489
 msgid "Indexed properties"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:523
+#: upstream/_versions/main/guides/config-reference.adoc:490
 msgid "Parent profile"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:524
+#: upstream/_versions/main/guides/config-reference.adoc:491
 msgid "Interceptors for configuration value resolution"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:525
+#: upstream/_versions/main/guides/config-reference.adoc:492
 msgid "Relocate configuration properties"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:526
+#: upstream/_versions/main/guides/config-reference.adoc:493
 msgid "Fallback configuration properties"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:527
+#: upstream/_versions/main/guides/config-reference.adoc:494
 msgid "Logging"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:528
+#: upstream/_versions/main/guides/config-reference.adoc:495
 msgid "Hide secrets"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/config-reference.adoc:531
+#: upstream/_versions/main/guides/config-reference.adoc:498
 msgid "For more information, please check the link:https://smallrye.io/docs/smallrye-config/index.html[SmallRye Config documentation]."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/config-reference.adoc:532
+#: upstream/_versions/main/guides/config-reference.adoc:499
 #, no-wrap
 msgid "Configuration Reference"
 msgstr ""

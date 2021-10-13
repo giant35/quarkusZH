@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 01:04+0000\n"
+"POT-Creation-Date: 2021-10-13 01:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,7 +139,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:68
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:493
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:495
 #, no-wrap
 msgid "./mvnw quarkus:add-extension -Dextensions=\"smallrye-fault-tolerance\"\n"
 msgstr ""
@@ -151,7 +151,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:78
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:502
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:504
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -345,7 +345,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:179
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:375
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:377
 #, no-wrap
 msgid "    private AtomicLong counter = new AtomicLong(0);\n"
 msgstr ""
@@ -426,7 +426,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:225
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:460
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:462
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.faulttolerance.Retry;\n"
@@ -435,7 +435,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:235
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:470
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:472
 #, no-wrap
 msgid ""
 "public class CoffeeResource {\n"
@@ -576,11 +576,18 @@ msgid "Add a fallback method to `CoffeeResource` and a `@Fallback` annotation to
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:330
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:324
 #, no-wrap
 msgid ""
 "import java.util.Collections;\n"
+"import org.jboss.resteasy.annotations.jaxrs.PathParam;\n"
 "import org.eclipse.microprofile.faulttolerance.Fallback;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:332
+#, no-wrap
+msgid ""
 "...\n"
 "public class CoffeeResource {\n"
 "    ...\n"
@@ -591,7 +598,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:338
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:340
 #, no-wrap
 msgid ""
 "    public List<Coffee> fallbackRecommendations(int id) {\n"
@@ -604,17 +611,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:344
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:346
 msgid "Hit refresh several times on `http://localhost:8080/coffee/2/recommendations`.  The `TimeoutException` should not appear anymore. Instead, in case of a timeout, the page will display a single recommendation that we hardcoded in our fallback method `fallbackRecommendations()`, rather than two recommendations returned by the original method."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:346
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:348
 msgid "Check the server output to see that fallback is really happening:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:352
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:354
 #, no-wrap
 msgid ""
 "2020-01-09 13:21:34,250 INFO  [org.acm.fau.CoffeeResource] (executor-thread-1) CoffeeResource#recommendations() invocation #1 returning successfully\n"
@@ -623,28 +630,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:355
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:357
 msgid "The fallback method is required to have the same parameters as the original method."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:356
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:358
 #, no-wrap
 msgid "Adding Resiliency: Circuit Breaker"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:362
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:364
 msgid "A circuit breaker is useful for limiting number of failures happening in the system, when part of the system becomes temporarily unstable. The circuit breaker records successful and failed invocations of a method, and when the ratio of failed invocations reaches the specified threshold, the circuit breaker _opens_ and blocks all further invocations of that method for a given time."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:364
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:366
 msgid "Add the following code into the `CoffeeRepositoryService` bean, so that we can demonstrate a circuit breaker in action:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:370
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:372
 #, no-wrap
 msgid ""
 "import java.util.concurrent.atomic.AtomicLong;\n"
@@ -653,7 +660,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:373
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:375
 #, no-wrap
 msgid ""
 "public class CoffeeRepositoryService {\n"
@@ -661,7 +668,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:381
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:383
 #, no-wrap
 msgid ""
 "    @CircuitBreaker(requestVolumeThreshold = 4)\n"
@@ -672,7 +679,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:390
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:392
 #, no-wrap
 msgid ""
 "    private void maybeFail() {\n"
@@ -686,12 +693,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:393
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:395
 msgid "And inject the code below into the `CoffeeResource` endpoint:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:402
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:404
 #, no-wrap
 msgid ""
 "public class CoffeeResource {\n"
@@ -703,7 +710,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:408
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:410
 #, no-wrap
 msgid ""
 "        Coffee coffee = coffeeRepository.getCoffeeById(id);\n"
@@ -714,7 +721,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:424
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:426
 #, no-wrap
 msgid ""
 "        try {\n"
@@ -735,162 +742,162 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:428
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:430
 msgid "We added another functionality - the application can return the amount of remaining packages of given coffee on our store (just a random number)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:431
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:433
 msgid "This time an artificial failure was introduced in the CDI bean: the `CoffeeRepositoryService#getAvailability()` method is going to alternate between two successful and two failed invocations."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:435
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:437
 msgid "We also added a `@CircuitBreaker` annotation with `requestVolumeThreshold = 4`. `CircuitBreaker.failureRatio` is by default 0.5, and `CircuitBreaker.delay` is by default 5 seconds. That means that a circuit breaker will open when 2 of the last 4 invocations failed and it will stay open for 5 seconds."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:437
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:439
 msgid "To test this out, do the following:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:439
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:441
 msgid "Go to `http://localhost:8080/coffee/2/availability` in your browser. You should see a number being returned."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:440
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:442
 msgid "Hit refresh, this second request should again be successful and return a number."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:442
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:444
 msgid "Refresh two more times. Both times you should see text \"RuntimeException: Service failed.\", which is the exception thrown by `CoffeeRepositoryService#getAvailability()`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:445
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:447
 msgid "Refresh a couple more times. Unless you waited too long, you should again see exception, but this time it's \"CircuitBreakerOpenException: getAvailability\". This exception indicates that the circuit breaker opened and the `CoffeeRepositoryService#getAvailability()` method is not being called anymore."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:447
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:449
 msgid "Give it 5 seconds during which circuit breaker should close and you should be able to make two successful requests again."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:448
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:450
 #, no-wrap
 msgid "Runtime configuration"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:451
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:453
 msgid "You can override the annotations parameters at runtime inside your `application.properties` file."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:453
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:455
 msgid "If we take the retry example that we already saw:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:457
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:459
 #, no-wrap
 msgid "package org.acme;\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:473
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:475
 msgid "We can override the `maxRetries` parameter with 6 retries instead of 4 by the following configuration item:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:476
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:478
 #, no-wrap
 msgid "org.acme.CoffeeResource/coffees/Retry/maxRetries=6\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:480
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:482
 msgid "The format is `fully-qualified-class-name/method-name/annotation-name/property-name=value`.  You can also configure a property for all the annotation via `annotation-name/property-name=value`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:481
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:483
 #, no-wrap
 msgid "Conclusion"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:485
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:487
 msgid "SmallRye Fault Tolerance allows to improve resiliency of your application, without having an impact on the complexity of our business logic."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:487
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:489
 msgid "All that is needed to enable the fault tolerance features in Quarkus is:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:489
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:491
 msgid "adding the `smallrye-fault-tolerance` Quarkus extension to your project using the `quarkus-maven-plugin`:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:495
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:497
 msgid "or simply adding the following Maven dependency:"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:504
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:506
 #, no-wrap
 msgid "Additional resources"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:508
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:510
 msgid "SmallRye Fault Tolerance has more features than shown here.  Please check the link:https://smallrye.io/docs/smallrye-fault-tolerance/5.2.0/index.html[SmallRye Fault Tolerance documentation] to learn about them."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:510
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:512
 msgid "In Quarkus, you can use the SmallRye Fault Tolerance optional features out of the box."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:512
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:514
 msgid "Support for Mutiny is present, so your asynchronous methods can return `Uni` in addition to `CompletionStage`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:514
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:516
 msgid "MicroProfile Context Propagation is integrated with Fault Tolerance, so existing contexts are automatically propagated to your asynchronous methods."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:519
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:521
 msgid "This also applies to the CDI request context: if it is active on the original thread, it is propagated to the new thread, but if it's not, then the new thread won't have it either.  This is contrary to MicroProfile Fault Tolerance specification, which states that the request context must be active during the `@Asynchronous` method invocation."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:522
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:524
 msgid "We believe that in presence of MicroProfile Context Propagation, this requirement should not apply.  The entire point of context propagation is to make sure the new thread has the same contexts as the original thread."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:525
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:527
 msgid "Non-compatible mode is enabled by default, so methods that return `CompletionStage` (or `Uni`) have asynchronous fault tolerance applied without any `@Asynchronous`, `@Blocking` or `@NonBlocking` annotation."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:530
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:532
 msgid "This mode is not compatible with the MicroProfile Fault Tolerance specification, albeit the incompatibility is very small.  To restore full compatibility, add this configuration property:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:534
+#: upstream/_versions/main/guides/smallrye-fault-tolerance.adoc:536
 #, no-wrap
 msgid "smallrye.faulttolerance.mp-compatibility=true\n"
 msgstr ""
