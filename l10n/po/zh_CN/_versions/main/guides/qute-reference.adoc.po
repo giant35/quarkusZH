@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-16 01:06+0000\n"
+"POT-Creation-Date: 2021-10-19 01:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3499,7 +3499,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:1639
-msgid "In this case, an optimized value resolver is generated automatically and used at rutime"
+msgid "In this case, an optimized value resolver is generated automatically and used at runtime"
 msgstr ""
 
 #. type: Plain text
@@ -3509,7 +3509,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:1641
-msgid "Annotate the model class with <<template_data,`@TemplateData`>> - a specialized value resolver is generated and used at rutime"
+msgid "Annotate the model class with <<template_data,`@TemplateData`>> - a specialized value resolver is generated and used at runtime"
 msgstr ""
 
 #. type: Plain text

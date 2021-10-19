@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-31 01:03+0000\n"
+"POT-Creation-Date: 2021-10-19 01:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -218,7 +218,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-built-in-authentication.adoc:116
-msgid "If you disable proactive authentication then the authentication process will only be run when an identity is requested, either because there are security rules that requires the user to be authenticated, or due to programatic access to the current identity."
+msgid "If you disable proactive authentication then the authentication process will only be run when an identity is requested, either because there are security rules that requires the user to be authenticated, or due to programmatic access to the current identity."
 msgstr ""
 
 #. type: Plain text
