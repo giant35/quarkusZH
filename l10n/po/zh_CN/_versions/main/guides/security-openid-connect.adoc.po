@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-19 01:07+0000\n"
+"POT-Creation-Date: 2021-10-20 01:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,7 +99,7 @@ msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect.adoc:35
-msgid "In this example, we build a very simple microservice which offers three endpoints:"
+msgid "In this example, we build a very simple microservice which offers two endpoints:"
 msgstr ""
 
 #. type: Plain text
