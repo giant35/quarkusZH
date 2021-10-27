@@ -20,202 +20,197 @@ msgstr ""
 #. and pull requests should be submitted there:
 #. https://github.com/quarkusio/quarkus/tree/main/docs/src/main/asciidoc
 #. type: Title =
-#: upstream/_versions/main/guides/amqp.adoc:6
+#: upstream/_versions/main/guides/rabbitmq.adoc:6
 #, no-wrap
-msgid "Getting Started to SmallRye Reactive Messaging with AMQP 1.0"
+msgid "Getting Started to SmallRye Reactive Messaging with RabbitMQ"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:11
-msgid "This guide demonstrates how your Quarkus application can utilize SmallRye Reactive Messaging to interact with AMQP 1.0."
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:18
-msgid "If you want to use RabbitMQ, you should use the xref:rabbitmq.adoc[SmallRye Reactive Messaging RabbitMQ extension].  Alternatively, if want to use RabbitMQ with AMQP 1.0 you need to enable the AMQP 1.0 plugin in the RabbitMQ broker; check the https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/3.9/amqp/amqp.html#amqp-rabbitmq[connecting to RabbitMQ] documentation."
+#: upstream/_versions/main/guides/rabbitmq.adoc:11
+msgid "This guide demonstrates how your Quarkus application can utilize SmallRye Reactive Messaging to interact with RabbitMQ."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/amqp.adoc:19
+#: upstream/_versions/main/guides/rabbitmq.adoc:14
 #, no-wrap
 msgid "Prerequisites"
-msgstr "准备"
+msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:22
+#: upstream/_versions/main/guides/rabbitmq.adoc:17
 msgid "To complete this guide, you need:"
-msgstr "要完成本指南，您需要："
+msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:24
+#: upstream/_versions/main/guides/rabbitmq.adoc:19
 msgid "less than 15 minutes"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:25
+#: upstream/_versions/main/guides/rabbitmq.adoc:20
 msgid "an IDE"
-msgstr "IDE"
+msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:26
+#: upstream/_versions/main/guides/rabbitmq.adoc:21
 msgid "JDK 11+ installed with `JAVA_HOME` configured appropriately"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:27
+#: upstream/_versions/main/guides/rabbitmq.adoc:22
 msgid "Apache Maven {maven-version}"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:28
+#: upstream/_versions/main/guides/rabbitmq.adoc:23
 msgid "docker and docker-compose"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:29
+#: upstream/_versions/main/guides/rabbitmq.adoc:24
 msgid "GraalVM installed if you want to run in native mode."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/amqp.adoc:30
+#: upstream/_versions/main/guides/rabbitmq.adoc:25
 #, no-wrap
 msgid "Architecture"
-msgstr "架构"
+msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:36
-msgid "In this guide, we are going to develop two applications communicating with an AMQP broker.  We will use https://activemq.apache.org/components/artemis/[Artemis], but you can use any AMQP 1.0 broker.  The first application sends a _quote request_ to an AMQP queue and consumes messages from the _quote_ queue.  The second application receives the _quote request_ and sends a _quote_ back."
+#: upstream/_versions/main/guides/rabbitmq.adoc:30
+msgid "In this guide, we are going to develop two applications communicating with a RabbitMQ broker.  The first application sends a _quote request_ to the RabbitMQ _quote requests_ exchange and consumes messages from the _quote_ queue.  The second application receives the _quote request_ and sends a _quote_ back."
 msgstr ""
 
 #. type: Named 'alt' AttributeList argument for macro 'image'
-#: upstream/_versions/main/guides/amqp.adoc:37
+#: upstream/_versions/main/guides/rabbitmq.adoc:31
 #, no-wrap
 msgid "Architecture,"
 msgstr ""
 
 #. type: Target for macro image
-#: upstream/_versions/main/guides/amqp.adoc:37
+#: upstream/_versions/main/guides/rabbitmq.adoc:31
 #, no-wrap
 msgid "amqp-qs-architecture.png"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:42
-msgid "The first application, the `producer`, will let the user request some quotes over an HTTP endpoint.  For each quote request, a random identifier is generated and returned to the user, to put the quote request on _pending_.  At the same time the generated request id is sent over the `quote-requests` queue."
+#: upstream/_versions/main/guides/rabbitmq.adoc:36
+msgid "The first application, the `producer`, will let the user request some quotes over an HTTP endpoint.  For each quote request, a random identifier is generated and returned to the user, to put the quote request on _pending_.  At the same time the generated request id is sent to the `quote-requests` exchange."
 msgstr ""
 
 #. type: Named 'alt' AttributeList argument for macro 'image'
-#: upstream/_versions/main/guides/amqp.adoc:43
+#: upstream/_versions/main/guides/rabbitmq.adoc:37
 #, no-wrap
 msgid "Producer"
 msgstr ""
 
 #. type: Target for macro image
-#: upstream/_versions/main/guides/amqp.adoc:43
+#: upstream/_versions/main/guides/rabbitmq.adoc:37
 #, no-wrap
 msgid "amqp-qs-app-screenshot.png"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:46
-msgid "The second application, the `processor`, in turn, will read from the `quote-requests` queue put a random price to the quote, and send it to a queue named `quotes`."
+#: upstream/_versions/main/guides/rabbitmq.adoc:40
+msgid "The second application, the `processor`, in turn, will read from the `quote-requests` queue put a random price to the quote, and send it to an exchange named `quotes`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:49
+#: upstream/_versions/main/guides/rabbitmq.adoc:43
 msgid "Lastly, the `producer` will read the quotes and send them to the browser using server-sent events.  The user will therefore see the quote price updated from _pending_ to the received price in real-time."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/amqp.adoc:50
+#: upstream/_versions/main/guides/rabbitmq.adoc:44
 #, no-wrap
 msgid "Solution"
-msgstr "完整源码"
+msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:54
+#: upstream/_versions/main/guides/rabbitmq.adoc:48
 msgid "We recommend that you follow the instructions in the next sections and create applications step by step.  However, you can go right to the completed example."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:56
+#: upstream/_versions/main/guides/rabbitmq.adoc:50
 msgid "Clone the Git repository: `git clone {quickstarts-clone-url}`, or download an {quickstarts-archive-url}[archive]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:58
-msgid "The solution is located in the `amqp-quickstart` {quickstarts-tree-url}/amqp-quickstart[directory]."
+#: upstream/_versions/main/guides/rabbitmq.adoc:52
+msgid "The solution is located in the `rabbitmq-quickstart` {quickstarts-tree-url}/rabbitmq-quickstart[directory]."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/amqp.adoc:59
+#: upstream/_versions/main/guides/rabbitmq.adoc:53
 #, no-wrap
 msgid "Creating the Maven Project"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:62
+#: upstream/_versions/main/guides/rabbitmq.adoc:56
 msgid "First, we need to create two projects: the _producer_ and the _processor_."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:64
+#: upstream/_versions/main/guides/rabbitmq.adoc:58
 msgid "To create the _producer_ project, in a terminal run:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:72
+#: upstream/_versions/main/guides/rabbitmq.adoc:66
 #, no-wrap
 msgid ""
 "mvn io.quarkus.platform:quarkus-maven-plugin:{quarkus-version}:create \\\n"
 "    -DprojectGroupId=org.acme \\\n"
-"    -DprojectArtifactId=amqp-quickstart-producer \\\n"
+"    -DprojectArtifactId=rabbitmq-quickstart-producer \\\n"
 "    -DnoCode=true \\\n"
-"    -Dextensions=resteasy-reactive-jackson,smallrye-reactive-messaging-amqp\n"
+"    -Dextensions=smallrye-reactive-messaging-rabbitmq,resteasy-reactive-jackson\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:75
+#: upstream/_versions/main/guides/rabbitmq.adoc:69
 msgid "This command creates the project structure and select the two Quarkus extensions we will be using:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:77
+#: upstream/_versions/main/guides/rabbitmq.adoc:71
+msgid "The Reactive Messaging RabbitMQ connector"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/rabbitmq.adoc:72
 msgid "RESTEasy Reactive and it's Jackson support to handle JSON payloads"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:78
-msgid "The Reactive Messaging AMQP connector"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:80
+#: upstream/_versions/main/guides/rabbitmq.adoc:74
 msgid "To create the _processor_ project, from the same directory, run:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:88
+#: upstream/_versions/main/guides/rabbitmq.adoc:82
 #, no-wrap
 msgid ""
 "mvn io.quarkus.platform:quarkus-maven-plugin:{quarkus-version}:create \\\n"
 "    -DprojectGroupId=org.acme \\\n"
-"    -DprojectArtifactId=amqp-quickstart-processor \\\n"
+"    -DprojectArtifactId=rabbitmq-quickstart-processor \\\n"
 "    -DnoCode=true \\\n"
-"    -Dextensions=smallrye-reactive-messaging-amqp\n"
+"    -Dextensions=smallrye-reactive-messaging-rabbitmq\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:91
+#: upstream/_versions/main/guides/rabbitmq.adoc:85
 msgid "At that point you should have the following structure:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:117
+#: upstream/_versions/main/guides/rabbitmq.adoc:111
 #, no-wrap
 msgid ""
 ".\n"
-"├── amqp-quickstart-processor\n"
+"├── rabbitmq-quickstart-processor\n"
 "│  ├── README.md\n"
 "│  ├── mvnw\n"
 "│  ├── mvnw.cmd\n"
@@ -226,7 +221,7 @@ msgid ""
 "│        ├── java\n"
 "│        └── resources\n"
 "│           └── application.properties\n"
-"└── amqp-quickstart-producer\n"
+"└── rabbitmq-quickstart-producer\n"
 "   ├── README.md\n"
 "   ├── mvnw\n"
 "   ├── mvnw.cmd\n"
@@ -240,35 +235,35 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:120
+#: upstream/_versions/main/guides/rabbitmq.adoc:114
 msgid "Open the two projects in your favorite IDE."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/amqp.adoc:121
+#: upstream/_versions/main/guides/rabbitmq.adoc:115
 #, no-wrap
 msgid "The Quote object"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:126
-msgid "The `Quote` class will be used in both `producer` and `processor` projects.  For the sake of simplicity we will duplicate the class.  In both projects, create the `src/main/java/org/acme/amqp/model/Quote.java` file, with the following content:"
+#: upstream/_versions/main/guides/rabbitmq.adoc:120
+msgid "The `Quote` class will be used in both `producer` and `processor` projects.  For the sake of simplicity we will duplicate the class.  In both projects, create the `src/main/java/org/acme/rabbitmq/model/Quote.java` file, with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:130
+#: upstream/_versions/main/guides/rabbitmq.adoc:124
 #, no-wrap
-msgid "package org.acme.amqp.model;\n"
+msgid "package org.acme.rabbitmq.model;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:132
+#: upstream/_versions/main/guides/rabbitmq.adoc:126
 #, no-wrap
 msgid "import io.quarkus.runtime.annotations.RegisterForReflection;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:135
+#: upstream/_versions/main/guides/rabbitmq.adoc:129
 #, no-wrap
 msgid ""
 "@RegisterForReflection\n"
@@ -276,7 +271,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:138
+#: upstream/_versions/main/guides/rabbitmq.adoc:132
 #, no-wrap
 msgid ""
 "    public String id;\n"
@@ -284,7 +279,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:143
+#: upstream/_versions/main/guides/rabbitmq.adoc:137
 #, no-wrap
 msgid ""
 "    /**\n"
@@ -294,7 +289,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:148
+#: upstream/_versions/main/guides/rabbitmq.adoc:142
 #, no-wrap
 msgid ""
 "    public Quote(String id, int price) {\n"
@@ -304,7 +299,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:157
+#: upstream/_versions/main/guides/rabbitmq.adoc:151
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -318,51 +313,51 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:161
-msgid "JSON representation of `Quote` objects will be used in messages sent to the AMQP queues and also in the server-sent events sent to browser clients."
+#: upstream/_versions/main/guides/rabbitmq.adoc:155
+msgid "JSON representation of `Quote` objects will be used in messages sent to the RabbitMQ queues and also in the server-sent events sent to browser clients."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:163
-msgid "Quarkus has built-in capabilities to deal with JSON AMQP messages."
+#: upstream/_versions/main/guides/rabbitmq.adoc:157
+msgid "Quarkus has built-in capabilities to deal with JSON RabbitMQ messages."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/amqp.adoc:165
+#: upstream/_versions/main/guides/rabbitmq.adoc:159
 #, no-wrap
 msgid "@RegisterForReflection"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/amqp.adoc:170
+#: upstream/_versions/main/guides/rabbitmq.adoc:164
 msgid "The `@RegisterForReflection` annotation instructs Quarkus to include the class (including fields and methods) when building the native executable.  This will be useful later when we run the applications as native executables inside containers.  Without, the native compilation would remove the fields and methods during the dead-code elimination phase."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/amqp.adoc:172
+#: upstream/_versions/main/guides/rabbitmq.adoc:166
 #, no-wrap
 msgid "Sending quote request"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:175
-msgid "Inside the `producer` project locate the generated `src/main/java/org/acme/amqp/producer/QuotesResource.java` file, and update the content to be:"
+#: upstream/_versions/main/guides/rabbitmq.adoc:169
+msgid "Inside the `producer` project locate the generated `src/main/java/org/acme/rabbitmq/producer/QuotesResource.java` file, and update the content to be:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:179
+#: upstream/_versions/main/guides/rabbitmq.adoc:173
 #, no-wrap
-msgid "package org.acme.amqp.producer;\n"
+msgid "package org.acme.rabbitmq.producer;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:181
+#: upstream/_versions/main/guides/rabbitmq.adoc:175
 #, no-wrap
 msgid "import java.util.UUID;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:187
+#: upstream/_versions/main/guides/rabbitmq.adoc:181
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -373,22 +368,22 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:191
+#: upstream/_versions/main/guides/rabbitmq.adoc:185
 #, no-wrap
 msgid ""
-"import org.acme.amqp.model.Quote;\n"
+"import org.acme.rabbitmq.model.Quote;\n"
 "import org.eclipse.microprofile.reactive.messaging.Channel;\n"
 "import org.eclipse.microprofile.reactive.messaging.Emitter;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:193
+#: upstream/_versions/main/guides/rabbitmq.adoc:187
 #, no-wrap
 msgid "import io.smallrye.mutiny.Multi;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:196
+#: upstream/_versions/main/guides/rabbitmq.adoc:190
 #, no-wrap
 msgid ""
 "@Path(\"/quotes\")\n"
@@ -396,17 +391,18 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:198
+#: upstream/_versions/main/guides/rabbitmq.adoc:192
 #, no-wrap
 msgid "    @Channel(\"quote-requests\") Emitter<String> quoteRequestEmitter; // <1>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:211
+#: upstream/_versions/main/guides/rabbitmq.adoc:206
 #, no-wrap
 msgid ""
 "    /**\n"
-"     * Endpoint to generate a new quote request id and send it to \"quote-requests\" AMQP queue using the emitter.\n"
+"     * Endpoint to generate a new quote request id and send it to \"quote-requests\" channel (which\n"
+"     * maps to the \"quote-requests\" RabbitMQ exchange) using the emitter.\n"
 "     */\n"
 "    @POST\n"
 "    @Path(\"/request\")\n"
@@ -420,191 +416,193 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:213
+#: upstream/_versions/main/guides/rabbitmq.adoc:208
 msgid "Inject a Reactive Messaging `Emitter` to send messages to the `quote-requests` channel."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:214
-msgid "On a post request, generate a random UUID and send it to the AMQP queue using the emitter."
+#: upstream/_versions/main/guides/rabbitmq.adoc:209
+msgid "On a post request, generate a random UUID and send it to the RabbitMQ queue using the emitter."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:217
-msgid "This channel is mapped to an AMQP queue using the configuration we will add to the `application.properties` file.  Open the `src/main/resource/application.properties` file and add:"
+#: upstream/_versions/main/guides/rabbitmq.adoc:212
+msgid "This channel is mapped to a RabbitMQ exchange using the configuration we will add to the `application.properties` file.  Open the `src/main/resource/application.properties` file and add:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:222
-#: upstream/_versions/main/guides/amqp.adoc:326
+#: upstream/_versions/main/guides/rabbitmq.adoc:218
 #, no-wrap
 msgid ""
-"# Configure the outgoing `quote-requests` queue\n"
-"mp.messaging.outgoing.quote-requests.connector=smallrye-amqp\n"
+"# Configure the outgoing RabbitMQ exchange `quote-requests`\n"
+"mp.messaging.outgoing.quote-requests.connector=smallrye-rabbitmq\n"
+"mp.messaging.outgoing.quote-requests.exchange.name=quote-requests\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:226
-msgid "All we need to specify is the `smallrye-amqp` connector.  By default, reactive messaging maps the channel name `quote-requests` to the AMQP queue name."
+#: upstream/_versions/main/guides/rabbitmq.adoc:222
+msgid "All we need to specify is the `smallrye-rabbitmq` connector.  By default, reactive messaging maps the channel name `quote-requests` to the same RabbitMQ exchange name."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/amqp.adoc:227
+#: upstream/_versions/main/guides/rabbitmq.adoc:223
 #, no-wrap
 msgid "Processing quote requests"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:231
-msgid "Now let's consume the quote request and give out a price.  Inside the `processor` project, locate the `src/main/java/org/acme/amqp/processor/QuoteProcessor.java` file and add the following:"
+#: upstream/_versions/main/guides/rabbitmq.adoc:227
+msgid "Now let's consume the quote request and give out a price.  Inside the `processor` project, locate the `src/main/java/org/acme/rabbitmq/processor/QuoteProcessor.java` file and add the following:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:235
+#: upstream/_versions/main/guides/rabbitmq.adoc:231
 #, no-wrap
-msgid "package org.acme.amqp.processor;\n"
+msgid "package org.acme.rabbitmq.processor;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:237
+#: upstream/_versions/main/guides/rabbitmq.adoc:233
 #, no-wrap
 msgid "import java.util.Random;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:239
+#: upstream/_versions/main/guides/rabbitmq.adoc:235
 #, no-wrap
 msgid "import javax.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:243
+#: upstream/_versions/main/guides/rabbitmq.adoc:239
 #, no-wrap
 msgid ""
-"import org.acme.amqp.model.Quote;\n"
+"import org.acme.rabbitmq.model.Quote;\n"
 "import org.eclipse.microprofile.reactive.messaging.Incoming;\n"
 "import org.eclipse.microprofile.reactive.messaging.Outgoing;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:245
+#: upstream/_versions/main/guides/rabbitmq.adoc:241
 #, no-wrap
 msgid "import io.smallrye.reactive.messaging.annotations.Blocking;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:252
+#: upstream/_versions/main/guides/rabbitmq.adoc:248
 #, no-wrap
 msgid ""
 "/**\n"
-" * A bean consuming data from the \"request\" AMQP queue and giving out a random quote.\n"
-" * The result is pushed to the \"quotes\" AMQP queue.\n"
+" * A bean consuming data from the \"quote-requests\" RabbitMQ queue and giving out a random quote.\n"
+" * The result is pushed to the \"quotes\" RabbitMQ exchange.\n"
 " */\n"
 "@ApplicationScoped\n"
 "public class QuoteProcessor {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:254
+#: upstream/_versions/main/guides/rabbitmq.adoc:250
 #, no-wrap
 msgid "    private Random random = new Random();\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:264
+#: upstream/_versions/main/guides/rabbitmq.adoc:260
 #, no-wrap
 msgid ""
 "    @Incoming(\"requests\")       // <1>\n"
 "    @Outgoing(\"quotes\")         // <2>\n"
 "    @Blocking                   // <3>\n"
 "    public Quote process(String quoteRequest) throws InterruptedException {\n"
-"        // simulate some hard working task\n"
-"        Thread.sleep(200);\n"
+"        // simulate some hard-working task\n"
+"        Thread.sleep(1000);\n"
 "        return new Quote(quoteRequest, random.nextInt(100));\n"
 "    }\n"
 "}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:266
+#: upstream/_versions/main/guides/rabbitmq.adoc:262
 msgid "Indicates that the method consumes the items from the `requests` channel"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:267
+#: upstream/_versions/main/guides/rabbitmq.adoc:263
 msgid "Indicates that the objects returned by the method are sent to the `quotes` channel"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:268
+#: upstream/_versions/main/guides/rabbitmq.adoc:264
 msgid "Indicates that the processing is _blocking_ and cannot be run on the caller thread."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:270
-msgid "The `process` method is called for every AMQP message from the `quote-requests` queue, and will send a `Quote` object to the `quotes` queue."
+#: upstream/_versions/main/guides/rabbitmq.adoc:266
+msgid "The `process` method is called for every RabbitMQ message from the `quote-requests` queue, and will send a `Quote` object to the `quotes` exchange."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:273
+#: upstream/_versions/main/guides/rabbitmq.adoc:269
 msgid "As with the previous example we need to configure the connectors in the `application.properties` file.  Open the `src/main/resources/application.properties` file and add:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:279
+#: upstream/_versions/main/guides/rabbitmq.adoc:276
 #, no-wrap
 msgid ""
-"# Configure the incoming AMQP queue `quote-requests`\n"
-"mp.messaging.incoming.requests.connector=smallrye-amqp\n"
-"mp.messaging.incoming.requests.address=quote-requests\n"
+"# Configure the incoming RabbitMQ queue `quote-requests`\n"
+"mp.messaging.incoming.requests.connector=smallrye-rabbitmq\n"
+"mp.messaging.incoming.requests.queue.name=quote-requests\n"
+"mp.messaging.incoming.requests.exchange.name=quote-requests\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:282
+#: upstream/_versions/main/guides/rabbitmq.adoc:280
 #, no-wrap
 msgid ""
-"# Configure the outgoing AMQP queue `quotes`\n"
-"mp.messaging.outgoing.quotes.connector=smallrye-amqp\n"
+"# Configure the outgoing RabbitMQ exchange `quotes`\n"
+"mp.messaging.outgoing.quotes.connector=smallrye-rabbitmq\n"
+"mp.messaging.outgoing.quotes.exchange.name=quotes\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:286
+#: upstream/_versions/main/guides/rabbitmq.adoc:284
 msgid "Note that in this case we have one incoming and one outgoing connector configuration, each one distinctly named.  The configuration keys are structured as follows:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:288
+#: upstream/_versions/main/guides/rabbitmq.adoc:286
 msgid "`mp.messaging.[outgoing|incoming].{channel-name}.property=value`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:290
+#: upstream/_versions/main/guides/rabbitmq.adoc:288
 msgid "The `channel-name` segment must match the value set in the `@Incoming` and `@Outgoing` annotation:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:292
-msgid "`quote-requests` -> AMQP queue from which we read the quote requests"
+#: upstream/_versions/main/guides/rabbitmq.adoc:290
+msgid "`quote-requests` -> RabbitMQ queue from which we read the quote requests"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:293
-msgid "`quotes` -> AMQP queue in which we write the quotes"
+#: upstream/_versions/main/guides/rabbitmq.adoc:291
+msgid "`quotes` -> RabbitMQ exchange in which we write the quotes"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/amqp.adoc:294
+#: upstream/_versions/main/guides/rabbitmq.adoc:292
 #, no-wrap
 msgid "Receiving quotes"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:298
+#: upstream/_versions/main/guides/rabbitmq.adoc:296
 msgid "Back to our `producer` project.  Let's modify the `QuotesResource` to consume quotes, bind it to an HTTP endpoint to send events to clients:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:303
+#: upstream/_versions/main/guides/rabbitmq.adoc:301
 #, no-wrap
 msgid ""
 "import io.smallrye.mutiny.Multi;\n"
@@ -612,13 +610,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:305
+#: upstream/_versions/main/guides/rabbitmq.adoc:303
 #, no-wrap
 msgid "@Channel(\"quotes\") Multi<Quote> quotes;     // <1>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:314
+#: upstream/_versions/main/guides/rabbitmq.adoc:312
 #, no-wrap
 msgid ""
 "/**\n"
@@ -632,57 +630,65 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:316
+#: upstream/_versions/main/guides/rabbitmq.adoc:314
 msgid "Injects the `quotes` channel using the `@Channel` qualifier"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:317
+#: upstream/_versions/main/guides/rabbitmq.adoc:315
 msgid "Indicates that the content is sent using `Server Sent Events`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:318
+#: upstream/_versions/main/guides/rabbitmq.adoc:316
 msgid "Returns the stream (_Reactive Stream_)"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:321
+#: upstream/_versions/main/guides/rabbitmq.adoc:319
 msgid "Again we need to configure the incoming `quotes` channel inside `producer` project.  Add the following inside `application.properties` file:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:329
+#: upstream/_versions/main/guides/rabbitmq.adoc:324
+#, no-wrap
+msgid ""
+"# Configure the outgoing `quote-requests` queue\n"
+"mp.messaging.outgoing.quote-requests.connector=smallrye-rabbitmq\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_versions/main/guides/rabbitmq.adoc:327
 #, no-wrap
 msgid ""
 "# Configure the incoming `quotes` queue\n"
-"mp.messaging.incoming.quotes.connector=smallrye-amqp\n"
+"mp.messaging.incoming.quotes.connector=smallrye-rabbitmq\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/amqp.adoc:331
+#: upstream/_versions/main/guides/rabbitmq.adoc:329
 #, no-wrap
 msgid "The HTML page"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:334
+#: upstream/_versions/main/guides/rabbitmq.adoc:332
 msgid "Final touch, the HTML page reading the converted prices using SSE."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:336
+#: upstream/_versions/main/guides/rabbitmq.adoc:334
 msgid "Create inside the `producer` project `src/main/resources/META-INF/resources/quotes.html` file, with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:340
+#: upstream/_versions/main/guides/rabbitmq.adoc:338
 #, no-wrap
 msgid "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>Quotes</title>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:376
+#: upstream/_versions/main/guides/rabbitmq.adoc:374
 #, no-wrap
 msgid ""
 "    <link rel=\"stylesheet\" type=\"text/css\"\n"
@@ -723,174 +729,169 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:380
+#: upstream/_versions/main/guides/rabbitmq.adoc:378
 msgid "Nothing spectacular here.  On each received quote, it updates the page."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/amqp.adoc:381
+#: upstream/_versions/main/guides/rabbitmq.adoc:379
 #, no-wrap
 msgid "Get it running"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:384
+#: upstream/_versions/main/guides/rabbitmq.adoc:382
 msgid "You just need to run both applications using:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:388
+#: upstream/_versions/main/guides/rabbitmq.adoc:386
 #, no-wrap
-msgid "> mvn -f amqp-quickstart-producer quarkus:dev\n"
+msgid "> mvn -f rabbitmq-quickstart-producer quarkus:dev\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:391
+#: upstream/_versions/main/guides/rabbitmq.adoc:389
 msgid "And, in a separate terminal:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:395
+#: upstream/_versions/main/guides/rabbitmq.adoc:393
 #, no-wrap
-msgid "> mvn -f amqp-quickstart-processor quarkus:dev\n"
+msgid "> mvn -f rabbitmq-quickstart-processor quarkus:dev\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:399
-msgid "Quarkus starts a AMQP broker automatically, configures the application and shares the broker instance between different applications.  See xref:amqp-dev-services.adoc[Dev Services for AMQP] for more details."
+#: upstream/_versions/main/guides/rabbitmq.adoc:397
+msgid "Quarkus starts a RabbitMQ broker automatically, configures the application and shares the broker instance between different applications.  See xref:rabbitmq-dev-services.adoc[Dev Services for RabbitMQ] for more details."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:402
+#: upstream/_versions/main/guides/rabbitmq.adoc:400
 msgid "Open `http://localhost:8080/quotes.html` in your browser and request some quotes by clicking the button."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/amqp.adoc:403
+#: upstream/_versions/main/guides/rabbitmq.adoc:401
 #, no-wrap
 msgid "Running in JVM or Native mode"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:407
-msgid "When not running in dev or test mode, you will need to start your AMQP broker.  You can follow the instructions from the https://activemq.apache.org/components/artemis/documentation/latest/using-server.html[Apache ActiveMQ Artemis website] or create a `docker-compose.yaml` file with the following content:"
+#: upstream/_versions/main/guides/rabbitmq.adoc:405
+msgid "When not running in dev or test mode, you will need to start your RabbitMQ broker.  You can follow the instructions from the https://hub.docker.com/_/rabbitmq[RabbitMQ Docker website] or create a `docker-compose.yaml` file with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:411
+#: upstream/_versions/main/guides/rabbitmq.adoc:409
 #, no-wrap
 msgid "version: '2'\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:413
+#: upstream/_versions/main/guides/rabbitmq.adoc:411
 #, no-wrap
 msgid "services:\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:425
+#: upstream/_versions/main/guides/rabbitmq.adoc:418
 #, no-wrap
 msgid ""
-"  artemis:\n"
-"    image: quay.io/artemiscloud/activemq-artemis-broker:0.1.2\n"
+"  rabbit:\n"
+"    image: rabbitmq:3.9-management\n"
 "    ports:\n"
-"      - \"8161:8161\"\n"
-"      - \"61616:61616\"\n"
 "      - \"5672:5672\"\n"
-"    environment:\n"
-"      AMQ_USER: quarkus\n"
-"      AMQ_PASSWORD: quarkus\n"
 "    networks:\n"
-"      - amqp-quickstart-network\n"
+"      - rabbitmq-quickstart-network\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:438
+#: upstream/_versions/main/guides/rabbitmq.adoc:431
 #, no-wrap
 msgid ""
 "  producer:\n"
-"    image: quarkus-quickstarts/amqp-quickstart-producer:1.0-${QUARKUS_MODE:-jvm}\n"
+"    image: quarkus-quickstarts/rabbitmq-quickstart-producer:1.0-${QUARKUS_MODE:-jvm}\n"
 "    build:\n"
-"      context: amqp-quickstart-producer\n"
+"      context: rabbitmq-quickstart-producer\n"
 "      dockerfile: src/main/docker/Dockerfile.${QUARKUS_MODE:-jvm}\n"
 "    environment:\n"
-"      AMQP_HOST: artemis\n"
-"      AMQP_PORT: 5672\n"
+"      RABBITMQ_HOST: rabbit\n"
+"      RABBITMQ_PORT: 5672\n"
 "    ports:\n"
 "      - \"8080:8080\"\n"
 "    networks:\n"
-"      - amqp-quickstart-network\n"
+"      - rabbitmq-quickstart-network\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:449
+#: upstream/_versions/main/guides/rabbitmq.adoc:442
 #, no-wrap
 msgid ""
 "  processor:\n"
-"    image: quarkus-quickstarts/amqp-quickstart-processor:1.0-${QUARKUS_MODE:-jvm}\n"
+"    image: quarkus-quickstarts/rabbitmq-quickstart-processor:1.0-${QUARKUS_MODE:-jvm}\n"
 "    build:\n"
-"      context: amqp-quickstart-processor\n"
+"      context: rabbitmq-quickstart-processor\n"
 "      dockerfile: src/main/docker/Dockerfile.${QUARKUS_MODE:-jvm}\n"
 "    environment:\n"
-"      AMQP_HOST: artemis\n"
-"      AMQP_PORT: 5672\n"
+"      RABBITMQ_HOST: rabbit\n"
+"      RABBITMQ_PORT: 5672\n"
 "    networks:\n"
-"      - amqp-quickstart-network\n"
+"      - rabbitmq-quickstart-network\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:453
+#: upstream/_versions/main/guides/rabbitmq.adoc:446
 #, no-wrap
 msgid ""
 "networks:\n"
-"  amqp-quickstart-network:\n"
-"    name: amqp-quickstart\n"
+"  rabbitmq-quickstart-network:\n"
+"    name: rabbitmq-quickstart\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:457
-msgid "Note how the AMQP broker location is configured.  The `amqp.host` and `amqp.port` (`AMQP_HOST` and `AMQP_PORT` environment variables) properties configure location."
+#: upstream/_versions/main/guides/rabbitmq.adoc:450
+msgid "Note how the RabbitMQ broker location is configured.  The `rabbitmq-host` and `rabbitmq-port` (`AMQP_HOST` and `AMQP_PORT` environment variables) properties configure location."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:460
+#: upstream/_versions/main/guides/rabbitmq.adoc:453
 msgid "First, make sure you stopped the applications, and build both applications in JVM mode with:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:465
+#: upstream/_versions/main/guides/rabbitmq.adoc:458
 #, no-wrap
 msgid ""
-"> mvn -f amqp-quickstart-producer clean package\n"
-"> mvn -f amqp-quickstart-processor clean package\n"
+"> mvn -f rabbitmq-quickstart-producer clean package\n"
+"> mvn -f rabbitmq-quickstart-processor clean package\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:469
+#: upstream/_versions/main/guides/rabbitmq.adoc:462
 msgid "Once packaged, run `docker compose up --build`.  The UI is exposed on http://localhost:8080/quotes.html"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:471
+#: upstream/_versions/main/guides/rabbitmq.adoc:464
 msgid "To run your applications as native, first we need to build the native executables:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:476
+#: upstream/_versions/main/guides/rabbitmq.adoc:469
 #, no-wrap
 msgid ""
-"> mvn -f amqp-quickstart-producer package -Pnative  -Dquarkus.native.container-build=true\n"
-"> mvn -f amqp-quickstart-processor package -Pnative -Dquarkus.native.container-build=true\n"
+"> mvn -f rabbitmq-quickstart-producer package -Pnative  -Dquarkus.native.container-build=true\n"
+"> mvn -f rabbitmq-quickstart-processor package -Pnative -Dquarkus.native.container-build=true\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:480
+#: upstream/_versions/main/guides/rabbitmq.adoc:473
 msgid "The `-Dquarkus.native.container-build=true` instructs Quarkus to build Linux 64bits native executables, who can run inside containers.  Then, run the system using:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/amqp.adoc:485
+#: upstream/_versions/main/guides/rabbitmq.adoc:478
 #, no-wrap
 msgid ""
 "> export QUARKUS_MODE=native\n"
@@ -898,22 +899,22 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:488
+#: upstream/_versions/main/guides/rabbitmq.adoc:481
 msgid "As before, the UI is exposed on http://localhost:8080/quotes.html"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/amqp.adoc:489
+#: upstream/_versions/main/guides/rabbitmq.adoc:482
 #, no-wrap
 msgid "Going further"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:493
-msgid "This guide has shown how you can interact with AMQP 1.0 using Quarkus.  It utilizes https://smallrye.io/smallrye-reactive-messaging[SmallRye Reactive Messaging] to build data streaming applications."
+#: upstream/_versions/main/guides/rabbitmq.adoc:486
+msgid "This guide has shown how you can interact with RabbitMQ using Quarkus.  It utilizes https://smallrye.io/smallrye-reactive-messaging[SmallRye Reactive Messaging] to build data streaming applications."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/amqp.adoc:496
-msgid "If you did the Kafka quickstart, you have realized that it's the same code.  The only difference is the connector configuration and the JSON mapping."
+#: upstream/_versions/main/guides/rabbitmq.adoc:488
+msgid "If you did the Kafka, you have realized that it's the same code.  The only difference is the connector configuration and the JSON mapping."
 msgstr ""
