@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-07 01:03+0000\n"
+"POT-Creation-Date: 2021-10-28 00:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -372,7 +372,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "# Your configuration properties\n"
-"org.acme.rest.client.CountriesService/mp-rest/url=https://restcountries.eu/rest # // <1>\n"
+"quarkus.rest-client.\"org.acme.rest.client.CountriesService\".url=https://restcountries.eu/rest # // <1>\n"
 msgstr ""
 
 #. type: Plain text
@@ -405,8 +405,8 @@ msgstr ""
 #, no-wrap
 msgid ""
 "# Your configuration properties\n"
-"country-api/mp-rest/url=https://restcountries.eu/rest\n"
-"country-api/mp-rest/scope=javax.inject.Singleton\n"
+"quarkus.rest-client.country-api.url=https://restcountries.eu/rest\n"
+"quarkus.rest-client.country-api.scope=javax.inject.Singleton\n"
 msgstr ""
 
 #. type: Title ==
@@ -1029,7 +1029,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/rest-client-reactive.adoc:627
-msgid "The `@RegisterClientHeaders` annotation can also be used without any custom factory specified. In that case the `DefaultClientHeadersFactoryImpl` factory will be used.  If you make a REST client call from a REST resource, this fatory will propagate all the headers listed in `org.eclipse.microprofile.rest.client.propagateHeaders` configuration property from the resource request to the client request. Individual header names are comma-separated."
+msgid "The `@RegisterClientHeaders` annotation can also be used without any custom factory specified. In that case the `DefaultClientHeadersFactoryImpl` factory will be used.  If you make a REST client call from a REST resource, this factory will propagate all the headers listed in `org.eclipse.microprofile.rest.client.propagateHeaders` configuration property from the resource request to the client request. Individual header names are comma-separated."
 msgstr ""
 
 #. type: delimited block -
@@ -1128,7 +1128,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/rest-client-reactive.adoc:695
-msgid "There are a few modes in which the form data can be encoded. By default, Rest Client Reactive uses RFC1738.  You can override it by specifying the mode either on the client level, by setting `io.quarkus.rest.client.multipart-post-encoder-mode` RestBuilder property to the selected value of `HttpPostRequestEncoder.EncoderMode` or by specfying `quarkus.rest.client.multipart-post-encoder-mode` in your `application.properties`. Please note that the latter works only for clients created with the `@RegisterRestClient` annotation.  All the available modes are described in the link:https://netty.io/4.1/api/io/netty/handler/codec/http/multipart/HttpPostRequestEncoder.EncoderMode.html[Netty documentation]"
+msgid "There are a few modes in which the form data can be encoded. By default, Rest Client Reactive uses RFC1738.  You can override it by specifying the mode either on the client level, by setting `io.quarkus.rest.client.multipart-post-encoder-mode` RestBuilder property to the selected value of `HttpPostRequestEncoder.EncoderMode` or by specifying `quarkus.rest-client.multipart-post-encoder-mode` in your `application.properties`. Please note that the latter works only for clients created with the `@RegisterRestClient` annotation.  All the available modes are described in the link:https://netty.io/4.1/api/io/netty/handler/codec/http/multipart/HttpPostRequestEncoder.EncoderMode.html[Netty documentation]"
 msgstr ""
 
 #. type: Title ==
@@ -1176,7 +1176,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/rest-client-reactive.adoc:719
-msgid "the default scope of the client for the new extension is `@ApplicationScoped` while the `quarkus-rest-client` defaults to `@Dependent` To change this behavior, set the `quarkus.rest.client.scope` property to the fully qualified scope name."
+msgid "the default scope of the client for the new extension is `@ApplicationScoped` while the `quarkus-rest-client` defaults to `@Dependent` To change this behavior, set the `quarkus.rest-client-reactive.scope` property to the fully qualified scope name."
 msgstr ""
 
 #. type: Plain text

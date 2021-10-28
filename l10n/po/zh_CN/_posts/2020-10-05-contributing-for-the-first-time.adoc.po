@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:18+0000\n"
+"POT-Creation-Date: 2021-10-28 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -352,7 +352,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-10-05-contributing-for-the-first-time.adoc:137
-msgid "The Quickstarts are located inside a link:https://github.com/quarkusio/quarkus-quickstarts[separate repo], that has its own link:https://github.com/quarkusio/quarkus-quickstarts/blob/master/CONTRIBUTING.md[contributing guidelines]."
+msgid "The Quickstarts are located inside a link:https://github.com/quarkusio/quarkus-quickstarts[separate repo], that has its own link:https://github.com/quarkusio/quarkus-quickstarts/blob/main/CONTRIBUTING.md[contributing guidelines]."
 msgstr ""
 
 #. type: Plain text

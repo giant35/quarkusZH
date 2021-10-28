@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:18+0000\n"
+"POT-Creation-Date: 2021-10-28 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -245,7 +245,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-06-26-kafka-streams-applications-with-quarkus-and-microprofile.adoc:154
-msgid "To give an example, for the https://github.com/quarkusio/quarkus-quickstarts/tree/master/kafka-streams-quickstart[streaming pipeline] discussed in the Kafka Streams extension guide, a heap size of 32 MB (`-Xmx32m`) works very well, resulting in less than 50 MB memory needed by the process in total (RSS, resident set size).  Note that this number also contains the memory needed for the HTTP endpoint defined in that example, which is used for answering interactive queries via REST."
+msgid "To give an example, for the https://github.com/quarkusio/quarkus-quickstarts/tree/main/kafka-streams-quickstart[streaming pipeline] discussed in the Kafka Streams extension guide, a heap size of 32 MB (`-Xmx32m`) works very well, resulting in less than 50 MB memory needed by the process in total (RSS, resident set size).  Note that this number also contains the memory needed for the HTTP endpoint defined in that example, which is used for answering interactive queries via REST."
 msgstr ""
 
 #. type: Title ==

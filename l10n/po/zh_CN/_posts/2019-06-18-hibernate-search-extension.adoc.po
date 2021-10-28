@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:18+0000\n"
+"POT-Creation-Date: 2021-10-28 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-06-18-hibernate-search-extension.adoc:10
-msgid "In the 0.15.0 version of Quarkus, we introduced the Hibernate Search + Elasticsearch extension and, with 0.16.0, we added link:/guides/hibernate-search-elasticsearch[a guide] and https://github.com/quarkusio/quarkus-quickstarts/tree/master/hibernate-search-elasticsearch[a quickstart] explaining how to use it."
+msgid "In the 0.15.0 version of Quarkus, we introduced the Hibernate Search + Elasticsearch extension and, with 0.16.0, we added link:/guides/hibernate-search-elasticsearch[a guide] and https://github.com/quarkusio/quarkus-quickstarts/tree/main/hibernate-search-orm-elasticsearch-quickstart[a quickstart] explaining how to use it."
 msgstr ""
 
 #. type: Plain text

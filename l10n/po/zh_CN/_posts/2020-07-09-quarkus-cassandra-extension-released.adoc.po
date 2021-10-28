@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:18+0000\n"
+"POT-Creation-Date: 2021-10-28 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -194,7 +194,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2020-07-09-quarkus-cassandra-extension-released.adoc:97
-msgid "You can retrieve this example and many others in https://github.com/datastax/cassandra-quarkus/blob/master/documentation/src/main/asciidoc/cassandraclient.adoc[the quickstart guide], which includes how to use the Quarkus Cassandra extension in https://quarkus.io/guides/building-native-image[native mode]. For users that are looking to get up and running in minutes with Cassandra, try out the free-tier in https://astra.datastax.com/[DataStax Astra]."
+msgid "You can retrieve this example and many others in https://github.com/datastax/cassandra-quarkus/blob/main/documentation/src/main/asciidoc/cassandraclient.adoc[the quickstart guide], which includes how to use the Quarkus Cassandra extension in https://quarkus.io/guides/building-native-image[native mode]. For users that are looking to get up and running in minutes with Cassandra, try out the free-tier in https://astra.datastax.com/[DataStax Astra]."
 msgstr ""
 
 #. type: Plain text

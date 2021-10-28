@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-23 01:06+0000\n"
+"POT-Creation-Date: 2021-10-28 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -987,7 +987,7 @@ msgid ""
 "public class FruitCodecProvider implements CodecProvider {\n"
 "    @Override\n"
 "    public <T> Codec<T> get(Class<T> clazz, CodecRegistry registry) {\n"
-"        if (clazz == Fruit.class) {\n"
+"        if (clazz.equals(Fruit.class)) {\n"
 "            return (Codec<T>) new FruitCodec();\n"
 "        }\n"
 "        return null;\n"
@@ -1002,7 +1002,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/mongodb.adoc:531
-msgid "Quarkus takes care of registering the `CodecProvider` for you."
+msgid "Quarkus takes care of registering the `CodecProvider` for you as a CDI bean of `@Singleton` scope."
 msgstr ""
 
 #. type: Plain text
@@ -1098,7 +1098,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/mongodb.adoc:591
-msgid "The POJO Codec have enhanced generic support via `PropertyCodecProvider`, Quarkus will automatically register any `PropertyCodecProvider` with the POJO Codec.  When building native executables and using generic types, you might need to register the type arguments for reflection."
+msgid "The POJO Codec have enhanced generic support via `PropertyCodecProvider`, Quarkus will automatically register any `PropertyCodecProvider` with the POJO Codec (these classes are automatically made CDI beans of `@Singleton` scope).  When building native executables and using generic types, you might need to register the type arguments for reflection."
 msgstr ""
 
 #. type: Title ==
