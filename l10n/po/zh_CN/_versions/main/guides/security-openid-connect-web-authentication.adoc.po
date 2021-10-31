@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-29 00:59+0000\n"
+"POT-Creation-Date: 2021-10-31 01:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1940,7 +1940,7 @@ msgstr ""
 #. type: Title ===
 #: upstream/_versions/main/guides/security-openid-connect-web-authentication.adoc:1013
 #, no-wrap
-msgid "How to check the errors in the logs =="
+msgid "How to check the errors in the logs"
 msgstr ""
 
 #. type: Plain text
