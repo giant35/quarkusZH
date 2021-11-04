@@ -1,6 +1,7 @@
 Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_posts/insights_1_transcription.adoc.po, 0, 254, 0, 8846 ,100%
 l10n/po/zh_CN/_posts/insights_0_transcription.adoc.po, 0, 117, 0, 3765 ,100%
+l10n/po/zh_CN/_posts/2021-11-03-quarkus-2-4-1-final-released.adoc.po, 0, 14, 0, 153 ,100%
 l10n/po/zh_CN/_posts/2021-10-27-quarkus-2-4-0-final-released.adoc.po, 0, 31, 0, 501 ,100%
 l10n/po/zh_CN/_posts/2021-10-25-intellij-quarkus-tools-1.8.0.adoc.po, 0, 22, 0, 215 ,100%
 l10n/po/zh_CN/_posts/2021-10-20-quarkus-2-3-1-final-released.adoc.po, 0, 14, 0, 153 ,100%
@@ -249,15 +250,16 @@ l10n/po/zh_CN/_guides/sending-emails.adoc.po, 0, 79, 0, 1125 ,100%
 l10n/po/zh_CN/_guides/security.adoc.po, 0, 114, 0, 1959 ,100%
 l10n/po/zh_CN/_guides/security-testing.adoc.po, 0, 25, 0, 467 ,100%
 l10n/po/zh_CN/_guides/security-properties.adoc.po, 0, 43, 0, 666 ,100%
-l10n/po/zh_CN/_guides/security-openid-connect.adoc.po, 0, 270, 0, 4784 ,100%
-l10n/po/zh_CN/_guides/security-openid-connect-web-authentication.adoc.po, 0, 300, 0, 5866 ,100%
+l10n/po/zh_CN/_guides/security-openid-connect.adoc.po, 0, 272, 0, 4801 ,100%
+l10n/po/zh_CN/_guides/security-openid-connect-web-authentication.adoc.po, 0, 301, 0, 5874 ,100%
 l10n/po/zh_CN/_guides/security-openid-connect-multitenancy.adoc.po, 0, 143, 0, 1934 ,100%
 l10n/po/zh_CN/_guides/security-openid-connect-dev-services.adoc.po, 0, 122, 0, 2853 ,100%
 l10n/po/zh_CN/_guides/security-openid-connect-client.adoc.po, 0, 173, 0, 3071 ,100%
 l10n/po/zh_CN/_guides/security-oauth2.adoc.po, 0, 110, 0, 1805 ,100%
 l10n/po/zh_CN/_guides/security-ldap.adoc.po, 0, 68, 0, 790 ,100%
 l10n/po/zh_CN/_guides/security-keycloak-authorization.adoc.po, 0, 135, 0, 1970 ,100%
-l10n/po/zh_CN/_guides/security-jwt.adoc.po, 0, 359, 0, 5937 ,100%
+l10n/po/zh_CN/_guides/security-jwt.adoc.po, 0, 313, 0, 5037 ,100%
+l10n/po/zh_CN/_guides/security-jwt-build.adoc.po, 0, 99, 0, 1811 ,100%
 l10n/po/zh_CN/_guides/security-jpa.adoc.po, 0, 106, 0, 1447 ,100%
 l10n/po/zh_CN/_guides/security-jdbc.adoc.po, 0, 81, 0, 1071 ,100%
 l10n/po/zh_CN/_guides/security-customization.adoc.po, 0, 96, 0, 1273 ,100%
@@ -278,7 +280,7 @@ l10n/po/zh_CN/_guides/reaugmentation.adoc.po, 0, 22, 0, 679 ,100%
 l10n/po/zh_CN/_guides/reactive-sql-clients.adoc.po, 0, 194, 0, 2246 ,100%
 l10n/po/zh_CN/_guides/reactive-routes.adoc.po, 0, 205, 0, 2736 ,100%
 l10n/po/zh_CN/_guides/reactive-messaging-websocket.adoc.po, 0, 96, 0, 1095 ,100%
-l10n/po/zh_CN/_guides/reactive-messaging-http.adoc.po, 0, 95, 0, 1001 ,100%
+l10n/po/zh_CN/_guides/reactive-messaging-http.adoc.po, 0, 96, 0, 1016 ,100%
 l10n/po/zh_CN/_guides/reactive-event-bus.adoc.po, 0, 108, 0, 1370 ,100%
 l10n/po/zh_CN/_guides/qute.adoc.po, 0, 126, 0, 1629 ,100%
 l10n/po/zh_CN/_guides/qute-reference.adoc.po, 0, 674, 0, 8691 ,100%
@@ -336,8 +338,8 @@ l10n/po/zh_CN/_guides/hibernate-orm-panache.adoc.po, 0, 275, 0, 4284 ,100%
 l10n/po/zh_CN/_guides/hibernate-orm-panache-kotlin.adoc.po, 0, 45, 0, 907 ,100%
 l10n/po/zh_CN/_guides/grpc.adoc.po, 0, 12, 0, 126 ,100%
 l10n/po/zh_CN/_guides/grpc-service-implementation.adoc.po, 0, 87, 0, 1241 ,100%
-l10n/po/zh_CN/_guides/grpc-service-consumption.adoc.po, 0, 92, 0, 1100 ,100%
-l10n/po/zh_CN/_guides/grpc-getting-started.adoc.po, 0, 96, 0, 1437 ,100%
+l10n/po/zh_CN/_guides/grpc-service-consumption.adoc.po, 0, 89, 0, 1090 ,100%
+l10n/po/zh_CN/_guides/grpc-getting-started.adoc.po, 0, 96, 0, 1447 ,100%
 l10n/po/zh_CN/_guides/gradle-tooling.adoc.po, 0, 163, 0, 2567 ,100%
 l10n/po/zh_CN/_guides/gradle-config.adoc.po, 0, 9, 0, 100 ,100%
 l10n/po/zh_CN/_guides/getting-started.adoc.po, 2, 128, 5, 1897 ,100%
@@ -375,7 +377,7 @@ l10n/po/zh_CN/_guides/container-image.adoc.po, 0, 56, 0, 1011 ,100%
 l10n/po/zh_CN/_guides/consul-config.adoc.po, 0, 48, 0, 685 ,100%
 l10n/po/zh_CN/_guides/config.adoc.po, 0, 85, 0, 930 ,100%
 l10n/po/zh_CN/_guides/config-yaml.adoc.po, 0, 46, 0, 587 ,100%
-l10n/po/zh_CN/_guides/config-reference.adoc.po, 0, 183, 0, 2369 ,100%
+l10n/po/zh_CN/_guides/config-reference.adoc.po, 0, 183, 0, 2391 ,100%
 l10n/po/zh_CN/_guides/config-mappings.adoc.po, 0, 185, 0, 1985 ,100%
 l10n/po/zh_CN/_guides/config-extending-support.adoc.po, 0, 103, 0, 1374 ,100%
 l10n/po/zh_CN/_guides/conditional-extension-dependencies.adoc.po, 0, 41, 0, 811 ,100%
