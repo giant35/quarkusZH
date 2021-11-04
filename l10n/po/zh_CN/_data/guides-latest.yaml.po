@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-28 01:03+0000\n"
+"POT-Creation-Date: 2021-11-04 01:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1632,13 +1632,13 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
-msgid "This guide demonstrates how your Quarkus application can use Keycloak to protect your JAX-RS applications using bearer token authorization, where these tokens are issued by a Keycloak server."
+msgid "This guide demonstrates how to use the OpenID Connect extension to protect your Quarkus JAX-RS service application using Bearer Token Authorization where the tokens are issued by OpenId Connect Providers such as Keycloak."
 msgstr ""
 
 #. type: Hash Value - Key: keywords
 #: >categories>>guides>
 #, no-wrap
-msgid "sso,security"
+msgid "sso,jwt,security"
 msgstr ""
 
 #. type: Hash Value - Key: title
@@ -1656,7 +1656,13 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
-msgid "This guide demonstrates how to use the OpenID Connect Extension to protect your web application based on the Authorization Code Flow using Quarkus."
+msgid "This guide demonstrates how to use the OpenID Connect extension to protect your Quarkus JAX-RS web application using the Authorization Code Flow and OpenId Connect Providers such as Keycloak."
+msgstr ""
+
+#. type: Hash Value - Key: keywords
+#: >categories>>guides>
+#, no-wrap
+msgid "sso,security"
 msgstr ""
 
 #. type: Hash Value - Key: title
@@ -1746,7 +1752,7 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
-msgid "This guide explains how your application can utilize SmallRye JWT to provide secured access to the JAX-RS endpoints."
+msgid "This guide explains how your application can utilize SmallRye JWT to verify JWT tokens and provide secured access to the JAX-RS endpoints."
 msgstr ""
 
 #. type: Hash Value - Key: title
@@ -1759,6 +1765,30 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/security-jwt"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide explains how your application can build, sign and/or encrypt JWT tokens with a fluent and configurable SmallRye JWT Build API."
+msgstr ""
+
+#. type: Hash Value - Key: keywords
+#: >categories>>guides>
+#, no-wrap
+msgid "jwt,security"
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Build, Sign and Encrypt JSON Web Tokens (JWT)"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/security-jwt-build"
 msgstr ""
 
 #. type: Hash Value - Key: description
