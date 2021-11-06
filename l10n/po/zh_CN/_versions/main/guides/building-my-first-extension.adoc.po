@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-08 01:06+0000\n"
+"POT-Creation-Date: 2021-11-06 01:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1065,7 +1065,7 @@ msgstr ""
 msgid ""
 "  @RegisterExtension\n"
 "  static final QuarkusUnitTest config = new QuarkusUnitTest()\n"
-"    .setArchiveProducer(() -> ShrinkWrap.create(JavaArchive.class)); // <1>\n"
+"    .withEmptyApplication(); // <1>\n"
 msgstr ""
 
 #. type: delimited block -
