@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:21+0000\n"
+"POT-Creation-Date: 2021-11-10 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,7 +117,7 @@ msgstr ""
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-vault-config-group-config-dev-services-config.adoc:49
-#: upstream/_generated-config/main/config/quarkus-vault-config-group-config-dev-services-config.adoc:57
+#: upstream/_generated-config/main/config/quarkus-vault-config-group-config-dev-services-config.adoc:58
 #, no-wrap
 msgid "`false`"
 msgstr ""
@@ -132,4 +132,22 @@ msgid ""
 "--\n"
 "Should the PKI secret engine be enabled\n"
 "--"
+msgstr ""
+
+#. type: Table
+#: upstream/_generated-config/main/config/quarkus-vault-config-group-config-dev-services-config.adoc:63
+#, no-wrap
+msgid ""
+"icon:lock[title=Fixed at build time] [[quarkus-vault-config-group-config-dev-services-config_quarkus.vault.devservices.init-commands]]`link:#quarkus-vault-config-group-config-dev-services-config_quarkus.vault.devservices.init-commands[quarkus.vault.devservices.init-commands]`\n"
+"\n"
+"[.description]\n"
+"--\n"
+"Custom container initialization commands\n"
+"--"
+msgstr ""
+
+#. type: Table
+#: upstream/_generated-config/main/config/quarkus-vault-config-group-config-dev-services-config.adoc:64
+#, no-wrap
+msgid "list of string"
 msgstr ""

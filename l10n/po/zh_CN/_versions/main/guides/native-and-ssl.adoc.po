@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-13 01:05+0000\n"
+"POT-Creation-Date: 2021-11-10 01:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -281,7 +281,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/native-and-ssl.adoc:101
-msgid "the Reactive client for DB2 extension (`quarkus-reactive-db2-client`)."
+msgid "the Reactive client for Microsoft SQL Server extension (`quarkus-reactive-mssql-client`),"
 msgstr ""
 
 #. type: Plain text
