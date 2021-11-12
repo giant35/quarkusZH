@@ -75,7 +75,7 @@ msgstr ""
 #: upstream/_versions/main/guides/deploying-to-openshift.adoc:24
 #, no-wrap
 msgid "Bootstrapping the project"
-msgstr ""
+msgstr "搭建项目"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/deploying-to-openshift.adoc:27
