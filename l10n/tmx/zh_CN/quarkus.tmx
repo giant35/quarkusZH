@@ -505,6 +505,14 @@ In this guide, we will explore:
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Bootstrapping the project</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>搭建项目</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>the Maven structure</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -621,14 +629,6 @@ In this guide, we will explore:
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>代码位于 `getting-started` {quickstarts-tree-url}/getting-started[目录] 中.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Bootstrapping the project</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>搭建项目</seg>
       </tuv>
     </tu>
     <tu>
