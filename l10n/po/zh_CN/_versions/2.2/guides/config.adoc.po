@@ -39,12 +39,12 @@ msgstr ""
 #: upstream/_versions/2.2/guides/config.adoc:18
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/config.adoc:21
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/config.adoc:23
@@ -54,7 +54,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/2.2/guides/config.adoc:24
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/config.adoc:25
@@ -70,7 +70,7 @@ msgstr ""
 #: upstream/_versions/2.2/guides/config.adoc:27
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/config.adoc:31
@@ -118,7 +118,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/2.2/guides/config.adoc:53
 msgid "the Maven structure"
-msgstr ""
+msgstr "Maven 目录结构"
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/config.adoc:54

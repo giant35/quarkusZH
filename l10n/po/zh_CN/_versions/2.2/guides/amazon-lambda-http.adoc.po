@@ -44,12 +44,12 @@ msgstr ""
 #: upstream/_versions/2.2/guides/amazon-lambda-http.adoc:25
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/amazon-lambda-http.adoc:28
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/amazon-lambda-http.adoc:30
@@ -80,7 +80,7 @@ msgstr ""
 #: upstream/_versions/2.2/guides/amazon-lambda-http.adoc:35
 #, no-wrap
 msgid "Getting Started"
-msgstr ""
+msgstr "入门"
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/amazon-lambda-http.adoc:39

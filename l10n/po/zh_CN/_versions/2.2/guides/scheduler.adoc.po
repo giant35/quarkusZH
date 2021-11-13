@@ -39,12 +39,12 @@ msgstr ""
 #: upstream/_versions/2.2/guides/scheduler.adoc:15
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/scheduler.adoc:18
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/scheduler.adoc:20
@@ -54,7 +54,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/2.2/guides/scheduler.adoc:21
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/scheduler.adoc:22
@@ -70,7 +70,7 @@ msgstr ""
 #: upstream/_versions/2.2/guides/scheduler.adoc:24
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/scheduler.adoc:28
@@ -86,7 +86,7 @@ msgstr ""
 #: upstream/_versions/2.2/guides/scheduler.adoc:31
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/scheduler.adoc:35
@@ -135,7 +135,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/2.2/guides/scheduler.adoc:58
 msgid "the Maven structure"
-msgstr ""
+msgstr "Maven 目录结构"
 
 #. type: Plain text
 #: upstream/_versions/2.2/guides/scheduler.adoc:59
