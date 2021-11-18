@@ -5,356 +5,6 @@
   <body>
     <tu>
       <tuv xml:lang="en">
-        <seg>Get Started</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>入门</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Table of Contents</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>目录</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Getting Started</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>入门</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>[Be Guided Through First Application]({{site.baseurl}}/guides/getting-started)
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>[指导开发第一个程序]({{site.baseurl}}/guides/getting-started)
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>[Getting Started with Reactive]({{site.baseurl}}/guides/getting-started-reactive)
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>[响应式入门]({{site.baseurl}}/guides/getting-started-reactive)
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>[Quickly Bootstrap Your Application](https://code.quarkus.io)
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>[应用快速开始](https://code.quarkus.io)
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>[Building Native Executables]({{site.baseurl}}/guides/building-native-image)
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>[构建原生执行文件]({{site.baseurl}}/guides/building-native-image)
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>[Using our Tooling]({{site.baseurl}}/guides/tooling)
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>[工具使用]({{site.baseurl}}/guides/tooling)
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Guides</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>指南</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>[Get More Guides]({{site.baseurl}}/guides)
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>[更多指南]({{site.baseurl}}/guides)
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Be Guided Through Your First Application</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>指导开发第一个程序</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>This guide covers:
-- Bootstrapping an application
-- Creating a JAX-RS endpoint
-- Injecting beans
-- Functional tests
-- Packaging of the application
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>本指南包括:
-- 开始项目
-- 创建 JAX-RS 接口
-- 注入 beans
-- 功能测试
-- 打包应用
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>&lt;a href="{{site.baseurl}}/guides/getting-started" class="button-cta secondary"&gt;READ THE GUIDE&lt;/a&gt;
-&lt;/div&gt;
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>&lt;a href="{{site.baseurl}}/guides/getting-started" class="button-cta secondary"&gt;阅读指南&lt;/a&gt;
-&lt;/div&gt;
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Getting Started with Reactive</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>响应式入门</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Learn how to create a reactive application with Quarkus and explore the different reactive features offered by Quarkus.
-This guide covers:
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>学习如何使用 Quarkus 创建响应式应用，了解 Quarkus 提供的响应式特性的差异.
-该指南包括:
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>A quick glance at the Quarkus engine and how it enables reactive
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>快速介绍 Quarkus 引擎及如何启用响应式
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>A brief introduction to Mutiny - the reactive programming library used by Quarkus
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>简单介绍 Mutiny - Quarkus 使用的响应式类库
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Bootstrapping a reactive application
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>开始一个响应式应用
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Creating a reactive JAX-RS endpoint (asynchronous, streams...)
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>创建一个响应式 JAX-RS 接口 (异步, 流式...)
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Using reactive database access
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>响应式数据库访问
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Interacting with other reactive APIs
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>与其它响应式 API 交互
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>&lt;a href="{{site.baseurl}}/guides/getting-started-reactive" class="button-cta secondary"&gt;READ THE GUIDE&lt;/a&gt;
-&lt;/div&gt;
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>&lt;a href="{{site.baseurl}}/guides/getting-started-reactive" class="button-cta secondary"&gt;阅读指南&lt;/a&gt;
-&lt;/div&gt;
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Quickly Bootstrap Your Application</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>应用快速开始</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>With &lt;a href="https://code.quarkus.io"&gt;code.quarkus.io&lt;/a&gt;, in a few clicks, you can bootstrap your Quarkus application and discover its extension ecosystem.
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>用 &lt;a href="https://code.quarkus.io"&gt;code.quarkus.io&lt;/a&gt;,点几下就能开始 Quarkus 应用了解扩展(extension) 生态。
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Explore the wide breadth of technologies Quarkus applications can be made with.
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>探索 Quarkus 应用程序中可以使用的广泛技术。
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Building Native Executables</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>构建原生执行程序</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>This guide covers:
-- Compiling the application to a native executable
-- The packaging of an application in a Docker container
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>该指南包括:
-- 将应用程序编译为原生可执行文件
-- 将应用程序打包在Docker容器中
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>This guide requires:
-- Completion of the [Creating Your First Application]({{site.baseurl}}/guides/getting-started) guide
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>该指南需要:
-- 完成 [创建第一个应用]({{site.baseurl}}/guides/getting-started) 指南
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>&lt;a href="{{site.baseurl}}/guides/building-native-image" class="button-cta secondary"&gt;READ THE GUIDE&lt;/a&gt;
-&lt;/div&gt;
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>&lt;a href="{{site.baseurl}}/guides/building-native-image" class="button-cta secondary"&gt;阅读指南&lt;/a&gt;
-&lt;/div&gt;
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Using our Tooling</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>工具使用</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Quarkus comes with a toolchain enabling developers from live reload all the way down to deploying a Kubernetes application.
-In this guide, we will explore:
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>Quarkus 附带了一个工具链，使开发人员能够从实时重新加载到部署 Kubernetes 应用程序。
-在该指南中，我们将探讨：
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>how to use the native CLI for your toolchain (coming soon)
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>如何为您的工具链使用本机CLI（即将推出）
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>how to develop your application in your IDE
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>如何在IDE中开发应用程序
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>&lt;a href="{{site.baseurl}}/guides/tooling" class="button-cta secondary"&gt;READ THE GUIDE&lt;/a&gt;
-&lt;/div&gt;
-</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>&lt;a href="{{site.baseurl}}/guides/tooling" class="button-cta secondary"&gt;阅读指南&lt;/a&gt;
-&lt;/div&gt;
-</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 </seg>
       </tuv>
@@ -393,34 +43,10 @@ In this guide, we will explore:
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Documentation</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>文档</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Architecture</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>架构</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Prerequisites</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>准备</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Solution</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>完整源码</seg>
       </tuv>
     </tu>
     <tu>
@@ -437,6 +63,70 @@ In this guide, we will explore:
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>IDE</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Architecture</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>架构</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Solution</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>完整源码</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Container First</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>容器优先</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Developer Joy</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>开发乐趣</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the Maven structure</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>Maven 目录结构</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using our Tooling</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>工具使用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Getting Started</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>入门</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Documentation</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>文档</seg>
       </tuv>
     </tu>
     <tu>
@@ -485,38 +175,6 @@ In this guide, we will explore:
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Container First</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>容器优先</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Developer Joy</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>开发乐趣</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Bootstrapping the project</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>搭建项目</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>the Maven structure</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>Maven 目录结构</seg>
       </tuv>
     </tu>
     <tu>
@@ -629,6 +287,14 @@ In this guide, we will explore:
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>代码位于 `getting-started` {quickstarts-tree-url}/getting-started[目录] 中.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bootstrapping the project</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>搭建项目</seg>
       </tuv>
     </tu>
     <tu>
@@ -801,138 +467,26 @@ In this guide, we will explore:
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Getting Help from the Community</seg>
+        <seg>Getting Started with Reactive</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>获取社区帮助</seg>
+        <seg>响应式入门</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>We have a lot of documentation. Be sure to check our &lt;a href="{{site.baseurl}}/get-started/"&gt;Getting started page&lt;/a&gt;, and all our &lt;a href="{{site.baseurl}}/guides/"&gt;guides&lt;/a&gt;. Also check out our &lt;a href="{{site.baseurl}}/faq/"&gt;FAQ section&lt;/a&gt; and &lt;a href="https://www.youtube.com/playlist?list=PLsM3ZE5tGAVbMz1LJqc8L5LpnfxPPKloO"&gt;Quarkus Tips Playlist&lt;/a&gt;</seg>
+        <seg>Building Native Executables</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>我们有很多文档. 看下&lt;a href="{{site.baseurl}}/get-started/"&gt;入门&lt;/a&gt;, 还有所有 &lt;a href="{{site.baseurl}}/guides/"&gt;指南&lt;/a&gt;. 还可以看下 &lt;a href="{{site.baseurl}}/faq/"&gt;FAQ&lt;/a&gt; 及 &lt;a href="https://www.youtube.com/playlist?list=PLsM3ZE5tGAVbMz1LJqc8L5LpnfxPPKloO"&gt;Quarkus Tips Playlist&lt;/a&gt;</seg>
+        <seg>构建原生执行程序</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Ask your questions on &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Stack Overflow&lt;/a&gt;. After the documentation, it’s probably the best place to look for answers. We actively monitor the &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Quarkus tag&lt;/a&gt;.</seg>
+        <seg>Quickly Bootstrap Your Application</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>在 &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Stack Overflow&lt;/a&gt; 提问. 除本文档外，那里可能是寻找答案的最佳地点. 我们会关注 &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Quarkus tag&lt;/a&gt;.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Live Chat</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>在线交谈</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>If you prefer live chat with the developers, we have a &lt;a href="https://quarkusio.zulipchat.com/"&gt;Zulip chat&lt;/a&gt; where we all hang out.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>如果你更喜欢与开发者交谈，我们有一个闲聊的 &lt;a href="https://quarkusio.zulipchat.com/"&gt;Zulip chat&lt;/a&gt;.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Development Mailing List</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>开发邮件列表</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>We also have a dedicated mailing list to discuss the development of Quarkus. Join the group via &lt;a href="mailto:quarkus-dev+subscribe@googlegroups.com"&gt;email&lt;/a&gt; or by visiting the &lt;a href="https://groups.google.com/d/forum/quarkus-dev"&gt;quarkus-dev Google Groups page&lt;/a&gt;.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>我们也有个专门的邮件列表用于讨论 Quarkus 开发. 通过 &lt;a href="mailto:quarkus-dev+subscribe@googlegroups.com"&gt;email&lt;/a&gt; 加入此邮件组或访问 &lt;a href="https://groups.google.com/d/forum/quarkus-dev"&gt;quarkus-dev Google Groups page&lt;/a&gt;.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Need More Than Community Support?</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>需要社区外的支持？</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>If you require a higher level of support, you have options.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>如果你需要更高级的支持，有一些选择。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Enterprise support provided by Red Hat for the product.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>Red Hat 为产品提供的企业支持。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Best of Breed Libraries and Standards</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>优秀的类库及标准件</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>A Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM, crafted from the best of breed Java libraries and standards.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>专为 OpenJDK HotSpot 及 GraalVM 量身定制的原生 Kubernetes Java 开发栈，采用最佳 Java 库和标准精制而成。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>&lt;a href="{{site.baseurl}}/get-started/" class="button-cta"&gt;Get Started with Quarkus&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>&lt;a href=“{{site.baseurl}}/get-started/“ class=“button-cta”&gt;Quarkus 入门&lt;/a&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Now Available</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>现可用</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>&lt;a href="{{ site.data.versions.quarkus.announce }}"&gt;More Information&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>&lt;a href=“{{ site.data.versions.quarkus.announce }}”&gt;更多信息&lt;/a&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>QUARKUS 2.0 IS HERE!</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>QUARKUS 2.0 来了！</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Quarkus 2.0 continues the mission of making Java the preferred framework for Kubernetes-native development with new developer tools and improved performance.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>Quarkus 2.0 继续执行使命，即通过新的开发人员工具和改进的性能，使 Java 成为 Kubernetes 原生开发的首选框架。</seg>
+        <seg>应用快速开始</seg>
       </tuv>
     </tu>
     <tu>
@@ -1097,43 +651,42 @@ In this guide, we will explore:
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Quarkus tailors your application for GraalVM and HotSpot. Amazingly fast boot time, incredibly low RSS memory (not just heap size!) offering near instant scale up and high density memory utilization in container orchestration platforms like Kubernetes. We use a technique we call compile time boot. &lt;a href="/vision/container-first"&gt;Learn more.&lt;/a&gt;</seg>
+        <seg>A Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM, crafted from the best of breed Java libraries and standards.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>Quarkus 为 GraalVM 和 HotSpot 量身定制用程序。启动超快，内存极低（不仅是堆大小！）在容器编排平台（如Kubernetes）中提供了近乎即时的向上扩展和高密度的内存利用率。我们使用一种称为编译时启动技术。
-&lt;a href="/vision/container-first"&gt;了解更多&lt;/a&gt;</seg>
+        <seg>专为 OpenJDK HotSpot 及 GraalVM 量身定制的原生 Kubernetes Java 开发栈，采用最佳 Java 库和标准精制而成。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>A cohesive platform for optimized developer joy:</seg>
+        <seg>&lt;a href="{{site.baseurl}}/get-started/" class="button-cta"&gt;Get Started with Quarkus&lt;/a&gt;</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>一个让开发者更开心的平台:</seg>
+        <seg>&lt;a href=“{{site.baseurl}}/get-started/“ class=“button-cta”&gt;Quarkus 入门&lt;/a&gt;</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Zero config, live reload in the blink of an eye</seg>
+        <seg>Now Available</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>零配置，瞬间重新加载</seg>
+        <seg>现可用</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>No hassle native executable generation</seg>
+        <seg>&lt;a href="{{ site.data.versions.quarkus.announce }}"&gt;More Information&lt;/a&gt;</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>简单生成可执行文件</seg>
+        <seg>&lt;a href=“{{ site.data.versions.quarkus.announce }}”&gt;更多信息&lt;/a&gt;</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>&lt;a href="/vision/developer-joy"&gt;Learn more&lt;/a&gt;</seg>
+        <seg>Best of Breed Libraries and Standards</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>&lt;a href="/vision/developer-joy"&gt;了解更多&lt;/a&gt;</seg>
+        <seg>优秀的类库及标准件</seg>
       </tuv>
     </tu>
     <tu>
@@ -1182,6 +735,453 @@ In this guide, we will explore:
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>&lt;a href=“https://code.quarkus.io”&gt;开始编码&lt;/a&gt; 用 Quarkus {{ site.data.versions.quarkus.version }} [&lt;a href=“{{ site.data.versions.quarkus.announce }}”&gt;announce&lt;/a&gt;|&lt;a href=“https://github.com/quarkusio/quarkus/releases/tag/{{ site.data.versions.quarkus.version }}”&gt;changelog&lt;/a&gt;]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Need More Than Community Support?</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>需要社区外的支持？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you require a higher level of support, you have options.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>如果你需要更高级的支持，有一些选择。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enterprise support provided by Red Hat for the product.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>Red Hat 为产品提供的企业支持。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Quarkus tailors your application for GraalVM and HotSpot. Amazingly fast boot time, incredibly low RSS memory (not just heap size!) offering near instant scale up and high density memory utilization in container orchestration platforms like Kubernetes. We use a technique we call compile time boot. &lt;a href="/vision/container-first"&gt;Learn more.&lt;/a&gt;</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>Quarkus 为 GraalVM 和 HotSpot 量身定制用程序。启动超快，内存极低（不仅是堆大小！）在容器编排平台（如Kubernetes）中提供了近乎即时的向上扩展和高密度的内存利用率。我们使用一种称为编译时启动技术。
+&lt;a href="/vision/container-first"&gt;了解更多&lt;/a&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A cohesive platform for optimized developer joy:</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>一个让开发者更开心的平台:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Zero config, live reload in the blink of an eye</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>零配置，瞬间重新加载</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>No hassle native executable generation</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>简单生成可执行文件</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;a href="/vision/developer-joy"&gt;Learn more&lt;/a&gt;</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>&lt;a href="/vision/developer-joy"&gt;了解更多&lt;/a&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>QUARKUS 2.0 IS HERE!</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>QUARKUS 2.0 来了！</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Quarkus 2.0 continues the mission of making Java the preferred framework for Kubernetes-native development with new developer tools and improved performance.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>Quarkus 2.0 继续执行使命，即通过新的开发人员工具和改进的性能，使 Java 成为 Kubernetes 原生开发的首选框架。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Getting Help from the Community</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>获取社区帮助</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We have a lot of documentation. Be sure to check our &lt;a href="{{site.baseurl}}/get-started/"&gt;Getting started page&lt;/a&gt;, and all our &lt;a href="{{site.baseurl}}/guides/"&gt;guides&lt;/a&gt;. Also check out our &lt;a href="{{site.baseurl}}/faq/"&gt;FAQ section&lt;/a&gt; and &lt;a href="https://www.youtube.com/playlist?list=PLsM3ZE5tGAVbMz1LJqc8L5LpnfxPPKloO"&gt;Quarkus Tips Playlist&lt;/a&gt;</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>我们有很多文档. 看下&lt;a href="{{site.baseurl}}/get-started/"&gt;入门&lt;/a&gt;, 还有所有 &lt;a href="{{site.baseurl}}/guides/"&gt;指南&lt;/a&gt;. 还可以看下 &lt;a href="{{site.baseurl}}/faq/"&gt;FAQ&lt;/a&gt; 及 &lt;a href="https://www.youtube.com/playlist?list=PLsM3ZE5tGAVbMz1LJqc8L5LpnfxPPKloO"&gt;Quarkus Tips Playlist&lt;/a&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ask your questions on &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Stack Overflow&lt;/a&gt;. After the documentation, it’s probably the best place to look for answers. We actively monitor the &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Quarkus tag&lt;/a&gt;.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>在 &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Stack Overflow&lt;/a&gt; 提问. 除本文档外，那里可能是寻找答案的最佳地点. 我们会关注 &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Quarkus tag&lt;/a&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Live Chat</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>在线交谈</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you prefer live chat with the developers, we have a &lt;a href="https://quarkusio.zulipchat.com/"&gt;Zulip chat&lt;/a&gt; where we all hang out.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>如果你更喜欢与开发者交谈，我们有一个闲聊的 &lt;a href="https://quarkusio.zulipchat.com/"&gt;Zulip chat&lt;/a&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Development Mailing List</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>开发邮件列表</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We also have a dedicated mailing list to discuss the development of Quarkus. Join the group via &lt;a href="mailto:quarkus-dev+subscribe@googlegroups.com"&gt;email&lt;/a&gt; or by visiting the &lt;a href="https://groups.google.com/d/forum/quarkus-dev"&gt;quarkus-dev Google Groups page&lt;/a&gt;.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>我们也有个专门的邮件列表用于讨论 Quarkus 开发. 通过 &lt;a href="mailto:quarkus-dev+subscribe@googlegroups.com"&gt;email&lt;/a&gt; 加入此邮件组或访问 &lt;a href="https://groups.google.com/d/forum/quarkus-dev"&gt;quarkus-dev Google Groups page&lt;/a&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Get Started</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>入门</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Table of Contents</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>目录</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>[Be Guided Through First Application]({{site.baseurl}}/guides/getting-started)
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>[指导开发第一个程序]({{site.baseurl}}/guides/getting-started)
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>[Getting Started with Reactive]({{site.baseurl}}/guides/getting-started-reactive)
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>[响应式入门]({{site.baseurl}}/guides/getting-started-reactive)
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>[Quickly Bootstrap Your Application](https://code.quarkus.io)
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>[应用快速开始](https://code.quarkus.io)
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>[Building Native Executables]({{site.baseurl}}/guides/building-native-image)
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>[构建原生执行文件]({{site.baseurl}}/guides/building-native-image)
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>[Using our Tooling]({{site.baseurl}}/guides/tooling)
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>[工具使用]({{site.baseurl}}/guides/tooling)
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Guides</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>指南</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>[Get More Guides]({{site.baseurl}}/guides)
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>[更多指南]({{site.baseurl}}/guides)
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Be Guided Through Your First Application</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>指导开发第一个程序</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This guide covers:
+- Bootstrapping an application
+- Creating a JAX-RS endpoint
+- Injecting beans
+- Functional tests
+- Packaging of the application
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>本指南包括:
+- 开始项目
+- 创建 JAX-RS 接口
+- 注入 beans
+- 功能测试
+- 打包应用
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;a href="{{site.baseurl}}/guides/getting-started" class="button-cta secondary"&gt;READ THE GUIDE&lt;/a&gt;
+&lt;/div&gt;
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>&lt;a href="{{site.baseurl}}/guides/getting-started" class="button-cta secondary"&gt;阅读指南&lt;/a&gt;
+&lt;/div&gt;
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Learn how to create a reactive application with Quarkus and explore the different reactive features offered by Quarkus.
+This guide covers:
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>学习如何使用 Quarkus 创建响应式应用，了解 Quarkus 提供的响应式特性的差异.
+该指南包括:
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A quick glance at the Quarkus engine and how it enables reactive
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>快速介绍 Quarkus 引擎及如何启用响应式
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A brief introduction to Mutiny - the reactive programming library used by Quarkus
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>简单介绍 Mutiny - Quarkus 使用的响应式类库
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bootstrapping a reactive application
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>开始一个响应式应用
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Creating a reactive JAX-RS endpoint (asynchronous, streams...)
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>创建一个响应式 JAX-RS 接口 (异步, 流式...)
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using reactive database access
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>响应式数据库访问
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Interacting with other reactive APIs
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>与其它响应式 API 交互
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;a href="{{site.baseurl}}/guides/getting-started-reactive" class="button-cta secondary"&gt;READ THE GUIDE&lt;/a&gt;
+&lt;/div&gt;
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>&lt;a href="{{site.baseurl}}/guides/getting-started-reactive" class="button-cta secondary"&gt;阅读指南&lt;/a&gt;
+&lt;/div&gt;
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>With &lt;a href="https://code.quarkus.io"&gt;code.quarkus.io&lt;/a&gt;, in a few clicks, you can bootstrap your Quarkus application and discover its extension ecosystem.
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>用 &lt;a href="https://code.quarkus.io"&gt;code.quarkus.io&lt;/a&gt;,点几下就能开始 Quarkus 应用了解扩展(extension) 生态。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Explore the wide breadth of technologies Quarkus applications can be made with.
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>探索 Quarkus 应用程序中可以使用的广泛技术。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This guide covers:
+- Compiling the application to a native executable
+- The packaging of an application in a Docker container
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>该指南包括:
+- 将应用程序编译为原生可执行文件
+- 将应用程序打包在Docker容器中
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This guide requires:
+- Completion of the [Creating Your First Application]({{site.baseurl}}/guides/getting-started) guide
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>该指南需要:
+- 完成 [创建第一个应用]({{site.baseurl}}/guides/getting-started) 指南
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;a href="{{site.baseurl}}/guides/building-native-image" class="button-cta secondary"&gt;READ THE GUIDE&lt;/a&gt;
+&lt;/div&gt;
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>&lt;a href="{{site.baseurl}}/guides/building-native-image" class="button-cta secondary"&gt;阅读指南&lt;/a&gt;
+&lt;/div&gt;
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Quarkus comes with a toolchain enabling developers from live reload all the way down to deploying a Kubernetes application.
+In this guide, we will explore:
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>Quarkus 附带了一个工具链，使开发人员能够从实时重新加载到部署 Kubernetes 应用程序。
+在该指南中，我们将探讨：
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>how to use the native CLI for your toolchain (coming soon)
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>如何为您的工具链使用本机CLI（即将推出）
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>how to develop your application in your IDE
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>如何在IDE中开发应用程序
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;a href="{{site.baseurl}}/guides/tooling" class="button-cta secondary"&gt;READ THE GUIDE&lt;/a&gt;
+&lt;/div&gt;
+</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>&lt;a href="{{site.baseurl}}/guides/tooling" class="button-cta secondary"&gt;阅读指南&lt;/a&gt;
+&lt;/div&gt;
+</seg>
       </tuv>
     </tu>
   </body>
