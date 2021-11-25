@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:07+0000\n"
+"POT-Creation-Date: 2021-11-25 00:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,7 +132,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/smallrye-health.adoc:65
-#: upstream/_guides/smallrye-health.adoc:393
+#: upstream/_guides/smallrye-health.adoc:425
 #, no-wrap
 msgid "./mvnw quarkus:add-extension -Dextensions=\"smallrye-health\"\n"
 msgstr ""
@@ -144,7 +144,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/smallrye-health.adoc:75
-#: upstream/_guides/smallrye-health.adoc:402
+#: upstream/_guides/smallrye-health.adoc:434
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -176,71 +176,77 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/smallrye-health.adoc:84
+msgid "`/q/health/started` - The application is started."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/smallrye-health.adoc:85
 msgid "`/q/health` - Accumulating all health check procedures in the application."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:86
+#: upstream/_guides/smallrye-health.adoc:87
 msgid "To check that the `smallrye-health` extension is working as expected:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:88
+#: upstream/_guides/smallrye-health.adoc:89
 msgid "start your Quarkus application with `./mvnw compile quarkus:dev`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:90
+#: upstream/_guides/smallrye-health.adoc:91
 msgid "access the `http://localhost:8080/q/health/live` endpoint using your browser or `curl http://localhost:8080/q/health/live`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:92
+#: upstream/_guides/smallrye-health.adoc:93
 msgid "All of the health REST endpoints return a simple JSON object with two fields:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:94
+#: upstream/_guides/smallrye-health.adoc:95
 msgid "`status` -- the overall result of all the health check procedures"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:95
+#: upstream/_guides/smallrye-health.adoc:96
 msgid "`checks` -- an array of individual checks"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:99
+#: upstream/_guides/smallrye-health.adoc:100
 msgid "The general `status` of the health check is computed as a logical AND of all the declared health check procedures. The `checks` array is empty as we have not specified any health check procedure yet so let's define some."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/smallrye-health.adoc:100
+#: upstream/_guides/smallrye-health.adoc:101
 #, no-wrap
 msgid "Creating your first health check"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:103
+#: upstream/_guides/smallrye-health.adoc:104
 msgid "In this section, we create our first simple health check procedure."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:105
+#: upstream/_guides/smallrye-health.adoc:106
 msgid "Create the `org.acme.microprofile.health.SimpleHealthCheck` class:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:109
-#: upstream/_guides/smallrye-health.adoc:163
+#: upstream/_guides/smallrye-health.adoc:110
+#: upstream/_guides/smallrye-health.adoc:164
 #: upstream/_guides/smallrye-health.adoc:209
-#: upstream/_guides/smallrye-health.adoc:280
+#: upstream/_guides/smallrye-health.adoc:241
+#: upstream/_guides/smallrye-health.adoc:312
 #, no-wrap
 msgid "package org.acme.microprofile.health;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:113
+#: upstream/_guides/smallrye-health.adoc:114
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.health.HealthCheck;\n"
@@ -249,17 +255,18 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:115
-#: upstream/_guides/smallrye-health.adoc:169
-#: upstream/_guides/smallrye-health.adoc:217
-#: upstream/_guides/smallrye-health.adoc:286
-#: upstream/_guides/smallrye-health.adoc:344
+#: upstream/_guides/smallrye-health.adoc:116
+#: upstream/_guides/smallrye-health.adoc:170
+#: upstream/_guides/smallrye-health.adoc:215
+#: upstream/_guides/smallrye-health.adoc:249
+#: upstream/_guides/smallrye-health.adoc:318
+#: upstream/_guides/smallrye-health.adoc:376
 #, no-wrap
 msgid "import javax.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:119
+#: upstream/_guides/smallrye-health.adoc:120
 #, no-wrap
 msgid ""
 "@Liveness\n"
@@ -268,7 +275,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:125
+#: upstream/_guides/smallrye-health.adoc:126
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -279,68 +286,68 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:127
+#: upstream/_guides/smallrye-health.adoc:128
 msgid "It's recommended to annotate the health check class with `@ApplicationScoped` or the `@Singleton` scope so that a single bean instance is used for all health check requests."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:128
+#: upstream/_guides/smallrye-health.adoc:129
 msgid "If a bean class annotated with one of the health check annotations declares no scope then the `@Singleton` scope is used automatically."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:130
+#: upstream/_guides/smallrye-health.adoc:131
 msgid "As you can see, the health check procedures are defined as CDI beans that implement the `HealthCheck` interface and are annotated with one of the health check qualifiers, such as:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:132
+#: upstream/_guides/smallrye-health.adoc:133
 msgid "`@Liveness` - the liveness check accessible at `/q/health/live`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:133
+#: upstream/_guides/smallrye-health.adoc:134
 msgid "`@Readiness` - the readiness check accessible at `/q/health/ready`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:137
+#: upstream/_guides/smallrye-health.adoc:138
 msgid "`HealthCheck` is a functional interface whose single method `call` returns a `HealthCheckResponse` object which can be easily constructed by the fluent builder API shown in the example."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:143
+#: upstream/_guides/smallrye-health.adoc:144
 msgid "As we have started our Quarkus application in dev mode simply repeat the request to `http://localhost:8080/q/health/live` by refreshing your browser window or by using `curl http://localhost:8080/q/health/live`. Because we defined our health check to be a liveness procedure (with `@Liveness` qualifier) the new health check procedure is now present in the `checks` array."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:146
+#: upstream/_guides/smallrye-health.adoc:147
 msgid "Congratulations! You've created your first Quarkus health check procedure. Let's continue by exploring what else can be done with SmallRye Health."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/smallrye-health.adoc:147
+#: upstream/_guides/smallrye-health.adoc:148
 #, no-wrap
 msgid "Adding a readiness health check procedure"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:153
+#: upstream/_guides/smallrye-health.adoc:154
 msgid "In the previous section, we created a simple liveness health check procedure which states whether our application is running or not. In this section, we will create a readiness health check which will be able to state whether our application is able to process requests."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:157
+#: upstream/_guides/smallrye-health.adoc:158
 msgid "We will create another health check procedure that simulates a connection to an external service provider such as a database. For starters, we will always return the response indicating the application is ready."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:159
+#: upstream/_guides/smallrye-health.adoc:160
 msgid "Create `org.acme.microprofile.health.DatabaseConnectionHealthCheck` class:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:167
+#: upstream/_guides/smallrye-health.adoc:168
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.health.HealthCheck;\n"
@@ -349,8 +356,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:173
-#: upstream/_guides/smallrye-health.adoc:221
+#: upstream/_guides/smallrye-health.adoc:174
+#: upstream/_guides/smallrye-health.adoc:253
 #, no-wrap
 msgid ""
 "@Readiness\n"
@@ -359,7 +366,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:179
+#: upstream/_guides/smallrye-health.adoc:180
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -370,38 +377,93 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:189
+#: upstream/_guides/smallrye-health.adoc:190
 msgid "If you now rerun the health check at `http://localhost:8080/q/health/live` the `checks` array will contain only the previously defined `SimpleHealthCheck` as it is the only check defined with the `@Liveness` qualifier. However, if you access `http://localhost:8080/q/health/ready` (in the browser or with `curl http://localhost:8080/q/health/ready`) you will see only the `Database connection health check` as it is the only health check defined with the `@Readiness` qualifier as the readiness health check procedure."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:191
+#: upstream/_guides/smallrye-health.adoc:192
 msgid "If you access `http://localhost:8080/q/health` you will get back both checks."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:196
+#: upstream/_guides/smallrye-health.adoc:197
 msgid "More information about which health check procedures should be used in which situation is detailed in the MicroProfile Health specification. Generally, the liveness procedures determine whether the application should be restarted while readiness procedures determine whether it makes sense to contact the application with requests."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/smallrye-health.adoc:197
+#: upstream/_guides/smallrye-health.adoc:198
+#, no-wrap
+msgid "Adding a startup health check procedure"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/smallrye-health.adoc:201
+msgid "The third and final type of health check procedures is startup. Startup procedures are defined as an option for slow starting containers (should not be needed in Quarkus) to delay the invocations of liveness probe which will take over from startup once the startup responds UP for the first time. Startup health checks are defined with the `@Startup` qualifier."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/smallrye-health.adoc:203
+msgid "Please make sure that you import the microprofile `org.eclipse.microprofile.health.Startup` annotation since there is an unfortunate clash with `io.quarkus.runtime.Startup`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/smallrye-health.adoc:205
+msgid "Create `org.acme.microprofile.health.StartupHealthCheck` class:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/smallrye-health.adoc:213
+#, no-wrap
+msgid ""
+"import org.eclipse.microprofile.health.HealthCheck;\n"
+"import org.eclipse.microprofile.health.HealthCheckResponse;\n"
+"import org.eclipse.microprofile.health.Startup;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/smallrye-health.adoc:219
+#, no-wrap
+msgid ""
+"@Startup\n"
+"@ApplicationScoped\n"
+"public class StartupHealthCheck implements HealthCheck {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/smallrye-health.adoc:225
+#, no-wrap
+msgid ""
+"    @Override\n"
+"    public HealthCheckResponse call() {\n"
+"        return HealthCheckResponse.up(\"Startup health check\");\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/smallrye-health.adoc:228
+msgid "The startup health check will be available either at `http://localhost:8080/q/health/started` or together with other health check procedure at `http://localhost:8080/q/health`."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/smallrye-health.adoc:229
 #, no-wrap
 msgid "Negative health check procedures"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:203
+#: upstream/_guides/smallrye-health.adoc:235
 msgid "In this section, we extend our `Database connection health check` with the option of stating that our application is not ready to process requests as the underlying database connection cannot be established. For simplicity reasons, we only determine whether the database is accessible or not by a configuration property."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:205
+#: upstream/_guides/smallrye-health.adoc:237
 msgid "Update the `org.acme.microprofile.health.DatabaseConnectionHealthCheck` class:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:215
+#: upstream/_guides/smallrye-health.adoc:247
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.config.inject.ConfigProperty;\n"
@@ -412,7 +474,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:224
+#: upstream/_guides/smallrye-health.adoc:256
 #, no-wrap
 msgid ""
 "    @ConfigProperty(name = \"database.up\", defaultValue = \"false\")\n"
@@ -420,7 +482,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:227
+#: upstream/_guides/smallrye-health.adoc:259
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -428,13 +490,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:229
+#: upstream/_guides/smallrye-health.adoc:261
 #, no-wrap
 msgid "        HealthCheckResponseBuilder responseBuilder = HealthCheckResponse.named(\"Database connection health check\");\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:237
+#: upstream/_guides/smallrye-health.adoc:269
 #, no-wrap
 msgid ""
 "        try {\n"
@@ -447,7 +509,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:240
+#: upstream/_guides/smallrye-health.adoc:272
 #, no-wrap
 msgid ""
 "        return responseBuilder.build();\n"
@@ -455,7 +517,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:247
+#: upstream/_guides/smallrye-health.adoc:279
 #, no-wrap
 msgid ""
 "    private void simulateDatabaseConnectionVerification() {\n"
@@ -467,43 +529,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:254
+#: upstream/_guides/smallrye-health.adoc:286
 msgid "Until now we used a simplified method of building a `HealthCheckResponse` through the `HealthCheckResponse#up(String)` (there is also `HealthCheckResponse#down(String)`) which will directly build the response object.  From now on, we utilize the full builder capabilities provided by the `HealthCheckResponseBuilder` class."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:259
+#: upstream/_guides/smallrye-health.adoc:291
 msgid "If you now rerun the readiness health check (at `http://localhost:8080/q/health/ready`)  the overall `status` should be DOWN. You can also check the liveness check at `http://localhost:8080/q/health/live` which will return the overall `status` UP because it isn't influenced by the readiness checks."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:263
+#: upstream/_guides/smallrye-health.adoc:295
 msgid "As we shouldn't leave this application with a readiness check in a DOWN state and because we are running Quarkus in dev mode you can add `database.up=true` in `src/main/resources/application.properties` and rerun the readiness health check again"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:264
+#: upstream/_guides/smallrye-health.adoc:296
 msgid "it should be up again."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/smallrye-health.adoc:266
+#: upstream/_guides/smallrye-health.adoc:298
 #, no-wrap
 msgid "Adding user-specific data to the health check response"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:274
+#: upstream/_guides/smallrye-health.adoc:306
 msgid "In previous sections, we saw how to create simple health checks with only the minimal attributes, namely, the health check name and its status (UP or DOWN). However, the MicroProfile Health specification also provides a way for the applications to supply arbitrary data in the form of key-value pairs sent to the consuming end. This can be done by using the `withData(key, value)` method of the health check response builder API."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:276
+#: upstream/_guides/smallrye-health.adoc:308
 msgid "Let's create a new health check procedure `org.acme.microprofile.health.DataHealthCheck`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:284
+#: upstream/_guides/smallrye-health.adoc:316
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.health.Liveness;\n"
@@ -512,7 +574,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:290
+#: upstream/_guides/smallrye-health.adoc:322
 #, no-wrap
 msgid ""
 "@Liveness\n"
@@ -521,7 +583,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:300
+#: upstream/_guides/smallrye-health.adoc:332
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -536,17 +598,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:306
+#: upstream/_guides/smallrye-health.adoc:338
 msgid "If you rerun the liveness health check procedure by accessing the `/q/health/live` endpoint you can see that the new health check `Health check with data` is present in the `checks` array. This check contains a new attribute called `data` which is a JSON object consisting of the properties we have defined in our health check procedure."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:309
+#: upstream/_guides/smallrye-health.adoc:341
 msgid "This functionality is specifically useful in failure scenarios where you can pass the error along with the health check response."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:321
+#: upstream/_guides/smallrye-health.adoc:353
 #, no-wrap
 msgid ""
 "        try {\n"
@@ -560,45 +622,45 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/smallrye-health.adoc:323
+#: upstream/_guides/smallrye-health.adoc:355
 #, no-wrap
 msgid "Context propagation into the health check invocations"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:326
+#: upstream/_guides/smallrye-health.adoc:358
 msgid "For the perfomance reasons the context (e.g., CDI or security context) is not propagated into each health check invocation. However, if you need to enable this functionality you can set the config property `quarkus.smallrye-health.context-propagation=true` to allow the context propagation into every health check call."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/smallrye-health.adoc:327
+#: upstream/_guides/smallrye-health.adoc:359
 #, no-wrap
 msgid "Reactive health checks"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:330
+#: upstream/_guides/smallrye-health.adoc:362
 msgid "MicroProfile Health currently doesn't support returning reactive types, but SmallRye Health does."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:333
+#: upstream/_guides/smallrye-health.adoc:365
 msgid "If you want to provide a reactive health check, you can implement the `io.smallrye.health.api.AsyncHealthCheck` interface instead of the `org.eclipse.microprofile.health.HealthCheck` one.  The `io.smallrye.health.api.AsyncHealthCheck` interface allows you to return a `Uni<HealthCheckResponse>`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:335
+#: upstream/_guides/smallrye-health.adoc:367
 msgid "The following example shows a reactive liveness check:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:339
+#: upstream/_guides/smallrye-health.adoc:371
 #, no-wrap
 msgid "import io.smallrye.health.api.AsyncHealthCheck;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:342
+#: upstream/_guides/smallrye-health.adoc:374
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.health.Liveness;\n"
@@ -606,7 +668,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:348
+#: upstream/_guides/smallrye-health.adoc:380
 #, no-wrap
 msgid ""
 "@Liveness\n"
@@ -615,7 +677,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/smallrye-health.adoc:355
+#: upstream/_guides/smallrye-health.adoc:387
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -627,85 +689,85 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/smallrye-health.adoc:357
+#: upstream/_guides/smallrye-health.adoc:389
 #, no-wrap
 msgid "Extension health checks"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:360
+#: upstream/_guides/smallrye-health.adoc:392
 msgid "Some extension may provide default health checks, including the extension will automatically register its health checks."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:363
+#: upstream/_guides/smallrye-health.adoc:395
 msgid "For example, `quarkus-agroal` that is used to manage Quarkus datasource(s) automatically register a readiness health check that will validate each datasources: link:datasource#datasource-health-check[Datasource Health Check]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:365
+#: upstream/_guides/smallrye-health.adoc:397
 msgid "You can disable extension health check via the property `quarkus.health.extensions.enabled` so none will be automatically registered."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/smallrye-health.adoc:367
+#: upstream/_guides/smallrye-health.adoc:399
 #, no-wrap
 msgid "Health UI "
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:370
+#: upstream/_guides/smallrye-health.adoc:402
 msgid "Experimental - not included in the MicroProfile specification"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:372
+#: upstream/_guides/smallrye-health.adoc:404
 msgid "`health-ui` allows you to see your Health Checks in a Web GUI."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:374
+#: upstream/_guides/smallrye-health.adoc:406
 msgid "The Quarkus `smallrye-health` extension ships with `health-ui` and enables it by default in dev and test modes, but it can also be explicitly configured for production mode as well."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:376
+#: upstream/_guides/smallrye-health.adoc:408
 msgid "`health-ui` can be accessed from http://localhost:8080/q/health-ui/ ."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:378
+#: upstream/_guides/smallrye-health.adoc:410
 msgid "image:health-ui-screenshot01.png[alt=Health UI]"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/smallrye-health.adoc:379
+#: upstream/_guides/smallrye-health.adoc:411
 #, no-wrap
 msgid "Conclusion"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:385
+#: upstream/_guides/smallrye-health.adoc:417
 msgid "SmallRye Health provides a way for your application to distribute information about its healthiness state to state whether or not it is able to function properly.  Liveness checks are utilized to tell whether the application should be restarted and readiness checks are used to tell whether the application is able to process requests."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:387
+#: upstream/_guides/smallrye-health.adoc:419
 msgid "All that is needed to enable the SmallRye Health features in Quarkus is:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:390
+#: upstream/_guides/smallrye-health.adoc:422
 msgid "adding the `smallrye-health` Quarkus extension to your project using the `quarkus-maven-plugin`: +"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/smallrye-health.adoc:396
+#: upstream/_guides/smallrye-health.adoc:428
 msgid "or simply adding the following Maven dependency: +"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/smallrye-health.adoc:404
+#: upstream/_guides/smallrye-health.adoc:436
 #, no-wrap
 msgid "Configuration Reference"
 msgstr ""

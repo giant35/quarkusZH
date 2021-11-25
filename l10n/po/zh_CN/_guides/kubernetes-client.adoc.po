@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:07+0000\n"
+"POT-Creation-Date: 2021-11-25 00:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -287,69 +287,104 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:178
-msgid "Alternately, you can create a `CustomKubernetesMockServerTestResource.java` to ensure all your `@QuarkusTest` enabled test classes share the same mock server setup:"
+#: upstream/_guides/kubernetes-client.adoc:177
+msgid "You can also use the `setup` attribute on the `@WithKubernetesTestServer` annotation to provide a class that will configure the `KubernetesServer` instance:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:182
+#: upstream/_guides/kubernetes-client.adoc:183
+#, no-wrap
+msgid ""
+"@WithKubernetesTestServer(setup = MyTest.Setup.class)\n"
+"@QuarkusTest\n"
+"public class MyTest {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kubernetes-client.adoc:185
+#, no-wrap
+msgid "    public static class Setup implements Consumer<KubernetesServer> {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kubernetes-client.adoc:192
+#, no-wrap
+msgid ""
+"        @Override\n"
+"        public void accept(KubernetesServer server) {\n"
+"          server.expect().get().withPath(\"/api/v1/namespaces/test/pods\")\n"
+"            .andReturn(200, new PodList()).always();\n"
+"        }\n"
+"    }\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kubernetes-client.adoc:195
+#, no-wrap
+msgid ""
+"    // tests\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/kubernetes-client.adoc:198
+msgid "Alternately, you can create an extension of the `KubernetesServerTestResource` class to ensure all your `@QuarkusTest` enabled test classes share the same mock server setup via the `QuarkusTestResource` annotation:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/kubernetes-client.adoc:202
 #, no-wrap
 msgid "public class CustomKubernetesMockServerTestResource extends KubernetesServerTestResource {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:190
+#: upstream/_guides/kubernetes-client.adoc:210
 #, no-wrap
 msgid ""
 "    @Override\n"
-"    public void configureMockServer(KubernetesServer mockServer) {\n"
-"        mockServer.expect().get().withPath(\"/api/v1/namespaces/test/pods\")\n"
-"                .andReturn(200, new PodList())\n"
-"                .always();\n"
+"    protected void configureServer() {\n"
+"        super.configureServer();\n"
+"        server.expect().get().withPath(\"/api/v1/namespaces/test/pods\")\n"
+"          .andReturn(200, new PodList()).always();\n"
 "    }\n"
 "}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:193
+#: upstream/_guides/kubernetes-client.adoc:213
 msgid "and use this in your other test classes as follows:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:198
+#: upstream/_guides/kubernetes-client.adoc:218
 #, no-wrap
 msgid ""
-"@QuarkusTestResource(KubernetesMockServerTestResource.class)\n"
+"@QuarkusTestResource(CustomKubernetesMockServerTestResource.class)\n"
 "@QuarkusTest\n"
 "public class KubernetesClientTest {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:201
+#: upstream/_guides/kubernetes-client.adoc:221
 #, no-wrap
 msgid ""
 "    //tests will now use the configured server...\n"
 "}\n"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:206
-msgid "Furthermore, to get a mock server that replies with empty lists by default (instead of getting 404 responses from the Kubernetes API), you can use the `EmptyDefaultKubernetesMockServerTestResource.class` instead of `KubernetesMockServerTestResource.class`."
-msgstr ""
-
 #. type: Title ==
-#: upstream/_guides/kubernetes-client.adoc:208
+#: upstream/_guides/kubernetes-client.adoc:224
 #, no-wrap
 msgid "Note on implementing or extending generic types"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:214
+#: upstream/_guides/kubernetes-client.adoc:230
 msgid "Due to the restrictions imposed by GraalVM, extra care needs to be taken when implementing or extending generic types provided by the client if the application is intended to work in native mode.  Essentially every implementation or extension of generic classes such as `Watcher`, `ResourceHandler` or `CustomResource` needs to specify their associated Kubernetes model class (or, in the case of `CustomResource`, regular Java types) at class definition time.  To better understand this, suppose we want to watch for changes to Kubernetes `Pod` resources.  There are a couple ways to write such a `Watcher` that are guaranteed to work in native:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:222
+#: upstream/_guides/kubernetes-client.adoc:238
 #, no-wrap
 msgid ""
 "client.pods().watch(new Watcher<Pod>() {\n"
@@ -360,7 +395,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:228
+#: upstream/_guides/kubernetes-client.adoc:244
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -371,12 +406,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:231
+#: upstream/_guides/kubernetes-client.adoc:247
 msgid "or"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:239
+#: upstream/_guides/kubernetes-client.adoc:255
 #, no-wrap
 msgid ""
 "public class PodResourceWatcher implements Watcher<Pod> {\n"
@@ -387,8 +422,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:245
-#: upstream/_guides/kubernetes-client.adoc:286
+#: upstream/_guides/kubernetes-client.adoc:261
+#: upstream/_guides/kubernetes-client.adoc:302
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -399,25 +434,25 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:247
-#: upstream/_guides/kubernetes-client.adoc:260
+#: upstream/_guides/kubernetes-client.adoc:263
+#: upstream/_guides/kubernetes-client.adoc:276
 #, no-wrap
 msgid "...\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:250
+#: upstream/_guides/kubernetes-client.adoc:266
 #, no-wrap
 msgid "client.pods().watch(new PodResourceWatcher());\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:253
+#: upstream/_guides/kubernetes-client.adoc:269
 msgid "Note that defining the generic type via a class hierarchy similar to the following example will also work correctly:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:258
+#: upstream/_guides/kubernetes-client.adoc:274
 #, no-wrap
 msgid ""
 "public abstract class MyWatcher<S> implements Watcher<S> {\n"
@@ -425,7 +460,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:268
+#: upstream/_guides/kubernetes-client.adoc:284
 #, no-wrap
 msgid ""
 "client.pods().watch(new MyWatcher<Pod>() {\n"
@@ -437,12 +472,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:272
+#: upstream/_guides/kubernetes-client.adoc:288
 msgid "The following example will **not** work in native mode because the generic type of watcher cannot be determined by looking at the class and method definitions thus making Quarkus unable to properly determine the Kubernetes model class for which reflection registration is needed:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:280
+#: upstream/_guides/kubernetes-client.adoc:296
 #, no-wrap
 msgid ""
 "public class ResourceWatcher<T extends HasMetadata> implements Watcher<T> {\n"
@@ -453,30 +488,30 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:288
+#: upstream/_guides/kubernetes-client.adoc:304
 #, no-wrap
 msgid "client.pods().watch(new ResourceWatcher<Pod>());\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kubernetes-client.adoc:291
+#: upstream/_guides/kubernetes-client.adoc:307
 #, no-wrap
 msgid "Access to the Kubernetes API"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:295
+#: upstream/_guides/kubernetes-client.adoc:311
 msgid "In many cases in order to access the Kubernetes API server a `ServiceAccount`, `Role` and `RoleBinding` will be necessary.  An example that allows listing all pods could look something like this:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:298
+#: upstream/_guides/kubernetes-client.adoc:314
 #, no-wrap
 msgid "---\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:304
+#: upstream/_guides/kubernetes-client.adoc:320
 #, no-wrap
 msgid ""
 "apiVersion: v1\n"
@@ -488,7 +523,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:314
+#: upstream/_guides/kubernetes-client.adoc:330
 #, no-wrap
 msgid ""
 "apiVersion: rbac.authorization.k8s.io/v1\n"
@@ -504,7 +539,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:328
+#: upstream/_guides/kubernetes-client.adoc:344
 #, no-wrap
 msgid ""
 "apiVersion: rbac.authorization.k8s.io/v1\n"
@@ -523,49 +558,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:332
+#: upstream/_guides/kubernetes-client.adoc:348
 msgid "Replace `<applicationName>` and `<namespace>` with your values.  Have a look at https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/[Configure Service Accounts for Pods] to get further information."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kubernetes-client.adoc:333
+#: upstream/_guides/kubernetes-client.adoc:349
 #, no-wrap
 msgid "OpenShift Client"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:338
+#: upstream/_guides/kubernetes-client.adoc:354
 msgid "If the targeted Kubernetes cluster is an OpenShift cluster, it is possible to access it through the `openshift-client` extension, in a similar way. This leverages the dedicated fabric8 openshift client, and provides access to `OpenShift` proprietary objects (e.g. `Route`, `ProjectRequest`, `BuildConfig` ...)"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:341
+#: upstream/_guides/kubernetes-client.adoc:357
 msgid "Note that the configuration properties are shared with the `kubernetes-client` extension. In particular they have the same `quarkus.kubernetes-client` prefix."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:343
+#: upstream/_guides/kubernetes-client.adoc:359
 msgid "Add the extension with:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:347
+#: upstream/_guides/kubernetes-client.adoc:363
 #, no-wrap
 msgid "./mvnw quarkus:add-extension -Dextensions=\"openshift-client\"\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:350
+#: upstream/_guides/kubernetes-client.adoc:366
 msgid "Note that `openshift-client` extension has a dependency on the `kubernetes-client` extension."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:352
+#: upstream/_guides/kubernetes-client.adoc:368
 msgid "To use the client, inject an `OpenShiftClient` instead of the `KubernetesClient`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:357
+#: upstream/_guides/kubernetes-client.adoc:373
 #, no-wrap
 msgid ""
 "@Inject\n"
@@ -573,12 +608,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:360
+#: upstream/_guides/kubernetes-client.adoc:376
 msgid "If you need to override the default `OpenShiftClient`, provide a producer such as:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:365
+#: upstream/_guides/kubernetes-client.adoc:381
 #, no-wrap
 msgid ""
 "@Singleton\n"
@@ -586,7 +621,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:372
+#: upstream/_guides/kubernetes-client.adoc:388
 #, no-wrap
 msgid ""
 "    @Produces\n"
@@ -598,12 +633,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:375
+#: upstream/_guides/kubernetes-client.adoc:391
 msgid "Mock support is also provided in a similar fashion:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:381
+#: upstream/_guides/kubernetes-client.adoc:397
 #, no-wrap
 msgid ""
 "@QuarkusTestResource(OpenShiftMockServerTestResource.class)\n"
@@ -612,7 +647,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:385
+#: upstream/_guides/kubernetes-client.adoc:401
 #, no-wrap
 msgid ""
 "    @MockServer\n"
@@ -621,12 +656,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:389
+#: upstream/_guides/kubernetes-client.adoc:405
 msgid "Or by using the `@WithOpenShiftTestServer` similar to the `@WithKubernetesTestServer` explained in the previous section:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:395
+#: upstream/_guides/kubernetes-client.adoc:411
 #, no-wrap
 msgid ""
 "@WithOpenShiftTestServer\n"
@@ -635,7 +670,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:399
+#: upstream/_guides/kubernetes-client.adoc:415
 #, no-wrap
 msgid ""
 "    @OpenShiftTestServer\n"
@@ -644,12 +679,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kubernetes-client.adoc:402
+#: upstream/_guides/kubernetes-client.adoc:418
 msgid "To use this feature, you have to add a dependency on `quarkus-test-openshift-client`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kubernetes-client.adoc:410
+#: upstream/_guides/kubernetes-client.adoc:426
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -660,7 +695,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kubernetes-client.adoc:412
+#: upstream/_guides/kubernetes-client.adoc:428
 #, no-wrap
 msgid "Configuration Reference"
 msgstr ""

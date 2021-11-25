@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-28 00:56+0000\n"
+"POT-Creation-Date: 2021-11-25 00:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -230,46 +230,62 @@ msgstr ""
 #. type: Title ==
 #: upstream/_guides/building-my-first-extension.adoc:90
 #, no-wrap
-msgid "Maven setup"
+msgid "Project setup"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/building-my-first-extension.adoc:93
-msgid "Quarkus provides `create-extension` Maven Mojo to initialize your extension project."
+msgid "Extensions can be built with either Maven or Gradle. Depending on your build tool, setup can be done as following:"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/building-my-first-extension.adoc:95
-msgid "It will try to auto-detect its options:"
+msgid "The Gradle extension plugin is still experimental and may be missing features available in the Maven plugin."
 msgstr ""
 
-#. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:97
-msgid "from `quarkus` (Quarkus Core) or `quarkus/extensions` directory, it will use the 'Quarkus Core' extension layout and defaults."
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:98
-msgid "with `-DgroupId=io.quarkiverse.[extensionId]`, it will use the 'Quarkiverse' extension layout and defaults."
+#. type: Title ===
+#: upstream/_guides/building-my-first-extension.adoc:96
+#, no-wrap
+msgid "Maven setup"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/building-my-first-extension.adoc:99
+msgid "Quarkus provides `create-extension` Maven Mojo to initialize your extension project."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:101
+msgid "It will try to auto-detect its options:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:103
+msgid "from `quarkus` (Quarkus Core) or `quarkus/extensions` directory, it will use the 'Quarkus Core' extension layout and defaults."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:104
+msgid "with `-DgroupId=io.quarkiverse.[extensionId]`, it will use the 'Quarkiverse' extension layout and defaults."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:105
 msgid "in other cases it will use the 'Standalone' extension layout and defaults."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:100
+#: upstream/_guides/building-my-first-extension.adoc:106
 msgid "we may introduce other layout types in the future."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:102
+#: upstream/_guides/building-my-first-extension.adoc:108
 msgid "You may call it without any parameter to use the interactive mode: `mvn io.quarkus.platform:quarkus-maven-plugin:{quarkus-version}:create-extension -N`"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:109
+#: upstream/_guides/building-my-first-extension.adoc:115
 #, no-wrap
 msgid ""
 "$ mvn io.quarkus.platform:quarkus-maven-plugin:{quarkus-version}:create-extension -N \\\n"
@@ -279,13 +295,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:111
+#: upstream/_guides/building-my-first-extension.adoc:117
 #, no-wrap
 msgid "[INFO] --- quarkus-maven-plugin:{quarkus-version}:create-extension (default-cli) @ standalone-pom ---\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:114
+#: upstream/_guides/building-my-first-extension.adoc:120
 #, no-wrap
 msgid ""
 "Detected layout type is 'standalone' #<4>\n"
@@ -293,7 +309,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:121
+#: upstream/_guides/building-my-first-extension.adoc:127
 #, no-wrap
 msgid ""
 "applying codestarts...\n"
@@ -304,12 +320,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:125
+#: upstream/_guides/building-my-first-extension.adoc:131
 msgid "👍 extension has been successfully generated in: --> /Users/ia3andy/workspace/redhat/quarkus/demo/greeting-extension"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:132
+#: upstream/_guides/building-my-first-extension.adoc:138
 #, no-wrap
 msgid ""
 "[INFO] ------------------------------------------------------------------------\n"
@@ -321,48 +337,48 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:136
+#: upstream/_guides/building-my-first-extension.adoc:142
 msgid "The extension groupId"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:137
+#: upstream/_guides/building-my-first-extension.adoc:143
 msgid "The extension id (not namespaced)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:138
+#: upstream/_guides/building-my-first-extension.adoc:144
 msgid "Indicate that we don't want to generate any test"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:139
+#: upstream/_guides/building-my-first-extension.adoc:145
 msgid "From a directory with no pom.xml and without any further options, the generator will automatically pick the 'standalone' extension layout"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:140
+#: upstream/_guides/building-my-first-extension.adoc:146
 msgid "With the 'standalone' layout, the `namespaceId` is empty by default, so the computed runtime module artifactId is the `extensionId`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:142
+#: upstream/_guides/building-my-first-extension.adoc:148
 msgid "Maven has generated a `greeting-extension` directory containing the extension project which consists of the parent `pom.xml`, the `runtime` and the `deployment` modules."
 msgstr ""
 
-#. type: Title ===
-#: upstream/_guides/building-my-first-extension.adoc:143
+#. type: Title ====
+#: upstream/_guides/building-my-first-extension.adoc:149
 #, no-wrap
 msgid "The parent pom.xml"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:146
+#: upstream/_guides/building-my-first-extension.adoc:152
 msgid "Your extension is a multi-module project. So let's start by checking out the parent POM at `./greeting-extension/pom.xml`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:217
+#: upstream/_guides/building-my-first-extension.adoc:223
 #, no-wrap
 msgid ""
 "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
@@ -436,38 +452,38 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:220
+#: upstream/_guides/building-my-first-extension.adoc:226
 msgid "Your extension declares 2 sub-modules `deployment` and `runtime`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:221
+#: upstream/_guides/building-my-first-extension.adoc:227
 msgid "Quarkus requires a recent version of the Maven compiler plugin supporting the annotationProcessorPaths configuration."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:222
+#: upstream/_guides/building-my-first-extension.adoc:228
 msgid "The `quarkus-bom` aligns your dependencies with those used by Quarkus during the augmentation phase."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:223
+#: upstream/_guides/building-my-first-extension.adoc:229
 msgid "Quarkus requires these configs to run tests properly"
 msgstr ""
 
-#. type: Title ===
-#: upstream/_guides/building-my-first-extension.adoc:224
+#. type: Title ====
+#: upstream/_guides/building-my-first-extension.adoc:230
 #, no-wrap
 msgid "The Deployment module"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:227
+#: upstream/_guides/building-my-first-extension.adoc:233
 msgid "Let's have a look at the deployment's `./greeting-extension/deployment/pom.xml`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:238
+#: upstream/_guides/building-my-first-extension.adoc:244
 #, no-wrap
 msgid ""
 "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
@@ -482,7 +498,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:241
+#: upstream/_guides/building-my-first-extension.adoc:247
 #, no-wrap
 msgid ""
 "    <artifactId>greeting-extension-deployment</artifactId> <!--1-->\n"
@@ -490,7 +506,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:258
+#: upstream/_guides/building-my-first-extension.adoc:264
 #, no-wrap
 msgid ""
 "    <dependencies>\n"
@@ -512,7 +528,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:275
+#: upstream/_guides/building-my-first-extension.adoc:281
 #, no-wrap
 msgid ""
 "    <build>\n"
@@ -534,55 +550,56 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:277
+#: upstream/_guides/building-my-first-extension.adoc:283
 #, no-wrap
 msgid "</project>\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:280
-#: upstream/_guides/building-my-first-extension.adoc:380
+#: upstream/_guides/building-my-first-extension.adoc:286
+#: upstream/_guides/building-my-first-extension.adoc:386
 msgid "The key points are:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:282
+#: upstream/_guides/building-my-first-extension.adoc:288
+#: upstream/_guides/building-my-first-extension.adoc:462
 msgid "By convention, the deployment module has the `-deployment` suffix (`greeting-extension-deployment`)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:284
+#: upstream/_guides/building-my-first-extension.adoc:290
 msgid "The deployment module depends on the `quarkus-arc-deployment` artifact.  We will see later which dependencies are convenient to add."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:285
+#: upstream/_guides/building-my-first-extension.adoc:291
 msgid "The deployment module also *must* depend on the runtime module."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:286
-#: upstream/_guides/building-my-first-extension.adoc:385
+#: upstream/_guides/building-my-first-extension.adoc:292
+#: upstream/_guides/building-my-first-extension.adoc:391
 msgid "We add the `quarkus-extension-processor` to the compiler annotation processors."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:288
+#: upstream/_guides/building-my-first-extension.adoc:294
 msgid "In addition to the `pom.xml` `create-extension` also generated the `org.acme.greeting.extension.deployment.GreetingExtensionProcessor` class."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:292
-#: upstream/_guides/building-my-first-extension.adoc:455
-#: upstream/_guides/building-my-first-extension.adoc:509
-#: upstream/_guides/building-my-first-extension.adoc:572
+#: upstream/_guides/building-my-first-extension.adoc:298
+#: upstream/_guides/building-my-first-extension.adoc:566
+#: upstream/_guides/building-my-first-extension.adoc:627
+#: upstream/_guides/building-my-first-extension.adoc:699
 #, no-wrap
 msgid "package org.acme.greeting.extension.deployment;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:295
-#: upstream/_guides/building-my-first-extension.adoc:458
+#: upstream/_guides/building-my-first-extension.adoc:301
+#: upstream/_guides/building-my-first-extension.adoc:569
 #, no-wrap
 msgid ""
 "import io.quarkus.deployment.annotations.BuildStep;\n"
@@ -590,24 +607,24 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:297
-#: upstream/_guides/building-my-first-extension.adoc:460
-#: upstream/_guides/building-my-first-extension.adoc:516
+#: upstream/_guides/building-my-first-extension.adoc:303
+#: upstream/_guides/building-my-first-extension.adoc:571
+#: upstream/_guides/building-my-first-extension.adoc:634
 #, no-wrap
 msgid "class GreetingExtensionProcessor {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:299
-#: upstream/_guides/building-my-first-extension.adoc:462
-#: upstream/_guides/building-my-first-extension.adoc:518
+#: upstream/_guides/building-my-first-extension.adoc:305
+#: upstream/_guides/building-my-first-extension.adoc:573
+#: upstream/_guides/building-my-first-extension.adoc:636
 #, no-wrap
 msgid "    private static final String FEATURE = \"greeting-extension\";\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:304
-#: upstream/_guides/building-my-first-extension.adoc:523
+#: upstream/_guides/building-my-first-extension.adoc:310
+#: upstream/_guides/building-my-first-extension.adoc:641
 #, no-wrap
 msgid ""
 "    @BuildStep\n"
@@ -617,37 +634,37 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:306
-#: upstream/_guides/building-my-first-extension.adoc:469
-#: upstream/_guides/building-my-first-extension.adoc:533
-#: upstream/_guides/building-my-first-extension.adoc:594
+#: upstream/_guides/building-my-first-extension.adoc:312
+#: upstream/_guides/building-my-first-extension.adoc:580
+#: upstream/_guides/building-my-first-extension.adoc:651
+#: upstream/_guides/building-my-first-extension.adoc:721
 #, no-wrap
 msgid "}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:311
+#: upstream/_guides/building-my-first-extension.adoc:317
 msgid "`FeatureBuildItem` represents a functionality provided by an extension.  The name of the feature gets displayed in the log during application bootstrap.  An extension should provide at most one feature."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:315
+#: upstream/_guides/building-my-first-extension.adoc:321
 msgid "Be patient, we will explain the `Build Step Processor` concept and all the extension deployment API later on.  At this point, you just need to understand that this class explains to Quarkus how to deploy a feature named `greeting` which is your extension.  In other words, you are augmenting your application to use the `greeting` extension with all the Quarkus benefits (build time optimization, native support, etc.)."
 msgstr ""
 
-#. type: Title ===
-#: upstream/_guides/building-my-first-extension.adoc:316
+#. type: Title ====
+#: upstream/_guides/building-my-first-extension.adoc:322
 #, no-wrap
 msgid "The Runtime module"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:319
+#: upstream/_guides/building-my-first-extension.adoc:325
 msgid "Finally `./greeting-extension/runtime/pom.xml`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:331
+#: upstream/_guides/building-my-first-extension.adoc:337
 #, no-wrap
 msgid ""
 "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
@@ -662,7 +679,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:334
+#: upstream/_guides/building-my-first-extension.adoc:340
 #, no-wrap
 msgid ""
 "    <artifactId>greeting-extension</artifactId>  <!--1-->\n"
@@ -670,7 +687,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:341
+#: upstream/_guides/building-my-first-extension.adoc:347
 #, no-wrap
 msgid ""
 "    <dependencies>\n"
@@ -682,7 +699,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:377
+#: upstream/_guides/building-my-first-extension.adoc:383
 #, no-wrap
 msgid ""
 "    <build>\n"
@@ -723,54 +740,271 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:382
+#: upstream/_guides/building-my-first-extension.adoc:388
 msgid "By convention, the runtime module has no suffix (`greeting-extension`) as it is the artifact exposed to the end user."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:383
+#: upstream/_guides/building-my-first-extension.adoc:389
 msgid "The runtime module depends on the `quarkus-arc` artifact."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:384
+#: upstream/_guides/building-my-first-extension.adoc:390
 msgid "We add the `quarkus-bootstrap-maven-plugin` to generate the Quarkus extension descriptor included into the runtime artifact which links it with the corresponding deployment artifact."
 msgstr ""
 
+#. type: Title ===
+#: upstream/_guides/building-my-first-extension.adoc:392
+#, no-wrap
+msgid "Gradle setup"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:395
+msgid "Quarkus does not provide any way to initialize a Gradle project for extensions yet."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:397
+msgid "As mentionned before, an extension is composed of two modules:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:399
+msgid "`runtime`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:400
+msgid "`deployment`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:402
+msgid "We are going to create a Gradle multi module project with those two modules. Here is a simple `settings.gradle` example file:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:414
+#, no-wrap
+msgid ""
+"pluginManagement {\n"
+"    repositories {\n"
+"        mavenCentral()\n"
+"        gradlePluginPortal()\n"
+"    }\n"
+"    plugins {\n"
+"        id 'io.quarkus.extension' version \"${quarkus.version}\" <1>\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:416
+#, no-wrap
+msgid "include 'runtime', 'deployment' <2>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:418
+#, no-wrap
+msgid "rootProject.name = 'greeting-extension'\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:421
+msgid "Configure the quarkus extension plugin version"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:422
+msgid "Include both `runtime` and `deployment` modules"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:424
+msgid "Here is a sample of a root `build.gradle` file:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:430
+#, no-wrap
+msgid ""
+"subprojects {\n"
+"    apply plugin: 'java-library' <1>\n"
+"    apply plugin: 'maven-publish' <2>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:434
+#, no-wrap
+msgid ""
+"    group 'org.acme' <3>\n"
+"    version '1.0-SNAPSHOT'\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:437
+msgid "Apply the `java-library` plugin for all sub-modules"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:438
+msgid "Apply the `maven-publish` plugin used to publish our artifacts"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:439
+msgid "Globally set the group id used for publication"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:442
+msgid "The `io.quarkus.extension` plugin will be used in order to help us building the extension.  The plugin will *only* be applied to the `runtime` module."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_guides/building-my-first-extension.adoc:443
+#, no-wrap
+msgid "The deployment module"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:447
+msgid "The deployment module does not require any specific plugin.  Here is an example of a minimal `build.gradle` file for the `deployment` module:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:451
+#, no-wrap
+msgid "name = 'greeting-extension-deployment' <1>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:454
+#, no-wrap
+msgid ""
+"dependencies {\n"
+"    implementation project(':runtime') <2>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:456
+#, no-wrap
+msgid "    implementation platform(\"io.quarkus:quarkus-bom:${quarkus.version}\")\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:459
+#, no-wrap
+msgid ""
+"    testImplementation 'io.quarkus:quarkus-junit5-internal'\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:463
+msgid "The deployment module *must* depend on the `runtime` module."
+msgstr ""
+
+#. type: Title ====
+#: upstream/_guides/building-my-first-extension.adoc:464
+#, no-wrap
+msgid "The runtime module"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:467
+msgid "The runtime module applies the `io.quarkus.extension` plugin. This will:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:469
+msgid "Add `quarkus-extension-process` as annotation processor to both modules."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:470
+msgid "Generate extension description files."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:472
+msgid "Here is an example of `build.gradle` file for the `runtime` module:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:478
+#, no-wrap
+msgid ""
+"plugins {\n"
+"    id 'io.quarkus.extension' <1>\n"
+"}\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:481
+#, no-wrap
+msgid ""
+"name = 'greeting-extension' <2>\n"
+"description = 'Greeting extension'\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:485
+#, no-wrap
+msgid ""
+"dependencies {\n"
+"    implementation platform(\"io.quarkus:quarkus-bom:${quarkus.version}\")\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:488
+msgid "Apply the `io.quarkus.extension` plugin."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:489
+msgid "By convention, the runtime module doesn't have a suffix (and thus is named `greeting-extension`) as it is the artifact exposed to the end user."
+msgstr ""
+
 #. type: Title ==
-#: upstream/_guides/building-my-first-extension.adoc:386
+#: upstream/_guides/building-my-first-extension.adoc:490
 #, no-wrap
 msgid "Basic version of the Sample Greeting extension"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/building-my-first-extension.adoc:388
+#: upstream/_guides/building-my-first-extension.adoc:492
 #, no-wrap
 msgid "Implementing the Greeting feature"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:391
+#: upstream/_guides/building-my-first-extension.adoc:495
 msgid "The (killer) feature proposed by our extension is to greet the user.  To do so, our extension will deploy, in the user application, a Servlet exposing the HTTP endpoint `/greeting` which responds to the GET verb with a plain text `Hello`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:393
+#: upstream/_guides/building-my-first-extension.adoc:497
 msgid "The `runtime` module is where you develop the feature you want to propose to your users, so it's time to create our Web Servlet."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:396
+#: upstream/_guides/building-my-first-extension.adoc:500
 msgid "To use Servlets in your applications you need to have a Servlet Container such as http://undertow.io[Undertow].  Luckily, `quarkus-bom` imported by our parent `pom.xml` already includes the Undertow Quarkus extension."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:398
+#: upstream/_guides/building-my-first-extension.adoc:502
 msgid "All we need to do is add `quarkus-undertow` as dependency to our `./greeting-extension/runtime/pom.xml`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:404
+#: upstream/_guides/building-my-first-extension.adoc:508
 #, no-wrap
 msgid ""
 "    <dependency>\n"
@@ -780,29 +1014,40 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:408
+#: upstream/_guides/building-my-first-extension.adoc:511
+msgid "For Gradle, add the dependency in `./greeting-extension/runtime/build.gradle` file:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:515
+#, no-wrap
+msgid "    implementation 'io.quarkus:quarkus-undertow'\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:519
 msgid "The dependency on `quarkus-arc` generated by the `create-extension` mojo can now be removed since `quarkus-undertow` already depends on it."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:410
+#: upstream/_guides/building-my-first-extension.adoc:521
 msgid "Now we can create our Servlet `org.acme.greeting.extension.GreetingExtensionServlet` in the `runtime` module."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:414
+#: upstream/_guides/building-my-first-extension.adoc:525
 #, no-wrap
 msgid "mkdir -p ./greeting-extension/runtime/src/main/java/org/acme/greeting/extension\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:419
+#: upstream/_guides/building-my-first-extension.adoc:530
 #, no-wrap
 msgid "package org.acme.greeting.extension;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:425
+#: upstream/_guides/building-my-first-extension.adoc:536
 #, no-wrap
 msgid ""
 "import javax.servlet.annotation.WebServlet;\n"
@@ -813,7 +1058,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:428
+#: upstream/_guides/building-my-first-extension.adoc:539
 #, no-wrap
 msgid ""
 "@WebServlet\n"
@@ -821,7 +1066,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:434
+#: upstream/_guides/building-my-first-extension.adoc:545
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -832,49 +1077,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:437
+#: upstream/_guides/building-my-first-extension.adoc:548
 msgid "As usual, defining a servlet requires to extend `javax.servlet.http.HttpServlet`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:438
+#: upstream/_guides/building-my-first-extension.adoc:549
 msgid "Since we want to respond to the HTTP GET verb, we override the `doGet` method and write `Hello` in the Servlet response's output stream."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/building-my-first-extension.adoc:439
+#: upstream/_guides/building-my-first-extension.adoc:550
 #, no-wrap
 msgid "Deploying the Greeting feature"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:444
+#: upstream/_guides/building-my-first-extension.adoc:555
 msgid "Quarkus magic relies on bytecode generation at build time rather than waiting for the runtime code evaluation, that's the role of your extension's `deployment` module.  Calm down, we know, bytecode is hard and you don't want to do it manually, Quarkus proposes a high level API to make your life easier.  Thanks to basic concepts, you will describe the items to produce/consume and the corresponding steps in order to generate the bytecode to produce during the deployment time."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:446
+#: upstream/_guides/building-my-first-extension.adoc:557
 msgid "The `io.quarkus.builder.item.BuildItem` concept represents object instances you will produce or consume (and at some point convert into bytecode) thanks to methods annotated with `@io.quarkus.deployment.annotations.BuildStep` which describe your extension's deployment tasks."
 msgstr ""
 
 #. type: Labeled list
-#: upstream/_guides/building-my-first-extension.adoc:447
+#: upstream/_guides/building-my-first-extension.adoc:558
 #, no-wrap
 msgid "NOTE"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:448
+#: upstream/_guides/building-my-first-extension.adoc:559
 msgid "See link:all-builditems[the complete list of BuildItem implementations in core] for more information"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:451
+#: upstream/_guides/building-my-first-extension.adoc:562
 msgid "Go back to the generated `org.acme.greeting.extension.deployment.GreetingExtensionProcessor` class."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:467
+#: upstream/_guides/building-my-first-extension.adoc:578
 #, no-wrap
 msgid ""
 "    @BuildStep // <1>\n"
@@ -884,57 +1129,57 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:474
+#: upstream/_guides/building-my-first-extension.adoc:585
 msgid "`feature()` method is annotated with `@BuildStep` which means it is identified as a deployment task Quarkus will have to execute during the deployment.  `BuildStep` methods are run concurrently at augmentation time to augment the application.  They use a producer/consumer model, where a step is guaranteed not to be run until all the items that it is consuming have been produced."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:477
+#: upstream/_guides/building-my-first-extension.adoc:588
 msgid "`io.quarkus.deployment.builditem.FeatureBuildItem` is an implementation of `BuildItem` which represents the description of an extension.  This `BuildItem` will be used by Quarkus to display information to the users when the application is starting."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:480
+#: upstream/_guides/building-my-first-extension.adoc:591
 msgid "There are many `BuildItem` implementations, each one represents an aspect of the deployment process.  Here are some examples:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:482
+#: upstream/_guides/building-my-first-extension.adoc:593
 msgid "`ServletBuildItem`: describes a Servlet (name, path, etc.) we want to generate during the deployment."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:483
+#: upstream/_guides/building-my-first-extension.adoc:594
 msgid "`BeanContainerBuildItem`: describes a container used to store and retrieve object instances during the deployment."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:486
+#: upstream/_guides/building-my-first-extension.adoc:597
 msgid "If you don't find a `BuildItem` for what you want to achieve, you can create your own implementation. Keep in mind that a `BuildItem` should be as fine-grained as possible, representing a specific part of the deployment.  To create your `BuildItem` you can extend:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:488
+#: upstream/_guides/building-my-first-extension.adoc:599
 msgid "`io.quarkus.builder.item.SimpleBuildItem` if you need only a single instance of the item during the deployment (e.g. `BeanContainerBuildItem`, you only want one container)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:489
+#: upstream/_guides/building-my-first-extension.adoc:600
 msgid "`io.quarkus.builder.item.MultiBuildItem` if you want to have multiple instances (e.g. `ServletBuildItem`, you can produce many Servlets during the deployment)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:492
+#: upstream/_guides/building-my-first-extension.adoc:603
 msgid "It's now time to declare our HTTP endpoint. To do so, we need to produce a `ServletBuildItem`.  At this point, we are sure you understood that if the `quarkus-undertow` dependency proposes Servlet support for our `runtime` module, we will need the `quarkus-undertow-deployment` dependency in our `deployment` module to have access to the `io.quarkus.undertow.deployment.ServletBuildItem`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:494
+#: upstream/_guides/building-my-first-extension.adoc:605
 msgid "Let's add `quarkus-undertow-deployment` as dependency to our `./greeting-extension/deployment/pom.xml`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:500
+#: upstream/_guides/building-my-first-extension.adoc:611
 #, no-wrap
 msgid ""
 "    <dependency>\n"
@@ -944,17 +1189,29 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:503
+#: upstream/_guides/building-my-first-extension.adoc:614
 msgid "The dependency on `quarkus-arc-deployment` generated by the `create-extension` mojo can now be removed since `quarkus-undertow-deployment` already depends on it."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:505
+#: upstream/_guides/building-my-first-extension.adoc:616
+#: upstream/_guides/building-my-first-extension.adoc:679
+msgid "For Gradle, add the dependency in `./greeting-extension/deployment/build.gradle` file:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:620
+#, no-wrap
+msgid "    implementation 'io.quarkus:quarkus-undertow-deployment'\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/building-my-first-extension.adoc:623
 msgid "We can now update `org.acme.greeting.extension.deployment.GreetingExtensionProcessor`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:514
+#: upstream/_guides/building-my-first-extension.adoc:632
 #, no-wrap
 msgid ""
 "import io.quarkus.deployment.annotations.BuildStep;\n"
@@ -964,7 +1221,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:531
+#: upstream/_guides/building-my-first-extension.adoc:649
 #, no-wrap
 msgid ""
 "    @BuildStep\n"
@@ -977,66 +1234,74 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:537
+#: upstream/_guides/building-my-first-extension.adoc:655
 msgid "We add a `createServlet` method which returns a `ServletBuildItem` and annotate it with `@BuildStep`.  Now, Quarkus will process this new task which will result in the bytecode generation of the Servlet registration at build time."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:539
+#: upstream/_guides/building-my-first-extension.adoc:657
 msgid "`ServletBuildItem` proposes a fluent API to instantiate a Servlet named `greeting-extension` of type `GreetingExtensionServlet` (it's our class provided by our extension `runtime` module), and map it the `/greeting` path."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/building-my-first-extension.adoc:540
+#: upstream/_guides/building-my-first-extension.adoc:658
 #, no-wrap
 msgid "Testing the Greeting Extension feature"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:544
+#: upstream/_guides/building-my-first-extension.adoc:662
 msgid "When developing a Quarkus extension, you mainly want to test your feature is properly deployed in an application and works as expected.  That's why the tests will be hosted in the `deployment` module."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:546
+#: upstream/_guides/building-my-first-extension.adoc:664
 msgid "Quarkus proposes facilities to test extensions via the `quarkus-junit5-internal` artifact (which should already be in the deployment pom.xml), in particular the `io.quarkus.test.QuarkusUnitTest` runner which starts an application with your extension."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:549
+#: upstream/_guides/building-my-first-extension.adoc:667
 msgid "We will use http://rest-assured.io[RestAssured] (massively used in Quarkus) to test our HTTP endpoint.  Let's add the `rest-assured` dependency into the `./greeting-extension/deployment/pom.xml`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:558
+#: upstream/_guides/building-my-first-extension.adoc:676
 #, no-wrap
 msgid ""
 "    ...\n"
 "    <dependency>\n"
 "      <groupId>io.rest-assured</groupId>\n"
-"      <artifactId>rest-assured</artifactId> <!--2-->\n"
+"      <artifactId>rest-assured</artifactId>\n"
 "      <scope>test</scope>\n"
 "    </dependency>\n"
 msgstr ""
 
+#. type: delimited block -
+#: upstream/_guides/building-my-first-extension.adoc:684
+#, no-wrap
+msgid ""
+"    ...\n"
+"    testImplementation 'io.rest-assured:rest-assured'\n"
+msgstr ""
+
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:561
+#: upstream/_guides/building-my-first-extension.adoc:688
 msgid "The `create-extension` Maven Mojo can create the test and integration-test structure (drop the `-DwithoutTests`). Here, we'll create it ourselves:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:565
+#: upstream/_guides/building-my-first-extension.adoc:692
 #, no-wrap
 msgid "mkdir -p ./greeting-extension/deployment/src/test/java/org/acme/greeting/extension/deployment\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:568
+#: upstream/_guides/building-my-first-extension.adoc:695
 msgid "To start testing your extension, create the following `org.acme.greeting.extension.deployment.GreetingExtensionTest` test class:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:579
+#: upstream/_guides/building-my-first-extension.adoc:706
 #, no-wrap
 msgid ""
 "import io.quarkus.test.QuarkusUnitTest;\n"
@@ -1048,28 +1313,28 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:581
+#: upstream/_guides/building-my-first-extension.adoc:708
 #, no-wrap
 msgid "import static org.hamcrest.Matchers.containsString;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:583
+#: upstream/_guides/building-my-first-extension.adoc:710
 #, no-wrap
 msgid "public class GreetingExtensionTest {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:587
+#: upstream/_guides/building-my-first-extension.adoc:714
 #, no-wrap
 msgid ""
 "  @RegisterExtension\n"
 "  static final QuarkusUnitTest config = new QuarkusUnitTest()\n"
-"    .setArchiveProducer(() -> ShrinkWrap.create(JavaArchive.class)); // <1>\n"
+"    .withEmptyApplication(); // <1>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:592
+#: upstream/_guides/building-my-first-extension.adoc:719
 #, no-wrap
 msgid ""
 "  @Test\n"
@@ -1079,22 +1344,22 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:597
+#: upstream/_guides/building-my-first-extension.adoc:724
 msgid "We register a Junit Extension which will start a Quarkus application with the Greeting extension."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:598
+#: upstream/_guides/building-my-first-extension.adoc:725
 msgid "We verify the application has a `greeting` endpoint responding to a HTTP GET request with a OK status (200) and a plain text body containing `Hello`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:600
+#: upstream/_guides/building-my-first-extension.adoc:727
 msgid "Time to test and install to our local maven repository!"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:648
+#: upstream/_guides/building-my-first-extension.adoc:775
 #, no-wrap
 msgid ""
 "$ mvn clean install\n"
@@ -1145,89 +1410,89 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:651
+#: upstream/_guides/building-my-first-extension.adoc:778
 msgid "Looks good! Congratulations you just finished your first extension."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/building-my-first-extension.adoc:652
+#: upstream/_guides/building-my-first-extension.adoc:779
 #, no-wrap
 msgid "Debugging your extension"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:656
+#: upstream/_guides/building-my-first-extension.adoc:783
 msgid "_If debugging is the process of removing bugs, then programming must be the process of putting them in._ Edsger W. Dijkstra"
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/building-my-first-extension.adoc:658
+#: upstream/_guides/building-my-first-extension.adoc:785
 #, no-wrap
 msgid "Debugging your application build"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:662
+#: upstream/_guides/building-my-first-extension.adoc:789
 msgid "Since your extension deployment is made during the application build, this process is triggered by your build tool.  That means if you want to debug this phase you need to launch your build tool with the remote debug mode switched one."
 msgstr ""
 
 #. type: Title =====
-#: upstream/_guides/building-my-first-extension.adoc:663
+#: upstream/_guides/building-my-first-extension.adoc:790
 #, no-wrap
 msgid "Maven"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:667
+#: upstream/_guides/building-my-first-extension.adoc:794
 msgid "You can activate Maven remote debugging by using `mvnDebug`.  You can launch your application with the following command line:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:671
+#: upstream/_guides/building-my-first-extension.adoc:798
 #, no-wrap
 msgid "mvnDebug clean compile quarkus:dev\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:675
+#: upstream/_guides/building-my-first-extension.adoc:802
 msgid "By default, Maven will wait for a connection on `localhost:8000`.  Now, you can run your IDE `Remote` configuration to attach it to `localhost:8000`."
 msgstr ""
 
 #. type: Title =====
-#: upstream/_guides/building-my-first-extension.adoc:676
+#: upstream/_guides/building-my-first-extension.adoc:803
 #, no-wrap
 msgid "Gradle"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:680
+#: upstream/_guides/building-my-first-extension.adoc:807
 msgid "You can activate Gradle remote debugging by using the flags `org.gradle.debug=true` or `org.gradle.daemon.debug=true` in daemon mode.  You can launch your application with the following command line:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:684
+#: upstream/_guides/building-my-first-extension.adoc:811
 #, no-wrap
 msgid "./gradlew quarkusDev -Dorg.gradle.daemon.debug=true\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:688
+#: upstream/_guides/building-my-first-extension.adoc:815
 msgid "By default, Gradle will wait for a connection on `localhost:5005`.  Now, you can run your IDE `Remote` configuration to attach it to `localhost:5005`."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/building-my-first-extension.adoc:690
+#: upstream/_guides/building-my-first-extension.adoc:817
 #, no-wrap
 msgid "Debugging your extension tests"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:694
+#: upstream/_guides/building-my-first-extension.adoc:821
 msgid "We have seen together how to test your extension and sometimes things don't go so well and you want to debug your tests.  Same principle here, the trick is to enable the Maven Surefire remote debugging in order to attach an IDE `Remote` configuration."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:699
+#: upstream/_guides/building-my-first-extension.adoc:826
 #, no-wrap
 msgid ""
 "cd ./greeting-extension\n"
@@ -1235,34 +1500,34 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:702
+#: upstream/_guides/building-my-first-extension.adoc:829
 msgid "By default, Maven will wait for a connection on `localhost:5005`."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/building-my-first-extension.adoc:703
+#: upstream/_guides/building-my-first-extension.adoc:830
 #, no-wrap
 msgid "Time to use your new extension"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:706
+#: upstream/_guides/building-my-first-extension.adoc:833
 msgid "Now that you just finished building your first extension you should be eager to use it in a Quarkus application!"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:708
+#: upstream/_guides/building-my-first-extension.adoc:835
 #, no-wrap
 msgid "*Classic Maven publication*\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:710
+#: upstream/_guides/building-my-first-extension.adoc:837
 msgid "If not already done in the previous step, you should install the `greeting-extension` in your local repository:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:714
+#: upstream/_guides/building-my-first-extension.adoc:841
 #, no-wrap
 msgid ""
 "cd ./greeting-extension\n"
@@ -1270,12 +1535,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:717
+#: upstream/_guides/building-my-first-extension.adoc:844
 msgid "Then from another directory, use our tooling to create a new `greeting-app` Quarkus application with your new extension:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:724
+#: upstream/_guides/building-my-first-extension.adoc:851
 #, no-wrap
 msgid ""
 "mvn io.quarkus.platform:quarkus-maven-plugin:{quarkus-version}:create \\\n"
@@ -1286,22 +1551,22 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:727
+#: upstream/_guides/building-my-first-extension.adoc:854
 msgid "`cd` into `greeting-app`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:729
+#: upstream/_guides/building-my-first-extension.adoc:856
 msgid "The `greeting-extension` extension has to be installed in the local Maven repository to be usable in the application."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:732
+#: upstream/_guides/building-my-first-extension.adoc:859
 msgid "Run the application and notice the `Installed Features` list contains the `greeting-extension` extension."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-my-first-extension.adoc:762
+#: upstream/_guides/building-my-first-extension.adoc:889
 #, no-wrap
 msgid ""
 "$ mvn clean compile quarkus:dev\n"
@@ -1334,105 +1599,105 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:767
+#: upstream/_guides/building-my-first-extension.adoc:894
 msgid "From an extension developer standpoint the Maven publication strategy is very handy and fast but Quarkus wants to go one step further by also ensuring a reliability of the ecosystem for the people who will use the extensions.  Think about it, we all had a poor Developer Experience with an unmaintained library, an incompatibility between dependencies (and we don't even talk about legal issues).  That's why there is the Quarkus Platform."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:769
+#: upstream/_guides/building-my-first-extension.adoc:896
 #, no-wrap
 msgid "*Quarkus Platform*\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:772
+#: upstream/_guides/building-my-first-extension.adoc:899
 msgid "Quarkus platform is a set of extensions that target the primary use-cases of Quarkus as a development framework and can safely be used in any combination in the same application without creating a dependency conflict.  From an application developer perspective, a Quarkus platform is represented as one or more Maven BOMs, for example `io.quarkus.platform:quarkus-bom:{quarkus-version}`, `io.quarkus.platform:quarkus-kogito-bom:{quarkus-version}`, etc, whose dependency version constraints were globally aligned so that these BOMs can be imported in the same application in any order without introducing a dependency conflict."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:774
+#: upstream/_guides/building-my-first-extension.adoc:901
 #, no-wrap
 msgid "*Quarkiverse Hub*\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:776
+#: upstream/_guides/building-my-first-extension.adoc:903
 msgid "link:https://github.com/quarkiverse[Quarkiverse Hub] is the GitHub organization that provides repository hosting (including build, CI and release publishing setup) for Quarkus extension projects contributed by the community."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:778
+#: upstream/_guides/building-my-first-extension.adoc:905
 msgid "In case you are wondering about creating a new Quarkus extension and adding it to the Quarkus ecosystem so that the Quarkus community can discover it using the Quarkus dev tools (including the https://quarkus.io/guides/cli-tooling[Quarkus CLI] and https://code.quarkus.io[code.quarkus.io]), the https://github.com/quarkiverse[Quarkiverse Hub] GitHub organization will be a good home for it."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:780
+#: upstream/_guides/building-my-first-extension.adoc:907
 msgid "You can get started by creating an link:https://github.com/quarkusio/quarkus/issues/new/choose[Extension Request] issue (check first if one wasn't already submitted link:https://github.com/quarkusio/quarkus/labels/kind%2Fextension-proposal[here]) and asking to lead it."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:782
+#: upstream/_guides/building-my-first-extension.adoc:909
 msgid "We'll take care of provisioning a new repository and set it up to:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:784
+#: upstream/_guides/building-my-first-extension.adoc:911
 msgid "Be supported by our tooling;"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:785
+#: upstream/_guides/building-my-first-extension.adoc:912
 msgid "Publish the documentation you produce for your extension to the Quarkiverse website;"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:786
+#: upstream/_guides/building-my-first-extension.adoc:913
 msgid "Configure your extension to use the link:https://github.com/quarkusio/quarkus-ecosystem-ci#quarkus-ecosystem-ci[Quarkus Ecosystem CI] to build against the latest Quarkus Core changes;"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:787
+#: upstream/_guides/building-my-first-extension.adoc:914
 msgid "Give you the freedom to manage the project and release to Maven Central as you like."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:789
+#: upstream/_guides/building-my-first-extension.adoc:916
 msgid "Extensions hosted in the Quarkiverse Hub may or may not end up in the Quarkus platform."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:791
+#: upstream/_guides/building-my-first-extension.adoc:918
 msgid "For more information, check link:https://github.com/quarkiverse/quarkiverse/wiki[the Quarkiverse Wiki] and link:https://quarkus.io/blog/quarkiverse/[this blog post]."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/building-my-first-extension.adoc:792
+#: upstream/_guides/building-my-first-extension.adoc:919
 #, no-wrap
 msgid "Conclusion"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:795
+#: upstream/_guides/building-my-first-extension.adoc:922
 msgid "Creating new extensions may appear to be an intricate task at first but once you understood the Quarkus game-changer paradigm (build time vs runtime) the structure of an extension makes perfectly sense."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:797
+#: upstream/_guides/building-my-first-extension.adoc:924
 msgid "As usual, along the path Quarkus simplifies things under the hood (Maven Mojo, bytecode generation or testing) to make it pleasant to develop new features."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/building-my-first-extension.adoc:798
+#: upstream/_guides/building-my-first-extension.adoc:925
 #, no-wrap
 msgid "Further reading"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:801
+#: upstream/_guides/building-my-first-extension.adoc:928
 msgid "link:writing-extensions[Writing your own extension] for the full documentation."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-my-first-extension.adoc:801
+#: upstream/_guides/building-my-first-extension.adoc:928
 msgid "link:dev-console[Quarkus DEV Console] to learn how to support the DEV Console in your extension"
 msgstr ""
