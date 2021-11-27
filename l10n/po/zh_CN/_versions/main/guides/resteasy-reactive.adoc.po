@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-10 01:03+0000\n"
+"POT-Creation-Date: 2021-11-27 01:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,8 +106,8 @@ msgstr ""
 #: upstream/_versions/main/guides/resteasy-reactive.adoc:1667
 #: upstream/_versions/main/guides/resteasy-reactive.adoc:1692
 #: upstream/_versions/main/guides/resteasy-reactive.adoc:1744
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1842
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1967
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1847
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1972
 #, no-wrap
 msgid "package org.acme.rest;\n"
 msgstr ""
@@ -3396,34 +3396,45 @@ msgid ""
 "}\n"
 msgstr ""
 
-#. type: Title ===
+#. type: Title ====
 #: upstream/_versions/main/guides/resteasy-reactive.adoc:1828
+#, no-wrap
+msgid "Handling dates"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1832
+msgid "RESTEasy Reactive supports the use of the implementations of `java.time.Temporal` (like `java.time.LocalDateTime`) as query, path or form params. Furthermore it provides the `@org.jboss.resteasy.reactive.DateFormat` annotation which can be used to set a custom expected pattern (otherwise the JDK's default format for each type is used implicitly)."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1833
 #, no-wrap
 msgid "Preconditions"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1832
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1837
 msgid "https://tools.ietf.org/html/rfc7232[HTTP allows requests to be conditional], based on a number of conditions, such as:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1834
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1839
 msgid "Date of last resource modification"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1835
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1840
 msgid "A resource tag, similar to a hash code of the resource to designate its state or version"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1838
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1843
 msgid "Let's see how you can do conditional request validation using the link:{jaxrsapi}/javax/ws/rs/core/Request.html[`Request`] context object:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1847
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1852
 #, no-wrap
 msgid ""
 "import java.time.Instant;\n"
@@ -3433,7 +3444,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1855
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1860
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -3446,7 +3457,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1858
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1863
 #, no-wrap
 msgid ""
 "@Path(\"conditional\")\n"
@@ -3454,7 +3465,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1865
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1870
 #, no-wrap
 msgid ""
 "    // It's important to keep our date on seconds because that's how it's sent to the\n"
@@ -3466,7 +3477,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1878
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1883
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -3484,7 +3495,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1896
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1901
 #, no-wrap
 msgid ""
 "    @PUT\n"
@@ -3507,12 +3518,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1899
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1904
 msgid "When we call `GET /conditional` the first time, we will get this response:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1907
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1912
 #, no-wrap
 msgid ""
 "HTTP/1.1 200 OK\n"
@@ -3523,18 +3534,18 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1909
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1914
 #, no-wrap
 msgid "Some resource\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1912
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1917
 msgid "So now if we want to check if we need to fetch a new version, we can make the following request:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1918
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1923
 #, no-wrap
 msgid ""
 "GET /conditional HTTP/1.1\n"
@@ -3543,23 +3554,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1921
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1926
 msgid "And we would get the following response:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1925
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1930
 #, no-wrap
 msgid "HTTP/1.1 304 Not Modified\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1931
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1936
 msgid "Because the resource has not been modified since that date. This saves on sending the resource, but can also help your users detect concurrent modification, for example, let's suppose that one client wants to update the resource, but another user has modified it since. You can follow the previous `GET` request with this update:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1940
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1945
 #, no-wrap
 msgid ""
 "PUT /conditional HTTP/1.1\n"
@@ -3571,18 +3582,18 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1942
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1947
 #, no-wrap
 msgid "newstuff\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1946
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1951
 msgid "And if some other user has modified the resource between your `GET` and your `PUT` you would get this answer back:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1952
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1957
 #, no-wrap
 msgid ""
 "HTTP/1.1 412 Precondition Failed\n"
@@ -3591,23 +3602,23 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1954
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1959
 #, no-wrap
 msgid "Negotiation"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1961
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1966
 msgid "One of the main ideas of REST (https://tools.ietf.org/html/rfc7231#section-3.4[and HTTP]) is that your resource is independent from its representation, and that both the client and server are free to represent their resources in as many media types as they want. This allows the server to declare support for multiple representations and let the client declare which ones it supports and get served something appropriate."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1963
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1968
 msgid "The following endpoint supports serving cheese in plain text or JSON:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1974
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1979
 #, no-wrap
 msgid ""
 "import javax.ws.rs.Consumes;\n"
@@ -3619,13 +3630,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1976
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1981
 #, no-wrap
 msgid "import com.fasterxml.jackson.annotation.JsonCreator;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1988
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1993
 #, no-wrap
 msgid ""
 "class FroMage {\n"
@@ -3642,7 +3653,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1991
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:1996
 #, no-wrap
 msgid ""
 "@Path(\"negotiated\")\n"
@@ -3650,7 +3661,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:1997
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2002
 #, no-wrap
 msgid ""
 "    @Produces({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})\n"
@@ -3661,7 +3672,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2003
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2008
 #, no-wrap
 msgid ""
 "    @Consumes(MediaType.TEXT_PLAIN)\n"
@@ -3672,7 +3683,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2010
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2015
 #, no-wrap
 msgid ""
 "    @Consumes(MediaType.APPLICATION_JSON)\n"
@@ -3684,12 +3695,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2014
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2019
 msgid "The user will be able to select which representation it gets with the link:{httpspec}#section-5.3.2[`Accept`] header, in the case of JSON:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2020
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2025
 #, no-wrap
 msgid ""
 "> GET /negotiated HTTP/1.1\n"
@@ -3698,7 +3709,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2026
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2031
 #, no-wrap
 msgid ""
 "< HTTP/1.1 200 OK\n"
@@ -3709,12 +3720,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2029
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2034
 msgid "And for text:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2041
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2046
 #, no-wrap
 msgid ""
 "> GET /negotiated HTTP/1.1\n"
@@ -3729,12 +3740,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2044
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2049
 msgid "Similarly, you can `PUT` two different representations. JSON:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2053
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2058
 #, no-wrap
 msgid ""
 "> PUT /negotiated HTTP/1.1\n"
@@ -3746,7 +3757,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2059
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2064
 #, no-wrap
 msgid ""
 "< HTTP/1.1 200 OK\n"
@@ -3757,12 +3768,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2062
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2067
 msgid "Or plain text:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2071
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2076
 #, no-wrap
 msgid ""
 "> PUT /negotiated HTTP/1.1\n"
@@ -3774,7 +3785,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2077
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2082
 #, no-wrap
 msgid ""
 "< HTTP/1.1 200 OK\n"
@@ -3785,23 +3796,23 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2079
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2084
 #, no-wrap
 msgid "Include/Exclude JAX-RS classes with build time conditions"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2083
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2088
 msgid "Quarkus enables the inclusion or exclusion of JAX-RS Resources, Providers and Features directly thanks to build time conditions in the same that it does for CDI beans.  Thus, the various JAX-RS classes can be annotated with profile conditions (`@io.quarkus.arc.profile.IfBuildProfile` or `@io.quarkus.arc.profile.UnlessBuildProfile`) and/or with property conditions (`io.quarkus.arc.properties.IfBuildProperty` or `io.quarkus.arc.properties.UnlessBuildProperty`) to indicate to Quarkus at build time under which conditions these JAX-RS classes should be included."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2085
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2090
 msgid "In the following example, Quarkus includes the endpoint `sayHello` if and only if the build profile `app1` has been enabled."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2090
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2095
 #, no-wrap
 msgid ""
 "@IfBuildProfile(\"app1\")\n"
@@ -3809,7 +3820,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2097
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2102
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -3821,27 +3832,27 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2100
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2105
 msgid "Please note that if a JAX-RS Application has been detected and the method `getClasses()` and/or `getSingletons()` has/have been overridden, Quarkus will ignore the build time conditions and consider only what has been defined in the JAX-RS Application."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2102
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2107
 #, no-wrap
 msgid "RESTEasy Reactive client"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2104
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2109
 msgid "In addition to the Server side, RESTEasy Reactive comes with a new MicroProfile Rest Client implementation that is non-blocking at its core."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2106
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2111
 msgid "Please note that the `quarkus-rest-client` extension may not work properly with RESTEasy Reactive."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/resteasy-reactive.adoc:2107
+#: upstream/_versions/main/guides/resteasy-reactive.adoc:2112
 msgid "See link:rest-client-reactive[REST Client Reactive Guide] for more information about the reactive client."
 msgstr ""
