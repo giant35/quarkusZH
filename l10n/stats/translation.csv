@@ -2,6 +2,7 @@ Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_posts/insights_1_transcription.adoc.po, 0, 254, 0, 8846 ,100%
 l10n/po/zh_CN/_posts/insights_0_transcription.adoc.po, 0, 117, 0, 3765 ,100%
 l10n/po/zh_CN/_posts/2021-12-02-logicdrop-automating-quarkus-with-gitlab.adoc.po, 0, 161, 0, 1972 ,100%
+l10n/po/zh_CN/_posts/2021-12-01-quarkus-2-5-1-final-released.adoc.po, 0, 14, 0, 153 ,100%
 l10n/po/zh_CN/_posts/2021-11-30-quarkus-native-neo4j-call-tree.adoc.po, 0, 61, 0, 1475 ,100%
 l10n/po/zh_CN/_posts/2021-11-24-quarkus-2-5-0-final-released.adoc.po, 0, 57, 0, 746 ,100%
 l10n/po/zh_CN/_posts/2021-11-23-smallrye-stork-intro.adoc.po, 0, 32, 0, 707 ,100%
@@ -293,7 +294,7 @@ l10n/po/zh_CN/_guides/rabbitmq.adoc.po, 0, 129, 0, 1676 ,100%
 l10n/po/zh_CN/_guides/rabbitmq-reference.adoc.po, 0, 255, 0, 2456 ,100%
 l10n/po/zh_CN/_guides/rabbitmq-dev-services.adoc.po, 0, 36, 0, 594 ,100%
 l10n/po/zh_CN/_guides/qute.adoc.po, 0, 126, 0, 1629 ,100%
-l10n/po/zh_CN/_guides/qute-reference.adoc.po, 0, 685, 0, 8861 ,100%
+l10n/po/zh_CN/_guides/qute-reference.adoc.po, 0, 685, 0, 8860 ,100%
 l10n/po/zh_CN/_guides/quartz.adoc.po, 0, 128, 0, 1306 ,100%
 l10n/po/zh_CN/_guides/quarkus-reactive-architecture.adoc.po, 0, 75, 0, 1681 ,100%
 l10n/po/zh_CN/_guides/quarkus-intro.adoc.po, 0, 38, 0, 199 ,100%
@@ -324,7 +325,7 @@ l10n/po/zh_CN/_guides/liquibase-mongodb.adoc.po, 0, 38, 0, 469 ,100%
 l10n/po/zh_CN/_guides/lifecycle.adoc.po, 0, 86, 0, 1187 ,100%
 l10n/po/zh_CN/_guides/kubernetes-config.adoc.po, 0, 47, 0, 908 ,100%
 l10n/po/zh_CN/_guides/kubernetes-client.adoc.po, 0, 89, 0, 1249 ,100%
-l10n/po/zh_CN/_guides/kotlin.adoc.po, 0, 111, 0, 1498 ,100%
+l10n/po/zh_CN/_guides/kotlin.adoc.po, 0, 112, 0, 1503 ,100%
 l10n/po/zh_CN/_guides/kogito.adoc.po, 0, 156, 0, 1909 ,100%
 l10n/po/zh_CN/_guides/kogito-pmml.adoc.po, 0, 62, 0, 681 ,100%
 l10n/po/zh_CN/_guides/kogito-drl.adoc.po, 0, 99, 0, 1095 ,100%
@@ -334,7 +335,7 @@ l10n/po/zh_CN/_guides/kafka-streams.adoc.po, 1, 276, 1, 4423 ,100%
 l10n/po/zh_CN/_guides/kafka-schema-registry-avro.adoc.po, 0, 149, 0, 2384 ,100%
 l10n/po/zh_CN/_guides/kafka-reactive-getting-started.adoc.po, 0, 141, 0, 1956 ,100%
 l10n/po/zh_CN/_guides/kafka-dev-services.adoc.po, 0, 27, 0, 453 ,100%
-l10n/po/zh_CN/_guides/jms.adoc.po, 0, 93, 0, 1153 ,100%
+l10n/po/zh_CN/_guides/jms.adoc.po, 0, 93, 0, 1149 ,100%
 l10n/po/zh_CN/_guides/jgit.adoc.po, 0, 11, 0, 130 ,100%
 l10n/po/zh_CN/_guides/infinispan-embedded.adoc.po, 0, 28, 0, 232 ,100%
 l10n/po/zh_CN/_guides/infinispan-client.adoc.po, 0, 150, 0, 2356 ,100%
@@ -377,9 +378,9 @@ l10n/po/zh_CN/_guides/dev-mode-differences.adoc.po, 0, 45, 0, 696 ,100%
 l10n/po/zh_CN/_guides/deploying-to-openshift.adoc.po, 0, 163, 0, 1931 ,100%
 l10n/po/zh_CN/_guides/deploying-to-kubernetes.adoc.po, 0, 503, 0, 4871 ,100%
 l10n/po/zh_CN/_guides/deploying-to-heroku.adoc.po, 0, 69, 0, 998 ,100%
-l10n/po/zh_CN/_guides/deploying-to-google-cloud.adoc.po, 0, 104, 0, 1542 ,100%
+l10n/po/zh_CN/_guides/deploying-to-google-cloud.adoc.po, 0, 104, 0, 1568 ,100%
 l10n/po/zh_CN/_guides/deploying-to-azure-cloud.adoc.po, 0, 63, 0, 848 ,100%
-l10n/po/zh_CN/_guides/datasource.adoc.po, 0, 251, 0, 3119 ,100%
+l10n/po/zh_CN/_guides/datasource.adoc.po, 0, 253, 0, 3190 ,100%
 l10n/po/zh_CN/_guides/credentials-provider.adoc.po, 0, 63, 0, 814 ,100%
 l10n/po/zh_CN/_guides/continuous-testing.adoc.po, 0, 53, 0, 899 ,100%
 l10n/po/zh_CN/_guides/context-propagation.adoc.po, 0, 79, 0, 1289 ,100%
@@ -388,7 +389,7 @@ l10n/po/zh_CN/_guides/consul-config.adoc.po, 0, 48, 0, 685 ,100%
 l10n/po/zh_CN/_guides/config.adoc.po, 0, 85, 0, 930 ,100%
 l10n/po/zh_CN/_guides/config-yaml.adoc.po, 0, 46, 0, 590 ,100%
 l10n/po/zh_CN/_guides/config-reference.adoc.po, 0, 175, 0, 2265 ,100%
-l10n/po/zh_CN/_guides/config-mappings.adoc.po, 0, 185, 0, 1985 ,100%
+l10n/po/zh_CN/_guides/config-mappings.adoc.po, 0, 186, 0, 1999 ,100%
 l10n/po/zh_CN/_guides/config-extending-support.adoc.po, 0, 103, 0, 1374 ,100%
 l10n/po/zh_CN/_guides/conditional-extension-dependencies.adoc.po, 0, 41, 0, 811 ,100%
 l10n/po/zh_CN/_guides/command-mode-reference.adoc.po, 0, 55, 0, 993 ,100%
