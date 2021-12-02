@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-12 01:00+0000\n"
+"POT-Creation-Date: 2021-12-02 01:06+0000\n"
 "PO-Revision-Date: 2021-07-11 11:47+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -19,7 +19,7 @@ msgstr ""
 #. type: YAML Front Matter: layout
 #: upstream/about.md:1
 #, no-wrap
-msgid "page"
+msgid "about"
 msgstr ""
 
 #. type: YAML Front Matter: permalink
@@ -28,44 +28,35 @@ msgstr ""
 msgid "/about/"
 msgstr ""
 
+#. type: YAML Front Matter: subtitle
+#: upstream/about.md:1
+#, no-wrap
+msgid "What we mean by \"Supersonic Subatomic Java\"."
+msgstr ""
+
 #. type: YAML Front Matter: title
 #: upstream/about.md:1
 #, no-wrap
-msgid "About"
+msgid "What is Quarkus?"
 msgstr ""
 
-#. type: Plain text
-#: upstream/about.md:8
-#, no-wrap
-msgid "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)\n"
-msgstr "这是基于 Jekyll 主题的. 你可以在 [jekyllrb.com](https://jekyllrb.com/) 找到关于定制 Jekyll 主题的更多信息 , 以及 Jekyll 基本使用的文档 \n"
+#~ msgid "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)\n"
+#~ msgstr "这是基于 Jekyll 主题的. 你可以在 [jekyllrb.com](https://jekyllrb.com/) 找到关于定制 Jekyll 主题的更多信息 , 以及 Jekyll 基本使用的文档 \n"
 
-#. type: Plain text
-#: upstream/about.md:12
-#, no-wrap
-msgid ""
-"You can find the source code for Minima at GitHub:\n"
-"[jekyll][jekyll-organization] /\n"
-"[minima](https://github.com/jekyll/minima)\n"
-msgstr ""
-"可以在 GitHub: \n"
-"[jekyll][jekyll-organization] 找到 Minima 源代码 /\n"
-"[minima](https://github.com/jekyll/minima)\n"
+#~ msgid ""
+#~ "You can find the source code for Minima at GitHub:\n"
+#~ "[jekyll][jekyll-organization] /\n"
+#~ "[minima](https://github.com/jekyll/minima)\n"
+#~ msgstr ""
+#~ "可以在 GitHub: \n"
+#~ "[jekyll][jekyll-organization] 找到 Minima 源代码 /\n"
+#~ "[minima](https://github.com/jekyll/minima)\n"
 
-#. type: Plain text
-#: upstream/about.md:16
-#, no-wrap
-msgid ""
-"You can find the source code for Jekyll at GitHub:\n"
-"[jekyll][jekyll-organization] /\n"
-"[jekyll](https://github.com/jekyll/jekyll)\n"
-msgstr ""
-"可以在 GitHub:\n"
-"[jekyll][jekyll-organization] 找到 Jekyll 源代码 /\n"
-"[jekyll](https://github.com/jekyll/jekyll)\n"
-
-#. type: Plain text
-#: upstream/about.md:18
-#, no-wrap
-msgid "[jekyll-organization]: https://github.com/jekyll\n"
-msgstr ""
+#~ msgid ""
+#~ "You can find the source code for Jekyll at GitHub:\n"
+#~ "[jekyll][jekyll-organization] /\n"
+#~ "[jekyll](https://github.com/jekyll/jekyll)\n"
+#~ msgstr ""
+#~ "可以在 GitHub:\n"
+#~ "[jekyll][jekyll-organization] 找到 Jekyll 源代码 /\n"
+#~ "[jekyll](https://github.com/jekyll/jekyll)\n"

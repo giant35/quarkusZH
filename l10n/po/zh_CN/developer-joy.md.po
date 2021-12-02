@@ -17,25 +17,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: YAML Front Matter: layout
-#: upstream/newsletter.md:1
+#: upstream/developer-joy.md:1
 #, no-wrap
-msgid "newsletter"
+msgid "developer-joy"
 msgstr ""
 
 #. type: YAML Front Matter: permalink
-#: upstream/newsletter.md:1
+#: upstream/developer-joy.md:1
 #, no-wrap
-msgid "/newsletter/"
+msgid "/developer-joy/"
 msgstr ""
 
 #. type: YAML Front Matter: subtitle
-#: upstream/newsletter.md:1
+#: upstream/developer-joy.md:1
 #, no-wrap
-msgid "Our monthly newsletters bring together articles, videos and perspectives from across the Quarkus community."
+msgid "Beyond simply working, we’re aiming for Joy."
 msgstr ""
 
 #. type: YAML Front Matter: title
-#: upstream/newsletter.md:1
+#: upstream/developer-joy.md:1
 #, no-wrap
-msgid "Quarkus Newsletter"
+msgid "Developer Joy"
 msgstr ""

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-14 00:57+0000\n"
+"POT-Creation-Date: 2021-12-02 01:06+0000\n"
 "PO-Revision-Date: 2021-07-13 14:11+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -29,13 +29,13 @@ msgstr "对于使用问题，我们建议："
 
 #. type: Content of: <div><div><div><ul><li>
 #: upstream/_includes/feedback-community-band.html:7
-msgid "Ask on <a href=\"https://stackoverflow.com/questions/tagged/quarkus\">Stack Overflow with the <code>quarkus</code> tag</a>"
-msgstr "在 <a href=\"https://stackoverflow.com/questions/tagged/quarkus\">Stack Overflow 带上 <code>quarkus</code> 标签</a> 提问"
+msgid "Use the <a href=\"https://github.com/quarkusio/discussions\">Discussions</a> section on our Github project."
+msgstr ""
 
 #. type: Content of: <div><div><div><ul><li>
 #: upstream/_includes/feedback-community-band.html:8
-msgid "Chat using <a href=\"https://quarkusio.zulipchat.com\" target=\"_blank\">Zulip</a> (<code>#users</code> stream)"
-msgstr "用 <a href=\"https://quarkusio.zulipchat.com\" target=\"_blank\">Zulip</a> 交谈 (<code>#users</code> stream)"
+msgid "Ask on <a href=\"https://stackoverflow.com/questions/tagged/quarkus\">Stack Overflow with the <code>quarkus</code> tag</a>"
+msgstr "在 <a href=\"https://stackoverflow.com/questions/tagged/quarkus\">Stack Overflow 带上 <code>quarkus</code> 标签</a> 提问"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/feedback-community-band.html:10
@@ -71,3 +71,6 @@ msgstr "报告问题及处理 pul request 的详细信息请查看 <a href=\"htt
 #: upstream/_includes/feedback-community-band.html:21
 msgid "Every contribution is valuable. It can be a bug report, an example application, a feature request, a fix in the documentation or just feedback."
 msgstr "任何贡献都是有价值的。比如提交一个 bug 、写个示例代码、功能提议、文档修正或只是反馈。"
+
+#~ msgid "Chat using <a href=\"https://quarkusio.zulipchat.com\" target=\"_blank\">Zulip</a> (<code>#users</code> stream)"
+#~ msgstr "用 <a href=\"https://quarkusio.zulipchat.com\" target=\"_blank\">Zulip</a> 交谈 (<code>#users</code> stream)"

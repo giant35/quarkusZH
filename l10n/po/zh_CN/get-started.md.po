@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-18 01:03+0000\n"
+"POT-Creation-Date: 2021-12-02 01:06+0000\n"
 "PO-Revision-Date: 2021-07-17 10:48+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -28,326 +28,184 @@ msgstr ""
 msgid "/get-started/"
 msgstr ""
 
+#. type: YAML Front Matter: subtitle
+#: upstream/get-started.md:1
+#, no-wrap
+msgid "It’s a snap to be up and running with Quarkus."
+msgstr ""
+
 #. type: YAML Front Matter: title
 #: upstream/get-started.md:1
 #, no-wrap
 msgid "Get Started"
 msgstr "入门"
 
-#. type: Plain text
-#: upstream/get-started.md:8
-#, no-wrap
-msgid "<div class=\"grid__item width-4-12 hide-mobile toc\" markdown=\"1\">\n"
-msgstr ""
+#~ msgid "Table of Contents"
+#~ msgstr "目录"
 
-#. type: Title ##
-#: upstream/get-started.md:8
-#, no-wrap
-msgid "Table of Contents"
-msgstr "目录"
+#~ msgid "Getting Started"
+#~ msgstr "入门"
 
-#. type: Title ###
-#: upstream/get-started.md:9
-#, no-wrap
-msgid "Getting Started"
-msgstr "入门"
+#~ msgid "[Be Guided Through First Application]({{site.baseurl}}/guides/getting-started)\n"
+#~ msgstr "[指导开发第一个程序]({{site.baseurl}}/guides/getting-started)\n"
 
-#. type: Bullet: ' - '
-#: upstream/get-started.md:16
-#, no-wrap
-msgid "[Be Guided Through First Application]({{site.baseurl}}/guides/getting-started)\n"
-msgstr "[指导开发第一个程序]({{site.baseurl}}/guides/getting-started)\n"
+#~ msgid "[Getting Started with Reactive]({{site.baseurl}}/guides/getting-started-reactive)\n"
+#~ msgstr "[响应式入门]({{site.baseurl}}/guides/getting-started-reactive)\n"
 
-#. type: Bullet: ' - '
-#: upstream/get-started.md:16
-#, no-wrap
-msgid "[Getting Started with Reactive]({{site.baseurl}}/guides/getting-started-reactive)\n"
-msgstr "[响应式入门]({{site.baseurl}}/guides/getting-started-reactive)\n"
+#~ msgid "[Quickly Bootstrap Your Application](https://code.quarkus.io)\n"
+#~ msgstr "[应用快速开始](https://code.quarkus.io)\n"
 
-#. type: Bullet: ' - '
-#: upstream/get-started.md:16
-#, no-wrap
-msgid "[Quickly Bootstrap Your Application](https://code.quarkus.io)\n"
-msgstr "[应用快速开始](https://code.quarkus.io)\n"
+#~ msgid "[Building Native Executables]({{site.baseurl}}/guides/building-native-image)\n"
+#~ msgstr "[构建原生执行文件]({{site.baseurl}}/guides/building-native-image)\n"
 
-#. type: Bullet: ' - '
-#: upstream/get-started.md:16
-#, no-wrap
-msgid "[Building Native Executables]({{site.baseurl}}/guides/building-native-image)\n"
-msgstr "[构建原生执行文件]({{site.baseurl}}/guides/building-native-image)\n"
+#~ msgid "[Using our Tooling]({{site.baseurl}}/guides/tooling)\n"
+#~ msgstr "[工具使用]({{site.baseurl}}/guides/tooling)\n"
 
-#. type: Bullet: ' - '
-#: upstream/get-started.md:16
-#, no-wrap
-msgid "[Using our Tooling]({{site.baseurl}}/guides/tooling)\n"
-msgstr "[工具使用]({{site.baseurl}}/guides/tooling)\n"
+#~ msgid "Guides"
+#~ msgstr "指南"
 
-#. type: Title ###
-#: upstream/get-started.md:17
-#, no-wrap
-msgid "Guides"
-msgstr "指南"
+#~ msgid "[Get More Guides]({{site.baseurl}}/guides)\n"
+#~ msgstr "[更多指南]({{site.baseurl}}/guides)\n"
 
-#. type: Bullet: ' - '
-#: upstream/get-started.md:20
-#, no-wrap
-msgid "[Get More Guides]({{site.baseurl}}/guides)\n"
-msgstr "[更多指南]({{site.baseurl}}/guides)\n"
+#~ msgid "Be Guided Through Your First Application"
+#~ msgstr "指导开发第一个程序"
 
-#. type: Plain text
-#: upstream/get-started.md:24
-#, no-wrap
-msgid ""
-"</div>\n"
-"<div class=\"grid__item width-8-12 width-12-12-m gs-content\">\n"
-"<div class=\"guide-item\" markdown=\"1\">\n"
-msgstr ""
+#~ msgid ""
+#~ "This guide covers:\n"
+#~ "- Bootstrapping an application\n"
+#~ "- Creating a JAX-RS endpoint\n"
+#~ "- Injecting beans\n"
+#~ "- Functional tests\n"
+#~ "- Packaging of the application\n"
+#~ msgstr ""
+#~ "本指南包括:\n"
+#~ "- 开始项目\n"
+#~ "- 创建 JAX-RS 接口\n"
+#~ "- 注入 beans\n"
+#~ "- 功能测试\n"
+#~ "- 打包应用\n"
 
-#. type: Title ##
-#: upstream/get-started.md:24
-#, no-wrap
-msgid "Be Guided Through Your First Application"
-msgstr "指导开发第一个程序"
+#~ msgid ""
+#~ "<a href=\"{{site.baseurl}}/guides/getting-started\" class=\"button-cta secondary\">READ THE GUIDE</a>\n"
+#~ "</div>\n"
+#~ msgstr ""
+#~ "<a href=\"{{site.baseurl}}/guides/getting-started\" class=\"button-cta secondary\">阅读指南</a>\n"
+#~ "</div>\n"
 
-#. type: Plain text
-#: upstream/get-started.md:32
-#, no-wrap
-msgid ""
-"This guide covers:\n"
-"- Bootstrapping an application\n"
-"- Creating a JAX-RS endpoint\n"
-"- Injecting beans\n"
-"- Functional tests\n"
-"- Packaging of the application\n"
-msgstr ""
-"本指南包括:\n"
-"- 开始项目\n"
-"- 创建 JAX-RS 接口\n"
-"- 注入 beans\n"
-"- 功能测试\n"
-"- 打包应用\n"
+#~ msgid "Getting Started with Reactive"
+#~ msgstr "响应式入门"
 
-#. type: Plain text
-#: upstream/get-started.md:35
-#, no-wrap
-msgid ""
-"<a href=\"{{site.baseurl}}/guides/getting-started\" class=\"button-cta secondary\">READ THE GUIDE</a>\n"
-"</div>\n"
-msgstr ""
-"<a href=\"{{site.baseurl}}/guides/getting-started\" class=\"button-cta secondary\">阅读指南</a>\n"
-"</div>\n"
+#~ msgid ""
+#~ "Learn how to create a reactive application with Quarkus and explore the different reactive features offered by Quarkus.\n"
+#~ "This guide covers:\n"
+#~ msgstr ""
+#~ "学习如何使用 Quarkus 创建响应式应用，了解 Quarkus 提供的响应式特性的差异.\n"
+#~ "该指南包括:\n"
 
-#. type: Plain text
-#: upstream/get-started.md:37 upstream/get-started.md:53
-#: upstream/get-started.md:63 upstream/get-started.md:76
-#, no-wrap
-msgid "<div class=\"guide-item\" markdown=\"1\">\n"
-msgstr ""
+#~ msgid "A quick glance at the Quarkus engine and how it enables reactive\n"
+#~ msgstr "快速介绍 Quarkus 引擎及如何启用响应式\n"
 
-#. type: Title ##
-#: upstream/get-started.md:37
-#, no-wrap
-msgid "Getting Started with Reactive"
-msgstr "响应式入门"
+#~ msgid "A brief introduction to Mutiny - the reactive programming library used by Quarkus\n"
+#~ msgstr "简单介绍 Mutiny - Quarkus 使用的响应式类库\n"
 
-#. type: Plain text
-#: upstream/get-started.md:41
-#, no-wrap
-msgid ""
-"Learn how to create a reactive application with Quarkus and explore the different reactive features offered by Quarkus.\n"
-"This guide covers:\n"
-msgstr ""
-"学习如何使用 Quarkus 创建响应式应用，了解 Quarkus 提供的响应式特性的差异.\n"
-"该指南包括:\n"
+#~ msgid "Bootstrapping a reactive application\n"
+#~ msgstr "开始一个响应式应用\n"
 
-#. type: Bullet: '* '
-#: upstream/get-started.md:48
-#, no-wrap
-msgid "A quick glance at the Quarkus engine and how it enables reactive\n"
-msgstr "快速介绍 Quarkus 引擎及如何启用响应式\n"
+#~ msgid "Creating a reactive JAX-RS endpoint (asynchronous, streams...)\n"
+#~ msgstr "创建一个响应式 JAX-RS 接口 (异步, 流式...)\n"
 
-#. type: Bullet: '* '
-#: upstream/get-started.md:48
-#, no-wrap
-msgid "A brief introduction to Mutiny - the reactive programming library used by Quarkus\n"
-msgstr "简单介绍 Mutiny - Quarkus 使用的响应式类库\n"
+#~ msgid "Using reactive database access\n"
+#~ msgstr "响应式数据库访问\n"
 
-#. type: Bullet: '* '
-#: upstream/get-started.md:48
-#, no-wrap
-msgid "Bootstrapping a reactive application\n"
-msgstr "开始一个响应式应用\n"
+#~ msgid "Interacting with other reactive APIs\n"
+#~ msgstr "与其它响应式 API 交互\n"
 
-#. type: Bullet: '* '
-#: upstream/get-started.md:48
-#, no-wrap
-msgid "Creating a reactive JAX-RS endpoint (asynchronous, streams...)\n"
-msgstr "创建一个响应式 JAX-RS 接口 (异步, 流式...)\n"
+#~ msgid ""
+#~ "<a href=\"{{site.baseurl}}/guides/getting-started-reactive\" class=\"button-cta secondary\">READ THE GUIDE</a>\n"
+#~ "</div>\n"
+#~ msgstr ""
+#~ "<a href=\"{{site.baseurl}}/guides/getting-started-reactive\" class=\"button-cta secondary\">阅读指南</a>\n"
+#~ "</div>\n"
 
-#. type: Bullet: '* '
-#: upstream/get-started.md:48
-#, no-wrap
-msgid "Using reactive database access\n"
-msgstr "响应式数据库访问\n"
+#~ msgid "Quickly Bootstrap Your Application"
+#~ msgstr "应用快速开始"
 
-#. type: Bullet: '* '
-#: upstream/get-started.md:48
-#, no-wrap
-msgid "Interacting with other reactive APIs\n"
-msgstr "与其它响应式 API 交互\n"
+#~ msgid "With <a href=\"https://code.quarkus.io\">code.quarkus.io</a>, in a few clicks, you can bootstrap your Quarkus application and discover its extension ecosystem.\n"
+#~ msgstr "用 <a href=\"https://code.quarkus.io\">code.quarkus.io</a>,点几下就能开始 Quarkus 应用了解扩展(extension) 生态。\n"
 
-#. type: Plain text
-#: upstream/get-started.md:51
-#, no-wrap
-msgid ""
-"<a href=\"{{site.baseurl}}/guides/getting-started-reactive\" class=\"button-cta secondary\">READ THE GUIDE</a>\n"
-"</div>\n"
-msgstr ""
-"<a href=\"{{site.baseurl}}/guides/getting-started-reactive\" class=\"button-cta secondary\">阅读指南</a>\n"
-"</div>\n"
+#~ msgid "Explore the wide breadth of technologies Quarkus applications can be made with.\n"
+#~ msgstr "探索 Quarkus 应用程序中可以使用的广泛技术。\n"
 
-#. type: Title ##
-#: upstream/get-started.md:53
-#, no-wrap
-msgid "Quickly Bootstrap Your Application"
-msgstr "应用快速开始"
+#~ msgid ""
+#~ "<a href=\"https://code.quarkus.io\" class=\"button-cta secondary\">START CODING</a>\n"
+#~ "</div>\n"
+#~ msgstr ""
+#~ "<a href=\"https://code.quarkus.io\" class=\"button-cta secondary\">开始编码</a>\n"
+#~ "</div>\n"
 
-#. type: Plain text
-#: upstream/get-started.md:56
-#, no-wrap
-msgid "With <a href=\"https://code.quarkus.io\">code.quarkus.io</a>, in a few clicks, you can bootstrap your Quarkus application and discover its extension ecosystem.\n"
-msgstr "用 <a href=\"https://code.quarkus.io\">code.quarkus.io</a>,点几下就能开始 Quarkus 应用了解扩展(extension) 生态。\n"
+#~ msgid "Building Native Executables"
+#~ msgstr "构建原生执行程序"
 
-#. type: Plain text
-#: upstream/get-started.md:58
-#, no-wrap
-msgid "Explore the wide breadth of technologies Quarkus applications can be made with.\n"
-msgstr "探索 Quarkus 应用程序中可以使用的广泛技术。\n"
+#~ msgid ""
+#~ "This guide covers:\n"
+#~ "- Compiling the application to a native executable\n"
+#~ "- The packaging of an application in a Docker container\n"
+#~ msgstr ""
+#~ "该指南包括:\n"
+#~ "- 将应用程序编译为原生可执行文件\n"
+#~ "- 将应用程序打包在Docker容器中\n"
 
-#. type: Plain text
-#: upstream/get-started.md:61
-#, no-wrap
-msgid ""
-"<a href=\"https://code.quarkus.io\" class=\"button-cta secondary\">START CODING</a>\n"
-"</div>\n"
-msgstr ""
-"<a href=\"https://code.quarkus.io\" class=\"button-cta secondary\">开始编码</a>\n"
-"</div>\n"
+#~ msgid ""
+#~ "This guide requires:\n"
+#~ "- Completion of the [Creating Your First Application]({{site.baseurl}}/guides/getting-started) guide\n"
+#~ msgstr ""
+#~ "该指南需要:\n"
+#~ "- 完成 [创建第一个应用]({{site.baseurl}}/guides/getting-started) 指南\n"
 
-#. type: Title ##
-#: upstream/get-started.md:63
-#, no-wrap
-msgid "Building Native Executables"
-msgstr "构建原生执行程序"
+#~ msgid ""
+#~ "<a href=\"{{site.baseurl}}/guides/building-native-image\" class=\"button-cta secondary\">READ THE GUIDE</a>\n"
+#~ "</div>\n"
+#~ msgstr ""
+#~ "<a href=\"{{site.baseurl}}/guides/building-native-image\" class=\"button-cta secondary\">阅读指南</a>\n"
+#~ "</div>\n"
 
-#. type: Plain text
-#: upstream/get-started.md:68
-#, no-wrap
-msgid ""
-"This guide covers:\n"
-"- Compiling the application to a native executable\n"
-"- The packaging of an application in a Docker container\n"
-msgstr ""
-"该指南包括:\n"
-"- 将应用程序编译为原生可执行文件\n"
-"- 将应用程序打包在Docker容器中\n"
+#~ msgid "Using our Tooling"
+#~ msgstr "工具使用"
 
-#. type: Plain text
-#: upstream/get-started.md:71
-#, no-wrap
-msgid ""
-"This guide requires:\n"
-"- Completion of the [Creating Your First Application]({{site.baseurl}}/guides/getting-started) guide\n"
-msgstr ""
-"该指南需要:\n"
-"- 完成 [创建第一个应用]({{site.baseurl}}/guides/getting-started) 指南\n"
+#~ msgid ""
+#~ "Quarkus comes with a toolchain enabling developers from live reload all the way down to deploying a Kubernetes application.\n"
+#~ "In this guide, we will explore:\n"
+#~ msgstr ""
+#~ "Quarkus 附带了一个工具链，使开发人员能够从实时重新加载到部署 Kubernetes 应用程序。\n"
+#~ "在该指南中，我们将探讨：\n"
 
-#. type: Plain text
-#: upstream/get-started.md:74
-#, no-wrap
-msgid ""
-"<a href=\"{{site.baseurl}}/guides/building-native-image\" class=\"button-cta secondary\">READ THE GUIDE</a>\n"
-"</div>\n"
-msgstr ""
-"<a href=\"{{site.baseurl}}/guides/building-native-image\" class=\"button-cta secondary\">阅读指南</a>\n"
-"</div>\n"
+#~ msgid "how to use Maven as a build tool\n"
+#~ msgstr "如何使用Maven作为构建工具\n"
 
-#. type: Title ##
-#: upstream/get-started.md:76
-#, no-wrap
-msgid "Using our Tooling"
-msgstr "工具使用"
+#~ msgid "how to use Gradle as a build tool\n"
+#~ msgstr "如何使用Gradle作为构建工具\n"
 
-#. type: Plain text
-#: upstream/get-started.md:80
-#, no-wrap
-msgid ""
-"Quarkus comes with a toolchain enabling developers from live reload all the way down to deploying a Kubernetes application.\n"
-"In this guide, we will explore:\n"
-msgstr ""
-"Quarkus 附带了一个工具链，使开发人员能够从实时重新加载到部署 Kubernetes 应用程序。\n"
-"在该指南中，我们将探讨：\n"
+#~ msgid "how to use the native CLI for your toolchain (coming soon)\n"
+#~ msgstr "如何为您的工具链使用本机CLI（即将推出）\n"
 
-#. type: Bullet: '* '
-#: upstream/get-started.md:89
-#, no-wrap
-msgid "how to use Maven as a build tool\n"
-msgstr "如何使用Maven作为构建工具\n"
+#~ msgid "how to create and scaffold a new project\n"
+#~ msgstr "如何搭建新项目\n"
 
-#. type: Bullet: '* '
-#: upstream/get-started.md:89
-#, no-wrap
-msgid "how to use Gradle as a build tool\n"
-msgstr "如何使用Gradle作为构建工具\n"
+#~ msgid "how to deal with extensions\n"
+#~ msgstr "如何处理扩展\n"
 
-#. type: Bullet: '* '
-#: upstream/get-started.md:89
-#, no-wrap
-msgid "how to use the native CLI for your toolchain (coming soon)\n"
-msgstr "如何为您的工具链使用本机CLI（即将推出）\n"
+#~ msgid "how to enable live reload\n"
+#~ msgstr "如何启用实时重新加载\n"
 
-#. type: Bullet: '* '
-#: upstream/get-started.md:89
-#, no-wrap
-msgid "how to create and scaffold a new project\n"
-msgstr "如何搭建新项目\n"
+#~ msgid "how to develop your application in your IDE\n"
+#~ msgstr "如何在IDE中开发应用程序\n"
 
-#. type: Bullet: '* '
-#: upstream/get-started.md:89
-#, no-wrap
-msgid "how to deal with extensions\n"
-msgstr "如何处理扩展\n"
+#~ msgid "how to compile your application natively\n"
+#~ msgstr "如何编译为原生程序\n"
 
-#. type: Bullet: '* '
-#: upstream/get-started.md:89
-#, no-wrap
-msgid "how to enable live reload\n"
-msgstr "如何启用实时重新加载\n"
-
-#. type: Bullet: '* '
-#: upstream/get-started.md:89
-#, no-wrap
-msgid "how to develop your application in your IDE\n"
-msgstr "如何在IDE中开发应用程序\n"
-
-#. type: Bullet: '* '
-#: upstream/get-started.md:89
-#, no-wrap
-msgid "how to compile your application natively\n"
-msgstr "如何编译为原生程序\n"
-
-#. type: Plain text
-#: upstream/get-started.md:92
-#, no-wrap
-msgid ""
-"<a href=\"{{site.baseurl}}/guides/tooling\" class=\"button-cta secondary\">READ THE GUIDE</a>\n"
-"</div>\n"
-msgstr ""
-"<a href=\"{{site.baseurl}}/guides/tooling\" class=\"button-cta secondary\">阅读指南</a>\n"
-"</div>\n"
-
-#. type: Plain text
-#: upstream/get-started.md:93
-#, no-wrap
-msgid "</div>\n"
-msgstr ""
+#~ msgid ""
+#~ "<a href=\"{{site.baseurl}}/guides/tooling\" class=\"button-cta secondary\">READ THE GUIDE</a>\n"
+#~ "</div>\n"
+#~ msgstr ""
+#~ "<a href=\"{{site.baseurl}}/guides/tooling\" class=\"button-cta secondary\">阅读指南</a>\n"
+#~ "</div>\n"
