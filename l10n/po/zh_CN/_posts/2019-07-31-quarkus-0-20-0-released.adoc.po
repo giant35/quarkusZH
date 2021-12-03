@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:18+0000\n"
+"POT-Creation-Date: 2021-12-03 01:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,7 +212,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2019-07-31-quarkus-0-20-0-released.adoc:93
-msgid "For contributions, improvements and discussions you can reach the Apache Camel team https://github.com/apache/camel-quarkus/[on Github], https://gitter.im/apache/camel-quarkus[on Gitter] and https://camel.apache.org/staging/community/mailing-list/[on the usual mailing lists]."
+msgid "For contributions, improvements and discussions you can reach the Apache Camel team https://github.com/apache/camel-quarkus/[on GitHub], https://gitter.im/apache/camel-quarkus[on Gitter] and https://camel.apache.org/staging/community/mailing-list/[on the usual mailing lists]."
 msgstr ""
 
 #. type: Title ===

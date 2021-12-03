@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-12-02 01:06+0000\n"
+"POT-Creation-Date: 2021-12-03 01:07+0000\n"
 "PO-Revision-Date: 2021-07-13 14:11+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -29,7 +29,7 @@ msgstr "对于使用问题，我们建议："
 
 #. type: Content of: <div><div><div><ul><li>
 #: upstream/_includes/feedback-community-band.html:7
-msgid "Use the <a href=\"https://github.com/quarkusio/discussions\">Discussions</a> section on our Github project."
+msgid "Use the <a href=\"https://github.com/quarkusio/quarkus/discussions\">Discussions</a> section on our GitHub project."
 msgstr ""
 
 #. type: Content of: <div><div><div><ul><li>
