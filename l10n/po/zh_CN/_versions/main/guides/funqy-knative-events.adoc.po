@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-24 01:00+0000\n"
+"POT-Creation-Date: 2021-12-09 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -301,7 +301,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/funqy-knative-events.adoc:169
-msgid "If you want to know additional information about the incoming Cloud Event, you can inject the `CloudEvent` interface using the Funqy `@Context` annotation.  The `CloudEvent` interface exposes information about the triggering event."
+msgid "If you want to know additional information about the incoming Cloud Event, you can inject the `io.quarkus.funqy.knative.events.CloudEvent` interface using the Funqy `@Context` annotation.  The `CloudEvent` interface exposes information about the triggering event."
 msgstr ""
 
 #. type: delimited block -
