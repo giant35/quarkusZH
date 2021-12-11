@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-08 01:03+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/rest-json.adoc:15
-msgid "there is another guide if you need a link:rest-client[REST client] (including support for JSON)."
+msgid "there is another guide if you need a xref:rest-client.adoc[REST client] (including support for JSON)."
 msgstr ""
 
 #. type: Title ==
@@ -1097,7 +1097,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/rest-json.adoc:582
-msgid "Quarkus comes with a CORS filter. Read the link:http-reference#cors-filter[HTTP Reference Documentation] to learn how to use it."
+msgid "Quarkus comes with a CORS filter. Read the xref:http-reference.adoc#cors-filter[HTTP Reference Documentation] to learn how to use it."
 msgstr ""
 
 #. type: Title ==
@@ -1189,7 +1189,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/rest-json.adoc:629
-msgid "In Quarkus, the RESTEasy extension and link:rest-client[the REST Client extension] share the same infrastructure.  One important consequence of this consideration is that they share the same list of providers (in the JAX-RS meaning of the word)."
+msgid "In Quarkus, the RESTEasy extension and xref:rest-client.adoc[the REST Client extension] share the same infrastructure.  One important consequence of this consideration is that they share the same list of providers (in the JAX-RS meaning of the word)."
 msgstr ""
 
 #. type: Plain text

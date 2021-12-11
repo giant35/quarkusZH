@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-11 00:54+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/kubernetes-config.adoc:37
-msgid "The extension works by reading ConfigMaps and Secrets directly from the Kubernetes API server using the link:kubernetes-client[Kubernetes Client]."
+msgid "The extension works by reading ConfigMaps and Secrets directly from the Kubernetes API server using the xref:kubernetes-client.adoc[Kubernetes Client]."
 msgstr ""
 
 #. type: Plain text
@@ -132,7 +132,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/kubernetes-config.adoc:62
-msgid "Thankfully, when using the `kubernetes-config` extension along with the link:deploying-to-kubernetes[Kubernetes] extension, all the necessary Kubernetes resources to make that happen are automatically generated."
+msgid "Thankfully, when using the `kubernetes-config` extension along with the xref:deploying-to-kubernetes.adoc[Kubernetes] extension, all the necessary Kubernetes resources to make that happen are automatically generated."
 msgstr ""
 
 #. type: Title ====
@@ -143,7 +143,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/kubernetes-config.adoc:67
-msgid "By default, the link:deploying-to-kubernetes[Kubernetes] extension doesn't generate the necessary resources to allow accessing secrets.  Set `quarkus.kubernetes-config.secrets.enabled=true` to generate the necessary role and corresponding role binding."
+msgid "By default, the xref:deploying-to-kubernetes.adoc[Kubernetes] extension doesn't generate the necessary resources to allow accessing secrets.  Set `quarkus.kubernetes-config.secrets.enabled=true` to generate the necessary role and corresponding role binding."
 msgstr ""
 
 #. type: Title ==

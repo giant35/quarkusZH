@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 01:04+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-oauth2.adoc:21
-msgid "If the OAuth2 Authentication server provides JWT Bearer Tokens then you should consider using either link:security-openid-connect[OpenId Connect] or link:security-jwt[SmallRye JWT] extensions instead.  OpenId Connect extension has to be used if the Quarkus application needs to authenticate the users using OIDC Authorization Code Flow, please read link:security-openid-connect-web-authentication[Using OpenID Connect to Protect Web Applications] guide for more information."
+msgid "If the OAuth2 Authentication server provides JWT Bearer Tokens then you should consider using either xref:security-openid-connect.adoc[OpenId Connect] or xref:security-jwt.adoc[SmallRye JWT] extensions instead.  OpenId Connect extension has to be used if the Quarkus application needs to authenticate the users using OIDC Authorization Code Flow, please read xref:security-openid-connect-web-authentication.adoc[Using OpenID Connect to Protect Web Applications] guide for more information."
 msgstr ""
 
 #. type: Title ==
@@ -166,7 +166,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-oauth2.adoc:88
-msgid "We will use the JSR 250 common security annotations, they are described in the link:security[Using Security] guide."
+msgid "We will use the JSR 250 common security annotations, they are described in the xref:security.adoc[Using Security] guide."
 msgstr ""
 
 #. type: delimited block -
@@ -264,7 +264,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-oauth2.adoc:142
-msgid "For all configuration properties, see the link:#config-reference[Configuration reference] section at the end of this guide."
+msgid "For all configuration properties, see the <<config-reference,Configuration reference>> section at the end of this guide."
 msgstr ""
 
 #. type: Title ==
@@ -572,7 +572,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-oauth2.adoc:327
-msgid "If you don't want to use a real OAuth2 authorization server for your integration tests, you can use the link:security-properties[Properties based security] extension for your test, or mock an authorization server using Wiremock."
+msgid "If you don't want to use a real OAuth2 authorization server for your integration tests, you can use the xref:security-properties.adoc[Properties based security] extension for your test, or mock an authorization server using Wiremock."
 msgstr ""
 
 #. type: Plain text
@@ -604,7 +604,7 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_versions/main/guides/security-oauth2.adoc:349
-msgid "For more details about `@QuarkusTestResource` refer to link:getting-started-testing#quarkus-test-resource[this part of the documentation]."
+msgid "For more details about `@QuarkusTestResource` refer to xref:getting-started-testing.adoc#quarkus-test-resource[this part of the documentation]."
 msgstr ""
 
 #. type: Plain text
@@ -794,7 +794,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-oauth2.adoc:447
-msgid "link:security[Quarkus Security]"
+msgid "xref:security.adoc[Quarkus Security]"
 msgstr ""
 
 #. type: Title ==

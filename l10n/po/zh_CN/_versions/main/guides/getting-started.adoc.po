@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 01:04+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -451,12 +451,14 @@ msgstr "使用注入"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started.adoc:243
-msgid "Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  If you're new to CDI then we recommend you to read the link:cdi[Introduction to CDI] guide."
+#, fuzzy
+#| msgid "Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  If you're new to CDI then we recommend you to read the link:cdi[Introduction to CDI] guide."
+msgid "Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  If you're new to CDI then we recommend you to read the xref:cdi.adoc[Introduction to CDI] guide."
 msgstr "Quarkus 中的依赖注入是基于ArC的，ArC是一个基于 CDI 的依赖注入解决方案，专为 Quarkus 设计。 如果你之前未使用过 CDI 建议你参考下 link:cdi[ 上下文依赖介绍] 。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started.adoc:245
-msgid "Quarkus only implements a subset of the CDI features and comes with non-standard features and specific APIS, you can learn more about it in the link:cdi-reference[Contexts and Dependency Injection guide]."
+msgid "Quarkus only implements a subset of the CDI features and comes with non-standard features and specific APIS, you can learn more about it in the xref:cdi-reference.adoc[Contexts and Dependency Injection guide]."
 msgstr ""
 
 #. type: Plain text
@@ -760,7 +762,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started.adoc:445
-msgid "However, when working with a multi-module project, be sure to read the `Working with multi-module projects` section of the link:maven-tooling#multi-module-maven[Maven] or link:gradle-tooling#multi-module-maven[Gradle] guides."
+msgid "However, when working with a multi-module project, be sure to read the `Working with multi-module projects` section of the xref:maven-tooling.adoc#multi-module-maven[Maven] or xref:gradle-tooling.adoc#multi-module-maven[Gradle] guides."
 msgstr ""
 
 #. type: Plain text
@@ -770,7 +772,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started.adoc:451
-msgid "Be sure to read the link:cdi-reference#bean_discovery[Bean Discovery] section of the CDI guide for more information."
+msgid "Be sure to read the xref:cdi-reference.adoc#bean_discovery[Bean Discovery] section of the CDI guide for more information."
 msgstr ""
 
 #. type: Title ==
@@ -828,12 +830,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started.adoc:481
-msgid "This guide covered the creation of an application using Quarkus.  However, there is much more.  We recommend continuing the journey with the link:building-native-image[building a native executable guide], where you learn about creating a native executable and packaging it in a container.  If you are interested in reactive, we recommend the xref:getting-started-reactive.adoc[Getting Started with Reactive guide], where you can see how to implement reactive applications with Quarkus."
+msgid "This guide covered the creation of an application using Quarkus.  However, there is much more.  We recommend continuing the journey with the xref:building-native-image.adoc[building a native executable guide], where you learn about creating a native executable and packaging it in a container.  If you are interested in reactive, we recommend the xref:getting-started-reactive.adoc[Getting Started with Reactive guide], where you can see how to implement reactive applications with Quarkus."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started.adoc:483
-msgid "In addition, the link:tooling[tooling guide] document explains how to:"
+msgid "In addition, the xref:tooling.adoc[tooling guide] document explains how to:"
 msgstr ""
 
 #. type: Plain text

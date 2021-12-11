@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-03 01:01+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-routes.adoc:20
-msgid "Reactive Routes were initially introduced to provide a reactive execution model for HTTP APIs on top of the xref:quarkus-reactive-architecture.adoc[Quarkus Reactive Architecture].  With the introduction of link:resteasy-reactive[RESTEasy Reactive], you can now implement reactive HTTP APIs and still use JAX-RS annotations.  Reactive Routes are still supported, especially if you want a more _route-based_ approach, and something closer to the underlying reactive engine."
+msgid "Reactive Routes were initially introduced to provide a reactive execution model for HTTP APIs on top of the xref:quarkus-reactive-architecture.adoc[Quarkus Reactive Architecture].  With the introduction of xref:resteasy-reactive.adoc[RESTEasy Reactive], you can now implement reactive HTTP APIs and still use JAX-RS annotations.  Reactive Routes are still supported, especially if you want a more _route-based_ approach, and something closer to the underlying reactive engine."
 msgstr ""
 
 #. type: Title ==
@@ -1362,7 +1362,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-routes.adoc:738
-msgid "Also see link:openapi-swaggerui[the OpenAPI Guide]."
+msgid "Also see xref:openapi-swaggerui.adoc[the OpenAPI Guide]."
 msgstr ""
 
 #. type: Title ===

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-20 01:04+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -223,7 +223,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/gradle-tooling.adoc:90
-msgid "By default, Quarkus tests in JVM mode are run using the `test` configuration profile. If you are not familiar with Quarkus configuration profiles, everything you need to know is explained in the link:config#configuration-profiles[Configuration Profiles Documentation]."
+msgid "By default, Quarkus tests in JVM mode are run using the `test` configuration profile. If you are not familiar with Quarkus configuration profiles, everything you need to know is explained in the xref:config.adoc#configuration-profiles[Configuration Profiles Documentation]."
 msgstr ""
 
 #. type: Plain text
@@ -337,7 +337,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/gradle-tooling.adoc:168
-msgid "Quarkus comes with a built-in development mode. The best way to run this is via the link:cli-tooling[Quarkus CLI] Run your application with:"
+msgid "Quarkus comes with a built-in development mode. The best way to run this is via the xref:cli-tooling.adoc[Quarkus CLI] Run your application with:"
 msgstr ""
 
 #. type: delimited block -
@@ -945,7 +945,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/gradle-tooling.adoc:509
-msgid "More information on this topic can be found on the link:cdi-reference#bean_discovery[Bean Discovery] section of the CDI guide."
+msgid "More information on this topic can be found on the xref:cdi-reference.adoc#bean_discovery[Bean Discovery] section of the CDI guide."
 msgstr ""
 
 #. type: Title ==

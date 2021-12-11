@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-10 01:03+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,7 +76,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:24
-msgid "If you are not familiar with the Quarkus Vert.x extension, consider reading the link:vertx[Using Eclipse Vert.x] guide first."
+msgid "If you are not familiar with the Quarkus Vert.x extension, consider reading the xref:vertx.adoc[Using Eclipse Vert.x] guide first."
 msgstr ""
 
 #. type: Plain text
@@ -329,7 +329,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:164
-msgid "For production we would recommend to use something like the link:flyway[Flyway database migration tool].  But for development we can simply drop and create the tables on startup, and then insert a few fruits."
+msgid "For production we would recommend to use something like the xref:flyway.adoc[Flyway database migration tool].  But for development we can simply drop and create the tables on startup, and then insert a few fruits."
 msgstr ""
 
 #. type: delimited block -
@@ -1236,7 +1236,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:645
-msgid "First make sure that link:vertx-reference.adoc#native-transport[native transport support] is enabled."
+msgid "First make sure that xref:vertx-reference.adoc#native-transport[native transport support] is enabled."
 msgstr ""
 
 #. type: Plain text

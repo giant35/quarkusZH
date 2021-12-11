@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 01:04+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -421,7 +421,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/lifecycle.adoc:185
-msgid "In the JVM mode, there is no real difference, except that `StartupEvent` is always fired *after* `@Initialized(ApplicationScoped.class)` and `ShutdownEvent` is fired *before* `@Destroyed(ApplicationScoped.class)`.  For a native executable build, however, `@Initialized(ApplicationScoped.class)` is fired as *part of the native build process*, whereas `StartupEvent` is fired when the native image is executed.  See link:writing-extensions#bootstrap-three-phases[Three Phases of Bootstrap and Quarkus Philosophy] for more details."
+msgid "In the JVM mode, there is no real difference, except that `StartupEvent` is always fired *after* `@Initialized(ApplicationScoped.class)` and `ShutdownEvent` is fired *before* `@Destroyed(ApplicationScoped.class)`.  For a native executable build, however, `@Initialized(ApplicationScoped.class)` is fired as *part of the native build process*, whereas `StartupEvent` is fired when the native image is executed.  See xref:writing-extensions.adoc#bootstrap-three-phases[Three Phases of Bootstrap and Quarkus Philosophy] for more details."
 msgstr ""
 
 #. type: Plain text

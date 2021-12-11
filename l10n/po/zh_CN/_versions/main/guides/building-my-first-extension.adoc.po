@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-21 01:07+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/building-my-first-extension.adoc:23
-msgid "To be sure it's extra clear you don't need an extension to add a Servlet to your application.  This guide is a simplified example to explain the concepts of extensions development, see the link:writing-extensions[full documentation] if you need more information.  Keep in mind it's not representative of the power of moving things to build time or simplifying the build of native images."
+msgid "To be sure it's extra clear you don't need an extension to add a Servlet to your application.  This guide is a simplified example to explain the concepts of extensions development, see the xref:writing-extensions.adoc[full documentation] if you need more information.  Keep in mind it's not representative of the power of moving things to build time or simplifying the build of native images."
 msgstr ""
 
 #. type: Title ==
@@ -1118,7 +1118,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/building-my-first-extension.adoc:563
-msgid "See link:all-builditems[the complete list of BuildItem implementations in core] for more information"
+msgid "See xref:all-builditems.adoc[the complete list of BuildItem implementations in core] for more information"
 msgstr ""
 
 #. type: Plain text
@@ -1702,10 +1702,10 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/building-my-first-extension.adoc:932
-msgid "link:writing-extensions[Writing your own extension] for the full documentation."
+msgid "xref:writing-extensions.adoc[Writing your own extension] for the full documentation."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/building-my-first-extension.adoc:932
-msgid "link:dev-console[Quarkus DEV Console] to learn how to support the DEV Console in your extension"
+msgid "xref:dev-ui.adoc[Quarkus Dev UI] to learn how to support the Dev UI in your extension"
 msgstr ""

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-21 01:07+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/cdi-reference.adoc:19
-msgid "If you're new to CDI then we recommend you to read the link:cdi[Introduction to CDI] first."
+msgid "If you're new to CDI then we recommend you to read the xref:cdi.adoc[Introduction to CDI] first."
 msgstr ""
 
 #. type: Plain text
@@ -740,7 +740,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/cdi-reference.adoc:304
-msgid "Annotate the bean with `@io.quarkus.runtime.Startup` as described in link:lifecycle#startup_annotation[Startup annotation]:"
+msgid "Annotate the bean with `@io.quarkus.runtime.Startup` as described in xref:lifecycle.adoc#startup_annotation[Startup annotation]:"
 msgstr ""
 
 #. type: delimited block -
@@ -780,7 +780,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/cdi-reference.adoc:322
-msgid "Quarkus users are encouraged to always prefer the `@Observes StartupEvent` to `@Initialized(ApplicationScoped.class)` as explained in the link:lifecycle[Application Initialization and Termination] guide."
+msgid "Quarkus users are encouraged to always prefer the `@Observes StartupEvent` to `@Initialized(ApplicationScoped.class)` as explained in the xref:lifecycle.adoc[Application Initialization and Termination] guide."
 msgstr ""
 
 #. type: Title ===
@@ -1856,7 +1856,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/cdi-reference.adoc:967
-msgid "Quarkus incorporates build-time optimizations in order to provide instant startup and low memory footprint.  The downside of this approach is that CDI Portable Extensions cannot be supported.  Nevertheless, most of the functionality can be achieved using Quarkus link:writing-extensions[extensions].  See the link:cdi-integration[integration guide] for more information."
+msgid "Quarkus incorporates build-time optimizations in order to provide instant startup and low memory footprint.  The downside of this approach is that CDI Portable Extensions cannot be supported.  Nevertheless, most of the functionality can be achieved using Quarkus xref:writing-extensions.adoc[extensions].  See the xref:cdi-integration.adoc[integration guide] for more information."
 msgstr ""
 
 #. type: Title ==

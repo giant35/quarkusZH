@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-09 01:01+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/funqy-knative-events.adoc:13
-msgid "Quarkus Funqy link:https://knative.dev/docs/eventing[Knative Events] builds off of the link:funqy-http[Funqy HTTP] extension to allow you to route and process Knative Events within a Funqy function."
+msgid "Quarkus Funqy link:https://knative.dev/docs/eventing[Knative Events] builds off of the xref:funqy-http.adoc[Funqy HTTP] extension to allow you to route and process Knative Events within a Funqy function."
 msgstr ""
 
 #. type: Plain text
@@ -53,7 +53,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/funqy-knative-events.adoc:23
-msgid "Read about link:funqy[Funqy Basics].  This is a short read!"
+msgid "Read about xref:funqy.adoc[Funqy Basics].  This is a short read!"
 msgstr ""
 
 #. type: Plain text
@@ -346,7 +346,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/funqy-knative-events.adoc:200
-msgid "Funqy Knative Events support dev mode and unit testing using RestAssured.  You can invoke on Funqy Knative Events functions using the same invocation model as link:funqy-http[Funqy HTTP] using normal HTTP requests, or Cloud Event Binary mode, or Structured Mode.  All invocation modes are supported at the same time."
+msgid "Funqy Knative Events support dev mode and unit testing using RestAssured.  You can invoke on Funqy Knative Events functions using the same invocation model as xref:funqy-http.adoc[Funqy HTTP] using normal HTTP requests, or Cloud Event Binary mode, or Structured Mode.  All invocation modes are supported at the same time."
 msgstr ""
 
 #. type: Plain text

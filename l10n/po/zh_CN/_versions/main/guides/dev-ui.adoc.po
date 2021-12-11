@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-27 01:04+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-ui.adoc:11
-msgid "This guide covers the Quarkus Dev UI for link:building-my-first-extension[extension authors]."
+msgid "This guide covers the Quarkus Dev UI for xref:building-my-first-extension.adoc[extension authors]."
 msgstr ""
 
 #. type: Plain text
@@ -104,7 +104,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-ui.adoc:41
-msgid "You have to add a file named `dev-templates/embedded.html` in your link:building-my-first-extension#description-of-a-quarkus-extension[`deployment`] extension module's resources:"
+msgid "You have to add a file named `dev-templates/embedded.html` in your xref:building-my-first-extension.adoc#description-of-a-quarkus-extension[`deployment`] extension module's resources:"
 msgstr ""
 
 #. type: Target for macro image
@@ -206,7 +206,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-ui.adoc:98
-msgid "Refer to the link:all-config#quarkus-vertx-http_quarkus.http.non-application-root-path[Quarkus Vertx HTTP configuration reference] for details on how the non-application root path is configured."
+msgid "Refer to the xref:all-config.adoc#quarkus-vertx-http_quarkus.http.non-application-root-path[Quarkus Vertx HTTP configuration reference] for details on how the non-application root path is configured."
 msgstr ""
 
 #. type: Title ==
@@ -217,12 +217,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-ui.adoc:103
-msgid "Both the `embedded.html` files and any full page you add in `/dev-templates` will be interpreted by link:qute[the Qute template engine]."
+msgid "Both the `embedded.html` files and any full page you add in `/dev-templates` will be interpreted by xref:qute.adoc[the Qute template engine]."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-ui.adoc:106
-msgid "This also means that you can link:qute-reference#user_tags[add custom Qute tags] in `/dev-templates/tags` for your templates to use."
+msgid "This also means that you can xref:qute-reference.adoc#user_tags[add custom Qute tags] in `/dev-templates/tags` for your templates to use."
 msgstr ""
 
 #. type: Plain text
@@ -270,7 +270,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-ui.adoc:130
-msgid "You need to place them in your extension's link:building-my-first-extension#description-of-a-quarkus-extension[`deployment`] module's `/dev-templates` resource folder, like this page for the link:cache[`quarkus-cache` extension]:"
+msgid "You need to place them in your extension's xref:building-my-first-extension.adoc#description-of-a-quarkus-extension[`deployment`] module's `/dev-templates` resource folder, like this page for the xref:cache.adoc[`quarkus-cache` extension]:"
 msgstr ""
 
 #. type: delimited block -
@@ -351,7 +351,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-ui.adoc:187
-msgid "In order for your template to read custom information from your Quarkus extension, you can use the `info` link:qute-reference#namespace_extension_methods[namespace]."
+msgid "In order for your template to read custom information from your Quarkus extension, you can use the `info` xref:qute-reference.adoc#namespace_extension_methods[namespace]."
 msgstr ""
 
 #. type: Plain text
@@ -407,7 +407,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-ui.adoc:216
-msgid "In both cases we advise that you add support for the Dev UI in your `{pkg}.deployment.devconsole` package in a `DevConsoleProcessor` class (in your extension's link:building-my-first-extension#description-of-a-quarkus-extension[`deployment`] module)."
+msgid "In both cases we advise that you add support for the Dev UI in your `{pkg}.deployment.devconsole` package in a `DevConsoleProcessor` class (in your extension's xref:building-my-first-extension.adoc#description-of-a-quarkus-extension[`deployment`] module)."
 msgstr ""
 
 #. type: Title ===
@@ -455,7 +455,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-ui.adoc:239
-msgid "Don't forget to make this link:building-my-first-extension#deploying-the-greeting-feature[build step] conditional on being in dev mode"
+msgid "Don't forget to make this xref:building-my-first-extension.adoc#deploying-the-greeting-feature[build step] conditional on being in dev mode"
 msgstr ""
 
 #. type: Plain text
@@ -465,7 +465,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-ui.adoc:243
-msgid "This will map the `info:cacheInfos` value to this supplier in your extension's link:building-my-first-extension#description-of-a-quarkus-extension[`runtime module`]:"
+msgid "This will map the `info:cacheInfos` value to this supplier in your extension's xref:building-my-first-extension.adoc#description-of-a-quarkus-extension[`runtime module`]:"
 msgstr ""
 
 #. type: delimited block -
@@ -612,7 +612,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-ui.adoc:321
-msgid "This can be done by adding another link:building-my-first-extension#deploying-the-greeting-feature[build step] to declare the action in your extension's link:building-my-first-extension#description-of-a-quarkus-extension[`deployment`] module:"
+msgid "This can be done by adding another xref:building-my-first-extension.adoc#deploying-the-greeting-feature[build step] to declare the action in your extension's xref:building-my-first-extension.adoc#description-of-a-quarkus-extension[`deployment`] module:"
 msgstr ""
 
 #. type: delimited block -
@@ -661,7 +661,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-ui.adoc:352
-msgid "Now all you have to do is implement the recorder in your extension's link:building-my-first-extension#description-of-a-quarkus-extension[`runtime module`]:"
+msgid "Now all you have to do is implement the recorder in your extension's xref:building-my-first-extension.adoc#description-of-a-quarkus-extension[`runtime module`]:"
 msgstr ""
 
 #. type: delimited block -

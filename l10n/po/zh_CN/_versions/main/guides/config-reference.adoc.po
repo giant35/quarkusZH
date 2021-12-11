@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-24 01:04+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -873,7 +873,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config-reference.adoc:452
-msgid "Quarkus itself is configured via the same mechanism as your application. Quarkus reserves the `quarkus.` namespace for its own configuration. For example to configure the HTTP server port you can set `quarkus.http.port` in `application.properties`. All the Quarkus configuration properties are link:all-config[documented and searchable]."
+msgid "Quarkus itself is configured via the same mechanism as your application. Quarkus reserves the `quarkus.` namespace for its own configuration. For example to configure the HTTP server port you can set `quarkus.http.port` in `application.properties`. All the Quarkus configuration properties are xref:all-config.adoc[documented and searchable]."
 msgstr ""
 
 #. type: delimited block =
@@ -894,7 +894,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config-reference.adoc:466
-msgid "The properties fixed at build time are marked with a lock icon (icon:lock[]) in the link:all-config[list of all configuration options]."
+msgid "The properties fixed at build time are marked with a lock icon (icon:lock[]) in the xref:all-config.adoc[list of all configuration options]."
 msgstr ""
 
 #. type: Plain text
@@ -910,7 +910,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config-reference.adoc:474
-msgid "If you are in the rare situation that you need to change the build time configuration after your application is built, then check out how link:reaugmentation[re-augmentation] can be used to rebuild the augmentation output for a different build time configuration."
+msgid "If you are in the rare situation that you need to change the build time configuration after your application is built, then check out how xref:reaugmentation.adoc[re-augmentation] can be used to rebuild the augmentation output for a different build time configuration."
 msgstr ""
 
 #. type: Title ==

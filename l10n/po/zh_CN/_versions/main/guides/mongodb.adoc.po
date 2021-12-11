@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-28 01:01+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1109,7 +1109,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/mongodb.adoc:595
-msgid "The link:mongodb-panache[MongoDB with Panache] extension facilitates the usage of MongoDB by providing active record style entities (and repositories) like you have in link:hibernate-orm-panache.html[Hibernate ORM with Panache] and focuses on making your entities trivial and fun to write in Quarkus."
+msgid "The xref:mongodb-panache.adoc[MongoDB with Panache] extension facilitates the usage of MongoDB by providing active record style entities (and repositories) like you have in xref:hibernate-orm-panache.adoc[Hibernate ORM with Panache] and focuses on making your entities trivial and fun to write in Quarkus."
 msgstr ""
 
 #. type: Title ==
@@ -1146,7 +1146,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/mongodb.adoc:612
-msgid "So when you access the `/q/metrics` endpoint of your application you will have information about the connection pool status.  When using link:smallrye-metrics[SmallRye Metrics], connection pool metrics will be available under the `vendor` scope."
+msgid "So when you access the `/q/metrics` endpoint of your application you will have information about the connection pool status.  When using xref:smallrye-metrics.adoc[SmallRye Metrics], connection pool metrics will be available under the `vendor` scope."
 msgstr ""
 
 #. type: Title ==
@@ -1157,12 +1157,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/mongodb.adoc:617
-msgid "If you are using the `quarkus-smallrye-opentracing` extension, `quarkus-mongodb-client` can register traces about the commands executed.  This behavior must be enabled by setting the `quarkus.mongodb.tracing.enabled` property to `true` in your `application.properties` and adding the dependency `io.opentracing.contrib:opentracing-mongo-common` to your pom.xml (for more info read the link:opentracing#mongodb-client[OpenTracing - MongoDB client] section)."
+msgid "If you are using the `quarkus-smallrye-opentracing` extension, `quarkus-mongodb-client` can register traces about the commands executed.  This behavior must be enabled by setting the `quarkus.mongodb.tracing.enabled` property to `true` in your `application.properties` and adding the dependency `io.opentracing.contrib:opentracing-mongo-common` to your pom.xml (for more info read the xref:opentracing.adoc#mongodb-client[OpenTracing - MongoDB client] section)."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/mongodb.adoc:619
-msgid "Read the link:opentracing[OpenTracing] guide, for how to configure OpenTracing and how to use the Jaeger tracer."
+msgid "Read the xref:opentracing.adoc[OpenTracing] guide, for how to configure OpenTracing and how to use the Jaeger tracer."
 msgstr ""
 
 #. type: Title ==
@@ -1193,7 +1193,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/mongodb.adoc:630
-msgid "For more information about the usage of a `QuarkusTestResourceLifecycleManager` please read link:getting-started-testing#quarkus-test-resource[Quarkus test resource]."
+msgid "For more information about the usage of a `QuarkusTestResourceLifecycleManager` please read xref:getting-started-testing.adoc#quarkus-test-resource[Quarkus test resource]."
 msgstr ""
 
 #. type: Title ==

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 01:04+0000\n"
+"POT-Creation-Date: 2021-12-11 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -508,5 +508,5 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/funqy-gcp-functions.adoc:280
-msgid "If you are looking for JAX-RS, Servlet or Vert.x support for Google Cloud Functions, we have it thanks to our link:gcp-functions-http[Google Cloud Functions HTTP binding]."
+msgid "If you are looking for JAX-RS, Servlet or Vert.x support for Google Cloud Functions, we have it thanks to our xref:gcp-functions-http.adoc[Google Cloud Functions HTTP binding]."
 msgstr ""
