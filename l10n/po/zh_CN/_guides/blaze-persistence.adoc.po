@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:06+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/blaze-persistence.adoc:27
-msgid "The extension comes with default producers for `CriteriaBuilderFactory` and `EntityViewManager` that work out of the box given a working Hibernate ORM configuration. For customization, overriding of the default producers is possible via the standard mechanism as documented in the link:cdi-reference#default_beans[Quarkus CDI reference].  This is needed if you need to set custom link:https://persistence.blazebit.com/documentation/entity-view/manual/en_US/index.html#anchor-configuration-properties[Blaze-Persistence properties]."
+msgid "The extension comes with default producers for `CriteriaBuilderFactory` and `EntityViewManager` that work out of the box given a working Hibernate ORM configuration. For customization, overriding of the default producers is possible via the standard mechanism as documented in the xref:cdi-reference.adoc#default_beans[Quarkus CDI reference].  This is needed if you need to set custom link:https://persistence.blazebit.com/documentation/entity-view/manual/en_US/index.html#anchor-configuration-properties[Blaze-Persistence properties]."
 msgstr ""
 
 #. type: Plain text
@@ -135,7 +135,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/blaze-persistence.adoc:77
-msgid "A `CriteriaBuilderFactory` and an `EntityViewManager` will be created based on the configured `EntityManagerFactory` as provided by the link:hibernate-orm[Hibernate-ORM extension]."
+msgid "A `CriteriaBuilderFactory` and an `EntityViewManager` will be created based on the configured `EntityManagerFactory` as provided by the xref:hibernate-orm.adoc[Hibernate-ORM extension]."
 msgstr ""
 
 #. type: Plain text

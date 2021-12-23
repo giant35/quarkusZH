@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-07 01:04+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,12 +27,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/azure-functions-http.adoc:13
-msgid "The `quarkus-azure-functions-http` extension allows you to write microservices with RESTEasy (JAX-RS), Undertow (servlet), Reactive Routes, or link:funqy-http[Funqy HTTP] and make these microservices deployable to the Azure Functions runtime."
+msgid "The `quarkus-azure-functions-http` extension allows you to write microservices with RESTEasy (JAX-RS), Undertow (servlet), Reactive Routes, or xref:funqy-http.adoc[Funqy HTTP] and make these microservices deployable to the Azure Functions runtime."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/azure-functions-http.adoc:15
-msgid "One azure function deployment can represent any number of JAX-RS, servlet, Reactive Routes, or link:funqy-http[Funqy HTTP] endpoints."
+msgid "One azure function deployment can represent any number of JAX-RS, servlet, Reactive Routes, or xref:funqy-http.adoc[Funqy HTTP] endpoints."
 msgstr ""
 
 #. type: Plain text
@@ -84,7 +84,7 @@ msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_guides/azure-functions-http.adoc:35
-msgid "This guide walks you through running a Maven Archetype to generate a sample project that contains three http endpoints written with JAX-RS APIs, Servlet APIs, Reactive Routes, or link:funqy-http[Funqy HTTP] APIs.  After building, you will then be able to deploy to Azure."
+msgid "This guide walks you through running a Maven Archetype to generate a sample project that contains three http endpoints written with JAX-RS APIs, Servlet APIs, Reactive Routes, or xref:funqy-http.adoc[Funqy HTTP] APIs.  After building, you will then be able to deploy to Azure."
 msgstr ""
 
 #. type: Title ==
@@ -231,7 +231,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/azure-functions-http.adoc:105
-msgid "The sample project includes the RESTEasy, Undertow, Reactive Routes, link:funqy-http[Funqy HTTP] extensions.  If you are only using one of those APIs (i.e. jax-rs only), respectively remove the maven dependency `quarkus-resteasy`, `quarkus-undertow`, `quarkus-funqy-http`, and/or `quarkus-reactive-routes`."
+msgid "The sample project includes the RESTEasy, Undertow, Reactive Routes, xref:funqy-http.adoc[Funqy HTTP] extensions.  If you are only using one of those APIs (i.e. jax-rs only), respectively remove the maven dependency `quarkus-resteasy`, `quarkus-undertow`, `quarkus-funqy-http`, and/or `quarkus-reactive-routes`."
 msgstr ""
 
 #. type: Plain text
@@ -266,7 +266,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/azure-functions-http.adoc:124
-msgid "The default route prefix for an Azure Function is `/api`.  All of your JAX-RS, Servlet, Reactive Routes, and link:funqy-http[Funqy HTTP] endpoints must explicitly take this into account.  In the generated project this is handled by the `quarkus.http.root-path` switch in `application.properties`"
+msgid "The default route prefix for an Azure Function is `/api`.  All of your JAX-RS, Servlet, Reactive Routes, and xref:funqy-http.adoc[Funqy HTTP] endpoints must explicitly take this into account.  In the generated project this is handled by the `quarkus.http.root-path` switch in `application.properties`"
 msgstr ""
 
 #. type: Plain text

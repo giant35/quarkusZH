@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:07+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/funqy.adoc:14
-msgid "Quarkus Funqy is part of Quarkus's serverless strategy and aims to provide a portable Java API to write functions deployable to various FaaS environments like AWS Lambda, Azure Functions, Knative, and Knative Events (Cloud Events).  It is also usable as a standalone service."
+msgid "Quarkus Funqy is part of Quarkus's serverless strategy and aims to provide a portable Java API to write functions deployable to various FaaS environments like AWS Lambda, Azure Functions, Google Cloud Functions, Knative, and Knative Events (Cloud Events).  It is also usable as a standalone service."
 msgstr ""
 
 #. type: Plain text
@@ -150,7 +150,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/funqy.adoc:83 upstream/_guides/funqy.adoc:101
-#: upstream/_guides/funqy.adoc:157
+#: upstream/_guides/funqy.adoc:158
 #, no-wrap
 msgid "public class GreetingFunction {\n"
 msgstr ""
@@ -259,19 +259,20 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/funqy.adoc:150
-msgid "Contextual information is injected via the `@Context` annotation which can be used on a function parameter or a class field.  A good example is the `CloudEvent` interface that comes with our Funqy Knative Cloud Events integration:"
+msgid "Contextual information is injected via the `@Context` annotation which can be used on a function parameter or a class field.  A good example is the `io.quarkus.funqy.knative.events.CloudEvent` interface that comes with our Funqy Knative Cloud Events integration:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/funqy.adoc:155
+#: upstream/_guides/funqy.adoc:156
 #, no-wrap
 msgid ""
 "import io.quarkus.funqy.Funq;\n"
 "import io.quarkus.funqy.Context;\n"
+"import io.quarkus.funqy.knative.events.CloudEvent;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/funqy.adoc:161
+#: upstream/_guides/funqy.adoc:162
 #, no-wrap
 msgid ""
 "    @Funq\n"
@@ -280,7 +281,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/funqy.adoc:167
+#: upstream/_guides/funqy.adoc:168
 #, no-wrap
 msgid ""
 "        Greeting greeting = new Greeting();\n"
@@ -291,13 +292,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/funqy.adoc:169
+#: upstream/_guides/funqy.adoc:170
 #, no-wrap
 msgid "Should I Use Funqy?"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/funqy.adoc:182
+#: upstream/_guides/funqy.adoc:183
 #, no-wrap
 msgid ""
 "REST over HTTP has become a very common way to write services over the past decade.  While Funqy\n"
@@ -309,11 +310,11 @@ msgid ""
 "have to make the decision on what camp you are in.  Quarkus does support REST integration (through JAX-RS,\n"
 " Spring MVC, Vert.x Web, and Servlet) with\n"
 "various cloud/function providers, but there are some disadvantages of using that approach as well.  For example,\n"
-"if you want to do link:amazon-lambda-http[HTTP with AWS Lambda], this requires you to use the AWS API Gateway which may\n"
+"if you want to do xref:amazon-lambda-http.adoc[HTTP with AWS Lambda], this requires you to use the AWS API Gateway which may\n"
 "slow down deployment and cold start time or even cost you more.\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/funqy.adoc:188
-msgid "The purpose of Funqy is to allow you to write cross-provider functions so that you can move off of your current function provider if, for instance, they start charging you a lot more for their service.  Another reason you might not want to use Funqy is if you need access specific APIs of the target function environment.  For example, developers often want access to the AWS Context on Lambda.  In this case, we tell them they may be better off using the link:amazon-lambda[Quarkus Amazon Lambda] integration instead."
+#: upstream/_guides/funqy.adoc:189
+msgid "The purpose of Funqy is to allow you to write cross-provider functions so that you can move off of your current function provider if, for instance, they start charging you a lot more for their service.  Another reason you might not want to use Funqy is if you need access specific APIs of the target function environment.  For example, developers often want access to the AWS Context on Lambda.  In this case, we tell them they may be better off using the xref:amazon-lambda.adoc[Quarkus Amazon Lambda] integration instead."
 msgstr ""

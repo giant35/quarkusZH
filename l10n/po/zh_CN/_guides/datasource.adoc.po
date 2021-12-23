@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-02 00:59+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:37
-msgid "This guide is mainly about datasource configuration.  If you want more details about how to consume and make use of a reactive datasource, please refer to the link:reactive-sql-clients[Reactive SQL clients guide]."
+msgid "This guide is mainly about datasource configuration.  If you want more details about how to consume and make use of a reactive datasource, please refer to the xref:reactive-sql-clients.adoc[Reactive SQL clients guide]."
 msgstr ""
 
 #. type: Title ==
@@ -350,7 +350,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:169
-msgid "You can also retrieve the password from Vault by link:vault-datasource[using a credential provider] for your datasource."
+msgid "You can also retrieve the password from Vault by link:{vault-datasource-guide}[using a credential provider] for your datasource."
 msgstr ""
 
 #. type: Plain text
@@ -867,7 +867,7 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_guides/datasource.adoc:401
-msgid "The Hibernate ORM extension link:hibernate-orm#multiple-persistence-units[supports defining several persistence units using configuration properties].  For each persistence unit, you can point to the datasource of your choice."
+msgid "The Hibernate ORM extension xref:hibernate-orm.adoc#multiple-persistence-units[supports defining several persistence units using configuration properties].  For each persistence unit, you can point to the datasource of your choice."
 msgstr ""
 
 #. type: Plain text

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-25 00:59+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/rest-client.adoc:14
-msgid "there is another guide if you need to write server link:rest-json[JSON REST APIs]."
+msgid "there is another guide if you need to write server xref:rest-json.adoc[JSON REST APIs]."
 msgstr ""
 
 #. type: Title ==
@@ -908,7 +908,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/rest-client.adoc:606
-msgid "In Quarkus, the REST Client extension and link:rest-json[the RESTEasy extension] share the same infrastructure.  One important consequence of this consideration is that they share the same list of providers (in the JAX-RS meaning of the word)."
+msgid "In Quarkus, the REST Client extension and xref:rest-json.adoc[the RESTEasy extension] share the same infrastructure.  One important consequence of this consideration is that they share the same list of providers (in the JAX-RS meaning of the word)."
 msgstr ""
 
 #. type: Plain text
@@ -971,7 +971,7 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_guides/rest-client.adoc:643
-msgid "For more details about `@QuarkusTestResource` refer to link:getting-started-testing#quarkus-test-resource[this part of the documentation]."
+msgid "For more details about `@QuarkusTestResource` refer to xref:getting-started-testing.adoc#quarkus-test-resource[this part of the documentation]."
 msgstr ""
 
 #. type: Plain text

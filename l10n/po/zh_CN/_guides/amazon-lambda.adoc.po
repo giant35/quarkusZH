@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-21 01:03+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,7 +83,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:31
-msgid "For Gradle projects please <<gradle,see below>>, or for further reference consult the guide in the link:gradle-tooling[Gradle setup page]."
+msgid "For Gradle projects please <<gradle,see below>>, or for further reference consult the guide in the xref:gradle-tooling.adoc[Gradle setup page]."
 msgstr ""
 
 #. type: Title ==
@@ -818,7 +818,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:464
-msgid "If your code makes HTTPS calls, such as to a micro-service (or AWS service), you will need to add configuration to the native image, as GraalVM will only include the dependencies when explicitly declared.  Quarkus, by default enables this functionality on extensions that implicitly require it.  For further information, please consult the link:native-and-ssl[Quarkus SSL guide]"
+msgid "If your code makes HTTPS calls, such as to a micro-service (or AWS service), you will need to add configuration to the native image, as GraalVM will only include the dependencies when explicitly declared.  Quarkus, by default enables this functionality on extensions that implicitly require it.  For further information, please consult the xref:native-and-ssl.adoc[Quarkus SSL guide]"
 msgstr ""
 
 #. type: Plain text
@@ -982,7 +982,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:566
-msgid "if you see `java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty` or similar SSL error, due to the current status of GraalVM, there is some additional work to bundle the `function.zip`, as below.  For more information, please see the link:native-and-ssl[Quarkus Native SSL Guide]."
+msgid "if you see `java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty` or similar SSL error, due to the current status of GraalVM, there is some additional work to bundle the `function.zip`, as below.  For more information, please see the xref:native-and-ssl.adoc[Quarkus Native SSL Guide]."
 msgstr ""
 
 #. type: Title ==

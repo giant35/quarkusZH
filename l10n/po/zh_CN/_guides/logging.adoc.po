@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-07 01:03+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,7 +121,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/logging.adoc:53
-msgid "If you use JBoss Logging but one of your libraries uses a different logging API, you may need to configure a link:#logging-adapters[Logging Adapter]."
+msgid "If you use JBoss Logging but one of your libraries uses a different logging API, you may need to configure a <<logging-adapters,Logging Adapter>>."
 msgstr ""
 
 #. type: Title ===
@@ -1308,7 +1308,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/logging.adoc:376
-msgid "If you want to send your logs to a centralized tool like Graylog, Logstash or Fluentd, you can follow the link:centralized-log-management[Centralized log management guide]."
+msgid "If you want to send your logs to a centralized tool like Graylog, Logstash or Fluentd, you can follow the xref:centralized-log-management.adoc[Centralized log management guide]."
 msgstr ""
 
 #. type: Title ==

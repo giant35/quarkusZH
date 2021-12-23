@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:07+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1078,5 +1078,5 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:481
-msgid "If you wish to learn more about Quarkus-specific features and limitations there is a Quarkus link:cdi-reference[CDI Reference Guide].  We also recommend you to read the http://docs.jboss.org/cdi/spec/2.0/cdi-spec.html[CDI specification] and the https://docs.jboss.org/weld/reference/latest/en-US/html/[Weld documentation] (Weld is a CDI Reference Implementation) to get acquainted with more complex topics."
+msgid "If you wish to learn more about Quarkus-specific features and limitations there is a Quarkus xref:cdi-reference.adoc[CDI Reference Guide].  We also recommend you to read the http://docs.jboss.org/cdi/spec/2.0/cdi-spec.html[CDI specification] and the https://docs.jboss.org/weld/reference/latest/en-US/html/[Weld documentation] (Weld is a CDI Reference Implementation) to get acquainted with more complex topics."
 msgstr ""

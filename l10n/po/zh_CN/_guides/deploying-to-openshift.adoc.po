@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-11 01:00+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,7 +102,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-openshift.adoc:43
-msgid "Quarkus offers the ability to automatically generate OpenShift resources based on sane defaults and user supplied configuration.  The OpenShift extension is actually a wrapper extension that brings together the link:deploying-to-kubernetes[kubernetes] and link:container-image#s2i[container-image-s2i] extensions with sensible defaults so that it's easier for the user to get started with Quarkus on OpenShift."
+msgid "Quarkus offers the ability to automatically generate OpenShift resources based on sane defaults and user supplied configuration.  The OpenShift extension is actually a wrapper extension that brings together the xref:deploying-to-kubernetes.adoc[kubernetes] and xref:container-image.adoc#s2i[container-image-s2i] extensions with sensible defaults so that it's easier for the user to get started with Quarkus on OpenShift."
 msgstr ""
 
 #. type: Plain text
@@ -362,17 +362,17 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-openshift.adoc:175
-msgid "Out of the box the OpenShift extension is configured to use link:container-image#s2i[container-image-s2i]. However, it's still possible to use other container image extensions like:"
+msgid "Out of the box the OpenShift extension is configured to use xref:container-image.adoc#s2i[container-image-s2i]. However, it's still possible to use other container image extensions like:"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-openshift.adoc:177
-msgid "link:container-image#docker[container-image-docker]"
+msgid "xref:container-image.adoc#docker[container-image-docker]"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-openshift.adoc:178
-msgid "link:container-image#jib[container-image-jib]"
+msgid "xref:container-image.adoc#jib[container-image-jib]"
 msgstr ""
 
 #. type: Plain text
@@ -410,7 +410,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-openshift.adoc:198
-msgid "All available customization options are available in the link:deploying-to-kubernetes#openshift[OpenShift configuration options]."
+msgid "All available customization options are available in the xref:deploying-to-kubernetes.adoc#openshift[OpenShift configuration options]."
 msgstr ""
 
 #. type: Plain text

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-21 01:03+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/funqy-amazon-lambda.adoc:24
-msgid "Read about link:funqy[Funqy Basics].  This is a short read!"
+msgid "Read about xref:funqy.adoc[Funqy Basics].  This is a short read!"
 msgstr ""
 
 #. type: Plain text
@@ -83,7 +83,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/funqy-amazon-lambda.adoc:31
-msgid "Funqy Amazon Lambdas build off of our link:amazon-lambda[Quarkus Amazon Lambda support]."
+msgid "Funqy Amazon Lambdas build off of our xref:amazon-lambda.adoc[Quarkus Amazon Lambda support]."
 msgstr ""
 
 #. type: Title ==

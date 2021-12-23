@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:06+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -384,7 +384,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/config.adoc:187
-msgid "Quarkus itself is configured via the same mechanism as your application. Quarkus reserves the `quarkus.` namespace for its own configuration. For example to configure the HTTP server port you can set `quarkus.http.port` in `application.properties`. All the Quarkus configuration properties are link:all-config[documented and searchable]."
+msgid "Quarkus itself is configured via the same mechanism as your application. Quarkus reserves the `quarkus.` namespace for its own configuration. For example to configure the HTTP server port you can set `quarkus.http.port` in `application.properties`. All the Quarkus configuration properties are xref:all-config.adoc[documented and searchable]."
 msgstr ""
 
 #. type: delimited block =
@@ -405,7 +405,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/config.adoc:201
-msgid "The properties fixed at build time are marked with a lock icon (icon:lock[]) in the link:all-config[list of all configuration options]."
+msgid "The properties fixed at build time are marked with a lock icon (icon:lock[]) in the xref:all-config.adoc[list of all configuration options]."
 msgstr ""
 
 #. type: Plain text

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-25 00:59+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/rest-client-reactive.adoc:15
-msgid "If your application uses a client and exposes REST endpoints, please use link:resteasy-reactive[RESTEasy Reactive] for the server part."
+msgid "If your application uses a client and exposes REST endpoints, please use xref:resteasy-reactive.adoc[RESTEasy Reactive] for the server part."
 msgstr ""
 
 #. type: Title ==
@@ -182,6 +182,7 @@ msgstr ""
 #: upstream/_guides/rest-client-reactive.adoc:462
 #: upstream/_guides/rest-client-reactive.adoc:527
 #: upstream/_guides/rest-client-reactive.adoc:564
+#: upstream/_guides/rest-client-reactive.adoc:599
 #, no-wrap
 msgid "package org.acme.rest.client;\n"
 msgstr ""
@@ -643,7 +644,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/rest-client-reactive.adoc:366
-#: upstream/_guides/rest-client-reactive.adoc:607
+#: upstream/_guides/rest-client-reactive.adoc:638
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -652,7 +653,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/rest-client-reactive.adoc:370
-#: upstream/_guides/rest-client-reactive.adoc:611
+#: upstream/_guides/rest-client-reactive.adoc:642
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -850,7 +851,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/rest-client-reactive.adoc:519
-msgid "by registering a `ClientHeadersFactory` with the `@RegisterClientHeaders` annotation"
+msgid "by registering a `ClientHeadersFactory` or a `ReactiveClientHeadersFactory` with the `@RegisterClientHeaders` annotation"
 msgstr ""
 
 #. type: Plain text
@@ -944,12 +945,14 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/rest-client-reactive.adoc:566
+#: upstream/_guides/rest-client-reactive.adoc:601
 #, no-wrap
 msgid "import org.eclipse.microprofile.rest.client.ext.ClientHeadersFactory;\n"
 msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/rest-client-reactive.adoc:571
+#: upstream/_guides/rest-client-reactive.adoc:606
 #, no-wrap
 msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
@@ -995,19 +998,56 @@ msgstr ""
 msgid "header.value=value of the header\n"
 msgstr ""
 
+#. type: Plain text
+#: upstream/_guides/rest-client-reactive.adoc:595
+msgid "Also, there is a reactive flavor of `ClientHeadersFactory` that allows doing blocking operations. For example:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/rest-client-reactive.adoc:609
+#, no-wrap
+msgid ""
+"@ApplicationScoped\n"
+"public class GetTokenReactiveClientHeadersFactory extends ReactiveClientHeadersFactory {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/rest-client-reactive.adoc:612
+#, no-wrap
+msgid ""
+"    @Inject\n"
+"    Service service;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/rest-client-reactive.adoc:623
+#, no-wrap
+msgid ""
+"    @Override\n"
+"    public Uni<MultivaluedMap<String, String>> getHeaders(MultivaluedMap<String, String> incomingHeaders) {\n"
+"        return Uni.createFrom().item(() -> {\n"
+"            MultivaluedHashMap<String, String> newHeaders = new MultivaluedHashMap<>();\n"
+"            // perform blocking call\n"
+"            newHeaders.add(HEADER_NAME, service.getToken());\n"
+"            return newHeaders;\n"
+"        });\n"
+"    }\n"
+"}\n"
+msgstr ""
+
 #. type: Title ===
-#: upstream/_guides/rest-client-reactive.adoc:594
+#: upstream/_guides/rest-client-reactive.adoc:625
 #, no-wrap
 msgid "Default header factory"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:598
+#: upstream/_guides/rest-client-reactive.adoc:629
 msgid "The `@RegisterClientHeaders` annotation can also be used without any custom factory specified. In that case the `DefaultClientHeadersFactoryImpl` factory will be used.  If you make a REST client call from a REST resource, this factory will propagate all the headers listed in `org.eclipse.microprofile.rest.client.propagateHeaders` configuration property from the resource request to the client request. Individual header names are comma-separated."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client-reactive.adoc:604
+#: upstream/_guides/rest-client-reactive.adoc:635
 #, no-wrap
 msgid ""
 "@Path(\"/extensions\")\n"
@@ -1017,29 +1057,29 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client-reactive.adoc:616
+#: upstream/_guides/rest-client-reactive.adoc:647
 #, no-wrap
 msgid "org.eclipse.microprofile.rest.client.propagateHeaders=Authorization,Proxy-Authorization\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/rest-client-reactive.adoc:618
+#: upstream/_guides/rest-client-reactive.adoc:649
 #, no-wrap
 msgid "Multipart Form support"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:622
+#: upstream/_guides/rest-client-reactive.adoc:653
 msgid "Rest Client Reactive allows sending data as multipart forms. This way you can for example send files efficiently."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:625
+#: upstream/_guides/rest-client-reactive.adoc:656
 msgid "To send data as a multipart form, you need to create a class that would encapsulate all the fields to be sent, e.g."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client-reactive.adoc:632
+#: upstream/_guides/rest-client-reactive.adoc:663
 #, no-wrap
 msgid ""
 "class FormDto {\n"
@@ -1049,7 +1089,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client-reactive.adoc:637
+#: upstream/_guides/rest-client-reactive.adoc:668
 #, no-wrap
 msgid ""
 "    @FormParam(\"otherField\")\n"
@@ -1059,12 +1099,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:640
+#: upstream/_guides/rest-client-reactive.adoc:671
 msgid "The method that sends a form needs to specify multipart form data as the consumed media type, e.g."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client-reactive.adoc:647
+#: upstream/_guides/rest-client-reactive.adoc:678
 #, no-wrap
 msgid ""
 "    @POST\n"
@@ -1075,80 +1115,80 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:652
+#: upstream/_guides/rest-client-reactive.adoc:683
 msgid "Fields specified as `File`, `Path`, `byte[]` or `Buffer` are sent as files; as binary files for `@PartType(MediaType.APPLICATION_OCTET_STREAM)`, as text files for other content types.  Other fields are sent as form attributes."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:662
+#: upstream/_guides/rest-client-reactive.adoc:693
 msgid "There are a few modes in which the form data can be encoded. By default, Rest Client Reactive uses RFC1738.  You can override it by specifying the mode either on the client level, by setting `io.quarkus.rest.client.multipart-post-encoder-mode` RestBuilder property to the selected value of `HttpPostRequestEncoder.EncoderMode` or by specifying `quarkus.rest-client.multipart-post-encoder-mode` in your `application.properties`. Please note that the latter works only for clients created with the `@RegisterRestClient` annotation.  All the available modes are described in the link:https://netty.io/4.1/api/io/netty/handler/codec/http/multipart/HttpPostRequestEncoder.EncoderMode.html[Netty documentation]"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/rest-client-reactive.adoc:664
+#: upstream/_guides/rest-client-reactive.adoc:695
 #, no-wrap
 msgid "Package and run the application"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:668
+#: upstream/_guides/rest-client-reactive.adoc:699
 msgid "Run the application with: `./mvnw compile quarkus:dev`.  Open your browser to http://localhost:8080/extension/id/io.quarkus:quarkus-rest-client-reactive."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:670
+#: upstream/_guides/rest-client-reactive.adoc:701
 msgid "You should see a JSON object containing some basic information about this extension."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:673
+#: upstream/_guides/rest-client-reactive.adoc:704
 msgid "As usual, the application can be packaged using `./mvnw clean package` and executed using the `target/quarkus-app/quarkus-run.jar` file.  You can also generate the native executable with `./mvnw clean package -Pnative`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/rest-client-reactive.adoc:674
+#: upstream/_guides/rest-client-reactive.adoc:705
 #, no-wrap
 msgid "Using a Mock HTTP Server for tests"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:679
-msgid "For tests, you can easily mock the HTTP server with Wiremock.  The link:rest-client#using-a-mock-http-server-for-tests[Wiremock section of the Quarkus - Using the REST Client] describes how to set it up in detail."
+#: upstream/_guides/rest-client-reactive.adoc:710
+msgid "For tests, you can easily mock the HTTP server with Wiremock.  The xref:rest-client.adoc#using-a-mock-http-server-for-tests[Wiremock section of the Quarkus - Using the REST Client] describes how to set it up in detail."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/rest-client-reactive.adoc:680
+#: upstream/_guides/rest-client-reactive.adoc:711
 #, no-wrap
 msgid "Known limitations"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:683
+#: upstream/_guides/rest-client-reactive.adoc:714
 msgid "While the REST Client Reactive extension aims to be a drop-in replacement for the REST Client extension, there are some differences and limitations:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:686
+#: upstream/_guides/rest-client-reactive.adoc:717
 msgid "the default scope of the client for the new extension is `@ApplicationScoped` while the `quarkus-rest-client` defaults to `@Dependent` To change this behavior, set the `quarkus.rest-client-reactive.scope` property to the fully qualified scope name."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:687
+#: upstream/_guides/rest-client-reactive.adoc:718
 msgid "it is not possible to set `HostnameVerifier` or `SSLContext`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:688
+#: upstream/_guides/rest-client-reactive.adoc:719
 msgid "a few things that don't make sense for a non-blocking implementations, such as setting the `ExecutorService`, don't work"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/rest-client-reactive.adoc:691
+#: upstream/_guides/rest-client-reactive.adoc:722
 #, no-wrap
 msgid "Further reading"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client-reactive.adoc:693
+#: upstream/_guides/rest-client-reactive.adoc:724
 msgid "link:https://download.eclipse.org/microprofile/microprofile-rest-client-2.0/microprofile-rest-client-spec-2.0.html[MicroProfile Rest Client specification]"
 msgstr ""

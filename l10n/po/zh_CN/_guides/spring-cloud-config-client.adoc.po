@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:06+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -266,7 +266,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:142
-msgid "You can of course create a native image using the instructions of the link:building-native-image[Building a native executable guide]."
+msgid "You can of course create a native image using the instructions of the xref:building-native-image.adoc[Building a native executable guide]."
 msgstr ""
 
 #. type: Title ==
@@ -282,42 +282,42 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:148
-msgid "link:spring-di[Quarkus - Extension for Spring DI]"
+msgid "xref:spring-di.adoc[Quarkus - Extension for Spring DI]"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:149
-msgid "link:spring-web[Quarkus - Extension for Spring Web]"
+msgid "xref:spring-web.adoc[Quarkus - Extension for Spring Web]"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:150
-msgid "link:spring-data-jpa[Quarkus - Extension for Spring Data JPA]"
+msgid "xref:spring-data-jpa.adoc[Quarkus - Extension for Spring Data JPA]"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:151
-msgid "link:spring-data-rest[Quarkus - Extension for Spring Data REST]"
+msgid "xref:spring-data-rest.adoc[Quarkus - Extension for Spring Data REST]"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:152
-msgid "link:spring-security[Quarkus - Extension for Spring Security]"
+msgid "xref:spring-security.adoc[Quarkus - Extension for Spring Security]"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:153
-msgid "link:spring-boot-properties[Quarkus - Extension for Spring Boot properties]"
+msgid "xref:spring-boot-properties.adoc[Quarkus - Extension for Spring Boot properties]"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:154
-msgid "link:spring-cache[Quarkus - Extension for Spring Cache]"
+msgid "xref:spring-cache.adoc[Quarkus - Extension for Spring Cache]"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:155
-msgid "link:spring-scheduled[Quarkus - Extension for Spring Scheduled]"
+msgid "xref:spring-scheduled.adoc[Quarkus - Extension for Spring Scheduled]"
 msgstr ""
 
 #. type: Title ==

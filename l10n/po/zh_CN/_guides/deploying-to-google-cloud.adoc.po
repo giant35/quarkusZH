@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-02 00:59+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,7 +102,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-google-cloud.adoc:30
-msgid "This guide will take as input an application developed in the link:getting-started[Getting Started guide]."
+msgid "This guide will take as input an application developed in the xref:getting-started.adoc[Getting Started guide]."
 msgstr ""
 
 #. type: Plain text
@@ -134,17 +134,17 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-google-cloud.adoc:48
-msgid "link:gcp-functions[Google Cloud Functions]: Build functions using the Google Cloud Functions API."
+msgid "xref:gcp-functions.adoc[Google Cloud Functions]: Build functions using the Google Cloud Functions API."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-google-cloud.adoc:50
-msgid "link:gcp-functions-http[Google Cloud Functions HTTP binding]: Build functions using Quarkus HTTP APIs: RESTEasy (JAX-RS), Undertow (Servlet), Vert.x Web, or link:funqy-http[Funqy HTTP]."
+msgid "xref:gcp-functions-http.adoc[Google Cloud Functions HTTP binding]: Build functions using Quarkus HTTP APIs: RESTEasy (JAX-RS), Undertow (Servlet), Vert.x Web, or xref:funqy-http.adoc[Funqy HTTP]."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-google-cloud.adoc:51
-msgid "link:funqy-gcp-functions[Funky Google Cloud Functions]: Build functions using Funqy."
+msgid "xref:funqy-gcp-functions.adoc[Funky Google Cloud Functions]: Build functions using Funqy."
 msgstr ""
 
 #. type: Plain text
@@ -394,7 +394,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-google-cloud.adoc:167
-msgid "App Engine Flexible custom runtimes support link:https://cloud.google.com/appengine/docs/flexible/custom-runtimes/configuring-your-app-with-app-yaml#updated_health_checks[health checks], it is strongly advised to provide them thanks to Quarkus link:microprofile-health[Microprofile Health] support."
+msgid "App Engine Flexible custom runtimes support link:https://cloud.google.com/appengine/docs/flexible/custom-runtimes/configuring-your-app-with-app-yaml#updated_health_checks[health checks], it is strongly advised to provide them thanks to Quarkus xref:microprofile-health.adoc[Microprofile Health] support."
 msgstr ""
 
 #. type: Title ==

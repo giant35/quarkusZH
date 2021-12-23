@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-25 00:59+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:19
-msgid "If you're new to CDI then we recommend you to read the link:cdi[Introduction to CDI] first."
+msgid "If you're new to CDI then we recommend you to read the xref:cdi.adoc[Introduction to CDI] first."
 msgstr ""
 
 #. type: Plain text
@@ -163,7 +163,7 @@ msgstr ""
 #: upstream/_guides/cdi-reference.adoc:115
 #: upstream/_guides/cdi-reference.adoc:127
 #: upstream/_guides/cdi-reference.adoc:456
-#: upstream/_guides/cdi-reference.adoc:645
+#: upstream/_guides/cdi-reference.adoc:644
 #, no-wrap
 msgid "Example application.properties"
 msgstr ""
@@ -202,7 +202,7 @@ msgstr ""
 #. type: Block title
 #: upstream/_guides/cdi-reference.adoc:106
 #: upstream/_guides/cdi-reference.adoc:447
-#: upstream/_guides/cdi-reference.adoc:636
+#: upstream/_guides/cdi-reference.adoc:635
 #, no-wrap
 msgid "Value Examples"
 msgstr ""
@@ -210,7 +210,7 @@ msgstr ""
 #. type: Table
 #: upstream/_guides/cdi-reference.adoc:108
 #: upstream/_guides/cdi-reference.adoc:449
-#: upstream/_guides/cdi-reference.adoc:638
+#: upstream/_guides/cdi-reference.adoc:637
 #, no-wrap
 msgid "Valu"
 msgstr ""
@@ -218,7 +218,7 @@ msgstr ""
 #. type: Table
 #: upstream/_guides/cdi-reference.adoc:109
 #: upstream/_guides/cdi-reference.adoc:450
-#: upstream/_guides/cdi-reference.adoc:639
+#: upstream/_guides/cdi-reference.adoc:638
 #, no-wrap
 msgid "Description"
 msgstr ""
@@ -226,7 +226,7 @@ msgstr ""
 #. type: Table
 #: upstream/_guides/cdi-reference.adoc:109
 #: upstream/_guides/cdi-reference.adoc:450
-#: upstream/_guides/cdi-reference.adoc:639
+#: upstream/_guides/cdi-reference.adoc:638
 #, no-wrap
 msgid "`org.acme.Foo`"
 msgstr ""
@@ -240,7 +240,7 @@ msgstr ""
 #. type: Table
 #: upstream/_guides/cdi-reference.adoc:110
 #: upstream/_guides/cdi-reference.adoc:451
-#: upstream/_guides/cdi-reference.adoc:640
+#: upstream/_guides/cdi-reference.adoc:639
 #, no-wrap
 msgid "`org.acme.*`"
 msgstr ""
@@ -254,7 +254,7 @@ msgstr ""
 #. type: Table
 #: upstream/_guides/cdi-reference.adoc:111
 #: upstream/_guides/cdi-reference.adoc:452
-#: upstream/_guides/cdi-reference.adoc:641
+#: upstream/_guides/cdi-reference.adoc:640
 #, no-wrap
 msgid "`org.acme.**`"
 msgstr ""
@@ -268,7 +268,7 @@ msgstr ""
 #. type: Table
 #: upstream/_guides/cdi-reference.adoc:112
 #: upstream/_guides/cdi-reference.adoc:453
-#: upstream/_guides/cdi-reference.adoc:642
+#: upstream/_guides/cdi-reference.adoc:641
 #, no-wrap
 msgid "`Bar`"
 msgstr ""
@@ -509,7 +509,7 @@ msgstr ""
 
 #. type: Title ====
 #: upstream/_guides/cdi-reference.adoc:207
-#: upstream/_guides/cdi-reference.adoc:709
+#: upstream/_guides/cdi-reference.adoc:708
 #, no-wrap
 msgid "Limitations"
 msgstr ""
@@ -740,7 +740,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:304
-msgid "Annotate the bean with `@io.quarkus.runtime.Startup` as described in link:lifecycle#startup_annotation[Startup annotation]:"
+msgid "Annotate the bean with `@io.quarkus.runtime.Startup` as described in xref:lifecycle.adoc#startup_annotation[Startup annotation]:"
 msgstr ""
 
 #. type: delimited block -
@@ -780,7 +780,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:322
-msgid "Quarkus users are encouraged to always prefer the `@Observes StartupEvent` to `@Initialized(ApplicationScoped.class)` as explained in the link:lifecycle[Application Initialization and Termination] guide."
+msgid "Quarkus users are encouraged to always prefer the `@Observes StartupEvent` to `@Initialized(ApplicationScoped.class)` as explained in the xref:lifecycle.adoc[Application Initialization and Termination] guide."
 msgstr ""
 
 #. type: Title ===
@@ -827,7 +827,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/cdi-reference.adoc:344
-#: upstream/_guides/cdi-reference.adoc:662
+#: upstream/_guides/cdi-reference.adoc:661
 #, no-wrap
 msgid ""
 "  @Inject\n"
@@ -842,7 +842,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/cdi-reference.adoc:352
-#: upstream/_guides/cdi-reference.adoc:679
+#: upstream/_guides/cdi-reference.adoc:678
 #, no-wrap
 msgid ""
 "  @ConfigProperty(name = \"cool\")\n"
@@ -1036,14 +1036,14 @@ msgstr ""
 
 #. type: Table
 #: upstream/_guides/cdi-reference.adoc:452
-#: upstream/_guides/cdi-reference.adoc:641
+#: upstream/_guides/cdi-reference.adoc:640
 #, no-wrap
 msgid "Match beans where the package of the bean class is `org.acme`"
 msgstr ""
 
 #. type: Table
 #: upstream/_guides/cdi-reference.adoc:453
-#: upstream/_guides/cdi-reference.adoc:642
+#: upstream/_guides/cdi-reference.adoc:641
 #, no-wrap
 msgid "Match beans where the package of the bean class starts with `org.acme`"
 msgstr ""
@@ -1283,53 +1283,53 @@ msgid "In CDI, an alternative bean may be selected either globally for an applic
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:630
-msgid "The disadvantage of `@Priority` is that it has `@Target({ TYPE, PARAMETER })` and so it cannot be used for producer methods and fields.  To address this problem and to simplify the code Quarkus provides the `io.quarkus.arc.AlternativePriority` annotation.  It's basically a shortcut for `@Alternative` plus `@Priority`.  Additionally, it can be used for producers."
+#: upstream/_guides/cdi-reference.adoc:629
+msgid "The disadvantage of `@javax.annotation.Priority` is that it has `@Target({ TYPE, PARAMETER })` and so it cannot be used for producer methods and fields.  This problem should be fixed in Common Annotations 2.1.  Users are encouraged to use `@io.quarkus.arc.Priority` instead, until Quarkus upgrades to this version of `jakarta.annotation-api`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:635
+#: upstream/_guides/cdi-reference.adoc:634
 msgid "However, it is also possible to select alternatives for an application using the unified configuration.  The `quarkus.arc.selected-alternatives` property accepts a list of string values that are used to match alternative beans.  If any value matches then the priority of `Integer#MAX_VALUE` is used for the relevant bean.  The priority declared via `@Priority` or `@AlternativePriority` is overridden."
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/cdi-reference.adoc:640
+#: upstream/_guides/cdi-reference.adoc:639
 #, no-wrap
 msgid "Match the fully qualified name of the bean class or the bean class of the bean that declares the producer"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/cdi-reference.adoc:643
+#: upstream/_guides/cdi-reference.adoc:642
 #, no-wrap
 msgid "Match the simple name of the bean class or the bean class of the bean that declares the producer"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:649
+#: upstream/_guides/cdi-reference.adoc:648
 #, no-wrap
 msgid "quarkus.arc.selected-alternatives=org.acme.Foo,org.acme.*,Bar\n"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/cdi-reference.adoc:651
+#: upstream/_guides/cdi-reference.adoc:650
 #, no-wrap
 msgid "Simplified Producer Method Declaration"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:654
+#: upstream/_guides/cdi-reference.adoc:653
 msgid "In CDI, a producer method must be always annotated with `@Produces`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:658
-#: upstream/_guides/cdi-reference.adoc:676
+#: upstream/_guides/cdi-reference.adoc:657
+#: upstream/_guides/cdi-reference.adoc:675
 #, no-wrap
 msgid "class Producers {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:669
+#: upstream/_guides/cdi-reference.adoc:668
 #, no-wrap
 msgid ""
 "  @Produces\n"
@@ -1341,12 +1341,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:672
+#: upstream/_guides/cdi-reference.adoc:671
 msgid "In Quarkus, you can skip the `@Produces` annotation completely if the producer method is annotated with a scope annotation, a stereotype or a qualifier."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:685
+#: upstream/_guides/cdi-reference.adoc:684
 #, no-wrap
 msgid ""
 "  @ApplicationScoped\n"
@@ -1357,24 +1357,24 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/cdi-reference.adoc:687
+#: upstream/_guides/cdi-reference.adoc:686
 #, no-wrap
 msgid "Interception of Static Methods "
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:693
+#: upstream/_guides/cdi-reference.adoc:692
 msgid "The Interceptors specification is clear that _around-invoke_ methods must not be declared static.  However, this restriction was driven mostly by technical limitations.  And since Quarkus is a build-time oriented stack that allows for additional class transformations, those limitations don't apply anymore.  It's possible to annotate a non-private static method with an interceptor binding:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:697
+#: upstream/_guides/cdi-reference.adoc:696
 #, no-wrap
 msgid "class Services {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:705
+#: upstream/_guides/cdi-reference.adoc:704
 #, no-wrap
 msgid ""
 "  @Logged <1>\n"
@@ -1387,81 +1387,81 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:707
+#: upstream/_guides/cdi-reference.adoc:706
 msgid "`Logged` is an interceptor binding."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:708
+#: upstream/_guides/cdi-reference.adoc:707
 msgid "Each method invocation is intercepted if there is an interceptor associated with `Logged`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:712
+#: upstream/_guides/cdi-reference.adoc:711
 msgid "Only *method-level bindings* are considered for backward compatibility reasons (otherwise static methods of bean classes that declare class-level bindings would be suddenly intercepted)"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:713
+#: upstream/_guides/cdi-reference.adoc:712
 msgid "Private static methods are never intercepted"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:714
+#: upstream/_guides/cdi-reference.adoc:713
 msgid "`InvocationContext#getTarget()` returns `null` for obvious reasons; therefore not all existing interceptors may behave correctly when intercepting static methods"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:716
+#: upstream/_guides/cdi-reference.adoc:715
 msgid "Interceptors can use `InvocationContext.getMethod()` to detect static methods and adjust the behavior accordingly."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/cdi-reference.adoc:717
+#: upstream/_guides/cdi-reference.adoc:716
 #, no-wrap
 msgid "Ability to handle 'final' classes and methods"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:722
+#: upstream/_guides/cdi-reference.adoc:721
 msgid "In normal CDI, classes that are marked as `final` and / or have `final` methods are not eligible for proxy creation, which in turn means that interceptors and normal scoped beans don't work properly.  This situation is very common when trying to use CDI with alternative JVM languages like Kotlin where classes and methods are `final` by default."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:724
+#: upstream/_guides/cdi-reference.adoc:723
 msgid "Quarkus however, can overcome these limitations when `quarkus.arc.transform-unproxyable-classes` is set to `true` (which is the default value)."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/cdi-reference.adoc:725
+#: upstream/_guides/cdi-reference.adoc:724
 #, no-wrap
 msgid "Container-managed Concurrency"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:733
+#: upstream/_guides/cdi-reference.adoc:732
 msgid "There is no standard concurrency control mechanism for CDI beans.  Nevertheless, a bean instance can be shared and accessed concurrently from multiple threads.  In that case it should be thread-safe.  You can use standard Java constructs (`volatile`, `synchronized`, `ReadWriteLock`, etc.) or let the container control the concurrent access.  Quarkus provides `@io.quarkus.arc.Lock` and a built-in interceptor for this interceptor binding.  Each interceptor instance associated with a contextual instance of an intercepted bean holds a separate `ReadWriteLock` with non-fair ordering policy."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:735
+#: upstream/_guides/cdi-reference.adoc:734
 msgid "`io.quarkus.arc.Lock` is a regular interceptor binding and as such can be used for any bean with any scope. However, it is especially useful for \"shared\" scopes, e.g. `@Singleton` and `@ApplicationScoped`."
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/cdi-reference.adoc:736
+#: upstream/_guides/cdi-reference.adoc:735
 #, no-wrap
 msgid "Container-managed Concurrency Example"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:740
+#: upstream/_guides/cdi-reference.adoc:739
 #, no-wrap
 msgid "import io.quarkus.arc.Lock;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:744
+#: upstream/_guides/cdi-reference.adoc:743
 #, no-wrap
 msgid ""
 "@Lock <1>\n"
@@ -1470,7 +1470,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:748
+#: upstream/_guides/cdi-reference.adoc:747
 #, no-wrap
 msgid ""
 "  void addAmount(BigDecimal amount) {\n"
@@ -1479,7 +1479,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:754
+#: upstream/_guides/cdi-reference.adoc:753
 #, no-wrap
 msgid ""
 "  @Lock(value = Lock.Type.READ, time = 1, unit = TimeUnit.SECONDS) <2> <3>\n"
@@ -1490,43 +1490,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:756
+#: upstream/_guides/cdi-reference.adoc:755
 msgid "`@Lock` (which maps to `@Lock(Lock.Type.WRITE)`) declared on the class instructs the container to lock the bean instance for any invocation of any business method, i.e. the client has \"exclusive access\" and no concurrent invocations will be allowed."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:757
+#: upstream/_guides/cdi-reference.adoc:756
 msgid "`@Lock(Lock.Type.READ)` overrides the value specified at class level. It means that any number of clients can invoke the method concurrently, unless the bean instance is locked by `@Lock(Lock.Type.WRITE)`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:758
+#: upstream/_guides/cdi-reference.adoc:757
 msgid "You can also specify the \"wait time\". If it's not possible to acquire the lock in the given time a `LockException` is thrown."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/cdi-reference.adoc:759
+#: upstream/_guides/cdi-reference.adoc:758
 #, no-wrap
 msgid "Repeatable interceptor bindings"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:762
+#: upstream/_guides/cdi-reference.adoc:761
 msgid "Quarkus has limited support for `@Repeatable` interceptor binding annotations."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:766
+#: upstream/_guides/cdi-reference.adoc:765
 msgid "When binding an interceptor to a component, you can declare multiple `@Repeatable` annotations on methods.  Repeatable interceptor bindings declared on classes and stereotypes are not supported, because there are some open questions around interactions with the Interceptors specification.  This might be added in the future."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:770
+#: upstream/_guides/cdi-reference.adoc:769
 msgid "As an example, suppose we have an interceptor that clears a cache.  The corresponding interceptor binding would be called `@CacheInvalidateAll` and would be declared as `@Repeatable`.  If we wanted to clear two caches at the same time, we would add `@CacheInvalidateAll` twice:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:784
+#: upstream/_guides/cdi-reference.adoc:783
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -1543,22 +1543,22 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:788
+#: upstream/_guides/cdi-reference.adoc:787
 msgid "This is how interceptors are used.  What about creating an interceptor?"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:791
+#: upstream/_guides/cdi-reference.adoc:790
 msgid "When declaring interceptor bindings of an interceptor, you can add multiple `@Repeatable` annotations to the interceptor class as usual.  This is useless when the annotation members are `@Nonbinding`, as would be the case for the `@Cached` annotation, but is important otherwise."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:795
+#: upstream/_guides/cdi-reference.adoc:794
 msgid "For example, suppose we have an interceptor that can automatically log method invocations to certain targets.  The interceptor binding annotation `@Logged` would have a member called `target`, which specifies where to store the log.  Our implementation could be restricted to console logging and file logging:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:804
+#: upstream/_guides/cdi-reference.adoc:803
 #, no-wrap
 msgid ""
 "@Interceptor\n"
@@ -1570,29 +1570,29 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:807
+#: upstream/_guides/cdi-reference.adoc:806
 msgid "Other interceptors could be provided to log method invocations to different targets."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/cdi-reference.adoc:808
+#: upstream/_guides/cdi-reference.adoc:807
 #, no-wrap
 msgid "Caching the Result of Programmatic Lookup"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:818
+#: upstream/_guides/cdi-reference.adoc:817
 msgid "In certain situations, it is practical to obtain a bean instance programmatically via an injected `javax.enterprise.inject.Instance` and `Instance.get()`.  However, according to the specification the `get()` method must identify the matching bean and obtain a contextual reference.  As a consequence, a new instance of a `@Dependent` bean is returned from each invocation of `get()`.  Moreover, this instance is a dependent object of the injected `Instance`.  This behavior is well-defined but it may lead to unexpected errors and memory leaks.  Therefore, Quarkus comes with the `io.quarkus.arc.WithCaching` annotation.  An injected `Instance` annotated with this annotation will cache the result of the `Instance#get()` operation.  The result is computed on the first call and the same value is returned for all subsequent calls, even for `@Dependent` beans."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:822
+#: upstream/_guides/cdi-reference.adoc:821
 #, no-wrap
 msgid "class Producer {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:825
+#: upstream/_guides/cdi-reference.adoc:824
 #, no-wrap
 msgid ""
 "  AtomicLong nextLong = new AtomicLong();\n"
@@ -1600,7 +1600,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:831
+#: upstream/_guides/cdi-reference.adoc:830
 #, no-wrap
 msgid ""
 "   @Dependent\n"
@@ -1611,7 +1611,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:838
+#: upstream/_guides/cdi-reference.adoc:837
 #, no-wrap
 msgid ""
 "   @Dependent\n"
@@ -1623,13 +1623,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:840
+#: upstream/_guides/cdi-reference.adoc:839
 #, no-wrap
 msgid "class Consumer {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:843
+#: upstream/_guides/cdi-reference.adoc:842
 #, no-wrap
 msgid ""
 "  @Inject\n"
@@ -1637,7 +1637,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:847
+#: upstream/_guides/cdi-reference.adoc:846
 #, no-wrap
 msgid ""
 "  @Inject\n"
@@ -1646,7 +1646,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:853
+#: upstream/_guides/cdi-reference.adoc:852
 #, no-wrap
 msgid ""
 "  // this method should always return true\n"
@@ -1657,7 +1657,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:860
+#: upstream/_guides/cdi-reference.adoc:859
 #, no-wrap
 msgid ""
 "  // this method should always return false\n"
@@ -1669,34 +1669,34 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:863
+#: upstream/_guides/cdi-reference.adoc:862
 msgid "It is also possible to clear the cached value via `io.quarkus.arc.InjectableInstance.clearCache()`. In this case, you'll need to inject the Quarkus-specific `io.quarkus.arc.InjectableInstance` instead of `javax.enterprise.inject.Instance`."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/cdi-reference.adoc:864
+#: upstream/_guides/cdi-reference.adoc:863
 #, no-wrap
 msgid "Declaratively Choose Beans That Can Be Obtained by Programmatic Lookup"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:868
+#: upstream/_guides/cdi-reference.adoc:867
 msgid "It is sometimes useful to narrow down the set of beans that can be obtained by programmatic lookup via `javax.enterprise.inject.Instance`.  Typically, a user needs to choose the appropriate implementation of an interface based on a runtime configuration property."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:875
+#: upstream/_guides/cdi-reference.adoc:874
 msgid "Imagine that we have two beans implementing the interface `org.acme.Service`.  You can't inject the `org.acme.Service` directly unless your implementations declare a CDI qualifier.  However, you can inject the `Instance<Service>` instead, then iterate over all implementations and choose the correct one manually.  Alternatively, you can use the `@LookupIfProperty` and `@LookupUnlessProperty` annotations.  `@LookupIfProperty` indicates that a bean should only be obtained if a runtime configuration property matches the provided value.  `@LookupUnlessProperty`, on the other hand, indicates that a bean should only be obtained if a runtime configuration property does not match the provided value."
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/cdi-reference.adoc:876
+#: upstream/_guides/cdi-reference.adoc:875
 #, no-wrap
 msgid "`@LookupIfProperty` Example"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:882
+#: upstream/_guides/cdi-reference.adoc:881
 #, no-wrap
 msgid ""
 " interface Service {\n"
@@ -1705,7 +1705,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:886
+#: upstream/_guides/cdi-reference.adoc:885
 #, no-wrap
 msgid ""
 " @LookupIfProperty(name = \"service.foo.enabled\", stringValue = \"true\")\n"
@@ -1714,7 +1714,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:891
+#: upstream/_guides/cdi-reference.adoc:890
 #, no-wrap
 msgid ""
 "    public String name() {\n"
@@ -1724,7 +1724,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:894
+#: upstream/_guides/cdi-reference.adoc:893
 #, no-wrap
 msgid ""
 " @ApplicationScoped\n"
@@ -1732,7 +1732,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:899
+#: upstream/_guides/cdi-reference.adoc:898
 #, no-wrap
 msgid ""
 "    public String name() {\n"
@@ -1742,7 +1742,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:902
+#: upstream/_guides/cdi-reference.adoc:901
 #, no-wrap
 msgid ""
 " @ApplicationScoped\n"
@@ -1750,7 +1750,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:905
+#: upstream/_guides/cdi-reference.adoc:904
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -1758,7 +1758,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cdi-reference.adoc:912
+#: upstream/_guides/cdi-reference.adoc:911
 #, no-wrap
 msgid ""
 "    void printServiceName() {\n"
@@ -1769,75 +1769,154 @@ msgid ""
 " }\n"
 msgstr ""
 
+#. type: Title ===
+#: upstream/_guides/cdi-reference.adoc:913
+#, no-wrap
+msgid "Injecting Multiple Bean Instances Intuitively"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/cdi-reference.adoc:919
+msgid "In CDI, it's possible to inject multiple bean instances (aka contextual references) via the `javax.enterprise.inject.Instance` which implements `java.lang.Iterable`.  However, it's not exactly intuitive.  Therefore, a new way was introduced in Quarkus - you can inject a `java.util.List` annotated with the `io.quarkus.arc.All` qualifier.  The type of elements in the list is used as the required type when performing the lookup."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/cdi-reference.adoc:924
+#: upstream/_guides/cdi-reference.adoc:944
+#, no-wrap
+msgid ""
+"@ApplicationScoped\n"
+"public class Processor {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/cdi-reference.adoc:929
+#, no-wrap
+msgid ""
+"     @Inject\n"
+"     @All\n"
+"     List<Service> services; <1> <2>\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/cdi-reference.adoc:931
+msgid "The injected instance is an _immutable list_ of the contextual references of the _disambiguated_ beans."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/cdi-reference.adoc:932
+msgid "For this injection point the required type is `Service` and no additional qualifiers are declared."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/cdi-reference.adoc:934
+msgid "By default, the list of beans is sorted by priority as defined by `io.quarkus.arc.InjectableBean#getPriority()`. Higher priority goes first. In general, the `@javax.annotation.Priority` and `@io.quarkus.arc.Priority` annotations can be used to assign the priority to a class bean, producer method or producer field."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/cdi-reference.adoc:936
+msgid "If an injection point declares no other qualifier than `@All` then `@Any` is used, i.e. the behavior is equivalent to `@Inject @Any Instance<Service>`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/cdi-reference.adoc:939
+msgid "You can also inject a list of bean instances wrapped in `io.quarkus.arc.InstanceHandle`.  This can be useful if you need to inspect the related bean metadata."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/cdi-reference.adoc:948
+#, no-wrap
+msgid ""
+"     @Inject\n"
+"     @All\n"
+"     List<InstanceHandle<Service>> services;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/cdi-reference.adoc:958
+#, no-wrap
+msgid ""
+"     public void doSomething() {\n"
+"       for (InstanceHandle<Service> handle : services) {\n"
+"         if (handle.getBean().getScope().equals(Dependent.class)) {\n"
+"           handle.get().process();\n"
+"           break;\n"
+"         }\n"
+"       }\n"
+"     }\n"
+"}\n"
+msgstr ""
+
 #. type: Title ==
-#: upstream/_guides/cdi-reference.adoc:916
+#: upstream/_guides/cdi-reference.adoc:961
 #, no-wrap
 msgid "Build Time Extensions"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:922
-msgid "Quarkus incorporates build-time optimizations in order to provide instant startup and low memory footprint.  The downside of this approach is that CDI Portable Extensions cannot be supported.  Nevertheless, most of the functionality can be achieved using Quarkus link:writing-extensions[extensions].  See the link:cdi-integration[integration guide] for more information."
+#: upstream/_guides/cdi-reference.adoc:967
+msgid "Quarkus incorporates build-time optimizations in order to provide instant startup and low memory footprint.  The downside of this approach is that CDI Portable Extensions cannot be supported.  Nevertheless, most of the functionality can be achieved using Quarkus xref:writing-extensions.adoc[extensions].  See the xref:cdi-integration.adoc[integration guide] for more information."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/cdi-reference.adoc:923
+#: upstream/_guides/cdi-reference.adoc:968
 #, no-wrap
 msgid "Development Mode"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:926
+#: upstream/_guides/cdi-reference.adoc:971
 msgid "In the development mode, two special endpoints are registered automatically to provide some basic debug info in the JSON format:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:928
+#: upstream/_guides/cdi-reference.adoc:973
 msgid "HTTP GET `/q/arc` - returns the summary; number of beans, config properties, etc."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:929
+#: upstream/_guides/cdi-reference.adoc:974
 msgid "HTTP GET `/q/arc/beans` - returns the list of all beans"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:930
+#: upstream/_guides/cdi-reference.adoc:975
 msgid "You can use query params to filter the output:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:931
+#: upstream/_guides/cdi-reference.adoc:976
 msgid "`scope` - include beans with scope that ends with the given value, i.e. `http://localhost:8080/q/arc/beans?scope=ApplicationScoped`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:932
+#: upstream/_guides/cdi-reference.adoc:977
 msgid "`beanClass` - include beans with bean class that starts with the given value, i.e. `http://localhost:8080/q/arc/beans?beanClass=org.acme.Foo`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:933
+#: upstream/_guides/cdi-reference.adoc:978
 msgid "`kind` - include beans of the specified kind (`CLASS`, `PRODUCER_FIELD`, `PRODUCER_METHOD`, `INTERCEPTOR` or `SYNTHETIC`), i.e. `http://localhost:8080/q/arc/beans?kind=PRODUCER_METHOD`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:934
+#: upstream/_guides/cdi-reference.adoc:979
 msgid "HTTP GET `/q/arc/removed-beans` - returns the list of unused beans removed during build"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:935
+#: upstream/_guides/cdi-reference.adoc:980
 msgid "HTTP GET `/q/arc/observers` - returns the list of all observer methods"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cdi-reference.adoc:937
+#: upstream/_guides/cdi-reference.adoc:982
 msgid "These endpoints are only available in the development mode, i.e. when you run your application via `mvn quarkus:dev` (or `./gradlew quarkusDev`)."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/cdi-reference.adoc:940
+#: upstream/_guides/cdi-reference.adoc:985
 #, no-wrap
 msgid "ArC Configuration Reference"
 msgstr ""

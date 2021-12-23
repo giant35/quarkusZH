@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:06+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -454,7 +454,7 @@ msgstr "使用注入"
 
 #. type: Plain text
 #: upstream/_guides/scripting.adoc:245
-msgid "Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  You can learn more about it in the link:cdi-reference[Contexts and Dependency Injection guide]."
+msgid "Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  You can learn more about it in the xref:cdi-reference.adoc[Contexts and Dependency Injection guide]."
 msgstr ""
 
 #. type: Plain text

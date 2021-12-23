@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-01 01:07+0000\n"
+"POT-Creation-Date: 2021-12-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jpa.adoc:12
-msgid "This guide demonstrates how your Quarkus application can use a database to store your user identities with link:hibernate-orm[Hibernate ORM] or link:hibernate-orm-panache[Hibernate ORM with Panache]."
+msgid "This guide demonstrates how your Quarkus application can use a database to store your user identities with xref:hibernate-orm.adoc[Hibernate ORM] or xref:hibernate-orm-panache.adoc[Hibernate ORM with Panache]."
 msgstr ""
 
 #. type: Title ==
@@ -769,5 +769,5 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jpa.adoc:420
-msgid "link:security[Quarkus Security]"
+msgid "xref:security.adoc[Quarkus Security]"
 msgstr ""
