@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-23 01:08+0000\n"
+"POT-Creation-Date: 2021-12-25 01:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3040,6 +3040,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/gradle-tooling"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "Discover how you can streamline the release process of your Quarkus applications with JReleaser."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Releasing your Quarkus applications with JReleaser"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/jreleaser"
 msgstr ""
 
 #. type: Hash Value - Key: description
