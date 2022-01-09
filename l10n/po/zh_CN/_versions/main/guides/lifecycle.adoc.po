@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-11 01:01+0000\n"
+"POT-Creation-Date: 2022-01-09 01:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -426,7 +426,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/lifecycle.adoc:187
-msgid "In CDI applications, an event with qualifier `@Initialized(ApplicationScoped.class)` is fired when the application context is initialized. See https://docs.jboss.org/cdi/spec/2.0/cdi-spec.html#application_context[the spec, window=\"_blank\"] for more info."
+msgid "In CDI applications, an event with qualifier `@Initialized(ApplicationScoped.class)` is fired when the application context is initialized. See https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#application_context[the spec, window=\"_blank\"] for more info."
 msgstr ""
 
 #. type: Title ===
