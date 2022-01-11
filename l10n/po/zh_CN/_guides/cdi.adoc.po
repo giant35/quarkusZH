@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-23 01:01+0000\n"
+"POT-Creation-Date: 2022-01-11 01:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:15
-msgid "In this guide we're going to describe the basic principles of the Quarkus programming model that is based on the http://docs.jboss.org/cdi/spec/2.0/cdi-spec.html[Contexts and Dependency Injection for Java 2.0, window=\"_blank\"] specification."
+msgid "In this guide we're going to describe the basic principles of the Quarkus programming model that is based on the https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html[Contexts and Dependency Injection for Java 2.0, window=\"_blank\"] specification."
 msgstr ""
 
 #. type: Title ==
@@ -207,7 +207,7 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_guides/cdi.adoc:106
-msgid "Yes, you can.  In fact, in CDI the \"setter injection\" is superseded by more powerful https://docs.jboss.org/cdi/spec/2.0/cdi-spec.html#initializer_methods[initializer methods, window=\"_blank\"].  Initializers may accept multiple parameters and don't have to follow the JavaBean naming conventions."
+msgid "Yes, you can.  In fact, in CDI the \"setter injection\" is superseded by more powerful https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#initializer_methods[initializer methods, window=\"_blank\"].  Initializers may accept multiple parameters and don't have to follow the JavaBean naming conventions."
 msgstr ""
 
 #. type: Block title
@@ -273,7 +273,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:137
-msgid "https://docs.jboss.org/cdi/spec/2.0/cdi-spec.html#qualifiers[Qualifiers, window=\"_blank\"] are annotations that help the container to distinguish beans that implement the same type.  As we already said a bean is assignable to an injection point if it has all the required qualifiers.  If you declare no qualifier at an injection point the `@Default` qualifier is assumed."
+msgid "https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#qualifiers[Qualifiers, window=\"_blank\"] are annotations that help the container to distinguish beans that implement the same type.  As we already said a bean is assignable to an injection point if it has all the required qualifiers.  If you declare no qualifier at an injection point the `@Default` qualifier is assumed."
 msgstr ""
 
 #. type: Plain text
@@ -329,7 +329,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:164
-msgid "`@Superior` is a https://docs.jboss.org/cdi/spec/2.0/cdi-spec.html#defining_qualifier_types[qualifier annotation, window=\"_blank\"]."
+msgid "`@Superior` is a https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#defining_qualifier_types[qualifier annotation, window=\"_blank\"]."
 msgstr ""
 
 #. type: Plain text
@@ -492,7 +492,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:217
-msgid "Indeed, the https://docs.jboss.org/cdi/spec/2.0/cdi-spec.html#client_proxies[client proxies, window=\"_blank\"] could be hard to grasp but they provide some useful functionality.  A client proxy is basically an object that delegates all method invocations to a target bean instance.  It's a container construct that implements `io.quarkus.arc.ClientProxy` and extends the bean class."
+msgid "Indeed, the https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#client_proxies[client proxies, window=\"_blank\"] could be hard to grasp but they provide some useful functionality.  A client proxy is basically an object that delegates all method invocations to a target bean instance.  It's a container construct that implements `io.quarkus.arc.ClientProxy` and extends the bean class."
 msgstr ""
 
 #. type: Plain text
@@ -537,7 +537,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:243
-msgid "The `Translator_ClientProxy` instance is always injected instead of a direct reference to a https://docs.jboss.org/cdi/spec/2.0/cdi-spec.html#contextual_instance[contextual instance, window=\"_blank\"] of the `Translator` bean."
+msgid "The `Translator_ClientProxy` instance is always injected instead of a direct reference to a https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#contextual_instance[contextual instance, window=\"_blank\"] of the `Translator` bean."
 msgstr ""
 
 #. type: Plain text
@@ -1073,10 +1073,10 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:479
-msgid "In this guide, we've covered some of the basic topics of the Quarkus programming model that is based on the http://docs.jboss.org/cdi/spec/2.0/cdi-spec.html[Contexts and Dependency Injection for Java 2.0, window=\"_blank\"] specification.  However, a full CDI implementation is not used under the hood.  Quarkus only implements a subset of the CDI features - see also <<cdi-reference.adoc#supported_features,the list of supported features>> and <<cdi-reference.adoc#limitations,the list of limitations>>.  On the other hand, there are quite a few <<cdi-reference#nonstandard_features,non-standard features>> and <<cdi-reference.adoc#build_time_apis,Quarkus-specific APIs>>.  We believe that our efforts will drive the innovation of the CDI specification towards the build-time oriented developer stacks in the future."
+msgid "In this guide, we've covered some of the basic topics of the Quarkus programming model that is based on the https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html[Contexts and Dependency Injection for Java 2.0, window=\"_blank\"] specification.  However, a full CDI implementation is not used under the hood.  Quarkus only implements a subset of the CDI features - see also <<cdi-reference.adoc#supported_features,the list of supported features>> and <<cdi-reference.adoc#limitations,the list of limitations>>.  On the other hand, there are quite a few <<cdi-reference#nonstandard_features,non-standard features>> and <<cdi-reference.adoc#build_time_apis,Quarkus-specific APIs>>.  We believe that our efforts will drive the innovation of the CDI specification towards the build-time oriented developer stacks in the future."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:481
-msgid "If you wish to learn more about Quarkus-specific features and limitations there is a Quarkus xref:cdi-reference.adoc[CDI Reference Guide].  We also recommend you to read the http://docs.jboss.org/cdi/spec/2.0/cdi-spec.html[CDI specification] and the https://docs.jboss.org/weld/reference/latest/en-US/html/[Weld documentation] (Weld is a CDI Reference Implementation) to get acquainted with more complex topics."
+msgid "If you wish to learn more about Quarkus-specific features and limitations there is a Quarkus xref:cdi-reference.adoc[CDI Reference Guide].  We also recommend you to read the https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html[CDI specification] and the https://docs.jboss.org/weld/reference/latest/en-US/html/[Weld documentation] (Weld is a CDI Reference Implementation) to get acquainted with more complex topics."
 msgstr ""

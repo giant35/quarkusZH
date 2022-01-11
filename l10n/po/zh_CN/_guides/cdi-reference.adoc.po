@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-23 01:01+0000\n"
+"POT-Creation-Date: 2022-01-11 01:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:17
-msgid "Quarkus DI solution (also called ArC) is based on the http://docs.jboss.org/cdi/spec/2.0/cdi-spec.html[Contexts and Dependency Injection for Java 2.0, window=\"_blank\"] specification.  However, it is not a full CDI implementation verified by the TCK.  Only a subset of the CDI features is implemented - see also <<supported_features,the list of supported features>> and <<limitations,the list of limitations>>."
+msgid "Quarkus DI solution (also called ArC) is based on the https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html[Contexts and Dependency Injection for Java 2.0, window=\"_blank\"] specification.  However, it is not a full CDI implementation verified by the TCK.  Only a subset of the CDI features is implemented - see also <<supported_features,the list of supported features>> and <<limitations,the list of limitations>>."
 msgstr ""
 
 #. type: Plain text
@@ -48,7 +48,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:28
-msgid "Bean discovery in CDI is a complex process which involves legacy deployment structures and accessibility requirements of the underlying module architecture.  However, Quarkus is using a *simplified bean discovery*.  There is only single bean archive with the https://docs.jboss.org/cdi/spec/2.0/cdi-spec.html#default_bean_discovery[bean discovery mode `annotated`, window=\"_blank\"] and no visibility boundaries."
+msgid "Bean discovery in CDI is a complex process which involves legacy deployment structures and accessibility requirements of the underlying module architecture.  However, Quarkus is using a *simplified bean discovery*.  There is only single bean archive with the https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#default_bean_discovery[bean discovery mode `annotated`, window=\"_blank\"] and no visibility boundaries."
 msgstr ""
 
 #. type: Plain text
@@ -83,7 +83,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:41
-msgid "Bean classes that don't have a http://docs.jboss.org/cdi/spec/2.0/cdi-spec.html#bean_defining_annotations[bean defining annotation, window=\"_blank\"] are not discovered.  This behavior is defined by CDI.  But producer methods and fields and observer methods are discovered even if the declaring class is not annotated with a bean defining annotation (this behavior is different to what is defined in CDI).  In fact, the declaring bean classes are considered annotated with `@Dependent`."
+msgid "Bean classes that don't have a https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#bean_defining_annotations[bean defining annotation, window=\"_blank\"] are not discovered.  This behavior is defined by CDI.  But producer methods and fields and observer methods are discovered even if the declaring class is not annotated with a bean defining annotation (this behavior is different to what is defined in CDI).  In fact, the declaring bean classes are considered annotated with `@Dependent`."
 msgstr ""
 
 #. type: Plain text
