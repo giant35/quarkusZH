@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-01-09 01:07+0000\n"
+"POT-Creation-Date: 2022-01-14 01:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1459,6 +1459,12 @@ msgstr ""
 
 #. type: Title ===
 #: upstream/_versions/main/guides/datasource.adoc:691
+#, no-wrap
+msgid "Reactive Oracle Specific Configuration"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_versions/main/guides/datasource.adoc:695
 #, no-wrap
 msgid "Reactive PostgreSQL Specific Configuration"
 msgstr ""
