@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:23+0000\n"
+"POT-Creation-Date: 2022-01-16 01:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_versions/main/guides/status-include.adoc:14
-msgid "In _preview_, backward compatibility and presence in the ecosystem is not guaranteed.  Specific improvements might require to change configuration or APIs and plans to become _stable_ are under way.  Feedback is welcome on our https://groups.google.com/d/forum/quarkus-dev[mailing list] or as issues in our https://github.com/quarkusio/quarkus/issues[GitHub issue tracker]."
+msgid "In _preview_, backward compatibility and presence in the ecosystem is not guaranteed.  Specific improvements might require changing configuration or APIs, and plans to become _stable_ are under way.  Feedback is welcome on our https://groups.google.com/d/forum/quarkus-dev[mailing list] or as issues in our https://github.com/quarkusio/quarkus/issues[GitHub issue tracker]."
 msgstr ""
 
 #. type: delimited block =

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-09 00:58+0000\n"
+"POT-Creation-Date: 2022-01-16 01:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,29 +115,40 @@ msgstr ""
 msgid "Contexts"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:55
-msgid "To get access to your application beans and services, be aware that a `@QuarkusMain` instance is an application scoped bean by default. It has access to singletons, application and dependent scoped beans. If you want to interact with beans that requires a request scope put a `@ActivateRequestContext` on your `run()` method."
+#. type: Block title
+#: upstream/_versions/main/guides/command-mode-reference.adoc:54
+#, no-wrap
+msgid "Got a `ContextNotActiveException`?"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:57
-msgid "This let `run()` have access to methods like `listAll()` and `query*` methods on a Panache Entity. Without it you will eventually get a `ContextNotActiveException` when accessing such classes/beans."
+#: upstream/_versions/main/guides/command-mode-reference.adoc:59
+msgid "A command mode application (like a CLI) is a bit different from say a HTTP service, there is a single call from the command line.  So the notion of _request_ let alone multiple requests does not exist per se.  Therefore request scope is not the default."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/command-mode-reference.adoc:62
+msgid "To get access to your application beans and services, be aware that a `@QuarkusMain` instance is an application scoped bean by default.  It has access to singletons, application and dependent scoped beans."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/command-mode-reference.adoc:66
+msgid "If you want to interact with beans that requires a request scope, simply add the `@ActivateRequestContext` annotation on your `run()` method.  This let `run()` have access to methods like `listAll()` and `query*` methods on a Panache Entity.  Without it you will eventually get a `ContextNotActiveException` when accessing such classes/beans."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/command-mode-reference.adoc:58
+#: upstream/_versions/main/guides/command-mode-reference.adoc:68
 #, no-wrap
 msgid "Main method"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:60
+#: upstream/_versions/main/guides/command-mode-reference.adoc:70
 msgid "If we want to use a Java main to run the application main it would look like:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/command-mode-reference.adoc:65
+#: upstream/_versions/main/guides/command-mode-reference.adoc:75
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.Quarkus;\n"
@@ -145,7 +156,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/command-mode-reference.adoc:68
+#: upstream/_versions/main/guides/command-mode-reference.adoc:78
 #, no-wrap
 msgid ""
 "@QuarkusMain\n"
@@ -153,7 +164,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/command-mode-reference.adoc:73
+#: upstream/_versions/main/guides/command-mode-reference.adoc:83
 #, no-wrap
 msgid ""
 "    public static void main(String... args) {\n"
@@ -163,132 +174,132 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:77
+#: upstream/_versions/main/guides/command-mode-reference.adoc:87
 msgid "This is effectively the same as running the `HelloWorldMain` application main directly, but has the advantage it can be run from the IDE."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:79
+#: upstream/_versions/main/guides/command-mode-reference.adoc:89
 msgid "If a class that implements `QuarkusApplication` and has a Java main then the Java main will be run."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:84
+#: upstream/_versions/main/guides/command-mode-reference.adoc:94
 msgid "It is recommended that a Java main perform very little logic, and just launch the application main. In development mode the Java main will run in a different ClassLoader to the main application, so may not behave as you would expect."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_versions/main/guides/command-mode-reference.adoc:85
+#: upstream/_versions/main/guides/command-mode-reference.adoc:95
 #, no-wrap
 msgid "Multiple Main Methods"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:91
+#: upstream/_versions/main/guides/command-mode-reference.adoc:101
 msgid "It is possible to have multiple main methods in an application, and select between them at build time.  The `@QuarkusMain` annotation takes an optional 'name' parameter, and this can be used to select the main to run using the `quarkus.package.main-class` build time configuration option. If you don't want to use annotations this can also be used to specify the fully qualified name of a main class."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:95
+#: upstream/_versions/main/guides/command-mode-reference.adoc:105
 msgid "By default the `@QuarkusMain` with no name (i.e. the empty string) will be used, and if it is not present and `quarkus.package.main-class` is not specified then Quarkus will automatically generate a main class that just runs the application."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:99
+#: upstream/_versions/main/guides/command-mode-reference.adoc:109
 msgid "The `name` of `@QuarkusMain` must be unique (including the default of the empty string). If you have multiple `@QuarkusMain` annotations in your application the build will fail if the names are not unique."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/command-mode-reference.adoc:100
+#: upstream/_versions/main/guides/command-mode-reference.adoc:110
 #, no-wrap
 msgid "The command mode lifecycle"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:103
+#: upstream/_versions/main/guides/command-mode-reference.adoc:113
 msgid "When running a command mode application the basic lifecycle is as follows:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:105
+#: upstream/_versions/main/guides/command-mode-reference.adoc:115
 msgid "Start Quarkus"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:106
+#: upstream/_versions/main/guides/command-mode-reference.adoc:116
 msgid "Run the `QuarkusApplication` main method"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:107
+#: upstream/_versions/main/guides/command-mode-reference.adoc:117
 msgid "Shut down Quarkus and exit the JVM after the main method returns"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:111
+#: upstream/_versions/main/guides/command-mode-reference.adoc:121
 msgid "Shutdown is always initiated by the application main thread returning. If you want to run some logic on startup, and then run like a normal application (i.e. not exit) then you should call `Quarkus.waitForExit` from the main thread (A non-command mode application is essentially just running an application that just calls `waitForExit`)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:114
+#: upstream/_versions/main/guides/command-mode-reference.adoc:124
 msgid "If you want to shut down a running application and you are not in the main thread then you should call `Quarkus.asyncExit` in order to unblock the main thread and initiate the shutdown process."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/command-mode-reference.adoc:115
+#: upstream/_versions/main/guides/command-mode-reference.adoc:125
 #, no-wrap
 msgid "Development Mode"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:118
+#: upstream/_versions/main/guides/command-mode-reference.adoc:128
 msgid "Also for command mode applications the dev mode is supported. When you run `mvn quarkus:dev`, the command mode application is executed."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:120
+#: upstream/_versions/main/guides/command-mode-reference.adoc:130
 msgid "As command mode applications will often require arguments to be passed on the commandline, this is also possible in dev mode via the `quarkus.args` system property. For example `mvn quarkus:dev -Dquarkus.args='--help'` and the same can be achieved with Gradle: `./gradlew quarkusDev --quarkus-args='--help'`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:122
+#: upstream/_versions/main/guides/command-mode-reference.adoc:132
 msgid "You should see the following down the bottom of the screen after the application is stopped:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/command-mode-reference.adoc:125
+#: upstream/_versions/main/guides/command-mode-reference.adoc:135
 #, no-wrap
 msgid "--\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/command-mode-reference.adoc:127
+#: upstream/_versions/main/guides/command-mode-reference.adoc:137
 msgid "Press [space] to restart, [e] to edit command line args (currently '-w --tags 1.0.1.Final'), [r] to resume testing, [o] Toggle test output, [h] for more options>"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:131
+#: upstream/_versions/main/guides/command-mode-reference.adoc:141
 msgid "You can press the `Space bar` key and the application will be started again.  You can also use the `e` hotkey to edit the command line arguments and restart your application."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/command-mode-reference.adoc:132
+#: upstream/_versions/main/guides/command-mode-reference.adoc:142
 #, no-wrap
 msgid "Testing Command Mode Applications"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:137
+#: upstream/_versions/main/guides/command-mode-reference.adoc:147
 msgid "Command Mode applications can be tested using the `@QuarkusMainTest` and `@QuarkusMainIntegrationTest` annotations. These work in a similar way to `@QuarkusTest` and `@QuarkusIntegrationTest` where `@QuarkusMainTest` will run the CLI tests within the current JVM, while `QuarkusIntegrationTest` is used to run the generated executable (both jars and native)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:139
+#: upstream/_versions/main/guides/command-mode-reference.adoc:149
 msgid "We can write a simple test for our CLI application above as follows:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/command-mode-reference.adoc:148
+#: upstream/_versions/main/guides/command-mode-reference.adoc:158
 #, no-wrap
 msgid ""
 "import io.quarkus.test.junit.main.Launch;\n"
@@ -300,7 +311,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/command-mode-reference.adoc:151
+#: upstream/_versions/main/guides/command-mode-reference.adoc:161
 #, no-wrap
 msgid ""
 "@QuarkusMainTest\n"
@@ -308,7 +319,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/command-mode-reference.adoc:157
+#: upstream/_versions/main/guides/command-mode-reference.adoc:167
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -319,7 +330,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/command-mode-reference.adoc:162
+#: upstream/_versions/main/guides/command-mode-reference.adoc:172
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -329,7 +340,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/command-mode-reference.adoc:170
+#: upstream/_versions/main/guides/command-mode-reference.adoc:180
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -342,18 +353,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/command-mode-reference.adoc:174
+#: upstream/_versions/main/guides/command-mode-reference.adoc:184
 msgid "We can then extend this with an integration test that can be used to test the native executable or runnable jar:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/command-mode-reference.adoc:178
+#: upstream/_versions/main/guides/command-mode-reference.adoc:188
 #, no-wrap
 msgid "import io.quarkus.test.junit.main.QuarkusMainIntegrationTest;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/command-mode-reference.adoc:182
+#: upstream/_versions/main/guides/command-mode-reference.adoc:192
 #, no-wrap
 msgid ""
 "@QuarkusMainIntegrationTest\n"
