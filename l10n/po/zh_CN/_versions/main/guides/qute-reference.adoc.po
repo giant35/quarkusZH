@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-01-15 01:08+0000\n"
+"POT-Creation-Date: 2022-01-20 01:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3336,7 +3336,7 @@ msgstr ""
 msgid "`{#if counter.mod(5) == 0}`"
 msgstr ""
 
-#. type: Title ====
+#. type: Title =====
 #: upstream/_versions/main/guides/qute-reference.adoc:1575
 #, no-wrap
 msgid "Strings"
@@ -3496,7 +3496,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:1620
-msgid "`{time:format(myDate,'d MMM uuuu',myTimeZoneId)}`"
+msgid "`{time:format(myDate,'d MMM uuuu',myLocale,myTimeZoneId)}`"
 msgstr ""
 
 #. type: Title ===

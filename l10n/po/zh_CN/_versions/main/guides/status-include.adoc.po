@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-01-16 01:12+0000\n"
+"POT-Creation-Date: 2022-01-20 01:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,5 +38,5 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_versions/main/guides/status-include.adoc:20
-msgid "For a full list of possible extension statuses, check our https://quarkus.io/faq/#extension-status[FAQ entry]."
+msgid "For a full list of possible statuses, check our https://quarkus.io/faq/#extension-status[FAQ entry]."
 msgstr ""
