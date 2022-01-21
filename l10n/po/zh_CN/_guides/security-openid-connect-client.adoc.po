@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-25 01:02+0000\n"
+"POT-Creation-Date: 2022-01-21 01:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1345,7 +1345,6 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/security-openid-connect-client.adoc:775
-#: upstream/_guides/security-openid-connect-client.adoc:836
 #, no-wrap
 msgid ""
 "@RegisterRestClient\n"
@@ -1446,6 +1445,16 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
+#: upstream/_guides/security-openid-connect-client.adoc:836
+#, no-wrap
+msgid ""
+"@RegisterRestClient\n"
+"@JsonWebToken\n"
+"@Path(\"/\")\n"
+"public interface ProtectedResourceService {\n"
+msgstr ""
+
+#. type: delimited block -
 #: upstream/_guides/security-openid-connect-client.adoc:848
 #, no-wrap
 msgid ""
@@ -1459,7 +1468,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "@RegisterRestClient\n"
-"@RegisterProvider(JsonWebTokenTokenRequestFilter.class)\n"
+"@RegisterProvider(JsonWebTokenRequestFilter.class)\n"
 "@Path(\"/\")\n"
 "public interface ProtectedResourceService {\n"
 msgstr ""
