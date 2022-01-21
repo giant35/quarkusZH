@@ -1,6 +1,7 @@
 Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_posts/insights_1_transcription.adoc.po, 0, 254, 0, 8846 ,100%
 l10n/po/zh_CN/_posts/insights_0_transcription.adoc.po, 0, 117, 0, 3765 ,100%
+l10n/po/zh_CN/_posts/2022-01-20-quarkus-2-6-3-final-released.adoc.po, 0, 14, 0, 150 ,100%
 l10n/po/zh_CN/_posts/2022-01-13-quarkus-newsletter-16.adoc.po, 0, 6, 0, 168 ,100%
 l10n/po/zh_CN/_posts/2022-01-13-quarkus-insights-qanda3.adoc.po, 0, 6, 0, 100 ,100%
 l10n/po/zh_CN/_posts/2022-01-13-quarkus-aws-cloudwatch_extension.adoc.po, 0, 54, 0, 1311 ,100%
@@ -252,7 +253,7 @@ l10n/po/zh_CN/_guides/topic/architecture.adoc.po, 0, 18, 0, 681 ,100%
 l10n/po/zh_CN/_guides/tooling.adoc.po, 0, 18, 0, 159 ,100%
 l10n/po/zh_CN/_guides/tika.adoc.po, 0, 58, 0, 756 ,100%
 l10n/po/zh_CN/_guides/tests-with-coverage.adoc.po, 0, 86, 0, 1171 ,100%
-l10n/po/zh_CN/_guides/status-include.adoc.po, 0, 5, 0, 124 ,100%
+l10n/po/zh_CN/_guides/status-include.adoc.po, 0, 5, 0, 122 ,100%
 l10n/po/zh_CN/_guides/spring-web.adoc.po, 0, 142, 0, 1425 ,100%
 l10n/po/zh_CN/_guides/spring-security.adoc.po, 0, 137, 0, 1569 ,100%
 l10n/po/zh_CN/_guides/spring-scheduled.adoc.po, 0, 85, 0, 971 ,100%
@@ -278,7 +279,7 @@ l10n/po/zh_CN/_guides/security-openid-connect.adoc.po, 0, 287, 0, 5148 ,100%
 l10n/po/zh_CN/_guides/security-openid-connect-web-authentication.adoc.po, 0, 358, 0, 7209 ,100%
 l10n/po/zh_CN/_guides/security-openid-connect-multitenancy.adoc.po, 0, 143, 0, 1940 ,100%
 l10n/po/zh_CN/_guides/security-openid-connect-dev-services.adoc.po, 0, 133, 0, 3261 ,100%
-l10n/po/zh_CN/_guides/security-openid-connect-client.adoc.po, 0, 210, 0, 3635 ,100%
+l10n/po/zh_CN/_guides/security-openid-connect-client.adoc.po, 0, 211, 0, 3641 ,100%
 l10n/po/zh_CN/_guides/security-oauth2.adoc.po, 0, 110, 0, 1812 ,100%
 l10n/po/zh_CN/_guides/security-ldap.adoc.po, 0, 68, 0, 791 ,100%
 l10n/po/zh_CN/_guides/security-keycloak-authorization.adoc.po, 0, 150, 0, 2264 ,100%
@@ -344,7 +345,7 @@ l10n/po/zh_CN/_guides/kubernetes-config.adoc.po, 0, 47, 0, 911 ,100%
 l10n/po/zh_CN/_guides/kubernetes-client.adoc.po, 0, 94, 0, 1318 ,100%
 l10n/po/zh_CN/_guides/kotlin.adoc.po, 0, 124, 0, 1664 ,100%
 l10n/po/zh_CN/_guides/kogito.adoc.po, 0, 157, 0, 1927 ,100%
-l10n/po/zh_CN/_guides/kogito-pmml.adoc.po, 0, 62, 0, 696 ,100%
+l10n/po/zh_CN/_guides/kogito-pmml.adoc.po, 0, 62, 0, 703 ,100%
 l10n/po/zh_CN/_guides/kogito-drl.adoc.po, 0, 99, 0, 1110 ,100%
 l10n/po/zh_CN/_guides/kogito-dmn.adoc.po, 0, 101, 0, 1262 ,100%
 l10n/po/zh_CN/_guides/kogito-dev-services.adoc.po, 0, 25, 0, 361 ,100%
@@ -362,7 +363,7 @@ l10n/po/zh_CN/_guides/infinispan-client.adoc.po, 0, 150, 0, 2358 ,100%
 l10n/po/zh_CN/_guides/ide-tooling.adoc.po, 0, 50, 0, 249 ,100%
 l10n/po/zh_CN/_guides/ide-configuration.adoc.po, 0, 62, 0, 536 ,100%
 l10n/po/zh_CN/_guides/http-reference.adoc.po, 0, 174, 0, 1812 ,100%
-l10n/po/zh_CN/_guides/hibernate-search-orm-elasticsearch.adoc.po, 0, 259, 0, 3854 ,100%
+l10n/po/zh_CN/_guides/hibernate-search-orm-elasticsearch.adoc.po, 0, 249, 0, 3728 ,100%
 l10n/po/zh_CN/_guides/hibernate-reactive-panache.adoc.po, 0, 250, 0, 4072 ,100%
 l10n/po/zh_CN/_guides/hibernate-orm.adoc.po, 0, 321, 0, 5541 ,100%
 l10n/po/zh_CN/_guides/hibernate-orm-panache.adoc.po, 0, 279, 0, 4381 ,100%
@@ -411,8 +412,8 @@ l10n/po/zh_CN/_guides/config-reference.adoc.po, 0, 175, 0, 2268 ,100%
 l10n/po/zh_CN/_guides/config-mappings.adoc.po, 0, 186, 0, 1999 ,100%
 l10n/po/zh_CN/_guides/config-extending-support.adoc.po, 0, 103, 0, 1374 ,100%
 l10n/po/zh_CN/_guides/conditional-extension-dependencies.adoc.po, 0, 41, 0, 811 ,100%
-l10n/po/zh_CN/_guides/command-mode-reference.adoc.po, 0, 55, 0, 993 ,100%
-l10n/po/zh_CN/_guides/cli-tooling.adoc.po, 0, 84, 0, 1490 ,100%
+l10n/po/zh_CN/_guides/command-mode-reference.adoc.po, 0, 57, 0, 1044 ,100%
+l10n/po/zh_CN/_guides/cli-tooling.adoc.po, 0, 109, 0, 1728 ,100%
 l10n/po/zh_CN/_guides/class-loading-reference.adoc.po, 0, 63, 0, 1457 ,100%
 l10n/po/zh_CN/_guides/centralized-log-management.adoc.po, 0, 83, 0, 1238 ,100%
 l10n/po/zh_CN/_guides/cdi.adoc.po, 0, 167, 0, 2496 ,100%
