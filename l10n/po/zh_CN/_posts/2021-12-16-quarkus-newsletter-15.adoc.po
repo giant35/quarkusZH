@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-01-14 01:05+0000\n"
+"POT-Creation-Date: 2022-01-25 01:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-12-16-quarkus-newsletter-15.adoc:15
-msgid "Check out https://quarkus.io/newsletter/14/[Newsletter #15]!"
+msgid "Check out https://quarkus.io/newsletter/15/[Newsletter #15]!"
 msgstr ""
 
 #. type: Plain text
