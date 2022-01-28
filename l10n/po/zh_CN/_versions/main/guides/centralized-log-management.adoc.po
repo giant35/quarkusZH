@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 01:04+0000\n"
+"POT-Creation-Date: 2022-01-28 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -188,7 +188,7 @@ msgstr ""
 #: upstream/_versions/main/guides/centralized-log-management.adoc:176
 #: upstream/_versions/main/guides/centralized-log-management.adoc:265
 #: upstream/_versions/main/guides/centralized-log-management.adoc:351
-msgid "You can do this via the following docker-compose file that you can launch via `docker-compose run -d`:"
+msgid "You can do this via the following `docker-compose.yml` file that you can launch via `docker-compose up -d`:"
 msgstr ""
 
 #. type: delimited block -
