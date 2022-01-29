@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-01-20 01:15+0000\n"
+"POT-Creation-Date: 2022-01-29 00:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1244,7 +1244,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:573
-msgid "The loop section makes it possible to iterate over an instance of `Iterable`, `Iterator`, array, `Map` 's entry set, `Stream` and an `Integer`.  It has two flavors.  The first one is using the `each` name and `it` is an implicit alias for the iteration element."
+msgid "The loop section makes it possible to iterate over an instance of `Iterable`, `Iterator`, array, `Map` (element is a `Map.Entry`), `Stream`, `Integer` and `int` (primitive value).  It has two flavors.  The first one is using the `each` name and `it` is an implicit alias for the iteration element."
 msgstr ""
 
 #. type: delimited block -

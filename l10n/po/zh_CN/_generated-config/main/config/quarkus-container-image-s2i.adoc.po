@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:20+0000\n"
+"POT-Creation-Date: 2022-01-29 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,12 +60,6 @@ msgstr ""
 #: upstream/_generated-config/main/config/quarkus-container-image-s2i.adoc:80
 #, no-wrap
 msgid "string"
-msgstr ""
-
-#. type: Table
-#: upstream/_generated-config/main/config/quarkus-container-image-s2i.adoc:20
-#, no-wrap
-msgid "`registry.access.redhat.com/ubi8/openjdk-11`"
 msgstr ""
 
 #. type: Table
