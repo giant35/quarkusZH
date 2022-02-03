@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-23 01:01+0000\n"
+"POT-Creation-Date: 2022-02-03 00:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,17 +112,17 @@ msgstr ""
 #. type: Title ===
 #: upstream/_guides/security.adoc:45
 #, no-wrap
-msgid "OpenId Connect"
+msgid "OpenID Connect"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security.adoc:48
-msgid "`quarkus-oidc` extension provides a reactive, interoperable, multi-tenant enabled OpenId Connect adapter which supports `Bearer Token` and `Authorization Code Flow` authentication mechanisms."
+msgid "`quarkus-oidc` extension provides a reactive, interoperable, multi-tenant enabled OpenID Connect adapter which supports `Bearer Token` and `Authorization Code Flow` authentication mechanisms."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security.adoc:51
-msgid "`Bearer Token` mechanism extracts the token from HTTP `Authorization` header.  `Authorization Code Flow` mechanism uses OpenId Connect Authorization Code flow. It redirects the user to IDP to authenticate and completes the authentication process after the user has been redirected back to Quarkus by exchanging the provided code grant for ID, access and refresh tokens."
+msgid "`Bearer Token` mechanism extracts the token from HTTP `Authorization` header.  `Authorization Code Flow` mechanism uses OpenID Connect Authorization Code flow. It redirects the user to IDP to authenticate and completes the authentication process after the user has been redirected back to Quarkus by exchanging the provided code grant for ID, access and refresh tokens."
 msgstr ""
 
 #. type: Plain text
@@ -168,22 +168,22 @@ msgstr ""
 #. type: Title ===
 #: upstream/_guides/security.adoc:78
 #, no-wrap
-msgid "OpenId Connect Client and Filters"
+msgid "OpenID Connect Client and Filters"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security.adoc:81
-msgid "`quarkus-oidc-client` extension provides `OidcClient` for acquiring and refreshing access tokens from OpenId Connect and OAuth2 providers which support `client-credentials`, `password` and `refresh_token` token grants."
+msgid "`quarkus-oidc-client` extension provides `OidcClient` for acquiring and refreshing access tokens from OpenID Connect and OAuth2 providers which support `client-credentials`, `password` and `refresh_token` token grants."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security.adoc:83
-msgid "`quarkus-oidc-client-filter` extension depends on the `quarkus-oidc-client` extension and provides JAX-RS `OidcClientRequestFilter` which sets the access token acquired by `OidcClient` as an HTTP `Authorization` header's `Bearer` scheme value. This filter can be registered with MP RestClient implementations injected into the current Quarkus endpoint but it is not related to the authentication requirements of this service endpoint. For example, it can be a public endpoint or it can be protected with MTLS - the important point is that this Quarkus endpoint does not have to be protected itself with the Quarkus OpenId Connect adapter."
+msgid "`quarkus-oidc-client-filter` extension depends on the `quarkus-oidc-client` extension and provides JAX-RS `OidcClientRequestFilter` which sets the access token acquired by `OidcClient` as an HTTP `Authorization` header's `Bearer` scheme value. This filter can be registered with MP RestClient implementations injected into the current Quarkus endpoint but it is not related to the authentication requirements of this service endpoint. For example, it can be a public endpoint or it can be protected with MTLS - the important point is that this Quarkus endpoint does not have to be protected itself with the Quarkus OpenID Connect adapter."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security.adoc:85
-msgid "`quarkus-oidc-token-propagation` extension depends on the `quarkus-oidc` extension and provides JAX-RS `TokenCredentialRequestFilter` which sets the OpenId Connect Bearer or Authorization Code Flow access token as an HTTP `Authorization` header's `Bearer` scheme value. This filter can be registered with MP RestClient implementations injected into the current Quarkus endpoint and the Quarkus endpoint must be protected itself with the Quarkus OpenId Connect adapter. This filter can be used to propagate the access token to the downstream services."
+msgid "`quarkus-oidc-token-propagation` extension depends on the `quarkus-oidc` extension and provides JAX-RS `TokenCredentialRequestFilter` which sets the OpenID Connect Bearer or Authorization Code Flow access token as an HTTP `Authorization` header's `Bearer` scheme value. This filter can be registered with MP RestClient implementations injected into the current Quarkus endpoint and the Quarkus endpoint must be protected itself with the Quarkus OpenID Connect adapter. This filter can be used to propagate the access token to the downstream services."
 msgstr ""
 
 #. type: Plain text
@@ -236,12 +236,12 @@ msgstr ""
 #. type: Title ===
 #: upstream/_guides/security.adoc:106
 #, no-wrap
-msgid "Choosing between OpenId Connect, SmallRye JWT and OAuth2 extensions"
+msgid "Choosing between OpenID Connect, SmallRye JWT and OAuth2 extensions"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security.adoc:109
-msgid "`quarkus-oidc` extension requires an OpenId Connect provider such as Keycloak which can be used to verify the Bearer tokens or authenticate the end users with the Authorization Code flow. In both cases `quarkus-oidc` requires a connection to this OpenId Connect provider."
+msgid "`quarkus-oidc` extension requires an OpenID Connect provider such as Keycloak which can be used to verify the Bearer tokens or authenticate the end users with the Authorization Code flow. In both cases `quarkus-oidc` requires a connection to this OpenID Connect provider."
 msgstr ""
 
 #. type: Plain text
@@ -256,12 +256,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security.adoc:115
-msgid "If you have Bearer tokens in a JWT format then all these 3 extensions can be used. Both `quarkus-oidc` and `quarkus-smallrye-jwt` support refreshing the JsonWebKey (JWK) set when the OpenId Connect provider rotates the keys, therefore `quarkus-oidc` or `quarkus-smallrye-jwt` should be used for verifying JWT tokens if the remote token introspection has to be avoided or not supported by the providers."
+msgid "If you have Bearer tokens in a JWT format then all these 3 extensions can be used. Both `quarkus-oidc` and `quarkus-smallrye-jwt` support refreshing the JsonWebKey (JWK) set when the OpenID Connect provider rotates the keys, therefore `quarkus-oidc` or `quarkus-smallrye-jwt` should be used for verifying JWT tokens if the remote token introspection has to be avoided or not supported by the providers."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security.adoc:117
-msgid "`quarkus-smallrye-jwt` does not support the remote introspection of the opaque tokens or even JWT tokens - it always relies on the locally available keys - possibly fetched from the OpenId Connect provider. So if you need to introspect the JWT tokens remotely then both `quarkus-oidc` and `quarkus-elytron-security-oauth2` will work. Both extensions also support the verification of the opaque/binary tokens via the remote introspection."
+msgid "`quarkus-smallrye-jwt` does not support the remote introspection of the opaque tokens or even JWT tokens - it always relies on the locally available keys - possibly fetched from the OpenID Connect provider. So if you need to introspect the JWT tokens remotely then both `quarkus-oidc` and `quarkus-elytron-security-oauth2` will work. Both extensions also support the verification of the opaque/binary tokens via the remote introspection."
 msgstr ""
 
 #. type: Plain text

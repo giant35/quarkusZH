@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-23 01:01+0000\n"
+"POT-Creation-Date: 2022-02-03 00:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,18 +69,8 @@ msgid "Prerequisites"
 msgstr "准备"
 
 #. type: Plain text
-#: upstream/_guides/deploying-to-azure-cloud.adoc:22
-msgid "For this guide you need:"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/deploying-to-azure-cloud.adoc:24
-msgid "roughly 2 hours for all modalities"
-msgstr ""
-
-#. type: Plain text
 #: upstream/_guides/deploying-to-azure-cloud.adoc:25
-msgid "having access to an Azure subscription. https://azure.microsoft.com/free/?WT.mc_id=opensource-quarkus-brborges[Get a free one here]"
+msgid "Having access to an Azure subscription. https://azure.microsoft.com/free/?WT.mc_id=opensource-quarkus-brborges[Get a free one here]"
 msgstr ""
 
 #. type: Plain text

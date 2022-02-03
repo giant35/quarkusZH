@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-01-08 01:09+0000\n"
+"POT-Creation-Date: 2022-02-03 01:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -515,6 +515,24 @@ msgstr ""
 msgid "/guides/writing-native-applications-tips"
 msgstr ""
 
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "Explore in more details how to debug native executables."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Native Reference"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/native-reference"
+msgstr ""
+
 #. type: Hash Value - Key: cat-id
 #: >categories>
 #, no-wrap
@@ -999,6 +1017,25 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
+msgid "Reactive API for Hibernate ORM"
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, fuzzy, no-wrap
+#| msgid "Getting Started with Reactive"
+msgid "Using Hibernate Reactive"
+msgstr "响应式入门"
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/hibernate-reactive"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
 msgid "Simplified reactive ORM layer based on Hibernate Reactive."
 msgstr ""
 
@@ -1143,6 +1180,24 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
+msgid "Learn how to customize the Redis client to your needs."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Redis Reference"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/redis-reference"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
 msgid "Start Redis automatically in dev and test modes."
 msgstr ""
 
@@ -1234,6 +1289,96 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-amazon-services/dev/amazon-s3.html"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide covers how to use GCP BigQuery in Quarkus."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Google Cloud BigQuery"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/bigquery.html"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide covers how to use GCP Bigtable in Quarkus."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Google Cloud Bigtable"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/bigtable.html"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide covers how to use GCP Firestore in Quarkus."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Google Cloud Firestore"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/firestore.html"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide covers how to use GCP Spanner in Quarkus."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Google Cloud Spanner"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/spanner.html"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide covers how to use GCP Storage in Quarkus."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Google Cloud Storage"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/storage.html"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -1570,6 +1715,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/jms"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide covers how to use GCP PubSub in Quarkus."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Google Cloud PubSub"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/pubsub.html"
 msgstr ""
 
 #. type: Hash Value - Key: keywords
@@ -2247,6 +2410,42 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
+msgid "Learn how to use SmallRye Stork for service discovery and load balacing."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Stork"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/stork"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "Have a more in-depth look at how SmallRye Stork can be configured and used."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Stork Reference"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/stork-reference"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
 msgid "Learn how to build and push container images with Jib, S2I or Docker as part of the Quarkus build."
 msgstr ""
 
@@ -2722,6 +2921,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-amazon-services/dev/amazon-ssm.html"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide covers how to use multiple GCP services."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Access Google Cloud services"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/index.html"
 msgstr ""
 
 #. type: Hash Value - Key: cat-id
@@ -3514,6 +3731,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/performance-measure"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide covers how to use GCP Secret Manager in Quarkus to consume configuration properties directly or via your `application.properties`."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Consume Configuration from Google Cloud Secret Manager"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/secretmanager.html"
 msgstr ""
 
 #. type: Hash Value - Key: cat-id

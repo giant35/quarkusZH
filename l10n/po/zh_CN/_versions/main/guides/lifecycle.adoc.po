@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-01-09 01:06+0000\n"
+"POT-Creation-Date: 2022-02-03 00:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,130 +56,78 @@ msgstr ""
 msgid "Prerequisites"
 msgstr "准备"
 
-#. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:21
-msgid "To complete this guide, you need:"
-msgstr "要完成本指南，您需要："
-
-#. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:23
-msgid "less than 10 minutes"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:24
-msgid "an IDE"
-msgstr "IDE"
-
-#. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:25
-msgid "JDK 11+ installed with `JAVA_HOME` configured appropriately"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:26
-msgid "Apache Maven {maven-version}"
-msgstr ""
-
 #. type: Title ==
-#: upstream/_versions/main/guides/lifecycle.adoc:27
+#: upstream/_versions/main/guides/lifecycle.adoc:22
 #, no-wrap
 msgid "Solution"
 msgstr "完整源码"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:31
+#: upstream/_versions/main/guides/lifecycle.adoc:26
 msgid "We recommend that you follow the instructions in the next sections and create the application step by step.  However, you can go right to the completed example."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:33
+#: upstream/_versions/main/guides/lifecycle.adoc:28
 msgid "Clone the Git repository: `git clone {quickstarts-clone-url}`, or download an {quickstarts-archive-url}[archive]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:35
+#: upstream/_versions/main/guides/lifecycle.adoc:30
 msgid "The solution is located in the `lifecycle-quickstart` {quickstarts-tree-url}/lifecycle-quickstart[directory]."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/lifecycle.adoc:36
+#: upstream/_versions/main/guides/lifecycle.adoc:31
 #, no-wrap
 msgid "Creating the Maven project"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:39
+#: upstream/_versions/main/guides/lifecycle.adoc:34
 msgid "First, we need a new project. Create a new project with the following command:"
 msgstr ""
 
-#. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:48
-#, no-wrap
-msgid ""
-"mvn io.quarkus.platform:quarkus-maven-plugin:{quarkus-version}:create \\\n"
-"    -DprojectGroupId=org.acme \\\n"
-"    -DprojectArtifactId=lifecycle-quickstart \\\n"
-"    -DclassName=\"org.acme.lifecycle.GreetingResource\" \\\n"
-"    -Dpath=\"/hello\"\n"
-"cd lifecycle-quickstart\n"
-msgstr ""
-
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:51
+#: upstream/_versions/main/guides/lifecycle.adoc:39
 msgid "It generates:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:53
+#: upstream/_versions/main/guides/lifecycle.adoc:41
 msgid "the Maven structure"
 msgstr "Maven 目录结构"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:54
-msgid "a landing page accessible on `http://localhost:8080`"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:55
+#: upstream/_versions/main/guides/lifecycle.adoc:42
 msgid "example `Dockerfile` files for both `native` and `jvm` modes"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:56
+#: upstream/_versions/main/guides/lifecycle.adoc:43
 msgid "the application configuration file"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:57
-msgid "an `org.acme.lifecycle.GreetingResource` resource"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:58
-msgid "an associated test"
-msgstr ""
-
 #. type: Title ==
-#: upstream/_versions/main/guides/lifecycle.adoc:59
+#: upstream/_versions/main/guides/lifecycle.adoc:44
 #, no-wrap
 msgid "The main method"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:63
+#: upstream/_versions/main/guides/lifecycle.adoc:48
 msgid "By default Quarkus will automatically generate a main method, that will bootstrap Quarkus and then just wait for shutdown to be initiated. Let's provide our own main method:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:66
-#: upstream/_versions/main/guides/lifecycle.adoc:102
+#: upstream/_versions/main/guides/lifecycle.adoc:51
+#: upstream/_versions/main/guides/lifecycle.adoc:87
 #, no-wrap
 msgid "package com.acme;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:69
+#: upstream/_versions/main/guides/lifecycle.adoc:54
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.annotations.QuarkusMain;\n"
@@ -187,7 +135,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:72
+#: upstream/_versions/main/guides/lifecycle.adoc:57
 #, no-wrap
 msgid ""
 "@QuarkusMain  <1>\n"
@@ -195,7 +143,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:78
+#: upstream/_versions/main/guides/lifecycle.adoc:63
 #, no-wrap
 msgid ""
 "    public static void main(String ... args) {\n"
@@ -206,42 +154,42 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:80
+#: upstream/_versions/main/guides/lifecycle.adoc:65
 msgid "This annotation tells Quarkus to use this as the main method, unless it is overridden in the config"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:81
+#: upstream/_versions/main/guides/lifecycle.adoc:66
 msgid "This launches Quarkus"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:85
+#: upstream/_versions/main/guides/lifecycle.adoc:70
 msgid "This main class will bootstrap Quarkus and run it until it stops. This is no different to the automatically generated main class, but has the advantage that you can just launch it directly from the IDE without needing to run a Maven or Gradle command."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:89
+#: upstream/_versions/main/guides/lifecycle.adoc:74
 msgid "It is not recommenced to do any business logic in this main method, as Quarkus has not been set up yet, and Quarkus may run in a different ClassLoader. If you want to perform logic on startup use an `io.quarkus.runtime.QuarkusApplication` as described below."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:93
+#: upstream/_versions/main/guides/lifecycle.adoc:78
 msgid "If we want to actually perform business logic on startup (or write applications that complete a task and then exit)  we need to supply a `io.quarkus.runtime.QuarkusApplication` class to the run method. After Quarkus has been started the `run` method of the application will be invoked. When this method returns the Quarkus application will exit."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:96
+#: upstream/_versions/main/guides/lifecycle.adoc:81
 msgid "If you want to perform logic on startup you should call `Quarkus.waitForExit()`, this method will wait until a shutdown is requested (either from an external signal like when you press `Ctrl+C` or because a thread has called `Quarkus.asyncExit()`)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:98
+#: upstream/_versions/main/guides/lifecycle.adoc:83
 msgid "An example of what this looks like is below:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:106
+#: upstream/_versions/main/guides/lifecycle.adoc:91
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.Quarkus;\n"
@@ -250,7 +198,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:112
+#: upstream/_versions/main/guides/lifecycle.adoc:97
 #, no-wrap
 msgid ""
 "@QuarkusMain\n"
@@ -261,13 +209,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:114
+#: upstream/_versions/main/guides/lifecycle.adoc:99
 #, no-wrap
 msgid "    public static class MyApp implements QuarkusApplication {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:123
+#: upstream/_versions/main/guides/lifecycle.adoc:108
 #, no-wrap
 msgid ""
 "        @Override\n"
@@ -281,18 +229,18 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/lifecycle.adoc:125
+#: upstream/_versions/main/guides/lifecycle.adoc:110
 #, no-wrap
 msgid "Injecting the command line arguments"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:128
+#: upstream/_versions/main/guides/lifecycle.adoc:113
 msgid "It is possible to inject the arguments that were passed in on the command line:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:134
+#: upstream/_versions/main/guides/lifecycle.adoc:119
 #, no-wrap
 msgid ""
 "@Inject\n"
@@ -301,45 +249,45 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:137
+#: upstream/_versions/main/guides/lifecycle.adoc:122
 msgid "Command line arguments can be passed to the application through the `-D` flag with the property `quarkus.args`:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:139
-msgid "For Quarkus dev mode: `./mvnw quarkus:dev -Dquarkus.args=<cmd-args>`"
+#: upstream/_versions/main/guides/lifecycle.adoc:128
+msgid "For Quarkus dev mode:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:140
+#: upstream/_versions/main/guides/lifecycle.adoc:132
 msgid "For a runner jar: `java -Dquarkus.args=<cmd-args> -jar target/quarkus-app/quarkus-run.jar`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:141
+#: upstream/_versions/main/guides/lifecycle.adoc:133
 msgid "For a native executable: `./target/lifecycle-quickstart-1.0-SNAPSHOT-runner -Dquarkus.args=<cmd-args>`"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/lifecycle.adoc:142
+#: upstream/_versions/main/guides/lifecycle.adoc:137
 #, no-wrap
 msgid "Listening for startup and shutdown events"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:146
+#: upstream/_versions/main/guides/lifecycle.adoc:141
 msgid "Create a new class named `AppLifecycleBean` (or pick another name) in the `org.acme.lifecycle` package, and copy the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:150
-#: upstream/_versions/main/guides/lifecycle.adoc:196
+#: upstream/_versions/main/guides/lifecycle.adoc:145
+#: upstream/_versions/main/guides/lifecycle.adoc:191
 #, no-wrap
 msgid "package org.acme.lifecycle;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:153
+#: upstream/_versions/main/guides/lifecycle.adoc:148
 #, no-wrap
 msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
@@ -347,7 +295,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:157
+#: upstream/_versions/main/guides/lifecycle.adoc:152
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.ShutdownEvent;\n"
@@ -356,7 +304,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:160
+#: upstream/_versions/main/guides/lifecycle.adoc:155
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -364,13 +312,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:162
+#: upstream/_versions/main/guides/lifecycle.adoc:157
 #, no-wrap
 msgid "    private static final Logger LOGGER = Logger.getLogger(\"ListenerBean\");\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:166
+#: upstream/_versions/main/guides/lifecycle.adoc:161
 #, no-wrap
 msgid ""
 "    void onStart(@Observes StartupEvent ev) {               // <1>\n"
@@ -379,7 +327,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:170
+#: upstream/_versions/main/guides/lifecycle.adoc:165
 #, no-wrap
 msgid ""
 "    void onStop(@Observes ShutdownEvent ev) {               // <2>\n"
@@ -388,66 +336,66 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:172
+#: upstream/_versions/main/guides/lifecycle.adoc:167
 #, no-wrap
 msgid "}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:174
+#: upstream/_versions/main/guides/lifecycle.adoc:169
 msgid "Method called when the application is starting"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:175
+#: upstream/_versions/main/guides/lifecycle.adoc:170
 msgid "Method called when the application is terminating"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:177
+#: upstream/_versions/main/guides/lifecycle.adoc:172
 msgid "The events are also called in _dev mode_ between each redeployment."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:179
+#: upstream/_versions/main/guides/lifecycle.adoc:174
 msgid "The methods can access injected beans. Check the {quickstarts-blob-url}/lifecycle-quickstart/src/main/java/org/acme/lifecycle/AppLifecycleBean.java[AppLifecycleBean.java] class for details."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/lifecycle.adoc:180
+#: upstream/_versions/main/guides/lifecycle.adoc:175
 #, no-wrap
 msgid "What is the difference from `@Initialized(ApplicationScoped.class)` and `@Destroyed(ApplicationScoped.class)`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:185
+#: upstream/_versions/main/guides/lifecycle.adoc:180
 msgid "In the JVM mode, there is no real difference, except that `StartupEvent` is always fired *after* `@Initialized(ApplicationScoped.class)` and `ShutdownEvent` is fired *before* `@Destroyed(ApplicationScoped.class)`.  For a native executable build, however, `@Initialized(ApplicationScoped.class)` is fired as *part of the native build process*, whereas `StartupEvent` is fired when the native image is executed.  See xref:writing-extensions.adoc#bootstrap-three-phases[Three Phases of Bootstrap and Quarkus Philosophy] for more details."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:187
+#: upstream/_versions/main/guides/lifecycle.adoc:182
 msgid "In CDI applications, an event with qualifier `@Initialized(ApplicationScoped.class)` is fired when the application context is initialized. See https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#application_context[the spec, window=\"_blank\"] for more info."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/lifecycle.adoc:189
+#: upstream/_versions/main/guides/lifecycle.adoc:184
 #, no-wrap
 msgid "Using `@Startup` to initialize a CDI bean at application startup"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:192
+#: upstream/_versions/main/guides/lifecycle.adoc:187
 msgid "A bean represented by a class, producer method or field annotated with `@Startup` is initialized at application startup:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:198
+#: upstream/_versions/main/guides/lifecycle.adoc:193
 #, no-wrap
 msgid "import javax.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:202
+#: upstream/_versions/main/guides/lifecycle.adoc:197
 #, no-wrap
 msgid ""
 "@Startup // <1> \n"
@@ -456,13 +404,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:204
+#: upstream/_versions/main/guides/lifecycle.adoc:199
 #, no-wrap
 msgid "   private final String name;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/lifecycle.adoc:209
+#: upstream/_versions/main/guides/lifecycle.adoc:204
 #, no-wrap
 msgid ""
 "   EagerAppBean(NameGenerator generator) { // <2>\n"
@@ -472,69 +420,90 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:211
+#: upstream/_versions/main/guides/lifecycle.adoc:206
 msgid "For each bean annotated with `@Startup` a synthetic observer of `StartupEvent` is generated. The default priority is used."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:212
+#: upstream/_versions/main/guides/lifecycle.adoc:207
 msgid "The bean constructor is called when the application starts and the resulting contextual instance is stored in the application context."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:214
+#: upstream/_versions/main/guides/lifecycle.adoc:209
 msgid "`@Dependent` beans are destroyed immediately afterwards to follow the behavior of observers declared on `@Dependent` beans."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:216
+#: upstream/_versions/main/guides/lifecycle.adoc:211
 msgid "If a class is annotated with `@Startup` but with no scope annotation then `@ApplicationScoped` is added automatically."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/lifecycle.adoc:217
+#: upstream/_versions/main/guides/lifecycle.adoc:212
 #, no-wrap
 msgid "Package and run the application"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:221
-msgid "Run the application with: `./mvnw compile quarkus:dev`, the logged message is printed.  When the application is stopped, the second log message is printed."
+#: upstream/_versions/main/guides/lifecycle.adoc:215
+msgid "Run the application with:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:224
-msgid "As usual, the application can be packaged using `./mvnw clean package` and executed using the `target/quarkus-app/quarkus-run.jar` file.  You can also generate the native executable using `./mvnw clean package -Pnative`."
+#: upstream/_versions/main/guides/lifecycle.adoc:220
+msgid "The logged message is printed.  When the application is stopped, the second log message is printed."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/lifecycle.adoc:222
+msgid "As usual, the application can be packaged using:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/lifecycle.adoc:226
+msgid "and executed using `java -jar target/quarkus-app/quarkus-run.jar`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/lifecycle.adoc:228
+msgid "You can also generate the native executable using:"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/lifecycle.adoc:225
+#: upstream/_versions/main/guides/lifecycle.adoc:231
 #, no-wrap
 msgid "Launch Modes"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:229
+#: upstream/_versions/main/guides/lifecycle.adoc:235
 msgid "Quarkus has 3 different launch modes, `NORMAL` (i.e. production), `DEVELOPMENT` and `TEST`. If you are running `quarkus:dev` then the mode will be `DEVELOPMENT`, if you are running a JUnit test it will be `TEST`, otherwise it will be `NORMAL`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:232
+#: upstream/_versions/main/guides/lifecycle.adoc:238
 msgid "Your application can get the launch mode by injecting the `io.quarkus.runtime.LaunchMode` enum into a CDI bean, or by invoking the static method `io.quarkus.runtime.LaunchMode.current()`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/lifecycle.adoc:233
+#: upstream/_versions/main/guides/lifecycle.adoc:239
 #, no-wrap
 msgid "Graceful Shutdown"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:240
+#: upstream/_versions/main/guides/lifecycle.adoc:246
 msgid "Quarkus includes support for graceful shutdown, this allows Quarkus to wait for running requests to finish, up till a set timeout. By default this is disabled, however you can configure this by setting the `quarkus.shutdown.timeout` config property. When this is set shutdown will not happen until all running requests have completed, or until this timeout has elapsed. This config property is a duration, and can be set using the standard `java.time.Duration` format, if only a number is specified it is interpreted as seconds."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/lifecycle.adoc:242
+#: upstream/_versions/main/guides/lifecycle.adoc:248
 msgid "Extensions that accept requests need to add support for this on an individual basis. At the moment only the HTTP extension supports this, so shutdown may still happen when messaging requests are active."
 msgstr ""
+
+#~ msgid "To complete this guide, you need:"
+#~ msgstr "要完成本指南，您需要："
+
+#~ msgid "an IDE"
+#~ msgstr "IDE"

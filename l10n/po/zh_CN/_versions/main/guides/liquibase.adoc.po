@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-01-09 01:07+0000\n"
+"POT-Creation-Date: 2022-02-03 00:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,42 +92,68 @@ msgstr ""
 msgid "your JDBC driver extension (`quarkus-jdbc-postgresql`, `quarkus-jdbc-h2`, `quarkus-jdbc-mariadb`, ...)"
 msgstr ""
 
+#. type: Block title
+#: upstream/_versions/main/guides/liquibase.adoc:39
+#, no-wrap
+msgid "pom.xml"
+msgstr ""
+
 #. type: delimited block -
 #: upstream/_versions/main/guides/liquibase.adoc:46
 #, no-wrap
 msgid ""
-"<dependencies>\n"
-"    <!-- Liquibase specific dependencies -->\n"
-"    <dependency>\n"
-"        <groupId>io.quarkus</groupId>\n"
-"        <artifactId>quarkus-liquibase</artifactId>\n"
-"    </dependency>\n"
+"<!-- Liquibase specific dependencies -->\n"
+"<dependency>\n"
+"    <groupId>io.quarkus</groupId>\n"
+"    <artifactId>quarkus-liquibase</artifactId>\n"
+"</dependency>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:53
+#: upstream/_versions/main/guides/liquibase.adoc:52
 #, no-wrap
 msgid ""
-"    <!-- JDBC driver dependencies -->\n"
-"    <dependency>\n"
-"        <groupId>io.quarkus</groupId>\n"
-"        <artifactId>quarkus-jdbc-postgresql</artifactId>\n"
-"    </dependency>\n"
-"</dependencies>\n"
+"<!-- JDBC driver dependencies -->\n"
+"<dependency>\n"
+"    <groupId>io.quarkus</groupId>\n"
+"    <artifactId>quarkus-jdbc-postgresql</artifactId>\n"
+"</dependency>\n"
+msgstr ""
+
+#. type: Block title
+#: upstream/_versions/main/guides/liquibase.adoc:55
+#, no-wrap
+msgid "build.gradle"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_versions/main/guides/liquibase.adoc:59
+#, no-wrap
+msgid ""
+"// Liquibase specific dependencies\n"
+"implementation(\"io.quarkus:quarkus-liquibase\")\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_versions/main/guides/liquibase.adoc:62
+#, no-wrap
+msgid ""
+"// JDBC driver dependencies\n"
+"implementation(\"io.quarkus:quarkus-jdbc-postgresql\")\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:59
+#: upstream/_versions/main/guides/liquibase.adoc:68
 msgid "Liquibase support relies on the Quarkus datasource config.  It can be customized for the default datasource as well as for every <<multiple-datasources,named datasource>>.  First, you need to add the datasource config to the `{config-file}` file in order to allow Liquibase to manage the schema."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:61
+#: upstream/_versions/main/guides/liquibase.adoc:70
 msgid "The following is an example for the `{config-file}` file:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:69
+#: upstream/_versions/main/guides/liquibase.adoc:78
 #, no-wrap
 msgid ""
 "# configure your datasource\n"
@@ -138,7 +164,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:72
+#: upstream/_versions/main/guides/liquibase.adoc:81
 #, no-wrap
 msgid ""
 "# Liquibase minimal config properties\n"
@@ -146,7 +172,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:86
+#: upstream/_versions/main/guides/liquibase.adoc:95
 #, no-wrap
 msgid ""
 "# Liquibase optional config properties\n"
@@ -165,12 +191,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:90
+#: upstream/_versions/main/guides/liquibase.adoc:99
 msgid "Add a changeLog file to the default folder following the Liquibase naming conventions: `{change-log}` The yaml, json, xml and sql changeLog file formats are also supported."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:101
+#: upstream/_versions/main/guides/liquibase.adoc:110
 #, no-wrap
 msgid ""
 "<?xml version=\"1.1\" encoding=\"UTF-8\" standalone=\"no\"?>\n"
@@ -184,7 +210,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:111
+#: upstream/_versions/main/guides/liquibase.adoc:120
 #, no-wrap
 msgid ""
 "    <changeSet author=\"quarkus\" id=\"1\">\n"
@@ -199,18 +225,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:114
+#: upstream/_versions/main/guides/liquibase.adoc:123
 msgid "Now you can start your application and Quarkus will run the Liquibase's update method according to your config:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:118
+#: upstream/_versions/main/guides/liquibase.adoc:127
 #, no-wrap
 msgid "import org.quarkus.liquibase.LiquibaseFactory; <1>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:124
+#: upstream/_versions/main/guides/liquibase.adoc:133
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -221,7 +247,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:132
+#: upstream/_versions/main/guides/liquibase.adoc:141
 #, no-wrap
 msgid ""
 "    public void checkMigration() {\n"
@@ -234,28 +260,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:134
+#: upstream/_versions/main/guides/liquibase.adoc:143
 msgid "The Quarkus extension provides a factory to initialize a Liquibase instance"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:135
+#: upstream/_versions/main/guides/liquibase.adoc:144
 msgid "Inject the Quarkus liquibase factory if you want to use the liquibase methods directly"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/liquibase.adoc:136
+#: upstream/_versions/main/guides/liquibase.adoc:145
 #, no-wrap
 msgid "Multiple datasources"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:140
+#: upstream/_versions/main/guides/liquibase.adoc:149
 msgid "Liquibase can be configured for multiple datasources.  The Liquibase properties are prefixed exactly the same way as the named datasources, for example:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:147
+#: upstream/_versions/main/guides/liquibase.adoc:156
 #, no-wrap
 msgid ""
 "quarkus.datasource.db-kind=h2\n"
@@ -265,7 +291,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:152
+#: upstream/_versions/main/guides/liquibase.adoc:161
 #, no-wrap
 msgid ""
 "quarkus.datasource.users.db-kind=h2\n"
@@ -275,7 +301,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:157
+#: upstream/_versions/main/guides/liquibase.adoc:166
 #, no-wrap
 msgid ""
 "quarkus.datasource.inventory.db-kind=h2\n"
@@ -285,7 +311,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:162
+#: upstream/_versions/main/guides/liquibase.adoc:171
 #, no-wrap
 msgid ""
 "# Liquibase configuration for the default datasource\n"
@@ -295,7 +321,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:167
+#: upstream/_versions/main/guides/liquibase.adoc:176
 #, no-wrap
 msgid ""
 "# Liquibase configuration for the \"users\" datasource\n"
@@ -305,7 +331,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:172
+#: upstream/_versions/main/guides/liquibase.adoc:181
 #, no-wrap
 msgid ""
 "# Liquibase configuration for the \"inventory\" datasource\n"
@@ -315,39 +341,39 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:176
+#: upstream/_versions/main/guides/liquibase.adoc:185
 msgid "Notice there's an extra bit in the key.  The syntax is as follows: `quarkus.liquibase.[optional name.][datasource property]`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:178
+#: upstream/_versions/main/guides/liquibase.adoc:187
 msgid "Without configuration, Liquibase is set up for every datasource using the default settings."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/liquibase.adoc:179
+#: upstream/_versions/main/guides/liquibase.adoc:188
 #, no-wrap
 msgid "Using the Liquibase object"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:182
+#: upstream/_versions/main/guides/liquibase.adoc:191
 msgid "In case you are interested in using the `Liquibase` object directly, you can inject it as follows:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:185
+#: upstream/_versions/main/guides/liquibase.adoc:194
 msgid "If you enabled the `quarkus.liquibase.migrate-at-start` property, by the time you use the Liquibase instance, Quarkus will already have run the migrate operation."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:189
+#: upstream/_versions/main/guides/liquibase.adoc:198
 #, no-wrap
 msgid "import org.quarkus.liquibase.LiquibaseFactory;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:195
+#: upstream/_versions/main/guides/liquibase.adoc:204
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -358,7 +384,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:199
+#: upstream/_versions/main/guides/liquibase.adoc:208
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -367,7 +393,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:203
+#: upstream/_versions/main/guides/liquibase.adoc:212
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -376,7 +402,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/liquibase.adoc:215
+#: upstream/_versions/main/guides/liquibase.adoc:224
 #, no-wrap
 msgid ""
 "    public void checkMigration() {\n"
@@ -393,32 +419,32 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:217
+#: upstream/_versions/main/guides/liquibase.adoc:226
 msgid "Inject the LiquibaseFactory object"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:218
+#: upstream/_versions/main/guides/liquibase.adoc:227
 msgid "Inject Liquibase for named datasources using the Quarkus `LiquibaseDataSource` qualifier"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:219
+#: upstream/_versions/main/guides/liquibase.adoc:228
 msgid "Inject Liquibase for named datasources"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:220
+#: upstream/_versions/main/guides/liquibase.adoc:229
 msgid "Use the Liquibase instance directly"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/liquibase.adoc:221
+#: upstream/_versions/main/guides/liquibase.adoc:230
 msgid "List of applied or not applied liquibase ChangeSets"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/liquibase.adoc:222
+#: upstream/_versions/main/guides/liquibase.adoc:231
 #, no-wrap
 msgid "Configuration Reference"
 msgstr ""

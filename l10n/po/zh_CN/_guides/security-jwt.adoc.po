@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-23 01:01+0000\n"
+"POT-Creation-Date: 2022-02-03 00:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:18
-msgid "Quarkus OpenId Connect `quarkus-oidc` extension also supports Bearer Token Authorization and uses `smallrye-jwt` to represent the bearer tokens as `JsonWebToken`, please read the xref:security-openid-connect.adoc[Using OpenID Connect to Protect Service Applications] guide for more information.  OpenId Connect extension has to be used if the Quarkus application needs to authenticate the users using OIDC Authorization Code Flow, please read xref:security-openid-connect-web-authentication.adoc[Using OpenID Connect to Protect Web Applications] guide for more information."
+msgid "Quarkus OpenID Connect `quarkus-oidc` extension also supports Bearer Token Authorization and uses `smallrye-jwt` to represent the bearer tokens as `JsonWebToken`, please read the xref:security-openid-connect.adoc[Using OpenID Connect to Protect Service Applications] guide for more information.  OpenID Connect extension has to be used if the Quarkus application needs to authenticate the users using OIDC Authorization Code Flow, please read xref:security-openid-connect-web-authentication.adoc[Using OpenID Connect to Protect Web Applications] guide for more information."
 msgstr ""
 
 #. type: Title ==
@@ -1425,7 +1425,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:818
-msgid "If you configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-openid-connect.adoc#integration-testing[OpenId Connect Bearer Token Integration testing] `Wiremock` section but only change the `application.properties` to use MP JWT configuration properties instead:"
+msgid "If you configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-openid-connect.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Wiremock` section but only change the `application.properties` to use MP JWT configuration properties instead:"
 msgstr ""
 
 #. type: delimited block -
@@ -1446,7 +1446,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:830
-msgid "If you work with Keycloak and configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-openid-connect.adoc#integration-testing-keycloak[OpenId Connect Bearer Token Integration testing] `Keycloak` section but only change the `application.properties` to use MP JWT configuration properties instead:"
+msgid "If you work with Keycloak and configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-openid-connect.adoc#integration-testing-keycloak[OpenID Connect Bearer Token Integration testing] `Keycloak` section but only change the `application.properties` to use MP JWT configuration properties instead:"
 msgstr ""
 
 #. type: Title ====
@@ -1457,7 +1457,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:842
-msgid "You can use the same approach as described in the xref:security-openid-connect#integration-testing.adoc[OpenId Connect Bearer Token Integration testing] `Local Public Key` section but only change the `application.properties` to use MP JWT configuration properties instead:"
+msgid "You can use the same approach as described in the xref:security-openid-connect#integration-testing.adoc[OpenID Connect Bearer Token Integration testing] `Local Public Key` section but only change the `application.properties` to use MP JWT configuration properties instead:"
 msgstr ""
 
 #. type: delimited block -
