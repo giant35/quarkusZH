@@ -49,12 +49,12 @@ msgstr ""
 #: upstream/_guides/stork.adoc:25
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_guides/stork.adoc:28
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_guides/stork.adoc:30
@@ -64,7 +64,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/stork.adoc:31
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_guides/stork.adoc:32
@@ -90,7 +90,7 @@ msgstr ""
 #: upstream/_guides/stork.adoc:36
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_guides/stork.adoc:39
@@ -143,7 +143,7 @@ msgstr ""
 #: upstream/_guides/stork.adoc:51
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_guides/stork.adoc:55
@@ -202,7 +202,7 @@ msgstr ""
 #: upstream/_guides/stork.adoc:76
 #, no-wrap
 msgid "Bootstrapping the project"
-msgstr ""
+msgstr "搭建项目"
 
 #. type: Plain text
 #: upstream/_guides/stork.adoc:79
@@ -623,7 +623,7 @@ msgstr ""
 #: upstream/_guides/stork.adoc:321
 #, no-wrap
 msgid "Running the application"
-msgstr ""
+msgstr "运行应用"
 
 #. type: Plain text
 #: upstream/_guides/stork.adoc:325

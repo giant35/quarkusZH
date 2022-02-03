@@ -44,7 +44,7 @@ msgstr ""
 #: upstream/_guides/centralized-log-management.adoc:20
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_guides/centralized-log-management.adoc:25
