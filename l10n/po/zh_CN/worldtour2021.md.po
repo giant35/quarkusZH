@@ -17,19 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: YAML Front Matter: layout
-#: upstream/worldtour.md:1
+#: upstream/worldtour2021.md:1
 #, no-wrap
-msgid "worldtour-2022"
+msgid "worldtour-2021"
 msgstr ""
 
 #. type: YAML Front Matter: permalink
-#: upstream/worldtour.md:1
+#: upstream/worldtour2021.md:1
 #, no-wrap
-msgid "/worldtour/"
+msgid "/worldtour/2021/"
 msgstr ""
 
 #. type: YAML Front Matter: title
-#: upstream/worldtour.md:1
+#: upstream/worldtour2021.md:1
 #, no-wrap
-msgid "World Tour"
+msgid "World Tour 2021"
 msgstr ""
