@@ -29,22 +29,6 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>To complete this guide, you need:</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>要完成本指南，您需要：</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>an IDE</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>IDE</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Solution</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
