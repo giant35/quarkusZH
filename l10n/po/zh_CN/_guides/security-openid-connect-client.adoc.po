@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-03 00:58+0000\n"
+"POT-Creation-Date: 2022-02-09 01:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client.adoc:15
-msgid "`quarkus-oidc-token-propagation` extension to propagate the current `Bearer` or `Authorization Code Flow` access tokens"
+msgid "`quarkus-oidc-token-propagation` and `quarkus-oidc-token-propagation-reactive` extensions to propagate the current `Bearer` or `Authorization Code Flow` access tokens"
 msgstr ""
 
 #. type: Plain text
@@ -639,6 +639,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client.adoc:365
 #: upstream/_guides/security-openid-connect-client.adoc:406
+#: upstream/_guides/security-openid-connect-client.adoc:938
 msgid "Add the following Maven Dependency:"
 msgstr ""
 
@@ -1616,22 +1617,48 @@ msgid "You can generate the tokens as described in xref:security-openid-connect.
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-openid-connect-client.adoc:934
+#: upstream/_guides/security-openid-connect-client.adoc:935
+#, no-wrap
+msgid "Token Propagation Reactive"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-openid-connect-client.adoc:945
+#, no-wrap
+msgid ""
+"<dependency>\n"
+"    <groupId>io.quarkus</groupId>\n"
+"    <artifactId>quarkus-oidc-token-propagation-reactive</artifactId>\n"
+"</dependency>\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-openid-connect-client.adoc:948
+msgid "The `quarkus-oidc-token-propagation-reactive` extension provides `io.quarkus.oidc.token.propagation.reactive.AccessTokenRequestReactiveFilter` which can be used to propagate the current `Bearer` or `Authorization Code Flow` access tokens."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-openid-connect-client.adoc:951
+msgid "The `quarkus-oidc-token-propagation-reactive` extension (as opposed to the non-reactive `quarkus-oidc-token-propagation` extension) does not currently support the exchanging or resigning the tokens before the propagation.  However these features may be added in the future."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/security-openid-connect-client.adoc:952
 #, no-wrap
 msgid "References"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-client.adoc:937
+#: upstream/_guides/security-openid-connect-client.adoc:955
 msgid "xref:security.adoc[Quarkus Security]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-client.adoc:938
+#: upstream/_guides/security-openid-connect-client.adoc:956
 msgid "xref:security-openid-connect.adoc[Quarkus - Using OpenID Connect to Protect Service Applications using Bearer Token Authorization]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect-client.adoc:938
+#: upstream/_guides/security-openid-connect-client.adoc:956
 msgid "xref:security-openid-connect-web-authentication.adoc[Quarkus - Using OpenID Connect to Protect Web Applications using Authorization Code Flow]"
 msgstr ""
