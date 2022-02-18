@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-03 00:59+0000\n"
+"POT-Creation-Date: 2022-02-18 01:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2736,14 +2736,19 @@ msgstr ""
 msgid "An optional _parameter declaration_ is used to bind a Java type to expressions whose first part matches the parameter name.  Parameter declarations are specified directly in a template."
 msgstr ""
 
+#. type: Plain text
+#: upstream/_versions/main/guides/qute-reference.adoc:1304
+msgid "A Java type should be always identified with a _fully qualified name_ unless it's a JDK type from the `java.lang` package - in this case, the package name is optional.  Parameterized types are supported, however wildcards are always ignored - only the upper/lower bound is taken into account.  For example, the parameter declaration `{@java.util.List<? extends org.acme.Foo> list}` is recognized as `{@java.util.List<org.acme.Foo> list}`.  Type variables are not handled in a special way and should never be used."
+msgstr ""
+
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1300
+#: upstream/_versions/main/guides/qute-reference.adoc:1305
 #, no-wrap
 msgid "Parameter Declaration Example"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1315
+#: upstream/_versions/main/guides/qute-reference.adoc:1320
 #, no-wrap
 msgid ""
 "{@org.acme.Foo foo} <1>\n"
@@ -2761,42 +2766,42 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1317
+#: upstream/_versions/main/guides/qute-reference.adoc:1322
 msgid "Parameter declaration - maps `foo` to `org.acme.Foo`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1318
+#: upstream/_versions/main/guides/qute-reference.adoc:1323
 msgid "Not validated - not matching a param declaration."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1319
+#: upstream/_versions/main/guides/qute-reference.adoc:1324
 msgid "This expression is validated. `org.acme.Foo` must have a property `message` or a matching template extension method must exist."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1320
+#: upstream/_versions/main/guides/qute-reference.adoc:1325
 msgid "Likewise, the Java type of the object resolved from `foo.message` must have a property `toLowerCase` or a matching template extension method must exist."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1322
+#: upstream/_versions/main/guides/qute-reference.adoc:1327
 msgid "A value resolver is automatically generated for all types used in parameter declarations so that it's possible to access its properties without reflection."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1324
+#: upstream/_versions/main/guides/qute-reference.adoc:1329
 msgid "Method parameters of <<typesafe_templates,type-safe templates>> are automatically turned into parameter declarations."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1326
+#: upstream/_versions/main/guides/qute-reference.adoc:1331
 msgid "Note that sections can override names that would otherwise match a parameter declaration:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1343
+#: upstream/_versions/main/guides/qute-reference.adoc:1348
 #, no-wrap
 msgid ""
 "{@org.acme.Foo foo}\n"
@@ -2816,63 +2821,99 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1345
+#: upstream/_versions/main/guides/qute-reference.adoc:1350
 msgid "Validated against `org.acme.Foo`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1346
+#: upstream/_versions/main/guides/qute-reference.adoc:1351
 msgid "Not validated - `foo` is overridden in the loop section."
 msgstr ""
 
+#. type: Block title
+#: upstream/_versions/main/guides/qute-reference.adoc:1352
+#, no-wrap
+msgid "More Parameter Declarations Examples "
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_versions/main/guides/qute-reference.adoc:1359
+#, no-wrap
+msgid ""
+"{@int pages} <1>\n"
+"{@java.util.List<String> strings} <2>\n"
+"{@java.util.Map<String,? extends Number> numbers} <3>\n"
+"{@java.util.Optional<?> param} <4>\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/qute-reference.adoc:1361
+msgid "A primitive type."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/qute-reference.adoc:1362
+msgid "`String` is replaced with `java.lang.String`: `{@java.util.List<java.lang.String> strings}`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/qute-reference.adoc:1363
+msgid "The wildcard is ignored and the upper bound is used instead: `{@java.util.Map<String,Number>}`"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/qute-reference.adoc:1364
+msgid "The wildcard is ignored and the `java.lang.Object` is used instead: `{@java.util.Optional<java.lang.Object>}`"
+msgstr ""
+
 #. type: Title ===
-#: upstream/_versions/main/guides/qute-reference.adoc:1348
+#: upstream/_versions/main/guides/qute-reference.adoc:1366
 #, no-wrap
 msgid "Type-safe Templates"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1351
+#: upstream/_versions/main/guides/qute-reference.adoc:1369
 msgid "You can also define type-safe templates in your Java code.  If using <<resteasy_integration,templates in JAX-RS resources>>, you can rely on the following convention:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1355
+#: upstream/_versions/main/guides/qute-reference.adoc:1373
 msgid "Organise your template files in the `/src/main/resources/templates` directory, by grouping them into one directory per resource class. So, if your `ItemResource` class references two templates `hello` and `goodbye`, place them at `/src/main/resources/templates/ItemResource/hello.txt` and `/src/main/resources/templates/ItemResource/goodbye.txt`. Grouping templates per resource class makes it easier to navigate to them."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1356
+#: upstream/_versions/main/guides/qute-reference.adoc:1374
 msgid "In each of your resource class, declare a `@CheckedTemplate static class Template {}` class within your resource class."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1357
+#: upstream/_versions/main/guides/qute-reference.adoc:1375
 msgid "Declare one `public static native TemplateInstance method();` per template file for your resource."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1358
+#: upstream/_versions/main/guides/qute-reference.adoc:1376
 msgid "Use those static methods to build your template instances."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1359
+#: upstream/_versions/main/guides/qute-reference.adoc:1377
 #, no-wrap
 msgid "ItemResource.java"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1363
-#: upstream/_versions/main/guides/qute-reference.adoc:1404
-#: upstream/_versions/main/guides/qute-reference.adoc:1423
-#: upstream/_versions/main/guides/qute-reference.adoc:1909
+#: upstream/_versions/main/guides/qute-reference.adoc:1381
+#: upstream/_versions/main/guides/qute-reference.adoc:1422
+#: upstream/_versions/main/guides/qute-reference.adoc:1441
+#: upstream/_versions/main/guides/qute-reference.adoc:1927
 #, no-wrap
 msgid "package org.acme.quarkus.sample;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1370
+#: upstream/_versions/main/guides/qute-reference.adoc:1388
 #, no-wrap
 msgid ""
 "import javax.inject.Inject;\n"
@@ -2884,8 +2925,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1374
-#: upstream/_versions/main/guides/qute-reference.adoc:1408
+#: upstream/_versions/main/guides/qute-reference.adoc:1392
+#: upstream/_versions/main/guides/qute-reference.adoc:1426
 #, no-wrap
 msgid ""
 "import io.quarkus.qute.TemplateInstance;\n"
@@ -2894,7 +2935,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1377
+#: upstream/_versions/main/guides/qute-reference.adoc:1395
 #, no-wrap
 msgid ""
 "@Path(\"item\")\n"
@@ -2902,7 +2943,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1382
+#: upstream/_versions/main/guides/qute-reference.adoc:1400
 #, no-wrap
 msgid ""
 "    @CheckedTemplate\n"
@@ -2912,7 +2953,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1390
+#: upstream/_versions/main/guides/qute-reference.adoc:1408
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -2925,38 +2966,38 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1392
+#: upstream/_versions/main/guides/qute-reference.adoc:1410
 msgid "Declare a method that gives us a `TemplateInstance` for `templates/ItemResource/item.html` and declare its `Item item` parameter so we can validate the template."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1393
+#: upstream/_versions/main/guides/qute-reference.adoc:1411
 msgid "The `item` parameter is automatically turned into a <<typesafe_expressions,parameter declaration>> and so all expressions that reference this name will be validated."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1394
+#: upstream/_versions/main/guides/qute-reference.adoc:1412
 msgid "Make the `Item` object accessible in the template."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1396
+#: upstream/_versions/main/guides/qute-reference.adoc:1414
 msgid "By default, the templates defined in a class annotated with `@CheckedTemplate` can only contain type-safe expressions, i.e. expressions that can be validated at build time. You can use `@CheckedTemplate(requireTypeSafeExpressions = false)` to relax this requirement."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1399
+#: upstream/_versions/main/guides/qute-reference.adoc:1417
 msgid "You can also declare a top-level Java class annotated with `@CheckedTemplate`:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1400
+#: upstream/_versions/main/guides/qute-reference.adoc:1418
 #, no-wrap
 msgid "Top-level checked templates"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1413
+#: upstream/_versions/main/guides/qute-reference.adoc:1431
 #, no-wrap
 msgid ""
 "@CheckedTemplate\n"
@@ -2966,24 +3007,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1415
+#: upstream/_versions/main/guides/qute-reference.adoc:1433
 msgid "This declares a template with path `templates/hello.txt`. The `name` parameter is automatically turned into a <<typesafe_expressions,parameter declaration>> and so all expressions that reference this name will be validated."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1418
+#: upstream/_versions/main/guides/qute-reference.adoc:1436
 msgid "Then declare one `public static native TemplateInstance method();` per template file.  Use those static methods to build your template instances:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1419
-#: upstream/_versions/main/guides/qute-reference.adoc:1905
+#: upstream/_versions/main/guides/qute-reference.adoc:1437
+#: upstream/_versions/main/guides/qute-reference.adoc:1923
 #, no-wrap
 msgid "HelloResource.java"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1429
+#: upstream/_versions/main/guides/qute-reference.adoc:1447
 #, no-wrap
 msgid ""
 "import javax.inject.Inject;\n"
@@ -2994,8 +3035,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1432
-#: upstream/_versions/main/guides/qute-reference.adoc:1920
+#: upstream/_versions/main/guides/qute-reference.adoc:1450
+#: upstream/_versions/main/guides/qute-reference.adoc:1938
 #, no-wrap
 msgid ""
 "@Path(\"hello\")\n"
@@ -3003,7 +3044,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1439
+#: upstream/_versions/main/guides/qute-reference.adoc:1457
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -3015,81 +3056,81 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/qute-reference.adoc:1442
+#: upstream/_versions/main/guides/qute-reference.adoc:1460
 #, no-wrap
 msgid "Template Extension Methods"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1446
+#: upstream/_versions/main/guides/qute-reference.adoc:1464
 msgid "Extension methods can be used to extend the data classes with new functionality (to extend the set of accessible properties and methods) or to resolve expressions for a specific <<namespace_extension_methods,namespace>>.  For example, it is possible to add _computed properties_ and _virtual methods_."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1451
+#: upstream/_versions/main/guides/qute-reference.adoc:1469
 msgid "A value resolver is automatically generated for a method annotated with `@TemplateExtension`.  If a class is annotated with `@TemplateExtension` then a value resolver is generated for every _non-private static method_ declared on the class.  Method-level annotations override the behavior defined on the class.  Methods that do not meet the following requirements are ignored."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1453
+#: upstream/_versions/main/guides/qute-reference.adoc:1471
 msgid "A template extension method:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1455
+#: upstream/_versions/main/guides/qute-reference.adoc:1473
 msgid "must not be `private`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1456
+#: upstream/_versions/main/guides/qute-reference.adoc:1474
 msgid "must be static,"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1457
+#: upstream/_versions/main/guides/qute-reference.adoc:1475
 msgid "must not return `void`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1459
+#: upstream/_versions/main/guides/qute-reference.adoc:1477
 msgid "If there is no namespace defined the class of the first parameter that is not annotated with `@TemplateAttribute` is used to match the base object. Otherwise the namespace is used to match an expression."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1466
+#: upstream/_versions/main/guides/qute-reference.adoc:1484
 msgid "The method name is used to match the property name by default.  However, it is possible to specify the matching name with `TemplateExtension#matchName()`.  A special constant - `TemplateExtension#ANY` - may be used to specify that the extension method matches any name.  It is also possible to match the name against a regular expression specified in `TemplateExtension#matchRegex()`.  In both cases, an additional string method parameter must be used to pass the property name.  If both `matchName()` and `matchRegex()` are set the regular expression is used for matching."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1467
+#: upstream/_versions/main/guides/qute-reference.adoc:1485
 #, no-wrap
 msgid "Extension Method Example"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1471
-#: upstream/_versions/main/guides/qute-reference.adoc:1661
+#: upstream/_versions/main/guides/qute-reference.adoc:1489
+#: upstream/_versions/main/guides/qute-reference.adoc:1679
 #, no-wrap
 msgid "package org.acme;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1473
+#: upstream/_versions/main/guides/qute-reference.adoc:1491
 #, no-wrap
 msgid "class Item {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1475
-#: upstream/_versions/main/guides/qute-reference.adoc:1666
-#: upstream/_versions/main/guides/qute-reference.adoc:1697
+#: upstream/_versions/main/guides/qute-reference.adoc:1493
+#: upstream/_versions/main/guides/qute-reference.adoc:1684
+#: upstream/_versions/main/guides/qute-reference.adoc:1715
 #, no-wrap
 msgid "    public final BigDecimal price;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1480
-#: upstream/_versions/main/guides/qute-reference.adoc:1702
+#: upstream/_versions/main/guides/qute-reference.adoc:1498
+#: upstream/_versions/main/guides/qute-reference.adoc:1720
 #, no-wrap
 msgid ""
 "    public Item(BigDecimal price) {\n"
@@ -3099,7 +3140,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1483
+#: upstream/_versions/main/guides/qute-reference.adoc:1501
 #, no-wrap
 msgid ""
 "@TemplateExtension\n"
@@ -3107,7 +3148,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1488
+#: upstream/_versions/main/guides/qute-reference.adoc:1506
 #, no-wrap
 msgid ""
 "    static BigDecimal discountedPrice(Item item) { <1>\n"
@@ -3117,45 +3158,45 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1490
+#: upstream/_versions/main/guides/qute-reference.adoc:1508
 msgid "This method matches an expression with base object of the type `Item.class` and the `discountedPrice` property name."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1492
+#: upstream/_versions/main/guides/qute-reference.adoc:1510
 msgid "This template extension method makes it possible to render the following template:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1496
+#: upstream/_versions/main/guides/qute-reference.adoc:1514
 #, no-wrap
 msgid "{item.discountedPrice} <1>\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1498
+#: upstream/_versions/main/guides/qute-reference.adoc:1516
 msgid "`item` is resolved to an instance of `org.acme.Item`."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_versions/main/guides/qute-reference.adoc:1499
+#: upstream/_versions/main/guides/qute-reference.adoc:1517
 #, no-wrap
 msgid "Method Parameters"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1506
+#: upstream/_versions/main/guides/qute-reference.adoc:1524
 msgid "An extension method may declare parameters.  If no namespace is specified then the first parameter that is not annotated with `@TemplateAttribute` is used to pass the base object, i.e. `org.acme.Item` in the first example.  If matching any name or using a regular expression then a string method parameter needs to be used to pass the property name.  Parameters annotated with `@TemplateAttribute` are obtained via `TemplateInstance#getAttribute()`.  All other parameters are resolved when rendering the template and passed to the extension method."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1507
+#: upstream/_versions/main/guides/qute-reference.adoc:1525
 #, no-wrap
 msgid "Multiple Parameters Example"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1512
+#: upstream/_versions/main/guides/qute-reference.adoc:1530
 #, no-wrap
 msgid ""
 "@TemplateExtension\n"
@@ -3163,7 +3204,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1517
+#: upstream/_versions/main/guides/qute-reference.adoc:1535
 #, no-wrap
 msgid ""
 "    static BigDecimal scale(BigDecimal val, int scale, RoundingMode mode) { <1>\n"
@@ -3173,40 +3214,40 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1519
+#: upstream/_versions/main/guides/qute-reference.adoc:1537
 msgid "This method matches an expression with base object of the type `BigDecimal.class`, with the `scale` virtual method name and two virtual method parameters."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1523
+#: upstream/_versions/main/guides/qute-reference.adoc:1541
 #, no-wrap
 msgid "{item.discountedPrice.scale(2,mode)} <1>\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1525
+#: upstream/_versions/main/guides/qute-reference.adoc:1543
 msgid "`item.discountedPrice` is resolved to an instance of `BigDecimal`."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_versions/main/guides/qute-reference.adoc:1527
+#: upstream/_versions/main/guides/qute-reference.adoc:1545
 #, no-wrap
 msgid "Namespace Extension Methods"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1532
+#: upstream/_versions/main/guides/qute-reference.adoc:1550
 msgid "If `TemplateExtension#namespace()` is specified then the extension method is used to resolve expressions with the given <<expressions,namespace>>.  Template extension methods that share the same namespace are grouped in one resolver ordered by `TemplateExtension#priority()`.  The first matching extension method is used to resolve an expression."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1533
+#: upstream/_versions/main/guides/qute-reference.adoc:1551
 #, no-wrap
 msgid "Namespace Extension Method Example"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1538
+#: upstream/_versions/main/guides/qute-reference.adoc:1556
 #, no-wrap
 msgid ""
 "@TemplateExtension(namespace = \"str\")\n"
@@ -3214,7 +3255,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1542
+#: upstream/_versions/main/guides/qute-reference.adoc:1560
 #, no-wrap
 msgid ""
 "   static String format(String fmt, Object... args) {\n"
@@ -3223,7 +3264,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1547
+#: upstream/_versions/main/guides/qute-reference.adoc:1565
 #, no-wrap
 msgid ""
 "   static String reverse(String val) {\n"
@@ -3233,12 +3274,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1550
+#: upstream/_versions/main/guides/qute-reference.adoc:1568
 msgid "These extension methods can be used as follows."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1555
+#: upstream/_versions/main/guides/qute-reference.adoc:1573
 #, no-wrap
 msgid ""
 "{str:format('%s %s!','Hello', 'world')} <1>\n"
@@ -3246,335 +3287,335 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1557
+#: upstream/_versions/main/guides/qute-reference.adoc:1575
 msgid "The output is `Hello world!`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1558
+#: upstream/_versions/main/guides/qute-reference.adoc:1576
 msgid "The output is `olleh`"
 msgstr ""
 
 #. type: Title ====
-#: upstream/_versions/main/guides/qute-reference.adoc:1560
+#: upstream/_versions/main/guides/qute-reference.adoc:1578
 #, no-wrap
 msgid "Built-in Template Extensions"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1563
+#: upstream/_versions/main/guides/qute-reference.adoc:1581
 msgid "Quarkus provides a set of built-in extension methods."
 msgstr ""
 
 #. type: Title =====
-#: upstream/_versions/main/guides/qute-reference.adoc:1564
+#: upstream/_versions/main/guides/qute-reference.adoc:1582
 #, no-wrap
 msgid "Maps"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1567
+#: upstream/_versions/main/guides/qute-reference.adoc:1585
 msgid "`keys` or `keySet`: Returns a Set view of the keys contained in a map"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1568
+#: upstream/_versions/main/guides/qute-reference.adoc:1586
 msgid "`{#for key in map.keySet}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1570
+#: upstream/_versions/main/guides/qute-reference.adoc:1588
 msgid "`values`: Returns a Collection view of the values contained in a map"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1571
+#: upstream/_versions/main/guides/qute-reference.adoc:1589
 msgid "`{#for value in map.values}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1573
+#: upstream/_versions/main/guides/qute-reference.adoc:1591
 msgid "`size`: Returns the number of key-value mappings in a map"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1574
+#: upstream/_versions/main/guides/qute-reference.adoc:1592
 msgid "`{map.size}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1576
+#: upstream/_versions/main/guides/qute-reference.adoc:1594
 msgid "`isEmpty`: Returns true if a map contains no key-value mappings"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1577
+#: upstream/_versions/main/guides/qute-reference.adoc:1595
 msgid "`{#if map.isEmpty}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1579
+#: upstream/_versions/main/guides/qute-reference.adoc:1597
 msgid "`get(key)`: Returns the value to which the specified key is mapped"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1580
+#: upstream/_versions/main/guides/qute-reference.adoc:1598
 msgid "`{map.get('foo')}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1582
+#: upstream/_versions/main/guides/qute-reference.adoc:1600
 msgid "A map value can be also accessed directly: `{map.myKey}`. Use the bracket notation for keys that are not legal identifiers: `{map['my key']}`."
 msgstr ""
 
 #. type: Title =====
-#: upstream/_versions/main/guides/qute-reference.adoc:1583
+#: upstream/_versions/main/guides/qute-reference.adoc:1601
 #, no-wrap
 msgid "Collections"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1586
+#: upstream/_versions/main/guides/qute-reference.adoc:1604
 msgid "`get(index)`: Returns the element at the specified position in a list"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1587
+#: upstream/_versions/main/guides/qute-reference.adoc:1605
 msgid "`{list.get(0)}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1589
+#: upstream/_versions/main/guides/qute-reference.adoc:1607
 msgid "`reversed`: Returns a reversed iterator over a list"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1590
+#: upstream/_versions/main/guides/qute-reference.adoc:1608
 msgid "`{#for r in recordsList.reversed}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1592
+#: upstream/_versions/main/guides/qute-reference.adoc:1610
 msgid "`take`: Returns the first `n` elements from the given list; throws an `IndexOutOfBoundsException` if `n` is out of range"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1593
+#: upstream/_versions/main/guides/qute-reference.adoc:1611
 msgid "`{#for r in recordsList.take(3)}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1595
+#: upstream/_versions/main/guides/qute-reference.adoc:1613
 msgid "`takeLast`: Returns the last `n` elements from the given list; throws an `IndexOutOfBoundsException` if `n` is out of range"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1596
+#: upstream/_versions/main/guides/qute-reference.adoc:1614
 msgid "`{#for r in recordsList.takeLast(3)}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1598
+#: upstream/_versions/main/guides/qute-reference.adoc:1616
 msgid "A list element can be accessed directly: `{list.10}` or `{list[10]}`."
 msgstr ""
 
 #. type: Title =====
-#: upstream/_versions/main/guides/qute-reference.adoc:1599
+#: upstream/_versions/main/guides/qute-reference.adoc:1617
 #, no-wrap
 msgid "Numbers"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1602
+#: upstream/_versions/main/guides/qute-reference.adoc:1620
 msgid "`mod`: Modulo operation"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1603
+#: upstream/_versions/main/guides/qute-reference.adoc:1621
 msgid "`{#if counter.mod(5) == 0}`"
 msgstr ""
 
 #. type: Title =====
-#: upstream/_versions/main/guides/qute-reference.adoc:1604
+#: upstream/_versions/main/guides/qute-reference.adoc:1622
 #, no-wrap
 msgid "Strings"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1607
+#: upstream/_versions/main/guides/qute-reference.adoc:1625
 msgid "`fmt` or `format`: format the string instance via `java.lang.String.format()`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1608
+#: upstream/_versions/main/guides/qute-reference.adoc:1626
 msgid "`{myStr.fmt(\"arg1\",\"arg2\")}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1609
+#: upstream/_versions/main/guides/qute-reference.adoc:1627
 msgid "`{myStr.format(locale,arg1)}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1610
+#: upstream/_versions/main/guides/qute-reference.adoc:1628
 msgid "`str:fmt` or `str:format`: format the supplied string value via `java.lang.String.format()`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1611
+#: upstream/_versions/main/guides/qute-reference.adoc:1629
 msgid "`{str:format(\"Hello %s!\",name)}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1612
+#: upstream/_versions/main/guides/qute-reference.adoc:1630
 msgid "`{str:fmt(locale,'%tA',now)}`"
 msgstr ""
 
 #. type: Title =====
-#: upstream/_versions/main/guides/qute-reference.adoc:1613
+#: upstream/_versions/main/guides/qute-reference.adoc:1631
 #, no-wrap
 msgid "Config "
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1616
+#: upstream/_versions/main/guides/qute-reference.adoc:1634
 msgid "`config:<name>` or `config:[<name>]`: Returns the config value for the given property name"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1617
+#: upstream/_versions/main/guides/qute-reference.adoc:1635
 msgid "`{config:foo}` or `{config:['property.with.dot.in.name']}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1619
+#: upstream/_versions/main/guides/qute-reference.adoc:1637
 msgid "`config:property(name)`: Returns the config value for the given property name; the name can be obtained dynamically by an expression"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1620
+#: upstream/_versions/main/guides/qute-reference.adoc:1638
 msgid "`{config:property('quarkus.foo')}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1621
+#: upstream/_versions/main/guides/qute-reference.adoc:1639
 msgid "`{config:property(foo.getPropertyName())}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1623
+#: upstream/_versions/main/guides/qute-reference.adoc:1641
 msgid "`config:boolean(name)`: Returns the config value for the given property name as a boolean; the name can be obtained dynamically by an expression"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1624
+#: upstream/_versions/main/guides/qute-reference.adoc:1642
 msgid "`{config:boolean('quarkus.foo.boolean') ?: 'Not Found'}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1625
+#: upstream/_versions/main/guides/qute-reference.adoc:1643
 msgid "`{config:boolean(foo.getPropertyName()) ?: 'property is false'}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1627
+#: upstream/_versions/main/guides/qute-reference.adoc:1645
 msgid "`config:integer(name)`: Returns the config value for the given property name as an integer; the name can be obtained dynamically by an expression"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1628
+#: upstream/_versions/main/guides/qute-reference.adoc:1646
 msgid "`{config:integer('quarkus.foo')}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1629
+#: upstream/_versions/main/guides/qute-reference.adoc:1647
 msgid "`{config:integer(foo.getPropertyName())}`"
 msgstr ""
 
 #. type: Title =====
-#: upstream/_versions/main/guides/qute-reference.adoc:1630
+#: upstream/_versions/main/guides/qute-reference.adoc:1648
 #, no-wrap
 msgid "Time"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1633
+#: upstream/_versions/main/guides/qute-reference.adoc:1651
 msgid "`format(pattern)`: Formats temporal objects from the `java.time` package"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1634
+#: upstream/_versions/main/guides/qute-reference.adoc:1652
 msgid "`{dateTime.format('d MMM uuuu')}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1636
+#: upstream/_versions/main/guides/qute-reference.adoc:1654
 msgid "`format(pattern,locale)`: Formats temporal objects from the `java.time` package"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1637
+#: upstream/_versions/main/guides/qute-reference.adoc:1655
 msgid "`{dateTime.format('d MMM uuuu',myLocale)}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1639
+#: upstream/_versions/main/guides/qute-reference.adoc:1657
 msgid "`format(pattern,locale,timeZone)`: Formats temporal objects from the `java.time` package"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1640
+#: upstream/_versions/main/guides/qute-reference.adoc:1658
 msgid "`{dateTime.format('d MMM uuuu',myLocale,myTimeZoneId)}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1642
+#: upstream/_versions/main/guides/qute-reference.adoc:1660
 msgid "`time:format(dateTime,pattern)`: Formats temporal objects from the `java.time` package, `java.util.Date`, `java.util.Calendar` and `java.lang.Number`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1643
+#: upstream/_versions/main/guides/qute-reference.adoc:1661
 msgid "`{time:format(myDate,'d MMM uuuu')}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1645
+#: upstream/_versions/main/guides/qute-reference.adoc:1663
 msgid "`time:format(dateTime,pattern,locale)`: Formats temporal objects from the `java.time` package, `java.util.Date`, `java.util.Calendar` and `java.lang.Number`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1646
+#: upstream/_versions/main/guides/qute-reference.adoc:1664
 msgid "`{time:format(myDate,'d MMM uuuu', myLocale)}`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1648
+#: upstream/_versions/main/guides/qute-reference.adoc:1666
 msgid "`time:format(dateTime,pattern,locale,timeZone)`: Formats temporal objects from the `java.time` package, `java.util.Date`, `java.util.Calendar` and `java.lang.Number`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1649
+#: upstream/_versions/main/guides/qute-reference.adoc:1667
 msgid "`{time:format(myDate,'d MMM uuuu',myLocale,myTimeZoneId)}`"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/qute-reference.adoc:1651
+#: upstream/_versions/main/guides/qute-reference.adoc:1669
 #, no-wrap
 msgid "@TemplateData"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1655
+#: upstream/_versions/main/guides/qute-reference.adoc:1673
 msgid "A value resolver is automatically generated for a type annotated with `@TemplateData`.  This allows Quarkus to avoid using reflection to access the data at runtime."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1657
+#: upstream/_versions/main/guides/qute-reference.adoc:1675
 msgid "Non-public members, constructors, static initializers, static, synthetic and void methods are always ignored."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1664
+#: upstream/_versions/main/guides/qute-reference.adoc:1682
 #, no-wrap
 msgid ""
 "@TemplateData\n"
@@ -3582,7 +3623,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1670
+#: upstream/_versions/main/guides/qute-reference.adoc:1688
 #, no-wrap
 msgid ""
 "    public Item(BigDecimal price) {\n"
@@ -3591,7 +3632,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1675
+#: upstream/_versions/main/guides/qute-reference.adoc:1693
 #, no-wrap
 msgid ""
 "    public BigDecimal getDiscountedPrice() {\n"
@@ -3601,12 +3642,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1678
+#: upstream/_versions/main/guides/qute-reference.adoc:1696
 msgid "Any instance of `Item` can be used directly in the template:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1684
+#: upstream/_versions/main/guides/qute-reference.adoc:1702
 #, no-wrap
 msgid ""
 "{#each items} <1>\n"
@@ -3615,17 +3656,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1686
+#: upstream/_versions/main/guides/qute-reference.adoc:1704
 msgid "`items` is resolved to a list of `org.acme.Item` instances."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1689
+#: upstream/_versions/main/guides/qute-reference.adoc:1707
 msgid "Furthermore, `@TemplateData.properties()` and `@TemplateData.ignore()` can be used to fine-tune the generated resolver.  Finally, it is also possible to specify the \"target\" of the annotation - this could be useful for third-party classes not controlled by the application:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1695
+#: upstream/_versions/main/guides/qute-reference.adoc:1713
 #, no-wrap
 msgid ""
 "@TemplateData(target = BigDecimal.class)\n"
@@ -3634,7 +3675,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1709
+#: upstream/_versions/main/guides/qute-reference.adoc:1727
 #, no-wrap
 msgid ""
 "{#each items}\n"
@@ -3643,41 +3684,41 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1711
+#: upstream/_versions/main/guides/qute-reference.adoc:1729
 msgid "The generated value resolver knows how to invoke the `BigDecimal.setScale()` method."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_versions/main/guides/qute-reference.adoc:1712
+#: upstream/_versions/main/guides/qute-reference.adoc:1730
 #, no-wrap
 msgid "Accessing Static Fields and Methods"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1719
+#: upstream/_versions/main/guides/qute-reference.adoc:1737
 msgid "If `@TemplateData#namespace()` is set to a non-empty value then a namespace resolver is automatically generated to access the public static fields and methods of the target class.  By default, the namespace is the FQCN of the target class where dots and dollar signs are replaced by underscores.  For example, the namespace for a class with name `org.acme.Foo` is `org_acme_Foo`.  The static field `Foo.AGE` can be accessed via `{org_acme_Foo:AGE}`.  The static method `Foo.computeValue(int number)` can be accessed via `{org_acme_Foo:computeValue(10)}`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1721
+#: upstream/_versions/main/guides/qute-reference.adoc:1739
 msgid "A namespace can only consist of alphanumeric characters and underscores."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1722
+#: upstream/_versions/main/guides/qute-reference.adoc:1740
 #, no-wrap
 msgid "Class Annotated With `@TemplateData`"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1726
-#: upstream/_versions/main/guides/qute-reference.adoc:1752
+#: upstream/_versions/main/guides/qute-reference.adoc:1744
+#: upstream/_versions/main/guides/qute-reference.adoc:1770
 #, no-wrap
 msgid "package model;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1732
+#: upstream/_versions/main/guides/qute-reference.adoc:1750
 #, no-wrap
 msgid ""
 "@TemplateData <1>\n"
@@ -3688,18 +3729,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1734
+#: upstream/_versions/main/guides/qute-reference.adoc:1752
 msgid "A name resolver with the namespace `model_Status` is generated automatically."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1735
+#: upstream/_versions/main/guides/qute-reference.adoc:1753
 #, no-wrap
 msgid "Template Accessing Class Constants"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1741
+#: upstream/_versions/main/guides/qute-reference.adoc:1759
 #, no-wrap
 msgid ""
 "{#if machine.status == model_Status:ON}\n"
@@ -3708,24 +3749,24 @@ msgid ""
 msgstr ""
 
 #. type: Title ====
-#: upstream/_versions/main/guides/qute-reference.adoc:1743
+#: upstream/_versions/main/guides/qute-reference.adoc:1761
 #, no-wrap
 msgid "Convenient Annotation For Enums"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1747
+#: upstream/_versions/main/guides/qute-reference.adoc:1765
 msgid "There's also a convenient annotation to access enum constants: `@io.quarkus.qute.TemplateEnum`.  This annotation is functionally equivalent to `@TemplateData(namespace = TemplateData.SIMPLENAME)`, i.e. a namespace resolver is automatically generated for the target enum and the simple name of the target enum is used as the namespace."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1748
+#: upstream/_versions/main/guides/qute-reference.adoc:1766
 #, no-wrap
 msgid "Enum Annotated With `@TemplateEnum`"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1758
+#: upstream/_versions/main/guides/qute-reference.adoc:1776
 #, no-wrap
 msgid ""
 "@TemplateEnum <1>\n"
@@ -3736,23 +3777,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1760
+#: upstream/_versions/main/guides/qute-reference.adoc:1778
 msgid "A name resolver with the namespace `Status` is generated automatically."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1762
+#: upstream/_versions/main/guides/qute-reference.adoc:1780
 msgid "`@TemplateEnum` declared on a non-enum class is ignored. Also if an enum also declares the `@TemplateData` annotation then the `@TemplateEnum` annotation is ignored."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1763
+#: upstream/_versions/main/guides/qute-reference.adoc:1781
 #, no-wrap
 msgid "Template Accessing Enum Constants"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1769
+#: upstream/_versions/main/guides/qute-reference.adoc:1787
 #, no-wrap
 msgid ""
 "{#if machine.status == Status:ON}\n"
@@ -3761,35 +3802,35 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1772
+#: upstream/_versions/main/guides/qute-reference.adoc:1790
 msgid "Quarkus detects possible namespace collisions and fails the build if a specific namespace is defined by multiple `@TemplateData` and/or `@TemplateEnum` annotations."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/qute-reference.adoc:1774
+#: upstream/_versions/main/guides/qute-reference.adoc:1792
 #, no-wrap
 msgid "Global Variables"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1778
+#: upstream/_versions/main/guides/qute-reference.adoc:1796
 msgid "The `io.quarkus.qute.TemplateGlobal` annotation can be used to denote static fields and methods that supply _global variables_ which are accessible in any template.  Internally, each global variable is added to the data map of any `TemplateInstance` via the `TemplateInstance#data(String, Object)` method."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1779
+#: upstream/_versions/main/guides/qute-reference.adoc:1797
 #, no-wrap
 msgid "Global Variables Definition"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1783
+#: upstream/_versions/main/guides/qute-reference.adoc:1801
 #, no-wrap
 msgid "enum Color { RED, GREEN, BLUE }\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1786
+#: upstream/_versions/main/guides/qute-reference.adoc:1804
 #, no-wrap
 msgid ""
 "@TemplateGlobal <1>\n"
@@ -3797,13 +3838,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1788
+#: upstream/_versions/main/guides/qute-reference.adoc:1806
 #, no-wrap
 msgid "    static int age = 40;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1792
+#: upstream/_versions/main/guides/qute-reference.adoc:1810
 #, no-wrap
 msgid ""
 "    static Color[] myColors() {\n"
@@ -3812,7 +3853,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1798
+#: upstream/_versions/main/guides/qute-reference.adoc:1816
 #, no-wrap
 msgid ""
 "    @TemplateGlobal(name = \"currentUser\") <2>\n"
@@ -3823,23 +3864,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1800
+#: upstream/_versions/main/guides/qute-reference.adoc:1818
 msgid "If a class is annotated with `@TemplateGlobal` then every non-void non-private static method that declares no parameters and every non-private static field is considered a global variable. The name is defaulted, i.e. the name of the field/method is used."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1801
+#: upstream/_versions/main/guides/qute-reference.adoc:1819
 msgid "Method-level annotations override the class-level annotation. In this particular case, the name is not defaulted but selected explicitly."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1802
+#: upstream/_versions/main/guides/qute-reference.adoc:1820
 #, no-wrap
 msgid "A Template Accessing Global Variables"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1808
+#: upstream/_versions/main/guides/qute-reference.adoc:1826
 #, no-wrap
 msgid ""
 "User: {currentUser} <1>\n"
@@ -3848,33 +3889,33 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1810
+#: upstream/_versions/main/guides/qute-reference.adoc:1828
 msgid "`currentUser` resolves to `Globals#user()`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1811
+#: upstream/_versions/main/guides/qute-reference.adoc:1829
 msgid "`age` resolves to `Globals#age`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1812
+#: upstream/_versions/main/guides/qute-reference.adoc:1830
 msgid "`myColors` resolves to `Globals#myColors()`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1814
+#: upstream/_versions/main/guides/qute-reference.adoc:1832
 msgid "Note that global variables implicitly add <<typesafe_expressions, parameter declarations>> to all templates and so any expression that references a global variable is validated during build."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1815
+#: upstream/_versions/main/guides/qute-reference.adoc:1833
 #, no-wrap
 msgid "The Output"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1821
+#: upstream/_versions/main/guides/qute-reference.adoc:1839
 #, no-wrap
 msgid ""
 "User: Mia\n"
@@ -3883,30 +3924,30 @@ msgid ""
 msgstr ""
 
 #. type: Title ====
-#: upstream/_versions/main/guides/qute-reference.adoc:1823
+#: upstream/_versions/main/guides/qute-reference.adoc:1841
 #, no-wrap
 msgid "Resolving Conflicts"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1828
+#: upstream/_versions/main/guides/qute-reference.adoc:1846
 msgid "Global variables may conflict with regular data objects.  <<typesafe_templates,Type-safe templates>> override the global variables automatically.  For example, the following definition overrides the global variable supplied by the `Globals#user()` method:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1829
+#: upstream/_versions/main/guides/qute-reference.adoc:1847
 #, no-wrap
 msgid "Type-safe Template Definition"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1833
+#: upstream/_versions/main/guides/qute-reference.adoc:1851
 #, no-wrap
 msgid "import org.acme.User;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1838
+#: upstream/_versions/main/guides/qute-reference.adoc:1856
 #, no-wrap
 msgid ""
 "@CheckedTemplate\n"
@@ -3916,108 +3957,108 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1840
+#: upstream/_versions/main/guides/qute-reference.adoc:1858
 msgid "`currentUser` conflicts with the global variable supplied by `Globals#user()`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1842
+#: upstream/_versions/main/guides/qute-reference.adoc:1860
 msgid "So the corresponding template does not result in a validation error even though the `Globals#user()` method returns `java.lang.String` which does not have the `name` property:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1843
+#: upstream/_versions/main/guides/qute-reference.adoc:1861
 #, no-wrap
 msgid "`templates/hello.txt`"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1847
+#: upstream/_versions/main/guides/qute-reference.adoc:1865
 #, no-wrap
 msgid "User name: {currentUser.name} <1>\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1849
+#: upstream/_versions/main/guides/qute-reference.adoc:1867
 msgid "`org.acme.User` has the `name` property."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1851
+#: upstream/_versions/main/guides/qute-reference.adoc:1869
 msgid "For other templates an explicit parameter declaration is needed:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1855
+#: upstream/_versions/main/guides/qute-reference.adoc:1873
 #, no-wrap
 msgid "{@org.acme.User currentUser} <1>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1857
+#: upstream/_versions/main/guides/qute-reference.adoc:1875
 #, no-wrap
 msgid "User name: {currentUser.name}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1859
+#: upstream/_versions/main/guides/qute-reference.adoc:1877
 msgid "This parameter declaration overrides the declaration added by the global variable supplied by the `Globals#user()` method."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/qute-reference.adoc:1862
+#: upstream/_versions/main/guides/qute-reference.adoc:1880
 #, no-wrap
 msgid "Native Executables"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1867
+#: upstream/_versions/main/guides/qute-reference.adoc:1885
 msgid "In the JVM mode a reflection-based value resolver may be used to access properties and call methods of the model classes.  But this does not work for xref:building-native-image.adoc[a native executable] out of the box.  As a result, you may encounter template exceptions like `Property \"name\" not found on the base object \"org.acme.Foo\" in expression {foo.name} in template hello.html` even if the `Foo` class declares a relevant getter method."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1869
+#: upstream/_versions/main/guides/qute-reference.adoc:1887
 msgid "There are several ways to solve this problem:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1871
+#: upstream/_versions/main/guides/qute-reference.adoc:1889
 msgid "Make use of <<typesafe_templates,type-safe templates>> or <<typesafe_expressions,type-safe expressions>>"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1872
+#: upstream/_versions/main/guides/qute-reference.adoc:1890
 msgid "In this case, an optimized value resolver is generated automatically and used at runtime"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1873
+#: upstream/_versions/main/guides/qute-reference.adoc:1891
 msgid "This is the preferred solution"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1874
+#: upstream/_versions/main/guides/qute-reference.adoc:1892
 msgid "Annotate the model class with <<template_data,`@TemplateData`>> - a specialized value resolver is generated and used at runtime"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1875
+#: upstream/_versions/main/guides/qute-reference.adoc:1893
 msgid "Annotate the model class with `@io.quarkus.runtime.annotations.RegisterForReflection` to make the reflection-based value resolver work"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/qute-reference.adoc:1878
+#: upstream/_versions/main/guides/qute-reference.adoc:1896
 #, no-wrap
 msgid "RESTEasy Integration"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1882
+#: upstream/_versions/main/guides/qute-reference.adoc:1900
 msgid "If you want to use Qute in your JAX-RS application, then depending on which JAX-RS stack you are using, you'll need to register the proper extension first.  If you are using the traditional `quakus-resteasy` extension, then in your `pom.xml` file, add:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1889
+#: upstream/_versions/main/guides/qute-reference.adoc:1907
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -4027,12 +4068,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1892
+#: upstream/_versions/main/guides/qute-reference.adoc:1910
 msgid "If instead you are using RESTEasy Reactive via the `quarkus-resteasy-reactive` extension, then in your `pom.xml` file, add:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1899
+#: upstream/_versions/main/guides/qute-reference.adoc:1917
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -4042,17 +4083,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1902
+#: upstream/_versions/main/guides/qute-reference.adoc:1920
 msgid "Both of these extensions register a special `ContainerResponseFilter` implementation which enables resource methods to return a `TemplateInstance`, thus freeing users of having to take care of all necessary internal steps."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1904
+#: upstream/_versions/main/guides/qute-reference.adoc:1922
 msgid "The end result is that a using Qute within a JAX-RS resource may look as simple as:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1914
+#: upstream/_versions/main/guides/qute-reference.adoc:1932
 #, no-wrap
 msgid ""
 "import javax.inject.Inject;\n"
@@ -4062,7 +4103,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1917
+#: upstream/_versions/main/guides/qute-reference.adoc:1935
 #, no-wrap
 msgid ""
 "import io.quarkus.qute.TemplateInstance;\n"
@@ -4070,7 +4111,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1923
+#: upstream/_versions/main/guides/qute-reference.adoc:1941
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -4078,7 +4119,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1930
+#: upstream/_versions/main/guides/qute-reference.adoc:1948
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -4090,33 +4131,33 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1932
+#: upstream/_versions/main/guides/qute-reference.adoc:1950
 msgid "If there is no `@Location` qualifier provided, the field name is used to locate the template. In this particular case, we're injecting a template with path `templates/hello.txt`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1933
+#: upstream/_versions/main/guides/qute-reference.adoc:1951
 msgid "`Template.data()` returns a new template instance that can be customized before the actual rendering is triggered. In this case, we put the name value under the key `name`. The data map is accessible during rendering."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1934
+#: upstream/_versions/main/guides/qute-reference.adoc:1952
 msgid "Note that we don't trigger the rendering - this is done automatically by a special `ContainerResponseFilter` implementation."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1936
+#: upstream/_versions/main/guides/qute-reference.adoc:1954
 msgid "Users are encouraged to use <<typesafe_templates,Type-safe templates>> that help to organize the templates for a specific JAX-RS resource and enable <<typesafe_expressions,type-safe expressions>> automatically."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1939
+#: upstream/_versions/main/guides/qute-reference.adoc:1957
 msgid "The content negotiation is performed automatically.  The resulting output depends on the `Accept` header received from the client."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1944
-#: upstream/_versions/main/guides/qute-reference.adoc:1965
+#: upstream/_versions/main/guides/qute-reference.adoc:1962
+#: upstream/_versions/main/guides/qute-reference.adoc:1983
 #, no-wrap
 msgid ""
 "@Path(\"/detail\")\n"
@@ -4124,7 +4165,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1947
+#: upstream/_versions/main/guides/qute-reference.adoc:1965
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -4132,7 +4173,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1954
+#: upstream/_versions/main/guides/qute-reference.adoc:1972
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -4144,28 +4185,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1956
+#: upstream/_versions/main/guides/qute-reference.adoc:1974
 msgid "Inject a variant template with base path derived from the injected field - `src/main/resources/templates/item`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1957
+#: upstream/_versions/main/guides/qute-reference.adoc:1975
 msgid "For `text/plain` the `src/main/resources/templates/item.txt` template is used. For `text/html` the `META-INF/resources/templates/item.html` template is used."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1959
+#: upstream/_versions/main/guides/qute-reference.adoc:1977
 msgid "The `RestTemplate` util class can be used to obtain a template instance from a body of a JAX-RS resource method:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:1960
+#: upstream/_versions/main/guides/qute-reference.adoc:1978
 #, no-wrap
 msgid "RestTemplate Example"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1972
+#: upstream/_versions/main/guides/qute-reference.adoc:1990
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -4177,60 +4218,60 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1974
+#: upstream/_versions/main/guides/qute-reference.adoc:1992
 msgid "The name of the template is derived from the resource class and method name; `DetailResource/item` in this particular case."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1976
+#: upstream/_versions/main/guides/qute-reference.adoc:1994
 msgid "Unlike with `@Inject` the templates obtained via `RestTemplate` are not validated, i.e. the build does not fail if a template does not exist."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/qute-reference.adoc:1977
+#: upstream/_versions/main/guides/qute-reference.adoc:1995
 #, no-wrap
 msgid "Development Mode"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1980
+#: upstream/_versions/main/guides/qute-reference.adoc:1998
 msgid "In the development mode, all files located in `src/main/resources/templates` are watched for changes and modifications are immediately visible."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/qute-reference.adoc:1982
+#: upstream/_versions/main/guides/qute-reference.adoc:2000
 #, no-wrap
 msgid "Type-safe Message Bundles"
 msgstr ""
 
 #. type: Title ====
-#: upstream/_versions/main/guides/qute-reference.adoc:1984
+#: upstream/_versions/main/guides/qute-reference.adoc:2002
 #, no-wrap
 msgid "Basic Concepts"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1990
+#: upstream/_versions/main/guides/qute-reference.adoc:2008
 msgid "The basic idea is that every message is potentially a very simple template.  In order to prevent type errors a message is defined as an annotated method of a *message bundle interface*.  Quarkus generates the *message bundle implementation* at build time.  Subsequently, the bundles can be used at runtime:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1992
+#: upstream/_versions/main/guides/qute-reference.adoc:2010
 msgid "Directly in your code via `io.quarkus.qute.i18n.MessageBundles#get()`; e.g. `MessageBundles.get(AppMessages.class).hello_name(\"Lucie\")`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1993
+#: upstream/_versions/main/guides/qute-reference.adoc:2011
 msgid "Injected in your beans via `@Inject`; e.g. `@Inject AppMessages`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:1994
+#: upstream/_versions/main/guides/qute-reference.adoc:2012
 msgid "Referenced in the templates via the message bundle namespace:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:1999
+#: upstream/_versions/main/guides/qute-reference.adoc:2017
 #, no-wrap
 msgid ""
 " {msg:hello_name('Lucie')} <1> <2> <3>\n"
@@ -4238,33 +4279,33 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2001
+#: upstream/_versions/main/guides/qute-reference.adoc:2019
 msgid "`msg` is the default namespace."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2002
+#: upstream/_versions/main/guides/qute-reference.adoc:2020
 msgid "`hello_name` is the message key."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2003
+#: upstream/_versions/main/guides/qute-reference.adoc:2021
 msgid "`Lucie` is the parameter of the message bundle interface method."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2004
+#: upstream/_versions/main/guides/qute-reference.adoc:2022
 msgid "It is also possible to obtain a localized message for a key resolved at runtime using a reserved key `message`. The validation is skipped in this case though."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:2005
+#: upstream/_versions/main/guides/qute-reference.adoc:2023
 #, no-wrap
 msgid "Message Bundle Interface Example"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2010
+#: upstream/_versions/main/guides/qute-reference.adoc:2028
 #, no-wrap
 msgid ""
 "import io.quarkus.qute.i18n.Message;\n"
@@ -4272,7 +4313,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2013
+#: upstream/_versions/main/guides/qute-reference.adoc:2031
 #, no-wrap
 msgid ""
 "@MessageBundle <1>\n"
@@ -4280,7 +4321,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2017
+#: upstream/_versions/main/guides/qute-reference.adoc:2035
 #, no-wrap
 msgid ""
 "    @Message(\"Hello {name}!\") <2>\n"
@@ -4289,106 +4330,106 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2019
+#: upstream/_versions/main/guides/qute-reference.adoc:2037
 msgid "Denotes a message bundle interface. The bundle name is defaulted to `msg` and is used as a namespace in templates expressions, e.g. `{msg:hello_name}`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2020
+#: upstream/_versions/main/guides/qute-reference.adoc:2038
 msgid "Each method must be annotated with `@Message`. The value is a qute template."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2021
+#: upstream/_versions/main/guides/qute-reference.adoc:2039
 msgid "The method parameters can be used in the template."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_versions/main/guides/qute-reference.adoc:2022
+#: upstream/_versions/main/guides/qute-reference.adoc:2040
 #, no-wrap
 msgid "Bundle Name and Message Keys"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2030
+#: upstream/_versions/main/guides/qute-reference.adoc:2048
 msgid "Keys are used directly in templates.  The bundle name is used as a namespace in template expressions.  The `@MessageBundle` can be used to define the default strategy used to generate message keys from method names.  However, the `@Message` can override this strategy and even define a custom key.  By default, the annotated element's name is used as-is.  Other possibilities are:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2032
+#: upstream/_versions/main/guides/qute-reference.adoc:2050
 msgid "De-camel-cased and hyphenated; e.g. `helloName()` -> `hello-name`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2033
+#: upstream/_versions/main/guides/qute-reference.adoc:2051
 msgid "De-camel-cased and parts separated by underscores; e.g. `helloName()` -> `hello_name`."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_versions/main/guides/qute-reference.adoc:2034
+#: upstream/_versions/main/guides/qute-reference.adoc:2052
 #, no-wrap
 msgid "Validation"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2037
+#: upstream/_versions/main/guides/qute-reference.adoc:2055
 msgid "All message bundle templates are validated:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2038
+#: upstream/_versions/main/guides/qute-reference.adoc:2056
 msgid "All expressions without a namespace must map to a parameter; e.g. `Hello {foo}` -> the method must have a param of name `foo`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2039
+#: upstream/_versions/main/guides/qute-reference.adoc:2057
 msgid "All expressions are validated against the types of the parameters; e.g. `Hello {foo.bar}` where the parameter `foo` is of type `org.acme.Foo` -> `org.acme.Foo` must have a property of name `bar`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2041
+#: upstream/_versions/main/guides/qute-reference.adoc:2059
 msgid "A warning message is logged for each _unused_ parameter."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2042
+#: upstream/_versions/main/guides/qute-reference.adoc:2060
 msgid "Expressions that reference a message bundle method, such as `{msg:hello(item.name)}`, are validated too."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_versions/main/guides/qute-reference.adoc:2043
+#: upstream/_versions/main/guides/qute-reference.adoc:2061
 #, no-wrap
 msgid "Localization"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2048
+#: upstream/_versions/main/guides/qute-reference.adoc:2066
 msgid "The default locale specified via the `quarkus.default-locale` config property is used for the `@MessageBundle` interface by default.  However, the `io.quarkus.qute.i18n.MessageBundle#locale()` can be used to specify a custom locale.  Additionally, there are two ways to define a localized bundle:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2050
+#: upstream/_versions/main/guides/qute-reference.adoc:2068
 msgid "Create an interface that extends the default interface that is annotated with `@Localized`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2051
+#: upstream/_versions/main/guides/qute-reference.adoc:2069
 msgid "Create an UTF-8 encoded file located in `src/main/resources/messages`; e.g. `msg_de.properties`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2053
+#: upstream/_versions/main/guides/qute-reference.adoc:2071
 msgid "A localized interface is the preferred solution mainly due to the possibility of easy refactoring."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:2054
+#: upstream/_versions/main/guides/qute-reference.adoc:2072
 #, no-wrap
 msgid "Localized Interface Example"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2059
+#: upstream/_versions/main/guides/qute-reference.adoc:2077
 #, no-wrap
 msgid ""
 "import io.quarkus.qute.i18n.Localized;\n"
@@ -4396,7 +4437,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2062
+#: upstream/_versions/main/guides/qute-reference.adoc:2080
 #, no-wrap
 msgid ""
 "@Localized(\"de\") <1>\n"
@@ -4404,7 +4445,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2067
+#: upstream/_versions/main/guides/qute-reference.adoc:2085
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -4414,28 +4455,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2069
+#: upstream/_versions/main/guides/qute-reference.adoc:2087
 msgid "The value is the locale tag string (IETF)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2070
+#: upstream/_versions/main/guides/qute-reference.adoc:2088
 msgid "The value is the localized template."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2080
+#: upstream/_versions/main/guides/qute-reference.adoc:2098
 msgid "Message bundle files must be encoded in UTF-8.  The file name consists of the relevant bundle name (e.g. `msg`) and underscore followed by the locate tag (IETF).  The file format is very simple: each line represents either a key/value pair with the equals sign used as a separator or a comment (line starts with `#`).  Blank lines are ignored.  Keys are _mapped to method names_ from the corresponding message bundle interface.  Values represent the templates normally defined by `io.quarkus.qute.i18n.Message#value()`.  A value may be spread out across several adjacent normal lines.  In such case, the line terminator must be escaped with a backslash character `\\`.  The behavior is very similar to the behavior of the `java.util.Properties.load(Reader)` method."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:2081
+#: upstream/_versions/main/guides/qute-reference.adoc:2099
 #, no-wrap
 msgid "Localized File Example - `msg_de.properties`"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2086
+#: upstream/_versions/main/guides/qute-reference.adoc:2104
 #, no-wrap
 msgid ""
 "# This comment is ignored\n"
@@ -4443,33 +4484,33 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2088
+#: upstream/_versions/main/guides/qute-reference.adoc:2106
 msgid "Each line in a localized file represents a key/value pair. The key must correspond to a method declared on the message bundle interface. The value is the message template."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2089
+#: upstream/_versions/main/guides/qute-reference.adoc:2107
 msgid "Keys and values are separated by the equals sign."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2091
+#: upstream/_versions/main/guides/qute-reference.adoc:2109
 msgid "We use the `.properties` suffix in our example because most IDEs and text editors support syntax highlighting of `.properties` files. But in fact, the suffix could be anything - it is just ignored."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2093
+#: upstream/_versions/main/guides/qute-reference.adoc:2111
 msgid "An example properties file is generated into the target directory for each message bundle interface automatically. For example, by default if no name is specified for `@MessageBundle` the file `target/qute-i18n-examples/msg.properties` is generated when the application is build via `mvn clean package`. You can use this file as a base for a specific locale. Just rename the file - e.g. `msg_fr.properties`, change the message templates and move it in the `src/main/resources/messages` directory."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:2094
+#: upstream/_versions/main/guides/qute-reference.adoc:2112
 #, no-wrap
 msgid "Value Spread Out Across Several Adjacent Lines"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2100
+#: upstream/_versions/main/guides/qute-reference.adoc:2118
 #, no-wrap
 msgid ""
 "hello=Hello \\\n"
@@ -4478,24 +4519,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2102
+#: upstream/_versions/main/guides/qute-reference.adoc:2120
 msgid "Note that the line terminator is escaped with a backslash character `\\` and white space at the start of the following line is ignored. I.e. `{msg:hello('Edgar')}` would be rendered as `Hello Edgar and good morning!`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2106
+#: upstream/_versions/main/guides/qute-reference.adoc:2124
 msgid "Once we have the localized bundles defined we need a way to _select_ the correct bundle for a specific template instance, i.e. to specify the locale for all message bundle expressions in the template.  By default, the locale specified via the `quarkus.default-locale` configuration property is used to select the bundle.  Alternatively, you can specify the `locale` attribute of a template instance."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:2107
+#: upstream/_versions/main/guides/qute-reference.adoc:2125
 #, no-wrap
 msgid "`locale` Attribute Example"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2112
-#: upstream/_versions/main/guides/qute-reference.adoc:2133
+#: upstream/_versions/main/guides/qute-reference.adoc:2130
+#: upstream/_versions/main/guides/qute-reference.adoc:2151
 #, no-wrap
 msgid ""
 "@Singleton\n"
@@ -4503,7 +4544,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2115
+#: upstream/_versions/main/guides/qute-reference.adoc:2133
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -4511,7 +4552,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2120
+#: upstream/_versions/main/guides/qute-reference.adoc:2138
 #, no-wrap
 msgid ""
 "    String render() {\n"
@@ -4521,28 +4562,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2122
+#: upstream/_versions/main/guides/qute-reference.adoc:2140
 msgid "You can set a `Locale` instance or a locale tag string (IETF)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2125
+#: upstream/_versions/main/guides/qute-reference.adoc:2143
 msgid "When using <<resteasy_integration,quarkus-resteasy-qute>> the `locale` attribute is derived from the the `Accept-Language` header if not set by a user."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2127
+#: upstream/_versions/main/guides/qute-reference.adoc:2145
 msgid "The `@Localized` qualifier can be used to inject a localized message bundle interface."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/qute-reference.adoc:2128
+#: upstream/_versions/main/guides/qute-reference.adoc:2146
 #, no-wrap
 msgid "Injected Localized Message Bundle Example"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2136
+#: upstream/_versions/main/guides/qute-reference.adoc:2154
 #, no-wrap
 msgid ""
 "    @Localized(\"cs\") <1>\n"
@@ -4550,7 +4591,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/qute-reference.adoc:2141
+#: upstream/_versions/main/guides/qute-reference.adoc:2159
 #, no-wrap
 msgid ""
 "    String render() {\n"
@@ -4560,113 +4601,113 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2143
+#: upstream/_versions/main/guides/qute-reference.adoc:2161
 msgid "The annotation value is a locale tag string (IETF)."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/qute-reference.adoc:2145
+#: upstream/_versions/main/guides/qute-reference.adoc:2163
 #, no-wrap
 msgid "Configuration Reference"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/qute-reference.adoc:2151
+#: upstream/_versions/main/guides/qute-reference.adoc:2169
 #, no-wrap
 msgid "Qute Used as a Standalone Library"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2156
+#: upstream/_versions/main/guides/qute-reference.adoc:2174
 msgid "Qute is primarily designed as a Quarkus extension.  However. it is possible to use it as a \"standalone\" library.  In this case, some features are not available and some additional configuration is needed."
 msgstr ""
 
 #. type: Labeled list
-#: upstream/_versions/main/guides/qute-reference.adoc:2157
+#: upstream/_versions/main/guides/qute-reference.adoc:2175
 #, no-wrap
 msgid "Engine"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2159
+#: upstream/_versions/main/guides/qute-reference.adoc:2177
 msgid "First of all, no managed `Engine` instance is available out of the box.  You'll need to configure a new instance via `Engine.builder()`."
 msgstr ""
 
 #. type: Labeled list
-#: upstream/_versions/main/guides/qute-reference.adoc:2160
+#: upstream/_versions/main/guides/qute-reference.adoc:2178
 #, no-wrap
 msgid "Templates"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2162
+#: upstream/_versions/main/guides/qute-reference.adoc:2180
 msgid "By default, no <<template-locator,template locators>> are registered, i.e. `Engine.getTemplate(String)` will not work."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2163
+#: upstream/_versions/main/guides/qute-reference.adoc:2181
 msgid "You can register a custom template locator or parse a template manually and put the reulst in the cache via `Engine.putTemplate(String, Template)`."
 msgstr ""
 
 #. type: Labeled list
-#: upstream/_versions/main/guides/qute-reference.adoc:2164
+#: upstream/_versions/main/guides/qute-reference.adoc:2182
 #, no-wrap
 msgid "Value resolvers"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2166
+#: upstream/_versions/main/guides/qute-reference.adoc:2184
 msgid "No <<value-resolvers,``ValueResolver``s>> are generated automatically."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2167
+#: upstream/_versions/main/guides/qute-reference.adoc:2185
 msgid "<<template_extension_methods,`@TemplateExtension` methods>> will not work."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2168
+#: upstream/_versions/main/guides/qute-reference.adoc:2186
 msgid "<<template_data,`@TemplateData`>> annotations are ignored."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2169
+#: upstream/_versions/main/guides/qute-reference.adoc:2187
 msgid "It's recommended to register a `ReflectionValueResolver` instance via `Engine.addValueResolver(new ReflectionValueResolver())` so that Qute can access object properties and call public methods."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2171
+#: upstream/_versions/main/guides/qute-reference.adoc:2189
 msgid "Keep in mind that reflection may not work correctly in some restricted environments or may require additional configuration, e.g. registration in case of a GraalVM native image."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2172
+#: upstream/_versions/main/guides/qute-reference.adoc:2190
 msgid "A custom value resolver can be easily built via `ValueResolver.builder()`"
 msgstr ""
 
 #. type: Labeled list
-#: upstream/_versions/main/guides/qute-reference.adoc:2173
+#: upstream/_versions/main/guides/qute-reference.adoc:2191
 #, no-wrap
 msgid "Type-safety"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2175
+#: upstream/_versions/main/guides/qute-reference.adoc:2193
 msgid "<<typesafe_expressions>> are not validated."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2176
+#: upstream/_versions/main/guides/qute-reference.adoc:2194
 msgid "<<type-safe-message-bundles,Type-safe message bundles>> are not supported."
 msgstr ""
 
 #. type: Labeled list
-#: upstream/_versions/main/guides/qute-reference.adoc:2177
+#: upstream/_versions/main/guides/qute-reference.adoc:2195
 #, no-wrap
 msgid "Injection"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/qute-reference.adoc:2177
+#: upstream/_versions/main/guides/qute-reference.adoc:2195
 msgid "It is not possible to inject a `Template` instance and vice versa - a template cannot inject a `@Named` CDI bean via the `inject:` namespace."
 msgstr ""
