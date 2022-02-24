@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-03 00:59+0000\n"
+"POT-Creation-Date: 2022-02-24 01:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1251,35 +1251,40 @@ msgstr ""
 msgid "gdb -ex 'directory ./target' ./target/getting-started-1.0.0-SNAPSHOT-runner\n"
 msgstr ""
 
-#. type: Title ==
+#. type: delimited block =
 #: upstream/_versions/main/guides/building-native-image.adoc:792
+msgid "For a more detailed guide about debugging native images please refer to the xref:native-reference.adoc[Native Reference Guide]."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_versions/main/guides/building-native-image.adoc:794
 #, no-wrap
 msgid "Configuring the Native Executable"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/building-native-image.adoc:796
+#: upstream/_versions/main/guides/building-native-image.adoc:798
 msgid "There are a lot of different configuration options that can affect how the native executable is generated.  These are provided in `application.properties` the same as any other config property."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/building-native-image.adoc:798
+#: upstream/_versions/main/guides/building-native-image.adoc:800
 msgid "The properties are shown below:"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/building-native-image.adoc:801
+#: upstream/_versions/main/guides/building-native-image.adoc:803
 #, no-wrap
 msgid "What's next?"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/building-native-image.adoc:806
+#: upstream/_versions/main/guides/building-native-image.adoc:808
 msgid "This guide covered the creation of a native (binary) executable for your application.  It provides an application exhibiting a swift startup time and consuming less memory.  However, there is much more."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/building-native-image.adoc:807
+#: upstream/_versions/main/guides/building-native-image.adoc:809
 msgid "We recommend continuing the journey with the xref:deploying-to-kubernetes.adoc[deployment to Kubernetes and OpenShift]."
 msgstr ""
 
