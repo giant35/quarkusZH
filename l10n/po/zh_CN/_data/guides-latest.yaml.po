@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-03 01:05+0000\n"
+"POT-Creation-Date: 2022-02-28 01:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2885,6 +2885,12 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "Amazon SNS"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-amazon-services/dev/amazon-sns.html"
 msgstr ""
 
 #. type: Hash Value - Key: description
