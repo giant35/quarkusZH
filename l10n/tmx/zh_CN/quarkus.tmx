@@ -438,14 +438,6 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>&lt;a href="{{site.baseurl}}/get-started/" class="button-cta"&gt;Get Started with Quarkus&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>&lt;a href=“{{site.baseurl}}/get-started/“ class=“button-cta”&gt;Quarkus 入门&lt;/a&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Now Available</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
