@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-23 01:17+0000\n"
+"POT-Creation-Date: 2022-03-03 01:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -979,10 +979,10 @@ msgstr ""
 msgid "Notice there's an extra bit in the key (the `second` segment).  The syntax is as follows: `quarkus.redis.[optional name.][redis configuration property]`.  If the name is omitted, it configures the default client."
 msgstr ""
 
-#. type: Title ===
+#. type: Title ==
 #: upstream/_guides/redis.adoc:553
 #, no-wrap
-msgid "Named Redis client Injection"
+msgid "Named Redis Client Injection"
 msgstr ""
 
 #. type: Plain text
@@ -1016,7 +1016,7 @@ msgid ""
 "ReactiveRedisClient reactiveClient2;\n"
 msgstr ""
 
-#. type: Title ===
+#. type: Title ==
 #: upstream/_guides/redis.adoc:572
 #, no-wrap
 msgid "Providing Redis Hosts Programmatically"
@@ -1059,7 +1059,7 @@ msgstr ""
 msgid "quarkus.redis.hosts-provider-name=hosts-provider\n"
 msgstr ""
 
-#. type: Title ===
+#. type: Title ==
 #: upstream/_guides/redis.adoc:601
 #, no-wrap
 msgid "Creating Clients Programmatically"

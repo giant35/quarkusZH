@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-12 01:00+0000\n"
+"POT-Creation-Date: 2022-03-03 01:20+0000\n"
 "PO-Revision-Date: 2021-07-13 13:58+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -34,45 +34,47 @@ msgstr "专为 OpenJDK HotSpot 及 GraalVM 量身定制的原生 Kubernetes Java
 
 #. type: Content of: <div><div><img>
 #: upstream/_includes/homepage-hero-band.html:7
-msgid "<a href=\"{{site.baseurl}}/get-started/\" class=\"button-cta\">Get Started with Quarkus</a>"
+#, fuzzy
+#| msgid "<a href=\"{{site.baseurl}}/get-started/\" class=\"button-cta\">Get Started with Quarkus</a>"
+msgid "<a href=\"{{site.baseurl}}/get-started/\" class=\"button-cta\">Get Started with Quarkus</a> <a href=\"{{site.baseurl}}/guides/\" class=\"button-cta\">Read the Guides</a>"
 msgstr "<a href=“{{site.baseurl}}/get-started/“ class=“button-cta”>Quarkus 入门</a>"
 
 #. type: Content of: <div><div><a>
-#: upstream/_includes/homepage-hero-band.html:11
+#: upstream/_includes/homepage-hero-band.html:12
 msgid "<a href=\"https://t.co/AUnQuWDzcY?amp=1\">"
 msgstr ""
 
 #. type: Attribute 'title' of: <div><div><a><img>
-#: upstream/_includes/homepage-hero-band.html:11
+#: upstream/_includes/homepage-hero-band.html:12
 msgid "2021 Stevie Award"
 msgstr ""
 
 #. type: Content of: <div><div><a>
-#: upstream/_includes/homepage-hero-band.html:14
+#: upstream/_includes/homepage-hero-band.html:15
 msgid "<a href=\"{{site.baseurl}}/worldtour/\">"
 msgstr ""
 
 #. type: Attribute 'title' of: <div><div><a><img>
-#: upstream/_includes/homepage-hero-band.html:14
+#: upstream/_includes/homepage-hero-band.html:15
 msgid "Quarkus World Tour"
 msgstr ""
 
 #. type: Content of: <div><div><p>
-#: upstream/_includes/homepage-hero-band.html:17
+#: upstream/_includes/homepage-hero-band.html:18
 msgid "Now Available"
 msgstr "现可用"
 
 #. type: Content of: <div><div><h3>
-#: upstream/_includes/homepage-hero-band.html:18
+#: upstream/_includes/homepage-hero-band.html:19
 msgid "Quarkus {{ site.data.versions.quarkus.version | replace: \".Final\", \"\" }}"
 msgstr ""
 
 #. type: Content of: <div><div>
-#: upstream/_includes/homepage-hero-band.html:19
+#: upstream/_includes/homepage-hero-band.html:20
 msgid "<a href=\"{{ site.data.versions.quarkus.announce }}\">More Information</a>"
 msgstr "<a href=“{{ site.data.versions.quarkus.announce }}”>更多信息</a>"
 
 #. type: Content of: <div><div>
-#: upstream/_includes/homepage-hero-band.html:22
+#: upstream/_includes/homepage-hero-band.html:23
 msgid "<a href=\"#\" class=\"scroll-down\" address=\"true\"></a>"
 msgstr ""
