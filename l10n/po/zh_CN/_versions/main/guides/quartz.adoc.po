@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-09 01:11+0000\n"
+"POT-Creation-Date: 2022-03-05 01:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -172,8 +172,8 @@ msgstr ""
 #: upstream/_versions/main/guides/quartz.adoc:88
 #: upstream/_versions/main/guides/quartz.adoc:118
 #: upstream/_versions/main/guides/quartz.adoc:149
-#: upstream/_versions/main/guides/quartz.adoc:235
-#: upstream/_versions/main/guides/quartz.adoc:259
+#: upstream/_versions/main/guides/quartz.adoc:234
+#: upstream/_versions/main/guides/quartz.adoc:258
 #, no-wrap
 msgid "package org.acme.quartz;\n"
 msgstr ""
@@ -463,34 +463,34 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:226
+#: upstream/_versions/main/guides/quartz.adoc:225
 msgid "Indicate that the scheduler will be run in clustered mode"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:227
+#: upstream/_versions/main/guides/quartz.adoc:226
 msgid "Use the database store to persist job related information so that they can be shared between nodes"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:228
+#: upstream/_versions/main/guides/quartz.adoc:227
 #, no-wrap
 msgid "Creating a REST resource and a test"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:231
+#: upstream/_versions/main/guides/quartz.adoc:230
 msgid "Create the `org.acme.quartz.TaskResource` class with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:237
+#: upstream/_versions/main/guides/quartz.adoc:236
 #, no-wrap
 msgid "import java.util.List;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:242
+#: upstream/_versions/main/guides/quartz.adoc:241
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -500,7 +500,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:245
+#: upstream/_versions/main/guides/quartz.adoc:244
 #, no-wrap
 msgid ""
 "@Path(\"/tasks\")\n"
@@ -508,7 +508,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:251
+#: upstream/_versions/main/guides/quartz.adoc:250
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -519,35 +519,35 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:253
+#: upstream/_versions/main/guides/quartz.adoc:252
 msgid "Retrieve the list of created tasks from the database"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:255
+#: upstream/_versions/main/guides/quartz.adoc:254
 msgid "You also have the option to create a `org.acme.quartz.TaskResourceTest` test with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:261
+#: upstream/_versions/main/guides/quartz.adoc:260
 #, no-wrap
 msgid "import io.quarkus.test.junit.QuarkusTest;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:263
+#: upstream/_versions/main/guides/quartz.adoc:262
 #, no-wrap
 msgid "import static org.hamcrest.Matchers.greaterThanOrEqualTo;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:265
+#: upstream/_versions/main/guides/quartz.adoc:264
 #, no-wrap
 msgid "import org.junit.jupiter.api.Test;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:268
+#: upstream/_versions/main/guides/quartz.adoc:267
 #, no-wrap
 msgid ""
 "import static io.restassured.RestAssured.given;\n"
@@ -555,7 +555,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:271
+#: upstream/_versions/main/guides/quartz.adoc:270
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -563,7 +563,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:282
+#: upstream/_versions/main/guides/quartz.adoc:281
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -579,40 +579,40 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:284
+#: upstream/_versions/main/guides/quartz.adoc:283
 msgid "Ensure that we have a `200` response and at least one task created"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:285
+#: upstream/_versions/main/guides/quartz.adoc:284
 #, no-wrap
 msgid "Creating Quartz Tables"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:289
+#: upstream/_versions/main/guides/quartz.adoc:288
 msgid "Add a SQL migration file named `src/main/resources/db/migration/V2.0.0\\__QuarkusQuartzTasks.sql` with the content copied from file with the content from link:{quickstarts-blob-url}/quartz-quickstart/src/main/resources/db/migration/V2.0.0__QuarkusQuartzTasks.sql[V2.0.0__QuarkusQuartzTasks.sql]."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:290
+#: upstream/_versions/main/guides/quartz.adoc:289
 #, no-wrap
 msgid "Configuring the load balancer"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:293
+#: upstream/_versions/main/guides/quartz.adoc:292
 msgid "In the root directory, create a `nginx.conf` file with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:297
+#: upstream/_versions/main/guides/quartz.adoc:296
 #, no-wrap
 msgid "user  nginx;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:301
+#: upstream/_versions/main/guides/quartz.adoc:300
 #, no-wrap
 msgid ""
 "events {\n"
@@ -621,7 +621,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:310
+#: upstream/_versions/main/guides/quartz.adoc:309
 #, no-wrap
 msgid ""
 "http {\n"
@@ -635,29 +635,29 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:313
+#: upstream/_versions/main/guides/quartz.adoc:311
 msgid "Route all traffic to our tasks application"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:314
+#: upstream/_versions/main/guides/quartz.adoc:312
 #, no-wrap
 msgid "Setting Application Deployment"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:317
+#: upstream/_versions/main/guides/quartz.adoc:315
 msgid "In the root directory, create a `docker-compose.yml` file with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:321
+#: upstream/_versions/main/guides/quartz.adoc:319
 #, no-wrap
 msgid "version: '3'\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:334
+#: upstream/_versions/main/guides/quartz.adoc:332
 #, no-wrap
 msgid ""
 "services:\n"
@@ -675,7 +675,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:345
+#: upstream/_versions/main/guides/quartz.adoc:343
 #, no-wrap
 msgid ""
 "  nginx: <2>\n"
@@ -691,7 +691,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:357
+#: upstream/_versions/main/guides/quartz.adoc:355
 #, no-wrap
 msgid ""
 "  postgres: <3>\n"
@@ -708,7 +708,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:361
+#: upstream/_versions/main/guides/quartz.adoc:359
 #, no-wrap
 msgid ""
 "networks:\n"
@@ -717,129 +717,129 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:364
+#: upstream/_versions/main/guides/quartz.adoc:361
 msgid "Define the tasks service"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:365
+#: upstream/_versions/main/guides/quartz.adoc:362
 msgid "Define the nginx load balancer to route incoming traffic to an appropriate node"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:366
+#: upstream/_versions/main/guides/quartz.adoc:363
 msgid "Define the configuration to run the database"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:367
+#: upstream/_versions/main/guides/quartz.adoc:364
 #, no-wrap
 msgid "Running the database"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:370
+#: upstream/_versions/main/guides/quartz.adoc:367
 msgid "In a separate terminal, run the below command:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:374
+#: upstream/_versions/main/guides/quartz.adoc:371
 #, no-wrap
 msgid "docker-compose up postgres <1>\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:377
+#: upstream/_versions/main/guides/quartz.adoc:373
 msgid "Start the database instance using the configuration options supplied in the `docker-compose.yml` file"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:378
+#: upstream/_versions/main/guides/quartz.adoc:374
 #, no-wrap
 msgid "Run the application in Dev Mode"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:381
+#: upstream/_versions/main/guides/quartz.adoc:377
 msgid "Run the application with:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:385
+#: upstream/_versions/main/guides/quartz.adoc:381
 msgid "After a few seconds, open another terminal and run `curl localhost:8080/tasks` to verify that we have at least one task created."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:387
+#: upstream/_versions/main/guides/quartz.adoc:383
 msgid "As usual, the application can be packaged using:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:391
+#: upstream/_versions/main/guides/quartz.adoc:387
 msgid "and executed with `java -jar target/quarkus-app/quarkus-run.jar`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:393
-#: upstream/_versions/main/guides/quartz.adoc:414
+#: upstream/_versions/main/guides/quartz.adoc:389
+#: upstream/_versions/main/guides/quartz.adoc:409
 msgid "You can also generate the native executable with:"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:396
+#: upstream/_versions/main/guides/quartz.adoc:392
 #, no-wrap
 msgid "Packaging the application and run several instances"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:399
+#: upstream/_versions/main/guides/quartz.adoc:395
 msgid "The application can be packaged using:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:403
+#: upstream/_versions/main/guides/quartz.adoc:399
 msgid "Once the build is successful, run the below command:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:407
+#: upstream/_versions/main/guides/quartz.adoc:403
 #, no-wrap
 msgid "docker-compose up --scale tasks=2 --scale nginx=1 <1>\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:410
+#: upstream/_versions/main/guides/quartz.adoc:405
 msgid "Start two instances of the application and a load balancer"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:412
+#: upstream/_versions/main/guides/quartz.adoc:407
 msgid "After a few seconds, in another terminal, run `curl localhost:8080/tasks` to verify that tasks were only created at different instants and in an interval of 10 seconds."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:418
+#: upstream/_versions/main/guides/quartz.adoc:413
 msgid "It's the reponsibility of the deployer to clear/remove the previous state, i.e. stale jobs and triggers. Moreover, the applications that form the \"Quartz cluster\" should be identical, otherwise an unpredictable result may occur."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:420
+#: upstream/_versions/main/guides/quartz.adoc:415
 #, no-wrap
 msgid "Registering Plugin and Listeners"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:423
+#: upstream/_versions/main/guides/quartz.adoc:418
 msgid "You can register `plugins`, `job-listeners` and `trigger-listeners` through Quarkus configuration."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:425
+#: upstream/_versions/main/guides/quartz.adoc:420
 msgid "The example below registers the plugin `org.quartz.plugins.history.LoggingJobHistoryPlugin` named as `jobHistory` with the property `jobSuccessMessage` defined as `Job [{1}.{0}] execution complete and reports: {8}`"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:430
+#: upstream/_versions/main/guides/quartz.adoc:425
 #, no-wrap
 msgid ""
 "quarkus.quartz.plugins.jobHistory.class=org.quartz.plugins.history.LoggingJobHistoryPlugin\n"
@@ -847,12 +847,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:433
+#: upstream/_versions/main/guides/quartz.adoc:428
 msgid "You can also register a listener programmatically with an injected `org.quartz.Scheduler`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:442
+#: upstream/_versions/main/guides/quartz.adoc:437
 #, no-wrap
 msgid ""
 "public class MyListenerManager {\n"
@@ -864,7 +864,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:445
+#: upstream/_versions/main/guides/quartz.adoc:440
 #, no-wrap
 msgid "Quartz Configuration Reference"
 msgstr ""
