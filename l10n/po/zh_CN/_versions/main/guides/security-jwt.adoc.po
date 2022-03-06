@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-05 01:16+0000\n"
+"POT-Creation-Date: 2022-03-06 01:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1756,7 +1756,6 @@ msgstr ""
 
 #. type: Table
 #: upstream/_versions/main/guides/security-jwt.adoc:979
-#: upstream/_versions/main/guides/security-jwt.adoc:995
 #, no-wrap
 msgid "`RS256`"
 msgstr ""
@@ -1872,7 +1871,7 @@ msgstr ""
 #. type: Table
 #: upstream/_versions/main/guides/security-jwt.adoc:996
 #, no-wrap
-msgid "Signature algorithm. Set it to `ES256` to support the Elliptic Curve signature algorithm. This property is deprecated, use `mp.jwt.verify.publickey.algorithm`."
+msgid "Signature algorithm. This property should only be used for setting a required symmetric algorithm such as `HS256`. It is deprecated for setting asymmetric algorithms such as `ES256` - use 'mp.jwt.verify.publickey.algorithm' instead."
 msgstr ""
 
 #. type: Table
