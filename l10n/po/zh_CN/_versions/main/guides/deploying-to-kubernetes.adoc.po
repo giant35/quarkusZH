@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-03 01:19+0000\n"
+"POT-Creation-Date: 2022-03-07 01:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2475,7 +2475,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:939
-msgid "Following the execution of `./mvnw package -Dquarkus.container-image.build=true ` you will notice amongst the other files that are created, two files named `openshift.json` and `openshift.yml` in the `target/kubernetes/` directory."
+msgid "Following the execution of `./mvnw package -Dquarkus.container-image.build=true` you will notice amongst the other files that are created, two files named `openshift.json` and `openshift.yml` in the `target/kubernetes/` directory."
 msgstr ""
 
 #. type: Plain text
