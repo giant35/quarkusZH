@@ -1,6 +1,7 @@
 Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_posts/insights_1_transcription.adoc.po, 0, 254, 0, 8846 ,100%
 l10n/po/zh_CN/_posts/insights_0_transcription.adoc.po, 0, 117, 0, 3765 ,100%
+l10n/po/zh_CN/_posts/2022-03-08-intellij-quarkus-tools-1.10.0.adoc.po, 0, 19, 0, 241 ,100%
 l10n/po/zh_CN/_posts/2022-03-02-quarkus-2-7-3-final-released.adoc.po, 0, 15, 0, 162 ,100%
 l10n/po/zh_CN/_posts/2022-02-23-quarkus-newsletter-17.adoc.po, 0, 6, 0, 202 ,100%
 l10n/po/zh_CN/_posts/2022-02-23-quarkus-2-7-2-final-released.adoc.po, 0, 18, 0, 216 ,100%
@@ -107,7 +108,7 @@ l10n/po/zh_CN/_posts/2020-12-08-avro-native.adoc.po, 0, 28, 0, 518 ,100%
 l10n/po/zh_CN/_posts/2020-12-07-extension-codestarts-a-new-way-to-learn-and-discover-quarkus.adoc.po, 0, 28, 0, 444 ,100%
 l10n/po/zh_CN/_posts/2020-12-03-quarkiverse.adoc.po, 0, 40, 0, 640 ,100%
 l10n/po/zh_CN/_posts/2020-12-01-quarkus-1-10-2-final-released.adoc.po, 0, 74, 0, 1005 ,100%
-l10n/po/zh_CN/_posts/2020-12-01-kafka-cloud-events.adoc.po, 0, 44, 0, 1295 ,100%
+l10n/po/zh_CN/_posts/2020-12-01-kafka-cloud-events.adoc.po, 0, 44, 0, 1294 ,100%
 l10n/po/zh_CN/_posts/2020-11-25-stylish-api.adoc.po, 0, 79, 0, 727 ,100%
 l10n/po/zh_CN/_posts/2020-11-24-mutiny-vertx.adoc.po, 0, 58, 0, 1154 ,100%
 l10n/po/zh_CN/_posts/2020-11-10-mutiny-invoke-and-call.adoc.po, 0, 44, 0, 644 ,100%
