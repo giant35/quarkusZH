@@ -80,7 +80,7 @@ msgstr ""
 #: upstream/_guides/native-reference.adoc:43
 #, no-wrap
 msgid "Bootstrapping the project"
-msgstr ""
+msgstr "搭建项目"
 
 #. type: Plain text
 #: upstream/_guides/native-reference.adoc:47
