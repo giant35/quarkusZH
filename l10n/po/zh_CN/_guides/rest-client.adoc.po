@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-09 01:11+0000\n"
+"POT-Creation-Date: 2022-03-10 01:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,7 +99,7 @@ msgid "This will add the following to your `pom.xml`:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/rest-client.adoc:50 upstream/_guides/rest-client.adoc:639
+#: upstream/_guides/rest-client.adoc:50 upstream/_guides/rest-client.adoc:629
 #, no-wrap
 msgid "pom.xml"
 msgstr ""
@@ -119,7 +119,7 @@ msgid ""
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/rest-client.adoc:63 upstream/_guides/rest-client.adoc:650
+#: upstream/_guides/rest-client.adoc:63 upstream/_guides/rest-client.adoc:641
 #, no-wrap
 msgid "build.gradle"
 msgstr ""
@@ -154,7 +154,7 @@ msgstr ""
 #: upstream/_guides/rest-client.adoc:282 upstream/_guides/rest-client.adoc:325
 #: upstream/_guides/rest-client.adoc:353 upstream/_guides/rest-client.adoc:408
 #: upstream/_guides/rest-client.adoc:436 upstream/_guides/rest-client.adoc:501
-#: upstream/_guides/rest-client.adoc:535 upstream/_guides/rest-client.adoc:671
+#: upstream/_guides/rest-client.adoc:535 upstream/_guides/rest-client.adoc:661
 #, no-wrap
 msgid "package org.acme.rest.client;\n"
 msgstr ""
@@ -183,7 +183,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/rest-client.adoc:90 upstream/_guides/rest-client.adoc:346
-#: upstream/_guides/rest-client.adoc:384 upstream/_guides/rest-client.adoc:732
+#: upstream/_guides/rest-client.adoc:384 upstream/_guides/rest-client.adoc:722
 #, no-wrap
 msgid "}\n"
 msgstr ""
@@ -944,7 +944,7 @@ msgid "First of all, Wiremock needs to be added as a test dependency. For a Mave
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:636 upstream/_guides/rest-client.adoc:647
+#: upstream/_guides/rest-client.adoc:637
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -955,34 +955,34 @@ msgid ""
 "</dependency>\n"
 msgstr ""
 
-#. type: delimited block -
-#: upstream/_guides/rest-client.adoc:653
-#, no-wrap
-msgid "testImplementation(\"com.github.tomakehurst:wiremock-jre8:$wiremockVersion\")\n"
-msgstr ""
-
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:656
+#: upstream/_guides/rest-client.adoc:639 upstream/_guides/rest-client.adoc:646
 msgid "Use a proper Wiremock version. All available versions can be found link:https://search.maven.org/artifact/com.github.tomakehurst/wiremock-jre8[here]."
 msgstr ""
 
+#. type: delimited block -
+#: upstream/_guides/rest-client.adoc:644
+#, no-wrap
+msgid "testImplementation(\"com.github.tomakehurst:wiremock-jre8:$wiremockVersion\") <1>\n"
+msgstr ""
+
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:660
+#: upstream/_guides/rest-client.adoc:650
 msgid "In Quarkus tests when some service needs to be started before the Quarkus tests are ran, we utilize the `@io.quarkus.test.common.QuarkusTestResource` annotation to specify a `io.quarkus.test.common.QuarkusTestResourceLifecycleManager` which can start the service and supply configuration values that Quarkus will use."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/rest-client.adoc:664
+#: upstream/_guides/rest-client.adoc:654
 msgid "For more details about `@QuarkusTestResource` refer to xref:getting-started-testing.adoc#quarkus-test-resource[this part of the documentation]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:667
+#: upstream/_guides/rest-client.adoc:657
 msgid "Let's create an implementation of `QuarkusTestResourceLifecycleManager` called `WiremockExtensions` like so:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:674
+#: upstream/_guides/rest-client.adoc:664
 #, no-wrap
 msgid ""
 "import java.util.Collections;\n"
@@ -990,7 +990,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:677
+#: upstream/_guides/rest-client.adoc:667
 #, no-wrap
 msgid ""
 "import com.github.tomakehurst.wiremock.WireMockServer;\n"
@@ -998,25 +998,25 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:679
+#: upstream/_guides/rest-client.adoc:669
 #, no-wrap
 msgid "import static com.github.tomakehurst.wiremock.client.WireMock.*; // <1>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:681
+#: upstream/_guides/rest-client.adoc:671
 #, no-wrap
 msgid "public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {  // <2>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:683
+#: upstream/_guides/rest-client.adoc:673
 #, no-wrap
 msgid "    private WireMockServer wireMockServer;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:688
+#: upstream/_guides/rest-client.adoc:678
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -1026,7 +1026,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:698
+#: upstream/_guides/rest-client.adoc:688
 #, no-wrap
 msgid ""
 "        stubFor(get(urlEqualTo(\"/extensions?id=io.quarkus:quarkus-rest-client\"))   // <4>\n"
@@ -1041,13 +1041,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:700
+#: upstream/_guides/rest-client.adoc:690
 #, no-wrap
 msgid "        stubFor(get(urlMatching(\".*\")).atPriority(10).willReturn(aResponse().proxiedFrom(\"https://stage.code.quarkus.io/api\")));   // <5>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:703
+#: upstream/_guides/rest-client.adoc:693
 #, no-wrap
 msgid ""
 "        return Collections.singletonMap(\"quarkus.rest-client.\\\"org.acme.rest.client.ExtensionsService\\\".url\", wireMockServer.baseUrl()); // <6>\n"
@@ -1055,7 +1055,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:711
+#: upstream/_guides/rest-client.adoc:701
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -1068,47 +1068,47 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:714
+#: upstream/_guides/rest-client.adoc:704
 msgid "Statically importing the methods in the Wiremock package makes it easier to read the test."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:715
+#: upstream/_guides/rest-client.adoc:705
 msgid "The `start` method is invoked by Quarkus before any test is run and returns a `Map` of configuration properties that apply during the test execution."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:716
+#: upstream/_guides/rest-client.adoc:706
 msgid "Launch Wiremock."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:717
+#: upstream/_guides/rest-client.adoc:707
 msgid "Configure Wiremock to stub the calls to `/extensions?id=io.quarkus:quarkus-rest-client` by returning a specific canned response."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:718
+#: upstream/_guides/rest-client.adoc:708
 msgid "All HTTP calls that have not been stubbed are handled by calling the real service. This is done for demonstration purposes, as it is not something that would usually happen in a real test."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:720
+#: upstream/_guides/rest-client.adoc:710
 msgid "As the `start` method returns configuration that applies for tests, we set the rest-client property that controls the base URL which is used by the implementation of `ExtensionsService` to the base URL where Wiremock is listening for incoming requests."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:721
+#: upstream/_guides/rest-client.adoc:711
 msgid "When all tests have finished, shutdown Wiremock."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:724
+#: upstream/_guides/rest-client.adoc:714
 msgid "The `ExtensionsResourceTest` test class needs to be annotated like so:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/rest-client.adoc:730
+#: upstream/_guides/rest-client.adoc:720
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -1117,18 +1117,18 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/rest-client.adoc:737
+#: upstream/_guides/rest-client.adoc:727
 msgid "`@QuarkusTestResource` applies to all tests, not just `ExtensionsResourceTest`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/rest-client.adoc:739
+#: upstream/_guides/rest-client.adoc:729
 #, no-wrap
 msgid "Further reading"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/rest-client.adoc:741
+#: upstream/_guides/rest-client.adoc:731
 msgid "link:https://download.eclipse.org/microprofile/microprofile-rest-client-2.0/microprofile-rest-client-spec-2.0.html[MicroProfile Rest Client specification]"
 msgstr ""
 
