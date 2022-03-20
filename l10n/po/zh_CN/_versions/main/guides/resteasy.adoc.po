@@ -44,7 +44,7 @@ msgstr ""
 #: upstream/_versions/main/guides/resteasy.adoc:21
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/resteasy.adoc:24
