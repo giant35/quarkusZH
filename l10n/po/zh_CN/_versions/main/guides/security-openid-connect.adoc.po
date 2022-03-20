@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-10 01:24+0000\n"
+"POT-Creation-Date: 2022-03-20 01:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,7 +142,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect.adoc:63
-msgid "This command generates a Maven project, importing the `keycloak` extension which is an implementation of a Keycloak Adapter for Quarkus applications and provides all the necessary capabilities to integrate with a Keycloak Server and perform bearer token authorization."
+msgid "This command generates a Maven project, importing the `oidc` extension which is an implementation of OIDC for Quarkus."
 msgstr ""
 
 #. type: Plain text
@@ -228,7 +228,7 @@ msgstr ""
 #: upstream/_versions/main/guides/security-openid-connect.adoc:102
 #, no-wrap
 msgid ""
-"import org.jboss.resteasy.annotations.cache.NoCache;\n"
+"import org.jboss.resteasy.reactive.NoCache;\n"
 "import io.quarkus.security.identity.SecurityIdentity;\n"
 msgstr ""
 
