@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-20 01:19+0000\n"
+"POT-Creation-Date: 2022-03-23 01:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,26 +116,25 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/tests-with-coverage.adoc:63
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:101
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:119
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:100
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:118
 #, no-wrap
 msgid "package org.acme.testcoverage;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:70
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:69
 #, no-wrap
 msgid ""
 "import javax.inject.Inject;\n"
 "import javax.ws.rs.GET;\n"
 "import javax.ws.rs.Path;\n"
-"import javax.ws.rs.PathParam;\n"
 "import javax.ws.rs.Produces;\n"
 "import javax.ws.rs.core.MediaType;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:73
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:72
 #, no-wrap
 msgid ""
 "@Path(\"/hello\")\n"
@@ -143,13 +142,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:75
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:74
 #, no-wrap
 msgid "    private final GreetingService service;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:80
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:79
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -159,19 +158,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:87
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:86
 #, no-wrap
 msgid ""
 "    @GET\n"
 "    @Produces(MediaType.TEXT_PLAIN)\n"
 "    @Path(\"/greeting/{name}\")\n"
-"    public String greeting(@PathParam(\"name\") String name) {\n"
+"    public String greeting(String name) {\n"
 "        return service.greeting(name);\n"
 "    }\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:94
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:93
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -183,18 +182,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:97
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:96
 msgid "This endpoint uses a greeting service:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:103
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:102
 #, no-wrap
 msgid "import javax.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:106
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:105
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -202,7 +201,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:110
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:109
 #, no-wrap
 msgid ""
 "    public String greeting(String name) {\n"
@@ -211,18 +210,18 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:112
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:111
 #, no-wrap
 msgid "}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:115
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:114
 msgid "The project will also need a test:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:123
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:122
 #, no-wrap
 msgid ""
 "import io.quarkus.test.junit.QuarkusTest;\n"
@@ -231,13 +230,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:125
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:124
 #, no-wrap
 msgid "import java.util.UUID;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:128
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:127
 #, no-wrap
 msgid ""
 "import static io.restassured.RestAssured.given;\n"
@@ -245,7 +244,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:131
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:130
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -253,7 +252,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:140
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:139
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -267,7 +266,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:152
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:151
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -284,26 +283,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:154
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:153
 #, no-wrap
-msgid "Setting up Jacoco"
+msgid "Setting up JaCoCo"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:157
-msgid "Now we need to add Jacoco to our project. To do this we need to add the following to the build file:"
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:156
+msgid "Now we need to add JaCoCo to our project. To do this we need to add the following to the build file:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:159
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:197
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:360
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:158
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:196
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:352
 #, no-wrap
 msgid "pom.xml"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:166
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:165
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -314,115 +313,100 @@ msgid ""
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:169
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:242
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:410
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:168
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:230
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:405
 #, no-wrap
 msgid "build.gradle"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:172
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:171
 #, no-wrap
 msgid "testImplementation(\"io.quarkus:quarkus-jacoco\")\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:176
-msgid "This Quarkus extension takes care of everything that would usually be done via the Jacoco Maven plugin, so no additional config is required."
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:175
+msgid "This Quarkus extension takes care of everything that would usually be done via the JaCoCo Maven plugin, so no additional config is required."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:179
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:178
 msgid "Using both the extension and the plugin requires special configuration, if you add both you will get lots of errors about classes already being instrumented. The configuration needed is detailed below."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:180
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:179
 #, no-wrap
 msgid "Running the tests with coverage"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:184
-msgid "Run `mvn verify`, the tests will be run and the results will end up in `target/jacoco-reports`. This is all that is needed, the `quarkus-jacoco` extension allows Jacoco to just work out of the box."
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:183
+msgid "Run `mvn verify`, the tests will be run and the results will end up in `target/jacoco-reports`. This is all that is needed, the `quarkus-jacoco` extension allows JaCoCo to just work out of the box."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:186
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:185
 msgid "There are some config options that affect this:"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:189
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:188
 #, no-wrap
 msgid "Coverage for tests not using @QuarkusTest"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:193
-msgid "The Quarkus automatic Jacoco config will only work for tests that are annotated with `@QuarkusTest`. If you want to check the coverage of other tests as well then you will need to fall back to the Jacoco maven plugin."
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:192
+msgid "The Quarkus automatic JaCoCo config will only work for tests that are annotated with `@QuarkusTest`. If you want to check the coverage of other tests as well then you will need to fall back to the JaCoCo maven plugin."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:195
-msgid "In addition to including the `quarkus-jacoco` extension in your pom you will need the following config:"
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:194
+msgid "In addition to including the `quarkus-jacoco` extension in your `pom.xml` you will need the following config:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:236
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:225
 #, no-wrap
 msgid ""
 "<project>\n"
 "    <build>\n"
 "        <plugins>\n"
 "            ...\n"
-"          <plugin>\n"
-"            <groupId>org.jacoco</groupId>\n"
-"            <artifactId>jacoco-maven-plugin</artifactId>\n"
-"            <executions>\n"
-"              <execution>\n"
-"                <id>default-prepare-agent</id>\n"
-"                <goals>\n"
-"                  <goal>prepare-agent</goal>\n"
-"                </goals>\n"
-"                <configuration>\n"
-"                  <exclClassLoaders>*QuarkusClassLoader</exclClassLoaders>  <1>\n"
-"                  <destFile>${project.build.directory}/jacoco-quarkus.exec</destFile>\n"
-"                  <append>true</append>\n"
-"                </configuration>\n"
-"              </execution>\n"
-"              <execution>\n"
-"                <id>default-prepare-agent-integration</id> <2>\n"
-"                <goals>\n"
-"                  <goal>prepare-agent-integration</goal>\n"
-"                </goals>\n"
-"                <configuration>\n"
-"                  <exclClassLoaders>*QuarkusClassLoader</exclClassLoaders>\n"
-"                  <destFile>${project.build.directory}/jacoco-quarkus.exec</destFile>\n"
-"                  <append>true</append>\n"
-"                </configuration>\n"
-"              </execution>\n"
-"            </executions>\n"
-"          </plugin>\n"
+"            <plugin>\n"
+"                <groupId>org.jacoco</groupId>\n"
+"                <artifactId>jacoco-maven-plugin</artifactId>\n"
+"                <version>${jacoco.version}</version>\n"
+"                <executions>\n"
+"                   <execution>\n"
+"                      <id>default-prepare-agent</id>\n"
+"                      <goals>\n"
+"                           <goal>prepare-agent</goal>\n"
+"                      </goals>\n"
+"                      <configuration>\n"
+"                        <exclClassLoaders>*QuarkusClassLoader</exclClassLoaders>  <1>\n"
+"                        <destFile>${project.build.directory}/jacoco-quarkus.exec</destFile>\n"
+"                        <append>true</append>\n"
+"                      </configuration>\n"
+"                   </execution>\n"
+"                </executions>\n"
+"            </plugin>\n"
 "        </plugins>\n"
 "    </build>\n"
 "</project>\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:238
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:261
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:227
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:249
 msgid "This config tells it to ignore `@QuarkusTest` related classes, as they are loaded by `QuarkusClassLoader`"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:239
-msgid "This is only needed if you are using Failsafe to run integration tests"
-msgstr ""
-
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:249
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:237
 #, no-wrap
 msgid ""
 "plugins {\n"
@@ -431,7 +415,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:258
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:246
 #, no-wrap
 msgid ""
 "test {\n"
@@ -445,58 +429,59 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:260
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:248
 msgid "Add the `jacoco` gradle plugin"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:262
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:250
 msgid "Set this config to `false` if you are also using the `quarkus-jacoco` extension and have at least one `@QuarkusTest`.  The default `jacocoTestReport` task can be skipped since `quarkus-jacoco` will generate the combined report of regular unit tests and `@QuarkusTest` classes since the execution data is recorded in the same file."
 msgstr ""
 
 #. type: delimited block *
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:266
-msgid "This config will only work if at least one `@QuarkusTest` is being run. If you are not using `@QuarkusTest` then you can simply use the Jacoco plugin in the standard manner with no additional config."
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:254
+msgid "This config will only work if at least one `@QuarkusTest` is being run. If you are not using `@QuarkusTest` then you can simply use the JaCoCo plugin in the standard manner with no additional config."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:267
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:255
 #, no-wrap
 msgid "Coverage for Integration Tests"
 msgstr ""
 
 #. type: delimited block *
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:270
-msgid "To get code coverage data from integration tests, the following need to be requirements need to be met:"
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:258
+msgid "To get code coverage data from integration tests, the following requirements need to be met:"
 msgstr ""
 
 #. type: delimited block *
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:272
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:260
 msgid "The built artifact is a jar (and not a container or native binary)."
 msgstr ""
 
 #. type: delimited block *
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:273
-msgid "Jacoco needs to be configured in your build tool."
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:261
+msgid "JaCoCo needs to be configured in your build tool."
 msgstr ""
 
 #. type: delimited block *
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:274
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:262
 msgid "The application must have been built with `quarkus.package.write-transformed-bytecode-to-build-output` set to `true`"
 msgstr ""
 
 #. type: delimited block *
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:276
-msgid "Setting `quarkus.package.write-transformed-bytecode-to-build-output=true` should be done with a caution and only if subsequent builds are done in a clean environment - i.e. the build tool's output directory has been completely cleaned."
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:264
+msgid "Setting `quarkus.package.write-transformed-bytecode-to-build-output=true` should be done with caution and only if subsequent builds are done in a clean environment - i.e. the build tool's output directory has been completely cleaned."
 msgstr ""
 
 #. type: delimited block *
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:279
-msgid "In the `pom.xml`, you can add the following plugin configuration for Jacoco. This will append integration test data into the same destination file as unit tests, re-build the Jacoco report after the integration tests are complete, and thus produce a comprehensive code-coverage report."
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:267
+msgid "In the `pom.xml`, you can add the following plugin configuration for JaCoCo. This will append integration test data into the same destination file as unit tests, re-build the JaCoCo report after the integration tests are complete, and thus produce a comprehensive code-coverage report."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:317
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:280
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:366
 #, no-wrap
 msgid ""
 "<build>\n"
@@ -506,7 +491,15 @@ msgid ""
 "        <plugin>\n"
 "            <groupId>org.jacoco</groupId>\n"
 "            <artifactId>jacoco-maven-plugin</artifactId>\n"
+"            <version>${jacoco.version}</version>\n"
 "            <executions>\n"
+"                ... <1>\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:308
+#, no-wrap
+msgid ""
 "                <execution>\n"
 "                    <id>default-prepare-agent-integration</id>\n"
 "                    <goals>\n"
@@ -518,7 +511,7 @@ msgid ""
 "                    </configuration>\n"
 "                </execution>\n"
 "                <execution>\n"
-"                    <id>report-it</id>\n"
+"                    <id>report</id>\n"
 "                    <phase>post-integration-test</phase>\n"
 "                    <goals>\n"
 "                        <goal>report</goal>\n"
@@ -537,12 +530,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:320
-msgid "In order to run the integration tests as a jar with the Jacoco agent, add the following to your `pom.xml`."
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:310
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:402
+msgid "All executions should be in the same `<plugin>` definition so make sure you concatenate all of them."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:312
+msgid "In order to run the integration tests as a jar with the JaCoCo agent, add the following to your `pom.xml`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:349
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:341
 #, no-wrap
 msgid ""
 "<build>\n"
@@ -575,40 +574,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:353
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:345
 msgid "Sharing the same value for `quarkus.test.arg-line` might break integration test runs that test different types of Quarkus artifacts. In such cases, the use of Maven profiles is advised."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:354
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:346
 #, no-wrap
 msgid "Setting coverage thresholds"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:358
-msgid "You can set thresholds for code coverage using the Jacoco Maven plugin. Note the element `<dataFile>${project.build.directory}/jacoco-quarkus.exec</dataFile>`.  You must set it matching your choice for `quarkus.jacoco.data-file`."
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:350
+msgid "You can set thresholds for code coverage using the JaCoCo Maven plugin. Note the element `<dataFile>${project.build.directory}/jacoco-quarkus.exec</dataFile>`.  You must set it matching your choice for `quarkus.jacoco.data-file`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:406
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:400
 #, no-wrap
 msgid ""
-"<build>\n"
-"    ...\n"
-"    <plugins>\n"
-"        ...\n"
-"        <plugin>\n"
-"            <groupId>org.jacoco</groupId>\n"
-"            <artifactId>jacoco-maven-plugin</artifactId>\n"
-"            <version>${jacoco.version}</version>\n"
-"            <executions>\n"
 "                <execution>\n"
 "                    <id>jacoco-check</id>\n"
 "                    <goals>\n"
 "                        <goal>check</goal>\n"
 "                    </goals>\n"
-"                    <phase>test</phase>\n"
+"                    <phase>post-integration-test</phase>\n"
 "                    <configuration>\n"
 "                        <dataFile>${project.build.directory}/jacoco-quarkus.exec</dataFile>\n"
 "                        <rules>\n"
@@ -639,7 +629,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:432
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:427
 #, no-wrap
 msgid ""
 "jacocoTestCoverageVerification {\n"
@@ -663,12 +653,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:435
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:430
 msgid "Excluding classes from the verification task can be configured as following:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:447
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:442
 #, no-wrap
 msgid ""
 "jacocoTestCoverageVerification {\n"
@@ -683,28 +673,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:449
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:444
 msgid "`classDirectories` needs to be read after evaluation phase in Gradle"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:450
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:445
 msgid "Currently, there is a bug in Gradle JaCoCo which requires the `excludes` to be specified in this manner - https://github.com/gradle/gradle/issues/14760.  Once this issue is fixed, excludes"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:451
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:446
 msgid "Exclude all classes in `org/example/package` package"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:453
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:448
 #, no-wrap
 msgid "Conclusion"
 msgstr ""
 
 #. type: delimited block *
-#: upstream/_versions/main/guides/tests-with-coverage.adoc:456
+#: upstream/_versions/main/guides/tests-with-coverage.adoc:451
 msgid "You now have all the information you need to study the coverage of your tests! But remember, some code that is not covered is certainly not well tested. But some code that is covered is not necessarily *well* tested. Make sure to write good tests!"
 msgstr ""
 
