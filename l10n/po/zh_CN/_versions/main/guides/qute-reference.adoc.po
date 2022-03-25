@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-20 01:19+0000\n"
+"POT-Creation-Date: 2022-03-25 01:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3420,7 +3420,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:1617
-msgid "A list element can be accessed directly: `{list.10}` or `{list[10]}`."
+msgid "A list element can be accessed directly via an index: `{list.10}` or even `{list[10]}`."
 msgstr ""
 
 #. type: Title =====
