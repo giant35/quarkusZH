@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-23 01:18+0000\n"
+"POT-Creation-Date: 2022-04-01 01:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -287,7 +287,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-02-22-quarkus-superheroes-to-the-rescue.adoc:88
-msgid "The Fight service is a fully reactive and non-blocking HTTP microservice exposing a RESTful API for performing fights between heroes and villains. The REST layer is implemented using https://quarkus.io/guides/resteasy-reactive[RESTEasy Reactive^] with reactive endpoints. Fight data is persisted into a PostgreSQL database using the https://quarkus.io/guides/hibernate-reactive-panache#solution-1-using-the-active-record-pattern[active record pattern^] from https://quarkus.io/guides/hibernate-reactive-panache[Quarkus Hibernate Reactive with Panache^]. The Fight service also favors https://quarkus.io/guides/cdi-reference#simplified-constructor-injection[constructor injection^] of beans over https://quarkus.io/guides/cdi-reference#qualified-injected-fields[field injection^]."
+msgid "The Fight service is a fully reactive and non-blocking HTTP microservice exposing a RESTful API for performing fights between heroes and villains. The REST layer is implemented using https://quarkus.io/guides/resteasy-reactive[RESTEasy Reactive^] with reactive endpoints. Fight data is persisted into a MongoDB database using the https://quarkus.io/guides/mongodb-panache#solution-1-using-the-active-record-pattern[active record pattern^] from https://quarkus.io/guides/mongodb-panache#reactive[Quarkus MongoDB Reactive with Panache^]. The Fight service also favors https://quarkus.io/guides/cdi-reference#simplified-constructor-injection[constructor injection^] of beans over https://quarkus.io/guides/cdi-reference#qualified-injected-fields[field injection^]."
 msgstr ""
 
 #. type: Plain text
