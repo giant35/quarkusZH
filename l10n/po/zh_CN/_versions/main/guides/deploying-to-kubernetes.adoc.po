@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-25 01:22+0000\n"
+"POT-Creation-Date: 2022-04-07 01:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -259,7 +259,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:181
-msgid "By default Quarkus omits the namespace in the generated manifests, rather than enforce the `default` namespace. That means that you can apply the manifest to your chosen namespace when using `kubctl`, which in the example below is `test`:"
+msgid "By default Quarkus omits the namespace in the generated manifests, rather than enforce the `default` namespace. That means that you can apply the manifest to your chosen namespace when using `kubectl`, which in the example below is `test`:"
 msgstr ""
 
 #. type: delimited block -
