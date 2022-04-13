@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-09 01:11+0000\n"
+"POT-Creation-Date: 2022-04-13 01:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/scheduler.adoc:50
-msgid "The project also imports the RESTEasy and scheduler extensions."
+msgid "The project also imports the RESTEasy Reactive and scheduler extensions."
 msgstr ""
 
 #. type: Plain text

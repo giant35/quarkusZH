@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-03 00:58+0000\n"
+"POT-Creation-Date: 2022-04-13 01:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,12 +22,12 @@ msgstr ""
 #. type: Title =
 #: upstream/_guides/gcp-functions-http.adoc:6
 #, no-wrap
-msgid "Google Cloud Functions (Serverless) with RESTEasy, Undertow, or Reactive Routes"
+msgid "Google Cloud Functions (Serverless) with RESTEasy Reactive, Undertow, or Reactive Routes"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/gcp-functions-http.adoc:13
-msgid "The `quarkus-google-cloud-functions-http` extension allows you to write microservices with RESTEasy (JAX-RS), Undertow (Servlet), Reactive Routes, or xref:funqy-http.adoc[Funqy HTTP], and make these microservices deployable to the Google Cloud Functions runtime."
+msgid "The `quarkus-google-cloud-functions-http` extension allows you to write microservices with RESTEasy Reactive (JAX-RS), Undertow (Servlet), Reactive Routes, or xref:funqy-http.adoc[Funqy HTTP], and make these microservices deployable to the Google Cloud Functions runtime."
 msgstr ""
 
 #. type: Plain text
@@ -126,14 +126,19 @@ msgstr ""
 msgid "If you don't need endpoints of each type, you can remove the corresponding extensions from your `pom.xml`."
 msgstr ""
 
+#. type: Plain text
+#: upstream/_guides/gcp-functions-http.adoc:69
+msgid "Quarkus supports Cloud Functions gen 1 and gen 2. For an overview of Cloud Functions gen 2 see https://cloud.google.com/functions/docs/2nd-gen/overview[this page] on the Google Cloud Functions documentation. To use gen 2 you must use `gcloud beta` command and add the `--gen2` parameter."
+msgstr ""
+
 #. type: Title ===
-#: upstream/_guides/gcp-functions-http.adoc:68
+#: upstream/_guides/gcp-functions-http.adoc:70
 #, no-wrap
 msgid "The JAX-RS endpoint"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:76
+#: upstream/_guides/gcp-functions-http.adoc:78
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -143,7 +148,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:79
+#: upstream/_guides/gcp-functions-http.adoc:81
 #, no-wrap
 msgid ""
 "@Path(\"/hello\")\n"
@@ -151,31 +156,31 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:86
+#: upstream/_guides/gcp-functions-http.adoc:88
 #, no-wrap
 msgid ""
 "    @GET\n"
 "    @Produces(MediaType.TEXT_PLAIN)\n"
 "    public String hello() {\n"
-"        return \"hello\";\n"
+"        return \"Hello from RESTEasy Reactive\";\n"
 "    }\n"
 "}\n"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/gcp-functions-http.adoc:88
+#: upstream/_guides/gcp-functions-http.adoc:90
 #, no-wrap
 msgid "The Servlet endpoint"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:93
+#: upstream/_guides/gcp-functions-http.adoc:95
 #, no-wrap
 msgid "import java.io.IOException;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:99
+#: upstream/_guides/gcp-functions-http.adoc:101
 #, no-wrap
 msgid ""
 "import javax.servlet.ServletException;\n"
@@ -186,7 +191,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:108
+#: upstream/_guides/gcp-functions-http.adoc:110
 #, no-wrap
 msgid ""
 "@WebServlet(name = \"ServletGreeting\", urlPatterns = \"/servlet/hello\")\n"
@@ -200,7 +205,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:117
+#: upstream/_guides/gcp-functions-http.adoc:119
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -214,19 +219,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/gcp-functions-http.adoc:119
+#: upstream/_guides/gcp-functions-http.adoc:121
 #, no-wrap
 msgid "The Reactive Routes endpoint"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:124
+#: upstream/_guides/gcp-functions-http.adoc:126
 #, no-wrap
 msgid "import static io.quarkus.vertx.web.Route.HttpMethod.GET;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:127
+#: upstream/_guides/gcp-functions-http.adoc:129
 #, no-wrap
 msgid ""
 "import io.quarkus.vertx.web.Route;\n"
@@ -234,7 +239,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:135
+#: upstream/_guides/gcp-functions-http.adoc:137
 #, no-wrap
 msgid ""
 "public class GreetingRoutes {\n"
@@ -247,19 +252,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/gcp-functions-http.adoc:137
+#: upstream/_guides/gcp-functions-http.adoc:139
 #, no-wrap
 msgid "The Funqy HTTP endpoint"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:142
+#: upstream/_guides/gcp-functions-http.adoc:144
 #, no-wrap
 msgid "import io.quarkus.funqy.Funq;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:149
+#: upstream/_guides/gcp-functions-http.adoc:151
 #, no-wrap
 msgid ""
 "public class GreetingFunqy {\n"
@@ -271,28 +276,28 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/gcp-functions-http.adoc:151
+#: upstream/_guides/gcp-functions-http.adoc:153
 #, no-wrap
 msgid "Build and Deploy to Google Cloud"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/gcp-functions-http.adoc:154
+#: upstream/_guides/gcp-functions-http.adoc:156
 msgid "Quarkus forces a packaging of type `uber-jar` for your function as Google Cloud Function deployment requires a single JAR."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/gcp-functions-http.adoc:157
+#: upstream/_guides/gcp-functions-http.adoc:159
 msgid "Package your application using the standard `mvn clean package` command.  The result of the previous command is a single JAR file inside the `target/deployment` directory that contains the classes and the dependencies of the project."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/gcp-functions-http.adoc:159
+#: upstream/_guides/gcp-functions-http.adoc:161
 msgid "Then you will be able to use `gcloud` to deploy your function to Google Cloud."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:165
+#: upstream/_guides/gcp-functions-http.adoc:167
 #, no-wrap
 msgid ""
 "gcloud functions deploy quarkus-example-http \\\n"
@@ -301,118 +306,118 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/gcp-functions-http.adoc:170
+#: upstream/_guides/gcp-functions-http.adoc:172
 msgid "The entry point must always be set to `io.quarkus.gcp.functions.http.QuarkusHttpFunction` as this is the class that integrates Cloud Functions with Quarkus."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/gcp-functions-http.adoc:175
+#: upstream/_guides/gcp-functions-http.adoc:177
 msgid "The first time you launch this command, you can have the following error message:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:178
+#: upstream/_guides/gcp-functions-http.adoc:180
 #, no-wrap
 msgid "ERROR: (gcloud.functions.deploy) OperationError: code=7, message=Build Failed: Cloud Build has not been used in project <project_name> before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudbuild.googleapis.com/overview?project=<my-project> then retry.\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/gcp-functions-http.adoc:180
+#: upstream/_guides/gcp-functions-http.adoc:182
 msgid "This means that Cloud Build is not activated yet. To overcome this error, open the URL shown in the error, follow the instructions and then wait a few minutes before retrying the command."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/gcp-functions-http.adoc:184
+#: upstream/_guides/gcp-functions-http.adoc:186
 msgid "This command will give you as output a `httpsTrigger.url` that points to your function."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/gcp-functions-http.adoc:186
+#: upstream/_guides/gcp-functions-http.adoc:188
 msgid "You can then call your endpoints via:"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/gcp-functions-http.adoc:188
+#: upstream/_guides/gcp-functions-http.adoc:190
 msgid "For JAX-RS: {httpsTrigger.url}/hello"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/gcp-functions-http.adoc:189
+#: upstream/_guides/gcp-functions-http.adoc:191
 msgid "For servlet: {httpsTrigger.url}/servlet/hello"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/gcp-functions-http.adoc:190
+#: upstream/_guides/gcp-functions-http.adoc:192
 msgid "For Reactive Routes: {httpsTrigger.url}/vertx/hello"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/gcp-functions-http.adoc:191
+#: upstream/_guides/gcp-functions-http.adoc:193
 msgid "For Funqy: {httpsTrigger.url}/funqy"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/gcp-functions-http.adoc:192
+#: upstream/_guides/gcp-functions-http.adoc:194
 #, no-wrap
 msgid "Testing locally"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/gcp-functions-http.adoc:195
+#: upstream/_guides/gcp-functions-http.adoc:197
 msgid "The easiest way to locally test your function is using the Cloud Function invoker JAR."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/gcp-functions-http.adoc:197
+#: upstream/_guides/gcp-functions-http.adoc:199
 msgid "You can download it via Maven using the following command:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:203
+#: upstream/_guides/gcp-functions-http.adoc:205
 #, no-wrap
 msgid ""
 "mvn dependency:copy \\\n"
-"  -Dartifact='com.google.cloud.functions.invoker:java-function-invoker:1.0.2' \\\n"
+"  -Dartifact='com.google.cloud.functions.invoker:java-function-invoker:1.1.0' \\\n"
 "  -DoutputDirectory=.\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/gcp-functions-http.adoc:206
+#: upstream/_guides/gcp-functions-http.adoc:208
 msgid "Before using the invoker, you first need to build your function via `mvn package`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/gcp-functions-http.adoc:208
+#: upstream/_guides/gcp-functions-http.adoc:210
 msgid "Then you can use it to launch your function locally."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/gcp-functions-http.adoc:214
+#: upstream/_guides/gcp-functions-http.adoc:216
 #, no-wrap
 msgid ""
-"java -jar java-function-invoker-1.0.2.jar \\\n"
+"java -jar java-function-invoker-1.1.0.jar \\\n"
 "  --classpath target/deployment/google-cloud-functions-http-1.0.0-SNAPSHOT-runner.jar \\\n"
 "  --target io.quarkus.gcp.functions.http.QuarkusHttpFunction\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/gcp-functions-http.adoc:217
+#: upstream/_guides/gcp-functions-http.adoc:219
 msgid "The `--classpath` parameter needs to be set to the previously packaged JAR that contains your function class and all Quarkus related classes."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/gcp-functions-http.adoc:219
+#: upstream/_guides/gcp-functions-http.adoc:221
 msgid "Your endpoints will be available on http://localhost:8080."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/gcp-functions-http.adoc:220
+#: upstream/_guides/gcp-functions-http.adoc:222
 #, no-wrap
 msgid "What's next?"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/gcp-functions-http.adoc:223
+#: upstream/_guides/gcp-functions-http.adoc:225
 msgid "You can use our xref:funqy-gcp-functions.adoc[Google Cloud Functions Funqy binding] to use Funqy, a provider agnostic function as a service framework, that allow to deploy HTTP function or Background function to Google Cloud."
 msgstr ""
 

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-28 01:15+0000\n"
+"POT-Creation-Date: 2022-04-13 01:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -554,7 +554,7 @@ msgstr ""
 #. type: Hash Value - Key: title
 #: >categories>>guides>
 #, no-wrap
-msgid "Writing REST JSON Services"
+msgid "Introduction to writing REST JSON Services"
 msgstr ""
 
 #. type: Hash Value - Key: url
@@ -566,19 +566,55 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
-msgid "Discover how to develop highly scalable reactive REST services with JAX-RS and RESTEasy Reactive."
+msgid "Discover how to develop highly scalable REST services with JAX-RS and RESTEasy Reactive."
 msgstr ""
 
 #. type: Hash Value - Key: title
 #: >categories>>guides>
 #, no-wrap
-msgid "Writing Highly Scalable Reactive REST Services"
+msgid "Writing REST Services Reference"
 msgstr ""
 
 #. type: Hash Value - Key: url
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/resteasy-reactive"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide explains how to use the RESTEasy Reactive REST Client."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Using the REST Client (including JSON)"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/rest-client-reactive"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide explains how to migrate an application from RESTEasy Classic to RESTEasy Reactive."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Migrating from RESTEasy Classic to RESTEasy Reactive"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/resteasy-reactive-migration"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -620,24 +656,6 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
-msgid "This guide explains how to use the RESTEasy REST Client in order to interact with REST APIs (JSON and other) with very little effort."
-msgstr ""
-
-#. type: Hash Value - Key: title
-#: >categories>>guides>
-#, no-wrap
-msgid "Using the REST Client (including JSON)"
-msgstr ""
-
-#. type: Hash Value - Key: url
-#: >categories>>guides>
-#, no-wrap
-msgid "/guides/rest-client"
-msgstr ""
-
-#. type: Hash Value - Key: description
-#: >categories>>guides>
-#, no-wrap
 msgid "This guide explains how to use the RESTEasy REST Client to send multipart REST requests, typically to upload documents."
 msgstr ""
 
@@ -651,24 +669,6 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/rest-client-multipart"
-msgstr ""
-
-#. type: Hash Value - Key: description
-#: >categories>>guides>
-#, no-wrap
-msgid "This guide explains how to use the RESTEasy Reactive REST Client."
-msgstr ""
-
-#. type: Hash Value - Key: title
-#: >categories>>guides>
-#, no-wrap
-msgid "Using the Reactive REST Client"
-msgstr ""
-
-#. type: Hash Value - Key: url
-#: >categories>>guides>
-#, no-wrap
-msgid "/guides/rest-client-reactive"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -705,6 +705,36 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/openapi-swaggerui"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide explains how to use the RESTEasy REST Client in order to interact with REST APIs (JSON and other) with very little effort."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Developing REST Services with RESTEasy Classic"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/resteasy"
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Using the RESTEasy Classic REST Client (including JSON)"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/rest-client"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -1085,6 +1115,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/elasticsearch"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "Start Elasticsearch automatically in dev and test modes."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Elasticsearch Dev Services"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/elasticsearch-dev-services"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -3101,6 +3149,12 @@ msgstr ""
 #: >categories>
 #, no-wrap
 msgid "Serialization"
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Writing REST JSON Services"
 msgstr ""
 
 #. type: Hash Value - Key: description

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-03 00:58+0000\n"
+"POT-Creation-Date: 2022-04-13 01:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,7 +111,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<dependency>\n"
-"    <groupId>io.quarkus</groupId>\n"
+"    <groupId>org.amqphub.quarkus</groupId>\n"
 "    <artifactId>quarkus-qpid-jms</artifactId>\n"
 "</dependency>\n"
 msgstr ""
@@ -125,7 +125,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/jms.adoc:73
 #, no-wrap
-msgid "implementation(\"io.quarkus:quarkus-qpid-jms\")\n"
+msgid "implementation(\"org.amqphub.quarkus:quarkus-qpid-jms\")\n"
 msgstr ""
 
 #. type: Title ===
