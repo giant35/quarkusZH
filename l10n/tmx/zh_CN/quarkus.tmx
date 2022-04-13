@@ -646,14 +646,6 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>ArC comes as a dependency of `quarkus-resteasy` so you already have it handy.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Edit the `GreetingResource` class to inject the `GreetingService` and create a new endpoint using it:</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -722,6 +714,14 @@
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>Quarkus 中的依赖注入是基于ArC的，ArC是一个基于 CDI 的依赖注入解决方案，专为 Quarkus 设计。 如果你之前未使用过 CDI 建议你参考下 link:cdi[ 上下文依赖介绍] 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>ArC comes as a dependency of `quarkus-resteasy` so you already have it handy.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。</seg>
       </tuv>
     </tu>
     <tu>
