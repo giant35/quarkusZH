@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-04-13 01:36+0000\n"
+"POT-Creation-Date: 2022-04-15 01:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -235,7 +235,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-04-12-quarkus-2-8-0-final-released.adoc:92
-msgid "The Quarkus community is growing and has now https://github.com/quarkusio/quarkus/graphs/contributors[ contributors].  Many many thanks to each and everyone of them."
+msgid "The Quarkus community is growing and has now https://github.com/quarkusio/quarkus/graphs/contributors[618 contributors].  Many many thanks to each and everyone of them."
 msgstr ""
 
 #. type: Plain text
