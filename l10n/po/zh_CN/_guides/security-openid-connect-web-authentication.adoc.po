@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-04-13 01:36+0000\n"
+"POT-Creation-Date: 2022-04-20 01:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2033,12 +2033,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-web-authentication.adoc:1040
-msgid "Some OpenID Connect Providers may require that a client is authenticated as part of the `Mutual TLS` (`MTLS`) authentication process."
+msgid "Some OpenID Connect Providers may require that a client is authenticated as part of the `Mutual TLS` (`mTLS`) authentication process."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-web-authentication.adoc:1042
-msgid "`quarkus-oidc` can be configured as follows to support `MTLS`:"
+msgid "`quarkus-oidc` can be configured as follows to support `mTLS`:"
 msgstr ""
 
 #. type: delimited block -

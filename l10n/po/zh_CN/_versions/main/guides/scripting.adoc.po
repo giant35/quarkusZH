@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-20 01:19+0000\n"
+"POT-Creation-Date: 2022-04-20 01:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,17 +58,18 @@ msgid "Normally we would link to a Git repository to clone but in this case ther
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:34
+#: upstream/_versions/main/guides/scripting.adoc:35
 #, no-wrap
 msgid ""
 "//usr/bin/env jbang \"$0\" \"$@\" ; exit $?\n"
-"//DEPS io.quarkus:quarkus-resteasy-reactive:{quarkus-version}\n"
+"//DEPS io.quarkus.platform:quarkus-bom:{quarkus-version}@pom\n"
+"//DEPS io.quarkus:quarkus-resteasy-reactive\n"
 "//JAVAC_OPTIONS -parameters\n"
 "//JAVA_OPTIONS -Djava.util.logging.manager=org.jboss.logmanager.LogManager\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:43
+#: upstream/_versions/main/guides/scripting.adoc:44
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.Quarkus;\n"
@@ -82,9 +83,9 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:47
-#: upstream/_versions/main/guides/scripting.adoc:171
-#: upstream/_versions/main/guides/scripting.adoc:293
+#: upstream/_versions/main/guides/scripting.adoc:48
+#: upstream/_versions/main/guides/scripting.adoc:173
+#: upstream/_versions/main/guides/scripting.adoc:295
 #, no-wrap
 msgid ""
 "@Path(\"/hello\")\n"
@@ -93,8 +94,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:52
-#: upstream/_versions/main/guides/scripting.adoc:176
+#: upstream/_versions/main/guides/scripting.adoc:53
+#: upstream/_versions/main/guides/scripting.adoc:178
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -104,8 +105,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:56
-#: upstream/_versions/main/guides/scripting.adoc:302
+#: upstream/_versions/main/guides/scripting.adoc:57
+#: upstream/_versions/main/guides/scripting.adoc:304
 #, no-wrap
 msgid ""
 "    public static void main(String[] args) {\n"
@@ -114,8 +115,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:59
-#: upstream/_versions/main/guides/scripting.adoc:305
+#: upstream/_versions/main/guides/scripting.adoc:60
+#: upstream/_versions/main/guides/scripting.adoc:307
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -123,8 +124,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:66
-#: upstream/_versions/main/guides/scripting.adoc:312
+#: upstream/_versions/main/guides/scripting.adoc:67
+#: upstream/_versions/main/guides/scripting.adoc:314
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -136,8 +137,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:69
-#: upstream/_versions/main/guides/scripting.adoc:315
+#: upstream/_versions/main/guides/scripting.adoc:70
+#: upstream/_versions/main/guides/scripting.adoc:317
 #, no-wrap
 msgid ""
 "    @ApplicationScoped\n"
@@ -145,8 +146,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:75
-#: upstream/_versions/main/guides/scripting.adoc:321
+#: upstream/_versions/main/guides/scripting.adoc:76
+#: upstream/_versions/main/guides/scripting.adoc:323
 #, no-wrap
 msgid ""
 "        public String greeting(String name) {\n"
@@ -157,41 +158,41 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/scripting.adoc:77
+#: upstream/_versions/main/guides/scripting.adoc:78
 #, no-wrap
 msgid "Architecture"
 msgstr "架构"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:80
+#: upstream/_versions/main/guides/scripting.adoc:81
 msgid "In this guide, we create a straightforward application serving a `hello` endpoint with a single source file, no additional build files like `pom.xml` or `build.gradle` needed. To demonstrate dependency injection, this endpoint uses a `greeting` bean."
 msgstr ""
 
 #. type: Named 'alt' AttributeList argument for macro 'image'
-#: upstream/_versions/main/guides/scripting.adoc:81
+#: upstream/_versions/main/guides/scripting.adoc:82
 #, no-wrap
 msgid "Architecture,"
 msgstr ""
 
 #. type: Target for macro image
-#: upstream/_versions/main/guides/scripting.adoc:81
+#: upstream/_versions/main/guides/scripting.adoc:82
 #, no-wrap
 msgid "getting-started-architecture.png"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/scripting.adoc:83
+#: upstream/_versions/main/guides/scripting.adoc:84
 #, no-wrap
 msgid "Creating the initial file"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:86
+#: upstream/_versions/main/guides/scripting.adoc:87
 msgid "First, we need a Java file. JBang lets you create an initial version using:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:91
+#: upstream/_versions/main/guides/scripting.adoc:92
 #, no-wrap
 msgid ""
 "jbang init scripting/quarkusapp.java\n"
@@ -199,77 +200,79 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:94
+#: upstream/_versions/main/guides/scripting.adoc:95
 msgid "This command generates a .java file that you can directly run on Linux and macOS, i.e. `./quarkusapp.java` - on Windows you need to use `jbang quarkusapp.java`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:96
+#: upstream/_versions/main/guides/scripting.adoc:97
 msgid "This initial version will print `Hello World` when run."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:98
+#: upstream/_versions/main/guides/scripting.adoc:99
 msgid "Once generated, look at the `quarkusapp.java` file."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:100
+#: upstream/_versions/main/guides/scripting.adoc:101
 msgid "You will find at the top a line looking like this:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:104
+#: upstream/_versions/main/guides/scripting.adoc:105
 #, no-wrap
 msgid "//usr/bin/env jbang \"$0\" \"$@\" ; exit $?\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:107
+#: upstream/_versions/main/guides/scripting.adoc:108
 msgid "This line is what on Linux and macOS allows you to run it as a script. On Windows this line is ignored."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:109
-msgid "The next line"
+#: upstream/_versions/main/guides/scripting.adoc:110
+msgid "The next lines"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:113
+#: upstream/_versions/main/guides/scripting.adoc:114
 #, no-wrap
 msgid "// //DEPS <dependency1> <dependency2>\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:116
-msgid "Is illustrating how you add dependencies to this script. This is a feature of JBang."
+#: upstream/_versions/main/guides/scripting.adoc:117
+msgid "illustrate how you add dependencies to this script. This is a feature of JBang."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:118
-msgid "Go ahead and update this line to include the `quarkus-resteasy-reactive` dependency like so:"
+#: upstream/_versions/main/guides/scripting.adoc:119
+msgid "Go ahead and update this line to include the `quarkus-bom` and the `quarkus-resteasy-reactive` dependency like so:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:122
+#: upstream/_versions/main/guides/scripting.adoc:124
 #, no-wrap
-msgid "//DEPS io.quarkus:quarkus-resteasy-reactive:{quarkus-version}\n"
+msgid ""
+"//DEPS io.quarkus.platform:quarkus-bom:{quarkus-version}@pom\n"
+"//DEPS io.quarkus:quarkus-resteasy-reactive\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:125
+#: upstream/_versions/main/guides/scripting.adoc:127
 msgid "Now, run `jbang quarkusapp.java` and you will see JBang resolving this dependency and building the jar with help from Quarkus' JBang integration."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:129
-#: upstream/_versions/main/guides/scripting.adoc:200
+#: upstream/_versions/main/guides/scripting.adoc:131
+#: upstream/_versions/main/guides/scripting.adoc:202
 #, no-wrap
 msgid "$ jbang quarkusapp.java\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:140
+#: upstream/_versions/main/guides/scripting.adoc:142
 #, no-wrap
 msgid ""
 "[jbang] Resolving dependencies...\n"
@@ -285,44 +288,44 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:143
+#: upstream/_versions/main/guides/scripting.adoc:145
 msgid "For now the application does nothing new."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/scripting.adoc:145
+#: upstream/_versions/main/guides/scripting.adoc:147
 #, no-wrap
 msgid "How do I edit this file and get content assist?"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/scripting.adoc:149
+#: upstream/_versions/main/guides/scripting.adoc:151
 msgid "As there is nothing but a `.java` file, most IDE's don't handle content assist well.  To work around that you can run `jbang edit quarkusapp.java`, this will print out a directory that will have a temporary project setup you can use in your IDE."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/scripting.adoc:151
+#: upstream/_versions/main/guides/scripting.adoc:153
 msgid "On Linux/macOS you can run `<idecommand> `jbang edit quarkusapp.java``."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/scripting.adoc:154
+#: upstream/_versions/main/guides/scripting.adoc:156
 msgid "If you add dependencies while editing, you can get JBang to automatically refresh the IDE project using `jbang edit --live=<idecommand> quarkusapp.java`."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/scripting.adoc:157
+#: upstream/_versions/main/guides/scripting.adoc:159
 #, no-wrap
 msgid "The JAX-RS resources"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:160
+#: upstream/_versions/main/guides/scripting.adoc:162
 msgid "Now let us replace the class with one that uses Quarkus features:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:167
+#: upstream/_versions/main/guides/scripting.adoc:169
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.Quarkus;\n"
@@ -332,7 +335,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:181
+#: upstream/_versions/main/guides/scripting.adoc:183
 #, no-wrap
 msgid ""
 "    public static void main(String[] args) {\n"
@@ -342,39 +345,39 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:184
+#: upstream/_versions/main/guides/scripting.adoc:186
 msgid "It's a very simple class with a main method that starts Quarkus with a REST endpoint, returning \"hello\" to requests on \"/hello\"."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/scripting.adoc:186
+#: upstream/_versions/main/guides/scripting.adoc:188
 #, no-wrap
 msgid "Why is the `main` method there?"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/scripting.adoc:189
+#: upstream/_versions/main/guides/scripting.adoc:191
 msgid "A `main` method is currently needed for the JBang integration to work - we might remove this requirement in the future."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/scripting.adoc:191
+#: upstream/_versions/main/guides/scripting.adoc:193
 #, no-wrap
 msgid "Running the application"
 msgstr "运行应用"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:194
+#: upstream/_versions/main/guides/scripting.adoc:196
 msgid "Now when you run the application you will see Quarkus start up."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:196
+#: upstream/_versions/main/guides/scripting.adoc:198
 msgid "Use: `jbang quarkusapp.java`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:214
+#: upstream/_versions/main/guides/scripting.adoc:216
 #, no-wrap
 msgid ""
 "[jbang] Building jar...\n"
@@ -393,12 +396,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:217
+#: upstream/_versions/main/guides/scripting.adoc:219
 msgid "Once started, you can request the provided endpoint:"
 msgstr "启动后，可以请求提供的接口："
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:222
+#: upstream/_versions/main/guides/scripting.adoc:224
 #, no-wrap
 msgid ""
 "$ curl -w \"\\n\" http://localhost:8080/hello\n"
@@ -406,67 +409,67 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:225
+#: upstream/_versions/main/guides/scripting.adoc:227
 msgid "After that, hit `CTRL+C` to stop the application."
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/scripting.adoc:227
+#: upstream/_versions/main/guides/scripting.adoc:229
 #, no-wrap
 msgid "Automatically add newline with `curl -w \"\\n\"`"
 msgstr "用 `curl -w \"\\n\"` 自动添加换行"
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/scripting.adoc:230
+#: upstream/_versions/main/guides/scripting.adoc:232
 msgid "We are using `curl -w \"\\n\"` in this example to avoid your terminal printing a '%' or put both result and next command prompt on the same line."
 msgstr "在本例中，我们使用 `curl -w \"\\n\"` 来避免终端输出 ‘%’  ，或者将结果和下一个命令提示符放在同一行。"
 
 #. type: Block title
-#: upstream/_versions/main/guides/scripting.adoc:233
+#: upstream/_versions/main/guides/scripting.adoc:235
 #, no-wrap
 msgid "Why is `quarkus-resteasy-reactive` not resolved?"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/scripting.adoc:237
+#: upstream/_versions/main/guides/scripting.adoc:239
 msgid "In this second run you should not see a line saying it is resolving `quarkus-resteasy-reactive` as JBang caches the dependency resolution between runs.  If you want to clear the caches to force resolution use `jbang cache clear`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/scripting.adoc:239
+#: upstream/_versions/main/guides/scripting.adoc:241
 #, no-wrap
 msgid "Using injection"
 msgstr "使用注入"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:243
+#: upstream/_versions/main/guides/scripting.adoc:245
 msgid "Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  You can learn more about it in the xref:cdi-reference.adoc[Contexts and Dependency Injection guide]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:245
+#: upstream/_versions/main/guides/scripting.adoc:247
 #, fuzzy
 #| msgid "ArC comes as a dependency of `quarkus-resteasy` so you already have it handy."
 msgid "ArC comes as a dependency of `quarkus-resteasy-reactive` so you already have it handy."
 msgstr "ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:247
+#: upstream/_versions/main/guides/scripting.adoc:249
 msgid "Let's modify the application and add a companion bean."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:250
+#: upstream/_versions/main/guides/scripting.adoc:252
 msgid "Normally you would add a separate class, but as we are aiming to have it all in one file you will add a nested class."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:252
+#: upstream/_versions/main/guides/scripting.adoc:254
 msgid "Add the following *inside* the `quarkusapp` class body."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:257
+#: upstream/_versions/main/guides/scripting.adoc:259
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -474,7 +477,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:261
+#: upstream/_versions/main/guides/scripting.adoc:263
 #, no-wrap
 msgid ""
 "    public String greeting(String name) {\n"
@@ -483,39 +486,39 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:263
+#: upstream/_versions/main/guides/scripting.adoc:265
 #, no-wrap
 msgid "}\n"
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/scripting.adoc:266
+#: upstream/_versions/main/guides/scripting.adoc:268
 #, no-wrap
 msgid "Use of nested static public classes"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/scripting.adoc:269
+#: upstream/_versions/main/guides/scripting.adoc:271
 msgid "We are using a nested static public class instead of a top level class for two reasons:"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/scripting.adoc:271
+#: upstream/_versions/main/guides/scripting.adoc:273
 msgid "JBang currently does not support multiple source files."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/scripting.adoc:272
+#: upstream/_versions/main/guides/scripting.adoc:274
 msgid "All Java frameworks relying on introspection have challenges using top level classes as they are not as visible as public classes; and in Java there can only be one top level public class in a file."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:276
+#: upstream/_versions/main/guides/scripting.adoc:278
 msgid "Edit the `quarksapp` class to inject the `GreetingService` and create a new endpoint using it, you should end up with something like:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:281
+#: upstream/_versions/main/guides/scripting.adoc:283
 #, no-wrap
 msgid ""
 "//usr/bin/env jbang \"$0\" \"$@\" ; exit $?\n"
@@ -523,7 +526,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:289
+#: upstream/_versions/main/guides/scripting.adoc:291
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.Quarkus;\n"
@@ -536,7 +539,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:298
+#: upstream/_versions/main/guides/scripting.adoc:300
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -546,12 +549,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:324
+#: upstream/_versions/main/guides/scripting.adoc:326
 msgid "Now when you run `jbang quarkusapp.java` you can check what the new end point returns:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:329
+#: upstream/_versions/main/guides/scripting.adoc:331
 #, no-wrap
 msgid ""
 "$ curl -w \"\\n\" http://localhost:8080/hello/greeting/quarkus\n"
@@ -559,33 +562,33 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:332
+#: upstream/_versions/main/guides/scripting.adoc:334
 msgid "Now that is unexpected, why is it returning `hello null` and not `hello quarkus`?"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:334
+#: upstream/_versions/main/guides/scripting.adoc:336
 msgid "The reason is that RESTEasy Reactive relies on the `-parameters` compiler flag to be set to be able to map `{name}` to the `name` parameter."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:336
+#: upstream/_versions/main/guides/scripting.adoc:338
 msgid "We fix that by adding the following comment instruction to the file:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:340
+#: upstream/_versions/main/guides/scripting.adoc:342
 #, no-wrap
 msgid "//JAVAC_OPTIONS -parameters\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:343
+#: upstream/_versions/main/guides/scripting.adoc:345
 msgid "Now when you run with `jbang quarkusapp.java` the end point should return what you expect:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:348
+#: upstream/_versions/main/guides/scripting.adoc:350
 #, no-wrap
 msgid ""
 "$ curl -w \"\\n\" http://localhost:8080/hello/greeting/quarkus\n"
@@ -593,72 +596,72 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/scripting.adoc:350
+#: upstream/_versions/main/guides/scripting.adoc:352
 #, no-wrap
 msgid "Debugging"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:354
+#: upstream/_versions/main/guides/scripting.adoc:356
 msgid "To debug the application you use `jbang --debug quarkusapp.java` and you can use your IDE to connect on port 4004; if you want to use the more traditional Quarkus debug port you can use `jbang --debug=5005 quarkusapp.java`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:356
+#: upstream/_versions/main/guides/scripting.adoc:358
 msgid "Note: JBang debugging always suspends thus you need to connect the debugger to have the application run."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/scripting.adoc:357
+#: upstream/_versions/main/guides/scripting.adoc:359
 #, no-wrap
 msgid "Logging"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:360
+#: upstream/_versions/main/guides/scripting.adoc:362
 msgid "To use logging in Quarkus scripting with JBang you do as usual, with configuring a logger, i.e."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:364
+#: upstream/_versions/main/guides/scripting.adoc:366
 #, no-wrap
 msgid "public static final Logger LOG = Logger.getLogger(quarkusapp.class);\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:367
+#: upstream/_versions/main/guides/scripting.adoc:369
 msgid "To get it to work you need to add a Java option to ensure the logging is initialized properly, i.e."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:371
+#: upstream/_versions/main/guides/scripting.adoc:373
 #, no-wrap
 msgid "//JAVA_OPTIONS -Djava.util.logging.manager=org.jboss.logmanager.LogManager\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:374
+#: upstream/_versions/main/guides/scripting.adoc:376
 msgid "With that in place running `jbang quarkusapp.java` will log and render as expected."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/scripting.adoc:375
+#: upstream/_versions/main/guides/scripting.adoc:377
 #, no-wrap
 msgid "Configuring Application"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:378
+#: upstream/_versions/main/guides/scripting.adoc:380
 msgid "You can use `//Q:CONFIG <property>=<value>` to set up static configuration for your application."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:380
+#: upstream/_versions/main/guides/scripting.adoc:382
 msgid "I.e. if you wanted to add the `smallrye-openapi` and `swagger-ui` extensions and have the Swagger UI always show up you would add the following:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:386
+#: upstream/_versions/main/guides/scripting.adoc:388
 #, no-wrap
 msgid ""
 "//DEPS io.quarkus:quarkus-smallrye-openapi:{quarkus-version}\n"
@@ -667,29 +670,29 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:389
+#: upstream/_versions/main/guides/scripting.adoc:391
 msgid "Now during build the `quarkus.swagger-ui.always-include` will be generated into the resulting jar and `http://0.0.0.0:8080/q/swagger-ui` will be available when run."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/scripting.adoc:390
+#: upstream/_versions/main/guides/scripting.adoc:392
 #, no-wrap
 msgid "Running as a native application"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:393
+#: upstream/_versions/main/guides/scripting.adoc:395
 msgid "If you have the `native-image` binary installed and `GRAALVM_HOME` set, you can get the native executable built and run using `jbang --native quarkusapp.java`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:397
+#: upstream/_versions/main/guides/scripting.adoc:399
 #, no-wrap
 msgid "$ jbang --native quarkusapp.java\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:410
+#: upstream/_versions/main/guides/scripting.adoc:412
 #, no-wrap
 msgid ""
 "[jbang] Building jar...\n"
@@ -707,7 +710,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:420
+#: upstream/_versions/main/guides/scripting.adoc:422
 #, no-wrap
 msgid ""
 "Aug 30, 2020 6:22:31 AM io.quarkus.deployment.QuarkusAugmentor run\n"
@@ -722,12 +725,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:423
+#: upstream/_versions/main/guides/scripting.adoc:425
 msgid "This native build will take some time on first run but any subsequent runs (without changing `quarkusapp.java`) will be close to instant thanks to JBang cache:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/scripting.adoc:434
+#: upstream/_versions/main/guides/scripting.adoc:436
 #, no-wrap
 msgid ""
 "$ jbang --native quarkusapp.java\n"
@@ -741,13 +744,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/scripting.adoc:436
+#: upstream/_versions/main/guides/scripting.adoc:438
 #, no-wrap
 msgid "Conclusion"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/scripting.adoc:438
+#: upstream/_versions/main/guides/scripting.adoc:440
 msgid "If you want to get started with Quarkus or write something quickly, Quarkus Scripting with jbang lets you do that. No Maven, no Gradle - just a Java file. In this guide we outlined the very basics on using Quarkus with JBang; if you want to learn more about what JBang can do, go see https://jbang.dev."
 msgstr ""
 
