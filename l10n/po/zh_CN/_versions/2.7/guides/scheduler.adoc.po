@@ -39,14 +39,14 @@ msgstr ""
 #: upstream/_versions/2.7/guides/scheduler.adoc:15
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: upstream/_versions/2.7/guides/scheduler.adoc:19
 #: upstream/_versions/2.7/guides/scheduler.adoc:24
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/2.7/guides/scheduler.adoc:23
@@ -63,7 +63,7 @@ msgstr ""
 #: upstream/_versions/2.7/guides/scheduler.adoc:26
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.7/guides/scheduler.adoc:30

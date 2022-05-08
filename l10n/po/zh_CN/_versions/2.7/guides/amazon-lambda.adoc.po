@@ -44,7 +44,7 @@ msgstr ""
 #: upstream/_versions/2.7/guides/amazon-lambda.adoc:19
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/2.7/guides/amazon-lambda.adoc:24
@@ -70,7 +70,7 @@ msgstr ""
 #: upstream/_versions/2.7/guides/amazon-lambda.adoc:29
 #, no-wrap
 msgid "Getting Started"
-msgstr ""
+msgstr "入门"
 
 #. type: Plain text
 #: upstream/_versions/2.7/guides/amazon-lambda.adoc:32

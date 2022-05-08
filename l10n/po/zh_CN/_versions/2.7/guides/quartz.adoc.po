@@ -39,13 +39,13 @@ msgstr ""
 #: upstream/_versions/2.7/guides/quartz.adoc:18
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_versions/2.7/guides/quartz.adoc:23
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/2.7/guides/quartz.adoc:26
@@ -56,7 +56,7 @@ msgstr ""
 #: upstream/_versions/2.7/guides/quartz.adoc:27
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.7/guides/quartz.adoc:31
@@ -92,7 +92,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/2.7/guides/quartz.adoc:47
 msgid "the Maven structure"
-msgstr ""
+msgstr "Maven 目录结构"
 
 #. type: Plain text
 #: upstream/_versions/2.7/guides/quartz.adoc:48

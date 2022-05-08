@@ -114,7 +114,7 @@ msgstr ""
 #: upstream/_versions/2.7/guides/hibernate-orm-panache.adoc:54
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.7/guides/hibernate-orm-panache.adoc:58
