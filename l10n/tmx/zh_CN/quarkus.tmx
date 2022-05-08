@@ -301,6 +301,14 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>ArC comes as a dependency of `quarkus-resteasy` so you already have it handy.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>It's a very simple REST endpoint, returning "hello" to requests on "/hello".</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -345,14 +353,6 @@
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>现在我们可以运行应用程序了。 使用:`./mvnw compile quarkus:dev`:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>ArC comes as a dependency of `quarkus-resteasy` so you already have it handy.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。</seg>
       </tuv>
     </tu>
     <tu>
