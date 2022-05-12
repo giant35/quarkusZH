@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-07 01:30+0000\n"
+"POT-Creation-Date: 2022-05-12 01:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3810,7 +3810,7 @@ msgstr ""
 msgid ""
 "    @RegisterExtension\n"
 "    final static QuarkusDevModeTest test = new QuarkusDevModeTest()\n"
-"            .setArchiveProducer(new Supplier<JavaArchive>() {\n"
+"            .setArchiveProducer(new Supplier<>() {\n"
 "                @Override\n"
 "                public JavaArchive get() {\n"
 "                    return ShrinkWrap.create(JavaArchive.class)   <1>\n"
@@ -4276,7 +4276,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2219
-msgid "We have an extension that is used to test for regressions in the extension processing. It is located in {quarkus-tree-url}/core/test-extension directory. In this section we touch on some of the tasks an extension author will typically need to perform using the test-extension code to illustrate how the task could be done."
+msgid "We have an extension that is used to test for regressions in the extension processing. It is located in {quarkus-tree-url}/integration-tests/test-extension/extension directory. In this section we touch on some of the tasks an extension author will typically need to perform using the test-extension code to illustrate how the task could be done."
 msgstr ""
 
 #. type: Title ====
@@ -4916,7 +4916,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2542
-msgid "The code for the `RuntimeXmlConfigService` can be viewed here: {quarkus-blob-url}/core/test-extension/runtime/src/main/java/io/quarkus/extest/runtime/RuntimeXmlConfigService.java[RuntimeXmlConfigService.java]"
+msgid "The code for the `RuntimeXmlConfigService` can be viewed here: {quarkus-blob-url}/integration-tests/test-extension/extension/runtime/src/main/java/io/quarkus/extest/runtime/RuntimeXmlConfigService.java[RuntimeXmlConfigService.java]"
 msgstr ""
 
 #. type: Plain text
@@ -5952,7 +5952,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:3129
-msgid "`description` (unless you have it already set in the ``runtime/pom.xml``'s `<description>` element, which is the recommended approach)"
+msgid "`description` (unless you have it already set in the `runtime/pom.xml`'s `<description>` element, which is the recommended approach)"
 msgstr ""
 
 #. type: Plain text

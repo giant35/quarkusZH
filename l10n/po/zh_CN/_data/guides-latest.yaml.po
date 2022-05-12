@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-04-13 01:37+0000\n"
+"POT-Creation-Date: 2022-05-12 01:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1960,7 +1960,7 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
-msgid "This guide demonstrates how to use the OpenID Connect extension to protect your Quarkus JAX-RS service application using Bearer Token Authorization where the tokens are issued by OpenId Connect Providers such as Keycloak."
+msgid "This guide demonstrates how to use the OpenID Connect extension to protect your Quarkus JAX-RS service application using Bearer Token Authorization where the tokens are issued by OpenID Connect Providers such as Keycloak."
 msgstr ""
 
 #. type: Hash Value - Key: keywords
@@ -1984,7 +1984,7 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
-msgid "This guide demonstrates how to use the OpenID Connect extension to protect your Quarkus JAX-RS web application using the Authorization Code Flow and OpenId Connect Providers such as Keycloak."
+msgid "This guide demonstrates how to use the OpenID Connect extension to protect your Quarkus JAX-RS web application using the Authorization Code Flow and OpenID Connect Providers such as Keycloak."
 msgstr ""
 
 #. type: Hash Value - Key: keywords
@@ -2057,6 +2057,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/security-openid-connect-client"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide explains how to configure Quarkus to authenticate against well-known OpenID Connect providers such as GitHub, Google, Microsoft, Apple..."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Configuring Well-Known OpenID Connect (OIDC) Providers"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/security-openid-connect-providers"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -2243,6 +2261,30 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/credentials-provider"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide demonstrates how your Quarkus application can use WebAuthn authentication instead of passwords."
+msgstr ""
+
+#. type: Hash Value - Key: keywords
+#: >categories>>guides>
+#, no-wrap
+msgid "security,webauthn"
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Using Security with WebAuthn"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/security-webauthn"
 msgstr ""
 
 #. type: Hash Value - Key: cat-id

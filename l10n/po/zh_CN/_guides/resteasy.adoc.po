@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-04-13 01:36+0000\n"
+"POT-Creation-Date: 2022-05-12 01:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1088,161 +1088,161 @@ msgid "Once GZip support has been enabled you can use it on an endpoint by addin
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:620
-msgid "If you want to compress everything then we recommended that you use the `quarkus.http.enable-compression=true` setting instead to globally enable compression support."
+#: upstream/_guides/resteasy.adoc:619
+msgid "The configuration property `quarkus.http.enable-compression` has no effect on compression support of RESTEasy Classic endpoints."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/resteasy.adoc:621
+#: upstream/_guides/resteasy.adoc:620
 #, no-wrap
 msgid "Multipart Support"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:624
+#: upstream/_guides/resteasy.adoc:623
 msgid "RESTEasy supports multipart via the https://docs.jboss.org/resteasy/docs/4.5.6.Final/userguide/html/Multipart.html[RESTEasy Multipart Provider]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:626
+#: upstream/_guides/resteasy.adoc:625
 msgid "Quarkus provides an extension called `quarkus-resteasy-multipart` to make things easier for you."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:628
+#: upstream/_guides/resteasy.adoc:627
 msgid "This extension slightly differs from the RESTEasy default behavior as the default charset (if none is specified in your request) is UTF-8 rather than US-ASCII."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:630
+#: upstream/_guides/resteasy.adoc:629
 msgid "You can configure this behavior with the following configuration properties:"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/resteasy.adoc:633
+#: upstream/_guides/resteasy.adoc:632
 #, no-wrap
 msgid "Servlet compatibility"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:636
+#: upstream/_guides/resteasy.adoc:635
 msgid "In Quarkus, RESTEasy can either run directly on top of the Vert.x HTTP server, or on top of Undertow if you have any servlet dependency."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:643
+#: upstream/_guides/resteasy.adoc:642
 msgid "As a result, certain classes, such as `HttpServletRequest` are not always available for injection. Most use-cases for this particular class are covered by JAX-RS equivalents, except for getting the remote client's IP. RESTEasy comes with a replacement API which you can inject: https://docs.jboss.org/resteasy/docs/4.5.6.Final/javadocs/org/jboss/resteasy/spi/HttpRequest.html[`HttpRequest`], which has the methods https://docs.jboss.org/resteasy/docs/4.5.6.Final/javadocs/org/jboss/resteasy/spi/HttpRequest.html#getRemoteAddress--[`getRemoteAddress()`] and https://docs.jboss.org/resteasy/docs/4.5.6.Final/javadocs/org/jboss/resteasy/spi/HttpRequest.html#getRemoteHost--[`getRemoteHost()`] to solve this problem."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/resteasy.adoc:644
+#: upstream/_guides/resteasy.adoc:643
 #, no-wrap
 msgid "RESTEasy and REST Client interactions"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:648
+#: upstream/_guides/resteasy.adoc:647
 msgid "In Quarkus, the RESTEasy extension and xref:rest-client.adoc[the REST Client extension] share the same infrastructure.  One important consequence of this consideration is that they share the same list of providers (in the JAX-RS meaning of the word)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:651
+#: upstream/_guides/resteasy.adoc:650
 msgid "For instance, if you declare a `WriterInterceptor`, it will by default intercept both the servers calls and the client calls, which might not be the desired behavior."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:653
+#: upstream/_guides/resteasy.adoc:652
 msgid "However, you can change this default behavior and constrain a provider to:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:655
+#: upstream/_guides/resteasy.adoc:654
 msgid "only consider *server* calls by adding the `@ConstrainedTo(RuntimeType.SERVER)` annotation to your provider;"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:656
+#: upstream/_guides/resteasy.adoc:655
 msgid "only consider *client* calls by adding the `@ConstrainedTo(RuntimeType.CLIENT)` annotation to your provider."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/resteasy.adoc:657
+#: upstream/_guides/resteasy.adoc:656
 #, no-wrap
 msgid "What's Different from Jakarta EE Development"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy.adoc:659
+#: upstream/_guides/resteasy.adoc:658
 #, no-wrap
 msgid "No Need for `Application` Class"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:662
+#: upstream/_guides/resteasy.adoc:661
 msgid "Configuration via an application-supplied subclass of `Application` is supported, but not required."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy.adoc:663
+#: upstream/_guides/resteasy.adoc:662
 #, no-wrap
 msgid "Only a single JAX-RS application"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:667
+#: upstream/_guides/resteasy.adoc:666
 msgid "In contrast to JAX-RS (and RESTeasy) running in a standard servlet-container, Quarkus only supports the deployment of a single JAX-RS application.  If multiple JAX-RS `Application` classes are defined, the build will fail with the message `Multiple classes have been annotated with @ApplicationPath which is currently not supported`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:669
+#: upstream/_guides/resteasy.adoc:668
 msgid "If multiple JAX-RS applications are defined, the property `quarkus.resteasy.ignore-application-classes=true` can be used to ignore all explicit `Application` classes. This makes all resource-classes available via the application-path as defined by `quarkus.resteasy.path` (default: `/`)."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy.adoc:670
+#: upstream/_guides/resteasy.adoc:669
 #, no-wrap
 msgid "Support limitations of JAX-RS application"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:675
+#: upstream/_guides/resteasy.adoc:674
 msgid "The RESTEasy extension doesn't support the method `getProperties()` of the class `javax.ws.rs.core.Application`. Moreover, it only relies on the methods `getClasses()` and `getSingletons()` to filter out the annotated resource, provider and feature classes.  It doesn't filter out the built-in resource, provider and feature classes and also the resource, provider and feature classes registered by the other extensions.  Finally the objects returned by the method `getSingletons()` are ignored, only the classes are took into account to filter out the resource, provider and feature classes, in other words the method `getSingletons()` is actually managed the same way as `getClasses()`."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy.adoc:676
+#: upstream/_guides/resteasy.adoc:675
 #, no-wrap
 msgid "Lifecycle of Resources"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:680
+#: upstream/_guides/resteasy.adoc:679
 msgid "In Quarkus all JAX-RS resources are treated as CDI beans.  It's possible to inject other beans via `@Inject`, bind interceptors using bindings such as `@Transactional`, define `@PostConstruct` callbacks, etc."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:686
+#: upstream/_guides/resteasy.adoc:685
 msgid "If there is no scope annotation declared on the resource class then the scope is defaulted.  The default scope can be controlled through the `quarkus.resteasy.singleton-resources` property.  If set to `true` (default) then a *single instance* of a resource class is created to service all requests (as defined by `@javax.inject.Singleton`).  If set to `false` then a *new instance* of the resource class is created per each request.  An explicit CDI scope annotation (`@RequestScoped`, `@ApplicationScoped`, etc.) always overrides the default behavior and specifies the lifecycle of resource instances."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/resteasy.adoc:687
+#: upstream/_guides/resteasy.adoc:686
 #, no-wrap
 msgid "Include/Exclude JAX-RS classes with build time conditions"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:691
+#: upstream/_guides/resteasy.adoc:690
 msgid "Quarkus enables the inclusion or exclusion of JAX-RS Resources, Providers and Features directly thanks to build time conditions in the same that it does for CDI beans.  Thus, the various JAX-RS classes can be annotated with profile conditions (`@io.quarkus.arc.profile.IfBuildProfile` or `@io.quarkus.arc.profile.UnlessBuildProfile`) and/or with property conditions (`io.quarkus.arc.properties.IfBuildProperty` or `io.quarkus.arc.properties.UnlessBuildProperty`) to indicate to Quarkus at build time under which conditions these JAX-RS classes should be included."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:693
+#: upstream/_guides/resteasy.adoc:692
 msgid "In the following example, Quarkus includes the endpoint `sayHello` if and only if the build profile `app1` has been enabled."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy.adoc:698
+#: upstream/_guides/resteasy.adoc:697
 #, no-wrap
 msgid ""
 "@IfBuildProfile(\"app1\")\n"
@@ -1250,7 +1250,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy.adoc:705
+#: upstream/_guides/resteasy.adoc:704
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -1262,27 +1262,27 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:708
+#: upstream/_guides/resteasy.adoc:707
 msgid "Please note that if a JAX-RS Application has been detected and the method `getClasses()` and/or `getSingletons()` has/have been overridden, Quarkus will ignore the build time conditions and consider only what has been defined in the JAX-RS Application."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/resteasy.adoc:709
+#: upstream/_guides/resteasy.adoc:708
 #, no-wrap
 msgid "Conclusion"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:712
+#: upstream/_guides/resteasy.adoc:711
 msgid "Creating JSON REST services with Quarkus is easy as it relies on proven and well known technologies."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:714
+#: upstream/_guides/resteasy.adoc:713
 msgid "As usual, Quarkus further simplifies things under the hood when running your application as a native executable."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy.adoc:715
+#: upstream/_guides/resteasy.adoc:714
 msgid "There is only one thing to remember: if you use `Response` and Quarkus can't determine the beans that are serialized, you need to annotate them with `@RegisterForReflection`."
 msgstr ""
