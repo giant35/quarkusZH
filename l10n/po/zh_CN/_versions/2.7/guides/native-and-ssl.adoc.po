@@ -49,7 +49,7 @@ msgstr "准备"
 #. type: Plain text
 #: upstream/_versions/2.7/guides/native-and-ssl.adoc:21
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/2.7/guides/native-and-ssl.adoc:23
