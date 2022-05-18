@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-04-13 01:36+0000\n"
+"POT-Creation-Date: 2022-05-18 01:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -358,7 +358,7 @@ msgstr ""
 msgid ""
 "%prod.quarkus.oidc.auth-server-url=http://localhost:8180/realms/quarkus\n"
 "quarkus.oidc.client-id=backend-service\n"
-"quarkus.oidc.client-secret=secret\n"
+"quarkus.oidc.credentials.secret=secret\n"
 msgstr ""
 
 #. type: delimited block -
@@ -388,7 +388,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect.adoc:183
-msgid "Do not start the Keycloak server when you run the application in a dev mode - `Dev Services for Keycloak` will launch a container. See <<keycloak-dev-mode, Running the Application in Dev mode>> section below for more information."
+msgid "Do not start the Keycloak server when you run the application in a dev mode - `Dev Services for Keycloak` will launch a container. See <<keycloak-dev-mode, Running the Application in Dev mode>> section below for more information. Make sure to put the {quickstarts-tree-url}/security-openid-connect-quickstart/config/quarkus-realm.json[realm configuration file] on the classpath (`target/classes` directory) so that it gets imported automatically when running in dev mode - unless you have already built a {quickstarts-tree-url}/security-openid-connect-quickstart[complete solution] in which case this realm file will be added to the classpath during the build."
 msgstr ""
 
 #. type: Plain text
@@ -535,7 +535,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/security-openid-connect.adoc:255
 #, no-wrap
-msgid "./target/security-openid-connect-quickstart-runner\n"
+msgid "./target/security-openid-connect-quickstart-1.0.0-SNAPSHOT-runner\n"
 msgstr ""
 
 #. type: Title ===
@@ -618,7 +618,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "export access_token=$(\\\n"
-"    curl --insecure -X POST https://localhost:8543/realms/quarkus/protocol/openid-connect/token \\\n"
+"    curl --insecure -X POST http://localhost:8180/realms/quarkus/protocol/openid-connect/token \\\n"
 "    --user backend-service:secret \\\n"
 "    -H 'content-type: application/x-www-form-urlencoded' \\\n"
 "    -d 'username=admin&password=admin&grant_type=password' | jq --raw-output '.access_token' \\\n"
@@ -757,7 +757,7 @@ msgstr ""
 #. type: Title ===
 #: upstream/_guides/security-openid-connect.adoc:380
 #, no-wrap
-msgid "Token Verification And Introspection "
+msgid "Token Verification And Introspection"
 msgstr ""
 
 #. type: Plain text
@@ -1188,24 +1188,20 @@ msgid "import static org.hamcrest.Matchers.equalTo;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect.adoc:642
+#: upstream/_guides/security-openid-connect.adoc:641
 #, no-wrap
-msgid ""
-"import java.util.Arrays;\n"
-"import java.util.HashSet;\n"
+msgid "import java.util.Set;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect.adoc:645
-#: upstream/_guides/security-openid-connect.adoc:883
+#: upstream/_guides/security-openid-connect.adoc:643
+#: upstream/_guides/security-openid-connect.adoc:695
 #, no-wrap
-msgid ""
-"import org.hamcrest.Matchers;\n"
-"import org.junit.jupiter.api.Test;\n"
+msgid "import org.junit.jupiter.api.Test;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect.adoc:651
+#: upstream/_guides/security-openid-connect.adoc:649
 #, no-wrap
 msgid ""
 "import io.quarkus.test.common.QuarkusTestResource;\n"
@@ -1216,7 +1212,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect.adoc:655
+#: upstream/_guides/security-openid-connect.adoc:653
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -1225,13 +1221,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect.adoc:665
+#: upstream/_guides/security-openid-connect.adoc:663
 #, no-wrap
 msgid ""
 "    @Test\n"
 "    public void testBearerToken() {\n"
-"        RestAssured.given().auth().oauth2(getAccessToken(\"alice\", new HashSet<>(Arrays.asList(\"user\"))))\n"
-"            .when().get(\"/api/users/preferredUserName\")\n"
+"        RestAssured.given().auth().oauth2(getAccessToken(\"alice\", Set.of(\"user\")))\n"
+"            .when().get(\"/api/users/me\")\n"
 "            .then()\n"
 "            .statusCode(200)\n"
 "            // the test endpoint returns the name extracted from the injected SecurityIdentity Principal\n"
@@ -1240,7 +1236,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect.adoc:674
+#: upstream/_guides/security-openid-connect.adoc:672
 #, no-wrap
 msgid ""
 "    private String getAccessToken(String userName, Set<String> groups) {\n"
@@ -1254,28 +1250,33 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect.adoc:677
+#: upstream/_guides/security-openid-connect.adoc:675
 msgid "Note that the `quarkus-test-oidc-server` extension includes a signing RSA private key file in a `JSON Web Key` (`JWK`) format and points to it with a `smallrye.jwt.sign.key.location` configuration property. It allows to use a no argument `sign()` operation to sign the token."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect.adoc:680
+#: upstream/_guides/security-openid-connect.adoc:678
 msgid "Testing your `quarkus-oidc` `service` application with `OidcWiremockTestResource` provides the best coverage as even the communication channel is tested against the Wiremock HTTP stubs.  `OidcWiremockTestResource` will be enhanced going forward to support more complex Bearer token test scenarios."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-openid-connect.adoc:683
+#: upstream/_guides/security-openid-connect.adoc:681
 msgid "If there is an immediate need for a test to define Wiremock stubs not currently supported by `OidcWiremockTestResource` one can do so via a `WireMockServer` instance injected into the test class, for example:"
 msgstr ""
 
+#. type: delimited block =
+#: upstream/_guides/security-openid-connect.adoc:685
+msgid "`OidcWiremockTestResource` does not work with `@QuarkusIntegrationTest` against Docker containers, because the Wiremock server is running in the JVM running the test, which cannot be accessed from the Docker container running the Quarkus application."
+msgstr ""
+
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect.adoc:687
+#: upstream/_guides/security-openid-connect.adoc:690
 #, no-wrap
 msgid "package io.quarkus.it.keycloak;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect.adoc:690
+#: upstream/_guides/security-openid-connect.adoc:693
 #, no-wrap
 msgid ""
 "import static com.github.tomakehurst.wiremock.client.WireMock.matching;\n"
@@ -1283,13 +1284,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect.adoc:692
-#, no-wrap
-msgid "import org.junit.jupiter.api.Test;\n"
-msgstr ""
-
-#. type: delimited block -
-#: upstream/_guides/security-openid-connect.adoc:695
+#: upstream/_guides/security-openid-connect.adoc:698
 #, no-wrap
 msgid ""
 "import com.github.tomakehurst.wiremock.WireMockServer;\n"
@@ -1297,13 +1292,11 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-openid-connect.adoc:701
+#: upstream/_guides/security-openid-connect.adoc:702
 #, no-wrap
 msgid ""
-"import io.quarkus.test.common.QuarkusTestResource;\n"
 "import io.quarkus.test.junit.QuarkusTest;\n"
 "import io.quarkus.test.oidc.server.OidcWireMock;\n"
-"import io.quarkus.test.oidc.server.OidcWiremockTestResource;\n"
 "import io.restassured.RestAssured;\n"
 msgstr ""
 
@@ -1312,7 +1305,6 @@ msgstr ""
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
-"@QuarkusTestResource(OidcWiremockTestResource.class)\n"
 "public class CustomOidcWireMockStubTest {\n"
 msgstr ""
 
@@ -1330,7 +1322,7 @@ msgstr ""
 msgid ""
 "    @Test\n"
 "    public void testInvalidBearerToken() {\n"
-"        wireMockServer.stubFor(WireMock.post(\"/realms/quarkus/protocol/openid-connect/token/introspect\")\n"
+"        wireMockServer.stubFor(WireMock.post(\"/auth/realms/quarkus/protocol/openid-connect/token/introspect\")\n"
 "                .withRequestBody(matching(\".*token=invalid_token.*\"))\n"
 "                .willReturn(WireMock.aResponse().withStatus(400)));\n"
 msgstr ""
@@ -1565,6 +1557,14 @@ msgstr ""
 msgid ""
 "import static io.quarkus.test.keycloak.server.KeycloakTestResourceLifecycleManager.getAccessToken;\n"
 "import static org.hamcrest.Matchers.equalTo;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/security-openid-connect.adoc:883
+#, no-wrap
+msgid ""
+"import org.hamcrest.Matchers;\n"
+"import org.junit.jupiter.api.Test;\n"
 msgstr ""
 
 #. type: delimited block -
