@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-12 01:59+0000\n"
+"POT-Creation-Date: 2022-06-23 02:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -855,6 +855,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/datasource"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "Automatically start database containers with Dev Services."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Database Dev Services"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/databases-dev-services"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -2062,6 +2080,24 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
+msgid "Reference guide for OpenID Connect and OAuth2 Client and Filters."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "OpenID Connect (OIDC) and OAuth2 Client and Filters Reference"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/security-openid-connect-client-reference"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
 msgid "This guide explains how to configure Quarkus to authenticate against well-known OpenID Connect providers such as GitHub, Google, Microsoft, Apple..."
 msgstr ""
 
@@ -2518,6 +2554,24 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
+msgid "Learn how to use SmallRye Stork in a Kubernetes environment."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Using Stork with Kubernetes"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/stork-kubernetes"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
 msgid "Have a more in-depth look at how SmallRye Stork can be configured and used."
 msgstr ""
 
@@ -2549,6 +2603,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/container-image"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "Use Podman instead of Docker for running containers."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Using Podman"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/podman"
 msgstr ""
 
 #. type: Hash Value - Key: description
