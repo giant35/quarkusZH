@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-11 01:00+0000\n"
+"POT-Creation-Date: 2022-06-30 02:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/redis-dev-services.adoc:14
-msgid "Quarkus supports a feature called Dev Services that allows you to create various datasources without any config.  What that means practically, is that if you have docker running and have not configured `quarkus.redis.hosts`, Quarkus will automatically start a Redis container when running tests or dev-mode, and automatically configure the connection."
+msgid "Quarkus supports a feature called Dev Services that allows you to create various datasources without any config.  What that means practically, is that if you have docker running and have not configured `quarkus.redis.hosts`, Quarkus will automatically start a Redis container when running tests or dev mode, and automatically configure the connection."
 msgstr ""
 
 #. type: Plain text

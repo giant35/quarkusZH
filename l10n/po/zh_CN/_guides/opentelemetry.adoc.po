@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-06-23 01:59+0000\n"
+"POT-Creation-Date: 2022-06-30 02:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -507,7 +507,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:278
-msgid "OpenTelemetry propagates cross-cutting concerns through https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/context/api-propagators.md[propagators] that will share an underlying `Context` for storing state and accesing data across the lifespan of a distributed transaction."
+msgid "OpenTelemetry propagates cross-cutting concerns through https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/context/api-propagators.md[propagators] that will share an underlying `Context` for storing state and accessing data across the lifespan of a distributed transaction."
 msgstr ""
 
 #. type: Plain text
@@ -570,7 +570,7 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_guides/opentelemetry.adoc:327
-msgid "You can add attributes by setting the `resource-attributes` tracer config that is described in the <<configuration-reference>>.  Since this property can be overridden at runtime, the OpenTelemetry extension will pick up its value following the order of precedence that is described in the xref:config-reference.adoc#configuration_sources[Quarkus Configuration Reference]."
+msgid "You can add attributes by setting the `resource-attributes` tracer config that is described in the <<configuration-reference>>.  Since this property can be overridden at runtime, the OpenTelemetry extension will pick up its value following the order of precedence that is described in the xref:config-reference.adoc#configuration-sources[Quarkus Configuration Reference]."
 msgstr ""
 
 #. type: delimited block =
