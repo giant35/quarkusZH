@@ -173,14 +173,6 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>If you have multiple JDK's installed it is not certain Maven will pick up the expected java and you could end up with unexpected results.  You can verify which JDK Maven uses by running `mvn --version`.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>如果您安装了多个JDK，Maven可能未使用预期的java，这样可能会得到意外的结果。您可以通过运行​  `mvn —version` 来验证 Maven 使用了哪个JDK。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>In this guide, we create a straightforward application serving a `hello` endpoint. To demonstrate dependency injection, this endpoint uses a `greeting` bean.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -329,6 +321,14 @@
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you have multiple JDK's installed it is not certain Maven will pick up the expected java and you could end up with unexpected results.  You can verify which JDK Maven uses by running `mvn --version`.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>如果您安装了多个JDK，Maven可能未使用预期的java，这样可能会得到意外的结果。您可以通过运行​  `mvn —version` 来验证 Maven 使用了哪个JDK。</seg>
       </tuv>
     </tu>
     <tu>
