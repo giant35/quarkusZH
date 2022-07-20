@@ -1,6 +1,8 @@
 Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_posts/insights_1_transcription.adoc.po, 0, 254, 0, 8846 ,100%
 l10n/po/zh_CN/_posts/insights_0_transcription.adoc.po, 0, 117, 0, 3765 ,100%
+l10n/po/zh_CN/_posts/2022-07-19-quarkus-insights-qanda4.adoc.po, 0, 7, 0, 122 ,100%
+l10n/po/zh_CN/_posts/2022-07-19-quarkus-2-10-3-final-released.adoc.po, 0, 17, 0, 265 ,100%
 l10n/po/zh_CN/_posts/2022-07-15-stork-load-balancing.adoc.po, 0, 71, 0, 1214 ,100%
 l10n/po/zh_CN/_posts/2022-07-14-quarkus-newsletter-22.adoc.po, 0, 7, 0, 251 ,100%
 l10n/po/zh_CN/_posts/2022-07-06-quarkus-2-10-2-final-released.adoc.po, 0, 14, 0, 162 ,100%
@@ -312,7 +314,7 @@ l10n/po/zh_CN/_guides/smallrye-graphql.adoc.po, 0, 235, 0, 2930 ,100%
 l10n/po/zh_CN/_guides/smallrye-graphql-client.adoc.po, 0, 86, 0, 1585 ,100%
 l10n/po/zh_CN/_guides/smallrye-fault-tolerance.adoc.po, 0, 124, 0, 2221 ,100%
 l10n/po/zh_CN/_guides/sending-emails.adoc.po, 0, 79, 0, 1125 ,100%
-l10n/po/zh_CN/_guides/security.adoc.po, 0, 126, 0, 2342 ,100%
+l10n/po/zh_CN/_guides/security.adoc.po, 0, 128, 0, 2349 ,100%
 l10n/po/zh_CN/_guides/security-webauthn.adoc.po, 0, 227, 0, 4054 ,100%
 l10n/po/zh_CN/_guides/security-testing.adoc.po, 0, 28, 0, 484 ,100%
 l10n/po/zh_CN/_guides/security-properties.adoc.po, 0, 46, 0, 673 ,100%
@@ -408,7 +410,7 @@ l10n/po/zh_CN/_guides/jms.adoc.po, 0, 87, 0, 1096 ,100%
 l10n/po/zh_CN/_guides/jgit.adoc.po, 0, 11, 0, 130 ,100%
 l10n/po/zh_CN/_guides/infinispan-embedded.adoc.po, 0, 28, 0, 232 ,100%
 l10n/po/zh_CN/_guides/infinispan-client.adoc.po, 0, 152, 0, 2357 ,100%
-l10n/po/zh_CN/_guides/includes/prerequisites.adoc.po, 0, 11, 0, 85 ,100%
+l10n/po/zh_CN/_guides/includes/prerequisites.adoc.po, 0, 11, 0, 86 ,100%
 l10n/po/zh_CN/_guides/includes/extension-status.adoc.po, 0, 5, 0, 122 ,100%
 l10n/po/zh_CN/_guides/includes/extension-add.adoc.po, 0, 6, 0, 13 ,100%
 l10n/po/zh_CN/_guides/includes/devtools/test.adoc.po, 0, 4, 0, 6 ,100%
@@ -442,7 +444,7 @@ l10n/po/zh_CN/_guides/grpc-service-consumption.adoc.po, 0, 109, 0, 1375 ,100%
 l10n/po/zh_CN/_guides/grpc-getting-started.adoc.po, 0, 102, 0, 1521 ,100%
 l10n/po/zh_CN/_guides/gradle-tooling.adoc.po, 0, 150, 0, 2480 ,100%
 l10n/po/zh_CN/_guides/gradle-config.adoc.po, 0, 9, 0, 100 ,100%
-l10n/po/zh_CN/_guides/getting-started-testing.adoc.po, 0, 336, 0, 6031 ,100%
+l10n/po/zh_CN/_guides/getting-started-testing.adoc.po, 0, 337, 0, 6042 ,100%
 l10n/po/zh_CN/_guides/getting-started-reactive.adoc.po, 1, 99, 5, 2020 ,100%
 l10n/po/zh_CN/_guides/gcp-functions.adoc.po, 0, 111, 0, 1840 ,100%
 l10n/po/zh_CN/_guides/gcp-functions-http.adoc.po, 0, 64, 0, 879 ,100%
@@ -518,4 +520,4 @@ l10n/po/zh_CN/_guides/all-builditems.adoc.po, 0, 4, 0, 19 ,100%
 l10n/po/zh_CN/_guides/README.adoc.po, 0, 76, 0, 307 ,100%
 l10n/po/zh_CN/_guides/0-glossary.adoc.po, 0, 24, 0, 132 ,100%
 l10n/po/zh_CN/_guides/index2.adoc.po, 1, 48, 24, 255 ,91%
-l10n/po/zh_CN/_guides/getting-started.adoc.po, 14, 130, 241, 1897 ,88%
+l10n/po/zh_CN/_guides/getting-started.adoc.po, 14, 130, 241, 1898 ,88%
