@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-07-12 02:08+0000\n"
+"POT-Creation-Date: 2022-07-29 02:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -737,7 +737,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started.adoc:411
-msgid "These tests use http://rest-assured.io/[RestAssured], but feel free to use your favorite library."
+msgid "These tests use https://rest-assured.io/[RestAssured], but feel free to use your favorite library."
 msgstr ""
 
 #. type: Plain text
