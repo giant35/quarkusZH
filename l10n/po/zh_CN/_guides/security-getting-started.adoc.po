@@ -44,13 +44,13 @@ msgstr ""
 #: upstream/_guides/security-getting-started.adoc:20
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_guides/security-getting-started.adoc:24
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:27
@@ -81,7 +81,7 @@ msgstr ""
 #: upstream/_guides/security-getting-started.adoc:36
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:40
