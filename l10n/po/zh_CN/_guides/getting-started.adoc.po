@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-07-20 02:05+0000\n"
+"POT-Creation-Date: 2022-08-06 01:59+0000\n"
 "PO-Revision-Date: 2021-07-17 19:16+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -739,7 +739,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:411
-msgid "These tests use http://rest-assured.io/[RestAssured], but feel free to use your favorite library."
+msgid "These tests use https://rest-assured.io/[RestAssured], but feel free to use your favorite library."
 msgstr ""
 
 #. type: Plain text

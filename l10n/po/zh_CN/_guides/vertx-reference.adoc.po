@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-08-03 02:04+0000\n"
+"POT-Creation-Date: 2022-08-06 01:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -295,7 +295,7 @@ msgstr ""
 #. type: Table
 #: upstream/_guides/vertx-reference.adoc:110
 #, no-wrap
-msgid "https://quarkus.io/guides/mqtt"
+msgid "No guide yet"
 msgstr ""
 
 #. type: Table
