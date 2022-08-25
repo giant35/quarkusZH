@@ -1,6 +1,7 @@
 Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_posts/insights_1_transcription.adoc.po, 0, 254, 0, 8846 ,100%
 l10n/po/zh_CN/_posts/insights_0_transcription.adoc.po, 0, 117, 0, 3765 ,100%
+l10n/po/zh_CN/_posts/2022-08-24-quarkus-2-11-3-final-released.adoc.po, 0, 16, 0, 159 ,100%
 l10n/po/zh_CN/_posts/2022-08-17-quarkus-newsletter-23.adoc.po, 0, 7, 0, 238 ,100%
 l10n/po/zh_CN/_posts/2022-08-08-quarkus-2-11-2-final-released.adoc.po, 0, 18, 0, 241 ,100%
 l10n/po/zh_CN/_posts/2022-07-27-quarkus-2-11-1-final-released.adoc.po, 0, 53, 0, 924 ,100%
@@ -272,8 +273,8 @@ l10n/po/zh_CN/_posts/2019-06-05-quarkus-and-web-ui-development-mode.adoc.po, 0, 
 l10n/po/zh_CN/_posts/2019-05-08-welcome.adoc.po, 0, 6, 0, 89 ,100%
 l10n/po/zh_CN/_posts/2019-05-05-quarkus-has-a-new-logo.adoc.po, 0, 25, 0, 394 ,100%
 l10n/po/zh_CN/_posts/2020-04-08-why-did-payair-technologies-switch-to-quarkus.adoc.po, 1, 44, 21, 1333 ,99%
-l10n/po/zh_CN/_guides/writing-native-applications-tips.adoc.po, 0, 111, 0, 1786 ,100%
-l10n/po/zh_CN/_guides/writing-extensions.adoc.po, 0, 883, 0, 16859 ,100%
+l10n/po/zh_CN/_guides/writing-native-applications-tips.adoc.po, 0, 115, 0, 1889 ,100%
+l10n/po/zh_CN/_guides/writing-extensions.adoc.po, 0, 883, 0, 16858 ,100%
 l10n/po/zh_CN/_guides/websockets.adoc.po, 0, 66, 0, 807 ,100%
 l10n/po/zh_CN/_guides/vertx.adoc.po, 0, 123, 0, 1775 ,100%
 l10n/po/zh_CN/_guides/vertx-reference.adoc.po, 0, 289, 0, 3277 ,100%
@@ -331,8 +332,8 @@ l10n/po/zh_CN/_guides/security-openid-connect-client-reference.adoc.po, 0, 231, 
 l10n/po/zh_CN/_guides/security-oauth2.adoc.po, 0, 113, 0, 1782 ,100%
 l10n/po/zh_CN/_guides/security-ldap.adoc.po, 0, 66, 0, 803 ,100%
 l10n/po/zh_CN/_guides/security-keycloak-authorization.adoc.po, 0, 146, 0, 2259 ,100%
-l10n/po/zh_CN/_guides/security-jwt.adoc.po, 0, 348, 0, 5514 ,100%
-l10n/po/zh_CN/_guides/security-jwt-build.adoc.po, 0, 147, 0, 2531 ,100%
+l10n/po/zh_CN/_guides/security-jwt.adoc.po, 0, 348, 0, 5513 ,100%
+l10n/po/zh_CN/_guides/security-jwt-build.adoc.po, 0, 147, 0, 2529 ,100%
 l10n/po/zh_CN/_guides/security-jpa.adoc.po, 0, 103, 0, 1428 ,100%
 l10n/po/zh_CN/_guides/security-jdbc.adoc.po, 0, 77, 0, 1040 ,100%
 l10n/po/zh_CN/_guides/security-getting-started.adoc.po, 0, 149, 0, 2114 ,100%
@@ -351,7 +352,7 @@ l10n/po/zh_CN/_guides/rest-client.adoc.po, 0, 167, 0, 2394 ,100%
 l10n/po/zh_CN/_guides/rest-client-reactive.adoc.po, 0, 255, 0, 3770 ,100%
 l10n/po/zh_CN/_guides/rest-client-multipart.adoc.po, 0, 87, 0, 1238 ,100%
 l10n/po/zh_CN/_guides/redis.adoc.po, 0, 135, 0, 1393 ,100%
-l10n/po/zh_CN/_guides/redis-reference.adoc.po, 0, 205, 0, 2524 ,100%
+l10n/po/zh_CN/_guides/redis-reference.adoc.po, 0, 205, 0, 2523 ,100%
 l10n/po/zh_CN/_guides/redis-dev-services.adoc.po, 0, 10, 0, 270 ,100%
 l10n/po/zh_CN/_guides/reaugmentation.adoc.po, 0, 22, 0, 683 ,100%
 l10n/po/zh_CN/_guides/reactive-sql-clients.adoc.po, 0, 199, 0, 2250 ,100%
@@ -382,7 +383,7 @@ l10n/po/zh_CN/_guides/neo4j.adoc.po, 0, 142, 0, 2118 ,100%
 l10n/po/zh_CN/_guides/native-reference.adoc.po, 0, 347, 0, 8926 ,100%
 l10n/po/zh_CN/_guides/native-and-ssl.adoc.po, 0, 109, 0, 1509 ,100%
 l10n/po/zh_CN/_guides/mutiny-primer.adoc.po, 0, 141, 0, 2094 ,100%
-l10n/po/zh_CN/_guides/mongodb.adoc.po, 0, 185, 0, 2727 ,100%
+l10n/po/zh_CN/_guides/mongodb.adoc.po, 0, 187, 0, 2761 ,100%
 l10n/po/zh_CN/_guides/mongodb-panache.adoc.po, 0, 323, 0, 5304 ,100%
 l10n/po/zh_CN/_guides/mongodb-panache-kotlin.adoc.po, 0, 48, 0, 928 ,100%
 l10n/po/zh_CN/_guides/micrometer.adoc.po, 0, 114, 0, 2631 ,100%
@@ -465,7 +466,7 @@ l10n/po/zh_CN/_guides/flyway.adoc.po, 0, 54, 0, 758 ,100%
 l10n/po/zh_CN/_guides/faq.adoc.po, 0, 10, 0, 77 ,100%
 l10n/po/zh_CN/_guides/extension-registry-user.adoc.po, 0, 72, 0, 1456 ,100%
 l10n/po/zh_CN/_guides/extension-metadata.adoc.po, 0, 51, 0, 1039 ,100%
-l10n/po/zh_CN/_guides/extension-codestart.adoc.po, 0, 155, 0, 2074 ,100%
+l10n/po/zh_CN/_guides/extension-codestart.adoc.po, 0, 152, 0, 2175 ,100%
 l10n/po/zh_CN/_guides/elasticsearch.adoc.po, 0, 122, 0, 2198 ,100%
 l10n/po/zh_CN/_guides/elasticsearch-dev-services.adoc.po, 0, 25, 0, 354 ,100%
 l10n/po/zh_CN/_guides/duration-format-note.adoc.po, 0, 2, 0, 70 ,100%
@@ -476,7 +477,7 @@ l10n/po/zh_CN/_guides/doc-concepts.adoc.po, 0, 38, 0, 468 ,100%
 l10n/po/zh_CN/_guides/dev-ui.adoc.po, 0, 106, 0, 1495 ,100%
 l10n/po/zh_CN/_guides/dev-services.adoc.po, 0, 35, 0, 796 ,100%
 l10n/po/zh_CN/_guides/dev-mode-differences.adoc.po, 0, 45, 0, 722 ,100%
-l10n/po/zh_CN/_guides/deploying-to-openshift.adoc.po, 0, 158, 0, 1950 ,100%
+l10n/po/zh_CN/_guides/deploying-to-openshift.adoc.po, 0, 160, 0, 1949 ,100%
 l10n/po/zh_CN/_guides/deploying-to-kubernetes.adoc.po, 0, 368, 0, 5759 ,100%
 l10n/po/zh_CN/_guides/deploying-to-heroku.adoc.po, 0, 63, 0, 950 ,100%
 l10n/po/zh_CN/_guides/deploying-to-google-cloud.adoc.po, 0, 101, 0, 1567 ,100%
