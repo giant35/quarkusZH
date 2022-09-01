@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-06-23 02:00+0000\n"
+"POT-Creation-Date: 2022-09-01 02:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,21 +177,21 @@ msgstr ""
 #. type: Title ==
 #: upstream/_guides/kafka-dev-services.adoc:88
 #, no-wrap
-msgid "Enabling transactions"
+msgid "Transactional and Idempotent producers support"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka-dev-services.adoc:92
-msgid "By default, the Red Panda broker does not act as a transaction coordinator.  To enable transactions, set:"
+msgid "By default, the Red Panda broker is configured to enable transactions and idempotence features.  You can disable those using:"
 msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/kafka-dev-services.adoc:96
 #, no-wrap
-msgid "quarkus.kafka.devservices.redpanda.transaction-enabled=true\n"
+msgid "quarkus.kafka.devservices.redpanda.transaction-enabled=false\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka-dev-services.adoc:98
-msgid "It also enables producer idempotence support."
+msgid "Redpanda transactions does not support exactly-once processing."
 msgstr ""
