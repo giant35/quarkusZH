@@ -34,7 +34,7 @@ msgstr ""
 #: upstream/_versions/main/guides/security-keycloak-admin-client.adoc:14
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-keycloak-admin-client.adoc:19
