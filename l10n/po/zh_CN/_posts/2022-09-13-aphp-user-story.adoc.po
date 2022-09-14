@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-10 02:21+0000\n"
+"POT-Creation-Date: 2022-09-14 02:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgid ""
 "date: 2022-09-13\n"
 "tags: user-story\n"
 "synopsis: 'A short story of Quarkus adoption by APHP (Assistance Publique des Hôpitaux de Paris).'\n"
-"author: jean-Yves Terrien\n"
+"author: jyterrien\n"
 "---\n"
 msgstr ""
 
@@ -44,7 +44,7 @@ msgstr ""
 #. type: Title ==
 #: upstream/_posts/2022-09-13-aphp-user-story.adoc:14
 #, no-wrap
-msgid "APHP"
+msgid "About APHP"
 msgstr ""
 
 #. type: Plain text
