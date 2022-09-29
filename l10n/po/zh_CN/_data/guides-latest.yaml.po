@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-01 02:10+0000\n"
+"POT-Creation-Date: 2022-09-29 02:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2134,6 +2134,24 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
+msgid "Inject a preconfigured Keycloak Admin Client."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Keycloak Admin Client"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/security-keycloak-admin-client"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
 msgid "This guide explains how your application can utilize SmallRye JWT to verify JWT tokens and provide secured access to the JAX-RS endpoints."
 msgstr ""
 
@@ -2321,6 +2339,30 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/security-webauthn"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "This guide demonstrates how to add a RESTEasy Reactive filter to help prevent CSRF attacks."
+msgstr ""
+
+#. type: Hash Value - Key: keywords
+#: >categories>>guides>
+#, no-wrap
+msgid "security,csrf"
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Cross Site Request Forgery (CSRF) prevention"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/security-csrf-prevention"
 msgstr ""
 
 #. type: Hash Value - Key: cat-id
@@ -4157,6 +4199,24 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/quarkus-reactive-architecture"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
+msgid "Learn how to benefit from Java 19 virtual threads when writing REST services in Quarkus."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Virtual Threads support"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/virtual-threads"
 msgstr ""
 
 #. type: Hash Value - Key: description
