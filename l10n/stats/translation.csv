@@ -1,6 +1,7 @@
 Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_posts/insights_1_transcription.adoc.po, 0, 254, 0, 8846 ,100%
 l10n/po/zh_CN/_posts/insights_0_transcription.adoc.po, 0, 117, 0, 3765 ,100%
+l10n/po/zh_CN/_posts/2022-10-06-quarkus-2-13-1-final-released.adoc.po, 0, 14, 0, 159 ,100%
 l10n/po/zh_CN/_posts/2022-09-28-quarkus-2-13-0-final-released.adoc.po, 0, 30, 0, 522 ,100%
 l10n/po/zh_CN/_posts/2022-09-21-quarkus-2-12-3-final-released.adoc.po, 0, 15, 0, 149 ,100%
 l10n/po/zh_CN/_posts/2022-09-20-intellij-quarkus-tools-1.13.0.adoc.po, 0, 16, 0, 153 ,100%
@@ -327,7 +328,7 @@ l10n/po/zh_CN/_guides/spring-cloud-config-client.adoc.po, 0, 46, 0, 499 ,100%
 l10n/po/zh_CN/_guides/spring-cache.adoc.po, 0, 73, 0, 904 ,100%
 l10n/po/zh_CN/_guides/spring-boot-properties.adoc.po, 0, 86, 0, 877 ,100%
 l10n/po/zh_CN/_guides/software-transactional-memory.adoc.po, 0, 54, 0, 2031 ,100%
-l10n/po/zh_CN/_guides/smallrye-metrics.adoc.po, 0, 64, 0, 962 ,100%
+l10n/po/zh_CN/_guides/smallrye-metrics.adoc.po, 0, 65, 0, 977 ,100%
 l10n/po/zh_CN/_guides/smallrye-kafka-outgoing.adoc.po, 0, 85, 0, 952 ,100%
 l10n/po/zh_CN/_guides/smallrye-kafka-incoming.adoc.po, 0, 101, 0, 1201 ,100%
 l10n/po/zh_CN/_guides/smallrye-health.adoc.po, 0, 115, 0, 1846 ,100%
@@ -335,7 +336,7 @@ l10n/po/zh_CN/_guides/smallrye-graphql.adoc.po, 0, 290, 0, 3551 ,100%
 l10n/po/zh_CN/_guides/smallrye-graphql-client.adoc.po, 0, 86, 0, 1580 ,100%
 l10n/po/zh_CN/_guides/smallrye-fault-tolerance.adoc.po, 0, 125, 0, 2271 ,100%
 l10n/po/zh_CN/_guides/sending-emails.adoc.po, 0, 79, 0, 1125 ,100%
-l10n/po/zh_CN/_guides/security.adoc.po, 0, 137, 0, 2482 ,100%
+l10n/po/zh_CN/_guides/security.adoc.po, 1, 147, 2, 2562 ,100%
 l10n/po/zh_CN/_guides/security-webauthn.adoc.po, 0, 227, 0, 4054 ,100%
 l10n/po/zh_CN/_guides/security-testing.adoc.po, 0, 28, 0, 484 ,100%
 l10n/po/zh_CN/_guides/security-properties.adoc.po, 0, 46, 0, 673 ,100%
@@ -344,7 +345,7 @@ l10n/po/zh_CN/_guides/security-openid-connect-web-authentication.adoc.po, 0, 422
 l10n/po/zh_CN/_guides/security-openid-connect-providers.adoc.po, 0, 149, 0, 1391 ,100%
 l10n/po/zh_CN/_guides/security-openid-connect-multitenancy.adoc.po, 0, 148, 0, 2214 ,100%
 l10n/po/zh_CN/_guides/security-openid-connect-dev-services.adoc.po, 0, 138, 0, 3218 ,100%
-l10n/po/zh_CN/_guides/security-openid-connect-client.adoc.po, 0, 139, 0, 1836 ,100%
+l10n/po/zh_CN/_guides/security-openid-connect-client.adoc.po, 0, 139, 0, 1834 ,100%
 l10n/po/zh_CN/_guides/security-openid-connect-client-reference.adoc.po, 0, 235, 0, 4038 ,100%
 l10n/po/zh_CN/_guides/security-oauth2.adoc.po, 0, 113, 0, 1782 ,100%
 l10n/po/zh_CN/_guides/security-ldap.adoc.po, 0, 66, 0, 803 ,100%
@@ -358,7 +359,7 @@ l10n/po/zh_CN/_guides/security-getting-started.adoc.po, 0, 156, 0, 2190 ,100%
 l10n/po/zh_CN/_guides/security-enabling-basic-auth-tutorial.adoc.po, 0, 11, 0, 93 ,100%
 l10n/po/zh_CN/_guides/security-enabling-basic-auth-howto.adoc.po, 0, 11, 0, 99 ,100%
 l10n/po/zh_CN/_guides/security-customization.adoc.po, 0, 139, 0, 2000 ,100%
-l10n/po/zh_CN/_guides/security-csrf-prevention.adoc.po, 0, 46, 0, 618 ,100%
+l10n/po/zh_CN/_guides/security-csrf-prevention.adoc.po, 0, 45, 0, 607 ,100%
 l10n/po/zh_CN/_guides/security-built-in-authentication.adoc.po, 0, 42, 0, 923 ,100%
 l10n/po/zh_CN/_guides/security-basic-auth-concept.adoc.po, 0, 14, 0, 346 ,100%
 l10n/po/zh_CN/_guides/security-authorization.adoc.po, 0, 79, 0, 1571 ,100%
@@ -385,7 +386,7 @@ l10n/po/zh_CN/_guides/reactive-event-bus.adoc.po, 0, 106, 0, 1328 ,100%
 l10n/po/zh_CN/_guides/rabbitmq.adoc.po, 0, 120, 0, 1623 ,100%
 l10n/po/zh_CN/_guides/rabbitmq-reference.adoc.po, 0, 272, 0, 2738 ,100%
 l10n/po/zh_CN/_guides/rabbitmq-dev-services.adoc.po, 0, 38, 0, 645 ,100%
-l10n/po/zh_CN/_guides/qute.adoc.po, 0, 133, 0, 1646 ,100%
+l10n/po/zh_CN/_guides/qute.adoc.po, 0, 126, 0, 1532 ,100%
 l10n/po/zh_CN/_guides/qute-reference.adoc.po, 0, 840, 0, 11358 ,100%
 l10n/po/zh_CN/_guides/quartz.adoc.po, 0, 126, 0, 1289 ,100%
 l10n/po/zh_CN/_guides/quarkus-runtime-base-image.adoc.po, 0, 28, 0, 359 ,100%
@@ -399,7 +400,7 @@ l10n/po/zh_CN/_guides/platform-include.adoc.po, 0, 1, 0, 15 ,100%
 l10n/po/zh_CN/_guides/picocli.adoc.po, 0, 74, 0, 887 ,100%
 l10n/po/zh_CN/_guides/performance-measure.adoc.po, 0, 89, 0, 1350 ,100%
 l10n/po/zh_CN/_guides/optaplanner.adoc.po, 0, 241, 0, 4101 ,100%
-l10n/po/zh_CN/_guides/opentracing.adoc.po, 0, 93, 0, 1223 ,100%
+l10n/po/zh_CN/_guides/opentracing.adoc.po, 0, 95, 0, 1250 ,100%
 l10n/po/zh_CN/_guides/opentelemetry.adoc.po, 0, 110, 0, 1421 ,100%
 l10n/po/zh_CN/_guides/openapi-swaggerui.adoc.po, 0, 129, 0, 1767 ,100%
 l10n/po/zh_CN/_guides/neo4j.adoc.po, 0, 142, 0, 2118 ,100%
@@ -428,9 +429,9 @@ l10n/po/zh_CN/_guides/kogito-drl.adoc.po, 0, 92, 0, 1073 ,100%
 l10n/po/zh_CN/_guides/kogito-dmn.adoc.po, 0, 94, 0, 1217 ,100%
 l10n/po/zh_CN/_guides/kogito-dev-services.adoc.po, 0, 25, 0, 361 ,100%
 l10n/po/zh_CN/_guides/kogito-dev-services-build-time-config.adoc.po, 0, 16, 0, 327 ,100%
-l10n/po/zh_CN/_guides/kafka.adoc.po, 2, 770, 2, 13266 ,100%
+l10n/po/zh_CN/_guides/kafka.adoc.po, 2, 778, 2, 13339 ,100%
 l10n/po/zh_CN/_guides/kafka-streams.adoc.po, 1, 270, 1, 4362 ,100%
-l10n/po/zh_CN/_guides/kafka-schema-registry-avro.adoc.po, 1, 163, 6, 2468 ,100%
+l10n/po/zh_CN/_guides/kafka-schema-registry-avro.adoc.po, 1, 172, 6, 2598 ,100%
 l10n/po/zh_CN/_guides/kafka-reactive-getting-started.adoc.po, 0, 124, 0, 1824 ,100%
 l10n/po/zh_CN/_guides/kafka-dev-services.adoc.po, 0, 33, 0, 573 ,100%
 l10n/po/zh_CN/_guides/jreleaser.adoc.po, 0, 89, 0, 2688 ,100%
