@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-01 02:01+0000\n"
+"POT-Creation-Date: 2022-10-07 02:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1806,7 +1806,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1056
-msgid "Finally, all you need to do is to configure your favorite IDE to attach the java agent process that is forwarded to `localhost:5005` and start to debug your application. For example, in IntelliJ IDEA, you can follow https://www.jetbrains.com/help/idea/tutorial-remote-debug.html:[this tutorial] to debug remote applications."
+msgid "Finally, all you need to do is to configure your favorite IDE to attach the java agent process that is forwarded to `localhost:5005` and start to debug your application. For example, in IntelliJ IDEA, you can follow https://www.jetbrains.com/help/idea/tutorial-remote-debug.html[this tutorial] to debug remote applications."
 msgstr ""
 
 #. type: Title ==
