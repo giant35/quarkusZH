@@ -5,6 +5,54 @@
   <body>
     <tu>
       <tuv xml:lang="en">
+        <seg>You need &lt;a href="https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments#Java" target="_blank"&gt;an IDE&lt;/a&gt; like &lt;a href="https://www.jetbrains.com/idea/download/"&gt;IntelliJ IDEA&lt;/a&gt;, &lt;a href="https://www.eclipse.org/downloads/"&gt;Eclipse&lt;/a&gt;, &lt;a href="https://code.visualstudio.com/Download"&gt;VSCode&lt;/a&gt; or even &lt;a href="https://spacevim.org/use-vim-as-a-java-ide/"&gt;Vim&lt;/a&gt; or &lt;a href="http://spacemacs.org"&gt;Emacs&lt;/a&gt;!</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>你需要一个 &lt;a href=“https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments#Java” target=“_blank”&gt; IDE&lt;/a&gt; 如 &lt;a href=“https://www.jetbrains.com/idea/download/“&gt;IntelliJ IDEA&lt;/a&gt;, &lt;a href=“https://www.eclipse.org/downloads/“&gt;Eclipse&lt;/a&gt;, &lt;a href=“https://code.visualstudio.com/Download”&gt;VSCode&lt;/a&gt; 或者 &lt;a href=“https://spacevim.org/use-vim-as-a-java-ide/“&gt;Vim&lt;/a&gt; 、 &lt;a href=“http://spacemacs.org”&gt;Emacs&lt;/a&gt;!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You need a &lt;a href="https://adoptopenjdk.net" target="_blank"&gt;a JDK {{ site.data.versions.jdk }}&lt;/a&gt; (any distribution)</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>你需要 &lt;a href=“https://adoptopenjdk.net” target=“_blank”&gt; JDK {{ site.data.versions.jdk }}&lt;/a&gt; (any distribution)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Optionally get &lt;a href="https://www.graalvm.org/" target="_blank"&gt;GraalVM&lt;/a&gt; {{ site.data.versions.graalvm }} for native compilation</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>可选项 &lt;a href=“https://www.graalvm.org/“ target=“_blank”&gt;GraalVM&lt;/a&gt; {{ site.data.versions.graalvm }} 用于原生编译</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You need &lt;a href="https://maven.apache.org/" target="_blank"&gt;Apache Maven {{ site.data.versions.maven }}&lt;/a&gt;</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>你需要 &lt;a href=“https://maven.apache.org/“ target=“_blank”&gt;Apache Maven {{ site.data.versions.maven }}&lt;/a&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>or &lt;a href="https://gradle.org/" target="_blank"&gt;Gradle&lt;/a&gt;</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>或 &lt;a href=“https://gradle.org/“ target=“_blank”&gt;Gradle&lt;/a&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;a href="https://code.quarkus.io"&gt;Start Coding&lt;/a&gt; with Quarkus {{ site.data.versions.quarkus.version }} [&lt;a href="{{ site.data.versions.quarkus.announce }}"&gt;announce&lt;/a&gt;|&lt;a href="https://github.com/quarkusio/quarkus/releases/tag/{{ site.data.versions.quarkus.version }}"&gt;changelog&lt;/a&gt;]</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>&lt;a href=“https://code.quarkus.io”&gt;开始编码&lt;/a&gt; 用 Quarkus {{ site.data.versions.quarkus.version }} [&lt;a href=“{{ site.data.versions.quarkus.announce }}”&gt;announce&lt;/a&gt;|&lt;a href=“https://github.com/quarkusio/quarkus/releases/tag/{{ site.data.versions.quarkus.version }}”&gt;changelog&lt;/a&gt;]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Container First</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -13,10 +61,19 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Get Started</seg>
+        <seg>Quarkus tailors your application for GraalVM and HotSpot. Amazingly fast boot time, incredibly low RSS memory (not just heap size!) offering near instant scale up and high density memory utilization in container orchestration platforms like Kubernetes. We use a technique we call compile time boot. &lt;a href="/vision/container-first"&gt;Learn more.&lt;/a&gt;</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>入门</seg>
+        <seg>Quarkus 为 GraalVM 和 HotSpot 量身定制用程序。启动超快，内存极低（不仅是堆大小！）在容器编排平台（如Kubernetes）中提供了近乎即时的向上扩展和高密度的内存利用率。我们使用一种称为编译时启动技术。
+&lt;a href="/vision/container-first"&gt;了解更多&lt;/a&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Getting Help from the Community</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>获取社区帮助</seg>
       </tuv>
     </tu>
     <tu>
@@ -29,35 +86,18 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Architecture</seg>
+        <seg>We have a lot of documentation. Be sure to check our &lt;a href="{{site.baseurl}}/get-started/"&gt;Getting started page&lt;/a&gt;, and all our &lt;a href="{{site.baseurl}}/guides/"&gt;guides&lt;/a&gt;. Also check out our &lt;a href="{{site.baseurl}}/faq/"&gt;FAQ section&lt;/a&gt; and &lt;a href="https://www.youtube.com/playlist?list=PLsM3ZE5tGAVbMz1LJqc8L5LpnfxPPKloO"&gt;Quarkus Tips Playlist&lt;/a&gt;</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>架构</seg>
+        <seg>我们有很多文档. 看下&lt;a href="{{site.baseurl}}/get-started/"&gt;入门&lt;/a&gt;, 还有所有 &lt;a href="{{site.baseurl}}/guides/"&gt;指南&lt;/a&gt;. 还可以看下 &lt;a href="{{site.baseurl}}/faq/"&gt;FAQ&lt;/a&gt; 及 &lt;a href="https://www.youtube.com/playlist?list=PLsM3ZE5tGAVbMz1LJqc8L5LpnfxPPKloO"&gt;Quarkus Tips Playlist&lt;/a&gt;</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Prerequisites</seg>
+        <seg>Ask your questions on &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Stack Overflow&lt;/a&gt;. After the documentation, it’s probably the best place to look for answers. We actively monitor the &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Quarkus tag&lt;/a&gt;.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>准备</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Developer Joy</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>开发乐趣</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Quarkus tailors your application for GraalVM and HotSpot. Amazingly fast boot time, incredibly low RSS memory (not just heap size!) offering near instant scale up and high density memory utilization in container orchestration platforms like Kubernetes. We use a technique we call compile time boot. &lt;a href="/vision/container-first"&gt;Learn more.&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>Quarkus 为 GraalVM 和 HotSpot 量身定制用程序。启动超快，内存极低（不仅是堆大小！）在容器编排平台（如Kubernetes）中提供了近乎即时的向上扩展和高密度的内存利用率。我们使用一种称为编译时启动技术。
-&lt;a href="/vision/container-first"&gt;了解更多&lt;/a&gt;</seg>
+        <seg>在 &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Stack Overflow&lt;/a&gt; 提问. 除本文档外，那里可能是寻找答案的最佳地点. 我们会关注 &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Quarkus tag&lt;/a&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -86,6 +126,86 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Feedback and Help</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>反馈和帮助</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For usage questions, we recommend to:</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>对于使用问题，我们建议：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ask on &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Stack Overflow with the &lt;code&gt;quarkus&lt;/code&gt; tag&lt;/a&gt;</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>在 &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Stack Overflow 带上 &lt;code&gt;quarkus&lt;/code&gt; 标签&lt;/a&gt; 提问</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For questions related to the development of Quarkus:</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>对于 Quarkus 开发相关问题：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The &lt;a href="https://groups.google.com/d/forum/quarkus-dev" target="_blank"&gt;quarkus-dev Google Groups&lt;/a&gt;</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>&lt;a href="https://groups.google.com/d/forum/quarkus-dev" target="_blank"&gt;quarkus-dev Google Groups&lt;/a&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Chat using &lt;a href="https://quarkusio.zulipchat.com" target="_blank"&gt;Zulip&lt;/a&gt; (&lt;code&gt;#dev&lt;/code&gt; stream)</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>用 &lt;a href="https://quarkusio.zulipchat.com" target="_blank"&gt;Zulip&lt;/a&gt; 交流 (&lt;code&gt;#dev&lt;/code&gt; stream)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Your help is more than welcome! Don’t hesitate to join the crowd.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>欢迎你的帮助！来吧不要犹豫。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Join the Quarkus Community</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>加入 Quarkus 社区</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Check out our &lt;a href="https://github.com/quarkusio/quarkus" target="_blank"&gt;GitHub&lt;/a&gt; for details on reporting issues and the process for submitting pull requests.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>报告问题及处理 pul request 的详细信息请查看 &lt;a href="https://github.com/quarkusio/quarkus" target="_blank"&gt;GitHub&lt;/a&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Every contribution is valuable. It can be a bug report, an example application, a feature request, a fix in the documentation or just feedback.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>任何贡献都是有价值的。比如提交一个 bug 、写个示例代码、功能提议、文档修正或只是反馈。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Best of Breed Libraries and Standards</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -94,26 +214,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Getting Help from the Community</seg>
+        <seg>Quickly Bootstrap Your Application</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>获取社区帮助</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>We have a lot of documentation. Be sure to check our &lt;a href="{{site.baseurl}}/get-started/"&gt;Getting started page&lt;/a&gt;, and all our &lt;a href="{{site.baseurl}}/guides/"&gt;guides&lt;/a&gt;. Also check out our &lt;a href="{{site.baseurl}}/faq/"&gt;FAQ section&lt;/a&gt; and &lt;a href="https://www.youtube.com/playlist?list=PLsM3ZE5tGAVbMz1LJqc8L5LpnfxPPKloO"&gt;Quarkus Tips Playlist&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>我们有很多文档. 看下&lt;a href="{{site.baseurl}}/get-started/"&gt;入门&lt;/a&gt;, 还有所有 &lt;a href="{{site.baseurl}}/guides/"&gt;指南&lt;/a&gt;. 还可以看下 &lt;a href="{{site.baseurl}}/faq/"&gt;FAQ&lt;/a&gt; 及 &lt;a href="https://www.youtube.com/playlist?list=PLsM3ZE5tGAVbMz1LJqc8L5LpnfxPPKloO"&gt;Quarkus Tips Playlist&lt;/a&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Ask your questions on &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Stack Overflow&lt;/a&gt;. After the documentation, it’s probably the best place to look for answers. We actively monitor the &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Quarkus tag&lt;/a&gt;.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>在 &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Stack Overflow&lt;/a&gt; 提问. 除本文档外，那里可能是寻找答案的最佳地点. 我们会关注 &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Quarkus tag&lt;/a&gt;.</seg>
+        <seg>应用快速开始</seg>
       </tuv>
     </tu>
     <tu>
@@ -238,6 +342,14 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Developer Joy</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>开发乐趣</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>A cohesive platform for optimized developer joy:</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -278,130 +390,18 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>You need &lt;a href="https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments#Java" target="_blank"&gt;an IDE&lt;/a&gt; like &lt;a href="https://www.jetbrains.com/idea/download/"&gt;IntelliJ IDEA&lt;/a&gt;, &lt;a href="https://www.eclipse.org/downloads/"&gt;Eclipse&lt;/a&gt;, &lt;a href="https://code.visualstudio.com/Download"&gt;VSCode&lt;/a&gt; or even &lt;a href="https://spacevim.org/use-vim-as-a-java-ide/"&gt;Vim&lt;/a&gt; or &lt;a href="http://spacemacs.org"&gt;Emacs&lt;/a&gt;!</seg>
+        <seg>Get Started</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>你需要一个 &lt;a href=“https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments#Java” target=“_blank”&gt; IDE&lt;/a&gt; 如 &lt;a href=“https://www.jetbrains.com/idea/download/“&gt;IntelliJ IDEA&lt;/a&gt;, &lt;a href=“https://www.eclipse.org/downloads/“&gt;Eclipse&lt;/a&gt;, &lt;a href=“https://code.visualstudio.com/Download”&gt;VSCode&lt;/a&gt; 或者 &lt;a href=“https://spacevim.org/use-vim-as-a-java-ide/“&gt;Vim&lt;/a&gt; 、 &lt;a href=“http://spacemacs.org”&gt;Emacs&lt;/a&gt;!</seg>
+        <seg>入门</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>You need a &lt;a href="https://adoptopenjdk.net" target="_blank"&gt;a JDK {{ site.data.versions.jdk }}&lt;/a&gt; (any distribution)</seg>
+        <seg>Prerequisites</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>你需要 &lt;a href=“https://adoptopenjdk.net” target=“_blank”&gt; JDK {{ site.data.versions.jdk }}&lt;/a&gt; (any distribution)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Optionally get &lt;a href="https://www.graalvm.org/" target="_blank"&gt;GraalVM&lt;/a&gt; {{ site.data.versions.graalvm }} for native compilation</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>可选项 &lt;a href=“https://www.graalvm.org/“ target=“_blank”&gt;GraalVM&lt;/a&gt; {{ site.data.versions.graalvm }} 用于原生编译</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>You need &lt;a href="https://maven.apache.org/" target="_blank"&gt;Apache Maven {{ site.data.versions.maven }}&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>你需要 &lt;a href=“https://maven.apache.org/“ target=“_blank”&gt;Apache Maven {{ site.data.versions.maven }}&lt;/a&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>or &lt;a href="https://gradle.org/" target="_blank"&gt;Gradle&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>或 &lt;a href=“https://gradle.org/“ target=“_blank”&gt;Gradle&lt;/a&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>&lt;a href="https://code.quarkus.io"&gt;Start Coding&lt;/a&gt; with Quarkus {{ site.data.versions.quarkus.version }} [&lt;a href="{{ site.data.versions.quarkus.announce }}"&gt;announce&lt;/a&gt;|&lt;a href="https://github.com/quarkusio/quarkus/releases/tag/{{ site.data.versions.quarkus.version }}"&gt;changelog&lt;/a&gt;]</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>&lt;a href=“https://code.quarkus.io”&gt;开始编码&lt;/a&gt; 用 Quarkus {{ site.data.versions.quarkus.version }} [&lt;a href=“{{ site.data.versions.quarkus.announce }}”&gt;announce&lt;/a&gt;|&lt;a href=“https://github.com/quarkusio/quarkus/releases/tag/{{ site.data.versions.quarkus.version }}”&gt;changelog&lt;/a&gt;]</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Feedback and Help</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>反馈和帮助</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>For usage questions, we recommend to:</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>对于使用问题，我们建议：</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Ask on &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Stack Overflow with the &lt;code&gt;quarkus&lt;/code&gt; tag&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>在 &lt;a href="https://stackoverflow.com/questions/tagged/quarkus"&gt;Stack Overflow 带上 &lt;code&gt;quarkus&lt;/code&gt; 标签&lt;/a&gt; 提问</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>For questions related to the development of Quarkus:</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>对于 Quarkus 开发相关问题：</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The &lt;a href="https://groups.google.com/d/forum/quarkus-dev" target="_blank"&gt;quarkus-dev Google Groups&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>&lt;a href="https://groups.google.com/d/forum/quarkus-dev" target="_blank"&gt;quarkus-dev Google Groups&lt;/a&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Chat using &lt;a href="https://quarkusio.zulipchat.com" target="_blank"&gt;Zulip&lt;/a&gt; (&lt;code&gt;#dev&lt;/code&gt; stream)</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>用 &lt;a href="https://quarkusio.zulipchat.com" target="_blank"&gt;Zulip&lt;/a&gt; 交流 (&lt;code&gt;#dev&lt;/code&gt; stream)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Your help is more than welcome! Don’t hesitate to join the crowd.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>欢迎你的帮助！来吧不要犹豫。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Join the Quarkus Community</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>加入 Quarkus 社区</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Check out our &lt;a href="https://github.com/quarkusio/quarkus" target="_blank"&gt;GitHub&lt;/a&gt; for details on reporting issues and the process for submitting pull requests.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>报告问题及处理 pul request 的详细信息请查看 &lt;a href="https://github.com/quarkusio/quarkus" target="_blank"&gt;GitHub&lt;/a&gt; .</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Every contribution is valuable. It can be a bug report, an example application, a feature request, a fix in the documentation or just feedback.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>任何贡献都是有价值的。比如提交一个 bug 、写个示例代码、功能提议、文档修正或只是反馈。</seg>
+        <seg>准备</seg>
       </tuv>
     </tu>
     <tu>
@@ -434,6 +434,62 @@
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>Maven 目录结构</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Architecture</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>架构</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Running the application</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>运行应用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Once started, you can request the provided endpoint:</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>启动后，可以请求提供的接口：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Automatically add newline with `curl -w "\n"`</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>用 `curl -w "\n"` 自动添加换行</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>We are using `curl -w "\n"` in this example to avoid your terminal printing a '%' or put both result and next command prompt on the same line.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>在本例中，我们使用 `curl -w "\n"` 来避免终端输出 ‘%’  ，或者将结果和下一个命令提示符放在同一行。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using injection</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>使用注入</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>ArC comes as a dependency of `quarkus-resteasy` so you already have it handy.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。</seg>
       </tuv>
     </tu>
     <tu>
@@ -662,26 +718,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Running the application</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>运行应用</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Now we are ready to run our application.  Use: `./mvnw compile quarkus:dev`:</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>现在我们可以运行应用程序了。 使用:`./mvnw compile quarkus:dev`:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Once started, you can request the provided endpoint:</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>启动后，可以请求提供的接口：</seg>
       </tuv>
     </tu>
     <tu>
@@ -694,42 +734,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Automatically add newline with `curl -w "\n"`</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>用 `curl -w "\n"` 自动添加换行</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>We are using `curl -w "\n"` in this example to avoid your terminal printing a '%' or put both result and next command prompt on the same line.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>在本例中，我们使用 `curl -w "\n"` 来避免终端输出 ‘%’  ，或者将结果和下一个命令提示符放在同一行。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Using injection</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>使用注入</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  If you're new to CDI then we recommend you to read the link:cdi[Introduction to CDI] guide.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>Quarkus 中的依赖注入是基于ArC的，ArC是一个基于 CDI 的依赖注入解决方案，专为 Quarkus 设计。 如果你之前未使用过 CDI 建议你参考下 link:cdi[ 上下文依赖介绍] 。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>ArC comes as a dependency of `quarkus-resteasy` so you already have it handy.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。</seg>
       </tuv>
     </tu>
     <tu>
