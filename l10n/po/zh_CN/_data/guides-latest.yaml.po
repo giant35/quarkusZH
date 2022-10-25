@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-29 02:27+0000\n"
+"POT-Creation-Date: 2022-10-25 02:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1708,7 +1708,7 @@ msgstr ""
 #. type: Hash Value - Key: url
 #: >categories>>guides>
 #, no-wrap
-msgid "/guides/reactive-messaging-http"
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-reactive-messaging-http/dev/reactive-messaging-http.html"
 msgstr ""
 
 #. type: Hash Value - Key: description
@@ -1726,7 +1726,7 @@ msgstr ""
 #. type: Hash Value - Key: url
 #: >categories>>guides>
 #, no-wrap
-msgid "/guides/reactive-messaging-websocket"
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-reactive-messaging-http/dev/reactive-messaging-websocket.html"
 msgstr ""
 
 #. type: Hash Value - Key: description
