@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-19 02:20+0000\n"
+"POT-Creation-Date: 2022-11-01 02:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,9 +70,9 @@ msgstr ""
 
 #. type: Table
 #: upstream/_generated-doc/main/config/quarkus-arc-general-config-items.adoc:29
-#: upstream/_generated-doc/main/config/quarkus-arc-general-config-items.adoc:61
+#: upstream/_generated-doc/main/config/quarkus-arc-general-config-items.adoc:45
 #, no-wrap
-msgid "`true`"
+msgid "`false`"
 msgstr ""
 
 #. type: Table
@@ -95,12 +95,6 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-doc/main/config/quarkus-arc-general-config-items.adoc:45
-#, no-wrap
-msgid "`false`"
-msgstr ""
-
-#. type: Table
 #: upstream/_generated-doc/main/config/quarkus-arc-general-config-items.adoc:57
 #, no-wrap
 msgid ""
@@ -117,6 +111,12 @@ msgid ""
 "Environment variable: `+++QUARKUS_ARC_CONTEXT_PROPAGATION_ENABLED+++`\n"
 "endif::add-copy-button-to-env-var[]\n"
 "--"
+msgstr ""
+
+#. type: Table
+#: upstream/_generated-doc/main/config/quarkus-arc-general-config-items.adoc:61
+#, no-wrap
+msgid "`true`"
 msgstr ""
 
 #. type: Table
