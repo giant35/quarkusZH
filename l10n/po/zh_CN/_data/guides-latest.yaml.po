@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-25 02:33+0000\n"
+"POT-Creation-Date: 2022-11-08 01:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1834,6 +1834,24 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
+msgid "This guide demonstrates how to get started with Quarkus security using Basic authentication and a database to store your user identities with Hibernate ORM."
+msgstr ""
+
+#. type: Hash Value - Key: title
+#: >categories>>guides>
+#, no-wrap
+msgid "Security with Basic authentication and JPA"
+msgstr ""
+
+#. type: Hash Value - Key: url
+#: >categories>>guides>
+#, no-wrap
+msgid "/guides/security-getting-started"
+msgstr ""
+
+#. type: Hash Value - Key: description
+#: >categories>>guides>
+#, no-wrap
 msgid "Secure your web endpoints with authorizations."
 msgstr ""
 
@@ -1919,24 +1937,6 @@ msgstr ""
 #: >categories>>guides>
 #, no-wrap
 msgid "/guides/security-properties"
-msgstr ""
-
-#. type: Hash Value - Key: description
-#: >categories>>guides>
-#, no-wrap
-msgid "This guide demonstrates how your Quarkus application can use a database to store your user identities with Hibernate ORM."
-msgstr ""
-
-#. type: Hash Value - Key: title
-#: >categories>>guides>
-#, no-wrap
-msgid "Using Security with JPA"
-msgstr ""
-
-#. type: Hash Value - Key: url
-#: >categories>>guides>
-#, no-wrap
-msgid "/guides/security-jpa"
 msgstr ""
 
 #. type: Hash Value - Key: description
