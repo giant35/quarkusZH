@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-16 01:05+0000\n"
+"POT-Creation-Date: 2022-11-10 01:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -209,7 +209,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-09-15-adoptium-customer-story.adoc:96
-msgid "https://github.com/AdoptOpenJDK/openjdk-api-v3[Adoptium API Source code]"
+msgid "https://github.com/adoptium/api.adoptium.net[Adoptium API Source code]"
 msgstr ""
 
 #. type: Plain text
