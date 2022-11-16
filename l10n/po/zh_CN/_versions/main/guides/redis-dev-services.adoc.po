@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-14 02:34+0000\n"
+"POT-Creation-Date: 2022-11-16 01:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,28 +45,33 @@ msgstr ""
 msgid "Dev Services for Redis relies on Docker to start the server.  If your environment does not support Docker, you will need to start the server manually, or connect to an already running server."
 msgstr ""
 
+#. type: Plain text
+#: upstream/_versions/main/guides/redis-dev-services.adoc:28
+msgid "If you want to use Redis Stack _modules_ (bloom, graph, search...), set the image-name to `redis/redis-stack:latest`"
+msgstr ""
+
 #. type: Title ==
-#: upstream/_versions/main/guides/redis-dev-services.adoc:27
+#: upstream/_versions/main/guides/redis-dev-services.adoc:29
 #, no-wrap
 msgid "Shared server"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/redis-dev-services.adoc:31
+#: upstream/_versions/main/guides/redis-dev-services.adoc:33
 msgid "Most of the time you need to share the server between applications.  Dev Services for Redis implements a _service discovery_ mechanism for your multiple Quarkus applications running in _dev_ mode to share a single server."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/redis-dev-services.adoc:33
+#: upstream/_versions/main/guides/redis-dev-services.adoc:35
 msgid "Dev Services for Redis starts the container with the `quarkus-dev-service-redis` label which is used to identify the container."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/redis-dev-services.adoc:37
+#: upstream/_versions/main/guides/redis-dev-services.adoc:39
 msgid "If you need multiple (shared) servers, you can configure the `quarkus.redis.devservices.service-name` attribute and indicate the server name.  It looks for a container with the same value, or starts a new one if none can be found.  The default service name is `redis`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/redis-dev-services.adoc:39
+#: upstream/_versions/main/guides/redis-dev-services.adoc:41
 msgid "Sharing is enabled by default in dev mode, but disabled in test mode.  You can disable the sharing with `quarkus.redis.devservices.shared=false`."
 msgstr ""
