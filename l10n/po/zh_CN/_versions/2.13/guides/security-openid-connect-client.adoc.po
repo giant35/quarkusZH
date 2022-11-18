@@ -44,7 +44,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/security-openid-connect-client.adoc:18
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/security-openid-connect-client.adoc:23
@@ -55,7 +55,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/security-openid-connect-client.adoc:24
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/security-openid-connect-client.adoc:27
@@ -117,7 +117,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/security-openid-connect-client.adoc:44
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/security-openid-connect-client.adoc:48

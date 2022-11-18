@@ -19,7 +19,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/2.13/guides/_includes/prerequisites.adoc:2
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/_includes/prerequisites.adoc:5

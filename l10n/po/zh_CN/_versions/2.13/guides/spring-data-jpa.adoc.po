@@ -34,13 +34,13 @@ msgstr ""
 #: upstream/_versions/2.13/guides/spring-data-jpa.adoc:14
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_versions/2.13/guides/spring-data-jpa.adoc:18
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/spring-data-jpa.adoc:22

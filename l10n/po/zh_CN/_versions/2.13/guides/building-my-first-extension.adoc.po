@@ -50,7 +50,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/building-my-first-extension.adoc:25
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_versions/2.13/guides/building-my-first-extension.adoc:31

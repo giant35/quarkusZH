@@ -39,7 +39,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/spring-cache.adoc:15
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/spring-cache.adoc:19

@@ -40,7 +40,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/kogito.adoc:377
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ===
 #: upstream/_versions/2.13/guides/kogito.adoc:25
@@ -101,7 +101,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/kogito.adoc:46
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/kogito.adoc:49
@@ -149,7 +149,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/kogito.adoc:70
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/kogito.adoc:74

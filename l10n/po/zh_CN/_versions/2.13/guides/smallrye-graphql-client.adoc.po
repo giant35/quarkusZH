@@ -39,7 +39,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/smallrye-graphql-client.adoc:22
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_versions/2.13/guides/smallrye-graphql-client.adoc:26
@@ -71,7 +71,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/smallrye-graphql-client.adoc:46
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/smallrye-graphql-client.adoc:50
@@ -554,7 +554,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/smallrye-graphql-client.adoc:328
 #, no-wrap
 msgid "Running the application"
-msgstr ""
+msgstr "运行应用"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/smallrye-graphql-client.adoc:331

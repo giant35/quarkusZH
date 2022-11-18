@@ -39,18 +39,18 @@ msgstr ""
 #: upstream/_versions/2.13/guides/spring-web.adoc:15
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/spring-web.adoc:18
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Title ==
 #: upstream/_versions/2.13/guides/spring-web.adoc:21
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/spring-web.adoc:25

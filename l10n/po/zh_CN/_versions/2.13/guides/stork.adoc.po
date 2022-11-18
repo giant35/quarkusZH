@@ -49,13 +49,13 @@ msgstr ""
 #: upstream/_versions/2.13/guides/stork.adoc:24
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_versions/2.13/guides/stork.adoc:29
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/stork.adoc:32
@@ -108,7 +108,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/stork.adoc:44
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/stork.adoc:48
@@ -167,7 +167,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/stork.adoc:69
 #, no-wrap
 msgid "Bootstrapping the project"
-msgstr ""
+msgstr "搭建项目"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/stork.adoc:72
@@ -661,7 +661,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/stork.adoc:356
 #, no-wrap
 msgid "Running the application"
-msgstr ""
+msgstr "运行应用"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/stork.adoc:360

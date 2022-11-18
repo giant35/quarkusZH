@@ -39,13 +39,13 @@ msgstr ""
 #: upstream/_versions/2.13/guides/kafka-schema-registry-avro.adoc:17
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_versions/2.13/guides/kafka-schema-registry-avro.adoc:23
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/kafka-schema-registry-avro.adoc:27
@@ -66,7 +66,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/kafka-schema-registry-avro.adoc:36
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/kafka-schema-registry-avro.adoc:40
@@ -401,7 +401,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/kafka-schema-registry-avro.adoc:236
 #, no-wrap
 msgid "Running the application"
-msgstr ""
+msgstr "运行应用"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/kafka-schema-registry-avro.adoc:239

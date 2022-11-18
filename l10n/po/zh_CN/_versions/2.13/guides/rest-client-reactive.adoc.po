@@ -39,13 +39,13 @@ msgstr ""
 #: upstream/_versions/2.13/guides/rest-client-reactive.adoc:17
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_versions/2.13/guides/rest-client-reactive.adoc:21
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/rest-client-reactive.adoc:25
