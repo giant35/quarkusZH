@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-29 01:28+0000\n"
+"POT-Creation-Date: 2022-11-30 01:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,7 +62,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-11-28-quarkus-2-14-2-final-released.adoc:20
-msgid "2.13.5.Final targets our LTS 2.13 version and contains this fix only"
+msgid "2.13.5.Final targets the 2.13 branch and contains this fix only"
 msgstr ""
 
 #. type: Plain text
