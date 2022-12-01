@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-08 01:57+0000\n"
+"POT-Creation-Date: 2022-12-01 01:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2578,7 +2578,7 @@ msgstr ""
 #. type: Hash Value - Key: description
 #: >categories>>guides>
 #, no-wrap
-msgid "Learn how to use SmallRye Stork for service discovery and load balacing."
+msgid "Learn how to use SmallRye Stork for service discovery and load balancing."
 msgstr ""
 
 #. type: Hash Value - Key: title
