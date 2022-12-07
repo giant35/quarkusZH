@@ -1,6 +1,7 @@
 Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_posts/insights_1_transcription.adoc.po, 0, 254, 0, 8846 ,100%
 l10n/po/zh_CN/_posts/insights_0_transcription.adoc.po, 0, 117, 0, 3765 ,100%
+l10n/po/zh_CN/_posts/2022-12-06-quarkus-2-14-3-final-released.adoc.po, 0, 14, 0, 150 ,100%
 l10n/po/zh_CN/_posts/2022-11-28-quarkus-support-for-aws-lambda-snapstart.adoc.po, 0, 65, 0, 1046 ,100%
 l10n/po/zh_CN/_posts/2022-11-28-quarkus-2-14-2-final-released.adoc.po, 0, 31, 0, 420 ,100%
 l10n/po/zh_CN/_posts/2022-11-24-reactive-crud-performance-case-study.adoc.po, 0, 117, 0, 2912 ,100%
@@ -376,7 +377,7 @@ l10n/po/zh_CN/_guides/security-enabling-basic-auth-tutorial.adoc.po, 0, 11, 0, 9
 l10n/po/zh_CN/_guides/security-enabling-basic-auth-howto.adoc.po, 0, 11, 0, 99 ,100%
 l10n/po/zh_CN/_guides/security-customization.adoc.po, 0, 139, 0, 2000 ,100%
 l10n/po/zh_CN/_guides/security-csrf-prevention.adoc.po, 0, 45, 0, 564 ,100%
-l10n/po/zh_CN/_guides/security-built-in-authentication.adoc.po, 0, 55, 0, 1097 ,100%
+l10n/po/zh_CN/_guides/security-built-in-authentication.adoc.po, 0, 60, 0, 1177 ,100%
 l10n/po/zh_CN/_guides/security-basic-auth-concept.adoc.po, 0, 14, 0, 346 ,100%
 l10n/po/zh_CN/_guides/security-authorization.adoc.po, 0, 80, 0, 1596 ,100%
 l10n/po/zh_CN/_guides/scripting.adoc.po, 2, 108, 14, 1699 ,100%
@@ -410,7 +411,7 @@ l10n/po/zh_CN/_guides/quarkus-reactive-architecture.adoc.po, 0, 75, 0, 1681 ,100
 l10n/po/zh_CN/_guides/quarkus-maven-plugin.adoc.po, 0, 7, 0, 120 ,100%
 l10n/po/zh_CN/_guides/quarkus-intro.adoc.po, 0, 38, 0, 200 ,100%
 l10n/po/zh_CN/_guides/quarkus-blaze-persistence.adoc.po, 0, 17, 0, 655 ,100%
-l10n/po/zh_CN/_guides/podman.adoc.po, 0, 42, 0, 721 ,100%
+l10n/po/zh_CN/_guides/podman.adoc.po, 0, 45, 0, 780 ,100%
 l10n/po/zh_CN/_guides/platform.adoc.po, 0, 62, 0, 1437 ,100%
 l10n/po/zh_CN/_guides/platform-include.adoc.po, 0, 1, 0, 15 ,100%
 l10n/po/zh_CN/_guides/picocli.adoc.po, 0, 82, 0, 1143 ,100%
@@ -548,7 +549,7 @@ l10n/po/zh_CN/_guides/capabilities.adoc.po, 0, 57, 0, 909 ,100%
 l10n/po/zh_CN/_guides/camel.adoc.po, 0, 3, 0, 59 ,100%
 l10n/po/zh_CN/_guides/cache.adoc.po, 0, 249, 0, 3927 ,100%
 l10n/po/zh_CN/_guides/building-substrate-howto.adoc.po, 0, 24, 0, 260 ,100%
-l10n/po/zh_CN/_guides/building-native-image.adoc.po, 0, 222, 0, 4581 ,100%
+l10n/po/zh_CN/_guides/building-native-image.adoc.po, 0, 222, 0, 4585 ,100%
 l10n/po/zh_CN/_guides/building-my-first-extension.adoc.po, 0, 239, 0, 4173 ,100%
 l10n/po/zh_CN/_guides/blaze-persistence.adoc.po, 0, 62, 0, 696 ,100%
 l10n/po/zh_CN/_guides/azure-functions-http.adoc.po, 0, 43, 0, 619 ,100%
