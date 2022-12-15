@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-11 01:25+0000\n"
+"POT-Creation-Date: 2022-12-15 01:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,464 +18,82 @@ msgstr ""
 
 #. type: Content of: <div><div><div><h2>
 #: upstream/_includes/worldtour-abstracts.html:4
-msgid "Quarkus World Tour - JUG Promotional Materials"
+msgid "Quarkus World Tour 2023 - JUG Promotional Materials"
 msgstr ""
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/worldtour-abstracts.html:5
-msgid "These materials are for JUGs who have tour dates booked and want access to promotional materials to use to create excitement and drum up attendance. We've written a couple versions of the session abstracts so you could find one that fits your JUGs personality, or go for it and create your own! We've also created some graphic materials for social promotions a well."
+msgid "These materials are for JUGs who have tour dates booked and want access to promotional materials to use to create excitement and drum up attendance. We've written a couple versions of the session abstracts so you could find one that fits your JUGs personality, or go for it and create your own! We've also created some <a href=\"{{site.baseurl}}/worldtour/graphics\">graphic resources</a> for social promotions a well."
 msgstr ""
 
 #. type: Content of: <div><div><div><h3>
-#: upstream/_includes/worldtour-abstracts.html:14
+#: upstream/_includes/worldtour-abstracts.html:9
 msgid "Session Abstracts"
 msgstr ""
 
 #. type: Content of: <div><div><div><h3>
-#: upstream/_includes/worldtour-abstracts.html:15
+#: upstream/_includes/worldtour-abstracts.html:12
 msgid "Abstract A - All Rock'n Roll and Big Drum Solos"
 msgstr ""
 
 #. type: Content of: <div><div><div><p>
-#: upstream/_includes/worldtour-abstracts.html:16
+#: upstream/_includes/worldtour-abstracts.html:13
 msgid "In the spirit of the times, the Quarkus Team virtually presents a big, loud, and bold, rock & roll mega-stadium tour."
 msgstr ""
 
 #. type: Content of: <div><div><div><p>
-#: upstream/_includes/worldtour-abstracts.html:17
+#: upstream/_includes/worldtour-abstracts.html:14
 msgid "For the last 25 years, Java has performed for organizations across the world but you've never seen anything like this. We'll cover all the classics like \"Start Me Up\" and \"Living' on a VM\" and some new jams like \"Stairway to Native\" and \"Sweet JPA of Mine\" and more."
 msgstr ""
 
 #. type: Content of: <div><div><div><p>
-#: upstream/_includes/worldtour-abstracts.html:18
+#: upstream/_includes/worldtour-abstracts.html:15
 msgid "In this session the Quarkus Team will give you a unique, hands-on experience: An introduction to Quarkus, a follow-along hands-on demo or two and then a Q&A with some of the band, umm, developers involved."
 msgstr ""
 
 #. type: Content of: <div><div><div><p>
-#: upstream/_includes/worldtour-abstracts.html:19
+#: upstream/_includes/worldtour-abstracts.html:16
 msgid "So join us as we explore how Quarkus helps Java developers everywhere to be more productive, create modern masterpieces and, well, have more fun: 90 odd minutes of technical discussion, some live coding and a Q&A - it’s going to be a blast."
 msgstr ""
 
-#. type: Content of: <div><div><div><br><br><p>
-#: upstream/_includes/worldtour-abstracts.html:20
+#. type: Content of: <div><div><div><p>
+#: upstream/_includes/worldtour-abstracts.html:17
+#: upstream/_includes/worldtour-abstracts.html:28
+msgid "Oh and did we mention some cool swag?"
+msgstr ""
+
+#. type: Content of: <div><div><div><p>
+#: upstream/_includes/worldtour-abstracts.html:18
 #: upstream/_includes/worldtour-abstracts.html:29
-msgid "Oh and did we mention swag? Maybe even a Tour T-Shirt?"
+msgid "Time to rock the Java world 2023 style…"
 msgstr ""
 
-#. type: Content of: <div><div><div><br><br><p>
-#: upstream/_includes/worldtour-abstracts.html:21
-#: upstream/_includes/worldtour-abstracts.html:30
-msgid "Time to rock the Java world 2021 style…"
-msgstr ""
-
-#. type: Content of: <div><div><div><br><br><h3>
-#: upstream/_includes/worldtour-abstracts.html:23
+#. type: Content of: <div><div><div><h3>
+#: upstream/_includes/worldtour-abstracts.html:22
 msgid "Abstract B - More Easy Listening"
 msgstr ""
 
-#. type: Content of: <div><div><div><br><br><p>
-#: upstream/_includes/worldtour-abstracts.html:24
+#. type: Content of: <div><div><div><p>
+#: upstream/_includes/worldtour-abstracts.html:23
 msgid "Welcome to the Quarkus World Tour."
 msgstr ""
 
-#. type: Content of: <div><div><div><br><br><p>
-#: upstream/_includes/worldtour-abstracts.html:25
+#. type: Content of: <div><div><div><p>
+#: upstream/_includes/worldtour-abstracts.html:24
 msgid "A unique experience with access to Quarkus experts designed to help you get started with Java in a Kubernetes world."
 msgstr ""
 
-#. type: Content of: <div><div><div><br><br><p>
-#: upstream/_includes/worldtour-abstracts.html:26
+#. type: Content of: <div><div><div><p>
+#: upstream/_includes/worldtour-abstracts.html:25
 msgid "Quarkus is the rising star for Kube Native Java as it re-imagines the Java stack to give you the performance characteristics and developer experience you need to create modern, high performing applications. Quarkus helps you use your existing skills and code in new ways and greatly reduces the technical burden when moving to a Kubernetes-centric environment."
 msgstr ""
 
-#. type: Content of: <div><div><div><br><br><p>
-#: upstream/_includes/worldtour-abstracts.html:27
+#. type: Content of: <div><div><div><p>
+#: upstream/_includes/worldtour-abstracts.html:26
 msgid "Join us as we explore how Quarkus helps Java developers everywhere to be more productive, create modern masterpieces and, have a little bit more fun."
 msgstr ""
 
-#. type: Content of: <div><div><div><br><br><p>
-#: upstream/_includes/worldtour-abstracts.html:28
+#. type: Content of: <div><div><div><p>
+#: upstream/_includes/worldtour-abstracts.html:27
 msgid "It’s going to be a blast.  90 odd minutes of technical discussion, some live coding and a Q&A."
-msgstr ""
-
-#. type: Content of: <div><div><div><h3>
-#: upstream/_includes/worldtour-abstracts.html:33
-msgid "World Tour Logos and Social Media Resources"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><h4>
-#: upstream/_includes/worldtour-abstracts.html:35
-msgid "Primary World Tour Logo"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><img><p>
-#: upstream/_includes/worldtour-abstracts.html:36
-#: upstream/_includes/worldtour-abstracts.html:39
-msgid "1920x1080 PNG file"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><img><h4>
-#: upstream/_includes/worldtour-abstracts.html:38
-msgid "Secondary World Tour Icon"
-msgstr ""
-
-#. type: Content of: <div><div><div><h3>
-#: upstream/_includes/worldtour-abstracts.html:46
-msgid "Twitter Post Images"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:50
-msgid "Twitter Post Image - London JUG"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:54
-msgid "Twitter Post Image - VigoJUG and CoruñaJUG"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:58
-msgid "Twitter Post Image - Lagos Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:62
-msgid "Twitter Post Image - LavaJUG"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:66
-msgid "Twitter Post Image - SouJava Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:70
-msgid "Twitter Post Image - Silicon Valley Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:74
-msgid "Twitter Post Image - Kansas City Java Users Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:78
-msgid "Twitter Post Image - Manchester Java Community"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:82
-msgid "Twitter Post Image - Chicago Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:86
-msgid "Twitter Post Image - Portugal Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:90
-msgid "Twitter Post Image - Paris Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:94
-msgid "Twitter Post Image - JUG Saxony"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:98
-msgid "Twitter Post Image - Seattle Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:102
-msgid "Twitter Post Image - Latvian Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:106
-msgid "Twitter Post Image - Niš Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:110
-msgid "Twitter Post Image - JoziJug (South Africa)"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:114
-msgid "Twitter Post Image - Seoul Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:118
-msgid "Twitter Post Image - Warszawa Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:122
-msgid "Twitter Post Image - Madrid Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:126
-msgid "Twitter Post Image - Singapore Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:130
-msgid "Twitter Post Image - Munich Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:134
-msgid "Twitter Post Image - Bulgarian Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:138
-msgid "Twitter Post Image - Barcelona Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:142
-msgid "Twitter Post Image - Beijing Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:146
-msgid "Twitter Post Image - NYJavaSIG"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:150
-msgid "Twitter Post Image - JUG Ingolstadt Java User Group"
-msgstr ""
-
-#. type: Content of: <div><div><div><h3>
-#: upstream/_includes/worldtour-abstracts.html:157
-msgid "Slide Presentation Backgrounds"
-msgstr ""
-
-#. type: Content of: <div><div><div><h4>
-#: upstream/_includes/worldtour-abstracts.html:160
-msgid "Slide 1 - Guitar Body"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:164
-msgid "Presentation Background - Slide 1 Title Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:168
-msgid "Presentation Background - Slide 1 Base Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:172
-msgid "Presentation Background - Slide 1 with Quarkus Logo"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:176
-msgid "Presentation Background - Slide 1 with Code Rocks graphic"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:180
-msgid "Presentation Background - Slide 1 with Q&A"
-msgstr ""
-
-#. type: Content of: <div><div><div><h4>
-#: upstream/_includes/worldtour-abstracts.html:183
-msgid "Slide 2 - Stage Lights"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:187
-msgid "Presentation Background - Slide 2 Title Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:191
-msgid "Presentation Background - Slide 2 Base Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:195
-msgid "Presentation Background - Slide 2 with Quarkus Logo"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:199
-msgid "Presentation Background - Slide 2 with Code Rocks graphic"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:203
-msgid "Presentation Background - Slide 2 with Q&A"
-msgstr ""
-
-#. type: Content of: <div><div><div><h4>
-#: upstream/_includes/worldtour-abstracts.html:206
-msgid "Slide 3 - Crowd Surfing"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:210
-msgid "Presentation Background - Slide 3 Title Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:214
-msgid "Presentation Background - Slide 3 Base Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:218
-msgid "Presentation Background - Slide 3 with Quarkus Logo"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:222
-msgid "Presentation Background - Slide 3 with Code Rocks graphic"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:226
-msgid "Presentation Background - Slide 3 with Q&A"
-msgstr ""
-
-#. type: Content of: <div><div><div><h4>
-#: upstream/_includes/worldtour-abstracts.html:229
-msgid "Slide 4 - Drum Kit"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:233
-msgid "Presentation Background - Slide 4 Title Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:237
-msgid "Presentation Background - Slide 4 Base Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:241
-msgid "Presentation Background - Slide 4 with Quarkus Logo"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:245
-msgid "Presentation Background - Slide 4 with Code Rocks graphic"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:249
-msgid "Presentation Background - Slide 4 with Q&A"
-msgstr ""
-
-#. type: Content of: <div><div><div><h4>
-#: upstream/_includes/worldtour-abstracts.html:252
-msgid "Slide 5 - Guitar Neck"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:256
-msgid "Presentation Background - Slide 5 Title Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:260
-msgid "Presentation Background - Slide 5 Base Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:264
-msgid "Presentation Background - Slide 5 with Quarkus Logo"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:268
-msgid "Presentation Background - Slide 5 with Code Rocks graphic"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:272
-msgid "Presentation Background - Slide 5 with Q&A"
-msgstr ""
-
-#. type: Content of: <div><div><div><h4>
-#: upstream/_includes/worldtour-abstracts.html:275
-#: upstream/_includes/worldtour-abstracts.html:298
-msgid "Slide 6 - Guitarist on Stage"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:279
-msgid "Presentation Background - Slide 6 Title Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:283
-msgid "Presentation Background - Slide 6 Base Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:287
-msgid "Presentation Background - Slide 6 with Quarkus Logo"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:291
-msgid "Presentation Background - Slide 6 with Code Rocks graphic"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:295
-msgid "Presentation Background - Slide 6 with Q&A"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:302
-msgid "Presentation Background - Gradient Title Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:306
-msgid "Presentation Background - Gradient Base Slide"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:310
-msgid "Presentation Background - Gradient with Quarkus Logo"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:314
-msgid "Presentation Background - Gradient with Code Rocks graphic"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:318
-msgid "Presentation Background - Gradient with Q&A"
-msgstr ""
-
-#. type: Content of: <div><div><div><h4>
-#: upstream/_includes/worldtour-abstracts.html:321
-msgid "Content Background"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:325
-msgid "Presentation Background - Base Content Light"
-msgstr ""
-
-#. type: Content of: <div><div><div><img><p>
-#: upstream/_includes/worldtour-abstracts.html:329
-msgid "Presentation Background - Base Content Dark"
 msgstr ""
