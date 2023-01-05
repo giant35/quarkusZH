@@ -1,6 +1,7 @@
 Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_posts/insights_1_transcription.adoc.po, 0, 254, 0, 8846 ,100%
 l10n/po/zh_CN/_posts/insights_0_transcription.adoc.po, 0, 117, 0, 3765 ,100%
+l10n/po/zh_CN/_posts/2023-01-04-quarkus-2-15-2-final-released.adoc.po, 0, 14, 0, 168 ,100%
 l10n/po/zh_CN/_posts/2022-12-21-quarkus-2-15-1-final-released.adoc.po, 0, 15, 0, 213 ,100%
 l10n/po/zh_CN/_posts/2022-12-19-stargate-selects-quarkus-for-its-v2-implementation.adoc.po, 0, 39, 0, 802 ,100%
 l10n/po/zh_CN/_posts/2022-12-15-quarkus-newsletter-27.adoc.po, 0, 6, 0, 204 ,100%
@@ -426,7 +427,7 @@ l10n/po/zh_CN/_guides/podman.adoc.po, 0, 45, 0, 780 ,100%
 l10n/po/zh_CN/_guides/platform.adoc.po, 0, 62, 0, 1437 ,100%
 l10n/po/zh_CN/_guides/platform-include.adoc.po, 0, 1, 0, 15 ,100%
 l10n/po/zh_CN/_guides/picocli.adoc.po, 0, 82, 0, 1143 ,100%
-l10n/po/zh_CN/_guides/performance-measure.adoc.po, 0, 89, 0, 1350 ,100%
+l10n/po/zh_CN/_guides/performance-measure.adoc.po, 0, 86, 0, 1313 ,100%
 l10n/po/zh_CN/_guides/optaplanner.adoc.po, 0, 241, 0, 4101 ,100%
 l10n/po/zh_CN/_guides/opentracing.adoc.po, 0, 95, 0, 1250 ,100%
 l10n/po/zh_CN/_guides/opentelemetry.adoc.po, 0, 126, 0, 1566 ,100%
