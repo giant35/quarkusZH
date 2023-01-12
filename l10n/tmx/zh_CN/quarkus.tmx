@@ -5,42 +5,18 @@
   <body>
     <tu>
       <tuv xml:lang="en">
+        <seg>Documentation</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>文档</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Prerequisites</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>准备</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>To complete this guide, you need:</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>要完成本指南，您需要：</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>an IDE</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>IDE</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Solution</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>完整源码</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Running the application</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>运行应用</seg>
       </tuv>
     </tu>
     <tu>
@@ -53,50 +29,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Once started, you can request the provided endpoint:</seg>
+        <seg>Quarkus 2.0 continues the mission of making Java the preferred framework for Kubernetes-native development with new developer tools and improved performance.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>启动后，可以请求提供的接口：</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Automatically add newline with `curl -w "\n"`</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>用 `curl -w "\n"` 自动添加换行</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>We are using `curl -w "\n"` in this example to avoid your terminal printing a '%' or put both result and next command prompt on the same line.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>在本例中，我们使用 `curl -w "\n"` 来避免终端输出 ‘%’  ，或者将结果和下一个命令提示符放在同一行。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Using injection</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>使用注入</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>ArC comes as a dependency of `quarkus-resteasy` so you already have it handy.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>the Maven structure</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>Maven 目录结构</seg>
+        <seg>Quarkus 2.0 继续执行使命，即通过新的开发人员工具和改进的性能，使 Java 成为 Kubernetes 原生开发的首选框架。</seg>
       </tuv>
     </tu>
     <tu>
@@ -109,10 +45,82 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Contributing</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>贡献</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Developer Joy</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>开发乐趣</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Getting Started with Reactive</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>响应式入门</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Building Native Executables</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>构建原生执行程序</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Using our Tooling</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>工具使用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Solution</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>完整源码</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bootstrapping the project</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>搭建项目</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Container First</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>容器优先</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Running the application</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>运行应用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unified configuration</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>统一配置</seg>
       </tuv>
     </tu>
     <tu>
@@ -173,14 +181,6 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>If you have multiple JDK's installed it is not certain Maven will pick up the expected java and you could end up with unexpected results.  You can verify which JDK Maven uses by running `mvn --version`.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>如果您安装了多个JDK，Maven可能未使用预期的java，这样可能会得到意外的结果。您可以通过运行​  `mvn —version` 来验证 Maven 使用了哪个JDK。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>In this guide, we create a straightforward application serving a `hello` endpoint. To demonstrate dependency injection, this endpoint uses a `greeting` bean.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -229,14 +229,6 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Bootstrapping the project</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>搭建项目</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>The easiest way to create a new Quarkus project is to open a terminal and run the following command:</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -245,34 +237,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>If using cmd , (don't use backward slash `\`)</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>如果使用cmd，（不要使用反斜杠 `\`  )</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>If using Powershell , wrap `-D` parameters in double quotes</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>如果使用Powershell，请用双引号将 `-D` 参数括起来</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>It generates the following in `./getting-started`:</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>上边命令会在  `./getting-started` 中生成：</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>an `org.acme.getting.started.GreetingResource` resource exposed on `/hello`</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>`org.acme.getting.started.GreetingResource` 提供接口 `/hello`</seg>
       </tuv>
     </tu>
     <tu>
@@ -293,34 +261,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Once generated, look at the `pom.xml`.  You will find the import of the Quarkus BOM, allowing you to omit the version on the different Quarkus dependencies.  In addition, you can see the `quarkus-maven-plugin` responsible of the packaging of the application and also providing the development mode.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>生成后，查看 `pom.xml` 。 您会看到导入了 Quarkus BOM ，让您不用关心 Quarkus 依赖项版本。 此外，您还可以看到负责打包应用程序并提供开发模式的  `quarkus-maven-plugin`  。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>If we focus on the dependencies section, you can see the extension allowing the development of REST applications:</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>如果我们关注 dependencies 部分，您可以看到用于支持 REST 程序开发的扩展：</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>During the project creation, the `src/main/java/org/acme/getting/started/GreetingResource.java` file has been created with the following content:</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>项目创建生成时，已经创建了`src/main/java/org/acme/getting/started/GreetingResource.java` 文件，其中包含以下内容：</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>It's a very simple REST endpoint, returning "hello" to requests on "/hello".</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>这是一个非常简单的REST 接口，请求 “/hello” 时返回 “hello” 。</seg>
       </tuv>
     </tu>
     <tu>
@@ -341,10 +285,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Now we are ready to run our application.  Use: `./mvnw compile quarkus:dev`:</seg>
+        <seg>Once started, you can request the provided endpoint:</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>现在我们可以运行应用程序了。 使用:`./mvnw compile quarkus:dev`:</seg>
+        <seg>启动后，可以请求提供的接口：</seg>
       </tuv>
     </tu>
     <tu>
@@ -357,18 +301,26 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  If you're new to CDI then we recommend you to read the link:cdi[Introduction to CDI] guide.</seg>
+        <seg>Automatically add newline with `curl -w "\n"`</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>Quarkus 中的依赖注入是基于ArC的，ArC是一个基于 CDI 的依赖注入解决方案，专为 Quarkus 设计。 如果你之前未使用过 CDI 建议你参考下 link:cdi[ 上下文依赖介绍] 。</seg>
+        <seg>用 `curl -w "\n"` 自动添加换行</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Let's modify the application and add a companion bean.  Create the `src/main/java/org/acme/getting/started/GreetingService.java` file with the following content:</seg>
+        <seg>We are using `curl -w "\n"` in this example to avoid your terminal printing a '%' or put both result and next command prompt on the same line.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>让我们修改应用程序并添加一个辅助 bean。 创建 `src/main/java/org/acme/getting/started/GreetingService.java` 文件包含以下内容:</seg>
+        <seg>在本例中，我们使用 `curl -w "\n"` 来避免终端输出 ‘%’  ，或者将结果和下一个命令提示符放在同一行。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using injection</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>使用注入</seg>
       </tuv>
     </tu>
     <tu>
@@ -381,66 +333,130 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>If you stopped the application, restart the application with `./mvnw compile quarkus:dev`.  Then check that the endpoint returns `hello quarkus` as expected:</seg>
+        <seg>If you have multiple JDK's installed it is not certain Maven will pick up the expected java and you could end up with unexpected results.  You can verify which JDK Maven uses by running `mvn --version`.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>如果已经停止应用程序，请使用  `./mvnw compile quarkus:dev`  重新启动应用程序，然后检查接口是否返回期望的  `hello quarkus` ：</seg>
+        <seg>如果您安装了多个JDK，Maven可能未使用预期的java，这样可能会得到意外的结果。您可以通过运行​  `mvn —version` 来验证 Maven 使用了哪个JDK。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Container First</seg>
+        <seg>If using cmd , (don't use backward slash `\`)</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>容器优先</seg>
+        <seg>如果使用cmd，（不要使用反斜杠 `\`  )</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Developer Joy</seg>
+        <seg>If using Powershell , wrap `-D` parameters in double quotes</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>开发乐趣</seg>
+        <seg>如果使用Powershell，请用双引号将 `-D` 参数括起来</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Documentation</seg>
+        <seg>an `org.acme.getting.started.GreetingResource` resource exposed on `/hello`</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>文档</seg>
+        <seg>`org.acme.getting.started.GreetingResource` 提供接口 `/hello`</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Contributing</seg>
+        <seg>Once generated, look at the `pom.xml`.  You will find the import of the Quarkus BOM, allowing you to omit the version on the different Quarkus dependencies.  In addition, you can see the `quarkus-maven-plugin` responsible of the packaging of the application and also providing the development mode.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>贡献</seg>
+        <seg>生成后，查看 `pom.xml` 。 您会看到导入了 Quarkus BOM ，让您不用关心 Quarkus 依赖项版本。 此外，您还可以看到负责打包应用程序并提供开发模式的  `quarkus-maven-plugin`  。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Unified configuration</seg>
+        <seg>During the project creation, the `src/main/java/org/acme/getting/started/GreetingResource.java` file has been created with the following content:</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>统一配置</seg>
+        <seg>项目创建生成时，已经创建了`src/main/java/org/acme/getting/started/GreetingResource.java` 文件，其中包含以下内容：</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Getting Started with Reactive</seg>
+        <seg>It's a very simple REST endpoint, returning "hello" to requests on "/hello".</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>响应式入门</seg>
+        <seg>这是一个非常简单的REST 接口，请求 “/hello” 时返回 “hello” 。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Building Native Executables</seg>
+        <seg>Now we are ready to run our application.  Use: `./mvnw compile quarkus:dev`:</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>构建原生执行程序</seg>
+        <seg>现在我们可以运行应用程序了。 使用:`./mvnw compile quarkus:dev`:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  If you're new to CDI then we recommend you to read the link:cdi[Introduction to CDI] guide.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>Quarkus 中的依赖注入是基于ArC的，ArC是一个基于 CDI 的依赖注入解决方案，专为 Quarkus 设计。 如果你之前未使用过 CDI 建议你参考下 link:cdi[ 上下文依赖介绍] 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>ArC comes as a dependency of `quarkus-resteasy` so you already have it handy.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Let's modify the application and add a companion bean.  Create the `src/main/java/org/acme/getting/started/GreetingService.java` file with the following content:</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>让我们修改应用程序并添加一个辅助 bean。 创建 `src/main/java/org/acme/getting/started/GreetingService.java` 文件包含以下内容:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Get Started</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>入门</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A cohesive platform for optimized developer joy:</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>一个让开发者更开心的平台:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Zero config, live reload in the blink of an eye</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>零配置，瞬间重新加载</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>No hassle native executable generation</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>简单生成可执行文件</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;a href="/vision/developer-joy"&gt;Learn more&lt;/a&gt;</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>&lt;a href="/vision/developer-joy"&gt;了解更多&lt;/a&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -454,106 +470,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Need More Than Community Support?</seg>
+        <seg>QUARKUS 2.0 IS HERE!</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>需要社区外的支持？</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>If you require a higher level of support, you have options.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>如果你需要更高级的支持，有一些选择。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Enterprise support provided by Red Hat for the product.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>Red Hat 为产品提供的企业支持。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Quickly Bootstrap Your Application</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>应用快速开始</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Quarkus is an Open Source project licensed under the &lt;a href="https://www.apache.org/licenses/LICENSE-2.0"&gt;Apache License version 2.0&lt;/a&gt;. First and foremost, it is an open community where contributions, ideas and discussions are done in the open and contributors are welcome. Let’s join forces in building the future of Java applications.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>Quarkus 是一个开源项目，使用 &lt;a href="https://www.apache.org/licenses/LICENSE-2.0"&gt;Apache License version 2.0&lt;/a&gt; 许可协议. 最重要的是这是一个开放的社区，欢迎贡献者公开进行贡献、想法和讨论。让我们一起来构建 Java 应用的未来。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Roadmap</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>路线图</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Read about the community plans for the future. Here is &lt;a href="https://github.com/orgs/quarkusio/projects/5"&gt;our current roadmap&lt;/a&gt;. This is driven by the community, come and tell us what &lt;i&gt;your&lt;/i&gt; needs are.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>了解社区未来计划. 这是 &lt;a href="https://github.com/orgs/quarkusio/projects/5"&gt;我们当前的路线图&lt;/a&gt;. 这是由社区驱动的，来吧告诉我们什么是 &lt;i&gt;你&lt;/i&gt; 想要的.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Code and Issue Tracker</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>代码及问题跟踪</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The source code is hosted on &lt;a href="https://github.com/quarkusio/quarkus"&gt;GitHub&lt;/a&gt;. If you need to report a bug or request a new feature, look for a similar one on our &lt;a href="https://github.com/quarkusio/quarkus/issues"&gt;GitHub issue tracker&lt;/a&gt;. If you don’t find any, &lt;a href="https://github.com/quarkusio/quarkus/issues/new/choose"&gt;create a new issue&lt;/a&gt;.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>源代码托管在 &lt;a href="https://github.com/quarkusio/quarkus"&gt;GitHub&lt;/a&gt;. 如果需要提交 bug 或者提交功能建议，先在 &lt;a href="https://github.com/quarkusio/quarkus/issues"&gt;GitHub issue tracker&lt;/a&gt;找找看有没类似的. 没有的话, &lt;a href="https://github.com/quarkusio/quarkus/issues/new/choose"&gt;创建一个新的 issue&lt;/a&gt;.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Write QuickStart Guides</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>编写快速开始指南</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>There are always new users trying to get started quickly. Share your experience with everyone by writing a Quickstart and submitting it for peer review.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>总有一些新用户试图快速入门。通过写一个快速入门与大家分享你的经验并提交给同行评审。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Write New Extensions</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>写新的 Extensions</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Follow Quarkus on Twitter</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>关注 Quarkus Twitter</seg>
+        <seg>QUARKUS 2.0 来了！</seg>
       </tuv>
     </tu>
     <tu>
@@ -630,50 +550,26 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Best of Breed Libraries and Standards</seg>
+        <seg>Need More Than Community Support?</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>优秀的类库及标准件</seg>
+        <seg>需要社区外的支持？</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>QUARKUS 2.0 IS HERE!</seg>
+        <seg>If you require a higher level of support, you have options.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>QUARKUS 2.0 来了！</seg>
+        <seg>如果你需要更高级的支持，有一些选择。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Quarkus 2.0 continues the mission of making Java the preferred framework for Kubernetes-native development with new developer tools and improved performance.</seg>
+        <seg>Enterprise support provided by Red Hat for the product.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>Quarkus 2.0 继续执行使命，即通过新的开发人员工具和改进的性能，使 Java 成为 Kubernetes 原生开发的首选框架。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>A Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM, crafted from the best of breed Java libraries and standards.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>专为 OpenJDK HotSpot 及 GraalVM 量身定制的原生 Kubernetes Java 开发栈，采用最佳 Java 库和标准精制而成。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Now Available</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>现可用</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>&lt;a href="{{ site.data.versions.quarkus.announce }}"&gt;More Information&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>&lt;a href=“{{ site.data.versions.quarkus.announce }}”&gt;更多信息&lt;/a&gt;</seg>
+        <seg>Red Hat 为产品提供的企业支持。</seg>
       </tuv>
     </tu>
     <tu>
@@ -758,42 +654,106 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>A cohesive platform for optimized developer joy:</seg>
+        <seg>Best of Breed Libraries and Standards</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>一个让开发者更开心的平台:</seg>
+        <seg>优秀的类库及标准件</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Zero config, live reload in the blink of an eye</seg>
+        <seg>A Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM, crafted from the best of breed Java libraries and standards.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>零配置，瞬间重新加载</seg>
+        <seg>专为 OpenJDK HotSpot 及 GraalVM 量身定制的原生 Kubernetes Java 开发栈，采用最佳 Java 库和标准精制而成。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>No hassle native executable generation</seg>
+        <seg>Now Available</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>简单生成可执行文件</seg>
+        <seg>现可用</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>&lt;a href="/vision/developer-joy"&gt;Learn more&lt;/a&gt;</seg>
+        <seg>&lt;a href="{{ site.data.versions.quarkus.announce }}"&gt;More Information&lt;/a&gt;</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>&lt;a href="/vision/developer-joy"&gt;了解更多&lt;/a&gt;</seg>
+        <seg>&lt;a href=“{{ site.data.versions.quarkus.announce }}”&gt;更多信息&lt;/a&gt;</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Get Started</seg>
+        <seg>Quarkus is an Open Source project licensed under the &lt;a href="https://www.apache.org/licenses/LICENSE-2.0"&gt;Apache License version 2.0&lt;/a&gt;. First and foremost, it is an open community where contributions, ideas and discussions are done in the open and contributors are welcome. Let’s join forces in building the future of Java applications.</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
-        <seg>入门</seg>
+        <seg>Quarkus 是一个开源项目，使用 &lt;a href="https://www.apache.org/licenses/LICENSE-2.0"&gt;Apache License version 2.0&lt;/a&gt; 许可协议. 最重要的是这是一个开放的社区，欢迎贡献者公开进行贡献、想法和讨论。让我们一起来构建 Java 应用的未来。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Roadmap</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>路线图</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Read about the community plans for the future. Here is &lt;a href="https://github.com/orgs/quarkusio/projects/5"&gt;our current roadmap&lt;/a&gt;. This is driven by the community, come and tell us what &lt;i&gt;your&lt;/i&gt; needs are.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>了解社区未来计划. 这是 &lt;a href="https://github.com/orgs/quarkusio/projects/5"&gt;我们当前的路线图&lt;/a&gt;. 这是由社区驱动的，来吧告诉我们什么是 &lt;i&gt;你&lt;/i&gt; 想要的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Code and Issue Tracker</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>代码及问题跟踪</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The source code is hosted on &lt;a href="https://github.com/quarkusio/quarkus"&gt;GitHub&lt;/a&gt;. If you need to report a bug or request a new feature, look for a similar one on our &lt;a href="https://github.com/quarkusio/quarkus/issues"&gt;GitHub issue tracker&lt;/a&gt;. If you don’t find any, &lt;a href="https://github.com/quarkusio/quarkus/issues/new/choose"&gt;create a new issue&lt;/a&gt;.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>源代码托管在 &lt;a href="https://github.com/quarkusio/quarkus"&gt;GitHub&lt;/a&gt;. 如果需要提交 bug 或者提交功能建议，先在 &lt;a href="https://github.com/quarkusio/quarkus/issues"&gt;GitHub issue tracker&lt;/a&gt;找找看有没类似的. 没有的话, &lt;a href="https://github.com/quarkusio/quarkus/issues/new/choose"&gt;创建一个新的 issue&lt;/a&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Write QuickStart Guides</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>编写快速开始指南</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are always new users trying to get started quickly. Share your experience with everyone by writing a Quickstart and submitting it for peer review.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>总有一些新用户试图快速入门。通过写一个快速入门与大家分享你的经验并提交给同行评审。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Write New Extensions</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>写新的 Extensions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Follow Quarkus on Twitter</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>关注 Quarkus Twitter</seg>
       </tuv>
     </tu>
   </body>
