@@ -44,7 +44,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/elasticsearch.adoc:18
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/elasticsearch.adoc:22
@@ -55,7 +55,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/elasticsearch.adoc:23
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/elasticsearch.adoc:26
@@ -629,7 +629,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/elasticsearch.adoc:345
 #, no-wrap
 msgid "Running the application"
-msgstr ""
+msgstr "运行应用"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/elasticsearch.adoc:348

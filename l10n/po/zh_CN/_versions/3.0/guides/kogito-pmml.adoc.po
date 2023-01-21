@@ -39,13 +39,13 @@ msgstr ""
 #: upstream/_versions/3.0/guides/kogito-pmml.adoc:20
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_versions/3.0/guides/kogito-pmml.adoc:25
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/kogito-pmml.adoc:28
@@ -88,7 +88,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/kogito-pmml.adoc:43
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/kogito-pmml.adoc:47

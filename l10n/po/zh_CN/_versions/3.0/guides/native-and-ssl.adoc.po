@@ -44,12 +44,12 @@ msgstr ""
 #: upstream/_versions/3.0/guides/native-and-ssl.adoc:19
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/native-and-ssl.adoc:22
 msgid "To complete this guide, you need:"
-msgstr ""
+msgstr "要完成本指南，您需要："
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/native-and-ssl.adoc:24
@@ -59,7 +59,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.0/guides/native-and-ssl.adoc:25
 msgid "an IDE"
-msgstr ""
+msgstr "IDE"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/native-and-ssl.adoc:26

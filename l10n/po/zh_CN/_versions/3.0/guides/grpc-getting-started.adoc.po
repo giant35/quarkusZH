@@ -39,7 +39,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/grpc-getting-started.adoc:17
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/grpc-getting-started.adoc:21

@@ -39,13 +39,13 @@ msgstr ""
 #: upstream/_versions/3.0/guides/amqp.adoc:18
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_versions/3.0/guides/amqp.adoc:23
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/amqp.adoc:29
@@ -95,7 +95,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/amqp.adoc:43
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/amqp.adoc:47

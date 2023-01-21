@@ -32,7 +32,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/doc-create-tutorial.adoc:102
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/doc-create-tutorial.adoc:16

@@ -54,7 +54,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/security-keycloak-authorization.adoc:24
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/security-keycloak-authorization.adoc:29
@@ -70,7 +70,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/security-keycloak-authorization.adoc:31
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/security-keycloak-authorization.adoc:34
@@ -116,7 +116,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/security-keycloak-authorization.adoc:53
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/security-keycloak-authorization.adoc:57

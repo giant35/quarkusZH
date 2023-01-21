@@ -692,7 +692,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/mailer-reference.adoc:459
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/mailer-reference.adoc:402

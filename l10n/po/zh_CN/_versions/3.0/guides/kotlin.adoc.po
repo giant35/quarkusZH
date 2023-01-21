@@ -39,7 +39,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/kotlin.adoc:15
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/kotlin.adoc:20

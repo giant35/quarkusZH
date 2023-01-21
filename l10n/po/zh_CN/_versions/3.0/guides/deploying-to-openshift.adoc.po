@@ -34,7 +34,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/deploying-to-openshift.adoc:14
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/deploying-to-openshift.adoc:19
@@ -50,7 +50,7 @@ msgstr ""
 #: upstream/_versions/3.0/guides/deploying-to-openshift.adoc:21
 #, no-wrap
 msgid "Bootstrapping the project"
-msgstr ""
+msgstr "搭建项目"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/deploying-to-openshift.adoc:24

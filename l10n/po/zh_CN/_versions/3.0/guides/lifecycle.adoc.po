@@ -54,13 +54,13 @@ msgstr ""
 #: upstream/_versions/3.0/guides/lifecycle.adoc:19
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_versions/3.0/guides/lifecycle.adoc:23
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/lifecycle.adoc:27
@@ -96,7 +96,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.0/guides/lifecycle.adoc:42
 msgid "the Maven structure"
-msgstr ""
+msgstr "Maven 目录结构"
 
 #. type: Plain text
 #: upstream/_versions/3.0/guides/lifecycle.adoc:43
