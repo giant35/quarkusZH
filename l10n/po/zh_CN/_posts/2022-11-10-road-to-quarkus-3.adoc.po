@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-23 01:32+0000\n"
+"POT-Creation-Date: 2023-01-25 01:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -288,42 +288,47 @@ msgid ""
 "   -DactiveRecipes=io.quarkus.openrewrite.Quarkus3\n"
 msgstr ""
 
-#. type: Plain text
-#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:104
-msgid "Once this has been run your project should have its dependencies and source code updated to use Quarkus 3."
-msgstr ""
-
-#. type: Plain text
-#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:106
-msgid "If it does not work for you, it could be we missed something or you are using extensions not yet supporting Quarkus 3."
-msgstr ""
-
-#. type: Plain text
-#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:108
-msgid "Let us know in either case so we can together improve the migration script."
+#. type: delimited block =
+#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:107
+msgid "For multi-module projects, it is recommended to specify an absolute path in the `-Drewrite.configLocation` parameter so that the submodules can find the migration descriptor."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:110
-msgid "## Help for extension maintainers"
+msgid "Once this has been run your project should have its dependencies and source code updated to use Quarkus 3."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:113
-msgid "Do you maintain an extension? These changes will almost certainly affect your extension.  We've published a https://github.com/quarkiverse/quarkiverse/wiki/Migrating-to-Quarkus-3.x[cheat sheet with guidance and scripts] for extension maintainers."
+#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:112
+msgid "If it does not work for you, it could be we missed something or you are using extensions not yet supporting Quarkus 3."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:114
+msgid "Let us know in either case so we can together improve the migration script."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:116
+msgid "## Help for extension maintainers"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:119
+msgid "Do you maintain an extension? These changes will almost certainly affect your extension.  We've published a https://github.com/quarkiverse/quarkiverse/wiki/Migrating-to-Quarkus-3.x[cheat sheet with guidance and scripts] for extension maintainers."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:122
 msgid "## Thank you"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:118
+#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:124
 msgid "We look https://github.com/quarkusio/quarkus/discussions[forward to your feedback], and we will keep posting updates on https://groups.google.com/g/quarkus-dev/[quarkus-dev] around development news and on this blog for user visible news."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:120
+#: upstream/_posts/2022-11-10-road-to-quarkus-3.adoc:126
 msgid "Have fun!"
 msgstr ""
