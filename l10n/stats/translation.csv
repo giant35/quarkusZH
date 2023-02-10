@@ -1,6 +1,9 @@
 Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_posts/insights_1_transcription.adoc.po, 0, 254, 0, 8846 ,100%
 l10n/po/zh_CN/_posts/insights_0_transcription.adoc.po, 0, 117, 0, 3765 ,100%
+l10n/po/zh_CN/_posts/2023-02-10-jpastreamer-extension.adoc.po, 0, 55, 0, 1142 ,100%
+l10n/po/zh_CN/_posts/2023-02-09-quarkus-2-16-2-final-released.adoc.po, 0, 15, 0, 159 ,100%
+l10n/po/zh_CN/_posts/2023-02-09-datacater-uses-quarkus-to-make-data-streaming-accessible.adoc.po, 0, 23, 0, 596 ,100%
 l10n/po/zh_CN/_posts/2023-02-01-quarkus-2-16-1-final-released.adoc.po, 0, 16, 0, 206 ,100%
 l10n/po/zh_CN/_posts/2023-01-25-quarkus-2-16-0-final-released.adoc.po, 0, 36, 0, 535 ,100%
 l10n/po/zh_CN/_posts/2023-01-23-quarkus-3-0-0-alpha3-released.adoc.po, 0, 36, 0, 535 ,100%
@@ -320,7 +323,7 @@ l10n/po/zh_CN/_posts/2019-05-08-welcome.adoc.po, 0, 6, 0, 89 ,100%
 l10n/po/zh_CN/_posts/2019-05-05-quarkus-has-a-new-logo.adoc.po, 0, 25, 0, 394 ,100%
 l10n/po/zh_CN/_posts/2020-04-08-why-did-payair-technologies-switch-to-quarkus.adoc.po, 1, 44, 21, 1333 ,99%
 l10n/po/zh_CN/_guides/writing-native-applications-tips.adoc.po, 0, 152, 0, 2849 ,100%
-l10n/po/zh_CN/_guides/writing-extensions.adoc.po, 0, 825, 0, 15826 ,100%
+l10n/po/zh_CN/_guides/writing-extensions.adoc.po, 0, 824, 0, 15819 ,100%
 l10n/po/zh_CN/_guides/websockets.adoc.po, 0, 66, 0, 807 ,100%
 l10n/po/zh_CN/_guides/virtual-threads.adoc.po, 0, 118, 0, 2410 ,100%
 l10n/po/zh_CN/_guides/vertx.adoc.po, 0, 130, 0, 1860 ,100%
@@ -552,7 +555,7 @@ l10n/po/zh_CN/_guides/databases-dev-services.adoc.po, 0, 63, 0, 830 ,100%
 l10n/po/zh_CN/_guides/credentials-provider.adoc.po, 0, 58, 0, 792 ,100%
 l10n/po/zh_CN/_guides/continuous-testing.adoc.po, 0, 49, 0, 876 ,100%
 l10n/po/zh_CN/_guides/context-propagation.adoc.po, 0, 87, 0, 1468 ,100%
-l10n/po/zh_CN/_guides/container-image.adoc.po, 0, 78, 0, 1371 ,100%
+l10n/po/zh_CN/_guides/container-image.adoc.po, 0, 80, 0, 1401 ,100%
 l10n/po/zh_CN/_guides/consul-config.adoc.po, 0, 48, 0, 685 ,100%
 l10n/po/zh_CN/_guides/config.adoc.po, 0, 83, 0, 900 ,100%
 l10n/po/zh_CN/_guides/config-yaml.adoc.po, 0, 48, 0, 589 ,100%
@@ -576,6 +579,7 @@ l10n/po/zh_CN/_guides/building-native-image.adoc.po, 0, 223, 0, 4614 ,100%
 l10n/po/zh_CN/_guides/building-my-first-extension.adoc.po, 0, 239, 0, 4173 ,100%
 l10n/po/zh_CN/_guides/blaze-persistence.adoc.po, 0, 62, 0, 696 ,100%
 l10n/po/zh_CN/_guides/azure-functions-http.adoc.po, 0, 43, 0, 619 ,100%
+l10n/po/zh_CN/_guides/appcds.adoc.po, 0, 30, 0, 718 ,100%
 l10n/po/zh_CN/_guides/apicurio-registry-dev-services.adoc.po, 0, 24, 0, 448 ,100%
 l10n/po/zh_CN/_guides/amqp.adoc.po, 2, 114, 3, 1589 ,100%
 l10n/po/zh_CN/_guides/amqp-reference.adoc.po, 0, 256, 0, 3114 ,100%
@@ -622,4 +626,4 @@ l10n/po/zh_CN/_guides/_includes/compile-quarkus-quickly.adoc.po, 0, 4, 0, 56 ,10
 l10n/po/zh_CN/_guides/README.adoc.po, 0, 31, 0, 191 ,100%
 l10n/po/zh_CN/_guides/0-glossary.adoc.po, 0, 24, 0, 132 ,100%
 l10n/po/zh_CN/_guides/index2.adoc.po, 1, 48, 24, 255 ,91%
-l10n/po/zh_CN/_guides/getting-started.adoc.po, 14, 130, 241, 1898 ,88%
+l10n/po/zh_CN/_guides/getting-started.adoc.po, 14, 129, 241, 1895 ,88%
