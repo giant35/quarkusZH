@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-02 01:33+0000\n"
+"POT-Creation-Date: 2023-03-04 01:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,31 +108,31 @@ msgstr ""
 #: upstream/_guides/resteasy-reactive.adoc:179
 #: upstream/_guides/resteasy-reactive.adoc:287
 #: upstream/_guides/resteasy-reactive.adoc:350
-#: upstream/_guides/resteasy-reactive.adoc:404
-#: upstream/_guides/resteasy-reactive.adoc:663
-#: upstream/_guides/resteasy-reactive.adoc:706
-#: upstream/_guides/resteasy-reactive.adoc:738
-#: upstream/_guides/resteasy-reactive.adoc:813
-#: upstream/_guides/resteasy-reactive.adoc:849
-#: upstream/_guides/resteasy-reactive.adoc:888
-#: upstream/_guides/resteasy-reactive.adoc:995
-#: upstream/_guides/resteasy-reactive.adoc:1020
-#: upstream/_guides/resteasy-reactive.adoc:1048
-#: upstream/_guides/resteasy-reactive.adoc:1112
-#: upstream/_guides/resteasy-reactive.adoc:1147
-#: upstream/_guides/resteasy-reactive.adoc:1697
-#: upstream/_guides/resteasy-reactive.adoc:1723
-#: upstream/_guides/resteasy-reactive.adoc:1765
-#: upstream/_guides/resteasy-reactive.adoc:1798
-#: upstream/_guides/resteasy-reactive.adoc:1861
-#: upstream/_guides/resteasy-reactive.adoc:2111
-#: upstream/_guides/resteasy-reactive.adoc:2145
-#: upstream/_guides/resteasy-reactive.adoc:2209
-#: upstream/_guides/resteasy-reactive.adoc:2263
-#: upstream/_guides/resteasy-reactive.adoc:2288
-#: upstream/_guides/resteasy-reactive.adoc:2353
-#: upstream/_guides/resteasy-reactive.adoc:2456
-#: upstream/_guides/resteasy-reactive.adoc:2581
+#: upstream/_guides/resteasy-reactive.adoc:405
+#: upstream/_guides/resteasy-reactive.adoc:664
+#: upstream/_guides/resteasy-reactive.adoc:707
+#: upstream/_guides/resteasy-reactive.adoc:739
+#: upstream/_guides/resteasy-reactive.adoc:814
+#: upstream/_guides/resteasy-reactive.adoc:850
+#: upstream/_guides/resteasy-reactive.adoc:889
+#: upstream/_guides/resteasy-reactive.adoc:996
+#: upstream/_guides/resteasy-reactive.adoc:1021
+#: upstream/_guides/resteasy-reactive.adoc:1049
+#: upstream/_guides/resteasy-reactive.adoc:1113
+#: upstream/_guides/resteasy-reactive.adoc:1148
+#: upstream/_guides/resteasy-reactive.adoc:1698
+#: upstream/_guides/resteasy-reactive.adoc:1724
+#: upstream/_guides/resteasy-reactive.adoc:1766
+#: upstream/_guides/resteasy-reactive.adoc:1799
+#: upstream/_guides/resteasy-reactive.adoc:1862
+#: upstream/_guides/resteasy-reactive.adoc:2112
+#: upstream/_guides/resteasy-reactive.adoc:2146
+#: upstream/_guides/resteasy-reactive.adoc:2210
+#: upstream/_guides/resteasy-reactive.adoc:2264
+#: upstream/_guides/resteasy-reactive.adoc:2289
+#: upstream/_guides/resteasy-reactive.adoc:2354
+#: upstream/_guides/resteasy-reactive.adoc:2457
+#: upstream/_guides/resteasy-reactive.adoc:2582
 #, no-wrap
 msgid "package org.acme.rest;\n"
 msgstr ""
@@ -140,12 +140,12 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/resteasy-reactive.adoc:68
 #: upstream/_guides/resteasy-reactive.adoc:108
-#: upstream/_guides/resteasy-reactive.adoc:407
-#: upstream/_guides/resteasy-reactive.adoc:713
-#: upstream/_guides/resteasy-reactive.adoc:816
-#: upstream/_guides/resteasy-reactive.adoc:1150
-#: upstream/_guides/resteasy-reactive.adoc:1700
-#: upstream/_guides/resteasy-reactive.adoc:1728
+#: upstream/_guides/resteasy-reactive.adoc:408
+#: upstream/_guides/resteasy-reactive.adoc:714
+#: upstream/_guides/resteasy-reactive.adoc:817
+#: upstream/_guides/resteasy-reactive.adoc:1151
+#: upstream/_guides/resteasy-reactive.adoc:1701
+#: upstream/_guides/resteasy-reactive.adoc:1729
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -155,8 +155,8 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/resteasy-reactive.adoc:71
 #: upstream/_guides/resteasy-reactive.adoc:193
-#: upstream/_guides/resteasy-reactive.adoc:678
-#: upstream/_guides/resteasy-reactive.adoc:716
+#: upstream/_guides/resteasy-reactive.adoc:679
+#: upstream/_guides/resteasy-reactive.adoc:717
 #, no-wrap
 msgid ""
 "@Path(\"\")\n"
@@ -348,9 +348,9 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/resteasy-reactive.adoc:135
-#: upstream/_guides/resteasy-reactive.adoc:2199
-#: upstream/_guides/resteasy-reactive.adoc:2380
-#: upstream/_guides/resteasy-reactive.adoc:2395
+#: upstream/_guides/resteasy-reactive.adoc:2200
+#: upstream/_guides/resteasy-reactive.adoc:2381
+#: upstream/_guides/resteasy-reactive.adoc:2396
 #, no-wrap
 msgid "}\n"
 msgstr ""
@@ -387,17 +387,17 @@ msgstr ""
 #. type: Table
 #: upstream/_guides/resteasy-reactive.adoc:150
 #: upstream/_guides/resteasy-reactive.adoc:240
-#: upstream/_guides/resteasy-reactive.adoc:439
-#: upstream/_guides/resteasy-reactive.adoc:633
-#: upstream/_guides/resteasy-reactive.adoc:946
-#: upstream/_guides/resteasy-reactive.adoc:1083
-#: upstream/_guides/resteasy-reactive.adoc:1289
-#: upstream/_guides/resteasy-reactive.adoc:1395
-#: upstream/_guides/resteasy-reactive.adoc:1511
-#: upstream/_guides/resteasy-reactive.adoc:1881
-#: upstream/_guides/resteasy-reactive.adoc:1898
-#: upstream/_guides/resteasy-reactive.adoc:1998
-#: upstream/_guides/resteasy-reactive.adoc:2018
+#: upstream/_guides/resteasy-reactive.adoc:440
+#: upstream/_guides/resteasy-reactive.adoc:634
+#: upstream/_guides/resteasy-reactive.adoc:947
+#: upstream/_guides/resteasy-reactive.adoc:1084
+#: upstream/_guides/resteasy-reactive.adoc:1290
+#: upstream/_guides/resteasy-reactive.adoc:1396
+#: upstream/_guides/resteasy-reactive.adoc:1512
+#: upstream/_guides/resteasy-reactive.adoc:1882
+#: upstream/_guides/resteasy-reactive.adoc:1899
+#: upstream/_guides/resteasy-reactive.adoc:1999
+#: upstream/_guides/resteasy-reactive.adoc:2019
 #, no-wrap
 msgid "Usage"
 msgstr ""
@@ -894,7 +894,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "    @POST\n"
-"    public String allParams(Parameters parameters) {\n"
+"    public String allParams(@BeanParam Parameters parameters) { <1>\n"
 "        return parameters.type + \"/\" + parameters.variant + \"/\" + parameters.age \n"
 "            + \"/\" + parameters.level + \"/\" + parameters.secretHandshake\n"
 "            + \"/\" + parameters.smell;\n"
@@ -902,20 +902,25 @@ msgid ""
 "}\n"
 msgstr ""
 
-#. type: Title ===
+#. type: Plain text
 #: upstream/_guides/resteasy-reactive.adoc:393
+msgid "`BeanParam` is required to comply with the JAX-RS specification so that libraries like OpenAPI can introspect the parameters."
+msgstr ""
+
+#. type: Title ===
+#: upstream/_guides/resteasy-reactive.adoc:394
 #, no-wrap
 msgid "Declaring URI parameters"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:400
+#: upstream/_guides/resteasy-reactive.adoc:401
 msgid "You can declare URI parameters and use regular expressions in your path, so for instance the following endpoint will serve requests for `/hello/stef/23` and `/hello` but not `/hello/stef/0x23`:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:410
-#: upstream/_guides/resteasy-reactive.adoc:2425
+#: upstream/_guides/resteasy-reactive.adoc:411
+#: upstream/_guides/resteasy-reactive.adoc:2426
 #, no-wrap
 msgid ""
 "@Path(\"hello\")\n"
@@ -923,7 +928,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:416
+#: upstream/_guides/resteasy-reactive.adoc:417
 #, no-wrap
 msgid ""
 "    @Path(\"{name}/{age:\\\\d+}\")\n"
@@ -934,7 +939,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:422
+#: upstream/_guides/resteasy-reactive.adoc:423
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -945,127 +950,127 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:425
+#: upstream/_guides/resteasy-reactive.adoc:426
 #, no-wrap
 msgid "Accessing the request body"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:430
+#: upstream/_guides/resteasy-reactive.adoc:431
 msgid "Any method parameter with no annotation will receive the method body.footnote:[Unless it is a <<path-parameter,URI template parameter>> or a <<context-objects,context object>>.], after it has been mapped from its HTTP representation to the Java type of the parameter."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:432
+#: upstream/_guides/resteasy-reactive.adoc:433
 msgid "The following parameter types will be supported out of the box:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/resteasy-reactive.adoc:435
+#: upstream/_guides/resteasy-reactive.adoc:436
 #, no-wrap
 msgid "Table Request body parameter type"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:437
-#: upstream/_guides/resteasy-reactive.adoc:631
-#: upstream/_guides/resteasy-reactive.adoc:944
-#: upstream/_guides/resteasy-reactive.adoc:1879
-#: upstream/_guides/resteasy-reactive.adoc:1896
-#: upstream/_guides/resteasy-reactive.adoc:1996
-#: upstream/_guides/resteasy-reactive.adoc:2016
+#: upstream/_guides/resteasy-reactive.adoc:438
+#: upstream/_guides/resteasy-reactive.adoc:632
+#: upstream/_guides/resteasy-reactive.adoc:945
+#: upstream/_guides/resteasy-reactive.adoc:1880
+#: upstream/_guides/resteasy-reactive.adoc:1897
+#: upstream/_guides/resteasy-reactive.adoc:1997
+#: upstream/_guides/resteasy-reactive.adoc:2017
 #, no-wrap
 msgid "Typ"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:440
+#: upstream/_guides/resteasy-reactive.adoc:441
 #, no-wrap
 msgid "link:{jdkapi}/java/io/File.html[`File`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:442
+#: upstream/_guides/resteasy-reactive.adoc:443
 #, no-wrap
 msgid "The entire request body in a temporary file"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:443
+#: upstream/_guides/resteasy-reactive.adoc:444
 #, no-wrap
 msgid "`byte[]`"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:445
+#: upstream/_guides/resteasy-reactive.adoc:446
 #, no-wrap
 msgid "The entire request body, not decoded"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:446
+#: upstream/_guides/resteasy-reactive.adoc:447
 #, no-wrap
 msgid "`char[]`"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:448
-#: upstream/_guides/resteasy-reactive.adoc:451
+#: upstream/_guides/resteasy-reactive.adoc:449
+#: upstream/_guides/resteasy-reactive.adoc:452
 #, no-wrap
 msgid "The entire request body, decoded"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:449
+#: upstream/_guides/resteasy-reactive.adoc:450
 #, no-wrap
 msgid "link:{jdkapi}/java/lang/String.html[`String`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:452
+#: upstream/_guides/resteasy-reactive.adoc:453
 #, no-wrap
 msgid "link:{jdkapi}/java/io/InputStream.html[`InputStream`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:454
-#: upstream/_guides/resteasy-reactive.adoc:457
+#: upstream/_guides/resteasy-reactive.adoc:455
+#: upstream/_guides/resteasy-reactive.adoc:458
 #, no-wrap
 msgid "The request body in a blocking stream"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:455
+#: upstream/_guides/resteasy-reactive.adoc:456
 #, no-wrap
 msgid "link:{jdkapi}/java/io/Reader.html[`Reader`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:458
+#: upstream/_guides/resteasy-reactive.adoc:459
 #, no-wrap
 msgid "All Java primitives and their wrapper classes"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:460
+#: upstream/_guides/resteasy-reactive.adoc:461
 #, no-wrap
 msgid "Java primitive types"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:461
+#: upstream/_guides/resteasy-reactive.adoc:462
 #, no-wrap
 msgid "link:{jdkapi}/java/math/BigDecimal.html[`BigDecimal`], link:{jdkapi}/java/math/BigInteger.html[`BigInteger`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:463
+#: upstream/_guides/resteasy-reactive.adoc:464
 #, no-wrap
 msgid "Large integers and decimals."
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:465
+#: upstream/_guides/resteasy-reactive.adoc:466
 #, no-wrap
 msgid ""
 "link:{jsonpapi}/javax/json/JsonArray.html[`JsonArray`], link:{jsonpapi}/javax/json/JsonObject.html[`JsonObject`],\n"
@@ -1073,58 +1078,58 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:467
+#: upstream/_guides/resteasy-reactive.adoc:468
 #, no-wrap
 msgid "JSON value types"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:468
+#: upstream/_guides/resteasy-reactive.adoc:469
 #, no-wrap
 msgid "link:{vertxapi}io/vertx/core/buffer/Buffer.html[`Buffer`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:470
+#: upstream/_guides/resteasy-reactive.adoc:471
 #, no-wrap
 msgid "Vert.x Buffer"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:471
+#: upstream/_guides/resteasy-reactive.adoc:472
 #, no-wrap
 msgid "any other type"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:473
+#: upstream/_guides/resteasy-reactive.adoc:474
 #, no-wrap
 msgid "Will be <<json,mapped from JSON to that type>>"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:476
+#: upstream/_guides/resteasy-reactive.adoc:477
 msgid "You can add support for more <<readers-writers,body parameter types>>."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:478
+#: upstream/_guides/resteasy-reactive.adoc:479
 #, no-wrap
 msgid "Handling Multipart Form data"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:484
+#: upstream/_guides/resteasy-reactive.adoc:485
 msgid "To handle HTTP requests that have `multipart/form-data` as their content type, you can use the regular link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/RestForm.html[`@RestForm`] annotation, but we have special types that allow you to access the parts as files or as entities.  Let us look at an example of its use."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:487
+#: upstream/_guides/resteasy-reactive.adoc:488
 msgid "Assuming an HTTP request containing a file upload, a JSON entity and a form value containing a string description, we could write the following endpoint:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:493
+#: upstream/_guides/resteasy-reactive.adoc:494
 #, no-wrap
 msgid ""
 "import javax.ws.rs.POST;\n"
@@ -1133,7 +1138,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:497
+#: upstream/_guides/resteasy-reactive.adoc:498
 #, no-wrap
 msgid ""
 "import org.jboss.resteasy.reactive.PartType;\n"
@@ -1142,7 +1147,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:504
+#: upstream/_guides/resteasy-reactive.adoc:505
 #, no-wrap
 msgid ""
 "@Path(\"multipart\")\n"
@@ -1154,7 +1159,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:512
+#: upstream/_guides/resteasy-reactive.adoc:513
 #, no-wrap
 msgid ""
 "    @POST\n"
@@ -1167,53 +1172,53 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:518
+#: upstream/_guides/resteasy-reactive.adoc:519
 msgid "The `description` parameter will contain the data contained in the part of HTTP request called `description` (because link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/RestForm.html[`@RestForm`] does not define a value, the field name is used), while the `file` parameter will contain data about the uploaded file in the `image` part of HTTP request, and the `person` parameter will read the `Person` entity using the `JSON` <<json,body reader>>."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:521
+#: upstream/_guides/resteasy-reactive.adoc:522
 msgid "The size of every part in a multipart request must conform to the value of `quarkus.http.limits.max-form-attribute-size`, for which the default is 2048 bytes.  Any request with a part size exceeding this configuration will result in HTTP status code 413."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:524
+#: upstream/_guides/resteasy-reactive.adoc:525
 msgid "link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/multipart/FileUpload.html[`FileUpload`] provides access to various metadata of the uploaded file. If however all you need is a handle to the uploaded file, `java.nio.file.Path` or `java.io.File` could be used."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:526
+#: upstream/_guides/resteasy-reactive.adoc:527
 msgid "If you need access to all uploaded files for all parts regardless of their names, you can do it with `@RestForm(FileUpload.ALL) List<FileUpload>`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:530
+#: upstream/_guides/resteasy-reactive.adoc:531
 msgid "link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/PartType.html[`@PartType`] is used to aid in deserialization of the corresponding part of the request into the desired Java type. It is only required if you need to use <<readers-writers,a special body parameter type>> for that particular parameter."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:532
+#: upstream/_guides/resteasy-reactive.adoc:533
 msgid "Just like for any other request parameter type, you can also group them into a <<parameter-grouping,container class>>."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:538
+#: upstream/_guides/resteasy-reactive.adoc:539
 msgid "When handling file uploads, it is very important to move the file to permanent storage (like a database, a dedicated file system or a cloud storage) in your code that handles the POJO.  Otherwise, the file will no longer be accessible when the request terminates.  Moreover, if `quarkus.http.body.delete-uploaded-files-on-end` is set to true, Quarkus will delete the uploaded file when the HTTP response is sent. If the setting is disabled, the file will reside on the file system of the server (in the directory defined by the `quarkus.http.body.uploads-directory` configuration option), but as the uploaded files are saved with a UUID file name and no additional metadata is saved, these files are essentially a random dump of files."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:541
+#: upstream/_guides/resteasy-reactive.adoc:542
 msgid "Similarly, RESTEasy Reactive can produce Multipart Form data to allow users download files from the server. For example, we could write a POJO that will hold the information we want to expose as:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:545
+#: upstream/_guides/resteasy-reactive.adoc:546
 #, no-wrap
 msgid "import javax.ws.rs.core.MediaType;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:548
+#: upstream/_guides/resteasy-reactive.adoc:549
 #, no-wrap
 msgid ""
 "import org.jboss.resteasy.reactive.PartType;\n"
@@ -1221,13 +1226,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:550
+#: upstream/_guides/resteasy-reactive.adoc:551
 #, no-wrap
 msgid "public class DownloadFormData {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:553
+#: upstream/_guides/resteasy-reactive.adoc:554
 #, no-wrap
 msgid ""
 "    @RestForm\n"
@@ -1235,7 +1240,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:558
+#: upstream/_guides/resteasy-reactive.adoc:559
 #, no-wrap
 msgid ""
 "    @RestForm\n"
@@ -1245,13 +1250,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:561
+#: upstream/_guides/resteasy-reactive.adoc:562
 msgid "And then expose this POJO via a Resource like so:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:568
-#: upstream/_guides/resteasy-reactive.adoc:589
+#: upstream/_guides/resteasy-reactive.adoc:569
+#: upstream/_guides/resteasy-reactive.adoc:590
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -1261,8 +1266,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:571
-#: upstream/_guides/resteasy-reactive.adoc:594
+#: upstream/_guides/resteasy-reactive.adoc:572
+#: upstream/_guides/resteasy-reactive.adoc:595
 #, no-wrap
 msgid ""
 "@Path(\"multipart\")\n"
@@ -1270,7 +1275,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:579
+#: upstream/_guides/resteasy-reactive.adoc:580
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -1283,18 +1288,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:582
+#: upstream/_guides/resteasy-reactive.adoc:583
 msgid "Additionally, you can also manually append the parts of the form using the class `MultipartFormDataOutput` as:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:591
+#: upstream/_guides/resteasy-reactive.adoc:592
 #, no-wrap
 msgid "import org.jboss.resteasy.reactive.server.core.multipart.MultipartFormDataOutput;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:606
+#: upstream/_guides/resteasy-reactive.adoc:607
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -1311,125 +1316,125 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:609
+#: upstream/_guides/resteasy-reactive.adoc:610
 msgid "This last approach allows you adding extra headers to the output part."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:611
+#: upstream/_guides/resteasy-reactive.adoc:612
 msgid "For the time being, returning Multipart data is limited to be blocking endpoints."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:612
+#: upstream/_guides/resteasy-reactive.adoc:613
 #, no-wrap
 msgid "Handling malformed input"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:617
+#: upstream/_guides/resteasy-reactive.adoc:618
 msgid "As part of reading the multipart body, RESTEasy Reactive invokes the proper MessageBodyReaderlink:{jaxrsapi}/javax/ws/rs/ext/MessageBodyReader.html[`MessageBodyReader`] for each part of the request.  If an `IOException` occurs for one of these parts (for example if Jackson was unable to deserialize a JSON part), then a `org.jboss.resteasy.reactive.server.multipart.MultipartPartReadingException` is thrown.  If this exception is not handled by the application as mentioned in <<exception-mapping>>, an HTTP 400 response is returned by default."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:618
+#: upstream/_guides/resteasy-reactive.adoc:619
 #, no-wrap
 msgid "Returning a response body"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:623
+#: upstream/_guides/resteasy-reactive.adoc:624
 msgid "In order to return an HTTP response, simply return the resource you want from your method. The method return type and its optional content type will be used to decide how to serialise it to the HTTP response (see <<negotiation>> for more advanced information)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:626
+#: upstream/_guides/resteasy-reactive.adoc:627
 msgid "You can return any of the pre-defined types that you can read from the <<resource-types,HTTP response>>, and any other type will be mapped <<json,from that type to JSON>>."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:628
+#: upstream/_guides/resteasy-reactive.adoc:629
 msgid "In addition, the following return types are also supported:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/resteasy-reactive.adoc:629
+#: upstream/_guides/resteasy-reactive.adoc:630
 #, no-wrap
 msgid "Table Additional response body parameter type"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:634
+#: upstream/_guides/resteasy-reactive.adoc:635
 #, no-wrap
 msgid "link:{jdkapi}/java/nio/file/Path.html[`Path`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:636
+#: upstream/_guides/resteasy-reactive.adoc:637
 #, no-wrap
 msgid "The contents of the file specified by the given path"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:637
+#: upstream/_guides/resteasy-reactive.adoc:638
 #, no-wrap
 msgid "link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/PathPart.html[`PathPart`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:639
+#: upstream/_guides/resteasy-reactive.adoc:640
 #, no-wrap
 msgid "The partial contents of the file specified by the given path"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:640
+#: upstream/_guides/resteasy-reactive.adoc:641
 #, no-wrap
 msgid "link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/FilePart.html[`FilePart`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:642
+#: upstream/_guides/resteasy-reactive.adoc:643
 #, no-wrap
 msgid "The partial contents of a file"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:643
+#: upstream/_guides/resteasy-reactive.adoc:644
 #, no-wrap
 msgid "link:{vertxapi}/io/vertx/core/file/AsyncFile.html[`AsyncFile`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:645
+#: upstream/_guides/resteasy-reactive.adoc:646
 #, no-wrap
 msgid "Vert.x AsyncFile, which can be in full, or partial"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:651
+#: upstream/_guides/resteasy-reactive.adoc:652
 msgid "Alternately, you can also return a <<reactive,reactive type>> such as link:{mutinyapi}/io/smallrye/mutiny/Uni.html[`Uni`], link:{mutinyapi}/io/smallrye/mutiny/Multi.html[`Multi`] or link:{jdkapi}/java/util/concurrent/CompletionStage.html[`CompletionStage`] that resolve to one of the mentioned return types."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:652
+#: upstream/_guides/resteasy-reactive.adoc:653
 #, no-wrap
 msgid "Setting other response properties"
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:654
+#: upstream/_guides/resteasy-reactive.adoc:655
 #, no-wrap
 msgid "Manually setting the response"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:659
+#: upstream/_guides/resteasy-reactive.adoc:660
 msgid "If you need to set more properties on the HTTP response than just the body, such as the status code or headers, you can make your method return `org.jboss.resteasy.reactive.RestResponse` from a resource method.  An example of this could look like:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:667
+#: upstream/_guides/resteasy-reactive.adoc:668
 #, no-wrap
 msgid ""
 "import java.time.Duration;\n"
@@ -1438,7 +1443,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:672
+#: upstream/_guides/resteasy-reactive.adoc:673
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -1448,7 +1453,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:675
+#: upstream/_guides/resteasy-reactive.adoc:676
 #, no-wrap
 msgid ""
 "import org.jboss.resteasy.reactive.RestResponse;\n"
@@ -1456,7 +1461,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:693
+#: upstream/_guides/resteasy-reactive.adoc:694
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -1476,23 +1481,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:697
+#: upstream/_guides/resteasy-reactive.adoc:698
 msgid "You can also use the JAX-RS type link:{jaxrsapi}/javax/ws/rs/core/Response.html[`Response`] but it is not strongly typed to your entity."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:698
+#: upstream/_guides/resteasy-reactive.adoc:699
 #, no-wrap
 msgid "Using annotations"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:702
+#: upstream/_guides/resteasy-reactive.adoc:703
 msgid "Alternatively, if you only need to set the status code and / or HTTP headers with static values, you can use `@org.jboss.resteasy.reactive.ResponseStatus` and /or `ResponseHeader` respectively.  An example of this could look like:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:710
+#: upstream/_guides/resteasy-reactive.adoc:711
 #, no-wrap
 msgid ""
 "import org.jboss.resteasy.reactive.Header;\n"
@@ -1501,7 +1506,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:724
+#: upstream/_guides/resteasy-reactive.adoc:725
 #, no-wrap
 msgid ""
 "    @ResponseStatus(201)\n"
@@ -1514,29 +1519,29 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:726
+#: upstream/_guides/resteasy-reactive.adoc:727
 #, no-wrap
 msgid "Redirect support"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:730
+#: upstream/_guides/resteasy-reactive.adoc:731
 msgid "When handling a `@POST`, `@PUT` or `@DELETE` endpoint, it is common practice to redirect to a `@GET` endpoint after the action has been performed to allow the user to reload the page without triggering the action a second time.  There are multiple ways to achieve this."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:731
+#: upstream/_guides/resteasy-reactive.adoc:732
 #, no-wrap
 msgid "Using RestResponse"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:734
+#: upstream/_guides/resteasy-reactive.adoc:735
 msgid "Using `RestResponse` as the return type while making sure the proper redirection URI is created can be done as in the following example:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:748
+#: upstream/_guides/resteasy-reactive.adoc:749
 #, no-wrap
 msgid ""
 "import java.util.Map;\n"
@@ -1551,7 +1556,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:751
+#: upstream/_guides/resteasy-reactive.adoc:752
 #, no-wrap
 msgid ""
 "@Path(\"/fruits\")\n"
@@ -1559,7 +1564,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:756
+#: upstream/_guides/resteasy-reactive.adoc:757
 #, no-wrap
 msgid ""
 "    public static class Fruit {\n"
@@ -1569,7 +1574,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:759
+#: upstream/_guides/resteasy-reactive.adoc:760
 #, no-wrap
 msgid ""
 "        public Fruit() {\n"
@@ -1577,7 +1582,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:766
+#: upstream/_guides/resteasy-reactive.adoc:767
 #, no-wrap
 msgid ""
 "        public Fruit(Long id, String name, String description) {\n"
@@ -1589,7 +1594,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:769
+#: upstream/_guides/resteasy-reactive.adoc:770
 #, no-wrap
 msgid ""
 "    private final Map<Long, Fruit> fruits = new ConcurrentHashMap<>();\n"
@@ -1597,7 +1602,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:777
+#: upstream/_guides/resteasy-reactive.adoc:778
 #, no-wrap
 msgid ""
 "    public FruitResource() {\n"
@@ -1609,7 +1614,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:786
+#: upstream/_guides/resteasy-reactive.adoc:787
 #, no-wrap
 msgid ""
 "    // when invoked, this method will result in an HTTP redirect to the GET method that obtains the fruit by id\n"
@@ -1623,7 +1628,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:793
+#: upstream/_guides/resteasy-reactive.adoc:794
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -1635,37 +1640,37 @@ msgid ""
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:795
+#: upstream/_guides/resteasy-reactive.adoc:796
 #, no-wrap
 msgid "Using RedirectException"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:798
+#: upstream/_guides/resteasy-reactive.adoc:799
 msgid "Users can also throw `javax.ws.rs.RedirectionException` from a method body to get RESTEasy Reactive to perform the desired redirect."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:799
+#: upstream/_guides/resteasy-reactive.adoc:800
 #, no-wrap
 msgid "Async/reactive support"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:809
+#: upstream/_guides/resteasy-reactive.adoc:810
 msgid "If your endpoint method needs to accomplish an asynchronous or reactive task before being able to answer, you can declare your method to return the link:{mutinyapi}/io/smallrye/mutiny/Uni.html[`Uni`] type (from https://smallrye.io/smallrye-mutiny/[Mutiny]), in which case the current HTTP request will be automatically suspended after your method, until the returned link:{mutinyapi}/io/smallrye/mutiny/Uni.html[`Uni`] instance resolves to a value, which will be mapped to a response exactly according to the previously described rules:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:818
-#: upstream/_guides/resteasy-reactive.adoc:1730
+#: upstream/_guides/resteasy-reactive.adoc:819
+#: upstream/_guides/resteasy-reactive.adoc:1731
 #, no-wrap
 msgid "import io.smallrye.mutiny.Uni;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:821
-#: upstream/_guides/resteasy-reactive.adoc:904
+#: upstream/_guides/resteasy-reactive.adoc:822
+#: upstream/_guides/resteasy-reactive.adoc:905
 #, no-wrap
 msgid ""
 "@Path(\"escoffier\")\n"
@@ -1673,7 +1678,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:827
+#: upstream/_guides/resteasy-reactive.adoc:828
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -1684,33 +1689,33 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:833
+#: upstream/_guides/resteasy-reactive.adoc:834
 msgid "This allows you to not block the event-loop thread while the book is being fetched from the database, and allows Quarkus to serve more requests until your book is ready to be sent to the client and terminate this request. Check out our <<execution-model,Execution Model documentation>> for more information."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:836
+#: upstream/_guides/resteasy-reactive.adoc:837
 msgid "The link:{jdkapi}/java/util/concurrent/CompletionStage.html[`CompletionStage`] return type is also supported."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:837
+#: upstream/_guides/resteasy-reactive.adoc:838
 #, no-wrap
 msgid "Streaming support"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:842
+#: upstream/_guides/resteasy-reactive.adoc:843
 msgid "If you want to stream your response element by element, you can make your endpoint method return a link:{mutinyapi}/io/smallrye/mutiny/Multi.html[`Multi`] type (from https://smallrye.io/smallrye-mutiny/[Mutiny]).  This is especially useful for streaming text or binary data."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:845
+#: upstream/_guides/resteasy-reactive.adoc:846
 msgid "This example, using https://github.com/quarkiverse/quarkus-reactive-messaging-http[Reactive Messaging HTTP] shows how to stream text data:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:853
+#: upstream/_guides/resteasy-reactive.adoc:854
 #, no-wrap
 msgid ""
 "import javax.inject.Inject;\n"
@@ -1719,19 +1724,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:855
+#: upstream/_guides/resteasy-reactive.adoc:856
 #, no-wrap
 msgid "import org.eclipse.microprofile.reactive.messaging.Channel;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:857
+#: upstream/_guides/resteasy-reactive.adoc:858
 #, no-wrap
 msgid "import io.smallrye.mutiny.Multi;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:860
+#: upstream/_guides/resteasy-reactive.adoc:861
 #, no-wrap
 msgid ""
 "@Path(\"logs\")\n"
@@ -1739,7 +1744,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:864
+#: upstream/_guides/resteasy-reactive.adoc:865
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -1748,7 +1753,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:870
+#: upstream/_guides/resteasy-reactive.adoc:871
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -1759,23 +1764,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:875
+#: upstream/_guides/resteasy-reactive.adoc:876
 msgid "Response filters are **not** invoked on streamed responses, because they would give a false impression that you can set headers or HTTP status codes, which is not true after the initial response. Exception mappers are also not invoked because part of the response may already have been written."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:876
+#: upstream/_guides/resteasy-reactive.adoc:877
 #, no-wrap
 msgid "Server-Sent Event (SSE) support"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:884
+#: upstream/_guides/resteasy-reactive.adoc:885
 msgid "If you want to stream JSON objects in your response, you can use https://html.spec.whatwg.org/multipage/server-sent-events.html[Server-Sent Events] by just annotating your endpoint method with link:{jaxrsapi}/javax/ws/rs/Produces.html[`@Produces(MediaType.SERVER_SENT_EVENTS)`] and specifying that each element should be <<json,serialised to JSON>> with `@RestStreamElementType(MediaType.APPLICATION_JSON)`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:894
+#: upstream/_guides/resteasy-reactive.adoc:895
 #, no-wrap
 msgid ""
 "import javax.inject.Inject;\n"
@@ -1786,13 +1791,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:896
+#: upstream/_guides/resteasy-reactive.adoc:897
 #, no-wrap
 msgid "import org.jboss.resteasy.reactive.RestStreamElementType;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:899
+#: upstream/_guides/resteasy-reactive.adoc:900
 #, no-wrap
 msgid ""
 "import io.smallrye.mutiny.Multi;\n"
@@ -1800,13 +1805,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:901
+#: upstream/_guides/resteasy-reactive.adoc:902
 #, no-wrap
 msgid "import io.smallrye.reactive.messaging.annotations.Channel;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:909
+#: upstream/_guides/resteasy-reactive.adoc:910
 #, no-wrap
 msgid ""
 "    // Inject our Book channel\n"
@@ -1816,7 +1821,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:918
+#: upstream/_guides/resteasy-reactive.adoc:919
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -1830,237 +1835,237 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:920
+#: upstream/_guides/resteasy-reactive.adoc:921
 #, no-wrap
 msgid "Controlling HTTP Caching features"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:925
+#: upstream/_guides/resteasy-reactive.adoc:926
 msgid "RESTEasy Reactive provides the link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/Cache.html[`@Cache`] and link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/NoCache.html[`@NoCache`] annotations to facilitate handling HTTP caching semantics, i.e. setting the 'Cache-Control' HTTP header."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:928
+#: upstream/_guides/resteasy-reactive.adoc:929
 msgid "These annotations can be placed either on a Resource Method or a Resource Class (in which case it applies to all Resource Methods of the class that do *not* contain the same annotation) and allow users to return domain objects and not have to deal with building up the `Cache-Control` HTTP header explicitly."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:932
+#: upstream/_guides/resteasy-reactive.adoc:933
 msgid "While link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/Cache.html[`@Cache`] builds a complex `Cache-Control` header, link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/NoCache.html[`@NoCache`] is a simplified notation to say that you don't want anything cached; i.e. `Cache-Control: nocache`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:934
+#: upstream/_guides/resteasy-reactive.adoc:935
 msgid "More information on the `Cache-Control` header and be found in link:https://datatracker.ietf.org/doc/html/rfc7234[RFC 7234]"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:935
+#: upstream/_guides/resteasy-reactive.adoc:936
 #, no-wrap
 msgid "Accessing context objects"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:941
+#: upstream/_guides/resteasy-reactive.adoc:942
 msgid "There are a number of contextual objects that the framework will give you, if your endpoint method takes parameters of the following type:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/resteasy-reactive.adoc:942
-#: upstream/_guides/resteasy-reactive.adoc:1079
-#: upstream/_guides/resteasy-reactive.adoc:1285
-#: upstream/_guides/resteasy-reactive.adoc:1391
-#: upstream/_guides/resteasy-reactive.adoc:1507
+#: upstream/_guides/resteasy-reactive.adoc:943
+#: upstream/_guides/resteasy-reactive.adoc:1080
+#: upstream/_guides/resteasy-reactive.adoc:1286
+#: upstream/_guides/resteasy-reactive.adoc:1392
+#: upstream/_guides/resteasy-reactive.adoc:1508
 #, no-wrap
 msgid "Table Context object"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:947
+#: upstream/_guides/resteasy-reactive.adoc:948
 #, no-wrap
 msgid "link:{jaxrsapi}/javax/ws/rs/core/HttpHeaders.html[`HttpHeaders`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:949
+#: upstream/_guides/resteasy-reactive.adoc:950
 #, no-wrap
 msgid "All the request headers"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:950
+#: upstream/_guides/resteasy-reactive.adoc:951
 #, no-wrap
 msgid "link:{jaxrsapi}/javax/ws/rs/container/ResourceInfo.html[`ResourceInfo`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:952
+#: upstream/_guides/resteasy-reactive.adoc:953
 #, no-wrap
 msgid "Information about the current endpoint method and class (requires reflection)"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:953
+#: upstream/_guides/resteasy-reactive.adoc:954
 #, no-wrap
 msgid "link:{jaxrsapi}/javax/ws/rs/core/SecurityContext.html[`SecurityContext`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:955
+#: upstream/_guides/resteasy-reactive.adoc:956
 #, no-wrap
 msgid "Access to the current user and roles"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:956
+#: upstream/_guides/resteasy-reactive.adoc:957
 #, no-wrap
 msgid "link:{resteasy-reactive-api}/org/jboss/resteasy/reactive/server/SimpleResourceInfo.html[`SimpleResourceInfo`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:958
+#: upstream/_guides/resteasy-reactive.adoc:959
 #, no-wrap
 msgid "Information about the current endpoint method and class (no reflection required)"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:959
+#: upstream/_guides/resteasy-reactive.adoc:960
 #, no-wrap
 msgid "link:{jaxrsapi}/javax/ws/rs/core/UriInfo.html[`UriInfo`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:961
+#: upstream/_guides/resteasy-reactive.adoc:962
 #, no-wrap
 msgid "Provides information about the current endpoint and application URI"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:962
+#: upstream/_guides/resteasy-reactive.adoc:963
 #, no-wrap
 msgid "link:{jaxrsapi}/javax/ws/rs/core/Application.html[`Application`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:964
+#: upstream/_guides/resteasy-reactive.adoc:965
 #, no-wrap
 msgid "Advanced: Current JAX-RS application class"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:965
+#: upstream/_guides/resteasy-reactive.adoc:966
 #, no-wrap
 msgid "link:{jaxrsapi}/javax/ws/rs/core/Configuration.html[`Configuration`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:967
+#: upstream/_guides/resteasy-reactive.adoc:968
 #, no-wrap
 msgid "Advanced: Configuration about the deployed JAX-RS application"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:968
+#: upstream/_guides/resteasy-reactive.adoc:969
 #, no-wrap
 msgid "link:{jaxrsapi}/javax/ws/rs/ext/Providers.html[`Providers`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:970
+#: upstream/_guides/resteasy-reactive.adoc:971
 #, no-wrap
 msgid "Advanced: Runtime access to JAX-RS providers"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:971
+#: upstream/_guides/resteasy-reactive.adoc:972
 #, no-wrap
 msgid "link:{jaxrsapi}/javax/ws/rs/core/Request.html[`Request`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:973
+#: upstream/_guides/resteasy-reactive.adoc:974
 #, no-wrap
 msgid "Advanced: Access to the current HTTP method and <<preconditions>>"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:974
+#: upstream/_guides/resteasy-reactive.adoc:975
 #, no-wrap
 msgid "link:{jaxrsapi}/javax/ws/rs/core/ResourceContext.html[`ResourceContext`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:976
+#: upstream/_guides/resteasy-reactive.adoc:977
 #, no-wrap
 msgid "Advanced: access to instances of endpoints"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:977
+#: upstream/_guides/resteasy-reactive.adoc:978
 #, no-wrap
 msgid "link:{resteasy-reactive-api}/org/jboss/resteasy/reactive/server/spi/ServerRequestContext.html[`ServerRequestContext`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:979
+#: upstream/_guides/resteasy-reactive.adoc:980
 #, no-wrap
 msgid "Advanced: RESTEasy Reactive access to the current request/response"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:980
+#: upstream/_guides/resteasy-reactive.adoc:981
 #, no-wrap
 msgid "link:{jaxrsapi}/javax/ws/rs/sse/Sse.html[`Sse`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:982
+#: upstream/_guides/resteasy-reactive.adoc:983
 #, no-wrap
 msgid "Advanced: Complex SSE use-cases"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:983
+#: upstream/_guides/resteasy-reactive.adoc:984
 #, no-wrap
 msgid "link:{vertxapi}/io/vertx/core/http/HttpServerRequest.html[`HttpServerRequest`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:985
+#: upstream/_guides/resteasy-reactive.adoc:986
 #, no-wrap
 msgid "Advanced: Vert.x HTTP Request"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:986
+#: upstream/_guides/resteasy-reactive.adoc:987
 #, no-wrap
 msgid "link:{vertxapi}/io/vertx/core/http/HttpServerResponse.html[`HttpServerResponse`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:988
+#: upstream/_guides/resteasy-reactive.adoc:989
 #, no-wrap
 msgid "Advanced: Vert.x HTTP Response"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:991
+#: upstream/_guides/resteasy-reactive.adoc:992
 msgid "For example, here is how you can return the name of the currently logged-in user:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:997
-#: upstream/_guides/resteasy-reactive.adoc:1022
-#: upstream/_guides/resteasy-reactive.adoc:1050
+#: upstream/_guides/resteasy-reactive.adoc:998
+#: upstream/_guides/resteasy-reactive.adoc:1023
+#: upstream/_guides/resteasy-reactive.adoc:1051
 #, no-wrap
 msgid "import java.security.Principal;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1001
-#: upstream/_guides/resteasy-reactive.adoc:1028
-#: upstream/_guides/resteasy-reactive.adoc:1054
+#: upstream/_guides/resteasy-reactive.adoc:1002
+#: upstream/_guides/resteasy-reactive.adoc:1029
+#: upstream/_guides/resteasy-reactive.adoc:1055
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -2069,9 +2074,9 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1004
-#: upstream/_guides/resteasy-reactive.adoc:1031
-#: upstream/_guides/resteasy-reactive.adoc:1057
+#: upstream/_guides/resteasy-reactive.adoc:1005
+#: upstream/_guides/resteasy-reactive.adoc:1032
+#: upstream/_guides/resteasy-reactive.adoc:1058
 #, no-wrap
 msgid ""
 "@Path(\"user\")\n"
@@ -2079,7 +2084,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1011
+#: upstream/_guides/resteasy-reactive.adoc:1012
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -2091,18 +2096,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1016
+#: upstream/_guides/resteasy-reactive.adoc:1017
 msgid "You can also inject those context objects using https://javadoc.io/static/javax.inject/javax.inject/1/javax/inject/Inject.html[`@Inject`] on fields of the same type:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1024
+#: upstream/_guides/resteasy-reactive.adoc:1025
 #, no-wrap
 msgid "import javax.inject.Inject;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1034
+#: upstream/_guides/resteasy-reactive.adoc:1035
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -2110,8 +2115,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1041
-#: upstream/_guides/resteasy-reactive.adoc:1070
+#: upstream/_guides/resteasy-reactive.adoc:1042
+#: upstream/_guides/resteasy-reactive.adoc:1071
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -2123,18 +2128,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1044
+#: upstream/_guides/resteasy-reactive.adoc:1045
 msgid "Or even on your endpoint constructor:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1059
+#: upstream/_guides/resteasy-reactive.adoc:1060
 #, no-wrap
 msgid "    SecurityContext security;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1063
+#: upstream/_guides/resteasy-reactive.adoc:1064
 #, no-wrap
 msgid ""
 "    Endpoint(SecurityContext security) {\n"
@@ -2143,100 +2148,100 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:1073
+#: upstream/_guides/resteasy-reactive.adoc:1074
 #, no-wrap
 msgid "JSON serialisation"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1078
+#: upstream/_guides/resteasy-reactive.adoc:1079
 msgid "Instead of importing `io.quarkus:quarkus-resteasy-reactive`, you can import either of the following modules to get support for JSON:"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1081
-#: upstream/_guides/resteasy-reactive.adoc:1287
-#: upstream/_guides/resteasy-reactive.adoc:1393
-#: upstream/_guides/resteasy-reactive.adoc:1509
+#: upstream/_guides/resteasy-reactive.adoc:1082
+#: upstream/_guides/resteasy-reactive.adoc:1288
+#: upstream/_guides/resteasy-reactive.adoc:1394
+#: upstream/_guides/resteasy-reactive.adoc:1510
 #, no-wrap
 msgid "GAV"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1084
+#: upstream/_guides/resteasy-reactive.adoc:1085
 #, no-wrap
 msgid "`io.quarkus:quarkus-resteasy-reactive-jackson`"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1086
+#: upstream/_guides/resteasy-reactive.adoc:1087
 #, no-wrap
 msgid "https://github.com/FasterXML/jackson[Jackson support]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1087
+#: upstream/_guides/resteasy-reactive.adoc:1088
 #, no-wrap
 msgid "`io.quarkus:quarkus-resteasy-reactive-jsonb`"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1089
+#: upstream/_guides/resteasy-reactive.adoc:1090
 #, no-wrap
 msgid "https://eclipse-ee4j.github.io/jsonb-api/[JSON-B support]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1094
+#: upstream/_guides/resteasy-reactive.adoc:1095
 msgid "In both cases, importing those modules will allow HTTP message bodies to be read from JSON and serialised to JSON, for <<resource-types,all the types not already registered with a more specific serialisation>>."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:1095
+#: upstream/_guides/resteasy-reactive.adoc:1096
 #, no-wrap
 msgid "Advanced Jackson-specific features"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1098
+#: upstream/_guides/resteasy-reactive.adoc:1099
 msgid "When using the `quarkus-resteasy-reactive-jackson` extension there are some advanced features that RESTEasy Reactive supports."
 msgstr ""
 
 #. type: Title =====
-#: upstream/_guides/resteasy-reactive.adoc:1100
+#: upstream/_guides/resteasy-reactive.adoc:1101
 #, no-wrap
 msgid "Secure serialization"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1104
+#: upstream/_guides/resteasy-reactive.adoc:1105
 msgid "When used with Jackson to perform JSON serialization, RESTEasy Reactive provides the ability to limit the set of fields that are serialized based on the roles of the current user.  This is achieved by simply annotating the fields (or getters) of the POJO being returned with `@io.quarkus.resteasy.reactive.jackson.SecureField`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1106
+#: upstream/_guides/resteasy-reactive.adoc:1107
 msgid "A simple example could be the following:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1108
+#: upstream/_guides/resteasy-reactive.adoc:1109
 msgid "Assume we have a POJO named `Person` which looks like so:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1114
+#: upstream/_guides/resteasy-reactive.adoc:1115
 #, no-wrap
 msgid "import io.quarkus.resteasy.reactive.jackson.SecureField;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1116
+#: upstream/_guides/resteasy-reactive.adoc:1117
 #, no-wrap
 msgid "public class Person {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1121
+#: upstream/_guides/resteasy-reactive.adoc:1122
 #, no-wrap
 msgid ""
 "    @SecureField(rolesAllowed = \"admin\")\n"
@@ -2246,7 +2251,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1127
+#: upstream/_guides/resteasy-reactive.adoc:1128
 #, no-wrap
 msgid ""
 "    public Person(Long id, String first, String last) {\n"
@@ -2257,7 +2262,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1131
+#: upstream/_guides/resteasy-reactive.adoc:1132
 #, no-wrap
 msgid ""
 "    public Long getId() {\n"
@@ -2266,7 +2271,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1135
+#: upstream/_guides/resteasy-reactive.adoc:1136
 #, no-wrap
 msgid ""
 "    public String getFirst() {\n"
@@ -2275,7 +2280,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1140
+#: upstream/_guides/resteasy-reactive.adoc:1141
 #, no-wrap
 msgid ""
 "    public String getLast() {\n"
@@ -2285,12 +2290,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1143
+#: upstream/_guides/resteasy-reactive.adoc:1144
 msgid "A very simple JAX-RS Resource that uses `Person` could be:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1153
+#: upstream/_guides/resteasy-reactive.adoc:1154
 #, no-wrap
 msgid ""
 "@Path(\"person\")\n"
@@ -2298,7 +2303,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1160
+#: upstream/_guides/resteasy-reactive.adoc:1161
 #, no-wrap
 msgid ""
 "    @Path(\"{id}\")\n"
@@ -2310,12 +2315,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1164
+#: upstream/_guides/resteasy-reactive.adoc:1165
 msgid "Assuming security has been set up for the application (see our xref:security-overview-concept.adoc[guide] for more details), when a user with the `admin` role performs an HTTP GET on `/person/1` they will receive:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1172
+#: upstream/_guides/resteasy-reactive.adoc:1173
 #, no-wrap
 msgid ""
 "{\n"
@@ -2326,17 +2331,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1175
+#: upstream/_guides/resteasy-reactive.adoc:1176
 msgid "as the response."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1177
+#: upstream/_guides/resteasy-reactive.adoc:1178
 msgid "Any user however that does not have the `admin` role will receive:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1184
+#: upstream/_guides/resteasy-reactive.adoc:1185
 #, no-wrap
 msgid ""
 "{\n"
@@ -2346,34 +2351,34 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1188
+#: upstream/_guides/resteasy-reactive.adoc:1189
 msgid "No additional configuration needs to be applied for this secure serialization to take place. However, users can use the `@io.quarkus.resteasy.reactive.jackson.EnableSecureSerialization` and `@io.quarkus.resteasy.reactive.jackson.DisableSecureSerialization` annotation to opt in or out for specific JAX-RS Resource classes or methods."
 msgstr ""
 
 #. type: Title =====
-#: upstream/_guides/resteasy-reactive.adoc:1189
+#: upstream/_guides/resteasy-reactive.adoc:1190
 #, no-wrap
 msgid "@JsonView support"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1193
+#: upstream/_guides/resteasy-reactive.adoc:1194
 msgid "JAX-RS methods can be annotated with https://fasterxml.github.io/jackson-annotations/javadoc/2.10/com/fasterxml/jackson/annotation/JsonView.html[@JsonView] in order to customize the serialization of the returned POJO, on a per method-basis. This is best explained with an example."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1195
+#: upstream/_guides/resteasy-reactive.adoc:1196
 msgid "A typical use of `@JsonView` is to hide certain fields on certain methods. In that vein, let's define two views:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1199
+#: upstream/_guides/resteasy-reactive.adoc:1200
 #, no-wrap
 msgid "public class Views {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1202
+#: upstream/_guides/resteasy-reactive.adoc:1203
 #, no-wrap
 msgid ""
 "    public static class Public {\n"
@@ -2381,7 +2386,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1206
+#: upstream/_guides/resteasy-reactive.adoc:1207
 #, no-wrap
 msgid ""
 "    public static class Private extends Public {\n"
@@ -2390,18 +2395,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1209
+#: upstream/_guides/resteasy-reactive.adoc:1210
 msgid "Let's assume we have the `User` POJO on which we want to hide some field during serialization. A simple example of this is:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1213
+#: upstream/_guides/resteasy-reactive.adoc:1214
 #, no-wrap
 msgid "public class User {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1216
+#: upstream/_guides/resteasy-reactive.adoc:1217
 #, no-wrap
 msgid ""
 "    @JsonView(Views.Private.class)\n"
@@ -2409,7 +2414,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1220
+#: upstream/_guides/resteasy-reactive.adoc:1221
 #, no-wrap
 msgid ""
 "    @JsonView(Views.Public.class)\n"
@@ -2418,12 +2423,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1224
+#: upstream/_guides/resteasy-reactive.adoc:1225
 msgid "Depending on the JAX-RS method that returns this user, we might want to exclude the `id` field from serialization - for example you might want an insecure method to not expose this field. The way we can achieve that in RESTEasy Reactive is shown in the following example:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1233
+#: upstream/_guides/resteasy-reactive.adoc:1234
 #, no-wrap
 msgid ""
 "@JsonView(Views.Public.class)\n"
@@ -2435,7 +2440,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1240
+#: upstream/_guides/resteasy-reactive.adoc:1241
 #, no-wrap
 msgid ""
 "@JsonView(Views.Private.class)\n"
@@ -2447,28 +2452,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1244
+#: upstream/_guides/resteasy-reactive.adoc:1245
 msgid "When the result the `userPublic` method is serialized, the `id` field will not be contained in the response as the `Public` view does not include it.  The result of `userPrivate` however will include the `id` as expected when serialized."
 msgstr ""
 
 #. type: Title =====
-#: upstream/_guides/resteasy-reactive.adoc:1245
+#: upstream/_guides/resteasy-reactive.adoc:1246
 #, no-wrap
 msgid "Completely customized per method serialization"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1249
+#: upstream/_guides/resteasy-reactive.adoc:1250
 msgid "There are times when you need to completely customize the serialization of a POJO on a per JAX-RS method basis. For such use cases, the `@io.quarkus.resteasy.reactive.jackson.CustomSerialization` annotation is a great tool, as it allows you to configure a per-method `com.fasterxml.jackson.databind.ObjectWriter` which can be configured at will."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1251
+#: upstream/_guides/resteasy-reactive.adoc:1252
 msgid "Here is an example use case:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1260
+#: upstream/_guides/resteasy-reactive.adoc:1261
 #, no-wrap
 msgid ""
 "@CustomSerialization(UnquotedFields.class)\n"
@@ -2480,18 +2485,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1263
+#: upstream/_guides/resteasy-reactive.adoc:1264
 msgid "where `UnquotedFields` is a `BiFunction` defined as so:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1267
+#: upstream/_guides/resteasy-reactive.adoc:1268
 #, no-wrap
 msgid "public static class UnquotedFields implements BiFunction<ObjectMapper, Type, ObjectWriter> {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1273
+#: upstream/_guides/resteasy-reactive.adoc:1274
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -2502,67 +2507,67 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1276
+#: upstream/_guides/resteasy-reactive.adoc:1277
 msgid "Essentially what this class does is force Jackson to not include quotes in the field names."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1278
+#: upstream/_guides/resteasy-reactive.adoc:1279
 msgid "It is important to note that this customization is only performed for the serialization of the JAX-RS methods that use `@CustomSerialization(UnquotedFields.class)`."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:1279
+#: upstream/_guides/resteasy-reactive.adoc:1280
 #, no-wrap
 msgid "XML serialisation"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1284
+#: upstream/_guides/resteasy-reactive.adoc:1285
 msgid "To enable XML support, add the `quarkus-resteasy-reactive-jaxb` extension to your project."
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1290
+#: upstream/_guides/resteasy-reactive.adoc:1291
 #, no-wrap
 msgid "`io.quarkus:quarkus-resteasy-reactive-jaxb`"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1292
+#: upstream/_guides/resteasy-reactive.adoc:1293
 #, no-wrap
 msgid "https://javaee.github.io/jaxb-v2/[XML support]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1297
+#: upstream/_guides/resteasy-reactive.adoc:1298
 msgid "Importing this module will allow HTTP message bodies to be read from XML and serialised to XML, for <<resource-types,all the types not already registered with a more specific serialisation>>."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:1298
+#: upstream/_guides/resteasy-reactive.adoc:1299
 #, no-wrap
 msgid "Advanced JAXB-specific features"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1301
+#: upstream/_guides/resteasy-reactive.adoc:1302
 msgid "When using the `quarkus-resteasy-reactive-jaxb` extension there are some advanced features that RESTEasy Reactive supports."
 msgstr ""
 
 #. type: Title =====
-#: upstream/_guides/resteasy-reactive.adoc:1302
+#: upstream/_guides/resteasy-reactive.adoc:1303
 #, no-wrap
 msgid "Inject JAXB components"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1305
+#: upstream/_guides/resteasy-reactive.adoc:1306
 msgid "The JAXB resteasy reactive extension will serialize and unserialize requests and responses transparently for users. However, if you need finer grain control over JAXB components, you can inject either the JAXBContext, Marshaller, or Unmarshaller components into your beans:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1310
+#: upstream/_guides/resteasy-reactive.adoc:1311
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -2570,7 +2575,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1313
+#: upstream/_guides/resteasy-reactive.adoc:1314
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -2578,7 +2583,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1316
+#: upstream/_guides/resteasy-reactive.adoc:1317
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -2586,7 +2591,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1319
+#: upstream/_guides/resteasy-reactive.adoc:1320
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -2594,9 +2599,9 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1322
-#: upstream/_guides/resteasy-reactive.adoc:1477
-#: upstream/_guides/resteasy-reactive.adoc:1497
+#: upstream/_guides/resteasy-reactive.adoc:1323
+#: upstream/_guides/resteasy-reactive.adoc:1478
+#: upstream/_guides/resteasy-reactive.adoc:1498
 #, no-wrap
 msgid ""
 "    // ...\n"
@@ -2604,28 +2609,28 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/resteasy-reactive.adoc:1327
+#: upstream/_guides/resteasy-reactive.adoc:1328
 msgid "Quarkus will automatically find all the classes annotated with `@XmlRootElement` and then bound them to the JAXB context."
 msgstr ""
 
 #. type: Title =====
-#: upstream/_guides/resteasy-reactive.adoc:1329
+#: upstream/_guides/resteasy-reactive.adoc:1330
 #, no-wrap
 msgid "Customize the JAXB configuration"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1332
+#: upstream/_guides/resteasy-reactive.adoc:1333
 msgid "To customize the JAXB configuration for either the JAXB context, and/or the Marshaller/Unmarshaller components, the suggested approach is to define a CDI bean of type `io.quarkus.jaxb.runtime.JaxbContextCustomizer`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1334
+#: upstream/_guides/resteasy-reactive.adoc:1335
 msgid "An example where a custom module needs to be registered would look like so:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1339
+#: upstream/_guides/resteasy-reactive.adoc:1340
 #, no-wrap
 msgid ""
 "@Singleton\n"
@@ -2633,7 +2638,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1343
+#: upstream/_guides/resteasy-reactive.adoc:1344
 #, no-wrap
 msgid ""
 "    // For JAXB context configuration\n"
@@ -2642,13 +2647,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1345
+#: upstream/_guides/resteasy-reactive.adoc:1346
 #, no-wrap
 msgid "    }\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1351
+#: upstream/_guides/resteasy-reactive.adoc:1352
 #, no-wrap
 msgid ""
 "    // For Marshaller configuration\n"
@@ -2659,7 +2664,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1358
+#: upstream/_guides/resteasy-reactive.adoc:1359
 #, no-wrap
 msgid ""
 "    // For Unmarshaller configuration\n"
@@ -2671,23 +2676,23 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/resteasy-reactive.adoc:1363
+#: upstream/_guides/resteasy-reactive.adoc:1364
 msgid "It's not necessary to implement all three methods, but only the want you need."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1366
+#: upstream/_guides/resteasy-reactive.adoc:1367
 msgid "Alternatively, you can provide your own `JAXBContext` bean by doing:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1370
+#: upstream/_guides/resteasy-reactive.adoc:1371
 #, no-wrap
 msgid "public class CustomJaxbContext {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1378
+#: upstream/_guides/resteasy-reactive.adoc:1379
 #, no-wrap
 msgid ""
 "    // Replaces the CDI producer for JAXBContext built into Quarkus\n"
@@ -2700,44 +2705,44 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/resteasy-reactive.adoc:1383
+#: upstream/_guides/resteasy-reactive.adoc:1384
 msgid "Note that if you provide your custom JAXB context instance, you will need to register the classes you want to use for the XML serialization. This means that Quarkus will not update your custom JAXB context instance with the auto-discovered classes."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:1385
+#: upstream/_guides/resteasy-reactive.adoc:1386
 #, no-wrap
 msgid "Web Links support"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1390
+#: upstream/_guides/resteasy-reactive.adoc:1391
 msgid "To enable Web Links support, add the `quarkus-resteasy-reactive-links` extension to your project."
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1396
+#: upstream/_guides/resteasy-reactive.adoc:1397
 #, no-wrap
 msgid "`io.quarkus:quarkus-resteasy-reactive-links`"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1398
+#: upstream/_guides/resteasy-reactive.adoc:1399
 #, no-wrap
 msgid "https://www.w3.org/wiki/LinkHeader[Web Links support]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1401
+#: upstream/_guides/resteasy-reactive.adoc:1402
 msgid "Importing this module will allow injecting web links into the response HTTP headers by just annotating your endpoint resources with the `@InjectRestLinks` annotation. To declare the web links that will be returned, you need to use the `@RestLink` annotation in the linked methods. An example of this could look like:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1406
-#: upstream/_guides/resteasy-reactive.adoc:1464
-#: upstream/_guides/resteasy-reactive.adoc:1491
-#: upstream/_guides/resteasy-reactive.adoc:1522
-#: upstream/_guides/resteasy-reactive.adoc:1614
+#: upstream/_guides/resteasy-reactive.adoc:1407
+#: upstream/_guides/resteasy-reactive.adoc:1465
+#: upstream/_guides/resteasy-reactive.adoc:1492
+#: upstream/_guides/resteasy-reactive.adoc:1523
+#: upstream/_guides/resteasy-reactive.adoc:1615
 #, no-wrap
 msgid ""
 "@Path(\"/records\")\n"
@@ -2745,7 +2750,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1413
+#: upstream/_guides/resteasy-reactive.adoc:1414
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -2757,7 +2762,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1421
+#: upstream/_guides/resteasy-reactive.adoc:1422
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -2770,7 +2775,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1429
+#: upstream/_guides/resteasy-reactive.adoc:1430
 #, no-wrap
 msgid ""
 "    @PUT\n"
@@ -2783,7 +2788,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1437
+#: upstream/_guides/resteasy-reactive.adoc:1438
 #, no-wrap
 msgid ""
 "    @DELETE\n"
@@ -2796,12 +2801,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1440
+#: upstream/_guides/resteasy-reactive.adoc:1441
 msgid "When calling the endpoint `/records` which is defined by the method `getAll` within the above resource using curl, you would get the web links header:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1445
+#: upstream/_guides/resteasy-reactive.adoc:1446
 #, no-wrap
 msgid ""
 "& curl -i localhost:8080/records\n"
@@ -2809,12 +2814,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1448
+#: upstream/_guides/resteasy-reactive.adoc:1449
 msgid "As this resource does not return a single instance of type `Record`, the links for the methods `get`, `update`, and `delete` are not injected. Now, when calling the endpoint `/records/1`, you would get the following web links:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1456
+#: upstream/_guides/resteasy-reactive.adoc:1457
 #, no-wrap
 msgid ""
 "& curl -i localhost:8080/records/1\n"
@@ -2825,18 +2830,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1459
+#: upstream/_guides/resteasy-reactive.adoc:1460
 msgid "The `get`, `update`, and `delete` methods use the path param \"id\" and as the field \"id\" exists in the entity type \"Record\", the web link properly populates the value \"1\" in the returned links. In addition to this, we can also generate web links with path params that do not match with any field of the entity type. For example, the following method is using a path param \"text\" and the entity Record does not have any field named \"text\":"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1466
+#: upstream/_guides/resteasy-reactive.adoc:1467
 #, no-wrap
 msgid "    // ...\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1474
+#: upstream/_guides/resteasy-reactive.adoc:1475
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -2849,29 +2854,29 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1480
+#: upstream/_guides/resteasy-reactive.adoc:1481
 msgid "The generated web link for this resource is `Link: <http://localhost:8080/search/{text}>; rel=\"search records by free text\"`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1482
+#: upstream/_guides/resteasy-reactive.adoc:1483
 msgid "Finally, when calling the `delete` resource, you should not see any web links as the method `delete` is not annotated with the `@InjectRestLinks` annotation."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:1483
+#: upstream/_guides/resteasy-reactive.adoc:1484
 #, no-wrap
 msgid "Programmatically access to the web links registry"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1486
+#: upstream/_guides/resteasy-reactive.adoc:1487
 msgid "You can programmatically have access to the web links registry just by injecting the `RestLinksProvider` bean:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1494
-#: upstream/_guides/resteasy-reactive.adoc:1617
+#: upstream/_guides/resteasy-reactive.adoc:1495
+#: upstream/_guides/resteasy-reactive.adoc:1618
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -2879,45 +2884,45 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1500
+#: upstream/_guides/resteasy-reactive.adoc:1501
 msgid "Using this injected bean of type `RestLinksProvider`, you can get the links by type using the method `RestLinksProvider.getTypeLinks` or get the links by a concrete instance using the method `RestLinksProvider.getInstanceLinks`."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:1501
+#: upstream/_guides/resteasy-reactive.adoc:1502
 #, no-wrap
 msgid "JSON Hypertext Application Language (HAL) support"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1504
+#: upstream/_guides/resteasy-reactive.adoc:1505
 msgid "The https://tools.ietf.org/id/draft-kelly-json-hal-01.html[HAL] standard is a simple format to represent web links."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1506
+#: upstream/_guides/resteasy-reactive.adoc:1507
 msgid "To enable the HAL support, add the `quarkus-hal` extension to your project. Also, as HAL needs JSON support, you need to add either the `quarkus-resteasy-reactive-jsonb` or the `quarkus-resteasy-reactive-jackson` extension."
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1512
+#: upstream/_guides/resteasy-reactive.adoc:1513
 #, no-wrap
 msgid "`io.quarkus:quarkus-hal`"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1514
+#: upstream/_guides/resteasy-reactive.adoc:1515
 #, no-wrap
 msgid "https://tools.ietf.org/id/draft-kelly-json-hal-01.html[HAL]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1517
+#: upstream/_guides/resteasy-reactive.adoc:1518
 msgid "After adding the extensions, we can now annotate the REST resources to produce the media type `application/hal+json` (or use RestMediaType.APPLICATION_HAL_JSON). For example:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1530
+#: upstream/_guides/resteasy-reactive.adoc:1531
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -2930,7 +2935,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1540
+#: upstream/_guides/resteasy-reactive.adoc:1541
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -2945,17 +2950,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1543
+#: upstream/_guides/resteasy-reactive.adoc:1544
 msgid "Now, the endpoints `/records` and `/records/{id}` will accept the media type both `json` and `hal+json` to print the records in Hal format."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1545
+#: upstream/_guides/resteasy-reactive.adoc:1546
 msgid "For example, if we invoke the `/records` endpoint using curl to return a list of records, the HAL format will look like as follows:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1586
+#: upstream/_guides/resteasy-reactive.adoc:1587
 #, no-wrap
 msgid ""
 "& curl -H \"Accept:application/hal+json\" -i localhost:8080/records\n"
@@ -2999,12 +3004,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1589
+#: upstream/_guides/resteasy-reactive.adoc:1590
 msgid "When we call a resource `/records/1` that returns only one instance, then the output is:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1606
+#: upstream/_guides/resteasy-reactive.adoc:1607
 #, no-wrap
 msgid ""
 "& curl -H \"Accept:application/hal+json\" -i localhost:8080/records/1\n"
@@ -3024,12 +3029,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1609
+#: upstream/_guides/resteasy-reactive.adoc:1610
 msgid "Finally, you can also provide additional HAL links programmatically in your resource just by returning either `HalCollectionWrapper` (to return a list of entities) or `HalEntityWrapper` (to return a single object) as described in the following example:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1627
+#: upstream/_guides/resteasy-reactive.adoc:1628
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -3044,7 +3049,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1640
+#: upstream/_guides/resteasy-reactive.adoc:1641
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -3062,117 +3067,117 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/resteasy-reactive.adoc:1642
+#: upstream/_guides/resteasy-reactive.adoc:1643
 #, no-wrap
 msgid "CORS filter"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1647
+#: upstream/_guides/resteasy-reactive.adoc:1648
 msgid "link:https://en.wikipedia.org/wiki/Cross-origin_resource_sharing[Cross-origin resource sharing] (CORS) is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1651
+#: upstream/_guides/resteasy-reactive.adoc:1652
 msgid "Quarkus comes with a CORS filter at the HTTP layer level.  Read the xref:http-reference.adoc#cors-filter[HTTP Reference Documentation] to learn how to use it."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/resteasy-reactive.adoc:1652
+#: upstream/_guides/resteasy-reactive.adoc:1653
 #, no-wrap
 msgid "More advanced usage"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1656
+#: upstream/_guides/resteasy-reactive.adoc:1657
 msgid "Here are some more advanced topics that you may not need to know about initially, but could prove useful for more complex use cases."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:1657
+#: upstream/_guides/resteasy-reactive.adoc:1658
 #, no-wrap
 msgid "Execution model, blocking, non-blocking"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1662
+#: upstream/_guides/resteasy-reactive.adoc:1663
 msgid "RESTEasy Reactive is implemented using two main thread types:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1664
+#: upstream/_guides/resteasy-reactive.adoc:1665
 msgid "Event-loop threads: which are responsible, among other things, for reading bytes from the HTTP request and"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1665
+#: upstream/_guides/resteasy-reactive.adoc:1666
 msgid "writing bytes back to the HTTP response"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1666
+#: upstream/_guides/resteasy-reactive.adoc:1667
 msgid "Worker threads: they are pooled and can be used to offload long-running operations"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1670
+#: upstream/_guides/resteasy-reactive.adoc:1671
 msgid "The event-loop threads (also called IO threads) are responsible for actually performing all the IO operations in an asynchronous way, and to trigger any listener interested in the completion of those IO operations."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1674
+#: upstream/_guides/resteasy-reactive.adoc:1675
 msgid "By default, the thread RESTEasy Reactive will run endpoint methods on depends on the signature of the method.  If a method returns one of the following types then it is considered non-blocking, and will be run on the IO thread by default:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1676
+#: upstream/_guides/resteasy-reactive.adoc:1677
 msgid "`io.smallrye.mutiny.Uni`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1677
+#: upstream/_guides/resteasy-reactive.adoc:1678
 msgid "`io.smallrye.mutiny.Multi`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1678
+#: upstream/_guides/resteasy-reactive.adoc:1679
 msgid "`java.util.concurrent.CompletionStage`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1679
+#: upstream/_guides/resteasy-reactive.adoc:1680
 msgid "`org.reactivestreams.Publisher`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1680
+#: upstream/_guides/resteasy-reactive.adoc:1681
 msgid "Kotlin `suspended` methods"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1685
+#: upstream/_guides/resteasy-reactive.adoc:1686
 msgid "This 'best guess' approach means that the majority of operations will run on the correct thread by default. If you are writing reactive code then your method will generally return one of these types, and will be executed on the IO thread.  If you are writing blocking code your methods will usually return the result directly, and these will be run on a worker thread."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1691
+#: upstream/_guides/resteasy-reactive.adoc:1692
 msgid "You can override this behaviour using the https://javadoc.io/doc/io.smallrye.common/smallrye-common-annotation/1.5.0/io/smallrye/common/annotation/Blocking.html[`@Blocking`] and https://javadoc.io/doc/io.smallrye.common/smallrye-common-annotation/1.5.0/io/smallrye/common/annotation/NonBlocking.html[`@NonBlocking`] annotations. This can be applied at the method, class or `javax.ws.rs.core.Application` level."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1693
+#: upstream/_guides/resteasy-reactive.adoc:1694
 msgid "The example below will override the default behaviour and always run on a worker thread, even though it returns a `Uni`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1702
+#: upstream/_guides/resteasy-reactive.adoc:1703
 #, no-wrap
 msgid "import io.smallrye.common.annotation.Blocking;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1705
-#: upstream/_guides/resteasy-reactive.adoc:1733
+#: upstream/_guides/resteasy-reactive.adoc:1706
+#: upstream/_guides/resteasy-reactive.adoc:1734
 #, no-wrap
 msgid ""
 "@Path(\"yawn\")\n"
@@ -3180,7 +3185,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1714
+#: upstream/_guides/resteasy-reactive.adoc:1715
 #, no-wrap
 msgid ""
 "    @Blocking\n"
@@ -3194,18 +3199,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1719
+#: upstream/_guides/resteasy-reactive.adoc:1720
 msgid "Most of the time, there are ways to achieve the same blocking operations in an asynchronous/reactive way, using https://smallrye.io/smallrye-mutiny/[Mutiny], https://hibernate.org/reactive/[Hibernate Reactive] or any of the xref:quarkus-reactive-architecture.adoc#quarkus-extensions-enabling-reactive[Quarkus Reactive extensions] for example:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1725
+#: upstream/_guides/resteasy-reactive.adoc:1726
 #, no-wrap
 msgid "import java.time.Duration;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1741
+#: upstream/_guides/resteasy-reactive.adoc:1742
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -3218,39 +3223,39 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1746
+#: upstream/_guides/resteasy-reactive.adoc:1747
 msgid "If a method or class is annotated with `javax.transaction.Transactional` then it will also be treated as a blocking method. This is because JTA is a blocking technology, and is generally used with other blocking technology such as Hibernate and JDBC. An explicit `@Blocking` or `@NonBlocking` on the class will override this behaviour."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:1747
+#: upstream/_guides/resteasy-reactive.adoc:1748
 #, no-wrap
 msgid "Overriding the default behaviour"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1751
+#: upstream/_guides/resteasy-reactive.adoc:1752
 msgid "If you want to override the default behaviour you can annotate a `javax.ws.rs.core.Application` subclass in your application with `@Blocking` or `@NonBlocking`, and this will set the default for every method that does not have an explicit annotation."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1754
+#: upstream/_guides/resteasy-reactive.adoc:1755
 msgid "Behaviour can still be overridden on a class or method level by annotating them directly, however all endpoints without an annotation will now follow the default, no matter their method signature."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:1756
+#: upstream/_guides/resteasy-reactive.adoc:1757
 #, no-wrap
 msgid "Exception mapping"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1761
+#: upstream/_guides/resteasy-reactive.adoc:1762
 msgid "If your application needs to return non-nominal HTTP codes in error cases, the best is to throw exceptions that will result in the proper HTTP response being sent by the framework using link:{jaxrsapi}/javax/ws/rs/WebApplicationException.html[`WebApplicationException`] or any of its subtypes:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1770
+#: upstream/_guides/resteasy-reactive.adoc:1771
 #, no-wrap
 msgid ""
 "import javax.ws.rs.BadRequestException;\n"
@@ -3260,8 +3265,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1773
-#: upstream/_guides/resteasy-reactive.adoc:1835
+#: upstream/_guides/resteasy-reactive.adoc:1774
+#: upstream/_guides/resteasy-reactive.adoc:1836
 #, no-wrap
 msgid ""
 "@Path(\"cheeses/{cheese}\")\n"
@@ -3269,7 +3274,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1785
+#: upstream/_guides/resteasy-reactive.adoc:1786
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -3286,18 +3291,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1794
+#: upstream/_guides/resteasy-reactive.adoc:1795
 msgid "If your endpoint method is delegating calls to another service layer which does not know of JAX-RS, you need a way to turn service exceptions to an HTTP response, and you can do that using the link:{resteasy-reactive-api}/org/jboss/resteasy/reactive/server/ServerExceptionMapper.html[`@ServerExceptionMapper`] annotation on a method, with one parameter of the exception type you want to handle, and turning that exception into a link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/RestResponse.html[`RestResponse`] (or a link:{mutinyapi}/io/smallrye/mutiny/Uni.html[`Uni<RestResponse<?>>`]):"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1800
+#: upstream/_guides/resteasy-reactive.adoc:1801
 #, no-wrap
 msgid "import java.util.Map;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1807
+#: upstream/_guides/resteasy-reactive.adoc:1808
 #, no-wrap
 msgid ""
 "import javax.enterprise.context.ApplicationScoped;\n"
@@ -3309,8 +3314,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1810
-#: upstream/_guides/resteasy-reactive.adoc:1864
+#: upstream/_guides/resteasy-reactive.adoc:1811
+#: upstream/_guides/resteasy-reactive.adoc:1865
 #, no-wrap
 msgid ""
 "import org.jboss.resteasy.reactive.server.ServerExceptionMapper;\n"
@@ -3318,7 +3323,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1813
+#: upstream/_guides/resteasy-reactive.adoc:1814
 #, no-wrap
 msgid ""
 "class UnknownCheeseException extends RuntimeException {\n"
@@ -3326,7 +3331,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1818
+#: upstream/_guides/resteasy-reactive.adoc:1819
 #, no-wrap
 msgid ""
 "    public UnknownCheeseException(String name) {\n"
@@ -3336,7 +3341,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1824
+#: upstream/_guides/resteasy-reactive.adoc:1825
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -3347,7 +3352,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1832
+#: upstream/_guides/resteasy-reactive.adoc:1833
 #, no-wrap
 msgid ""
 "    public String findCheese(String name) {\n"
@@ -3360,7 +3365,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1838
+#: upstream/_guides/resteasy-reactive.adoc:1839
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -3368,7 +3373,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1843
+#: upstream/_guides/resteasy-reactive.adoc:1844
 #, no-wrap
 msgid ""
 "    @ServerExceptionMapper\n"
@@ -3378,7 +3383,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1852
+#: upstream/_guides/resteasy-reactive.adoc:1853
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -3392,12 +3397,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1857
+#: upstream/_guides/resteasy-reactive.adoc:1858
 msgid "exception mappers defined in REST endpoint classes will only be called if the exception is thrown in the same class. If you want to define global exception mappers, simply define them outside a REST endpoint class:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1871
+#: upstream/_guides/resteasy-reactive.adoc:1872
 #, no-wrap
 msgid ""
 "class ExceptionMappers {\n"
@@ -3409,157 +3414,157 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1874
+#: upstream/_guides/resteasy-reactive.adoc:1875
 msgid "You can also declare link:{jaxrsspec}#exceptionmapper[exception mappers in the JAX-RS way]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1876
+#: upstream/_guides/resteasy-reactive.adoc:1877
 msgid "Your exception mapper may declare any of the following parameter types:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/resteasy-reactive.adoc:1877
+#: upstream/_guides/resteasy-reactive.adoc:1878
 #, no-wrap
 msgid "Table Exception mapper parameters"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1882
+#: upstream/_guides/resteasy-reactive.adoc:1883
 #, no-wrap
 msgid "An exception type"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1884
+#: upstream/_guides/resteasy-reactive.adoc:1885
 #, no-wrap
 msgid "Defines the exception type you want to handle"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1885
-#: upstream/_guides/resteasy-reactive.adoc:1999
+#: upstream/_guides/resteasy-reactive.adoc:1886
+#: upstream/_guides/resteasy-reactive.adoc:2000
 #, no-wrap
 msgid "Any of the <<context-objects,Context objects>>"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1888
-#: upstream/_guides/resteasy-reactive.adoc:2002
+#: upstream/_guides/resteasy-reactive.adoc:1889
+#: upstream/_guides/resteasy-reactive.adoc:2003
 #, no-wrap
 msgid "link:{jaxrsapi}/javax/ws/rs/container/ContainerRequestContext.html[`ContainerRequestContext`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1890
-#: upstream/_guides/resteasy-reactive.adoc:2004
+#: upstream/_guides/resteasy-reactive.adoc:1891
+#: upstream/_guides/resteasy-reactive.adoc:2005
 #, no-wrap
 msgid "A context object to access the current request"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1893
-#: upstream/_guides/resteasy-reactive.adoc:2013
+#: upstream/_guides/resteasy-reactive.adoc:1894
+#: upstream/_guides/resteasy-reactive.adoc:2014
 msgid "It may declare any of the following return types:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/resteasy-reactive.adoc:1894
+#: upstream/_guides/resteasy-reactive.adoc:1895
 #, no-wrap
 msgid "Table Exception mapper return types"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1899
+#: upstream/_guides/resteasy-reactive.adoc:1900
 #, no-wrap
 msgid "link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/RestResponse.html[`RestResponse`] or link:{jaxrsapi}/javax/ws/rs/core/Response.html[`Response`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1901
+#: upstream/_guides/resteasy-reactive.adoc:1902
 #, no-wrap
 msgid "The response to send to the client when the exception occurs"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1902
+#: upstream/_guides/resteasy-reactive.adoc:1903
 #, no-wrap
 msgid "link:{mutinyapi}/io/smallrye/mutiny/Uni.html[`Uni<RestResponse>`] or link:{mutinyapi}/io/smallrye/mutiny/Uni.html[`Uni<Response>`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:1904
+#: upstream/_guides/resteasy-reactive.adoc:1905
 #, no-wrap
 msgid "An asynchronous response to send to the client when the exception occurs"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/resteasy-reactive.adoc:1911
+#: upstream/_guides/resteasy-reactive.adoc:1912
 msgid "When an exception occurs, RESTEasy Reactive does not log it by default (for security reasons).  This can sometimes make it hard to understand why certain exception handling code was invoked (or not invoked).  To make RESTEasy Reactive log the actual exception before an exception mapping code is run the `org.jboss.resteasy.reactive.common.core.AbstractResteasyReactiveContext` log category can be set to `DEBUG` like so:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1915
+#: upstream/_guides/resteasy-reactive.adoc:1916
 #, no-wrap
 msgid "quarkus.log.category.\"org.jboss.resteasy.reactive.common.core.AbstractResteasyReactiveContext\".level=DEBUG\n"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:1918
+#: upstream/_guides/resteasy-reactive.adoc:1919
 #, no-wrap
 msgid "Request or response filters"
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:1920
+#: upstream/_guides/resteasy-reactive.adoc:1921
 #, no-wrap
 msgid "Via annotations"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/resteasy-reactive.adoc:1923
+#: upstream/_guides/resteasy-reactive.adoc:1924
 msgid "You can declare functions which are invoked in the following phases of the request processing:"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/resteasy-reactive.adoc:1925
+#: upstream/_guides/resteasy-reactive.adoc:1926
 msgid "Before the endpoint method is identified: pre-routing request filter"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/resteasy-reactive.adoc:1926
+#: upstream/_guides/resteasy-reactive.adoc:1927
 msgid "After routing, but before the endpoint method is called: normal request filter"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/resteasy-reactive.adoc:1927
+#: upstream/_guides/resteasy-reactive.adoc:1928
 msgid "After the endpoint method is called: response filter"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/resteasy-reactive.adoc:1931
+#: upstream/_guides/resteasy-reactive.adoc:1932
 msgid "These filters allow you to do various things such as examine the request URI, HTTP method, influence routing, look or change request headers, abort the request, or modify the response."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/resteasy-reactive.adoc:1935
+#: upstream/_guides/resteasy-reactive.adoc:1936
 msgid "Request filters can be declared with the link:{resteasy-reactive-api}/org/jboss/resteasy/reactive/server/ServerRequestFilter.html[`@ServerRequestFilter`] annotation:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1939
+#: upstream/_guides/resteasy-reactive.adoc:1940
 #, no-wrap
 msgid "import java.util.Optional;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1941
+#: upstream/_guides/resteasy-reactive.adoc:1942
 #, no-wrap
 msgid "class Filters {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1949
+#: upstream/_guides/resteasy-reactive.adoc:1950
 #, no-wrap
 msgid ""
 "    @ServerRequestFilter(preMatching = true)\n"
@@ -3572,7 +3577,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1959
+#: upstream/_guides/resteasy-reactive.adoc:1960
 #, no-wrap
 msgid ""
 "    @ServerRequestFilter\n"
@@ -3587,22 +3592,22 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/resteasy-reactive.adoc:1968
+#: upstream/_guides/resteasy-reactive.adoc:1969
 msgid "Request filters are usually executed on the same thread that the method that handles the request will be executed.  That means that if the method servicing the request is annotated with `@Blocking`, then the filters will also be run on the worker thread.  If the method is annotated with `@NonBlocking` (or is not annotated at all), then the filters will also be run on the same event-loop thread."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/resteasy-reactive.adoc:1972
+#: upstream/_guides/resteasy-reactive.adoc:1973
 msgid "If however a filter needs to be run on the event-loop despite the fact that the method servicing the request will be run on a worker thread, then `@ServerRequestFilter(nonBlocking=true)` can be used.  Note however, that these filters need to be run before **any** filter that does not use that setting and would run on a worker thread."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1977
+#: upstream/_guides/resteasy-reactive.adoc:1978
 msgid "Similarly, response filters can be declared with the link:{resteasy-reactive-api}/org/jboss/resteasy/reactive/server/ServerResponseFilter.html[`@ServerResponseFilter`] annotation:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:1990
+#: upstream/_guides/resteasy-reactive.adoc:1991
 #, no-wrap
 msgid ""
 "class Filters {\n"
@@ -3618,116 +3623,116 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:1993
+#: upstream/_guides/resteasy-reactive.adoc:1994
 msgid "Your filters may declare any of the following parameter types:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/resteasy-reactive.adoc:1994
+#: upstream/_guides/resteasy-reactive.adoc:1995
 #, no-wrap
 msgid "Table Filter parameters"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:2005
+#: upstream/_guides/resteasy-reactive.adoc:2006
 #, no-wrap
 msgid "link:{jaxrsapi}/javax/ws/rs/container/ContainerResponseContext.html[`ContainerResponseContext`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:2007
+#: upstream/_guides/resteasy-reactive.adoc:2008
 #, no-wrap
 msgid "A context object to access the current response"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:2008
+#: upstream/_guides/resteasy-reactive.adoc:2009
 #, no-wrap
 msgid "link:{jdkapi}/java/lang/Throwable.html[`Throwable`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:2010
+#: upstream/_guides/resteasy-reactive.adoc:2011
 #, no-wrap
 msgid "Any thrown exception, or `null` (only for response filters)"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/resteasy-reactive.adoc:2014
+#: upstream/_guides/resteasy-reactive.adoc:2015
 #, no-wrap
 msgid "Table Filter return types"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:2019
+#: upstream/_guides/resteasy-reactive.adoc:2020
 #, no-wrap
 msgid "link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/RestResponse.html[`RestResponse<?>`] or link:{jaxrsapi}/javax/ws/rs/core/Response.html[`Response`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:2021
+#: upstream/_guides/resteasy-reactive.adoc:2022
 #, no-wrap
 msgid "The response to send to the client instead of continuing the filter chain, or `null` if the filter chain should proceed"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:2022
+#: upstream/_guides/resteasy-reactive.adoc:2023
 #, no-wrap
 msgid "link:{jdkapi}/java/util/Optional.html[`Optional<RestResponse<?>>`] or link:{jdkapi}/java/util/Optional.html[`Optional<Response>`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:2024
+#: upstream/_guides/resteasy-reactive.adoc:2025
 #, no-wrap
 msgid "An optional response to send to the client instead of continuing the filter chain, or an empty value if the filter chain should proceed"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:2025
+#: upstream/_guides/resteasy-reactive.adoc:2026
 #, no-wrap
 msgid "link:{mutinyapi}/io/smallrye/mutiny/Uni.html[`Uni<RestResponse<?>>`] or link:{mutinyapi}/io/smallrye/mutiny/Uni.html[`Uni<Response>`]"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/resteasy-reactive.adoc:2027
+#: upstream/_guides/resteasy-reactive.adoc:2028
 #, no-wrap
 msgid "An asynchronous response to send to the client instead of continuing the filter chain, or `null` if the filter chain should proceed"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2030
+#: upstream/_guides/resteasy-reactive.adoc:2031
 msgid "You can restrict the Resource methods for which a filter runs, by using link:{jaxrsapi}/javax/ws/rs/NameBinding.html[`@NameBinding`] meta-annotations."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:2031
+#: upstream/_guides/resteasy-reactive.adoc:2032
 #, no-wrap
 msgid "The JAX-RS way"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2034
+#: upstream/_guides/resteasy-reactive.adoc:2035
 msgid "You can also link:{jaxrsspec}#filters[declare request and response filters in the JAX-RS way]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2039
+#: upstream/_guides/resteasy-reactive.adoc:2040
 msgid "Both HTTP request and response can be intercepted by providing `ContainerRequestFilter` or `ContainerResponseFilter` implementations respectively. These filters are suitable for processing the metadata associated with a message: HTTP headers, query parameters, media type, and other metadata. They also have the capability to abort the request processing, for instance when the user does not have the permissions to access the endpoint."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2042
+#: upstream/_guides/resteasy-reactive.adoc:2043
 msgid "Let's use `ContainerRequestFilter` to add logging capability to our service. We can do that by implementing `ContainerRequestFilter` and annotating it with the `@Provider` annotation:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2046
+#: upstream/_guides/resteasy-reactive.adoc:2047
 #, no-wrap
 msgid "package org.acme.rest.json;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2049
+#: upstream/_guides/resteasy-reactive.adoc:2050
 #, no-wrap
 msgid ""
 "import io.vertx.core.http.HttpServerRequest;\n"
@@ -3735,7 +3740,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2055
+#: upstream/_guides/resteasy-reactive.adoc:2056
 #, no-wrap
 msgid ""
 "import javax.ws.rs.container.ContainerRequestContext;\n"
@@ -3746,7 +3751,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2058
+#: upstream/_guides/resteasy-reactive.adoc:2059
 #, no-wrap
 msgid ""
 "@Provider\n"
@@ -3754,13 +3759,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2060
+#: upstream/_guides/resteasy-reactive.adoc:2061
 #, no-wrap
 msgid "    private static final Logger LOG = Logger.getLogger(LoggingFilter.class);\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2063
+#: upstream/_guides/resteasy-reactive.adoc:2064
 #, no-wrap
 msgid ""
 "    @Context\n"
@@ -3768,7 +3773,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2066
+#: upstream/_guides/resteasy-reactive.adoc:2067
 #, no-wrap
 msgid ""
 "    @Context\n"
@@ -3776,7 +3781,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2069
+#: upstream/_guides/resteasy-reactive.adoc:2070
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -3784,7 +3789,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2073
+#: upstream/_guides/resteasy-reactive.adoc:2074
 #, no-wrap
 msgid ""
 "        final String method = context.getMethod();\n"
@@ -3793,7 +3798,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2077
+#: upstream/_guides/resteasy-reactive.adoc:2078
 #, no-wrap
 msgid ""
 "        LOG.infof(\"Request %s %s from IP %s\", method, path, address);\n"
@@ -3802,12 +3807,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2080
+#: upstream/_guides/resteasy-reactive.adoc:2081
 msgid "Now, whenever a REST method is invoked, the request will be logged into the console:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2087
+#: upstream/_guides/resteasy-reactive.adoc:2088
 #, no-wrap
 msgid ""
 "2019-06-05 12:44:26,526 INFO  [org.acm.res.jso.LoggingFilter] (executor-thread-1) Request GET /legumes from IP 127.0.0.1\n"
@@ -3817,34 +3822,34 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:2089
+#: upstream/_guides/resteasy-reactive.adoc:2090
 #, no-wrap
 msgid "Readers and Writers: mapping entities and HTTP bodies"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2097
+#: upstream/_guides/resteasy-reactive.adoc:2098
 msgid "Whenever your endpoint methods return an object (of when they return a link:{resteasy-reactive-common-api}/org/jboss/resteasy/reactive/RestResponse.html[`RestResponse<?>`] or link:{jaxrsapi}/javax/ws/rs/core/Response.html[`Response`] with an entity), RESTEasy Reactive will look for a way to map that into an HTTP response body."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2100
+#: upstream/_guides/resteasy-reactive.adoc:2101
 msgid "Similarly, whenever your endpoint method takes an object as parameter, we will look for a way to map the HTTP request body into that object."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2105
+#: upstream/_guides/resteasy-reactive.adoc:2106
 msgid "This is done via a pluggable system of link:{jaxrsapi}/javax/ws/rs/ext/MessageBodyReader.html[`MessageBodyReader`] and link:{jaxrsapi}/javax/ws/rs/ext/MessageBodyWriter.html[`MessageBodyWriter`] interfaces, which are responsible for defining which Java type they map from/to, for which media types, and how they turn HTTP bodies to/from Java instances of that type."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2107
+#: upstream/_guides/resteasy-reactive.adoc:2108
 msgid "For example, if we have our own `Cheese` type on our endpoint:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2115
-#: upstream/_guides/resteasy-reactive.adoc:2267
+#: upstream/_guides/resteasy-reactive.adoc:2116
+#: upstream/_guides/resteasy-reactive.adoc:2268
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -3853,7 +3858,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2118
+#: upstream/_guides/resteasy-reactive.adoc:2119
 #, no-wrap
 msgid ""
 "class Cheese {\n"
@@ -3861,7 +3866,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2123
+#: upstream/_guides/resteasy-reactive.adoc:2124
 #, no-wrap
 msgid ""
 "    public Cheese(String name) {\n"
@@ -3871,8 +3876,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2126
-#: upstream/_guides/resteasy-reactive.adoc:2270
+#: upstream/_guides/resteasy-reactive.adoc:2127
+#: upstream/_guides/resteasy-reactive.adoc:2271
 #, no-wrap
 msgid ""
 "@Path(\"cheese\")\n"
@@ -3880,7 +3885,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2131
+#: upstream/_guides/resteasy-reactive.adoc:2132
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -3890,7 +3895,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2137
+#: upstream/_guides/resteasy-reactive.adoc:2138
 #, no-wrap
 msgid ""
 "    @PUT\n"
@@ -3901,13 +3906,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2141
+#: upstream/_guides/resteasy-reactive.adoc:2142
 msgid "Then we can define how to read and write it with our body reader/writers, annotated with link:{jaxrsapi}/javax/ws/rs/ext/Provider.html[`@Provider`]:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2152
-#: upstream/_guides/resteasy-reactive.adoc:2216
+#: upstream/_guides/resteasy-reactive.adoc:2153
+#: upstream/_guides/resteasy-reactive.adoc:2217
 #, no-wrap
 msgid ""
 "import java.io.IOException;\n"
@@ -3919,7 +3924,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2159
+#: upstream/_guides/resteasy-reactive.adoc:2160
 #, no-wrap
 msgid ""
 "import javax.ws.rs.WebApplicationException;\n"
@@ -3931,7 +3936,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2163
+#: upstream/_guides/resteasy-reactive.adoc:2164
 #, no-wrap
 msgid ""
 "@Provider\n"
@@ -3940,7 +3945,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2169
+#: upstream/_guides/resteasy-reactive.adoc:2170
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -3951,7 +3956,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2179
+#: upstream/_guides/resteasy-reactive.adoc:2180
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -3966,7 +3971,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2185
+#: upstream/_guides/resteasy-reactive.adoc:2186
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -3977,7 +3982,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2197
+#: upstream/_guides/resteasy-reactive.adoc:2198
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -3994,12 +3999,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2205
+#: upstream/_guides/resteasy-reactive.adoc:2206
 msgid "If you want to get the most performance our of your writer, you can extend the link:{resteasy-reactive-api}/org/jboss/resteasy/reactive/server/spi/ServerMessageBodyWriter.html[`ServerMessageBodyWriter`] instead of link:{jaxrsapi}/javax/ws/rs/ext/MessageBodyWriter.html[`MessageBodyWriter`] where you will be able to use less reflection and bypass the blocking IO layer:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2222
+#: upstream/_guides/resteasy-reactive.adoc:2223
 #, no-wrap
 msgid ""
 "import javax.ws.rs.WebApplicationException;\n"
@@ -4010,7 +4015,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2226
+#: upstream/_guides/resteasy-reactive.adoc:2227
 #, no-wrap
 msgid ""
 "import org.jboss.resteasy.reactive.server.spi.ResteasyReactiveResourceInfo;\n"
@@ -4019,7 +4024,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2230
+#: upstream/_guides/resteasy-reactive.adoc:2231
 #, no-wrap
 msgid ""
 "@Provider\n"
@@ -4028,13 +4033,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2232
+#: upstream/_guides/resteasy-reactive.adoc:2233
 #, no-wrap
 msgid "    // …\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2238
+#: upstream/_guides/resteasy-reactive.adoc:2239
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -4045,7 +4050,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2245
+#: upstream/_guides/resteasy-reactive.adoc:2246
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -4057,28 +4062,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2250
+#: upstream/_guides/resteasy-reactive.adoc:2251
 msgid "You can restrict which content-types your reader/writer apply to by adding link:{jaxrsapi}/javax/ws/rs/Consumes.html[`Consumes`]/link:{jaxrsapi}/javax/ws/rs/Produces.html[`Produces`] annotations on your provider class."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:2251
+#: upstream/_guides/resteasy-reactive.adoc:2252
 #, no-wrap
 msgid "Reader and Writer interceptors"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2257
+#: upstream/_guides/resteasy-reactive.adoc:2258
 msgid "Just as you can intercept requests and responses, you can also intercept readers and writers, by extending the link:{jaxrsapi}/javax/ws/rs/ext/ReaderInterceptor.html[`ReaderInterceptor`] or link:{jaxrsapi}/javax/ws/rs/ext/WriterInterceptor.html[`WriterInterceptor`] on a class annotated with link:{jaxrsapi}/javax/ws/rs/ext/Provider.html[`@Provider`]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2259
+#: upstream/_guides/resteasy-reactive.adoc:2260
 msgid "If we look at this endpoint:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2275
+#: upstream/_guides/resteasy-reactive.adoc:2276
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -4088,7 +4093,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2281
+#: upstream/_guides/resteasy-reactive.adoc:2282
 #, no-wrap
 msgid ""
 "    @PUT\n"
@@ -4099,18 +4104,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2284
+#: upstream/_guides/resteasy-reactive.adoc:2285
 msgid "We can add reader and writer interceptors like this:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2290
+#: upstream/_guides/resteasy-reactive.adoc:2291
 #, no-wrap
 msgid "import java.io.IOException;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2297
+#: upstream/_guides/resteasy-reactive.adoc:2298
 #, no-wrap
 msgid ""
 "import javax.ws.rs.WebApplicationException;\n"
@@ -4122,7 +4127,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2300
+#: upstream/_guides/resteasy-reactive.adoc:2301
 #, no-wrap
 msgid ""
 "@Provider\n"
@@ -4130,7 +4135,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2308
+#: upstream/_guides/resteasy-reactive.adoc:2309
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -4143,7 +4148,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2318
+#: upstream/_guides/resteasy-reactive.adoc:2319
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -4158,79 +4163,79 @@ msgid ""
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:2320
+#: upstream/_guides/resteasy-reactive.adoc:2321
 #, no-wrap
 msgid "RESTEasy Reactive and REST Client Reactive interactions"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2324
+#: upstream/_guides/resteasy-reactive.adoc:2325
 msgid "In Quarkus, the RESTEasy Reactive extension and xref:rest-client-reactive.adoc[the REST Client Reactive extension] share the same infrastructure.  One important consequence of this consideration is that they share the same list of providers (in the JAX-RS meaning of the word)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2327
+#: upstream/_guides/resteasy-reactive.adoc:2328
 msgid "For instance, if you declare a `WriterInterceptor`, it will by default intercept both the servers calls and the client calls, which might not be the desired behavior."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2329
+#: upstream/_guides/resteasy-reactive.adoc:2330
 msgid "However, you can change this default behavior and constrain a provider to:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2331
+#: upstream/_guides/resteasy-reactive.adoc:2332
 msgid "only consider *server* calls by adding the `@ConstrainedTo(RuntimeType.SERVER)` annotation to your provider;"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2332
+#: upstream/_guides/resteasy-reactive.adoc:2333
 msgid "only consider *client* calls by adding the `@ConstrainedTo(RuntimeType.CLIENT)` annotation to your provider."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:2333
+#: upstream/_guides/resteasy-reactive.adoc:2334
 #, no-wrap
 msgid "Parameter mapping"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2337
+#: upstream/_guides/resteasy-reactive.adoc:2338
 msgid "All <<request-parameters,Request Parameters>> can be declared as link:{jdkapi}/java/lang/String.html[`String`], but also any of the following types:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2340
+#: upstream/_guides/resteasy-reactive.adoc:2341
 msgid "Types for which a link:{jaxrsapi}/javax/ws/rs/ext/ParamConverter.html[`ParamConverter`] is available via a registered link:{jaxrsapi}/javax/ws/rs/ext/ParamConverterProvider.html[`ParamConverterProvider`]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2341
+#: upstream/_guides/resteasy-reactive.adoc:2342
 msgid "Primitive types."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2342
+#: upstream/_guides/resteasy-reactive.adoc:2343
 msgid "Types that have a constructor that accepts a single link:{jdkapi}/java/lang/String.html[`String`] argument."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2345
+#: upstream/_guides/resteasy-reactive.adoc:2346
 msgid "Types that have a static method named `valueOf` or `fromString` with a single link:{jdkapi}/java/lang/String.html[`String`] argument that return an instance of the type. If both methods are present then `valueOf` will be used unless the type is an `enum` in which case `fromString` will be used."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2347
+#: upstream/_guides/resteasy-reactive.adoc:2348
 msgid "link:{jdkapi}/java/util/List.html[`List<T>`], link:{jdkapi}/java/util/Set.html[`Set<T>`], or link:{jdkapi}/java/util/SortedSet.html[`SortedSet<T>`], where `T` satisfies any above criterion."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2349
+#: upstream/_guides/resteasy-reactive.adoc:2350
 msgid "The following example illustrates all those possibilities:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2357
+#: upstream/_guides/resteasy-reactive.adoc:2358
 #, no-wrap
 msgid ""
 "import java.lang.annotation.Annotation;\n"
@@ -4239,7 +4244,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2363
+#: upstream/_guides/resteasy-reactive.adoc:2364
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -4250,13 +4255,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2365
+#: upstream/_guides/resteasy-reactive.adoc:2366
 #, no-wrap
 msgid "import org.jboss.resteasy.reactive.RestQuery;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2368
+#: upstream/_guides/resteasy-reactive.adoc:2369
 #, no-wrap
 msgid ""
 "@Provider\n"
@@ -4264,7 +4269,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2378
+#: upstream/_guides/resteasy-reactive.adoc:2379
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -4279,7 +4284,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2383
+#: upstream/_guides/resteasy-reactive.adoc:2384
 #, no-wrap
 msgid ""
 "// this is my custom converter\n"
@@ -4287,7 +4292,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2388
+#: upstream/_guides/resteasy-reactive.adoc:2389
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -4297,7 +4302,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2393
+#: upstream/_guides/resteasy-reactive.adoc:2394
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -4307,7 +4312,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2403
+#: upstream/_guides/resteasy-reactive.adoc:2404
 #, no-wrap
 msgid ""
 "// this uses a converter\n"
@@ -4320,7 +4325,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2411
+#: upstream/_guides/resteasy-reactive.adoc:2412
 #, no-wrap
 msgid ""
 "class Constructor {\n"
@@ -4333,7 +4338,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2422
+#: upstream/_guides/resteasy-reactive.adoc:2423
 #, no-wrap
 msgid ""
 "class ValueOf {\n"
@@ -4349,7 +4354,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2435
+#: upstream/_guides/resteasy-reactive.adoc:2436
 #, no-wrap
 msgid ""
 "    @Path(\"{converter}/{constructor}/{primitive}/{valueOf}\")\n"
@@ -4364,44 +4369,44 @@ msgid ""
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/resteasy-reactive.adoc:2437
+#: upstream/_guides/resteasy-reactive.adoc:2438
 #, no-wrap
 msgid "Handling dates"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2441
+#: upstream/_guides/resteasy-reactive.adoc:2442
 msgid "RESTEasy Reactive supports the use of the implementations of `java.time.Temporal` (like `java.time.LocalDateTime`) as query, path or form params. Furthermore, it provides the `@org.jboss.resteasy.reactive.DateFormat` annotation which can be used to set a custom expected pattern (otherwise the JDK's default format for each type is used implicitly)."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:2442
+#: upstream/_guides/resteasy-reactive.adoc:2443
 #, no-wrap
 msgid "Preconditions"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2446
+#: upstream/_guides/resteasy-reactive.adoc:2447
 msgid "https://tools.ietf.org/html/rfc7232[HTTP allows requests to be conditional], based on a number of conditions, such as:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2448
+#: upstream/_guides/resteasy-reactive.adoc:2449
 msgid "Date of last resource modification"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2449
+#: upstream/_guides/resteasy-reactive.adoc:2450
 msgid "A resource tag, similar to a hash code of the resource to designate its state or version"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2452
+#: upstream/_guides/resteasy-reactive.adoc:2453
 msgid "Let's see how you can do conditional request validation using the link:{jaxrsapi}/javax/ws/rs/core/Request.html[`Request`] context object:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2461
+#: upstream/_guides/resteasy-reactive.adoc:2462
 #, no-wrap
 msgid ""
 "import java.time.Instant;\n"
@@ -4411,7 +4416,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2469
+#: upstream/_guides/resteasy-reactive.adoc:2470
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -4424,7 +4429,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2472
+#: upstream/_guides/resteasy-reactive.adoc:2473
 #, no-wrap
 msgid ""
 "@Path(\"conditional\")\n"
@@ -4432,7 +4437,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2479
+#: upstream/_guides/resteasy-reactive.adoc:2480
 #, no-wrap
 msgid ""
 "    // It's important to keep our date on seconds because that's how it's sent to the\n"
@@ -4444,7 +4449,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2492
+#: upstream/_guides/resteasy-reactive.adoc:2493
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -4462,7 +4467,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2510
+#: upstream/_guides/resteasy-reactive.adoc:2511
 #, no-wrap
 msgid ""
 "    @PUT\n"
@@ -4485,12 +4490,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2513
+#: upstream/_guides/resteasy-reactive.adoc:2514
 msgid "When we call `GET /conditional` the first time, we will get this response:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2521
+#: upstream/_guides/resteasy-reactive.adoc:2522
 #, no-wrap
 msgid ""
 "HTTP/1.1 200 OK\n"
@@ -4501,18 +4506,18 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2523
+#: upstream/_guides/resteasy-reactive.adoc:2524
 #, no-wrap
 msgid "Some resource\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2526
+#: upstream/_guides/resteasy-reactive.adoc:2527
 msgid "So now if we want to check if we need to fetch a new version, we can make the following request:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2532
+#: upstream/_guides/resteasy-reactive.adoc:2533
 #, no-wrap
 msgid ""
 "GET /conditional HTTP/1.1\n"
@@ -4521,23 +4526,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2535
+#: upstream/_guides/resteasy-reactive.adoc:2536
 msgid "And we would get the following response:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2539
+#: upstream/_guides/resteasy-reactive.adoc:2540
 #, no-wrap
 msgid "HTTP/1.1 304 Not Modified\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2545
+#: upstream/_guides/resteasy-reactive.adoc:2546
 msgid "Because the resource has not been modified since that date. This saves on sending the resource, but can also help your users detect concurrent modification, for example, let's suppose that one client wants to update the resource, but another user has modified it since. You can follow the previous `GET` request with this update:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2554
+#: upstream/_guides/resteasy-reactive.adoc:2555
 #, no-wrap
 msgid ""
 "PUT /conditional HTTP/1.1\n"
@@ -4549,18 +4554,18 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2556
+#: upstream/_guides/resteasy-reactive.adoc:2557
 #, no-wrap
 msgid "newstuff\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2560
+#: upstream/_guides/resteasy-reactive.adoc:2561
 msgid "And if some other user has modified the resource between your `GET` and your `PUT` you would get this answer back:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2566
+#: upstream/_guides/resteasy-reactive.adoc:2567
 #, no-wrap
 msgid ""
 "HTTP/1.1 412 Precondition Failed\n"
@@ -4569,23 +4574,23 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:2568
+#: upstream/_guides/resteasy-reactive.adoc:2569
 #, no-wrap
 msgid "Negotiation"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2575
+#: upstream/_guides/resteasy-reactive.adoc:2576
 msgid "One of the main ideas of REST (https://tools.ietf.org/html/rfc7231#section-3.4[and HTTP]) is that your resource is independent of its representation, and that both the client and server are free to represent their resources in as many media types as they want. This allows the server to declare support for multiple representations and let the client declare which ones it supports and get served something appropriate."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2577
+#: upstream/_guides/resteasy-reactive.adoc:2578
 msgid "The following endpoint supports serving cheese in plain text or JSON:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2588
+#: upstream/_guides/resteasy-reactive.adoc:2589
 #, no-wrap
 msgid ""
 "import javax.ws.rs.Consumes;\n"
@@ -4597,13 +4602,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2590
+#: upstream/_guides/resteasy-reactive.adoc:2591
 #, no-wrap
 msgid "import com.fasterxml.jackson.annotation.JsonCreator;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2602
+#: upstream/_guides/resteasy-reactive.adoc:2603
 #, no-wrap
 msgid ""
 "class Cheese {\n"
@@ -4620,7 +4625,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2605
+#: upstream/_guides/resteasy-reactive.adoc:2606
 #, no-wrap
 msgid ""
 "@Path(\"negotiated\")\n"
@@ -4628,7 +4633,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2611
+#: upstream/_guides/resteasy-reactive.adoc:2612
 #, no-wrap
 msgid ""
 "    @Produces({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})\n"
@@ -4639,7 +4644,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2617
+#: upstream/_guides/resteasy-reactive.adoc:2618
 #, no-wrap
 msgid ""
 "    @Consumes(MediaType.TEXT_PLAIN)\n"
@@ -4650,7 +4655,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2624
+#: upstream/_guides/resteasy-reactive.adoc:2625
 #, no-wrap
 msgid ""
 "    @Consumes(MediaType.APPLICATION_JSON)\n"
@@ -4662,12 +4667,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2628
+#: upstream/_guides/resteasy-reactive.adoc:2629
 msgid "The user will be able to select which representation it gets with the link:{httpspec}#section-5.3.2[`Accept`] header, in the case of JSON:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2634
+#: upstream/_guides/resteasy-reactive.adoc:2635
 #, no-wrap
 msgid ""
 "> GET /negotiated HTTP/1.1\n"
@@ -4676,7 +4681,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2640
+#: upstream/_guides/resteasy-reactive.adoc:2641
 #, no-wrap
 msgid ""
 "< HTTP/1.1 200 OK\n"
@@ -4687,12 +4692,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2643
+#: upstream/_guides/resteasy-reactive.adoc:2644
 msgid "And for text:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2655
+#: upstream/_guides/resteasy-reactive.adoc:2656
 #, no-wrap
 msgid ""
 "> GET /negotiated HTTP/1.1\n"
@@ -4707,12 +4712,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2658
+#: upstream/_guides/resteasy-reactive.adoc:2659
 msgid "Similarly, you can `PUT` two different representations. JSON:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2667
+#: upstream/_guides/resteasy-reactive.adoc:2668
 #, no-wrap
 msgid ""
 "> PUT /negotiated HTTP/1.1\n"
@@ -4724,7 +4729,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2673
+#: upstream/_guides/resteasy-reactive.adoc:2674
 #, no-wrap
 msgid ""
 "< HTTP/1.1 200 OK\n"
@@ -4735,12 +4740,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2676
+#: upstream/_guides/resteasy-reactive.adoc:2677
 msgid "Or plain text:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2685
+#: upstream/_guides/resteasy-reactive.adoc:2686
 #, no-wrap
 msgid ""
 "> PUT /negotiated HTTP/1.1\n"
@@ -4752,7 +4757,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2691
+#: upstream/_guides/resteasy-reactive.adoc:2692
 #, no-wrap
 msgid ""
 "< HTTP/1.1 200 OK\n"
@@ -4763,80 +4768,80 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:2693
+#: upstream/_guides/resteasy-reactive.adoc:2694
 #, no-wrap
 msgid "HTTP Compression"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2697
+#: upstream/_guides/resteasy-reactive.adoc:2698
 msgid "The body of an HTTP response is not compressed by default.  You can enable the HTTP compression support by means of `quarkus.http.enable-compression=true`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2699
+#: upstream/_guides/resteasy-reactive.adoc:2700
 msgid "If compression support is enabled then the response body is compressed if:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2701
+#: upstream/_guides/resteasy-reactive.adoc:2702
 msgid "the resource method is annotated with `@io.quarkus.vertx.http.Compressed`, or"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2702
+#: upstream/_guides/resteasy-reactive.adoc:2703
 msgid "the `Content-Type` header is set and the value is a compressed media type as configured via `quarkus.http.compress-media-types`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2704
+#: upstream/_guides/resteasy-reactive.adoc:2705
 msgid "The response body is never compressed if:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2706
+#: upstream/_guides/resteasy-reactive.adoc:2707
 msgid "the resource method is annotated with `@io.quarkus.vertx.http.Uncompressed`, or"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2707
+#: upstream/_guides/resteasy-reactive.adoc:2708
 msgid "the `Content-Type` header is not set."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2709
+#: upstream/_guides/resteasy-reactive.adoc:2710
 msgid "By default, the following list of media types is compressed: `text/html`, `text/plain`, `text/xml`, `text/css`, `text/javascript` and `application/javascript`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2711
+#: upstream/_guides/resteasy-reactive.adoc:2712
 msgid "If the client does not support HTTP compression then the response body is not compressed."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/resteasy-reactive.adoc:2713
+#: upstream/_guides/resteasy-reactive.adoc:2714
 #, no-wrap
 msgid "Include/Exclude JAX-RS classes"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:2715
+#: upstream/_guides/resteasy-reactive.adoc:2716
 #, no-wrap
 msgid "Using Build time conditions"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2719
+#: upstream/_guides/resteasy-reactive.adoc:2720
 msgid "Quarkus enables the inclusion or exclusion of JAX-RS Resources, Providers and Features directly thanks to build time conditions in the same that it does for CDI beans.  Thus, the various JAX-RS classes can be annotated with profile conditions (`@io.quarkus.arc.profile.IfBuildProfile` or `@io.quarkus.arc.profile.UnlessBuildProfile`) and/or with property conditions (`io.quarkus.arc.properties.IfBuildProperty` or `io.quarkus.arc.properties.UnlessBuildProperty`) to indicate to Quarkus at build time under which conditions these JAX-RS classes should be included."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2721
+#: upstream/_guides/resteasy-reactive.adoc:2722
 msgid "In the following example, Quarkus includes the `ResourceForApp1Only` Resource class if and only if the build profile `app1` has been enabled."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2726
+#: upstream/_guides/resteasy-reactive.adoc:2727
 #, no-wrap
 msgid ""
 "@IfBuildProfile(\"app1\")\n"
@@ -4844,8 +4849,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2733
-#: upstream/_guides/resteasy-reactive.adoc:2754
+#: upstream/_guides/resteasy-reactive.adoc:2734
+#: upstream/_guides/resteasy-reactive.adoc:2755
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -4857,28 +4862,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2736
+#: upstream/_guides/resteasy-reactive.adoc:2737
 msgid "Please note that if a JAX-RS Application has been detected and the method `getClasses()` and/or `getSingletons()` has/have been overridden, Quarkus will ignore the build time conditions and consider only what has been defined in the JAX-RS Application."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/resteasy-reactive.adoc:2737
+#: upstream/_guides/resteasy-reactive.adoc:2738
 #, no-wrap
 msgid "Using a runtime property"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2740
+#: upstream/_guides/resteasy-reactive.adoc:2741
 msgid "Quarkus can also conditionally disable JAX-RS Resources based on the value of runtime properties using the `@io.quarkus.resteasy.reactive.server.EndpointDisabled` annotation."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2742
+#: upstream/_guides/resteasy-reactive.adoc:2743
 msgid "In the following example, Quarkus will exclude `RuntimeResource` at runtime if the application has `some.property` configured to `\"disable\"`."
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/resteasy-reactive.adoc:2747
+#: upstream/_guides/resteasy-reactive.adoc:2748
 #, no-wrap
 msgid ""
 "@EndpointDisabled(name = \"some.property\", stringValue = \"disable\")\n"
@@ -4886,22 +4891,22 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/resteasy-reactive.adoc:2757
+#: upstream/_guides/resteasy-reactive.adoc:2758
 #, no-wrap
 msgid "RESTEasy Reactive client"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2760
+#: upstream/_guides/resteasy-reactive.adoc:2761
 msgid "In addition to the Server side, RESTEasy Reactive comes with a new MicroProfile REST Client implementation that is non-blocking at its core."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2762
+#: upstream/_guides/resteasy-reactive.adoc:2763
 msgid "Please note that the `quarkus-rest-client` extension may not be used with RESTEasy Reactive, use `quarkus-rest-client-reactive` instead."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/resteasy-reactive.adoc:2763
+#: upstream/_guides/resteasy-reactive.adoc:2764
 msgid "See the xref:rest-client-reactive.adoc[REST Client Reactive Guide] for more information about the reactive REST client."
 msgstr ""
