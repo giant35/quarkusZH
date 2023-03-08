@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-06 01:29+0000\n"
+"POT-Creation-Date: 2023-03-08 01:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,7 +111,9 @@ msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started.adoc:49
-msgid "We recommend that you follow the instructions from <<bootstrapping-the-project,Bootstrapping project>> and onwards to create the application step by step."
+#, fuzzy
+#| msgid "We recommend that you follow the instructions from <<bootstrapping-the-project,Bootstrapping project>> and onwards to create the application step by step."
+msgid "We recommend that you follow the instructions from xref:bootstrapping-the-project[Bootstrapping project] and onwards to create the application step by step."
 msgstr "建议您按照后续说明从  <<bootstrapping-the-project,Bootstrapping project>>  逐步创建应用程序。"
 
 #. type: Plain text
@@ -153,7 +155,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started.adoc:73
-msgid "For Windows users"
+msgid "For Windows users:"
 msgstr ""
 
 #. type: Plain text
