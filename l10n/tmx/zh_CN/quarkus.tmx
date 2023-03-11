@@ -742,14 +742,6 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Your help is more than welcome! Don’t hesitate to join the crowd.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>欢迎你的帮助！来吧不要犹豫。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Join the Quarkus Community</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -770,6 +762,14 @@
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>任何贡献都是有价值的。比如提交一个 bug 、写个示例代码、功能提议、文档修正或只是反馈。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Your help is more than welcome! Don’t hesitate to join the crowd.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>欢迎你的帮助！来吧不要犹豫。</seg>
       </tuv>
     </tu>
     <tu>
