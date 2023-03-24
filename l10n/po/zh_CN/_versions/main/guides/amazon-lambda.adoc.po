@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-03-08 01:37+0000\n"
+"POT-Creation-Date: 2023-03-24 01:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/amazon-lambda.adoc:29
-msgid "For Gradle projects please <<gradle,see below>>, or for further reference consult the guide in the xref:gradle-tooling.adoc[Gradle setup page]."
+msgid "For Gradle projects please xref:gradle[see below], or for further reference consult the guide in the xref:gradle-tooling.adoc[Gradle setup page]."
 msgstr ""
 
 #. type: Title ==
@@ -796,7 +796,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/amazon-lambda.adoc:462
-msgid "You must also force your AWS service client for SQS, SNS, S3 et al., to use the URL Connection client, which connects to AWS services over HTTPS, hence the inclusion of the SSL enabled property, as described in the xref:https[] section above."
+msgid "You must also force your AWS service client for SQS, SNS, S3 et al., to use the URL Connection client, which connects to AWS services over HTTPS, hence the inclusion of the SSL enabled property, as described in the xref:https[Using HTTPS or SSL/TLS] section above."
 msgstr ""
 
 #. type: delimited block -
