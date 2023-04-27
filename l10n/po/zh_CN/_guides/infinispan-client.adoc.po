@@ -34,7 +34,7 @@ msgstr ""
 #: upstream/_guides/infinispan-client.adoc:13
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:17
@@ -45,7 +45,7 @@ msgstr ""
 #: upstream/_guides/infinispan-client.adoc:18
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:22
