@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-12-15 01:26+0000\n"
+"POT-Creation-Date: 2023-04-27 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,7 +163,7 @@ msgstr ""
 #: upstream/_guides/config-extending-support.adoc:76
 #: upstream/_guides/config-extending-support.adoc:149
 #: upstream/_guides/config-extending-support.adoc:222
-#: upstream/_guides/config-extending-support.adoc:394
+#: upstream/_guides/config-extending-support.adoc:396
 msgid "And registration in:"
 msgstr ""
 
@@ -562,14 +562,14 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/config-extending-support.adoc:304
-msgid "The `javax.annotation.Priority` annotation overrides the `Converter` priority and change converters precedence to fine tune the execution order. By default, if no `@Priority` is specified by the `Converter`, the converter is registered with a priority of `100`. Consider:"
+msgid "The `jakarta.annotation.Priority` annotation overrides the `Converter` priority and change converters precedence to fine tune the execution order. By default, if no `@Priority` is specified by the `Converter`, the converter is registered with a priority of `100`. Consider:"
 msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/config-extending-support.adoc:311
 #, no-wrap
 msgid ""
-"import javax.annotation.Priority;\n"
+"import jakarta.annotation.Priority;\n"
 "import org.eclipse.microprofile.config.spi.Converter;\n"
 msgstr ""
 
@@ -665,11 +665,17 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/config-extending-support.adoc:372
 #, no-wrap
-msgid "import javax.annotation.Priority;\n"
+msgid "import static io.smallrye.config.SecretKeys.doLocked;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-extending-support.adoc:375
+#: upstream/_guides/config-extending-support.adoc:374
+#, no-wrap
+msgid "import jakarta.annotation.Priority;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/config-extending-support.adoc:377
 #, no-wrap
 msgid ""
 "import io.smallrye.config.ConfigSourceInterceptor;\n"
@@ -677,7 +683,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-extending-support.adoc:379
+#: upstream/_guides/config-extending-support.adoc:381
 #, no-wrap
 msgid ""
 "@Priority(Priorities.LIBRARY + 200)\n"
@@ -686,7 +692,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-extending-support.adoc:391
+#: upstream/_guides/config-extending-support.adoc:393
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -703,18 +709,18 @@ msgid ""
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/config-extending-support.adoc:395
+#: upstream/_guides/config-extending-support.adoc:397
 #, no-wrap
 msgid "META-INF/services/io.smallrye.config.ConfigSourceInterceptor"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/config-extending-support.adoc:399
+#: upstream/_guides/config-extending-support.adoc:401
 #, no-wrap
 msgid "org.acme.config.LoggingConfigSourceInterceptor\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/config-extending-support.adoc:402
+#: upstream/_guides/config-extending-support.adoc:404
 msgid "The `LoggingConfigSourceInterceptor` logs looks up configuration names in the provided logging platform. The log information includes config name and value, the config source origin and location if exists."
 msgstr ""

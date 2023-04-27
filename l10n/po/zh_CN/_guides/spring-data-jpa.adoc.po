@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-20 02:13+0000\n"
+"POT-Creation-Date: 2023-04-27 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,9 +142,9 @@ msgstr ""
 #: upstream/_guides/spring-data-jpa.adoc:73
 #, no-wrap
 msgid ""
-"import javax.persistence.Entity;\n"
-"import javax.persistence.GeneratedValue;\n"
-"import javax.persistence.Id;\n"
+"import jakarta.persistence.Entity;\n"
+"import jakarta.persistence.GeneratedValue;\n"
+"import jakarta.persistence.Id;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -367,23 +367,23 @@ msgstr ""
 #. type: Title ==
 #: upstream/_guides/spring-data-jpa.adoc:186
 #, no-wrap
-msgid "Update the JAX-RS resource"
+msgid "Update the Jakarta REST resource"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-data-jpa.adoc:190
-msgid "With the repository in place, the next order of business is to create the JAX-RS resource that will use the `FruitRepository`.  Create `FruitResource` with the following content:"
+msgid "With the repository in place, the next order of business is to create the Jakarta REST resource that will use the `FruitRepository`.  Create `FruitResource` with the following content:"
 msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/spring-data-jpa.adoc:200
 #, no-wrap
 msgid ""
-"import javax.ws.rs.DELETE;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.POST;\n"
-"import javax.ws.rs.PUT;\n"
-"import javax.ws.rs.Path;\n"
+"import jakarta.ws.rs.DELETE;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.POST;\n"
+"import jakarta.ws.rs.PUT;\n"
+"import jakarta.ws.rs.Path;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -497,7 +497,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-data-jpa.adoc:259
-msgid "The JAX-RS resource can also be substituted with a Spring Web controller as Quarkus supports REST endpoint definition using Spring controllers.  See the xref:spring-web.adoc[Spring Web guide] for more details."
+msgid "The Jakarta REST resource can also be substituted with a Spring Web controller as Quarkus supports REST endpoint definition using Spring controllers.  See the xref:spring-web.adoc[Spring Web guide] for more details."
 msgstr ""
 
 #. type: Title ==

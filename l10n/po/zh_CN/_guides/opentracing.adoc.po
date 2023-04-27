@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-20 02:13+0000\n"
+"POT-Creation-Date: 2023-04-27 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,7 +139,7 @@ msgstr ""
 #. type: Title ===
 #: upstream/_guides/opentracing.adoc:76
 #, no-wrap
-msgid "Examine the JAX-RS resource"
+msgid "Examine the Jakarta REST resource"
 msgstr ""
 
 #. type: Plain text
@@ -157,10 +157,10 @@ msgstr ""
 #: upstream/_guides/opentracing.adoc:89
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.MediaType;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
 "import org.jboss.logging.Logger;\n"
 msgstr ""
 
@@ -249,7 +249,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/opentracing.adoc:131
-msgid "The second approach is to supply the properties as https://www.jaegertracing.io/docs/latest/client-features/[environment variables]. These can be specified as `jvm.args` as shown in the following section."
+msgid "The second approach is to supply the properties as https://www.jaegertracing.io/docs/latest/client-features/[environment variables]. These can be specified using `jvm.args` as shown in the following section."
 msgstr ""
 
 #. type: Title ==
@@ -339,7 +339,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/opentracing.adoc:182
 #, no-wrap
-msgid "import javax.enterprise.context.ApplicationScoped;\n"
+msgid "import jakarta.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -

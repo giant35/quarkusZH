@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-20 02:13+0000\n"
+"POT-Creation-Date: 2023-04-27 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,7 +91,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/smallrye-fault-tolerance.adoc:50
-msgid "This command generates a project, importing the extensions for RESTEasy Reactive/JAX-RS and SmallRye Fault Tolerance."
+msgid "This command generates a project, importing the extensions for RESTEasy Reactive/Jakarta REST and SmallRye Fault Tolerance."
 msgstr ""
 
 #. type: Plain text
@@ -212,7 +212,7 @@ msgid ""
 "import java.util.List;\n"
 "import java.util.Map;\n"
 "import java.util.stream.Collectors;\n"
-"import javax.enterprise.context.ApplicationScoped;\n"
+"import jakarta.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -286,9 +286,9 @@ msgid ""
 "import java.util.List;\n"
 "import java.util.Random;\n"
 "import java.util.concurrent.atomic.AtomicLong;\n"
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -826,7 +826,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/smallrye-fault-tolerance.adoc:505
-msgid "SmallRye Fault Tolerance has more features than shown here.  Please check the link:https://smallrye.io/docs/smallrye-fault-tolerance/5.5.0/index.html[SmallRye Fault Tolerance documentation] to learn about them."
+msgid "SmallRye Fault Tolerance has more features than shown here.  Please check the link:https://smallrye.io/docs/smallrye-fault-tolerance/6.2.0/index.html[SmallRye Fault Tolerance documentation] to learn about them."
 msgstr ""
 
 #. type: Plain text
@@ -872,7 +872,7 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_guides/smallrye-fault-tolerance.adoc:538
-msgid "The link:https://smallrye.io/docs/smallrye-fault-tolerance/5.5.0/usage/programmatic-api.html[programmatic API] is present, including Mutiny support, and integrated with the declarative, annotation-based API.  You can use the `FaultTolerance` and `MutinyFaultTolerance` APIs out of the box."
+msgid "The link:https://smallrye.io/docs/smallrye-fault-tolerance/6.2.0/reference/programmatic-api.html[programmatic API] is present, including Mutiny support, and integrated with the declarative, annotation-based API.  You can use the `FaultTolerance` and `MutinyFaultTolerance` APIs out of the box."
 msgstr ""
 
 #. type: delimited block =

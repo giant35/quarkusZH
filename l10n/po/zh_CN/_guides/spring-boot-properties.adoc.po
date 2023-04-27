@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-10 01:52+0000\n"
+"POT-Creation-Date: 2023-04-27 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-boot-properties.adoc:13
-msgid "If you prefer to use Spring Boot `@ConfigurationProperties` annotated class to access application properties instead of <<config-mappings.adoc#config-mappings,`@ConfigMapping`>> or a MicroProfile `@ConfigProperty` approach, you can do that with this extension."
+msgid "If you prefer to use Spring Boot `@ConfigurationProperties` annotated class to access application properties instead of xref:config-mappings.adoc#config-mappings[`@ConfigMapping`] or a MicroProfile `@ConfigProperty` approach, you can do that with this extension."
 msgstr ""
 
 #. type: Plain text
@@ -124,7 +124,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-boot-properties.adoc:67
-msgid "First, create a `GreetingResource` JAX-RS resource in the `src/main/java/org/acme/spring/boot/properties/GreetingResource.java` file that looks like:"
+msgid "First, create a `GreetingResource` Jakarta REST resource in the `src/main/java/org/acme/spring/boot/properties/GreetingResource.java` file that looks like:"
 msgstr ""
 
 #. type: delimited block -
@@ -147,10 +147,10 @@ msgstr ""
 #: upstream/_guides/spring-boot-properties.adoc:76
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.MediaType;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -237,11 +237,11 @@ msgstr ""
 #: upstream/_guides/spring-boot-properties.adoc:372
 #, no-wrap
 msgid ""
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.MediaType;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
 msgstr ""
 
 #. type: delimited block -

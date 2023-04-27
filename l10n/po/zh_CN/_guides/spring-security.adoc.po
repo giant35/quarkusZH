@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-12-15 01:26+0000\n"
+"POT-Creation-Date: 2023-04-27 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,12 +27,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-security.adoc:12
-msgid "While users are encouraged to use xref:security-overview-concept.adoc#standard-security-annotations[Java standard annotations for security authorizations], Quarkus provides a compatibility layer for Spring Security in the form of the `spring-security` extension."
+msgid "While users are encouraged to use Java standard annotations for security authorizations, Quarkus provides a compatibility layer for Spring Security in the form of the `spring-security` extension."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-security.adoc:14
-msgid "This guide explains how a Quarkus application can leverage the well known Spring Security annotations to define authorizations on RESTful services using roles."
+msgid "This guide explains how a Quarkus application can leverage the well-known Spring Security annotations to define authorizations on RESTful services using roles."
 msgstr ""
 
 #. type: Title ==
@@ -150,7 +150,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-security.adoc:83
-msgid "The Quarkus Maven plugin automatically generated a controller with the Spring Web annotations to define our REST endpoint (instead of the JAX-RS ones used by default).  First create a `src/main/java/org/acme/spring/web/GreetingController.java`, a controller with the Spring Web annotations to define our REST endpoint, as follows:"
+msgid "The Quarkus Maven plugin automatically generated a controller with the Spring Web annotations to define our REST endpoint (instead of the Jakarta REST ones used by default).  First create a `src/main/java/org/acme/spring/web/GreetingController.java`, a controller with the Spring Web annotations to define our REST endpoint, as follows:"
 msgstr ""
 
 #. type: delimited block -
@@ -541,7 +541,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-security.adoc:298
-msgid "Adding `@PreAuthorize(\"permitAll()\")` to a method will ensure that that method is accessible by any user (including anonymous users). Adding it to a class will ensure that all public methods of the class that are not annotated with any other Spring Security annotation will be accessible."
+msgid "Adding `@PreAuthorize(\"permitAll()\")` to a method will ensure that method is accessible by any user (including anonymous users). Adding it to a class will ensure that all public methods of the class that are not annotated with any other Spring Security annotation will be accessible."
 msgstr ""
 
 #. type: Labeled list
@@ -552,7 +552,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-security.adoc:301
-msgid "Adding `@PreAuthorize(\"denyAll()\")` to a method will ensure that that method is not accessible by any user. Adding it to a class will ensure that all public methods of the class that are not annotated with any other Spring Security annotation will not be accessible to any user."
+msgid "Adding `@PreAuthorize(\"denyAll()\")` to a method will ensure that method is not accessible by any user. Adding it to a class will ensure that all public methods of the class that are not annotated with any other Spring Security annotation will not be accessible to any user."
 msgstr ""
 
 #. type: Labeled list
@@ -815,7 +815,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/spring-security.adoc:421
-msgid "The following table shows how Spring Security annotations can be converted to JAX-RS annotations."
+msgid "The following table shows how Spring Security annotations can be converted to Jakarta REST annotations."
 msgstr ""
 
 #. type: Table
@@ -827,7 +827,7 @@ msgstr ""
 #. type: Table
 #: upstream/_guides/spring-security.adoc:423
 #, no-wrap
-msgid "JAX-RS"
+msgid "Jakarta REST"
 msgstr ""
 
 #. type: Table

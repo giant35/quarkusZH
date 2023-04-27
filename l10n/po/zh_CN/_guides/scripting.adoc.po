@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-20 02:13+0000\n"
+"POT-Creation-Date: 2023-04-27 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,12 +73,12 @@ msgstr ""
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.Quarkus;\n"
-"import javax.enterprise.context.ApplicationScoped;\n"
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.MediaType;\n"
+"import jakarta.enterprise.context.ApplicationScoped;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
 "import org.jboss.logging.Logger;\n"
 msgstr ""
 
@@ -309,7 +309,7 @@ msgstr ""
 #. type: Title ===
 #: upstream/_guides/scripting.adoc:161
 #, no-wrap
-msgid "The JAX-RS resources"
+msgid "The Jakarta REST resources"
 msgstr ""
 
 #. type: Plain text
@@ -322,9 +322,9 @@ msgstr ""
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.Quarkus;\n"
-"import javax.enterprise.context.ApplicationScoped;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
+"import jakarta.enterprise.context.ApplicationScoped;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -523,12 +523,12 @@ msgstr ""
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.Quarkus;\n"
-"import javax.enterprise.context.ApplicationScoped;\n"
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.MediaType;\n"
+"import jakarta.enterprise.context.ApplicationScoped;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
 msgstr ""
 
 #. type: delimited block -

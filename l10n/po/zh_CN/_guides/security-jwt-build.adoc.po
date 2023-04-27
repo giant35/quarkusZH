@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-12-15 01:25+0000\n"
+"POT-Creation-Date: 2023-04-27 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,8 +105,8 @@ msgstr ""
 #, no-wrap
 msgid ""
 "import java.util.Collections;\n"
-"import javax.json.Json;\n"
-"import javax.json.JsonObject;\n"
+"import jakarta.json.Json;\n"
+"import jakarta.json.JsonObject;\n"
 "import io.smallrye.jwt.build.Jwt;\n"
 "import io.smallrye.jwt.build.JwtClaimsBuilder;\n"
 "import org.eclipse.microprofile.jwt.JsonWebToken;\n"
@@ -278,7 +278,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jwt-build.adoc:137
-msgid "Note the `sign` step can be combined with the <<encrypt-claims, encrypt>> step to produce `inner-signed and encrypted` tokens, see <<innersign-encrypt-claims, Sign the claims and encrypt the nested JWT token>> section."
+msgid "Note the `sign` step can be combined with the xref:encrypt-claims[encrypt] step to produce `inner-signed and encrypted` tokens, see xref:innersign-encrypt-claims[Sign the claims and encrypt the nested JWT token] section."
 msgstr ""
 
 #. type: Title ==
@@ -388,7 +388,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jwt-build.adoc:205
-msgid "If you would like to use RSA or EC public keys to encrypt the token then it is recommended to sign the token first if the signing key is available, see the next <<innersign-encrypt-claims, Sign the claims and encrypt the nested JWT token>> section."
+msgid "If you would like to use RSA or EC public keys to encrypt the token then it is recommended to sign the token first if the signing key is available, see the next xref:innersign-encrypt-claims[Sign the claims and encrypt the nested JWT token] section."
 msgstr ""
 
 #. type: Title ==
@@ -948,7 +948,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jwt-build.adoc:350
-msgid "xref:security-openid-connect.adoc[Using OpenID Connect to Protect Service Applications]"
+msgid "xref:security-oidc-bearer-authentication-concept.adoc[OIDC Bearer authentication]"
 msgstr ""
 
 #. type: Plain text
