@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-05-03 01:26+0000\n"
+"POT-Creation-Date: 2023-05-03 01:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: YAML Front Matter: newUrl
-#: upstream/_redirects/guides/security-webauthn.md:1
+#: upstream/_redirects/guides/security-openid-connect.md:1
 #, no-wrap
-msgid "/guides/security-webauthn-concept"
+msgid "/guides/security-oidc-bearer-token-authentication-tutorial"
 msgstr ""
 
 #. type: YAML Front Matter: permalink
-#: upstream/_redirects/guides/security-webauthn.md:1
+#: upstream/_redirects/guides/security-openid-connect.md:1
 #, no-wrap
-msgid "/guides/security-webauthn/index.html"
+msgid "/guides/security-openid-connect/index.html"
 msgstr ""
