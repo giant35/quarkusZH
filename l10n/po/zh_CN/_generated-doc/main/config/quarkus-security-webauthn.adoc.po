@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-04-13 01:18+0000\n"
+"POT-Creation-Date: 2023-05-05 01:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,6 +131,12 @@ msgid "list of link:https://vertx.io/docs/apidocs/io/vertx/ext/auth/webauthn/Aut
 msgstr ""
 
 #. type: Table
+#: upstream/_generated-doc/main/config/quarkus-security-webauthn.adoc:66
+#, no-wrap
+msgid "`USB,NFC,BLE,INTERNAL`"
+msgstr ""
+
+#. type: Table
 #: upstream/_generated-doc/main/config/quarkus-security-webauthn.adoc:78
 #, no-wrap
 msgid ""
@@ -221,6 +227,12 @@ msgid ""
 msgstr ""
 
 #. type: Table
+#: upstream/_generated-doc/main/config/quarkus-security-webauthn.adoc:133
+#, no-wrap
+msgid "`false`"
+msgstr ""
+
+#. type: Table
 #: upstream/_generated-doc/main/config/quarkus-security-webauthn.adoc:148
 #, no-wrap
 msgid ""
@@ -284,6 +296,12 @@ msgid ""
 msgstr ""
 
 #. type: Table
+#: upstream/_generated-doc/main/config/quarkus-security-webauthn.adoc:170
+#, no-wrap
+msgid "`60s`"
+msgstr ""
+
+#. type: Table
 #: upstream/_generated-doc/main/config/quarkus-security-webauthn.adoc:186
 #, no-wrap
 msgid ""
@@ -341,6 +359,12 @@ msgstr ""
 #: upstream/_generated-doc/main/config/quarkus-security-webauthn.adoc:205
 #, no-wrap
 msgid "list of link:https://vertx.io/docs/apidocs/io/vertx/ext/auth/webauthn/PublicKeyCredential.html[PublicKeyCredential]"
+msgstr ""
+
+#. type: Table
+#: upstream/_generated-doc/main/config/quarkus-security-webauthn.adoc:208
+#, no-wrap
+msgid "`ES256,RS256`"
 msgstr ""
 
 #. type: Table
