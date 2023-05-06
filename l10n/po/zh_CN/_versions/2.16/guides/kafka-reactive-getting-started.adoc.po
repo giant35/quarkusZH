@@ -34,13 +34,13 @@ msgstr ""
 #: upstream/_versions/2.16/guides/kafka-reactive-getting-started.adoc:13
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_versions/2.16/guides/kafka-reactive-getting-started.adoc:18
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/2.16/guides/kafka-reactive-getting-started.adoc:23
@@ -90,7 +90,7 @@ msgstr ""
 #: upstream/_versions/2.16/guides/kafka-reactive-getting-started.adoc:37
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.16/guides/kafka-reactive-getting-started.adoc:41

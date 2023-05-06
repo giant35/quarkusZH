@@ -59,7 +59,7 @@ msgstr ""
 #: upstream/_versions/2.16/guides/tests-with-coverage.adoc:25
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/2.16/guides/tests-with-coverage.adoc:29
@@ -70,7 +70,7 @@ msgstr ""
 #: upstream/_versions/2.16/guides/tests-with-coverage.adoc:30
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/2.16/guides/tests-with-coverage.adoc:34
@@ -81,7 +81,7 @@ msgstr ""
 #: upstream/_versions/2.16/guides/tests-with-coverage.adoc:35
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.16/guides/tests-with-coverage.adoc:39

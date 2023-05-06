@@ -39,7 +39,7 @@ msgstr ""
 #: upstream/_versions/2.16/guides/liquibase-mongodb.adoc:17
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/2.16/guides/liquibase-mongodb.adoc:21
