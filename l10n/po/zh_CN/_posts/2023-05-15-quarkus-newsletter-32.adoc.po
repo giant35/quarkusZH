@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-05-18 01:27+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: upstream/_posts/2023-05-15-quarkus-newsletter-32.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-05-15-quarkus-newsletter-32.adoc:8
+#, no-wrap
+msgid ""
+"layout: post\n"
+"title: 'Quarkus Newsletter #32 - May'\n"
+"date: 2023-05-15\n"
+"tags: newsletter\n"
+"synopsis: The May edition of the Quarkus Newsletter; curated online stories, articles, and videos about Quarkus.\n"
+"author: jcobb\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-05-15-quarkus-newsletter-32.adoc:11
+msgid "The May newsletter has beens sent. Get a deep dive into the Quarkus 3 release. Learn how to implement built-in and custom Role-Based Access Control (RBAC) in Quarkus to ensure secure REST API access with the \"Implementing RBAC in Quarkus\" article by Aashreya Shankar. Read about \"Dynamic Data Processing Using Serverless Java With Quarkus on AWS Lambda\" in this two-part series by Daniel Oh. Piotr Minkowski shows how to create contract tests for Quarkus apps using Pact. Felipe Henrique Gross Windmoller has a great demonstration project that shows how to configure Transport Layer Security (TLS) on Quarkus server and Quarkus client applications. Olimpiu Pop goes into detail Holly Cummins's presentation at Devoxx UK: \"How Would the Business Benefit from Your Greener Java Application?\""
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-05-15-quarkus-newsletter-32.adoc:13
+msgid "You will also see the latest Quarkus Insights episodes, top tweets and upcoming Quarkus attended events."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-05-15-quarkus-newsletter-32.adoc:15
+msgid "Check out https://quarkus.io/newsletter/32/[Newsletter #32]!"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_posts/2023-05-15-quarkus-newsletter-32.adoc:16
+msgid "Want to get newsletters in your inbox? https://quarkus.io/newsletter[Sign up for the newsletter] using the on page form."
+msgstr ""
