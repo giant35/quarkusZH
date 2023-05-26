@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-18 01:48+0000\n"
+"POT-Creation-Date: 2023-05-26 01:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/2.13/guides/quarkus-runtime-base-image.adoc:12
-msgid "To ease the containerization of native executables, Quarkus provides a base image providing the requirements to run these executables.  The `quarkus-micro-image:1.0` image is:"
+msgid "To ease the containerization of native executables, Quarkus provides a base image providing the requirements to run these executables.  The `quarkus-micro-image:2.0` image is:"
 msgstr ""
 
 #. type: Plain text
@@ -65,7 +65,7 @@ msgstr ""
 #: upstream/_versions/2.13/guides/quarkus-runtime-base-image.adoc:30
 #, no-wrap
 msgid ""
-"FROM quay.io/quarkus/quarkus-micro-image:1.0\n"
+"FROM quay.io/quarkus/quarkus-micro-image:2.0\n"
 "WORKDIR /work/\n"
 "COPY target/*-runner /work/application\n"
 "RUN chmod 775 /work\n"
@@ -98,7 +98,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "# Second stage - copy the dependencies\n"
-"FROM quay.io/quarkus/quarkus-micro-image:1.0\n"
+"FROM quay.io/quarkus/quarkus-micro-image:2.0\n"
 "COPY --from=BUILD \\\n"
 "   /lib64/libfreetype.so.6 \\\n"
 "   /lib64/libbz2.so.1 \\\n"
@@ -137,7 +137,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "# Second stage - copy the dependencies\n"
-"FROM quay.io/quarkus/quarkus-micro-image:1.0\n"
+"FROM quay.io/quarkus/quarkus-micro-image:2.0\n"
 "COPY --from=BUILD \\\n"
 "   /lib64/libfreetype.so.6 \\\n"
 "   /lib64/libgcc_s.so.1 \\\n"
