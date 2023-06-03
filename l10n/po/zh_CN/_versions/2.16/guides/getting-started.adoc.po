@@ -110,7 +110,7 @@ msgstr "完整源码"
 #. type: Plain text
 #: upstream/_versions/2.16/guides/getting-started.adoc:49
 msgid "We recommend that you follow the instructions from <<bootstrapping-the-project,Bootstrapping project>> and onwards to create the application step by step."
-msgstr ""
+msgstr "建议您按照后续说明从  <<bootstrapping-the-project,Bootstrapping project>>  逐步创建应用程序。"
 
 #. type: Plain text
 #: upstream/_versions/2.16/guides/getting-started.adoc:51
