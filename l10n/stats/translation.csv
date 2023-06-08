@@ -1,6 +1,7 @@
 Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_posts/insights_1_transcription.adoc.po,0,254,0,8846,100%
 l10n/po/zh_CN/_posts/insights_0_transcription.adoc.po,0,117,0,3765,100%
+l10n/po/zh_CN/_posts/2023-06-07-quarkus-3-1-1-final-released.adoc.po,0,16,0,194,100%
 l10n/po/zh_CN/_posts/2023-05-31-quarkus-3-1-0-final-released.adoc.po,0,41,0,608,100%
 l10n/po/zh_CN/_posts/2023-05-25-quarkus-3-0-4-final-released.adoc.po,0,15,0,180,100%
 l10n/po/zh_CN/_posts/2023-05-20-quarkus-3-upgrade.adoc.po,0,40,0,641,100%
@@ -413,13 +414,13 @@ l10n/po/zh_CN/_guides/security-openid-connect-client.adoc.po,0,139,0,1818,100%
 l10n/po/zh_CN/_guides/security-openid-connect-client-reference.adoc.po,0,251,0,4488,100%
 l10n/po/zh_CN/_guides/security-oidc-configuration-properties-reference.adoc.po,0,10,0,75,100%
 l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication-tutorial.adoc.po,0,89,0,1082,100%
-l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication-concept.adoc.po,0,364,0,8009,100%
+l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication-concept.adoc.po,0,364,0,8008,100%
 l10n/po/zh_CN/_guides/security-oidc-bearer-token-authentication-tutorial.adoc.po,0,110,0,1412,100%
 l10n/po/zh_CN/_guides/security-oidc-bearer-authentication-concept.adoc.po,0,229,0,4406,100%
 l10n/po/zh_CN/_guides/security-oauth2.adoc.po,0,113,0,1790,100%
 l10n/po/zh_CN/_guides/security-ldap.adoc.po,0,69,0,841,100%
 l10n/po/zh_CN/_guides/security-keycloak-authorization.adoc.po,0,162,0,2593,100%
-l10n/po/zh_CN/_guides/security-keycloak-admin-client.adoc.po,0,53,0,611,100%
+l10n/po/zh_CN/_guides/security-keycloak-admin-client.adoc.po,0,53,0,612,100%
 l10n/po/zh_CN/_guides/security-jwt.adoc.po,0,367,0,5771,100%
 l10n/po/zh_CN/_guides/security-jwt-build.adoc.po,0,147,0,2523,100%
 l10n/po/zh_CN/_guides/security-jpa.adoc.po,0,103,0,1428,100%
