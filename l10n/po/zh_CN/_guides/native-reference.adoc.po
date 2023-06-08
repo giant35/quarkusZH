@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-06-01 02:08+0000\n"
+"POT-Creation-Date: 2023-06-08 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -608,7 +608,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/native-reference.adoc:505
-msgid "This shows that most of the memory requested using `malloc` comes from epoll in Java NIO, but the overall amount allocated via `malloc` is barely 268KB.  This amount of 274,269 bytes can be observed by hoovering on top of `all` at the bottom of flamegraph (you might need to ask the browser to open the flamegraph in a different tab or window to observe this).  This is very small compared with the amount allocated for the heap with `mmap`."
+msgid "This shows that most of the memory requested using `malloc` comes from epoll in Java NIO, but the overall amount allocated via `malloc` is barely 268KB.  This amount of 274,269 bytes can be observed by hovering on top of `all` at the bottom of flamegraph (you might need to ask the browser to open the flamegraph in a different tab or window to observe this).  This is very small compared with the amount allocated for the heap with `mmap`."
 msgstr ""
 
 #. type: Plain text
