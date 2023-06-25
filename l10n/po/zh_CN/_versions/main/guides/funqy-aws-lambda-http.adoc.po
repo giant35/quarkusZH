@@ -76,7 +76,7 @@ msgstr ""
 #: upstream/_versions/main/guides/funqy-aws-lambda-http.adoc:41
 #, no-wrap
 msgid "Getting Started"
-msgstr ""
+msgstr "入门"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/funqy-aws-lambda-http.adoc:45
