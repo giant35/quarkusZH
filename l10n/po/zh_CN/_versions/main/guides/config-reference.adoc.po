@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-06-22 01:28+0000\n"
+"POT-Creation-Date: 2023-06-25 02:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -901,7 +901,7 @@ msgstr ""
 #: upstream/_versions/main/guides/config-reference.adoc:457
 #, no-wrap
 msgid ""
-"./mvnw package -Pnative -Dquarkus.profile=prod-aws\n"
+"./mvnw package -Dnative -Dquarkus.profile=prod-aws\n"
 "./target/my-app-1.0-runner // <1>\n"
 msgstr ""
 
