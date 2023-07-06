@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-20 02:13+0000\n"
+"POT-Creation-Date: 2023-07-06 01:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,6 +22,6 @@ msgid "The format for durations uses the standard `java.time.Duration` format.  
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/_includes/duration-format-note.adoc:9
-msgid "You can also provide duration values starting with a number.  In this case, if the value consists only of a number, the converter treats the value as seconds.  Otherwise, `PT` is implicitly prepended to the value to obtain a standard `java.time.Duration` format."
+#: upstream/_guides/_includes/duration-format-note.adoc:10
+msgid "You can also provide duration values starting with a number.  In this case, if the value consists only of a number, the converter treats the value as seconds.  Otherwise, `PT` for seconds, minute and hours or `P` for days are implicitly prepended to the value to obtain a standard `java.time.Duration` format.  Milliseconds are also supported by implicitly using `Duration.ofMillis()`"
 msgstr ""

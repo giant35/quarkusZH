@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-05-07 01:35+0000\n"
+"POT-Creation-Date: 2023-07-06 01:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2023-05-05-quarkus-2-16-7-final-released.adoc:11
-msgid "We released Quarkus 2.16.6.Final, the seventh maintenance release of our 2.16 release train."
+msgid "We released Quarkus 2.16.7.Final, the seventh maintenance release of our 2.16 release train."
 msgstr ""
 
 #. type: Plain text

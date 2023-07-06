@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-06-01 02:08+0000\n"
+"POT-Creation-Date: 2023-07-06 01:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -435,7 +435,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:233
-msgid "If you want a lower memory footprint and faster initialization times for your lambda, you can compile your Java code to a native executable.  Just make sure to rebuild your project with the `-Pnative` switch."
+msgid "If you want a lower memory footprint and faster initialization times for your lambda, you can compile your Java code to a native executable.  Just make sure to rebuild your project with the `-Dnative` switch."
 msgstr ""
 
 #. type: Plain text
