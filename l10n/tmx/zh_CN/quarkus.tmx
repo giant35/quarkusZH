@@ -365,27 +365,10 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>&lt;a href="/vision/developer-joy"&gt;Learn more&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>&lt;a href="/vision/developer-joy"&gt;了解更多&lt;/a&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Container First</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>容器优先</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Quarkus tailors your application for GraalVM and HotSpot. Amazingly fast boot time, incredibly low RSS memory (not just heap size!) offering near instant scale up and high density memory utilization in container orchestration platforms like Kubernetes. We use a technique we call compile time boot. &lt;a href="/vision/container-first"&gt;Learn more.&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>Quarkus 为 GraalVM 和 HotSpot 量身定制用程序。启动超快，内存极低（不仅是堆大小！）在容器编排平台（如Kubernetes）中提供了近乎即时的向上扩展和高密度的内存利用率。我们使用一种称为编译时启动技术。
-&lt;a href="/vision/container-first"&gt;了解更多&lt;/a&gt;</seg>
       </tuv>
     </tu>
     <tu>
