@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-10 01:55+0000\n"
+"POT-Creation-Date: 2023-07-22 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,7 +131,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_posts/2021-09-15-adoptium-customer-story.adoc:42
-msgid "The team found Quarkus extremely easy to develop, especially the https://quarkus.io/vision/developer-joy#live-coding[Live Coding capability^]. The familiar JAX-RS APIs in Quarkus made it easy to create the necessary endpoints. The lead engineer explains further:"
+msgid "The team found Quarkus extremely easy to develop, especially the https://quarkus.io/developer-joy#live-coding[Live Coding capability^]. The familiar JAX-RS APIs in Quarkus made it easy to create the necessary endpoints. The lead engineer explains further:"
 msgstr ""
 
 #. type: delimited block _

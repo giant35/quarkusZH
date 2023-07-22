@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-08-05 01:54+0000\n"
+"POT-Creation-Date: 2023-07-22 01:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,7 +176,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/faq.adoc:62
-msgid "link:/vision/continuum[Learn more]."
+msgid "link:/continuum[Learn more]."
 msgstr ""
 
 #. type: Plain text
@@ -186,7 +186,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/faq.adoc:66
-msgid "link:/vision/container-first[Learn more]."
+msgid "link:/container-first[Learn more]."
 msgstr ""
 
 #. type: Plain text
@@ -196,7 +196,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/faq.adoc:70
-msgid "link:/vision/standards[Learn more]."
+msgid "link:/standards[Learn more]."
 msgstr ""
 
 #. type: Plain text
@@ -206,5 +206,5 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/faq.adoc:73
-msgid "link:/vision/developer-joy[Learn more]."
+msgid "link:/developer-joy[Learn more]."
 msgstr ""
