@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-05-27 01:27+0000\n"
+"POT-Creation-Date: 2023-07-23 01:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,7 +75,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/cache.adoc:43
-msgid "The solution is located in the `cache-quickstart` {quickstarts-tree-url}/cache-quickstart[directory]."
+msgid "The solution is located in the `cache-quickstart` link:{quickstarts-tree-url}/cache-quickstart[directory]."
 msgstr ""
 
 #. type: Title ==
