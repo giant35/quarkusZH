@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-07-23 01:37+0000\n"
+"POT-Creation-Date: 2023-07-27 01:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,75 +153,51 @@ msgid "The easiest way to create a new Quarkus project is to open a terminal and
 msgstr "创建 Quarkus 项目最简单方法是打开命令行并运行以下命令："
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:66
-msgid "For Linux & MacOS users"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:73
-msgid "For Windows users:"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:75
-#, fuzzy
-#| msgid "If using cmd , (don't use backward slash `\\`)"
-msgid "If using cmd , (don't use backward slash `\\` and put everything on the same line)"
-msgstr "如果使用cmd，（不要使用反斜杠 `\\`  )"
-
-#. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:76
-#, fuzzy
-#| msgid "If using Powershell , wrap `-D` parameters in double quotes"
-msgid "If using Powershell , wrap `-D` parameters in double quotes e.g. `\"-DprojectArtifactId=getting-started\"`"
-msgstr "如果使用Powershell，请用双引号将 `-D` 参数括起来"
-
-#. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:78
+#: upstream/_versions/main/guides/getting-started.adoc:71
 msgid "It generates the following in `./getting-started`:"
 msgstr "上边命令会在  `./getting-started` 中生成："
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:80
+#: upstream/_versions/main/guides/getting-started.adoc:73
 msgid "the Maven structure"
 msgstr "Maven 目录结构"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:81
+#: upstream/_versions/main/guides/getting-started.adoc:74
 #, fuzzy
 #| msgid "an `org.acme.getting.started.GreetingResource` resource exposed on `/hello`"
 msgid "an `org.acme.GreetingResource` resource exposed on `/hello`"
 msgstr "`org.acme.getting.started.GreetingResource` 提供接口 `/hello`"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:82
+#: upstream/_versions/main/guides/getting-started.adoc:75
 msgid "an associated unit test"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:83
+#: upstream/_versions/main/guides/getting-started.adoc:76
 msgid "a landing page that is accessible on `http://localhost:8080` after starting the application"
 msgstr "启动应用程序后可访问  `http://localhost:8080`  入口页"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:84
+#: upstream/_versions/main/guides/getting-started.adoc:77
 msgid "example `Dockerfile` files for both `native` and `jvm` modes in `src/main/docker`"
 msgstr "`src/main/docker` 有 `Dockerfile` 样例文件, 包含 `native` 及 `jvm` 模式"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:85
+#: upstream/_versions/main/guides/getting-started.adoc:78
 msgid "the application configuration file"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:89
+#: upstream/_versions/main/guides/getting-started.adoc:82
 #, fuzzy
 #| msgid "Once generated, look at the `pom.xml`.  You will find the import of the Quarkus BOM, allowing you to omit the version on the different Quarkus dependencies.  In addition, you can see the `quarkus-maven-plugin` responsible of the packaging of the application and also providing the development mode."
 msgid "Once generated, look at the `pom.xml`.  You will find the import of the Quarkus BOM, allowing you to omit the version of the different Quarkus dependencies.  In addition, you can see the `quarkus-maven-plugin` responsible of the packaging of the application and also providing the development mode."
 msgstr "生成后，查看 `pom.xml` 。 您会看到导入了 Quarkus BOM ，让您不用关心 Quarkus 依赖项版本。 此外，您还可以看到负责打包应用程序并提供开发模式的  `quarkus-maven-plugin`  。"
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:103
+#: upstream/_versions/main/guides/getting-started.adoc:96
 #, no-wrap
 msgid ""
 "<dependencyManagement>\n"
@@ -238,7 +214,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:123
+#: upstream/_versions/main/guides/getting-started.adoc:116
 #, no-wrap
 msgid ""
 "<build>\n"
@@ -263,34 +239,34 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:126
+#: upstream/_versions/main/guides/getting-started.adoc:119
 msgid "In a Gradle project, you would find a similar setup:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:128
+#: upstream/_versions/main/guides/getting-started.adoc:121
 msgid "the Quarkus Gradle plugin"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:129
+#: upstream/_versions/main/guides/getting-started.adoc:122
 msgid "an `enforcedPlatform` directive for the Quarkus BOM"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:131
+#: upstream/_versions/main/guides/getting-started.adoc:124
 msgid "If we focus on the dependencies section, you can see the extension allowing the development of REST applications:"
 msgstr "如果我们关注 dependencies 部分，您可以看到用于支持 REST 程序开发的扩展："
 
 #. type: Block title
-#: upstream/_versions/main/guides/getting-started.adoc:133
-#: upstream/_versions/main/guides/getting-started.adoc:318
+#: upstream/_versions/main/guides/getting-started.adoc:126
+#: upstream/_versions/main/guides/getting-started.adoc:311
 #, no-wrap
 msgid "pom.xml"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:139
+#: upstream/_versions/main/guides/getting-started.adoc:132
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -300,42 +276,42 @@ msgid ""
 msgstr ""
 
 #. type: Block title
-#: upstream/_versions/main/guides/getting-started.adoc:142
-#: upstream/_versions/main/guides/getting-started.adoc:333
+#: upstream/_versions/main/guides/getting-started.adoc:135
+#: upstream/_versions/main/guides/getting-started.adoc:326
 #, no-wrap
 msgid "build.gradle"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:145
+#: upstream/_versions/main/guides/getting-started.adoc:138
 #, no-wrap
 msgid "implementation(\"io.quarkus:quarkus-resteasy-reactive\")\n"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/getting-started.adoc:147
+#: upstream/_versions/main/guides/getting-started.adoc:140
 #, no-wrap
 msgid "The Jakarta REST resources"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:150
+#: upstream/_versions/main/guides/getting-started.adoc:143
 #, fuzzy
 #| msgid "During the project creation, the `src/main/java/org/acme/getting/started/GreetingResource.java` file has been created with the following content:"
 msgid "During the project creation, the `src/main/java/org/acme/GreetingResource.java` file has been created with the following content:"
 msgstr "项目创建生成时，已经创建了`src/main/java/org/acme/getting/started/GreetingResource.java` 文件，其中包含以下内容："
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:154
-#: upstream/_versions/main/guides/getting-started.adoc:239
-#: upstream/_versions/main/guides/getting-started.adoc:257
-#: upstream/_versions/main/guides/getting-started.adoc:366
+#: upstream/_versions/main/guides/getting-started.adoc:147
+#: upstream/_versions/main/guides/getting-started.adoc:232
+#: upstream/_versions/main/guides/getting-started.adoc:250
+#: upstream/_versions/main/guides/getting-started.adoc:359
 #, no-wrap
 msgid "package org.acme;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:159
+#: upstream/_versions/main/guides/getting-started.adoc:152
 #, no-wrap
 msgid ""
 "import jakarta.ws.rs.GET;\n"
@@ -345,8 +321,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:162
-#: upstream/_versions/main/guides/getting-started.adoc:266
+#: upstream/_versions/main/guides/getting-started.adoc:155
+#: upstream/_versions/main/guides/getting-started.adoc:259
 #, no-wrap
 msgid ""
 "@Path(\"/hello\")\n"
@@ -354,8 +330,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:169
-#: upstream/_versions/main/guides/getting-started.adoc:283
+#: upstream/_versions/main/guides/getting-started.adoc:162
+#: upstream/_versions/main/guides/getting-started.adoc:276
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -367,39 +343,39 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:172
+#: upstream/_versions/main/guides/getting-started.adoc:165
 #, fuzzy
 #| msgid "It's a very simple REST endpoint, returning \"hello\" to requests on \"/hello\"."
 msgid "It's a very simple REST endpoint, returning \"Hello from RESTEasy Reactive\" to requests on \"/hello\"."
 msgstr "这是一个非常简单的REST 接口，请求 “/hello” 时返回 “hello” 。"
 
 #. type: Block title
-#: upstream/_versions/main/guides/getting-started.adoc:174
+#: upstream/_versions/main/guides/getting-started.adoc:167
 #, fuzzy, no-wrap
 #| msgid "Differences with vanilla JAX-RS"
 msgid "Differences with vanilla Jakarta REST"
 msgstr "与普通 JAX-RS 的差别"
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/getting-started.adoc:178
+#: upstream/_versions/main/guides/getting-started.adoc:171
 msgid "With Quarkus, there is no need to create an `Application` class. It's supported, but not required. In addition, only one instance of the resource is created and not one per request. You can configure this using the different `*Scoped` annotations (`ApplicationScoped`, `RequestScoped`, etc)."
 msgstr "使用 Quarkus，不需要创建  `Application`  类。能用它，但不是必需的。此外，只创建资源类的一个实例，而不是每次请求创建一个实例。(QFY: GreetingResource 是单例)您可以使用不同的 `*Scoped`  注解 (`ApplicationScoped`, `RequestScoped` ，等）对它进行配置。"
 
 #. type: Title ==
-#: upstream/_versions/main/guides/getting-started.adoc:180
+#: upstream/_versions/main/guides/getting-started.adoc:173
 #, no-wrap
 msgid "Running the application"
 msgstr "运行应用"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:183
+#: upstream/_versions/main/guides/getting-started.adoc:176
 #, fuzzy
 #| msgid "Now we are ready to run our application.  Use: `./mvnw compile quarkus:dev`:"
 msgid "Now we are ready to run our application:"
 msgstr "现在我们可以运行应用程序了。 使用:`./mvnw compile quarkus:dev`:"
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:206
+#: upstream/_versions/main/guides/getting-started.adoc:199
 #, no-wrap
 msgid ""
 "[INFO] --------------------< org.acme:getting-started >---------------------\n"
@@ -423,12 +399,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:209
+#: upstream/_versions/main/guides/getting-started.adoc:202
 msgid "Once started, you can request the provided endpoint:"
 msgstr "启动后，可以请求提供的接口："
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:214
+#: upstream/_versions/main/guides/getting-started.adoc:207
 #, no-wrap
 msgid ""
 "$ curl -w \"\\n\" http://localhost:8080/hello\n"
@@ -436,61 +412,61 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:217
+#: upstream/_versions/main/guides/getting-started.adoc:210
 msgid "Hit `CTRL+C` to stop the application, or keep it running and enjoy the blazing fast hot-reload."
 msgstr "按 CTRL+C 停止应用程序，或者让它继续运行并享受超快的热加载。"
 
 #. type: Block title
-#: upstream/_versions/main/guides/getting-started.adoc:219
+#: upstream/_versions/main/guides/getting-started.adoc:212
 #, no-wrap
 msgid "Automatically add newline with `curl -w \"\\n\"`"
 msgstr "用 `curl -w \"\\n\"` 自动添加换行"
 
 #. type: delimited block =
-#: upstream/_versions/main/guides/getting-started.adoc:222
+#: upstream/_versions/main/guides/getting-started.adoc:215
 msgid "We are using `curl -w \"\\n\"` in this example to avoid your terminal printing a '%' or put both result and next command prompt on the same line."
 msgstr "在本例中，我们使用 `curl -w \"\\n\"` 来避免终端输出 ‘%’  ，或者将结果和下一个命令提示符放在同一行。"
 
 #. type: Title ==
-#: upstream/_versions/main/guides/getting-started.adoc:224
+#: upstream/_versions/main/guides/getting-started.adoc:217
 #, no-wrap
 msgid "Using injection"
 msgstr "使用注入"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:228
+#: upstream/_versions/main/guides/getting-started.adoc:221
 #, fuzzy
 #| msgid "Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  If you're new to CDI then we recommend you to read the link:cdi[Introduction to CDI] guide."
 msgid "Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  If you're new to CDI then we recommend you to read the xref:cdi.adoc[Introduction to CDI] guide."
 msgstr "Quarkus 中的依赖注入是基于ArC的，ArC是一个基于 CDI 的依赖注入解决方案，专为 Quarkus 设计。 如果你之前未使用过 CDI 建议你参考下 link:cdi[ 上下文依赖介绍] 。"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:230
+#: upstream/_versions/main/guides/getting-started.adoc:223
 msgid "Quarkus only implements a subset of the CDI features and comes with non-standard features and specific APIS, you can learn more about it in the xref:cdi-reference.adoc[Contexts and Dependency Injection guide]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:232
+#: upstream/_versions/main/guides/getting-started.adoc:225
 #, fuzzy
 #| msgid "ArC comes as a dependency of `quarkus-resteasy` so you already have it handy."
 msgid "ArC comes as a dependency of `quarkus-resteasy-reactive` so you already have it handy."
 msgstr "ArC 是  `quarkus-resteasy`  的一个依赖项，所以可以直接使用 。"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:235
+#: upstream/_versions/main/guides/getting-started.adoc:228
 #, fuzzy
 #| msgid "Let's modify the application and add a companion bean.  Create the `src/main/java/org/acme/getting/started/GreetingService.java` file with the following content:"
 msgid "Let's modify the application and add a companion bean.  Create the `src/main/java/org/acme/GreetingService.java` file with the following content:"
 msgstr "让我们修改应用程序并添加一个辅助 bean。 创建 `src/main/java/org/acme/getting/started/GreetingService.java` 文件包含以下内容:"
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:241
+#: upstream/_versions/main/guides/getting-started.adoc:234
 #, no-wrap
 msgid "import jakarta.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:244
+#: upstream/_versions/main/guides/getting-started.adoc:237
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -498,7 +474,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:248
+#: upstream/_versions/main/guides/getting-started.adoc:241
 #, no-wrap
 msgid ""
 "    public String greeting(String name) {\n"
@@ -507,19 +483,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:250
-#: upstream/_versions/main/guides/getting-started.adoc:399
+#: upstream/_versions/main/guides/getting-started.adoc:243
+#: upstream/_versions/main/guides/getting-started.adoc:392
 #, no-wrap
 msgid "}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:253
+#: upstream/_versions/main/guides/getting-started.adoc:246
 msgid "Edit the `GreetingResource` class to inject the `GreetingService` and create a new endpoint using it:"
 msgstr "编辑 `GreetingResource` 类注入 `GreetingService` 并在一个新接口中使用它:"
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:263
+#: upstream/_versions/main/guides/getting-started.adoc:256
 #, no-wrap
 msgid ""
 "import jakarta.inject.Inject;\n"
@@ -530,7 +506,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:269
+#: upstream/_versions/main/guides/getting-started.adoc:262
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -538,7 +514,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:276
+#: upstream/_versions/main/guides/getting-started.adoc:269
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -550,17 +526,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:288
+#: upstream/_versions/main/guides/getting-started.adoc:281
 msgid "If you stopped the application (keep in mind you don't have to do it, changes will be automatically deployed by our live reload feature), restart the application with:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:292
+#: upstream/_versions/main/guides/getting-started.adoc:285
 msgid "Then check that the endpoint returns `hello quarkus` as expected:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:297
+#: upstream/_versions/main/guides/getting-started.adoc:290
 #, no-wrap
 msgid ""
 "$ curl -w \"\\n\" http://localhost:8080/hello/greeting/quarkus\n"
@@ -568,39 +544,39 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/getting-started.adoc:299
+#: upstream/_versions/main/guides/getting-started.adoc:292
 #, no-wrap
 msgid "Development Mode"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:307
+#: upstream/_versions/main/guides/getting-started.adoc:300
 msgid "`quarkus:dev` runs Quarkus in development mode. This enables live reload with background compilation, which means that when you modify your Java files and/or your resource files and refresh your browser, these changes will automatically take effect.  This works too for resource files like the configuration property file.  Refreshing the browser triggers a scan of the workspace, and if any changes are detected, the Java files are recompiled and the application is redeployed; your request is then serviced by the redeployed application. If there are any issues with compilation or deployment an error page will let you know."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:310
+#: upstream/_versions/main/guides/getting-started.adoc:303
 msgid "This will also listen for a debugger on port `5005`. If you want to wait for the debugger to attach before running you can pass `-Dsuspend` on the command line. If you don't want the debugger at all you can use `-Ddebug=false`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/getting-started.adoc:311
+#: upstream/_versions/main/guides/getting-started.adoc:304
 #, no-wrap
 msgid "Testing"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:314
+#: upstream/_versions/main/guides/getting-started.adoc:307
 msgid "All right, so far so good, but wouldn't it be better with a few tests, just in case."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:316
+#: upstream/_versions/main/guides/getting-started.adoc:309
 msgid "In the generated build file, you can see 2 test dependencies:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:330
+#: upstream/_versions/main/guides/getting-started.adoc:323
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -616,7 +592,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:337
+#: upstream/_versions/main/guides/getting-started.adoc:330
 #, no-wrap
 msgid ""
 "testImplementation(\"io.quarkus:quarkus-junit5\")\n"
@@ -624,17 +600,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:340
+#: upstream/_versions/main/guides/getting-started.adoc:333
 msgid "Quarkus supports https://junit.org/junit5/[JUnit 5] tests."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:342
+#: upstream/_versions/main/guides/getting-started.adoc:335
 msgid "Because of this, in the case of Maven, the version of the https://maven.apache.org/surefire/maven-surefire-plugin/[Surefire Maven Plugin] must be set, as the default version does not support JUnit 5:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:355
+#: upstream/_versions/main/guides/getting-started.adoc:348
 #, no-wrap
 msgid ""
 "<plugin>\n"
@@ -650,19 +626,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:359
+#: upstream/_versions/main/guides/getting-started.adoc:352
 msgid "We also set the `java.util.logging` system property to make sure tests will use the correct log manager and `maven.home` to ensure that custom configuration from `${maven.home}/conf/settings.xml` is applied (if any)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:362
+#: upstream/_versions/main/guides/getting-started.adoc:355
 #, fuzzy
 #| msgid "During the project creation, the `src/main/java/org/acme/getting/started/GreetingResource.java` file has been created with the following content:"
 msgid "The generated project contains a simple test.  Edit the `src/test/java/org/acme/GreetingResourceTest.java` to match the following content:"
 msgstr "项目创建生成时，已经创建了`src/main/java/org/acme/getting/started/GreetingResource.java` 文件，其中包含以下内容："
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:369
+#: upstream/_versions/main/guides/getting-started.adoc:362
 #, no-wrap
 msgid ""
 "import io.quarkus.test.junit.QuarkusTest;\n"
@@ -670,13 +646,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:371
+#: upstream/_versions/main/guides/getting-started.adoc:364
 #, no-wrap
 msgid "import java.util.UUID;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:374
+#: upstream/_versions/main/guides/getting-started.adoc:367
 #, no-wrap
 msgid ""
 "import static io.restassured.RestAssured.given;\n"
@@ -684,7 +660,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:377
+#: upstream/_versions/main/guides/getting-started.adoc:370
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -692,7 +668,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:386
+#: upstream/_versions/main/guides/getting-started.adoc:379
 #, no-wrap
 msgid ""
 "    @Test    // <1>\n"
@@ -706,7 +682,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:397
+#: upstream/_versions/main/guides/getting-started.adoc:390
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -722,43 +698,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:401
+#: upstream/_versions/main/guides/getting-started.adoc:394
 msgid "By using the `QuarkusTest` runner, you instruct JUnit to start the application before the tests."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:402
+#: upstream/_versions/main/guides/getting-started.adoc:395
 msgid "Check the HTTP response status code and content"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:404
+#: upstream/_versions/main/guides/getting-started.adoc:397
 msgid "These tests use https://rest-assured.io/[RestAssured], but feel free to use your favorite library."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:406
+#: upstream/_versions/main/guides/getting-started.adoc:399
 msgid "You can run these using Maven:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:410
+#: upstream/_versions/main/guides/getting-started.adoc:403
 #, no-wrap
 msgid "./mvnw test\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:413
+#: upstream/_versions/main/guides/getting-started.adoc:406
 msgid "You can also run the test from your IDE directly (be sure you stopped the application first)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:419
+#: upstream/_versions/main/guides/getting-started.adoc:412
 msgid "By default, tests will run on port `8081` so as not to conflict with the running application. We automatically configure RestAssured to use this port. If you want to use a different client you should use the `@TestHTTPResource` annotation to directly inject the URL of the tested application into a field on the test class. This field can be of the type `String`, `URL` or `URI`. This annotation can also be given a value for the test path. For example, if I want to test a Servlet mapped to `/myservlet` I would just add the following to my test:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/getting-started.adoc:425
+#: upstream/_versions/main/guides/getting-started.adoc:418
 #, no-wrap
 msgid ""
 "@TestHTTPResource(\"/myservlet\")\n"
@@ -766,186 +742,196 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:429
+#: upstream/_versions/main/guides/getting-started.adoc:422
 msgid "The test port can be controlled via the `quarkus.http.test-port` config property. Quarkus also creates a system property called `test.url` that is set to the base test URL for situations where you cannot use injection."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/getting-started.adoc:430
+#: upstream/_versions/main/guides/getting-started.adoc:423
 #, no-wrap
 msgid "Working with multi-module project or external modules"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:434
+#: upstream/_versions/main/guides/getting-started.adoc:427
 msgid "Quarkus heavily utilizes https://github.com/wildfly/jandex[Jandex] at build time, to discover various classes or annotations. One immediately recognizable application of this, is CDI bean discovery.  As a result, most of the Quarkus extensions will not work properly if this build time discovery isn't properly setup."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:436
+#: upstream/_versions/main/guides/getting-started.adoc:429
 msgid "This index is created by default on the project on which Quarkus is configured for, thanks to our Maven and Gradle plugins."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:439
+#: upstream/_versions/main/guides/getting-started.adoc:432
 msgid "However, when working with a multi-module project, be sure to read the `Working with multi-module projects` section of the xref:maven-tooling.adoc#multi-module-maven[Maven] or xref:gradle-tooling.adoc#multi-module-maven[Gradle] guides."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:443
+#: upstream/_versions/main/guides/getting-started.adoc:436
 msgid "If you plan to use external modules (for example, an external library for all your domain objects), you will need to make these modules known to the indexing process either by adding the Jandex plugin (if you can modify them)  or via the `quarkus.index-dependency` property inside your `application.properties` (useful in cases where you can't modify the module)."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:445
+#: upstream/_versions/main/guides/getting-started.adoc:438
 msgid "Be sure to read the xref:cdi-reference.adoc#bean_discovery[Bean Discovery] section of the CDI guide for more information."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/getting-started.adoc:446
+#: upstream/_versions/main/guides/getting-started.adoc:439
 #, no-wrap
 msgid "Packaging and run the application"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:449
+#: upstream/_versions/main/guides/getting-started.adoc:442
 msgid "The application is packaged using:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:453
+#: upstream/_versions/main/guides/getting-started.adoc:446
 msgid "It produces several outputs in `/target`:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:456
+#: upstream/_versions/main/guides/getting-started.adoc:449
 msgid "`getting-started-1.0.0-SNAPSHOT.jar` - containing just the classes and resources of the projects, it's the regular artifact produced by the Maven build - it is *not* the runnable jar;"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:458
+#: upstream/_versions/main/guides/getting-started.adoc:451
 msgid "the `quarkus-app` directory which contains the `quarkus-run.jar` jar file - being an executable _jar_. Be aware that it's not an _über-jar_ as the dependencies are copied into subdirectories of `quarkus-app/lib/`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:460
+#: upstream/_versions/main/guides/getting-started.adoc:453
 msgid "You can run the application using: `java -jar target/quarkus-app/quarkus-run.jar`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:462
+#: upstream/_versions/main/guides/getting-started.adoc:455
 msgid "If you want to deploy your application somewhere (typically in a container), you need to deploy the whole `quarkus-app` directory."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:464
+#: upstream/_versions/main/guides/getting-started.adoc:457
 msgid "Before running the application, don't forget to stop the hot reload mode (hit `CTRL+C`), or you will have a port conflict."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/getting-started.adoc:466
+#: upstream/_versions/main/guides/getting-started.adoc:459
 #, no-wrap
 msgid "Configuring the banner"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:471
+#: upstream/_versions/main/guides/getting-started.adoc:464
 msgid "By default, when a Quarkus application starts (in regular or dev mode), it will display an ASCII art banner. The banner can be disabled by setting `quarkus.banner.enabled=false` in `application.properties`, by setting the `-Dquarkus.banner.enabled=false` Java System Property, or by setting the `QUARKUS_BANNER_ENABLED` environment variable to `false`.  Furthermore, users can supply a custom banner by placing the banner file in `src/main/resources` and configuring `quarkus.banner.path=name-of-file` in `application.properties`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/getting-started.adoc:472
+#: upstream/_versions/main/guides/getting-started.adoc:465
 #, no-wrap
 msgid "Non Application endpoints"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:476
+#: upstream/_versions/main/guides/getting-started.adoc:469
 msgid "Various Quarkus extensions contribute non-application endpoints that provide different kinds of information about the application.  Examples of such extensions are the xref:smallrye-health.adoc[health], xref:telemetry-micrometer.adoc[metrics], xref:openapi-swaggerui.adoc[OpenAPI] and info extensions."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:478
+#: upstream/_versions/main/guides/getting-started.adoc:471
 msgid "These non application endpoints are normally accessible under the `/q` prefix like so:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:480
+#: upstream/_versions/main/guides/getting-started.adoc:473
 msgid "`/q/health`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:481
+#: upstream/_versions/main/guides/getting-started.adoc:474
 msgid "`/q/metrics`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:482
+#: upstream/_versions/main/guides/getting-started.adoc:475
 msgid "`/q/openapi`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:483
+#: upstream/_versions/main/guides/getting-started.adoc:476
 msgid "`/q/info`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:485
+#: upstream/_versions/main/guides/getting-started.adoc:478
 msgid "but users can also choose to expose one that might present a security risk under a different TCP port using a dedicated xref:management-interface-reference.adoc[management interface]."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_versions/main/guides/getting-started.adoc:486
+#: upstream/_versions/main/guides/getting-started.adoc:479
 #, no-wrap
 msgid "Info endpoint"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:489
+#: upstream/_versions/main/guides/getting-started.adoc:482
 msgid "If the application contains the `quarkus-info` extension, then Quarkus will by default expose the `/q/info` endpoint which provides information about the build, java version, version control, and operating system. The level of detail of the exposed information is configurable."
 msgstr ""
 
 #. type: Title ====
-#: upstream/_versions/main/guides/getting-started.adoc:490
+#: upstream/_versions/main/guides/getting-started.adoc:483
 #, no-wrap
 msgid "Configuration Reference"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_versions/main/guides/getting-started.adoc:494
+#: upstream/_versions/main/guides/getting-started.adoc:487
 #, no-wrap
 msgid "What's next?"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:500
+#: upstream/_versions/main/guides/getting-started.adoc:493
 msgid "This guide covered the creation of an application using Quarkus.  However, there is much more.  We recommend continuing the journey with the xref:building-native-image.adoc[building a native executable guide], where you learn about creating a native executable and packaging it in a container.  If you are interested in reactive, we recommend the xref:getting-started-reactive.adoc[Getting Started with Reactive guide], where you can see how to implement reactive applications with Quarkus."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:502
+#: upstream/_versions/main/guides/getting-started.adoc:495
 msgid "In addition, the xref:tooling.adoc[tooling guide] document explains how to:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:504
+#: upstream/_versions/main/guides/getting-started.adoc:497
 msgid "scaffold a project in a single command line"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:505
+#: upstream/_versions/main/guides/getting-started.adoc:498
 msgid "enable the _development mode_ (hot reload)"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:506
+#: upstream/_versions/main/guides/getting-started.adoc:499
 msgid "import the project in your favorite IDE"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/getting-started.adoc:506
+#: upstream/_versions/main/guides/getting-started.adoc:499
 msgid "and more"
 msgstr ""
+
+#, fuzzy
+#~| msgid "If using cmd , (don't use backward slash `\\`)"
+#~ msgid "If using cmd , (don't use backward slash `\\` and put everything on the same line)"
+#~ msgstr "如果使用cmd，（不要使用反斜杠 `\\`  )"
+
+#, fuzzy
+#~| msgid "If using Powershell , wrap `-D` parameters in double quotes"
+#~ msgid "If using Powershell , wrap `-D` parameters in double quotes e.g. `\"-DprojectArtifactId=getting-started\"`"
+#~ msgstr "如果使用Powershell，请用双引号将 `-D` 参数括起来"
 
 #~ msgid "To complete this guide, you need:"
 #~ msgstr "要完成本指南，您需要："
