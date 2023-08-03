@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-07-06 01:55+0000\n"
+"POT-Creation-Date: 2023-08-03 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,7 +105,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/optaplanner.adoc:47
-msgid "The solution is located in {quickstarts-tree-url}/optaplanner-quickstart[the `optaplanner-quickstart` directory]."
+msgid "The solution is located in link:{quickstarts-tree-url}/optaplanner-quickstart[the `optaplanner-quickstart` directory]."
 msgstr ""
 
 #. type: Title ==
@@ -1843,7 +1843,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/optaplanner.adoc:1100
-msgid "Take a look at {quickstarts-tree-url}/optaplanner-quickstart[the quickstart source code] to see how this all turns out."
+msgid "Take a look at link:{quickstarts-tree-url}/optaplanner-quickstart[the quickstart source code] to see how this all turns out."
 msgstr ""
 
 #~ msgid "To complete this guide, you need:"

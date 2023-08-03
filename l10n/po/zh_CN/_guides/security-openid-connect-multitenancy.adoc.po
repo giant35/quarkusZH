@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-07-06 01:55+0000\n"
+"POT-Creation-Date: 2023-08-03 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,7 +110,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-multitenancy.adoc:48
-msgid "The solution is located in the `security-openid-connect-multi-tenancy-quickstart` {quickstarts-tree-url}/security-openid-connect-multi-tenancy-quickstart[directory]."
+msgid "The solution is located in the `security-openid-connect-multi-tenancy-quickstart` link:{quickstarts-tree-url}/security-openid-connect-multi-tenancy-quickstart[directory]."
 msgstr ""
 
 #. type: Title ==
@@ -625,12 +625,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-multitenancy.adoc:352
-msgid "Import the {quickstarts-tree-url}/security-openid-connect-multi-tenancy-quickstart/config/default-tenant-realm.json[default-tenant-realm.json] to create the default realm"
+msgid "Import the link:{quickstarts-tree-url}/security-openid-connect-multi-tenancy-quickstart/config/default-tenant-realm.json[default-tenant-realm.json] to create the default realm"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-multitenancy.adoc:353
-msgid "Import the {quickstarts-tree-url}/security-openid-connect-multi-tenancy-quickstart/config/tenant-a-realm.json[tenant-a-realm.json] to create the realm for the tenant `tenant-a`."
+msgid "Import the link:{quickstarts-tree-url}/security-openid-connect-multi-tenancy-quickstart/config/tenant-a-realm.json[tenant-a-realm.json] to create the realm for the tenant `tenant-a`."
 msgstr ""
 
 #. type: Plain text
