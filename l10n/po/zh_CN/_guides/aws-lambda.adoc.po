@@ -44,7 +44,7 @@ msgstr ""
 #: upstream/_guides/aws-lambda.adoc:20
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_guides/aws-lambda.adoc:25
@@ -70,7 +70,7 @@ msgstr ""
 #: upstream/_guides/aws-lambda.adoc:30
 #, no-wrap
 msgid "Getting Started"
-msgstr ""
+msgstr "入门"
 
 #. type: Plain text
 #: upstream/_guides/aws-lambda.adoc:33

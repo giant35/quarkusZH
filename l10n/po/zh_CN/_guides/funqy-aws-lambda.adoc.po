@@ -39,7 +39,7 @@ msgstr ""
 #: upstream/_guides/funqy-aws-lambda.adoc:20
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_guides/funqy-aws-lambda.adoc:25
