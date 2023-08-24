@@ -125,6 +125,38 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>However, you can go right to the completed example.</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>当然您也可以直接查看完成后的代码。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Download an {quickstarts-archive-url}[archive] or clone the git repository:</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>下载 {quickstarts-archive-url}[压缩包] 或克隆 git 仓库:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bootstrapping the project</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>搭建项目</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The easiest way to create a new Quarkus project is to open a terminal and run the following command:</seg>
+      </tuv>
+      <tuv xml:lang="zh_CN">
+        <seg>创建 Quarkus 项目最简单方法是打开命令行并运行以下命令：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Learn how to create a Hello World Quarkus app.  This guide covers:</seg>
       </tuv>
       <tuv xml:lang="zh_CN">
@@ -185,38 +217,6 @@
       </tuv>
       <tuv xml:lang="zh_CN">
         <seg>本指南还包括接口的测试。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>However, you can go right to the completed example.</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>当然您也可以直接查看完成后的代码。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Download an {quickstarts-archive-url}[archive] or clone the git repository:</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>下载 {quickstarts-archive-url}[压缩包] 或克隆 git 仓库:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Bootstrapping the project</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>搭建项目</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>The easiest way to create a new Quarkus project is to open a terminal and run the following command:</seg>
-      </tuv>
-      <tuv xml:lang="zh_CN">
-        <seg>创建 Quarkus 项目最简单方法是打开命令行并运行以下命令：</seg>
       </tuv>
     </tu>
     <tu>
