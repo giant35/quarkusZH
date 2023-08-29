@@ -34,7 +34,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/qute.adoc:18
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/qute.adoc:22

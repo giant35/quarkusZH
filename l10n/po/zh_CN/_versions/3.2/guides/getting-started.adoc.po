@@ -28,12 +28,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:16
 msgid "Learn how to create a Hello World Quarkus app.  This guide covers:"
-msgstr ""
+msgstr "了解如何创建Quarkus Hello World 应用程序。 本指南涵盖:"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:18
 msgid "Bootstrapping an application"
-msgstr ""
+msgstr "搭建应用程序"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:19
@@ -43,45 +43,46 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:20
 msgid "Injecting beans"
-msgstr ""
+msgstr "注入beans"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:21
 msgid "Functional tests"
-msgstr ""
+msgstr "功能测试"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:22
 msgid "Packaging of the application"
-msgstr ""
+msgstr "应用打包"
 
 #. type: Title ==
 #: upstream/_versions/3.2/guides/getting-started.adoc:23
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Block title
 #: upstream/_versions/3.2/guides/getting-started.adoc:29
 #, no-wrap
 msgid "Verify Maven is using the Java you expect"
-msgstr ""
+msgstr "验证 Maven 是否使用了预期的Java"
 
 #. type: delimited block =
 #: upstream/_versions/3.2/guides/getting-started.adoc:34
+#, fuzzy
 msgid "If you have multiple JDK's installed, it is not certain Maven will pick up the expected java and you could end up with unexpected results.  You can verify which JDK Maven uses by running `mvn --version`."
-msgstr ""
+msgstr "如果您安装了多个JDK，Maven可能未使用预期的java，这样可能会得到意外的结果。您可以通过运行​  `mvn —version` 来验证 Maven 使用了哪个JDK。"
 
 #. type: Title ==
 #: upstream/_versions/3.2/guides/getting-started.adoc:37
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:41
 msgid "In this guide, we create a straightforward application serving a `hello` endpoint. To demonstrate dependency injection, this endpoint uses a `greeting` bean."
-msgstr ""
+msgstr "在本指南中，我们将创建一个提供 `hello` 接口的简单应用程序。为了演示依赖注入，这个接口使用一个  `greeting`  bean。"
 
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: upstream/_versions/3.2/guides/getting-started.adoc:42
@@ -98,13 +99,13 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:45
 msgid "This guide also covers the testing of the endpoint."
-msgstr ""
+msgstr "本指南还包括接口的测试。"
 
 #. type: Title ==
 #: upstream/_versions/3.2/guides/getting-started.adoc:46
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:49
@@ -114,12 +115,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:51
 msgid "However, you can go right to the completed example."
-msgstr ""
+msgstr "当然您也可以直接查看完成后的代码。"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:53
 msgid "Download an {quickstarts-archive-url}[archive] or clone the git repository:"
-msgstr ""
+msgstr "下载 {quickstarts-archive-url}[压缩包] 或克隆 git 仓库:"
 
 #. type: delimited block -
 #: upstream/_versions/3.2/guides/getting-started.adoc:57
@@ -136,12 +137,12 @@ msgstr ""
 #: upstream/_versions/3.2/guides/getting-started.adoc:61
 #, no-wrap
 msgid "Bootstrapping the project"
-msgstr ""
+msgstr "搭建项目"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:64
 msgid "The easiest way to create a new Quarkus project is to open a terminal and run the following command:"
-msgstr ""
+msgstr "创建 Quarkus 项目最简单方法是打开命令行并运行以下命令："
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:66
@@ -166,12 +167,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:78
 msgid "It generates the following in `./getting-started`:"
-msgstr ""
+msgstr "上边命令会在  `./getting-started` 中生成："
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:80
 msgid "the Maven structure"
-msgstr ""
+msgstr "Maven 目录结构"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:81
@@ -186,12 +187,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:83
 msgid "a landing page that is accessible on `http://localhost:8080` after starting the application"
-msgstr ""
+msgstr "启动应用程序后可访问  `http://localhost:8080`  入口页"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:84
 msgid "example `Dockerfile` files for both `native` and `jvm` modes in `src/main/docker`"
-msgstr ""
+msgstr "`src/main/docker` 有 `Dockerfile` 样例文件, 包含 `native` 及 `jvm` 模式"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:85
@@ -200,8 +201,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:89
+#, fuzzy
 msgid "Once generated, look at the `pom.xml`.  You will find the import of the Quarkus BOM, allowing you to omit the version of the different Quarkus dependencies.  In addition, you can see the `quarkus-maven-plugin` responsible of the packaging of the application and also providing the development mode."
-msgstr ""
+msgstr "生成后，查看 `pom.xml` 。 您会看到导入了 Quarkus BOM ，让您不用关心 Quarkus 依赖项版本。 此外，您还可以看到负责打包应用程序并提供开发模式的  `quarkus-maven-plugin`  。"
 
 #. type: delimited block -
 #: upstream/_versions/3.2/guides/getting-started.adoc:103
@@ -263,7 +265,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:131
 msgid "If we focus on the dependencies section, you can see the extension allowing the development of REST applications:"
-msgstr ""
+msgstr "如果我们关注 dependencies 部分，您可以看到用于支持 REST 程序开发的扩展："
 
 #. type: Block title
 #: upstream/_versions/3.2/guides/getting-started.adoc:133
@@ -361,13 +363,13 @@ msgstr ""
 #. type: delimited block =
 #: upstream/_versions/3.2/guides/getting-started.adoc:178
 msgid "With Quarkus, there is no need to create an `Application` class. It's supported, but not required. In addition, only one instance of the resource is created and not one per request. You can configure this using the different `*Scoped` annotations (`ApplicationScoped`, `RequestScoped`, etc)."
-msgstr ""
+msgstr "使用 Quarkus，不需要创建  `Application`  类。能用它，但不是必需的。此外，只创建资源类的一个实例，而不是每次请求创建一个实例。(QFY: GreetingResource 是单例)您可以使用不同的 `*Scoped`  注解 (`ApplicationScoped`, `RequestScoped` ，等）对它进行配置。"
 
 #. type: Title ==
 #: upstream/_versions/3.2/guides/getting-started.adoc:180
 #, no-wrap
 msgid "Running the application"
-msgstr ""
+msgstr "运行应用"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:183
@@ -401,7 +403,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:209
 msgid "Once started, you can request the provided endpoint:"
-msgstr ""
+msgstr "启动后，可以请求提供的接口："
 
 #. type: delimited block -
 #: upstream/_versions/3.2/guides/getting-started.adoc:214
@@ -414,24 +416,24 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:217
 msgid "Hit `CTRL+C` to stop the application, or keep it running and enjoy the blazing fast hot-reload."
-msgstr ""
+msgstr "按 CTRL+C 停止应用程序，或者让它继续运行并享受超快的热加载。"
 
 #. type: Block title
 #: upstream/_versions/3.2/guides/getting-started.adoc:219
 #, no-wrap
 msgid "Automatically add newline with `curl -w \"\\n\"`"
-msgstr ""
+msgstr "用 `curl -w \"\\n\"` 自动添加换行"
 
 #. type: delimited block =
 #: upstream/_versions/3.2/guides/getting-started.adoc:222
 msgid "We are using `curl -w \"\\n\"` in this example to avoid your terminal printing a '%' or put both result and next command prompt on the same line."
-msgstr ""
+msgstr "在本例中，我们使用 `curl -w \"\\n\"` 来避免终端输出 ‘%’  ，或者将结果和下一个命令提示符放在同一行。"
 
 #. type: Title ==
 #: upstream/_versions/3.2/guides/getting-started.adoc:224
 #, no-wrap
 msgid "Using injection"
-msgstr ""
+msgstr "使用注入"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:228
@@ -486,7 +488,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started.adoc:253
 msgid "Edit the `GreetingResource` class to inject the `GreetingService` and create a new endpoint using it:"
-msgstr ""
+msgstr "编辑 `GreetingResource` 类注入 `GreetingService` 并在一个新接口中使用它:"
 
 #. type: delimited block -
 #: upstream/_versions/3.2/guides/getting-started.adoc:263

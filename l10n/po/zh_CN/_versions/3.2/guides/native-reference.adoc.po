@@ -729,7 +729,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/native-reference.adoc:560
 #, no-wrap
 msgid "Bootstrapping the project"
-msgstr ""
+msgstr "搭建项目"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/native-reference.adoc:564

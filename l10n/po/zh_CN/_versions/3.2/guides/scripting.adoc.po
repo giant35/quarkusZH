@@ -39,7 +39,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/scripting.adoc:18
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/scripting.adoc:25
@@ -50,7 +50,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/scripting.adoc:26
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/scripting.adoc:29
@@ -161,7 +161,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/scripting.adoc:80
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/scripting.adoc:83
@@ -364,7 +364,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/scripting.adoc:195
 #, no-wrap
 msgid "Running the application"
-msgstr ""
+msgstr "运行应用"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/scripting.adoc:198
@@ -398,7 +398,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/3.2/guides/scripting.adoc:221
 msgid "Once started, you can request the provided endpoint:"
-msgstr ""
+msgstr "启动后，可以请求提供的接口："
 
 #. type: delimited block -
 #: upstream/_versions/3.2/guides/scripting.adoc:226
@@ -417,12 +417,12 @@ msgstr ""
 #: upstream/_versions/3.2/guides/scripting.adoc:231
 #, no-wrap
 msgid "Automatically add newline with `curl -w \"\\n\"`"
-msgstr ""
+msgstr "用 `curl -w \"\\n\"` 自动添加换行"
 
 #. type: delimited block =
 #: upstream/_versions/3.2/guides/scripting.adoc:234
 msgid "We are using `curl -w \"\\n\"` in this example to avoid your terminal printing a '%' or put both result and next command prompt on the same line."
-msgstr ""
+msgstr "在本例中，我们使用 `curl -w \"\\n\"` 来避免终端输出 ‘%’  ，或者将结果和下一个命令提示符放在同一行。"
 
 #. type: Block title
 #: upstream/_versions/3.2/guides/scripting.adoc:237
@@ -439,7 +439,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/scripting.adoc:243
 #, no-wrap
 msgid "Using injection"
-msgstr ""
+msgstr "使用注入"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/scripting.adoc:247

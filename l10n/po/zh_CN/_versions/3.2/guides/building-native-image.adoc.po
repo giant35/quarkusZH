@@ -56,7 +56,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/building-native-image.adoc:19
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/building-native-image.adoc:25
@@ -263,7 +263,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/building-native-image.adoc:157
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: delimited block =
 #: upstream/_versions/3.2/guides/building-native-image.adoc:160

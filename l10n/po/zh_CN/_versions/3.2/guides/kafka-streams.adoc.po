@@ -34,7 +34,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/kafka-streams.adoc:13
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/kafka-streams.adoc:20
@@ -85,7 +85,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/kafka-streams.adoc:809
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: delimited block =
 #: upstream/_versions/3.2/guides/kafka-streams.adoc:52
@@ -138,7 +138,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/kafka-streams.adoc:67
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: delimited block =
 #: upstream/_versions/3.2/guides/kafka-streams.adoc:71

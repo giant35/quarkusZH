@@ -171,7 +171,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/vertx-reference.adoc:83
 #, no-wrap
 msgid "Documentation"
-msgstr ""
+msgstr "文档"
 
 #. type: Table
 #: upstream/_versions/3.2/guides/vertx-reference.adoc:84

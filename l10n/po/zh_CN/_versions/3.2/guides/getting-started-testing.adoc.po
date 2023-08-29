@@ -46,7 +46,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/getting-started-testing.adoc:23
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started-testing.adoc:27
@@ -57,7 +57,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/getting-started-testing.adoc:28
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started-testing.adoc:32
@@ -73,7 +73,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/getting-started-testing.adoc:35
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/getting-started-testing.adoc:39

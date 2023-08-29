@@ -39,13 +39,13 @@ msgstr ""
 #: upstream/_versions/3.2/guides/hibernate-search-orm-elasticsearch.adoc:16
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_versions/3.2/guides/hibernate-search-orm-elasticsearch.adoc:22
 #, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/hibernate-search-orm-elasticsearch.adoc:25
@@ -61,7 +61,7 @@ msgstr ""
 #: upstream/_versions/3.2/guides/hibernate-search-orm-elasticsearch.adoc:28
 #, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "完整源码"
 
 #. type: Plain text
 #: upstream/_versions/3.2/guides/hibernate-search-orm-elasticsearch.adoc:32
