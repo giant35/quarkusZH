@@ -1,6 +1,8 @@
 Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_posts/insights_1_transcription.adoc.po,0,254,0,8846,100%
 l10n/po/zh_CN/_posts/insights_0_transcription.adoc.po,0,117,0,3765,100%
+l10n/po/zh_CN/_posts/2023-08-29-quarkus-3-3-1-released.adoc.po,0,19,0,256,100%
+l10n/po/zh_CN/_posts/2023-08-28-quarkus-3-2-5-final-released.adoc.po,0,16,0,209,100%
 l10n/po/zh_CN/_posts/2023-08-26-quarkus-2-16-10-final-released.adoc.po,0,19,0,248,100%
 l10n/po/zh_CN/_posts/2023-08-23-quarkus-3-3-0-released.adoc.po,0,68,0,1067,100%
 l10n/po/zh_CN/_posts/2023-08-14-quarkus-newsletter-35.adoc.po,0,6,0,251,100%
@@ -369,7 +371,7 @@ l10n/po/zh_CN/_posts/2019-06-05-quarkus-and-web-ui-development-mode.adoc.po,0,56
 l10n/po/zh_CN/_posts/2019-05-08-welcome.adoc.po,0,6,0,89,100%
 l10n/po/zh_CN/_posts/2019-05-05-quarkus-has-a-new-logo.adoc.po,0,25,0,394,100%
 l10n/po/zh_CN/_posts/2020-04-08-why-did-payair-technologies-switch-to-quarkus.adoc.po,1,44,21,1333,99%
-l10n/po/zh_CN/_guides/writing-native-applications-tips.adoc.po,0,152,0,2848,100%
+l10n/po/zh_CN/_guides/writing-native-applications-tips.adoc.po,0,153,0,2870,100%
 l10n/po/zh_CN/_guides/writing-extensions.adoc.po,0,823,0,15815,100%
 l10n/po/zh_CN/_guides/websockets.adoc.po,0,66,0,803,100%
 l10n/po/zh_CN/_guides/virtual-threads.adoc.po,0,153,0,2948,100%
@@ -404,7 +406,7 @@ l10n/po/zh_CN/_guides/status-include.adoc.po,0,5,0,122,100%
 l10n/po/zh_CN/_guides/spring-web.adoc.po,0,141,0,1386,100%
 l10n/po/zh_CN/_guides/spring-security.adoc.po,0,134,0,1526,100%
 l10n/po/zh_CN/_guides/spring-scheduled.adoc.po,0,84,0,920,100%
-l10n/po/zh_CN/_guides/spring-di.adoc.po,0,116,0,1313,100%
+l10n/po/zh_CN/_guides/spring-di.adoc.po,0,117,0,1317,100%
 l10n/po/zh_CN/_guides/spring-data-rest.adoc.po,0,150,0,1512,100%
 l10n/po/zh_CN/_guides/spring-data-jpa.adoc.po,0,179,0,2044,100%
 l10n/po/zh_CN/_guides/spring-cloud-config-client.adoc.po,0,46,0,500,100%
@@ -438,7 +440,7 @@ l10n/po/zh_CN/_guides/security-openid-connect-dev-services.adoc.po,0,153,0,3650,
 l10n/po/zh_CN/_guides/security-openid-connect-client.adoc.po,0,139,0,1820,100%
 l10n/po/zh_CN/_guides/security-openid-connect-client-reference.adoc.po,0,254,0,4535,100%
 l10n/po/zh_CN/_guides/security-oidc-configuration-properties-reference.adoc.po,0,10,0,77,100%
-l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication.adoc.po,0,404,0,8840,100%
+l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication.adoc.po,0,427,0,9340,100%
 l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication-tutorial.adoc.po,0,91,0,1132,100%
 l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication-concept.adoc.po,0,364,0,8008,100%
 l10n/po/zh_CN/_guides/security-oidc-bearer-token-authentication.adoc.po,0,231,0,4459,100%
@@ -463,14 +465,14 @@ l10n/po/zh_CN/_guides/security-csrf-prevention.adoc.po,0,66,0,983,100%
 l10n/po/zh_CN/_guides/security-built-in-authentication.adoc.po,0,60,0,1177,100%
 l10n/po/zh_CN/_guides/security-built-in-authentication-support-concept.adoc.po,0,63,0,1293,100%
 l10n/po/zh_CN/_guides/security-basic-authentication.adoc.po,0,32,0,481,100%
-l10n/po/zh_CN/_guides/security-basic-authentication-tutorial.adoc.po,0,141,0,2005,100%
+l10n/po/zh_CN/_guides/security-basic-authentication-tutorial.adoc.po,0,148,0,2082,100%
 l10n/po/zh_CN/_guides/security-basic-authentication-howto.adoc.po,0,20,0,259,100%
 l10n/po/zh_CN/_guides/security-basic-authentication-concept.adoc.po,0,32,0,482,100%
 l10n/po/zh_CN/_guides/security-basic-auth-concept.adoc.po,0,14,0,346,100%
 l10n/po/zh_CN/_guides/security-authorize-web-endpoints-reference.adoc.po,0,205,0,3216,100%
 l10n/po/zh_CN/_guides/security-authorization.adoc.po,0,80,0,1596,100%
 l10n/po/zh_CN/_guides/security-authorization-of-web-endpoints-reference.adoc.po,0,89,0,1818,100%
-l10n/po/zh_CN/_guides/security-authentication-mechanisms.adoc.po,0,160,0,2283,100%
+l10n/po/zh_CN/_guides/security-authentication-mechanisms.adoc.po,0,162,0,2299,100%
 l10n/po/zh_CN/_guides/security-authentication-mechanisms-concept.adoc.po,0,161,0,2266,100%
 l10n/po/zh_CN/_guides/security-architecture.adoc.po,0,37,0,547,100%
 l10n/po/zh_CN/_guides/security-architecture-concept.adoc.po,0,36,0,442,100%
@@ -516,11 +518,11 @@ l10n/po/zh_CN/_guides/picocli.adoc.po,0,82,0,1143,100%
 l10n/po/zh_CN/_guides/performance-measure.adoc.po,0,86,0,1313,100%
 l10n/po/zh_CN/_guides/optaplanner.adoc.po,0,241,0,4077,100%
 l10n/po/zh_CN/_guides/opentracing.adoc.po,0,95,0,1251,100%
-l10n/po/zh_CN/_guides/opentelemetry.adoc.po,0,157,0,1929,100%
+l10n/po/zh_CN/_guides/opentelemetry.adoc.po,0,178,0,2131,100%
 l10n/po/zh_CN/_guides/openapi-swaggerui.adoc.po,0,129,0,1769,100%
 l10n/po/zh_CN/_guides/neo4j.adoc.po,0,142,0,2118,100%
-l10n/po/zh_CN/_guides/native-reference.adoc.po,0,489,0,12958,100%
-l10n/po/zh_CN/_guides/native-and-ssl.adoc.po,0,109,0,1581,100%
+l10n/po/zh_CN/_guides/native-reference.adoc.po,0,491,0,12978,100%
+l10n/po/zh_CN/_guides/native-and-ssl.adoc.po,0,109,0,1591,100%
 l10n/po/zh_CN/_guides/mutiny-primer.adoc.po,0,140,0,2091,100%
 l10n/po/zh_CN/_guides/mongodb.adoc.po,0,192,0,2872,100%
 l10n/po/zh_CN/_guides/mongodb-panache.adoc.po,0,377,0,6030,100%
@@ -539,7 +541,7 @@ l10n/po/zh_CN/_guides/liquibase-mongodb.adoc.po,0,49,0,604,100%
 l10n/po/zh_CN/_guides/lifecycle.adoc.po,0,80,0,1121,100%
 l10n/po/zh_CN/_guides/kubernetes-dev-services.adoc.po,0,19,0,384,100%
 l10n/po/zh_CN/_guides/kubernetes-config.adoc.po,0,49,0,914,100%
-l10n/po/zh_CN/_guides/kubernetes-client.adoc.po,0,110,0,1592,100%
+l10n/po/zh_CN/_guides/kubernetes-client.adoc.po,0,111,0,1598,100%
 l10n/po/zh_CN/_guides/kotlin.adoc.po,0,153,0,1919,100%
 l10n/po/zh_CN/_guides/kogito.adoc.po,0,152,0,1886,100%
 l10n/po/zh_CN/_guides/kogito-pmml.adoc.po,0,55,0,666,100%
@@ -547,7 +549,7 @@ l10n/po/zh_CN/_guides/kogito-drl.adoc.po,0,92,0,1073,100%
 l10n/po/zh_CN/_guides/kogito-dmn.adoc.po,0,94,0,1217,100%
 l10n/po/zh_CN/_guides/kogito-dev-services.adoc.po,0,25,0,361,100%
 l10n/po/zh_CN/_guides/kogito-dev-services-build-time-config.adoc.po,0,16,0,327,100%
-l10n/po/zh_CN/_guides/kafka.adoc.po,2,814,2,14483,100%
+l10n/po/zh_CN/_guides/kafka.adoc.po,3,821,7,14600,100%
 l10n/po/zh_CN/_guides/kafka-streams.adoc.po,1,271,1,4458,100%
 l10n/po/zh_CN/_guides/kafka-schema-registry-avro.adoc.po,1,175,6,2673,100%
 l10n/po/zh_CN/_guides/kafka-reactive-getting-started.adoc.po,0,124,0,1824,100%
@@ -596,7 +598,7 @@ l10n/po/zh_CN/_guides/grpc-service-implementation.adoc.po,0,112,0,1641,100%
 l10n/po/zh_CN/_guides/grpc-service-consumption.adoc.po,0,128,0,1687,100%
 l10n/po/zh_CN/_guides/grpc-kubernetes.adoc.po,0,25,0,347,100%
 l10n/po/zh_CN/_guides/grpc-getting-started.adoc.po,0,122,0,1744,100%
-l10n/po/zh_CN/_guides/gradle-tooling.adoc.po,0,200,0,3506,100%
+l10n/po/zh_CN/_guides/gradle-tooling.adoc.po,0,207,0,3671,100%
 l10n/po/zh_CN/_guides/gradle-config.adoc.po,0,9,0,100,100%
 l10n/po/zh_CN/_guides/getting-started-testing.adoc.po,0,405,0,7093,100%
 l10n/po/zh_CN/_guides/getting-started-reactive.adoc.po,1,98,5,1992,100%
@@ -635,7 +637,7 @@ l10n/po/zh_CN/_guides/dev-mode-differences.adoc.po,0,46,0,751,100%
 l10n/po/zh_CN/_guides/deploying-to-openshift.adoc.po,0,181,0,2383,100%
 l10n/po/zh_CN/_guides/deploying-to-kubernetes.adoc.po,0,457,0,7422,100%
 l10n/po/zh_CN/_guides/deploying-to-heroku.adoc.po,0,63,0,950,100%
-l10n/po/zh_CN/_guides/deploying-to-google-cloud.adoc.po,0,101,0,1566,100%
+l10n/po/zh_CN/_guides/deploying-to-google-cloud.adoc.po,0,99,0,1523,100%
 l10n/po/zh_CN/_guides/deploying-to-azure-cloud.adoc.po,0,61,0,841,100%
 l10n/po/zh_CN/_guides/datasource.adoc.po,0,316,0,3159,100%
 l10n/po/zh_CN/_guides/databases-dev-services.adoc.po,0,79,0,1180,100%
@@ -646,7 +648,7 @@ l10n/po/zh_CN/_guides/container-image.adoc.po,0,82,0,1446,100%
 l10n/po/zh_CN/_guides/consul-config.adoc.po,0,48,0,685,100%
 l10n/po/zh_CN/_guides/config.adoc.po,0,84,0,900,100%
 l10n/po/zh_CN/_guides/config-yaml.adoc.po,0,48,0,589,100%
-l10n/po/zh_CN/_guides/config-reference.adoc.po,0,246,0,3696,100%
+l10n/po/zh_CN/_guides/config-reference.adoc.po,0,249,0,3824,100%
 l10n/po/zh_CN/_guides/config-mappings.adoc.po,0,129,0,1254,100%
 l10n/po/zh_CN/_guides/config-extending-support.adoc.po,0,104,0,1381,100%
 l10n/po/zh_CN/_guides/conditional-extension-dependencies.adoc.po,0,41,0,811,100%
@@ -663,20 +665,20 @@ l10n/po/zh_CN/_guides/camel.adoc.po,0,3,0,59,100%
 l10n/po/zh_CN/_guides/cache.adoc.po,0,265,0,4225,100%
 l10n/po/zh_CN/_guides/cache-redis-reference.adoc.po,0,42,0,528,100%
 l10n/po/zh_CN/_guides/building-substrate-howto.adoc.po,0,24,0,260,100%
-l10n/po/zh_CN/_guides/building-native-image.adoc.po,0,250,0,4927,100%
+l10n/po/zh_CN/_guides/building-native-image.adoc.po,0,250,0,4928,100%
 l10n/po/zh_CN/_guides/building-my-first-extension.adoc.po,0,239,0,4162,100%
 l10n/po/zh_CN/_guides/build-analytics.adoc.po,0,50,0,667,100%
 l10n/po/zh_CN/_guides/blaze-persistence.adoc.po,0,62,0,700,100%
 l10n/po/zh_CN/_guides/azure-functions.adoc.po,0,58,0,820,100%
 l10n/po/zh_CN/_guides/azure-functions-http.adoc.po,0,56,0,766,100%
-l10n/po/zh_CN/_guides/aws-lambda.adoc.po,0,206,0,3521,100%
+l10n/po/zh_CN/_guides/aws-lambda.adoc.po,0,208,0,3532,100%
 l10n/po/zh_CN/_guides/aws-lambda-snapstart.adoc.po,0,52,0,759,100%
-l10n/po/zh_CN/_guides/aws-lambda-http.adoc.po,0,146,0,2671,100%
+l10n/po/zh_CN/_guides/aws-lambda-http.adoc.po,0,148,0,2682,100%
 l10n/po/zh_CN/_guides/appcds.adoc.po,0,30,0,718,100%
 l10n/po/zh_CN/_guides/apicurio-registry-dev-services.adoc.po,0,24,0,448,100%
 l10n/po/zh_CN/_guides/ansible.adoc.po,0,78,0,1463,100%
 l10n/po/zh_CN/_guides/amqp.adoc.po,2,114,3,1589,100%
-l10n/po/zh_CN/_guides/amqp-reference.adoc.po,0,258,0,3135,100%
+l10n/po/zh_CN/_guides/amqp-reference.adoc.po,0,265,0,3252,100%
 l10n/po/zh_CN/_guides/amqp-dev-services.adoc.po,0,18,0,306,100%
 l10n/po/zh_CN/_guides/amazon-ssm.adoc.po,0,97,0,1284,100%
 l10n/po/zh_CN/_guides/amazon-sqs.adoc.po,0,107,0,1672,100%
