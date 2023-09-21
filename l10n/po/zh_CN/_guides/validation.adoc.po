@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-08-03 01:29+0000\n"
+"POT-Creation-Date: 2023-09-21 01:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -824,7 +824,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/validation.adoc:411
-msgid "It's sometimes necessary to enable different validation constraints for the same class when it's passed to a different method."
+msgid "It is sometimes necessary to enable different validation constraints for the same class when it's passed to a different method."
 msgstr ""
 
 #. type: Plain text
