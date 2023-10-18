@@ -41,7 +41,7 @@ msgstr ""
 #: upstream/_versions/main/guides/security-oidc-auth0-tutorial.adoc:19
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-oidc-auth0-tutorial.adoc:22
