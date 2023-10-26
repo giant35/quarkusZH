@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-10-14 01:07+0000\n"
+"POT-Creation-Date: 2023-10-26 01:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,167 +26,167 @@ msgid "Getting Started with SmallRye Stork"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:16
+#: upstream/_guides/stork.adoc:19
 msgid "The essence of distributed systems resides in the interaction between services.  In modern architecture, you often have multiple instances of your service to share the load or improve the resilience by redundancy.  But how do you select the best instance of your service? That's where https://smallrye.io/smallrye-stork[SmallRye Stork] helps.  Stork is going to choose the most appropriate instance.  It offers:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:18
+#: upstream/_guides/stork.adoc:21
 msgid "Extensible service discovery mechanisms"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:19
+#: upstream/_guides/stork.adoc:22
 msgid "Built-in support for Consul and Kubernetes"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:20
+#: upstream/_guides/stork.adoc:23
 msgid "Customizable client load-balancing strategies"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/stork.adoc:23
+#: upstream/_guides/stork.adoc:26
 #, no-wrap
 msgid "Prerequisites"
 msgstr "准备"
 
 #. type: Title ==
-#: upstream/_guides/stork.adoc:28
+#: upstream/_guides/stork.adoc:31
 #, no-wrap
 msgid "Architecture"
 msgstr "架构"
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:31
+#: upstream/_guides/stork.adoc:34
 msgid "In this guide, we will build an application composed of:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:33
+#: upstream/_guides/stork.adoc:36
 msgid "A simple blue service exposed on port 9000"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:34
+#: upstream/_guides/stork.adoc:37
 msgid "A simple red service exposed on port 9001"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:35
+#: upstream/_guides/stork.adoc:38
 msgid "A REST Client calling the blue or red service (the selection is delegated to Stork)"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:36
+#: upstream/_guides/stork.adoc:39
 msgid "A REST endpoint using the REST client and calling the services"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:37
+#: upstream/_guides/stork.adoc:40
 msgid "The blue and red services are registered in https://www.consul.io/[Consul]."
 msgstr ""
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: upstream/_guides/stork.adoc:38
+#: upstream/_guides/stork.adoc:41
 #, no-wrap
 msgid "Architecture of the application"
 msgstr ""
 
 #. type: Target for macro image
-#: upstream/_guides/stork.adoc:38
+#: upstream/_guides/stork.adoc:41
 #, no-wrap
 msgid "stork-getting-started-architecture.png"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:42
+#: upstream/_guides/stork.adoc:45
 msgid "For the sake of simplicity, everything (except Consul) will be running in the same Quarkus application.  Of course, each component will run in its own process in the real world."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/stork.adoc:43
+#: upstream/_guides/stork.adoc:46
 #, no-wrap
 msgid "Solution"
 msgstr "完整源码"
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:47
+#: upstream/_guides/stork.adoc:50
 msgid "We recommend that you follow the instructions in the next sections and create the applications step by step.  However, you can go right to the completed example."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:49
+#: upstream/_guides/stork.adoc:52
 msgid "Clone the Git repository: `git clone {quickstarts-clone-url}`, or download an {quickstarts-archive-url}[archive]."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:51
+#: upstream/_guides/stork.adoc:54
 msgid "The solution is located in the `stork-quickstart` link:{quickstarts-tree-url}/stork-quickstart[directory]."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/stork.adoc:52
+#: upstream/_guides/stork.adoc:55
 #, no-wrap
 msgid "Discovery and selection"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:55
+#: upstream/_guides/stork.adoc:58
 msgid "Before going further, we need to discuss discovery vs. selection."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:58
+#: upstream/_guides/stork.adoc:61
 msgid "Service discovery is the process of locating service instances.  It produces a list of service instances that is potentially empty (if no service matches the request) or contains multiple service instances."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:61
+#: upstream/_guides/stork.adoc:64
 msgid "Service selection, also called load-balancing, chooses the best instance from the list returned by the discovery process.  The result is a single service instance or an exception when no suitable instance can be found."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:65
+#: upstream/_guides/stork.adoc:68
 msgid "Stork handles both discovery and selection.  However, it does not handle the communication with the service but only provides a service instance.  The various integrations in Quarkus extract the location of the service from that service instance."
 msgstr ""
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: upstream/_guides/stork.adoc:66
+#: upstream/_guides/stork.adoc:69
 #, no-wrap
 msgid "Discovery and Selection of services"
 msgstr ""
 
 #. type: Target for macro image
-#: upstream/_guides/stork.adoc:66
+#: upstream/_guides/stork.adoc:69
 #, no-wrap
 msgid "stork-process.png"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/stork.adoc:68
+#: upstream/_guides/stork.adoc:71
 #, no-wrap
 msgid "Bootstrapping the project"
 msgstr "搭建项目"
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:71
+#: upstream/_guides/stork.adoc:74
 msgid "Create a Quarkus project importing the quarkus-rest-client-reactive and quarkus-resteasy-reactive extensions using your favorite approach:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:77
+#: upstream/_guides/stork.adoc:80
 msgid "In the generated project, also add the following dependencies:"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/stork.adoc:79
+#: upstream/_guides/stork.adoc:82
 #, no-wrap
 msgid "pom.xml"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:89
+#: upstream/_guides/stork.adoc:92
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -200,13 +200,13 @@ msgid ""
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/stork.adoc:92
+#: upstream/_guides/stork.adoc:95
 #, no-wrap
 msgid "build.gradle"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:96
+#: upstream/_guides/stork.adoc:99
 #, no-wrap
 msgid ""
 "implementation(\"io.smallrye.stork:stork-service-discovery-consul\")\n"
@@ -214,35 +214,35 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:100
+#: upstream/_guides/stork.adoc:103
 msgid "`stork-service-discovery-consul` provides an implementation of service discovery for Consul.  `smallrye-mutiny-vertx-consul-client` is a Consul client which we will use to register our services in Consul."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/stork.adoc:101
+#: upstream/_guides/stork.adoc:104
 #, no-wrap
 msgid "The Blue and Red services"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:104
+#: upstream/_guides/stork.adoc:107
 msgid "Let's start with the very beginning: the service we will discover, select and call."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:106
+#: upstream/_guides/stork.adoc:109
 msgid "Create the `src/main/java/org/acme/services/BlueService.java` with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:110 upstream/_guides/stork.adoc:145
-#: upstream/_guides/stork.adoc:184
+#: upstream/_guides/stork.adoc:113 upstream/_guides/stork.adoc:148
+#: upstream/_guides/stork.adoc:187
 #, no-wrap
 msgid "package org.acme.services;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:114 upstream/_guides/stork.adoc:149
+#: upstream/_guides/stork.adoc:117 upstream/_guides/stork.adoc:152
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.StartupEvent;\n"
@@ -251,8 +251,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:117 upstream/_guides/stork.adoc:152
-#: upstream/_guides/stork.adoc:194
+#: upstream/_guides/stork.adoc:120 upstream/_guides/stork.adoc:155
+#: upstream/_guides/stork.adoc:197
 #, no-wrap
 msgid ""
 "import jakarta.enterprise.context.ApplicationScoped;\n"
@@ -260,7 +260,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:120
+#: upstream/_guides/stork.adoc:123
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -268,13 +268,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:122
+#: upstream/_guides/stork.adoc:125
 #, no-wrap
 msgid "    @ConfigProperty(name = \"blue-service-port\", defaultValue = \"9000\") int port;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:134
+#: upstream/_guides/stork.adoc:137
 #, no-wrap
 msgid ""
 "    /**\n"
@@ -291,17 +291,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:138
+#: upstream/_guides/stork.adoc:141
 msgid "It creates a new HTTP server (using Vert.x) and implements our simple service when the application starts.  For each HTTP request, it sends a response with \"Hello from Blue!\" as the body."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:140
+#: upstream/_guides/stork.adoc:143
 msgid "Following the same logic, create the `src/main/java/org/acme/services/RedService.java` with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:156
+#: upstream/_guides/stork.adoc:159
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -310,7 +310,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:167
+#: upstream/_guides/stork.adoc:170
 #, no-wrap
 msgid ""
 "    /**\n"
@@ -326,39 +326,39 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:169 upstream/_guides/stork.adoc:291
+#: upstream/_guides/stork.adoc:172 upstream/_guides/stork.adoc:294
 #, no-wrap
 msgid "}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:172
+#: upstream/_guides/stork.adoc:175
 msgid "This time, it writes \"Hello from Red!\"."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/stork.adoc:173
+#: upstream/_guides/stork.adoc:176
 #, no-wrap
 msgid "Service registration in Consul"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:176
+#: upstream/_guides/stork.adoc:179
 msgid "Now that we have implemented our services, we need to register them into Consul."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:178
+#: upstream/_guides/stork.adoc:181
 msgid "Stork is not limited to Consul and integrates with other service discovery mechanisms."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:180
+#: upstream/_guides/stork.adoc:183
 msgid "Create the `src/main/java/org/acme/services/Registration.java` file with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:191
+#: upstream/_guides/stork.adoc:194
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.StartupEvent;\n"
@@ -370,7 +370,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:197
+#: upstream/_guides/stork.adoc:200
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -378,7 +378,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:200
+#: upstream/_guides/stork.adoc:203
 #, no-wrap
 msgid ""
 "    @ConfigProperty(name = \"consul.host\") String host;\n"
@@ -386,7 +386,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:203
+#: upstream/_guides/stork.adoc:206
 #, no-wrap
 msgid ""
 "    @ConfigProperty(name = \"red-service-port\", defaultValue = \"9000\") int red;\n"
@@ -394,7 +394,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:211
+#: upstream/_guides/stork.adoc:214
 #, no-wrap
 msgid ""
 "    /**\n"
@@ -407,7 +407,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:218
+#: upstream/_guides/stork.adoc:221
 #, no-wrap
 msgid ""
 "        client.registerServiceAndAwait(\n"
@@ -419,41 +419,41 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:222
+#: upstream/_guides/stork.adoc:225
 msgid "When the application starts, it connects to Consul using the Vert.x Consul Client and registers our two instances.  Both registration uses the same name (`my-service`), but different ids to indicate that it's two instances of the same _service_."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/stork.adoc:223
+#: upstream/_guides/stork.adoc:226
 #, no-wrap
 msgid "The REST Client interface and the front end API"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:226
+#: upstream/_guides/stork.adoc:229
 msgid "So far, we didn't use Stork; we just scaffolded the services we will be discovering, selecting, and calling."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:229
+#: upstream/_guides/stork.adoc:232
 msgid "We will call the services using the Reactive REST Client.  Create the `src/main/java/org/acme/MyService.java` file with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:233 upstream/_guides/stork.adoc:268
-#: upstream/_guides/stork.adoc:304
+#: upstream/_guides/stork.adoc:236 upstream/_guides/stork.adoc:271
+#: upstream/_guides/stork.adoc:307
 #, no-wrap
 msgid "package org.acme;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:235
+#: upstream/_guides/stork.adoc:238
 #, no-wrap
 msgid "import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:239
+#: upstream/_guides/stork.adoc:242
 #, no-wrap
 msgid ""
 "import jakarta.ws.rs.GET;\n"
@@ -462,7 +462,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:249
+#: upstream/_guides/stork.adoc:252
 #, no-wrap
 msgid ""
 "/**\n"
@@ -477,7 +477,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:254
+#: upstream/_guides/stork.adoc:257
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -487,23 +487,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:261
+#: upstream/_guides/stork.adoc:264
 msgid "It's a straightforward REST client interface containing a single method. However, note the `baseUri` attribute.  It starts with `stork://`.  It instructs the REST client to delegate the discovery and selection of the service instances to Stork.  Notice the `my-service` part in the URL.  It is the service name we will be using in the application configuration."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:264
+#: upstream/_guides/stork.adoc:267
 msgid "It does not change how the REST client is used.  Create the `src/main/java/org/acme/FrontendApi.java` file with the following content:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:270
+#: upstream/_guides/stork.adoc:273
 #, no-wrap
 msgid "import org.eclipse.microprofile.rest.client.inject.RestClient;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:275
+#: upstream/_guides/stork.adoc:278
 #, no-wrap
 msgid ""
 "import jakarta.ws.rs.GET;\n"
@@ -513,7 +513,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:281
+#: upstream/_guides/stork.adoc:284
 #, no-wrap
 msgid ""
 "/**\n"
@@ -524,13 +524,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:283
+#: upstream/_guides/stork.adoc:286
 #, no-wrap
 msgid "    @RestClient MyService service;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:289
+#: upstream/_guides/stork.adoc:292
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -541,23 +541,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:294
+#: upstream/_guides/stork.adoc:297
 msgid "It injects and uses the REST client as usual."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/stork.adoc:295
+#: upstream/_guides/stork.adoc:298
 #, no-wrap
 msgid "Stork Filter"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:300
+#: upstream/_guides/stork.adoc:303
 msgid "The `baseUri` configured in the REST client will be processed by `StorkClientRequestFilter` class, this is a https://quarkus.io/specs/jaxrs/2.1/index.html#filters[Jakarta REST filter].  If you need to process the metadata associated with a message: HTTP headers, query parameters, media type, and other metadata, you can implement another filter to configure what you need.  Let’s implement a custom filter to add logging capability to our service. We create `CustomLoggingFilter` and annotating it with the @Provider annotation:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:309
+#: upstream/_guides/stork.adoc:312
 #, no-wrap
 msgid ""
 "import io.vertx.core.http.HttpServerRequest;\n"
@@ -567,13 +567,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:311
+#: upstream/_guides/stork.adoc:314
 #, no-wrap
 msgid "import jakarta.ws.rs.ext.Provider;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:314
+#: upstream/_guides/stork.adoc:317
 #, no-wrap
 msgid ""
 "@Provider\n"
@@ -581,13 +581,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:316
+#: upstream/_guides/stork.adoc:319
 #, no-wrap
 msgid "    private static final Logger LOG = Logger.getLogger(CustomLoggingFilter.class);\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:322
+#: upstream/_guides/stork.adoc:325
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -598,28 +598,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:327
+#: upstream/_guides/stork.adoc:330
 msgid "The order in which filters are executed is defined by https://quarkus.io/specs/jaxrs/2.1/index.html#priorities[Priorities].  Note that `CustomLoggingFilter` is using a default value, so the user-level priority and the `StorkClientRequestFilter` uses the security authentication filter priority. This means that `StorkClientRequestFilter` will be executed before our `CustomLoggingFilter`.  Use `@Priority` annotation to change this behaviour."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/stork.adoc:329
+#: upstream/_guides/stork.adoc:332
 #, no-wrap
 msgid "Stork configuration"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:332
+#: upstream/_guides/stork.adoc:335
 msgid "The system is almost complete. We only need to configure Stork and the `Registration` bean."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:334
+#: upstream/_guides/stork.adoc:337
 msgid "In the `src/main/resources/application.properties`, add:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:339
+#: upstream/_guides/stork.adoc:342
 #, no-wrap
 msgid ""
 "consul.host=localhost\n"
@@ -627,7 +627,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:344
+#: upstream/_guides/stork.adoc:347
 #, no-wrap
 msgid ""
 "quarkus.stork.my-service.service-discovery.type=consul\n"
@@ -637,67 +637,67 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:347
+#: upstream/_guides/stork.adoc:350
 msgid "The first two lines provide the Consul location used by the `Registration` bean."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:354
+#: upstream/_guides/stork.adoc:357
 msgid "The other properties are related to Stork.  `stork.my-service.service-discovery` indicates which type of service discovery we will be using to locate the `my-service` service.  In our case, it's `consul`.  `quarkus.stork.my-service.service-discovery.consul-host` and `quarkus.stork.my-service.service-discovery.consul-port` configures the access to Consul.  Finally, `quarkus.stork.my-service.load-balancer.type` configures the service selection.  In our case, we use a `round-robin`."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/stork.adoc:355
+#: upstream/_guides/stork.adoc:358
 #, no-wrap
 msgid "Running the application"
 msgstr "运行应用"
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:359
+#: upstream/_guides/stork.adoc:362
 msgid "We're done! So, let's see if it works."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:361
+#: upstream/_guides/stork.adoc:364
 msgid "First, start Consul:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:365
+#: upstream/_guides/stork.adoc:368
 #, no-wrap
 msgid "docker run --rm --name consul -p 8500:8500 -p 8501:8501 consul:1.7 agent -dev -ui -client=0.0.0.0 -bind=0.0.0.0 --https-port=8501\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:368
+#: upstream/_guides/stork.adoc:371
 msgid "If you start Consul differently, do not forget to edit the application configuration."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:370
+#: upstream/_guides/stork.adoc:373
 #, fuzzy
 #| msgid "Running the application"
 msgid "Then, package the application:"
 msgstr "运行应用"
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:374
+#: upstream/_guides/stork.adoc:377
 msgid "And run it:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:378
+#: upstream/_guides/stork.adoc:381
 #, no-wrap
 msgid "> java -jar target/quarkus-app/quarkus-run.jar\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:381
+#: upstream/_guides/stork.adoc:384
 msgid "In another terminal, run:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:390
+#: upstream/_guides/stork.adoc:393
 #, no-wrap
 msgid ""
 "> curl http://localhost:8080/api\n"
@@ -709,44 +709,44 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:393
+#: upstream/_guides/stork.adoc:396
 msgid "The responses alternate between `Hello from Red!` and `Hello from Blue!`."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:395
+#: upstream/_guides/stork.adoc:398
 msgid "You can compile this application into a native executable:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:399
+#: upstream/_guides/stork.adoc:402
 msgid "And start it with:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/stork.adoc:403
+#: upstream/_guides/stork.adoc:406
 #, no-wrap
 msgid "> ./target/stork-getting-started-1.0.0-SNAPSHOT-runner\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/stork.adoc:405
+#: upstream/_guides/stork.adoc:408
 #, no-wrap
 msgid "Going further"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:409
+#: upstream/_guides/stork.adoc:412
 msgid "This guide has shown how to use SmallRye Stork to discover and select your services.  You can find more about Stork in:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:411
+#: upstream/_guides/stork.adoc:414
 msgid "the xref:stork-reference.adoc[Stork reference guide],"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/stork.adoc:411
+#: upstream/_guides/stork.adoc:414
 msgid "the https://smallrye.io/smallrye-stork[SmallRye Stork website]."
 msgstr ""
 

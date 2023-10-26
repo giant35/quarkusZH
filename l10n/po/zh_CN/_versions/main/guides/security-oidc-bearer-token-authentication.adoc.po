@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-10-13 01:09+0000\n"
+"POT-Creation-Date: 2023-10-26 01:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -686,7 +686,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-oidc-bearer-token-authentication.adoc:340
-msgid "If you plan to consume your OpenID Connect `service` application from a Single Page Application running on a different domain, you will need to configure CORS (Cross-Origin Resource Sharing). Please read the xref:http-reference.adoc#cors-filter[HTTP CORS documentation] for more details."
+msgid "If you plan to consume your OpenID Connect `service` application from a Single Page Application running on a different domain, you will need to configure CORS (Cross-Origin Resource Sharing). Please read the xref:security-cors.adoc#cors-filter[CORS filter] section of the \"Cross-origin resource sharing\" guide for more details."
 msgstr ""
 
 #. type: Title ===
