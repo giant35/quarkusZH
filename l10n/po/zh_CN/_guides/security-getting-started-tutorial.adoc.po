@@ -46,7 +46,7 @@ msgstr ""
 #: upstream/_guides/security-getting-started-tutorial.adoc:22
 #, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "准备"
 
 #. type: Title ==
 #: upstream/_guides/security-getting-started-tutorial.adoc:26
