@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-10-13 01:09+0000\n"
+"POT-Creation-Date: 2023-11-30 01:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -461,7 +461,7 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_versions/main/guides/security-oidc-bearer-token-authentication-tutorial.adoc:267
-msgid "Open a link:{url-quarkusio-guides}dev-ui[Dev UI], which you can find at http://localhost:8080/q/dev-v1[/q/dev-v1], then click a `Provider: Keycloak` link in an `OpenID Connect` `Dev UI` card."
+msgid "Open a link:{url-quarkusio-guides}dev-ui[Dev UI], which you can find at http://localhost:8080/q/dev-ui[/q/dev-ui], then click a `Provider: Keycloak` link in an `OpenID Connect` `Dev UI` card."
 msgstr ""
 
 #. type: delimited block =
