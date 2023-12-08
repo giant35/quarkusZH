@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-12-06 01:19+0000\n"
+"POT-Creation-Date: 2023-12-08 01:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -274,7 +274,7 @@ msgstr ""
 #. type: Title ==
 #: upstream/_versions/main/guides/http-reference.adoc:154
 #, no-wrap
-msgid "Supporting secure connections with SSL/TLS"
+msgid "Supporting secure connections with TLS/SSL"
 msgstr ""
 
 #. type: Plain text
