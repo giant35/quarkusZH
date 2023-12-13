@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-11-24 01:16+0000\n"
+"POT-Creation-Date: 2023-12-13 01:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -329,12 +329,12 @@ msgstr ""
 #. type: Title ==
 #: upstream/_versions/main/guides/config-yaml.adoc:195
 #, no-wrap
-msgid "Configuration key conflicts"
+msgid "Configuration property conflicts"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config-yaml.adoc:201
-msgid "The MicroProfile Config specification defines configuration keys as an arbitrary `.`-delimited string.  However, structured formats such as YAML only support a subset of the possible configuration namespace.  For example, consider the two configuration properties `quarkus.http.cors` and `quarkus.http.cors.methods`.  One property is the prefix of another, so it might not be immediately evident how to specify both keys in your YAML configuration."
+msgid "The MicroProfile Config specification defines configuration properties as an arbitrary `.`-delimited string.  However, structured formats such as YAML only support a subset of the possible configuration namespace.  For example, consider the two configuration properties `quarkus.http.cors` and `quarkus.http.cors.methods`.  One property is the prefix of another, so it might not be immediately evident how to specify both keys in your YAML configuration."
 msgstr ""
 
 #. type: Plain text
@@ -355,7 +355,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config-yaml.adoc:214
-msgid "YAML `null` keys are not included in the assembly of the configuration property name, allowing them to be used at any level for disambiguating configuration keys."
+msgid "YAML `null` keys are not included in the assembly of the configuration property name, allowing them to be used at any level for disambiguating configuration properties."
 msgstr ""
 
 #. type: Plain text

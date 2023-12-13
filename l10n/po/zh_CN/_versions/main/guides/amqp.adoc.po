@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-10-13 01:09+0000\n"
+"POT-Creation-Date: 2023-12-13 01:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -492,7 +492,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/amqp.adoc:261
-msgid "The configuration keys are structured as follows:"
+msgid "The configuration properties are structured as follows:"
 msgstr ""
 
 #. type: Plain text
